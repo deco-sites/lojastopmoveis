@@ -3,7 +3,7 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import Image from "deco-sites/std/components/Image.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import { useUI } from "deco-sites/boilerplaten1v2/sdk/useUI.ts";
+import { useUI } from "$store/sdk/useUI.ts";
 import CloseButton from "$store/islands/CloseButton.tsx";
 
 import { useId } from "preact/hooks";

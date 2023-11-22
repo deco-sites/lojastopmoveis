@@ -1,7 +1,7 @@
 import { Head } from "$fresh/runtime.ts";
 import { Section } from "$live/blocks/section.ts";
 import type { BlockInstance } from "$live/engine/block.ts";
-import type { Manifest } from "deco-sites/boilerplaten1v2/live.gen.ts";
+import type { Manifest } from "$store/live.gen.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 
 export interface Props {
@@ -9,19 +9,19 @@ export interface Props {
   asideMenu: Section;
   content:
     | BlockInstance<
-      "deco-sites/boilerplaten1v2/sections/Institutional/TextContent.tsx",
+      "deco-sites/lojastopmoveis/sections/Institutional/TextContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/boilerplaten1v2/sections/Institutional/AccordionsContent.tsx",
+      "deco-sites/lojastopmoveis/sections/Institutional/AccordionsContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/boilerplaten1v2/sections/Institutional/CardsContent.tsx",
+      "deco-sites/lojastopmoveis/sections/Institutional/CardsContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/boilerplaten1v2/sections/Institutional/ContactForm.tsx",
+      "deco-sites/lojastopmoveis/sections/Institutional/ContactForm.tsx",
       Manifest
     >;
 }

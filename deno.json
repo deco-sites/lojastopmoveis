@@ -15,8 +15,6 @@
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" },
   "imports": {
     "deco-sites/lojastopmoveis/": "./",
-
-    "deco-sites/lojastopmoveis/": "./",
     "$store/": "./",
     "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.22.11/",
     "$live/": "https://denopkg.com/deco-cx/deco@1.46.1/",

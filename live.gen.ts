@@ -261,8 +261,7 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$$2,
     "$live/sections/Slot.tsx": i1$$$$3,
     "$live/sections/UseSlot.tsx": i1$$$$4,
-    "deco-sites/lojastopmoveis/sections/Category/CategoryBanner.tsx":
-      $$$$$$$$0,
+    "deco-sites/lojastopmoveis/sections/Category/CategoryBanner.tsx": $$$$$$$$0,
     "deco-sites/lojastopmoveis/sections/Category/CategoryBreadcrumb.tsx":
       $$$$$$$$1,
     "deco-sites/lojastopmoveis/sections/Category/CategoryList.tsx": $$$$$$$$2,
@@ -284,8 +283,7 @@ const manifest = {
     "deco-sites/lojastopmoveis/sections/Images/BannerGrid.tsx": $$$$$$$$17,
     "deco-sites/lojastopmoveis/sections/Images/Carousel.tsx": $$$$$$$$18,
     "deco-sites/lojastopmoveis/sections/Images/ImageGallery.tsx": $$$$$$$$19,
-    "deco-sites/lojastopmoveis/sections/Images/ShoppableBanner.tsx":
-      $$$$$$$$20,
+    "deco-sites/lojastopmoveis/sections/Images/ShoppableBanner.tsx": $$$$$$$$20,
     "deco-sites/lojastopmoveis/sections/Institutional/AccordionsContent.tsx":
       $$$$$$$$21,
     "deco-sites/lojastopmoveis/sections/Institutional/AsideMenu.tsx":
@@ -304,15 +302,13 @@ const manifest = {
       $$$$$$$$29,
     "deco-sites/lojastopmoveis/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$$$30,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/NotFound.tsx":
-      $$$$$$$$31,
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/NotFound.tsx": $$$$$$$$31,
     "deco-sites/lojastopmoveis/sections/Miscellaneous/ProxyIframe.tsx":
       $$$$$$$$32,
     "deco-sites/lojastopmoveis/sections/Newsletter/Newsletter.tsx": $$$$$$$$33,
     "deco-sites/lojastopmoveis/sections/Newsletter/NewsletterModal.tsx":
       $$$$$$$$34,
-    "deco-sites/lojastopmoveis/sections/Product/ProductDetails.tsx":
-      $$$$$$$$35,
+    "deco-sites/lojastopmoveis/sections/Product/ProductDetails.tsx": $$$$$$$$35,
     "deco-sites/lojastopmoveis/sections/Product/ProductShelf.tsx": $$$$$$$$36,
     "deco-sites/lojastopmoveis/sections/Product/SearchResult.tsx": $$$$$$$$37,
     "deco-sites/lojastopmoveis/sections/Product/Wishlist.tsx": $$$$$$$$38,
