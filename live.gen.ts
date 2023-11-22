@@ -261,63 +261,63 @@ const manifest = {
     "$live/sections/PageInclude.tsx": i1$$$$2,
     "$live/sections/Slot.tsx": i1$$$$3,
     "$live/sections/UseSlot.tsx": i1$$$$4,
-    "deco-sites/boilerplaten1v2/sections/Category/CategoryBanner.tsx":
+    "deco-sites/lojastopmoveis/sections/Category/CategoryBanner.tsx":
       $$$$$$$$0,
-    "deco-sites/boilerplaten1v2/sections/Category/CategoryBreadcrumb.tsx":
+    "deco-sites/lojastopmoveis/sections/Category/CategoryBreadcrumb.tsx":
       $$$$$$$$1,
-    "deco-sites/boilerplaten1v2/sections/Category/CategoryList.tsx": $$$$$$$$2,
-    "deco-sites/boilerplaten1v2/sections/Category/CategoryText.tsx": $$$$$$$$3,
-    "deco-sites/boilerplaten1v2/sections/Container.tsx": $$$$$$$$4,
-    "deco-sites/boilerplaten1v2/sections/Content/Benefits.tsx": $$$$$$$$5,
-    "deco-sites/boilerplaten1v2/sections/Content/CopyRight.tsx": $$$$$$$$6,
-    "deco-sites/boilerplaten1v2/sections/Content/Faq.tsx": $$$$$$$$7,
-    "deco-sites/boilerplaten1v2/sections/Content/InfoCard.tsx": $$$$$$$$8,
-    "deco-sites/boilerplaten1v2/sections/Content/InfoCardSeo.tsx": $$$$$$$$9,
-    "deco-sites/boilerplaten1v2/sections/Content/Logos.tsx": $$$$$$$$10,
-    "deco-sites/boilerplaten1v2/sections/Content/Testimonials.tsx": $$$$$$$$11,
-    "deco-sites/boilerplaten1v2/sections/DesignSystem/DesignSystem.tsx":
+    "deco-sites/lojastopmoveis/sections/Category/CategoryList.tsx": $$$$$$$$2,
+    "deco-sites/lojastopmoveis/sections/Category/CategoryText.tsx": $$$$$$$$3,
+    "deco-sites/lojastopmoveis/sections/Container.tsx": $$$$$$$$4,
+    "deco-sites/lojastopmoveis/sections/Content/Benefits.tsx": $$$$$$$$5,
+    "deco-sites/lojastopmoveis/sections/Content/CopyRight.tsx": $$$$$$$$6,
+    "deco-sites/lojastopmoveis/sections/Content/Faq.tsx": $$$$$$$$7,
+    "deco-sites/lojastopmoveis/sections/Content/InfoCard.tsx": $$$$$$$$8,
+    "deco-sites/lojastopmoveis/sections/Content/InfoCardSeo.tsx": $$$$$$$$9,
+    "deco-sites/lojastopmoveis/sections/Content/Logos.tsx": $$$$$$$$10,
+    "deco-sites/lojastopmoveis/sections/Content/Testimonials.tsx": $$$$$$$$11,
+    "deco-sites/lojastopmoveis/sections/DesignSystem/DesignSystem.tsx":
       $$$$$$$$12,
-    "deco-sites/boilerplaten1v2/sections/Footer/Footer.tsx": $$$$$$$$13,
-    "deco-sites/boilerplaten1v2/sections/Header/HeaderLayout.tsx": $$$$$$$$14,
-    "deco-sites/boilerplaten1v2/sections/Header/HeaderNavMenu.tsx": $$$$$$$$15,
-    "deco-sites/boilerplaten1v2/sections/Header/TopNavBar.tsx": $$$$$$$$16,
-    "deco-sites/boilerplaten1v2/sections/Images/BannerGrid.tsx": $$$$$$$$17,
-    "deco-sites/boilerplaten1v2/sections/Images/Carousel.tsx": $$$$$$$$18,
-    "deco-sites/boilerplaten1v2/sections/Images/ImageGallery.tsx": $$$$$$$$19,
-    "deco-sites/boilerplaten1v2/sections/Images/ShoppableBanner.tsx":
+    "deco-sites/lojastopmoveis/sections/Footer/Footer.tsx": $$$$$$$$13,
+    "deco-sites/lojastopmoveis/sections/Header/HeaderLayout.tsx": $$$$$$$$14,
+    "deco-sites/lojastopmoveis/sections/Header/HeaderNavMenu.tsx": $$$$$$$$15,
+    "deco-sites/lojastopmoveis/sections/Header/TopNavBar.tsx": $$$$$$$$16,
+    "deco-sites/lojastopmoveis/sections/Images/BannerGrid.tsx": $$$$$$$$17,
+    "deco-sites/lojastopmoveis/sections/Images/Carousel.tsx": $$$$$$$$18,
+    "deco-sites/lojastopmoveis/sections/Images/ImageGallery.tsx": $$$$$$$$19,
+    "deco-sites/lojastopmoveis/sections/Images/ShoppableBanner.tsx":
       $$$$$$$$20,
-    "deco-sites/boilerplaten1v2/sections/Institutional/AccordionsContent.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/AccordionsContent.tsx":
       $$$$$$$$21,
-    "deco-sites/boilerplaten1v2/sections/Institutional/AsideMenu.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/AsideMenu.tsx":
       $$$$$$$$22,
-    "deco-sites/boilerplaten1v2/sections/Institutional/CardsContent.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/CardsContent.tsx":
       $$$$$$$$23,
-    "deco-sites/boilerplaten1v2/sections/Institutional/ContactForm.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/ContactForm.tsx":
       $$$$$$$$24,
-    "deco-sites/boilerplaten1v2/sections/Institutional/InstitutionalPage.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/InstitutionalPage.tsx":
       $$$$$$$$25,
-    "deco-sites/boilerplaten1v2/sections/Institutional/TextContent.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/TextContent.tsx":
       $$$$$$$$26,
-    "deco-sites/boilerplaten1v2/sections/Links/LinkTree.tsx": $$$$$$$$27,
-    "deco-sites/boilerplaten1v2/sections/Links/Shortcuts.tsx": $$$$$$$$28,
-    "deco-sites/boilerplaten1v2/sections/Miscellaneous/CampaignTimer.tsx":
+    "deco-sites/lojastopmoveis/sections/Links/LinkTree.tsx": $$$$$$$$27,
+    "deco-sites/lojastopmoveis/sections/Links/Shortcuts.tsx": $$$$$$$$28,
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/CampaignTimer.tsx":
       $$$$$$$$29,
-    "deco-sites/boilerplaten1v2/sections/Miscellaneous/CookieConsent.tsx":
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$$$30,
-    "deco-sites/boilerplaten1v2/sections/Miscellaneous/NotFound.tsx":
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/NotFound.tsx":
       $$$$$$$$31,
-    "deco-sites/boilerplaten1v2/sections/Miscellaneous/ProxyIframe.tsx":
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/ProxyIframe.tsx":
       $$$$$$$$32,
-    "deco-sites/boilerplaten1v2/sections/Newsletter/Newsletter.tsx": $$$$$$$$33,
-    "deco-sites/boilerplaten1v2/sections/Newsletter/NewsletterModal.tsx":
+    "deco-sites/lojastopmoveis/sections/Newsletter/Newsletter.tsx": $$$$$$$$33,
+    "deco-sites/lojastopmoveis/sections/Newsletter/NewsletterModal.tsx":
       $$$$$$$$34,
-    "deco-sites/boilerplaten1v2/sections/Product/ProductDetails.tsx":
+    "deco-sites/lojastopmoveis/sections/Product/ProductDetails.tsx":
       $$$$$$$$35,
-    "deco-sites/boilerplaten1v2/sections/Product/ProductShelf.tsx": $$$$$$$$36,
-    "deco-sites/boilerplaten1v2/sections/Product/SearchResult.tsx": $$$$$$$$37,
-    "deco-sites/boilerplaten1v2/sections/Product/Wishlist.tsx": $$$$$$$$38,
-    "deco-sites/boilerplaten1v2/sections/Social/InstagramPosts.tsx": $$$$$$$$39,
-    "deco-sites/boilerplaten1v2/sections/Social/WhatsApp.tsx": $$$$$$$$40,
+    "deco-sites/lojastopmoveis/sections/Product/ProductShelf.tsx": $$$$$$$$36,
+    "deco-sites/lojastopmoveis/sections/Product/SearchResult.tsx": $$$$$$$$37,
+    "deco-sites/lojastopmoveis/sections/Product/Wishlist.tsx": $$$$$$$$38,
+    "deco-sites/lojastopmoveis/sections/Social/InstagramPosts.tsx": $$$$$$$$39,
+    "deco-sites/lojastopmoveis/sections/Social/WhatsApp.tsx": $$$$$$$$40,
     "deco-sites/std/sections/Analytics.tsx": i2$$$$$0,
     "deco-sites/std/sections/configButterCMS.global.tsx": i2$$$$$1,
     "deco-sites/std/sections/configLinxImpulse.global.tsx": i2$$$$$2,
@@ -331,7 +331,7 @@ const manifest = {
     "deco-sites/std/sections/SEOPLP.tsx": i2$$$$$10,
     "deco-sites/std/sections/VTEXPortalDataLayerCompatibility.tsx": i2$$$$$11,
   },
-  "name": "deco-sites/boilerplaten1v2",
+  "name": "deco-sites/lojastopmoveis",
   "loaders": {
     "$live/loaders/secret.ts": i1$0,
     "$live/loaders/state.ts": i1$1,
