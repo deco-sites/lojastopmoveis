@@ -1,6 +1,6 @@
 import { useRef } from "preact/hooks";
 import { useSignal } from "@preact/signals";
-import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
+import { useCart } from "apps/vtex/hooks/useCart.ts";
 import Button from "$store/components/ui/Button.tsx";
 
 function SellerCode() {

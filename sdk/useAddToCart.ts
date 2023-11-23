@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
 import { useCallback } from "preact/hooks";
-import { useCart } from "deco-sites/std/packs/vtex/hooks/useCart.ts";
+import { useCart } from "apps/vtex/hooks/useCart.ts";
 import { useUI } from "$store/sdk/useUI.ts";
 import { sendEvent } from "$store/sdk/analytics.tsx";
 

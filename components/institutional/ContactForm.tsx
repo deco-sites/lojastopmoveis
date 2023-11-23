@@ -1,5 +1,5 @@
 import Icon from "$store/components/ui/Icon.tsx";
-import { Picture, Source } from "deco-sites/std/components/Picture.tsx";
+import { Picture, Source } from "apps/website/components/Picture.tsx";
 import { SocialItem } from "$store/components/footer/SocialNetWorks.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Button from "$store/components/ui/Button.tsx";
