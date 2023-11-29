@@ -313,7 +313,7 @@ function ProductCard(
                   >
                     {(listPrice && price) && listPrice > price && (
                       <p
-                        class={`line-through text-[#999BA2] text-sm ${
+                        class={`line-through text-[#C5C6CB] text-sm ${
                           l?.basics?.oldPriceSize === "Normal"
                             ? "lg:text-xl"
                             : ""
@@ -322,14 +322,14 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-emphasis font-medium">
+                    <p class="text-secondary font-medium">
                       {formatPrice(price, offers!.priceCurrency!)}
                     </p>
                   </div>
                   {l?.hide.installments
                     ? ""
                     : (
-                      <div class="text-sm font-normal text-[#4A4B51] mt-[5px]">
+                      <div class="text-sm font-normal text-[#707279] mt-[5px]">
                         ou {installment?.billingDuration}x de ${formatPrice(
                           installment?.billingIncrement,
                           offers!.priceCurrency!,

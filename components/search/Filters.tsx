@@ -20,7 +20,7 @@ function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
     <a href={`${url}&page=1`} class="flex items-center gap-2">
       <div
         aria-checked={selected}
-        class="checkbox aria-checked:bg-none rounded-none h-4 w-4"
+        class="checkbox aria-checked:bg-none rounded-none h-4 w-4 border-primary"
       >
         {selected && (
           <div class="bg-primary w-full h-full border-white border-2" />
@@ -91,7 +91,7 @@ function Filters({ filters }: Props) {
   return (
     <ul class="flex flex-col gap-2 text-primary">
       <li>
-        <p class="font-normal tracking-[1px] mb-5 text-[19px]">Filtrar por:</p>
+        <p class="font-normal tracking-[1px] mb-5 text-[19px] text-secondary">Filtrar por:</p>
         {selectedFilters.length > 0 && (
           selectedFilters.map((filter) => (
             <div class="mb-2">

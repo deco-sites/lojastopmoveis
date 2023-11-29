@@ -67,7 +67,7 @@ function MenuItem({ item }: { item: INavItem }) {
               type="checkbox"
               class="absolute left-0 w-full top-0"
             />
-            <div class="collapse-title min-h-0 p-0 py-2.5 font-dm-sans font-normal text-sm px-0 flex items-center justify-between after:!text-[20px]">
+            <div class="collapse-title min-h-0 p-0 py-2.5 font-dm-sans font-medium text-sm px-0 flex items-center justify-between after:!text-[20px] text-primary ">
               {item.label}
             </div>
             <div class="collapse-content px-0">
@@ -77,7 +77,7 @@ function MenuItem({ item }: { item: INavItem }) {
                     <a
                       href={node.href}
                       title={node.label}
-                      class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm`}
+                      class={`w-full block pt-5 font-dm-sans font-medium text-primary text-sm`}
                     >
                       {node.label}
                     </a>
@@ -87,7 +87,7 @@ function MenuItem({ item }: { item: INavItem }) {
                   <a
                     href={item.href}
                     title={item.label}
-                    class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm`}
+                    class={`w-full block pt-5 font-dm-sans font-medium text-primary text-sm`}
                   >
                     Mostrar tudo
                   </a>
@@ -101,8 +101,8 @@ function MenuItem({ item }: { item: INavItem }) {
       <a
         href={item.href}
         title={item.label}
-        class={`w-full block py-2.5 font-dm-sans font-normal text-sm ${
-          item.highlighted ? "text-secondary" : ""
+        class={`w-full block py-2.5 font-dm-sans font-medium text-sm border-b border-[#C5C6CB] border-solid  ${
+          item.highlighted ? "text-primary" : ""
         }`}
       >
         {item.label}
@@ -118,7 +118,7 @@ function Menu({ items }: Props) {
   return (
     <div class="flex flex-col justify-center pb-10 h-full">
       <div class="w-full flex items-center justify-between py-4 border-b border-[#C5C6CB] border-solid pb-2 px-4">
-        <div class="flex items-center justify-start gap-1 uppercase text-base-content font-medium text-[19px] tracking-[1px]">
+        <div class="flex items-center justify-start gap-1 capitalize text-primary font-medium text-[19px] tracking-[1px]">
           Menu
         </div>
         <button
@@ -127,18 +127,32 @@ function Menu({ items }: Props) {
             displayMenu.value = false;
           }}
         >
-          <Icon id="XMark" width={24} height={24} strokeWidth={2} />
+          <Icon id="XMarkSearch" width={24} height={24} strokeWidth={2} />
         </button>
       </div>
-      <ul class="flex-grow flex flex-col px-4">
+      <ul class="flex-grow flex flex-col px-4 pt-[10px]">
         {items.map((item) => <MenuItem item={item} />)}
       </ul>
       <a
-        class="flex btn btn-outline gap-2 mx-4 mt-10"
+        class="flex btn btn-outline gap-2 mx-4 mt-10 border-secondary text-secondary uppercase font-bold	"
+        href="/account"
+      >
+        <Icon id="MinhaConta" width={18} height={18} />
+        <span class="tracking-[1px] text-xs">Minha conta</span>
+      </a>
+      <a
+        class="flex btn btn-outline gap-2 mx-4 mt-[10px] border-secondary text-secondary uppercase font-bold	"
         href="/central-de-atendimento"
       >
-        <Icon id="Chat" width={18} height={18} />
+        <Icon id="FaleConosco" width={18} height={18} />
         <span class="tracking-[1px] text-xs">fale conosco</span>
+      </a>
+      <a
+        class="flex btn btn-outline gap-2 mx-4 mt-[10px] border-secondary text-secondary uppercase font-bold	"
+        href="/nossas-lojas"
+      >
+        <Icon id="NossasLojas" width={18} height={18} />
+        <span class="tracking-[1px] text-xs">Nossas lojas</span>
       </a>
     </div>
   );

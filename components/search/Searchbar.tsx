@@ -25,7 +25,7 @@ function CloseButton() {
 
   return (
     <Button
-      class="btn-outline btn !border text-sm px-10"
+      class="btn-outline btn !border text-sm px-10 border-secondary text-secondary hover:btn-secondary hidden lg:block"
       onClick={() => (displaySearchbar.value = false)}
     >
       Fechar
@@ -152,7 +152,7 @@ function Searchbar({
             }}
           >
             <span class="">
-              <Icon id="XMark" width={12} height={12} strokeWidth={2} />
+              <Icon id="XMarkSearch" width={12} height={12} strokeWidth={2} />
             </span>
           </button>
         )}
@@ -195,7 +195,7 @@ function Searchbar({
                       <div class="flex flex-col gap-6 md:w-[15.25rem] md:max-w-[15.25rem]\">
                         <div class="flex gap-2 items-center">
                           <span
-                            class="font-normal"
+                            class="font-normal border-secondary text-secondary"
                             role="heading"
                             aria-level={3}
                           >
@@ -222,7 +222,7 @@ function Searchbar({
                   <div class="flex flex-col pt-6 md:pt-0 gap-6 overflow-x-hidden w-full">
                     <div class="flex gap-2 items-center">
                       <span
-                        class="font-normal"
+                        class="font-normal border-secondary text-secondary"
                         role="heading"
                         aria-level={3}
                       >
@@ -230,7 +230,7 @@ function Searchbar({
                       </span>
                       {loading.value && <Spinner />}
                     </div>
-                    <Slider class="carousel gap-2 lg:justify-between lg:gap-0">
+                    <Slider class="carousel gap-2 lg:justify-between lg:gap-0 flex-col lg:flex-row">
                       {suggestions.value!.products?.map((product, index) => (
                         <Slider.Item
                           index={index}
@@ -247,7 +247,7 @@ function Searchbar({
                     {searchInputRef.current
                       ? (
                         <a
-                          class="btn btn-outline lg:hover:btn-primary max-lg:btn-primary max-w-xs self-center text-xs font-bold mt-3"
+                          class=" hidden lg:flex btn btn-outline border-secondary text-secondary lg:hover:btn-secondary max-lg:btn-secondary max-w-xs self-center text-xs font-bold mt-3 uppercase"
                           href={`/busca?q=${searchInputRef.current.value}`}
                         >
                           ver mais produtos

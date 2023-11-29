@@ -32,13 +32,13 @@ function Coupon() {
           id="coupon"
           name="coupon"
           ref={ref}
-          class="border border-[#C5C6CB] outline-none rounded-[90px] placeholder-neutral p-3 h-10 text-xs w-full"
+          class="border border-[#C5C6CB] outline-none rounded-[90px] placeholder-neutral p-3 h-10 text-xs w-full hover:border-primary"
           type="text"
           value={coupon ?? ""}
           placeholder={"Digite seu cupom aqui"}
         />
         <Button
-          class="h-9 !border border-base-content text-base-content font-bold tracking-[1px] text-xs px-[26px] w-fit"
+          class="h-9 !border border-secondary text-secondary font-bold tracking-[1px] text-xs px-[26px] w-fit hover:btn-secondary"
           type="submit"
           htmlFor="coupon"
           loading={loading.value}

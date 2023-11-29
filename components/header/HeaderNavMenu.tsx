@@ -18,7 +18,7 @@ function HeaderNavMenu(
   return (
     <div class="z-50">
       <div class="flex justify-between items-center lg:p-0">
-        <div class="max-lg:hidden flex justify-between flex-1 whitespace-nowrap">
+        <div class="max-lg:hidden flex justify-between flex-1 whitespace-nowrap gap-[25px]">
           {navItems && navItems?.length
             ? navItems?.map((item) => <NavItem key={item.label} item={item} />)
             : null}

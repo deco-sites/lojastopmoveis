@@ -110,25 +110,25 @@ function Footer(
     <footer class="">
       <div class="bg-white flex flex-col">
         <div class="flex items-start justify-start gap-5 lg:gap-16 mt-12 max-lg:flex-col">
-          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#F7F7F7] rounded-[10px]">
-            <Icon id="Logo" class={"max-lg:m-auto"} height={27} width={120} />
+          <div class="pt-11 px-8 pb-10 max-lg:w-full bg-[#F7F7F7] rounded-[10px] w-2/6">
+            <Icon id="Logo" class={"m-0"} height={70} width={94.6} />
             {socialNetWorks?.length && (
               <SocialNetWorks socialItems={socialNetWorks} />
             )}
             <div class="flex items-center gap-2 mt-5">
-              <Icon id="Phone" width={20} height={20} class="text-primary" />
-              <span class="text-primary text-xs font-bold text-left">
+              <Icon id="Phone" width={20} height={20} class="text-secondary" />
+              <span class="text-secondary text-xs font-bold text-left">
                 {phone}
               </span>
             </div>
             <div class="flex items-center gap-2 mt-3">
-              <Icon id="Email" width={20} height={20} class="text-primary" />
-              <span class="text-primary text-xs font-bold text-left">
+              <Icon id="Email" width={20} height={20} class="text-secondary" />
+              <span class="text-secondary text-xs font-bold text-left">
                 {email}
               </span>
             </div>
             <span
-              class="text-base-800 text-left text-xs font-normal mt-3 block leading-6"
+              class="text-primary text-left text-xs font-normal mt-3 block leading-6"
               dangerouslySetInnerHTML={{
                 __html: openingHours,
               }}

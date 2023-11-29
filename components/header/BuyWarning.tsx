@@ -6,7 +6,7 @@ function BuyWarning() {
   return (
     <>
       <div
-        class={`py-4 px-5 text-white flex gap-5 bg-primary fixed bottom-[50px] left-[80px] w-[560px] z-50 animate-slide-bottom max-lg:w-[90vw] max-lg:left-[5vw] ${
+        class={`py-4 px-5 text-white flex gap-5 bg-secondary fixed bottom-[50px] left-[80px] w-[560px] z-50 animate-slide-bottom max-lg:w-[90vw] max-lg:left-[5vw] ${
           displayBuyWarning.value ? "" : "hidden"
         }`}
       >

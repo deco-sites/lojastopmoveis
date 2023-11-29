@@ -26,18 +26,18 @@ export default function InfoCard(
 
   return (
     <section
-      class={`${textAlignment} p-8 lg:py-10 lg:px-[60px] flex flex-col lg:flex-row lg:gap-12 border rounded-3xl mb-12`}
+      class={`${textAlignment} p-8 lg:py-10 lg:px-[60px] flex flex-col lg:flex-row lg:gap-12 rounded-3xl mb-12`}
     >
-      <div class="hidden lg:flex items-center justify-center w-[155px]">
-        <Icon id="LogoSeo" height={130} width={133} class="w-full" />
+      <div class="hidden lg:flex items-center justify-center w-[200px]">
+        <Icon id="LogoSeo" height={200} width={200} class="w-full" />
       </div>
-      <div class="lg:hidden flex gap-5 items-center justify-between w-full mb-4">
-        <Icon id="LogoSeo" height={80} width={82} />
+      <div class="lg:hidden flex gap-5 justify-between flex-col w-full mb-4 items-start lg:flex-row lg:items-center">
+        <Icon id="LogoSeo" height={120} width={120} />
         <h3 class="lg:hidden block text-[#4A4B51] flex-1 font-medium text-base">
           {title}
         </h3>
       </div>
-      <div class="lg:pl-[60px] lg:border-l border-[#DEE0E8] w-full">
+      <div class=" w-full self-center">
         <h3 class="hidden lg:block text-[#4A4B51] font-medium text-base mb-2">
           {title}
         </h3>
@@ -45,7 +45,7 @@ export default function InfoCard(
           ? (
             <div
               dangerouslySetInnerHTML={{ __html: html }}
-              class="text-[#4A4B51] font-normal text-xs m-auto max-lg:text-justify"
+              class="text-[#4A4B51] font-normal text-xs m-auto max-lg:text-justify flex flex-col gap-y-2.5"
             />
           )
           : null}

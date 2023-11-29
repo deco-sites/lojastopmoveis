@@ -20,8 +20,8 @@ function Searchbar({ searchbar }: Props) {
     <div
       class={`${
         open ? "block border-y border-base-200 shadow" : "hidden"
-      } absolute left-0 top-0 z-50 bg-base-100 text-primary w-full`}
-      style="margin-top: 111px;box-shadow: 0 10000px 0 10000px rgba(0, 0, 0, 0.5);"
+      } absolute left-0 top-0 z-50 bg-base-100 text-primary w-full mt-[92px] lg:mt-[120px]`}
+      style="box-shadow: 0 10000px 0 10000px rgba(0, 0, 0, 0.5);"
     >
       {open && (
         <Suspense fallback={<span class="loading loading-ring" />}>

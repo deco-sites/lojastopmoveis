@@ -14,11 +14,11 @@ function DiscountBadge({ price, listPrice, label, variant, className }: Props) {
       class={`absolute left-0 top-0 lg:p-[10px] flex items-center z-10 ${className}`}
     >
       <div
-        class={`text-xs uppercase font-bold border-none px-[10px] py-[7px] rounded-lg flex box-content bg-opacity-100 opacity-100 text-white bg-emphasis bg-${
+        class={`text-xs uppercase font-bold border-none px-[10px] py-[7px] rounded-bl-none tracking-[2px] rounded-lg flex box-content bg-opacity-100 opacity-100 text-white bg-secondary bg-${
           variant ?? "secondary"
         }`}
       >
-        {discount}% {label ?? "OFF"}
+        {discount}% OFF
       </div>
     </div>
   );

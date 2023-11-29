@@ -60,8 +60,8 @@ function Totalizer(
 
   return (
     <div class="flex justify-between items-center w-full text-gray-500">
-      <span class="text-sm max-md:text-xs text-base-content">{label}</span>
-      <span class="text-sm max-md:text-xs text-base-content">
+      <span class="text-sm max-md:text-xs text-primary">{label}</span>
+      <span class="text-sm max-md:text-xs text-primary">
         {formatPrice(value / 100, currencyCode!, locale)}
       </span>
     </div>
@@ -110,7 +110,7 @@ function Cart(props: ICartProps) {
         </div>
         <Button
           data-deco="buy-button"
-          class="h-10 btn-outline text-xs lg:text-sm font-medium transition-all lg:h-12 whitespace-nowrap px-6"
+          class="h-10 btn-outline border-secondary text-secondary font-bold	uppercase text-xs lg:text-sm transition-all lg:h-12 whitespace-nowrap px-6 hover: btn-secondary"
           onClick={() => {
             displayCart.value = false;
           }}
@@ -157,10 +157,10 @@ function Cart(props: ICartProps) {
         {total && (
           <div class="flex flex-col justify-end items-end gap-2 py-3 mx-5 border-solid border-b-[1px] border-base-200 lg:mx-10 w-full">
             <div class="flex justify-between items-center w-full font-bold text-xs text-base-content lg:text-sm">
-              <span class="text-primary max-md:text-xs">
+              <span class="text-secondary max-md:text-xs">
                 Total
               </span>
-              <span class="text-primary max-md:text-xs">
+              <span class="text-secondary max-md:text-xs">
                 {formatPrice(total / 100, currencyCode!, locale)}
               </span>
             </div>
@@ -169,7 +169,7 @@ function Cart(props: ICartProps) {
         <div class="p-4 flex justify-between mx-10 px-0 w-full gap-2 flex-col">
           <Button
             data-deco="buy-button"
-            class="h-10 btn-outline text-xs lg:text-sm font-medium transition-all lg:h-12 whitespace-nowrap px-6"
+            class="h-10 btn-outline border-secondary text-secondary font-bold	uppercase text-xs lg:text-sm transition-all lg:h-12 whitespace-nowrap px-6 hover:btn-secondary"
             disabled={loading.value || cart.value.items.length === 0}
             onClick={() => {
               displayCart.value = false;
@@ -182,7 +182,7 @@ function Cart(props: ICartProps) {
               data-deco="buy-button"
               class={`h-10 btn-${
                 BUTTON_VARIANTS[buttonMode as string]
-              } font-medium text-xs w-full text-base-100 lg:text-sm lg:h-12`}
+              } font-bold text-xs uppercase w-full text-base-100 lg:text-sm lg:h-12`}
               disabled={loading.value || cart.value.items.length === 0}
               onClick={() => {
                 sendEvent({

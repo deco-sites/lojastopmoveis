@@ -42,18 +42,18 @@ function MenuButton() {
   );
 }
 
-function ChatButton() {
+function WishListButton() {
   return (
     <Button
       class="btn-square btn-ghost flex items-center justify-center"
-      aria-label="chat icon button"
+      aria-label="wish icon button"
       onClick={() => {
-        console.log("Chat");
+        window.location.href = "/wishlist";
       }}
     >
       <Icon
         class="text-base-content"
-        id="Chat"
+        id="Wishlist"
         width={24}
         height={25}
         strokeWidth={1}
@@ -103,7 +103,7 @@ function CartButton() {
         )}
         <Icon
           class="text-base-content"
-          id="ShoppingCart"
+          id="Cart"
           width={24}
           height={25}
           strokeWidth={1}
@@ -114,7 +114,7 @@ function CartButton() {
 }
 
 function Buttons(
-  { variant }: { variant: "cart" | "search" | "menu" | "chat" },
+  { variant }: { variant: "cart" | "search" | "menu" | "wishlist" },
 ) {
   if (variant === "cart") {
     return <CartButton />;
@@ -128,8 +128,8 @@ function Buttons(
     return <MenuButton />;
   }
 
-  if (variant === "chat") {
-    return <ChatButton />;
+  if (variant === "wishlist") {
+    return <WishListButton />;
   }
 
   return null;

@@ -126,6 +126,7 @@ export const DESKTOP_COLUMNS: Record<number, string> = {
   2: "sm:grid-cols-2",
   3: "sm:grid-cols-3",
   4: "sm:grid-cols-4",
+  5: "sm:grid-cols-5",
   6: "sm:grid-cols-6",
   8: "sm:grid-cols-8",
 };
@@ -285,7 +286,7 @@ export default function BannnerGrid({
   banners = [],
 }: Props) {
   return (
-    <section class="w-full md:px-0 mx-auto py-24">
+    <section class="w-full md:px-0 mx-auto py-12">
       <div
         class={`flex flex-col grid-cols-auto lg:grid  ${
           GRID_GAP[columnGap?.desktop ?? 2]

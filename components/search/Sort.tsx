@@ -44,13 +44,13 @@ function Sort({ sortOptions }: Props) {
     >
       <label
         tabIndex={0}
-        class="btn justify-between w-full lg:w-[214px] btn-sm font-normal text-base-200 h-[34px] lg:h-12 border border-[#C5C6CB] bg-white hover:bg-white"
+        class="btn justify-between w-full lg:w-[214px] btn-sm font-normal text-secondary border-secondary lg:text-base-200 h-[34px] lg:h-12 border lg:border-[#C5C6CB] bg-white hover:bg-white"
       >
         {sort
           ? <span class="text-base-content">{labels[sort as LabelKey]}</span>
           : (
             <>
-              <span class="text-base-content lg:hidden font-bold tracking-[1px]">
+              <span class=" uppercase text-secondary lg:text-base-content lg:hidden font-bold tracking-[1px]">
                 Ordenar
               </span>
               <span class="max-lg:hidden">Selecionar</span>
@@ -58,15 +58,15 @@ function Sort({ sortOptions }: Props) {
           )}
         <Icon
           id="ChevronDown"
-          height={22}
-          width={22}
+          height={16}
+          width={16}
           strokeWidth={2}
           class="text-base-content"
         />
       </label>
       <ul
         tabIndex={0}
-        class="dropdown-content border border-[#C5C6CB] mt-[-10px] z-[100] px-0 py-[10px] menu shadow bg-base-100 rounded-[10px] w-full lg:w-[214px]"
+        class="dropdown-content border border-[#ffff] mt-[10px] z-[100] px-0 py-[10px] menu shadow bg-base-100 rounded-[10px] w-full lg:w-[214px]"
       >
         {sortOptions.map(({ value, label }) => (
           <li

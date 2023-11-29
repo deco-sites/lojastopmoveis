@@ -44,7 +44,7 @@ export default function InfoCard(
               <li key={link.label}>
                 <a
                   href={link.href}
-                  class="btn btn-primary gap-3"
+                  class="btn btn-secondary md:gap-2 md:px-8 px-[1.5rem] gap-[1rem]"
                   target="_blank"
                 >
                   <Icon id={link.icon} size={18} strokeWidth={1} />

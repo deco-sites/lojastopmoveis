@@ -99,7 +99,7 @@ const Modal = ({
               } items-center justify-between border-solid border-b-[1px] border-[#F7F7F7] lg:mx-10`}
             >
               <h1 className="flex items-center justify-between gap-1">
-                <span class="text-base-content lg:text-[24px] text-[19px]">
+                <span class="text-[#1C1C1D] lg:text-[24px] text-[19px]">
                   {title}
                 </span>
               </h1>

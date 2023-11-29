@@ -64,7 +64,7 @@ function InputNewsletter(
     <input
       name={name}
       type={type}
-      class="input lg:h-12 h-9 px-5 join-item w-full rounded-full placeholder:text-placeholder outline-none lg:text-base text-xs"
+      class="input lg:h-12 h-9 px-5 join-item w-full rounded-full placeholder:text-placeholder outline-none lg:text-base text-xs border-2 border-base-200"
       placeholder={placeholder}
       required={required}
     />

@@ -38,13 +38,17 @@ function NavItemDropDown(
   if (!elements || !elements?.length) {
     return <span />;
   }
-  if (variant === "AllCategories") {
+  if (variant === "WithBrands") {
+    if (!elements[0].children) {
+      return <></>;
+    }
+    const navItemsCol = splitNatItems(elements[0].children, 5);
     return (
       <div
         class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-full shadow-md"
         style={{ top: "0px", left: "0px", marginTop: headerHeight }}
       >
-        <div class="container w-full pt-5 pb-5 m-auto px-5 flex items-start justify-start gap-16">
+        <div class="container w-full pt-5 pb-5 m-auto flex items-start gap-16 justify-between">
           {elements.map((element) => {
             return (
               <div class="mr-[83px]">
@@ -54,25 +58,26 @@ function NavItemDropDown(
                       href={element.href || ""}
                       class="hover:font-extrabold font-bold hover:underline transition-all duration-300"
                     >
-                      <span>{element.label}</span>
+                      <span class="text-secondary">{element.label}</span>
                     </a>
                   )
-                  : <span>{element.label}</span>}
-                <ul
-                  class={`mt-3 grid gap-x-[14px]`}
-                >
-                  {element.children &&
-                    element.children.map((child) => (
+                  : <span class="text-secondary">{element.label}</span>}
+                  <div class="flex mt-4 gap-[40px]">
+                  {navItemsCol.map((column) => (
+                  <ul class="flex items-start justify-start flex-col">
+                    {column.map((node) => (
                       <li class="mb-3">
                         <a
-                          class="text-sm text-base-content hover:font-bold hover:underline transition-all duration-300"
-                          href={child.href || ""}
+                          class="text-sm text-primary hover:font-bold hover:underline transition-all duration-300"
+                          href={node.href || ""}
                         >
-                          <span>{child.label}</span>
+                          <span>{node.label}</span>
                         </a>
                       </li>
                     ))}
-                </ul>
+                  </ul>
+                ))}
+                </div>
               </div>
             );
           })}
@@ -91,19 +96,19 @@ function NavItemDropDown(
   }
   const navItemsCol = variant === "AllCategories"
     ? splitNatItems(elements, 16)
-    : splitNatItems(elements, 8);
+    : splitNatItems(elements, 5);
   return (
     <div
       class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-full shadow-md"
       style={{ top: "0px", left: "0px", marginTop: headerHeight }}
     >
-      <div class="container w-full pt-5 pb-5 m-auto px-5 flex items-start justify-start gap-16">
+      <div class="container w-full pt-5 pb-[5.25rem] m-auto px-5 flex items-start justify-start gap-[3rem] ">
         {navItemsCol.map((column) => (
-          <ul class="flex items-start justify-start flex-col">
+          <ul class="flex items-start justify-start flex-col ">
             {column.map((node) => (
               <li class="mb-3">
                 <a
-                  class="text-sm text-base-content hover:font-bold hover:underline transition-all duration-300"
+                  class="text-sm text-primary hover:font-bold hover:underline transition-all duration-300"
                   href={node.href || ""}
                 >
                   <span>{node.label}</span>
@@ -127,7 +132,7 @@ function NavItem({ item }: { item: INavItem }) {
     >
       <a
         href={href}
-        class={`px-4 py-2 my-2 w-full text-center ${
+        class={`px-4 py-2 my-2 w-full text-center group-hover:bg-white rounded-3xl ${
           highlighted ? "bg-white rounded-3xl flex justify-center gap-2" : ""
         }`}
       >
@@ -138,7 +143,7 @@ function NavItem({ item }: { item: INavItem }) {
           class={`relative text-sm transition-all font-bold duration-300 ${
             highlighted
               ? "text-base-content"
-              : "text-white group-hover:text-emphasis"
+              : "text-white group-hover:text-primary"
           }`}
         >
           {label}

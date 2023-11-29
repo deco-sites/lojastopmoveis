@@ -64,7 +64,7 @@ function Result({
               {sortOptions.length > 0
                 ? (
                   <label class="flex gap-[20px] w-1/2 lg:w-auto items-center">
-                    <span class="text-[#4A4B51] text-sm max-lg:hidden whitespace-nowrap lg:inline">
+                    <span class="text-primary text-sm max-lg:hidden whitespace-nowrap lg:inline">
                       Ordenar
                     </span>
                     <Sort sortOptions={sortOptions} />

@@ -20,7 +20,7 @@ const Button = forwardRef<HTMLButtonElement, Props>(({
 }, ref) => (
   <button
     {...props}
-    className={`rounded-full border-2 border-solid no-animation ${_class}`}
+    className={`rounded-full border border-solid no-animation ${_class}`}
     disabled={disabled || loading}
     type={type}
     ref={ref}

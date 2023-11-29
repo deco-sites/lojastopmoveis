@@ -133,7 +133,7 @@ function ProductShelf({
               style={{
                 minHeight: "28px",
               }}
-              class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100"
+              class="btn btn-circle border-none shadow-md bg-secondary lg:opacity-60 lg:hover:bg-secondary lg:hover:opacity-100"
             >
               <Icon
                 size={32}
@@ -152,7 +152,7 @@ function ProductShelf({
               style={{
                 minHeight: "28px",
               }}
-              class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100"
+              class="btn btn-circle border-none shadow-md bg-secondary lg:opacity-60 lg:hover:bg-secondary lg:hover:opacity-100"
             >
               <Icon
                 size={32}

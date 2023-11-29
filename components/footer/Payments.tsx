@@ -18,7 +18,7 @@ export default function FooterSectionList({ list, label }: FooterSectionList) {
 
   return (
     <div>
-      <span class="text-base text-base-content font-medium max-md:text-content-primary">
+      <span class="text-base text-primary font-medium max-md:text-content-primary">
         {label}
       </span>
       <ul class="flex flex-wrap gap-2 pt-5">

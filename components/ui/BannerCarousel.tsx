@@ -235,7 +235,7 @@ function Buttons({ className }: ButtonsProps) {
           <Icon
             class="text-primary"
             size={32}
-            id="LeftArrowFigma"
+            id="LeftArrowBanner"
           />
         </Slider.PrevButton>
       </div>
@@ -246,7 +246,7 @@ function Buttons({ className }: ButtonsProps) {
           <Icon
             class="text-primary"
             size={32}
-            id="RightArrowFigma"
+            id="RightArrowBanner"
           />
         </Slider.NextButton>
       </div>

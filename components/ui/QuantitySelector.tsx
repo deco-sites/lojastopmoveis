@@ -51,7 +51,7 @@ function QuantitySelector(
           />
         </Button>
         <input
-          class={`text-center rounded-lg border-base-200 w-12 h-12 border-2 mx-2.5 text-sm font-bold text-base-content`}
+          class={`text-center rounded-lg border-base-200 w-12 h-12 border-2 mx-2.5 text-sm font-bold text-primary`}
           style={`width: ${inputWidth}px; height: ${inputHeight}px`}
           type="number"
           inputMode="numeric"

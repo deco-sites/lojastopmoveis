@@ -29,7 +29,7 @@ function HeaderLayout(
         <div class="flex items-center gap-5">
           <Buttons variant="menu" />
           <a href="/" class="" aria-label="Store logo">
-            <Icon id="Logo" class="max-w-[33vw]" width={120} height={27} />
+            <Icon id="Logo" class="max-w-[33vw] w-[54.1px] h-[40px] md:w-[94.6px] md:h-[70px]" width={94.6} height={70} />
           </a>
         </div>
         <div class="max-lg:hidden flex justify-between">
@@ -38,7 +38,7 @@ function HeaderLayout(
           <div class="flex items-center xl:gap-4 lg:gap-2">
             <Buttons variant="search" />
             <SearchBar searchbar={{ ...searchbar, variant: "mobile" }} />
-            <Buttons variant="chat" />
+            <Buttons variant="wishlist" />
             <div class="max-lg:hidden rounded-full border-2 border-solid no-animation relative btn-square btn-ghost flex items-center justify-center group">
               <Icon
                 class="text-base-content"
@@ -47,9 +47,12 @@ function HeaderLayout(
                 height={25}
                 strokeWidth={1}
               />
-              <div class="absolute hidden hover:flex group-hover:flex bg-[#F3F3F4] top-[40px] shadow whitespace-nowrap p-[24px] flex-col z-10 rounded gap-[6px]">
+              <div class="absolute hidden hover:flex group-hover:flex bg-secondary text-[#FFFFFF] top-[50px] shadow whitespace-nowrap p-[24px] flex-col z-10 gap-[6px] rounded-[10px]">
                 <a href="/my-account">Minha conta</a>
                 <a href="/my-account/orders">Meus pedidos</a>
+                <a href="/my-account/orders">Meus favoritos</a>
+                <div class="h-[1px] bg-secondary-content w-[160px] my-[14px]"/>
+                <a href="/my-account">Sair</a>
               </div>
             </div>
             <Buttons variant="cart" />

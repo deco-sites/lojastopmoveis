@@ -77,7 +77,7 @@ function InputNewsletter(
     <input
       name={name}
       type={type}
-      class="input lg:h-12 h-9 px-5 join-item w-full mb-2.5 first:mt-5 border-2 border-neutral rounded-full placeholder:text-placeholder !outline-none lg:text-base text-xs"
+      class="input lg:h-12 h-9 px-5 join-item w-full mb-2.5 first:mt-5 border-2 border-[#C5C6CB] rounded-full placeholder:text-placeholder !outline-none lg:text-base text-xs"
       placeholder={placeholder}
       required={required}
     />
@@ -205,8 +205,8 @@ function NewsletterModal(
                 <Icon
                   class="mx-auto mb-5 block"
                   id="Logo"
-                  height={27}
-                  width={120}
+                  height={70}
+                  width={94.6}
                 />
                 <div
                   dangerouslySetInnerHTML={{ __html: text }}
@@ -226,7 +226,7 @@ function NewsletterModal(
                       type="submit"
                       class={`capitalize md:ml-5 mt-2.5 font-semibold btn rounded-full join-item btn-${
                         BUTTON_VARIANTS[form?.button?.variant as string] ||
-                        BUTTON_VARIANTS["primary"]
+                        BUTTON_VARIANTS["secondary"]
                       }`}
                       disabled={loading}
                     >

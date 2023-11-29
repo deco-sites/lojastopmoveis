@@ -24,7 +24,7 @@ function SearchControls(
   return (
     <>
       <Button
-        class={`btn justify-between w-1/2 lg:w-48 btn-sm font-normal max-lg:font-bold max-lg:tracking-[1px] max-lg:text-primary text-base-200 h-[34px] border-2 border-base-200 bg-white hover:bg-white ${
+        class={`btn justify-between w-1/2 lg:w-48 btn-sm font-normal max-lg:font-bold max-lg:tracking-[1px] max-lg:text-secondary text-secondary h-[34px] uppercase border border-secondary bg-white hover:bg-white ${
           displayFilter ? "" : "lg:hidden"
         }`}
         onClick={() => {
@@ -33,7 +33,7 @@ function SearchControls(
       >
         Filtrar
         <Icon
-          id="Plus"
+          id="PlusFilter"
           size={20}
           strokeWidth={2}
           class="text-primary"

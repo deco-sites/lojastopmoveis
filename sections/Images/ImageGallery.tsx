@@ -49,10 +49,10 @@ export default function ImageGallery(props: Props) {
         <a
           target={item.blank ? "_blank" : "_self"}
           href={item.href}
-          class="block relative overflow-hidden rounded-xl w-full m-auto group"
+          class="relative overflow-hidden rounded-xl w-full m-auto group flex flex-col-reverse items-center"
         >
           {item.title && (
-            <span class="absolute bottom-0 mb-[30px] bg-primary rounded-full px-10 py-[17px] left-1/2 -translate-x-1/2 z-30 max-sm:text-[19px] text-[19px] lg:text-[19px] font-bold text-base-100 whitespace-nowrap">
+            <span class=" text-primary bottom-0 mb-[30px] px-10 py-[17px] left-1/2 z-30 max-sm:text-[19px] text-[19px] lg:text-[19px] font-bold whitespace-nowrap">
               {item.title}
             </span>
           )}
@@ -69,7 +69,7 @@ export default function ImageGallery(props: Props) {
             preload={undefined}
             loading={item.preload ? "eager" : "lazy"}
             class={`w-full h-full scale-100 ${
-              hoverEffect ? "group-hover:scale-125" : ""
+              hoverEffect ? "group-hover:scale-110" : ""
             } transition-all duration-700`}
             src={item.image}
             alt={item.alt}
