@@ -19,7 +19,7 @@ export default function SearchPagination({ pageInfo }: Props) {
           {pageInfo.currentPage - 1}
         </a>
       )}
-      <span class="w-10 h-10 bg-base-content rounded-full text-base-100 flex items-center justify-center text-sm font-bold">
+      <span class="w-10 h-10 border border-secondary text-secondary hover:btn-secondary rounded-full flex items-center justify-center text-sm font-bold">
         {pageInfo.currentPage}
       </span>
       {pageInfo.nextPage && (

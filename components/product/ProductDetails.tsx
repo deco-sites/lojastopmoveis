@@ -107,12 +107,12 @@ function ProductInfo(
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
-              <span class="font-medium text-[19px] text-primary">
+              <span class="font-medium text-[19px] text-secondary">
                 {formatPrice(price, offers!.priceCurrency!)}
               </span>
             </div>
             <div class="flex flex-col">
-              <span>
+              <span class="text-[#4A4B51]">
                 ou {installment?.billingDuration}x de {formatPrice(
                   installment?.billingIncrement,
                   offers!.priceCurrency,
@@ -179,7 +179,7 @@ function ProductInfo(
       {/* Share Product on Social Networks */}
       {shareableNetworks && (
         <div class="flex items-center gap-5 my-5">
-          <span class="text-xs text-base-300">Compartilhar</span>
+          <span class="text-xs text-[#4A4B51]">Compartilhar</span>
           <ul class="gap-2 flex items-center justify-between">
             {shareableNetworks.map((network) => (
               <li class="bg-secondary w-8 h-8 rounded-full hover:bg-primary group transition-all">

@@ -181,7 +181,7 @@ function ProductCard(
 
   return (
     <div
-      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-5 ${
+      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-5 h-[100%] ${
         align === "center" ? "text-center" : "text-start"
       } ${
         l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
@@ -264,7 +264,7 @@ function ProductCard(
         </a>
       </figure>
       {/* Prices & Name */}
-      <div class="flex-auto flex flex-col">
+      <div class="flex-auto flex flex-col justify-between">
         {/* SKU Selector */}
         {(!l?.elementsPositions?.skuSelector ||
           l?.elementsPositions?.skuSelector === "Top") && (

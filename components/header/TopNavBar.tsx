@@ -63,7 +63,7 @@ function TipItem(alert: Alerts) {
 
 function TopNavBar({ alerts = [], interval = 5 }: Props) {
   const id = useId();
-  const { displayTopBar } = useUI();
+  const { displayTopBar, headerHeight } = useUI();
 
   return (
     <div class={displayTopBar.value ? "flex" : "hidden"}>
@@ -138,7 +138,10 @@ function TopNavBar({ alerts = [], interval = 5 }: Props) {
       <CloseButton
         classes={"absolute max-lg:w-4 max-lg:h-4 right-5 top-[7px]"}
         size={20}
-        onClickBtn={() => displayTopBar.value = false}
+        onClickBtn={() => {
+          displayTopBar.value = false;
+          headerHeight.value = "142px"
+        }}
       />
     </div>
   );

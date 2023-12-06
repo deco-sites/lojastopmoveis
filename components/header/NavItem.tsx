@@ -1,4 +1,4 @@
-import { headerHeight } from "./constants.ts";
+import { useUI } from "$store/sdk/useUI.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 
@@ -35,6 +35,7 @@ function NavItemDropDown(
     image?: Image;
   },
 ) {
+  const { headerHeight } = useUI();
   if (!elements || !elements?.length) {
     return <span />;
   }
@@ -46,7 +47,7 @@ function NavItemDropDown(
     return (
       <div
         class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-full shadow-md"
-        style={{ top: "0px", left: "0px", marginTop: headerHeight }}
+        style={{ top: "0px", left: "0px", marginTop: headerHeight.value }}
       >
         <div class="container w-full pt-5 pb-5 m-auto flex items-start gap-16 justify-between">
           {elements.map((element) => {
@@ -100,7 +101,7 @@ function NavItemDropDown(
   return (
     <div
       class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-full shadow-md"
-      style={{ top: "0px", left: "0px", marginTop: headerHeight }}
+      style={{ top: "0px", left: "0px", marginTop: headerHeight.value }}
     >
       <div class="container w-full pt-5 pb-[5.25rem] m-auto px-5 flex items-start justify-start gap-[3rem] ">
         {navItemsCol.map((column) => (

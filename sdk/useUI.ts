@@ -10,6 +10,8 @@ const displayMenu = signal(false);
 const displaySearchbar = signal(false);
 const displayBuyWarning = signal(false);
 const displayTopBar = signal(true);
+const headerHeight = signal("176px")
+
 
 const state = {
   displayCart,
@@ -17,6 +19,7 @@ const state = {
   displaySearchbar,
   displayBuyWarning,
   displayTopBar,
+  headerHeight
 };
 
 export const useUI = () => state;

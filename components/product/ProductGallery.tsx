@@ -21,7 +21,7 @@ function ProductGallery({ products }: Props) {
           layout={{
             discount: { label: "OFF", variant: "secondary" },
             hide: { skuSelector: true, productDescription: true },
-            basics: { contentAlignment: "Center" },
+            basics: { contentAlignment: "Center", ctaVariation: "secondary" },
             onMouseOver: {
               image: "Zoom image",
               showCardShadow: true,

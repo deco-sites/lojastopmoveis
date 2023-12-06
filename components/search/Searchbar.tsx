@@ -84,6 +84,7 @@ function Searchbar({
   const hasProducts = Boolean(suggestions.value?.products?.length);
   const hasTerms = Boolean(suggestions.value?.searches?.length);
   const notFound = !hasProducts && !hasTerms;
+  const { displaySearchbar } = useUI();
 
   useEffect(() => {
     if (!searchInputRef.current) {
@@ -167,6 +168,17 @@ function Searchbar({
 
   return (
     <div class="flex flex-col p-4 md:py-6 md:px-20 container">
+      <div class="items-center flex justify-between mb-[20px] border-b border-b-[#C5C6CB] lg:hidden">
+        <span class="text-primary text-[19px] capitalize">Busca</span>
+        <button
+          class="btn-square btn-ghost relative flex justify-center items-center rounded-full"
+          onClick={() => {
+            displaySearchbar.value = false;
+          }}
+        >
+          <Icon id="XMarkSearch" width={24} height={24} strokeWidth={2} />
+        </button>
+      </div>
       {Searchbar}
       {hide.results
         ? null

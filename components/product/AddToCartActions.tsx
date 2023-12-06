@@ -33,7 +33,7 @@ export default function AddToCartActions(
         productGroupId={productGroupID}
         quantity={quantity}
         label="Comprar agora"
-        classes="btn-primary btn-block transition-all font-bold text-sm tracking-[1px] py-[12px] px-10"
+        classes="btn-secondary btn-block transition-all font-bold text-sm tracking-[1px] py-[12px] px-10"
       />
     </div>
   );

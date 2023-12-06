@@ -109,7 +109,7 @@ const Modal = ({
               >
                 <Icon
                   class="text-base-content"
-                  id={closeIcon || "XMark"}
+                  id={closeIcon || "XMarkSearch"}
                   width={25}
                   height={25}
                   strokeWidth={2}
