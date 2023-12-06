@@ -182,7 +182,7 @@ function ProductInfo(
           <span class="text-xs text-[#4A4B51]">Compartilhar</span>
           <ul class="gap-2 flex items-center justify-between">
             {shareableNetworks.map((network) => (
-              <li class="bg-secondary w-8 h-8 rounded-full hover:bg-primary group transition-all">
+              <li class="bg-secondary w-8 h-8 rounded-full group transition-all">
                 <a
                   href={getShareLink({
                     network,
