@@ -32,7 +32,7 @@ export default function AddToCartActions(
         name={productName}
         productGroupId={productGroupID}
         quantity={quantity}
-        label="Comprar agora"
+        label="Adicionar ao carrinho"
         classes="btn-secondary btn-block transition-all font-bold text-sm tracking-[1px] py-[12px] px-10"
       />
     </div>
