@@ -24,7 +24,7 @@ function AsideMenu(
   const currentRoute = menuItems.find((item) => item.href === currentUrl);
 
   return (
-    <aside class="md:min-w-[20%] font-medium text-secondary-focus flex md:justify-end">
+    <aside class="md:min-w-[100%] font-medium text-secondary-focus flex md:justify-end">
       <ul
         class={`md:join join-vertical gap-[10px] w-full ${
           currentUrl === "/i" ? "" : "hidden"
@@ -42,7 +42,7 @@ function AsideMenu(
                     ? "bg-primary text-white hover:bg-primary"
                     : "hover:bg-white hover:border hover:border-opacity-100"
                 }
-                  btn btn-ghost btn-block justify-between text-primary border-opacity-0 border-base-300
+                  btn btn-ghost btn-block justify-between text-primary border-opacity-0 border-base-300 flex-nowrap	whitespace-nowrap
                 `}
                 href={item.href}
               >
