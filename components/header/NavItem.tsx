@@ -128,7 +128,7 @@ function NavItem({ item }: { item: INavItem }) {
   return (
     <li
       class={`group flex items-center ${
-        highlighted ? "w-[260px]" : "flex-1"
+        highlighted ? "2xl:2-[260px]" : "flex-1"
       } justify-center`}
     >
       <a
@@ -141,7 +141,7 @@ function NavItem({ item }: { item: INavItem }) {
           <Icon id="AllCategories" width={18} height={18} strokeWidth={1} />
         )}
         <span
-          class={`relative text-sm transition-all font-bold duration-300 ${
+          class={`relative text-xs  transition-all font-bold duration-300 ${
             highlighted
               ? "text-base-content"
               : "text-white group-hover:text-primary"

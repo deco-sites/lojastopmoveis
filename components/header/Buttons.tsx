@@ -31,7 +31,7 @@ function MenuButton() {
 
   return (
     <Button
-      class="rounded-full border-2 border-solid no-animation btn-ghost relative flex justify-center items-center lg:hidden"
+      class="rounded-full border-2 border-solid no-animation btn-ghost relative flex justify-center items-center xl:hidden"
       aria-label="open menu"
       onClick={() => {
         displayMenu.value = true;

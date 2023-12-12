@@ -101,7 +101,7 @@ function TopNavBar({ alerts = [], interval = 5 }: Props) {
       </div>
 
       <div class="h-[34px] max-lg:hidden w-full">
-        <div class="flex justify-center items-center gap-28">
+        <div class="flex justify-center items-center gap-8 2xl:gap-28">
           {alerts.map((alert, index) => (
             <>
               <div class="flex items-center">
