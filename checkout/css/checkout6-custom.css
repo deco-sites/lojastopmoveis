@@ -4985,7 +4985,7 @@
     right: 0;
     margin: 0;
     width: 100%;
-    display: flex !important;
+    display: flex;
     flex-direction: column-reverse;
     box-sizing: border-box
   }
