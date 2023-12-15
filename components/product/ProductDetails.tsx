@@ -101,7 +101,7 @@ function ProductInfo(
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-5">
-            <div class="flex flex-row gap-2 items-center">
+            <div class="flex flex-col items-start gap-2 ">
               {listPrice !== price && (
                 <span class="line-through text-base-300 text-xs">
                   {formatPrice(listPrice, offers!.priceCurrency!)}
