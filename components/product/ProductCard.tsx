@@ -330,7 +330,7 @@ function ProductCard(
                     ? ""
                     : (
                       <div class="text-sm font-normal text-[#707279] mt-[5px]">
-                        ou {installment?.billingDuration}x de ${formatPrice(
+                        ou {installment?.billingDuration}x de {formatPrice(
                           installment?.billingIncrement,
                           offers!.priceCurrency!,
                         )}
