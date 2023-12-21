@@ -119,7 +119,7 @@ function ProductInfo(
                 <span class="font-medium text-[24px] text-secondary">
                   {formatPrice(price, offers!.priceCurrency!)}
                 </span>
-                <span class="font-bold text-[10px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
+                <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
                   10% de desconto no boleto
                 </span>
               </div>
