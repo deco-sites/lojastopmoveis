@@ -114,7 +114,7 @@ function Filters({ filters }: Props) {
         </li>
       ))}
       <li class="flex justify-center	 ">
-        <a class="btn btn-outline gap-2 mx-4 border-secondary text-secondary uppercase font-bold w-full font-condensed" href="?">Limpar Filtros</a>
+        <a class="btn btn-outline gap-2 mx-4 border-secondary text-secondary uppercase font-bold w-full font-condensed lg:hidden" href="?">Limpar Filtros</a>
       </li>
     </ul>
   );
