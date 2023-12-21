@@ -70,7 +70,7 @@ function Sort({ sortOptions }: Props) {
       >
         {sortOptions.map(({ value, label }) => (
           <li
-            class="text-sm text-primary h-9 hover:cursor-pointer px-5 md:opacity-70 hover:bg-neutral-200 flex justify-center"
+            class="text-xs text-primary h-9 hover:cursor-pointer px-5 md:opacity-70 hover:bg-neutral-200 flex justify-center"
             onClick={() => applySort(value)}
           >
             {labels[label as LabelKey]}
