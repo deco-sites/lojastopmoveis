@@ -44,11 +44,11 @@ export default function InfoCard(
               <li key={link.label}>
                 <a
                   href={link.href}
-                  class="btn btn-secondary md:gap-2 md:px-8 px-[1.5rem] gap-[1rem]"
+                  class="btn btn-secondary md:gap-2 md:px-8 px-[16px] uppercase"
                   target="_blank"
                 >
                   <Icon id={link.icon} size={18} strokeWidth={1} />
-                  <span class="block max-[330px]:text-xs">{link.label}</span>
+                  <span class="block max-[330px]:text-xs font-medium">{link.label}</span>
                 </a>
               </li>
             ))}

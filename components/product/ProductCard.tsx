@@ -286,7 +286,7 @@ function ProductCard(
           : (
             <div class="flex flex-col gap-0 mt-[15px]">
               {l?.hide.productName ? "" : (
-                <h2 class="text-sm text-[#4A4B51]">
+                <h2 class="text-sm text-[#4A4B51] line-clamp-3 max-lg:min-h-[60px]">
                   {isVariantOf?.name || name}
                 </h2>
               )}

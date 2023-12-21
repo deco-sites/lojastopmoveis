@@ -36,7 +36,7 @@ function Notify({ productID }: Props) {
       onSubmit={handleSubmit}
     >
       <div class="flex flex-col gap-1">
-        <span class="text-xl text-primary uppercase">
+        <span class="text-xl text-secondary uppercase">
           Produto indisponível
         </span>
         <span class="text-[#707279]">
@@ -60,7 +60,7 @@ function Notify({ productID }: Props) {
 
       <Button
         type="submit"
-        class="btn-secondary font-bold text-xs tracking-[1px] py-3 px-[26px] disabled:loading w-fit"
+        class="bg-[#F9BE00] text-primary font-bold text-xs tracking-[1px] py-3 px-[26px] disabled:loading w-fit"
         disabled={loading}
       >
         Avise-me

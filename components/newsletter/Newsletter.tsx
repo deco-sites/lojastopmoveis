@@ -64,7 +64,7 @@ function InputNewsletter(
     <input
       name={name}
       type={type}
-      class="input lg:h-12 h-9 px-5 join-item w-full rounded-full placeholder:text-placeholder outline-none lg:text-base text-xs border-2 border-base-200"
+      class="input lg:h-12 h-9 px-5 join-item w-full rounded-full placeholder:text-[#C5C6CB] outline-none lg:text-base text-xs border-2 "
       placeholder={placeholder}
       required={required}
     />
@@ -150,7 +150,7 @@ function Form(props: Props) {
                   minWidth: "150px",
                 }}
                 type="submit"
-                class={`capitalize md:ml-5 font-medium btn disabled:loading max-lg:self-start rounded-full join-item btn-${
+                class={`uppercase md:ml-5 font-medium btn disabled:loading max-lg:self-start font-condensed rounded-full join-item btn-${
                   BUTTON_VARIANTS[form?.button?.variant as string] ||
                   BUTTON_VARIANTS["primary"]
                 }`}

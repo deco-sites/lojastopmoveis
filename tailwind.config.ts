@@ -8,6 +8,9 @@ export default {
     container: {
       center: true,
     },
+    fontFamily: {
+      "condensed": ["Asap Condensed", "Arial", "sans-serif"],
+    },
     extend: {
       colors: {
         "emphasis": "#E93A7D",

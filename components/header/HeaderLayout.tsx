@@ -5,6 +5,7 @@ import Buttons from "$store/islands/HeaderButton.tsx";
 import Modals from "$store/islands/HeaderModals.tsx";
 import SearchBar from "$store/islands/HeaderSearchbar.tsx";
 import BuyWarning from "$store/islands/BuyWarning.tsx";
+import { useUser } from "apps/vtex/hooks/useUser.ts";
 
 export interface Props {
   /**
@@ -23,6 +24,9 @@ function HeaderLayout(
     searchbar,
   }: Props,
 ) {
+
+  const { user } = useUser();
+
   return (
     <header class="z-50 py-2">
       <div class="flex justify-between items-center lg:p-0">
@@ -51,6 +55,16 @@ function HeaderLayout(
                 <a href="/my-account/orders">Meus pedidos</a>
                 <a href="/my-account/orders">Meus favoritos</a>
                 <div class="h-[1px] bg-secondary-content w-[160px] my-[14px]"/>
+                {user.value? (
+                  <>
+                    <a href="/api/vtexid/pub/logout?scope=topmoveis&returnUrl=https%3A%2F%2Fdeco-sites-lojastopmoveis.deno.dev%2F" >Sair</a>
+                  </>
+                )
+                : (
+                  <>
+                    <a href="/my-account/login">Entrar</a>
+                  </>
+                )}
               </div>
             </div>
             <Buttons variant="cart" />

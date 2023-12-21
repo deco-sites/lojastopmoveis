@@ -170,7 +170,7 @@ function Footer(
                     name="my-accordion-mobile--footer"
                     class="absolute left-0 w-full top-0"
                   />
-                  <div class="collapse-title border-b border-[##D2D1D7] py-2.5 text-base-content font-medium pl-0 flex items-center justify-between pr-0">
+                  <div class="collapse-title border-b border-primary py-2.5 text-primary font-medium pl-0 flex items-center justify-between pr-0">
                     {section.label}
                   </div>
                   <div class="collapse-content pl-0">

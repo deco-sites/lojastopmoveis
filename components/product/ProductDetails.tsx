@@ -96,23 +96,36 @@ function ProductInfo(
             </span>
           </div>
         )}
+        <div class="flex gap-[2px]">
+          <span class="text-[#4A4B51] text-sm">
+            Vendido e entregue por: 
+          </span>
+          <span class="text-secondary text-sm">
+            LojasTopMoveis
+          </span>
+        </div>
       </div>
       {/* Prices */}
       {availability === "https://schema.org/InStock"
         ? (
-          <div class="mt-5">
+          <div class="mt-4">
             <div class="flex flex-col items-start gap-2 ">
               {listPrice !== price && (
-                <span class="line-through text-base-300 text-xs">
+                <span class="line-through text-base-300 text-sm">
                   {formatPrice(listPrice, offers!.priceCurrency!)}
                 </span>
               )}
-              <span class="font-medium text-[19px] text-secondary">
-                {formatPrice(price, offers!.priceCurrency!)}
-              </span>
+              <div class="flex items-center gap-[10px]">
+                <span class="font-medium text-[24px] text-secondary">
+                  {formatPrice(price, offers!.priceCurrency!)}
+                </span>
+                <span class="font-bold text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
+                  10% de desconto no boleto
+                </span>
+              </div>
             </div>
             <div class="flex flex-col">
-              <span class="text-[#4A4B51]">
+              <span class="text-[#4A4B51] text-sm">
                 ou {installment?.billingDuration}x de {formatPrice(
                   installment?.billingIncrement,
                   offers!.priceCurrency,
@@ -162,10 +175,24 @@ function ProductInfo(
           />
         )
         : null}
-      {/* Description card */}
+      {/* Info card */}
       <details className="collapse collapse-plus mt-[30px]">
-        <summary className="collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-medium">
-          Descrição
+        <summary className="after:!top-[.7rem] collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-medium text-primary">
+          Informações do produto
+        </summary>
+        <div className="readmore !flex-col text-xs px-0 pl-[30px] mt-3 leading-tight collapse-content text-base-300">
+          <input type="checkbox" id="readmore" className="readmore-toggle" />
+          <p
+            className="readmore-content whitespace-break-spaces !line-clamp-none"
+            dangerouslySetInnerHTML={{ __html: description ? description : "" }}
+          >
+          </p>
+        </div>
+      </details>
+      {/* characteristics card */}    
+      <details className="collapse collapse-plus mt-[10px]">
+        <summary className="after:!top-[.7rem] collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-medium text-primary">
+          Características do produto
         </summary>
         <div className="readmore !flex-col text-xs px-0 pl-[30px] mt-3 leading-tight collapse-content text-base-300">
           <input type="checkbox" id="readmore" className="readmore-toggle" />

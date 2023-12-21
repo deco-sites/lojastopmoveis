@@ -1,6 +1,7 @@
 import Avatar from "$store/components/ui/Avatar.tsx";
 import { parseRange } from "deco-sites/std/utils/filters.ts";
 import { formatPrice } from "$store/sdk/format.ts";
+import Button from "$store/components/ui/Button.tsx"
 import type {
   Filter,
   FilterToggle,
@@ -112,6 +113,9 @@ function Filters({ filters }: Props) {
           </details>
         </li>
       ))}
+      <li class="flex justify-center	 ">
+        <a class="btn btn-outline gap-2 mx-4 border-secondary text-secondary uppercase font-bold w-full font-condensed" href="?">Limpar Filtros</a>
+      </li>
     </ul>
   );
 }

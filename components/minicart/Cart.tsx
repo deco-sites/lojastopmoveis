@@ -182,7 +182,7 @@ function Cart(props: ICartProps) {
               data-deco="buy-button"
               class={`h-10 btn-${
                 BUTTON_VARIANTS[buttonMode as string]
-              } font-bold text-xs uppercase w-full text-base-100 lg:text-sm lg:h-12`}
+              } font-medium text-xs uppercase w-full text-base-100 lg:text-sm lg:h-12 font-condensed`}
               disabled={loading.value || cart.value.items.length === 0}
               onClick={() => {
                 sendEvent({

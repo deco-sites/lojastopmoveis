@@ -67,7 +67,7 @@ export default function NotFound({
           </div>
         </div>
         {hints && (
-          <div class="bg-[#DEE0E8] p-5 flex flex-col gap-[20px] text-primary rounded-[20px] lg:justify-center lg:p-[60px] h-fit max-lg:mb-[30px]">
+          <div class="bg-[#F9BE00] p-5 flex flex-col gap-[20px] text-primary rounded-[20px] lg:justify-center lg:p-[60px] h-fit max-lg:mb-[30px]">
             <h6 class="font-bold lg:text-xl">{hints.title}</h6>
             <ul class="flex flex-col gap-3 list-disc list-inside">
               {hints.hints.map((hint) => (

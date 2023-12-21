@@ -24,7 +24,7 @@ function SearchControls(
   return (
     <>
       <Button
-        class={`btn justify-between w-1/2 lg:w-48 btn-sm font-normal max-lg:font-bold max-lg:tracking-[1px] max-lg:text-secondary text-secondary h-[34px] uppercase border border-secondary bg-white hover:bg-white ${
+        class={`btn justify-between w-1/2 lg:w-48 btn-sm font-normal max-lg:font-bold max-lg:tracking-[1px] max-lg:text-secondary text-secondary h-[46px] uppercase border border-secondary bg-white hover:bg-white font-condensed ${
           displayFilter ? "" : "lg:hidden"
         }`}
         onClick={() => {
