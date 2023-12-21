@@ -50,7 +50,7 @@ function Sort({ sortOptions }: Props) {
           ? <span class="text-base-content">{labels[sort as LabelKey]}</span>
           : (
             <>
-              <span class=" uppercase text-secondary lg:text-base-content lg:hidden font-bold tracking-[1px]">
+              <span class=" uppercase text-secondary lg:text-base-content lg:hidden font-bold tracking-[1px] font-condensed">
                 Ordenar
               </span>
               <span class="max-lg:hidden">Selecionar</span>
