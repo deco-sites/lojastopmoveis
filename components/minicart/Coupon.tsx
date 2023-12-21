@@ -38,7 +38,7 @@ function Coupon() {
           placeholder={"Digite seu cupom aqui"}
         />
         <Button
-          class="h-9 !border border-primary text-primary font-bold tracking-[1px] text-xs px-[26px] w-fit hover:bg-[#2D2D2D] hover:text-[#fff]"
+          class="h-9 !border border-primary text-primary font-bold tracking-[1px] text-xs px-[26px] w-fit hover:bg-[#2D2D2D] hover:text-[#fff] font-condensed"
           type="submit"
           htmlFor="coupon"
           loading={loading.value}

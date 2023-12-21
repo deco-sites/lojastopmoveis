@@ -79,7 +79,7 @@ function ProductInfo(
   const { price, listPrice, seller, availability, installment } = useOffer(
     offers,
   );
-
+    
   return (
     <>
       {/* Code and name */}
@@ -92,7 +92,7 @@ function ProductInfo(
         {name && name?.length > 0 && (
           <div>
             <span class="text-sm text-base-300">
-              Referência: {name}
+              Referência: {productID}
             </span>
           </div>
         )}
@@ -119,7 +119,7 @@ function ProductInfo(
                 <span class="font-medium text-[24px] text-secondary">
                   {formatPrice(price, offers!.priceCurrency!)}
                 </span>
-                <span class="font-bold text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
+                <span class="font-bold text-[10px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
                   10% de desconto no boleto
                 </span>
               </div>

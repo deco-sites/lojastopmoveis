@@ -10,6 +10,7 @@ export interface Options {
   price: number;
   discount: number;
   quantity: number;
+  redirect?: boolean;
   /**
    * sku name
    */
@@ -18,7 +19,7 @@ export interface Options {
 }
 
 export const useAddToCart = (
-  { skuId, sellerId, price, discount, name, productGroupId, quantity }: Options,
+  { skuId, sellerId, price, discount, name, productGroupId, quantity, redirect }: Options,
 ) => {
   const isAddingToCart = useSignal(false);
   const { displayBuyWarning } = useUI();
@@ -55,6 +56,9 @@ export const useAddToCart = (
       displayBuyWarning.value = true;
     } finally {
       isAddingToCart.value = false;
+      if(redirect){
+        window.location.href="/checkout"
+      }
       setTimeout(function () {
         displayBuyWarning.value = false;
       }, 3000);

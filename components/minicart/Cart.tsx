@@ -110,7 +110,7 @@ function Cart(props: ICartProps) {
         </div>
         <Button
           data-deco="buy-button"
-          class="h-10 btn-outline border-primary-focus text-primary-focus font-bold	uppercase text-xs lg:text-sm transition-all lg:h-12 whitespace-nowrap px-6 hover:bg-[#2D2D2D] hover:text-[#fff]"
+          class="h-10 btn-outline border-primary-focus text-primary-focus font-bold	uppercase text-xs lg:text-sm transition-all lg:h-12 whitespace-nowrap px-6 hover:bg-[#2D2D2D] hover:text-[#fff] font-condensed"
           onClick={() => {
             displayCart.value = false;
           }}
@@ -169,7 +169,7 @@ function Cart(props: ICartProps) {
         <div class="p-4 flex justify-between mx-10 px-0 w-full gap-2 flex-col">
           <Button
             data-deco="buy-button"
-            class="h-10 btn-outline border-primary-focus text-primary-focus font-bold	uppercase text-xs lg:text-sm transition-all lg:h-12 whitespace-nowrap px-6 hover:bg-[#2D2D2D] hover:text-[#fff]"
+            class="h-10 btn-outline border-primary-focus text-primary-focus font-bold	uppercase text-xs lg:text-sm transition-all lg:h-12 whitespace-nowrap px-6 hover:bg-[#2D2D2D] hover:text-[#fff] font-condensed"
             disabled={loading.value || cart.value.items.length === 0}
             onClick={() => {
               displayCart.value = false;
