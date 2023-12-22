@@ -122,7 +122,7 @@ function ShippingSimulation({ items }: Props) {
             <Button
               type="submit"
               loading={loading.value}
-              class="btn-outline transition-all !border h-[2.25rem] px-[26px] text-xs tracking-[1px] font-bold"
+              class="btn-outline bg-primary text-white transition-all !border h-[2.25rem] px-[26px] text-xs tracking-[1px] hover:bg-[#464342] uppercase font-bold font-condensed"
             >
               Calcular
             </Button>
