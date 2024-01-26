@@ -10,7 +10,7 @@ const displayMenu = signal(false);
 const displaySearchbar = signal(false);
 const displayBuyWarning = signal(false);
 const displayTopBar = signal(true);
-const headerHeight = signal("176px")
+const headerHeight = signal("170px")
 
 
 const state = {

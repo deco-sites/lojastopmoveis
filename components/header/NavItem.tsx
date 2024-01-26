@@ -133,7 +133,7 @@ function NavItem({ item }: { item: INavItem }) {
     >
       <a
         href={href}
-        class={`px-4 pt-[5px] pb-[5px] my-2 w-full text-center group-hover:bg-white rounded-3xl ${
+        class={`px-4 pt-[5px] pb-[5px] my-2 w-full flex items-center text-center justify-center	 group-hover:bg-white rounded-3xl h-[34px] ${
           highlighted ? "bg-white rounded-3xl flex justify-center gap-2 pt-[8px] pb-[8px]" : ""
         }`}
       >
