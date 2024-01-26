@@ -248,68 +248,6 @@ function ProductInfo(
   );
 }
 
-/**
- * Here be dragons
- *
- * bravtexfashionstore (VTEX default fashion account) has the same images for different skus. However,
- * VTEX api does not return the same link for the same image. This causes the image to blink when
- * the user changes the selected SKU. To prevent this blink from happening, I created this function
- * bellow to use the same link for all skus. Example:
- *
- * {
-    skus: [
-      {
-        id: 1
-        image: [
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/123/a.jpg",
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/124/b.jpg",
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/125/c.jpg"
-        ]
-      },
-      {
-        id: 2
-        image: [
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/321/a.jpg",
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/322/b.jpg",
-          "https://bravtexfashionstore.vtexassets.com/arquivos/ids/323/c.jpg"
-        ]
-      }
-    ]
-  }
-
-  for both skus 1 and 2, we have the same images a.jpg, b.jpg and c.jpg, but
-  they have different urls. This function returns, for both skus:
-
-  [
-    "https://bravtexfashionstore.vtexassets.com/arquivos/ids/321/a.jpg",
-    "https://bravtexfashionstore.vtexassets.com/arquivos/ids/322/b.jpg",
-    "https://bravtexfashionstore.vtexassets.com/arquivos/ids/323/c.jpg"
-  ]
-
-  This is a very catalog dependent function. Feel free to change this as you wish
- */
-const useStableImages = (product: ProductDetailsPage["product"]) => {
-  const imageNameFromURL = (url = "") => {
-    const segments = new URL(url).pathname.split("/");
-    return segments[segments.length - 1];
-  };
-
-  const images = product.image ?? [];
-  const allImages = product.isVariantOf?.hasVariant.flatMap((p) => p.image)
-    .reduce((acc, img) => {
-      if (img?.url) {
-        acc[imageNameFromURL(img.url)] = img.url;
-      }
-      return acc;
-    }, {} as Record<string, string>) ?? {};
-
-  return images.map((img) => {
-    const name = imageNameFromURL(img.url);
-
-    return { ...img, url: allImages[name] ?? img.url };
-  });
-};
-
 function Details({
   page,
   variant,
@@ -326,13 +264,9 @@ function Details({
     item.name!.length > 1
   );
   const id = `product-image-gallery:${useId()}`;
-  const images = useStableImages(product);
 
-  const open = useSignal(false);
-  const zoomImage = useSignal(images[0].url);
-  const zoomX = useSignal(0);
-  const zoomY = useSignal(0);
-
+  const images = product.image!;
+  
   /**
    * Product slider variant
    */
@@ -349,7 +283,7 @@ function Details({
         >
           {/* Product Images */}
           <ProductDetailsImages
-            images={images}
+            images={product.image!}
             width={WIDTH}
             height={HEIGHT}
             aspect={ASPECT_RATIO}
