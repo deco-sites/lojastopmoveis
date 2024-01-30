@@ -43,7 +43,8 @@ function NavItemDropDown(
     if (!elements[0].children) {
       return <></>;
     }
-    const navItemsCol = splitNatItems(elements[0].children, 5);
+    
+    const navItemsCol = splitNatItems(elements[0].children, 14);
     return (
       <div
         class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-full shadow-md"

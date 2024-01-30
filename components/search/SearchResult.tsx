@@ -40,7 +40,8 @@ function Result({
       Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
     </h6>
   );
-
+    console.log(["page", page.breadcrumb])
+    console.log(["page", page.breadcrumb.numberOfItems])
   return (
     <>
       <div>

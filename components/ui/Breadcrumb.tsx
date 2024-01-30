@@ -10,14 +10,14 @@ function Breadcrumb({ class: _class, itemListElement = [] }: Props) {
 
   return (
     <div
-      class={`breadcrumbs ${_class} ${items.length <= 1 ? "h-0 p-0" : "py-5"}`}
+      class={`breadcrumbs ${_class} py-5`}
     >
       <ul class={``}>
         {items
           .filter(({ name, item }) => name && item)
           .map(({ name, item }, index) => {
             if (
-              (index > 1 && index != items.length - 1) || items.length <= 1
+              (index > 1 && index != items.length - 1)
             ) return;
             return (
               <li

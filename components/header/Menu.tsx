@@ -8,7 +8,7 @@ export interface Props {
 function MenuItem({ item }: { item: INavItem }) {
   const component = item?.children?.length
     ? (
-      item.variant === "AllCategories"
+      item.variant === "WithBrands"
         ? (
           <div class="collapse collapse-plus relative items-start border-[#C5C6CB] border-b rounded-none">
             <input
@@ -23,15 +23,7 @@ function MenuItem({ item }: { item: INavItem }) {
                 {item.children?.map((node) => (
                   <li class="">
                     <div class="collapse collapse-plus relative items-start">
-                      <input
-                        type="checkbox"
-                        class="absolute left-0 w-full top-0"
-                      />
-                      <div class="collapse-title min-h-0 p-0 py-2.5 font-dm-sans font-normal text-sm px-0 flex items-center justify-between after:!text-[20px]">
-                        {node.label}
-                      </div>
-                      <div class="collapse-content px-0 border-b border-[#C5C6CB]">
-                        <ul class="border-t border-border-[#C5C6CB] border-solid pt-0 px-0 pl-5">
+                      <ul class="border-t border-border-[#C5C6CB] border-solid pt-0 px-0 pl-5">
                           {node.children?.map((nodeChild) => (
                             <li class="">
                               <a
@@ -43,17 +35,7 @@ function MenuItem({ item }: { item: INavItem }) {
                               </a>
                             </li>
                           ))}
-                          <li class="">
-                            <a
-                              href={node.href}
-                              title={node.label}
-                              class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm`}
-                            >
-                              Mostrar tudo
-                            </a>
-                          </li>
                         </ul>
-                      </div>
                     </div>
                   </li>
                 ))}
@@ -135,7 +117,7 @@ function Menu({ items }: Props) {
       </ul>
       <a
         class="flex btn btn-outline gap-2 mx-4 mt-10 border-secondary text-secondary uppercase font-bold	"
-        href="/account"
+        href="/my-account"
       >
         <Icon id="MinhaConta" width={18} height={18} />
         <span class="tracking-[1px] text-xs">Minha conta</span>
