@@ -104,7 +104,7 @@ function Menu({ items }: Props) {
           Menu
         </div>
         <button
-          name="fechar modal"
+          name="fechar menu"
           class="btn-square btn-ghost relative flex justify-center items-center rounded-full"
           onClick={() => {
             displayMenu.value = false;

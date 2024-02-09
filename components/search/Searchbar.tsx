@@ -25,6 +25,7 @@ function CloseButton() {
 
   return (
     <Button
+      arial-label="fechar searchbar"
       class="btn-outline btn !border text-sm px-10 border-secondary text-secondary hover:btn-secondary hidden lg:block"
       onClick={() => (displaySearchbar.value = false)}
     >

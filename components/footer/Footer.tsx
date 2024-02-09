@@ -165,8 +165,8 @@ function Footer(
             >
               {sections.map((section) => (
                 <div class="collapse collapse-plus w-full rounded-none">
-                  <label for="my-accordion-mobile--footer"></label>
                   <input
+                    aria-labelledby="my-accordion-mobile--footer"
                     type="checkbox"
                     name="my-accordion-mobile--footer"
                     class="absolute left-0 w-full top-0"
