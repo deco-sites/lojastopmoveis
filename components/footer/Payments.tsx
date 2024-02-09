@@ -25,8 +25,8 @@ export default function FooterSectionList({ list, label }: FooterSectionList) {
         {list.map((item) => (
           item.href
             ? (
-              <a href={item.href} target="_blank">
-                <li class="rounded flex items-center justify-center">
+              <li class="rounded flex items-center justify-center">
+                <a href={item.href} target="_blank">
                   <img
                     loading="lazy"
                     src={item.image}
@@ -35,8 +35,8 @@ export default function FooterSectionList({ list, label }: FooterSectionList) {
                     alt={item.alt || "footer image"}
                     class="relative w-auto h-[30px] mix-blend-multiply"
                   />
-                </li>
-              </a>
+                </a>
+              </li>
             )
             : (
               <li class="rounded flex items-center justify-center">

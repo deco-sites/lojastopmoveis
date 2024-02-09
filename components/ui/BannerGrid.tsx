@@ -1,5 +1,6 @@
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
 import Icon from "$store/components/ui/Icon.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 export type SemanticColors =
   | "primary"
@@ -286,7 +287,7 @@ export default function BannnerGrid({
   banners = [],
 }: Props) {
   return (
-    <section class="w-full md:px-0 mx-auto py-12">
+    <section class="w-full md:px-0 mx-auto py-[0] lg:py-12">
       <div
         class={`flex flex-col grid-cols-auto lg:grid  ${
           GRID_GAP[columnGap?.desktop ?? 2]
@@ -354,13 +355,14 @@ export default function BannnerGrid({
                     </div>
                   )
                   : null}
-                <img
+                <Image
                   class="w-full h-full"
                   src={srcMobile}
                   alt={alt}
                   decoding="async"
                   loading="lazy"
-                  preload=""
+                  preload={undefined}
+                  width={612}
                 />
                 <div
                   class={`max-lg:hidden transition-opacity duration-200 ease w-full h-full z-10 absolute top-0 left-0 opacity-0 

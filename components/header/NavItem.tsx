@@ -44,7 +44,7 @@ function NavItemDropDown(
       return <></>;
     }
     
-    const navItemsCol = splitNatItems(elements[0].children, 14);
+    const navItemsCol = splitNatItems(elements[0].children, 5);
     return (
       <div
         class="absolute hidden hover:flex group-hover:flex bg-base-100 z-50 items-start justify-center gap-6 w-full shadow-md"
@@ -86,6 +86,7 @@ function NavItemDropDown(
           {image && (
             <a href={image.href || ""}>
               <img
+                loading="lazy"
                 src={image.src}
                 alt={image.alt || "Banner vertical do menu"}
                 class="h-full w-auto justify-self-end"

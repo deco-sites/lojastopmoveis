@@ -41,7 +41,7 @@ export default function ImageGallery(props: Props) {
 
   return (
     <section
-      class={`w-full h-full grid justify-center lg:gap-8 gap-5 my-12 max-md:my-8 ${
+      class={`w-full h-full lg:grid justify-center lg:gap-8 gap-5 my-12 max-md:my-8 flex flex-wrap ${
         MOBILE_COLUMNS[itemPerPageMobile ?? 1]
       }} ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
     >
@@ -49,10 +49,10 @@ export default function ImageGallery(props: Props) {
         <a
           target={item.blank ? "_blank" : "_self"}
           href={item.href}
-          class="relative overflow-hidden rounded-xl w-full m-auto group flex flex-col-reverse items-center"
+          class="relative overflow-hidden rounded-xl w-[45%] lg:w-full m-auto group flex flex-col-reverse items-center"
         >
           {item.title && (
-            <span class=" text-primary bottom-0 mb-[30px] px-10 py-[17px] left-1/2 z-30 max-sm:text-[19px] text-[19px] lg:text-[19px] font-bold whitespace-nowrap">
+            <span class=" text-primary bottom-0 mb-[30px] px-10 py-[17px] left-1/2 z-30 max-sm:text-[12px] text-[19px] lg:text-[19px] font-bold whitespace-nowrap">
               {item.title}
             </span>
           )}
@@ -65,14 +65,14 @@ export default function ImageGallery(props: Props) {
               />
             </Head>
           )}
-          <img
+          <Image
             preload={undefined}
-            loading={item.preload ? "eager" : "lazy"}
+            loading={"lazy"}
             class={`w-full h-full scale-100 ${
               hoverEffect ? "group-hover:scale-110" : ""
             } transition-all duration-700`}
             src={item.image}
-            alt={item.alt}
+            alt={"imagem de " + item.alt}
             decoding="async"
             width={400}
             height={400}
