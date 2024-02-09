@@ -201,6 +201,7 @@ function Footer(
                         <>
                           <a href={image.link}>
                             <img
+                              loading="lazy"
                               src={image.image}
                               alt={image.alt}
                               width={89}
