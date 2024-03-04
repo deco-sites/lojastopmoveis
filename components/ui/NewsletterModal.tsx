@@ -241,7 +241,7 @@ function NewsletterModal(
           method="dialog"
           className="modal-backdrop bg-primary bg-opacity-40"
         >
-          <button 
+          <button
             aria-label="fechar modal"
             onClick={() =>
               setCookieOnCloseModal("closed", modalCloseExpiredDate)}

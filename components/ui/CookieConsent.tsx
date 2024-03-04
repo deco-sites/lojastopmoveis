@@ -21,7 +21,7 @@ const callback = () => {
   }
 };
 
-window.addEventListener('scroll', callback, { once: true });
+globalThis.window.addEventListener('scroll', callback, { once: true });
 `;
 
 export interface Props {

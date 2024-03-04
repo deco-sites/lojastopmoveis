@@ -1,7 +1,7 @@
 import Avatar from "$store/components/ui/Avatar.tsx";
 import { parseRange } from "deco-sites/std/utils/filters.ts";
 import { formatPrice } from "$store/sdk/format.ts";
-import Button from "$store/components/ui/Button.tsx"
+import Button from "$store/components/ui/Button.tsx";
 import type {
   Filter,
   FilterToggle,
@@ -92,7 +92,9 @@ function Filters({ filters }: Props) {
   return (
     <ul class="flex flex-col gap-2 text-primary">
       <li>
-        <p class="font-normal tracking-[1px] mb-5 text-[19px] text-secondary">Filtrar por:</p>
+        <p class="font-normal tracking-[1px] mb-5 text-[19px] text-secondary">
+          Filtrar por:
+        </p>
         {selectedFilters.length > 0 && (
           selectedFilters.map((filter) => (
             <div class="mb-2">
@@ -114,7 +116,12 @@ function Filters({ filters }: Props) {
         </li>
       ))}
       <li class="flex justify-center	 ">
-        <a class="btn btn-outline gap-2 mx-4 border-secondary text-secondary uppercase font-bold w-full font-condensed lg:hidden" href="?">Limpar Filtros</a>
+        <a
+          class="btn btn-outline gap-2 mx-4 border-secondary text-secondary uppercase font-bold w-full font-condensed lg:hidden"
+          href="?"
+        >
+          Limpar Filtros
+        </a>
       </li>
     </ul>
   );

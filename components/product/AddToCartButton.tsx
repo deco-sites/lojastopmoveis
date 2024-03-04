@@ -12,9 +12,9 @@ interface Props extends UseAddToCartProps {
   sellerId: string;
   label?: string;
   classes?: string;
-  hideIcon?:boolean;
-  mobileLabel?:string;
-  redirect?:boolean;
+  hideIcon?: boolean;
+  mobileLabel?: string;
+  redirect?: boolean;
 }
 
 function AddToCartButton(
@@ -30,7 +30,7 @@ function AddToCartButton(
     quantity,
     hideIcon,
     mobileLabel,
-    redirect
+    redirect,
   }: Props,
 ) {
   const props = useAddToCart({
@@ -41,15 +41,19 @@ function AddToCartButton(
     productGroupId,
     name,
     quantity,
-    redirect
+    redirect,
   });
 
   return (
     <Button data-deco="add-to-cart" {...props} class={classes}>
       <p class="flex gap-2 items-center justify-center">
-      {!hideIcon && <Icon id="ShoppingCart" width={24} height={20} />}
-        <span class="2xl:hidden uppercase w-full font-condensed">{mobileLabel ?? "Carrinho"}</span>
-        <span class="hidden 2xl:inline uppercase font-condensed">{label ?? "Adicionar ao carrinho"}</span>
+        {!hideIcon && <Icon id="ShoppingCart" width={24} height={20} />}
+        <span class="2xl:hidden uppercase w-full font-condensed">
+          {mobileLabel ?? "Carrinho"}
+        </span>
+        <span class="hidden 2xl:inline uppercase font-condensed">
+          {label ?? "Adicionar ao carrinho"}
+        </span>
       </p>
     </Button>
   );

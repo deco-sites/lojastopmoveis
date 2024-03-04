@@ -37,7 +37,9 @@ function WishlistButton({
         e.preventDefault();
 
         if (!isUserLoggedIn) {
-          window.alert("Please log in before adding to your wishlist");
+          globalThis.window.alert(
+            "Please log in before adding to your wishlist",
+          );
 
           return;
         }

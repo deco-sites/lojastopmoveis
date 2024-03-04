@@ -12,7 +12,6 @@ type Props = {
 export default function AddToCartActions(
   { productID, seller, price, listPrice, productName, productGroupID }: Props,
 ) {
-
   return (
     <div class="flex max-lg:flex-col-reverse w-full max-lg:gap-[10px] gap-[30px]">
       <AddToCartButton

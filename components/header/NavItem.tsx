@@ -43,7 +43,7 @@ function NavItemDropDown(
     if (!elements[0].children) {
       return <></>;
     }
-    
+
     const navItemsCol = splitNatItems(elements[0].children, 5);
     return (
       <div
@@ -64,21 +64,21 @@ function NavItemDropDown(
                     </a>
                   )
                   : <span class="text-secondary">{element.label}</span>}
-                  <div class="flex mt-4 gap-[40px]">
+                <div class="flex mt-4 gap-[40px]">
                   {navItemsCol.map((column) => (
-                  <ul class="flex items-start justify-start flex-col">
-                    {column.map((node) => (
-                      <li class="mb-3">
-                        <a
-                          class="text-sm text-primary hover:font-bold hover:underline transition-all duration-300"
-                          href={node.href || ""}
-                        >
-                          <span>{node.label}</span>
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                ))}
+                    <ul class="flex items-start justify-start flex-col">
+                      {column.map((node) => (
+                        <li class="mb-3">
+                          <a
+                            class="text-sm text-primary hover:font-bold hover:underline transition-all duration-300"
+                            href={node.href || ""}
+                          >
+                            <span>{node.label}</span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  ))}
                 </div>
               </div>
             );
@@ -136,7 +136,9 @@ function NavItem({ item }: { item: INavItem }) {
       <a
         href={href}
         class={`px-4 pt-[5px] pb-[5px] my-2 w-full flex items-center text-center justify-center	 group-hover:bg-white rounded-3xl h-[34px] ${
-          highlighted ? "bg-white rounded-3xl flex justify-center gap-2 pt-[8px] pb-[8px]" : ""
+          highlighted
+            ? "bg-white rounded-3xl flex justify-center gap-2 pt-[8px] pb-[8px]"
+            : ""
         }`}
       >
         {highlighted && (

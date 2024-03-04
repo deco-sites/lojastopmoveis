@@ -24,7 +24,6 @@ function HeaderLayout(
     searchbar,
   }: Props,
 ) {
-
   const { user } = useUser();
 
   return (
@@ -33,7 +32,12 @@ function HeaderLayout(
         <div class="flex items-center gap-5">
           <Buttons variant="menu" />
           <a href="/" class="" aria-label="Store logo">
-            <Icon id="Logo" class="max-w-[33vw] w-[54.1px] h-[40px] md:w-[94.6px] md:h-[70px]" width={94.6} height={70} />
+            <Icon
+              id="Logo"
+              class="max-w-[33vw] w-[54.1px] h-[40px] md:w-[94.6px] md:h-[70px]"
+              width={94.6}
+              height={70}
+            />
           </a>
         </div>
         <div class="max-lg:hidden flex justify-between">
@@ -54,17 +58,20 @@ function HeaderLayout(
                 <a href="/my-account">Minha conta</a>
                 <a href="/my-account/orders">Meus pedidos</a>
                 <a href="/my-account/orders">Meus favoritos</a>
-                <div class="h-[1px] bg-secondary-content w-[160px] my-[14px]"/>
-                {user.value? (
-                  <>
-                    <a href="/api/vtexid/pub/logout?scope=topmoveis&returnUrl=https%3A%2F%2Fdeco-sites-lojastopmoveis.deno.dev%2F" >Sair</a>
-                  </>
-                )
-                : (
-                  <>
-                    <a href="/my-account/login">Entrar</a>
-                  </>
-                )}
+                <div class="h-[1px] bg-secondary-content w-[160px] my-[14px]" />
+                {user.value
+                  ? (
+                    <>
+                      <a href="/api/vtexid/pub/logout?scope=topmoveis&returnUrl=https%3A%2F%2Fdeco-sites-lojastopmoveis.deno.dev%2F">
+                        Sair
+                      </a>
+                    </>
+                  )
+                  : (
+                    <>
+                      <a href="/my-account/login">Entrar</a>
+                    </>
+                  )}
               </div>
             </div>
             <Buttons variant="cart" />

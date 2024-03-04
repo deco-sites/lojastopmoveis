@@ -64,7 +64,8 @@ const setup = (
     Object.entries(itemsPerPage).sort(([widthA], [widthB]) =>
       Number(widthB) - Number(widthA)
     )
-      .find(([width]) => Number(width) <= window.innerWidth) ?? [0, 1];
+      .find(([width]) => Number(width) <= globalThis.window.innerWidth) ??
+      [0, 1];
 
   if (!root || !slider || !items || items.length === 0) {
     console.warn(

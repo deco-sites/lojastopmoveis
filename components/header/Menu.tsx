@@ -24,18 +24,18 @@ function MenuItem({ item }: { item: INavItem }) {
                   <li class="">
                     <div class="collapse collapse-plus relative items-start">
                       <ul class="border-t border-border-[#C5C6CB] border-solid pt-0 px-0 pl-5">
-                          {node.children?.map((nodeChild) => (
-                            <li class="">
-                              <a
-                                href={nodeChild.href}
-                                title={nodeChild.label}
-                                class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm`}
-                              >
-                                {nodeChild.label}
-                              </a>
-                            </li>
-                          ))}
-                        </ul>
+                        {node.children?.map((nodeChild) => (
+                          <li class="">
+                            <a
+                              href={nodeChild.href}
+                              title={nodeChild.label}
+                              class={`w-full block pt-5 font-dm-sans font-normal text-base-300 text-sm`}
+                            >
+                              {nodeChild.label}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </li>
                 ))}

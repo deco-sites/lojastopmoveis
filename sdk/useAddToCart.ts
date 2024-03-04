@@ -19,7 +19,16 @@ export interface Options {
 }
 
 export const useAddToCart = (
-  { skuId, sellerId, price, discount, name, productGroupId, quantity, redirect }: Options,
+  {
+    skuId,
+    sellerId,
+    price,
+    discount,
+    name,
+    productGroupId,
+    quantity,
+    redirect,
+  }: Options,
 ) => {
   const isAddingToCart = useSignal(false);
   const { displayBuyWarning } = useUI();
@@ -56,8 +65,8 @@ export const useAddToCart = (
       displayBuyWarning.value = true;
     } finally {
       isAddingToCart.value = false;
-      if(redirect){
-        window.location.href="/checkout"
+      if (redirect) {
+        globalThis.window.location.href = "/checkout";
       }
       setTimeout(function () {
         displayBuyWarning.value = false;

@@ -79,7 +79,7 @@ function ProductInfo(
   const { price, listPrice, seller, availability, installment } = useOffer(
     offers,
   );
-    
+
   return (
     <>
       {/* Code and name */}
@@ -98,7 +98,7 @@ function ProductInfo(
         )}
         <div class="flex gap-[2px]">
           <span class="text-[#4A4B51] text-sm">
-            Vendido e entregue por: 
+            Vendido e entregue por:
           </span>
           <span class="text-secondary text-sm">
             LojasTopMoveis
@@ -189,7 +189,7 @@ function ProductInfo(
           </p>
         </div>
       </details>
-      {/* characteristics card */}    
+      {/* characteristics card */}
       <details className="collapse collapse-plus mt-[10px]">
         <summary className="after:!top-[.7rem] collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-medium text-primary">
           Características do produto
@@ -266,7 +266,7 @@ function Details({
   const id = `product-image-gallery:${useId()}`;
 
   const images = product.image!;
-  
+
   /**
    * Product slider variant
    */

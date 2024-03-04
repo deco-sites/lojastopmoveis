@@ -140,7 +140,7 @@ function TopNavBar({ alerts = [], interval = 5 }: Props) {
         size={20}
         onClickBtn={() => {
           displayTopBar.value = false;
-          headerHeight.value = "142px"
+          headerHeight.value = "142px";
         }}
       />
     </div>

@@ -3,7 +3,7 @@ interface Props {
 }
 
 const runOnMount = () => {
-  window.onload = () => {
+  globalThis.window.onload = () => {
     const iFrame = document.getElementById(
       "proxy-loader",
     ) as HTMLIFrameElement;
@@ -23,7 +23,7 @@ export default function ProxyIframe({ src }: Props) {
         id="proxy-loader"
         style="width:100%;border:none;overflow:hidden;min-height:800px;"
         src={src}
-        // onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
+        // onload='javascript:(function(o){o.style.height=o.contentglobalThis.window.document.body.scrollHeight+"px";}(this));'
       >
       </iframe>
     </>

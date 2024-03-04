@@ -48,7 +48,9 @@ export default function InfoCard(
                   target="_blank"
                 >
                   <Icon id={link.icon} size={18} strokeWidth={1} />
-                  <span class="block max-[330px]:text-xs font-medium">{link.label}</span>
+                  <span class="block max-[330px]:text-xs font-medium">
+                    {link.label}
+                  </span>
                 </a>
               </li>
             ))}
