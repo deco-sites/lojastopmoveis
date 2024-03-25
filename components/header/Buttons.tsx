@@ -9,12 +9,12 @@ function SearchButton() {
 
   return (
     <Button
-      class="btn-square btn-ghost flex items-center justify-center"
+      class="bg-stone-200 flex items-center justify-center border-[0] p-[10px] gap-2 text-xs xl:text-base"
       aria-label="search icon button"
       onClick={() => {
         displaySearchbar.value = !displaySearchbar.peek();
       }}
-    >
+    >Pesquise aqui
       <Icon
         class="text-base-content"
         id="MagnifyingGlass"
