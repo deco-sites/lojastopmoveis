@@ -8,11 +8,12 @@ interface Props {
 
 function VariantSelector({ product, product: { url } }: Props) {
   const possibilities = useVariantPossibilities(product);
-
+  // console.log(["product", product])
   return (
     <ul class="flex flex-col gap-5">
       {Object.keys(possibilities).map((name) => (
-        <li class="flex flex-col gap-[10px]">
+        <>{name !== "Cores" && (
+          <li class="flex flex-col gap-[10px]">
           <span class="text-xs text-base-300">{name}</span>
           <ul class="flex flex-row flex-wrap gap-[5px]">
             {Object.entries(possibilities[name]).map((
@@ -30,6 +31,8 @@ function VariantSelector({ product, product: { url } }: Props) {
             ))}
           </ul>
         </li>
+        )}
+        </> 
       ))}
     </ul>
   );

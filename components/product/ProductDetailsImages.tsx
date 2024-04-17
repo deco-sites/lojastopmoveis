@@ -50,7 +50,7 @@ function ProductDetailsImages(
                   class="overflow-hidden cursor-zoom-in rounded-[10px] hover:rounded-none"
                 >
                   <Image
-                    class="w-full rounded-[10px] lg:hover:opacity-0"
+                    class="w-full rounded-[10px] lg:hover:opacity-0 h-[100%]"
                     sizes="(max-width: 640px) 100vw, 40vw"
                     style={{ aspectRatio: aspect }}
                     src={img.url!}
