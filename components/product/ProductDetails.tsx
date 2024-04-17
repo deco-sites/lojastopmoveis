@@ -18,6 +18,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
 
 import ProductSelector from "./ProductVariantSelector.tsx";
+import SimilarSelector from "deco-sites/lojastopmoveis/components/product/SimilarSelector.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 
@@ -74,6 +75,7 @@ function ProductInfo(
     offers,
     name,
     isVariantOf,
+    isSimilarTo,
     url,
   } = product;
   const { price, listPrice, seller, availability, installment } = useOffer(
@@ -139,6 +141,7 @@ function ProductInfo(
       {availability === "https://schema.org/InStock"
         ? (
           <div class="mt-4 sm:mt-5">
+            <SimilarSelector product={product} />
             <ProductSelector product={product} />
           </div>
         )
