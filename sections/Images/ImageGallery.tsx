@@ -28,7 +28,7 @@ export interface Props {
   /** @description Banners */
   images: ImageGalleryItem[];
   /** @description Items per page Desktop */
-  itemPerPageDesktop?: 1 | 2 | 3 | 4 | 5;
+  itemPerPageDesktop?: 1 | 2 | 3 | 4 | 5 | 6;
   /** @description Items per page Mobile */
   itemPerPageMobile?: 1 | 2;
   /** @description Enable hover effect on images */
