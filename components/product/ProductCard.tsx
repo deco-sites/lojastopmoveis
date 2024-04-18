@@ -13,6 +13,8 @@ import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
 import DiscountBadge from "./DiscountBadge.tsx";
+import ProductHighlights from "$store/components/product/ProductHighlights.tsx";
+import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 
 export interface Layout {
   basics?: {
@@ -61,7 +63,10 @@ interface Props {
   product: Product;
   /** Preload card image */
   preload?: boolean;
-
+  /**
+   * @description Flags, displayed when  products are found
+   */
+  highlights?: HighLight[];
   /** @description used for analytics event */
   itemListName?: string;
   layout?: Layout;
@@ -77,7 +82,7 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function ProductCard(
-  { product, preload, itemListName, layout, class: _class }: Props,
+  { product, preload, itemListName, layout, highlights , class: _class }: Props,
 ) {
   const {
     url,
@@ -224,6 +229,14 @@ function ProductCard(
               variant={l?.discount?.variant}
             />
           )}
+          {product && (
+            <ProductHighlights
+              product={product}
+              highlights={highlights}
+              listPrice={listPrice2}
+            />
+          )}
+
           <Image
             src={front.url!}
             alt={front.alternateName}

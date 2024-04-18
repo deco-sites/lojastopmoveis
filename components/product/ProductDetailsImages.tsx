@@ -4,6 +4,8 @@ import DiscountBadge from "./DiscountBadge.tsx";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import Image from "apps/website/components/Image.tsx";
+import { HighLight } from "$store/components/product/ProductHighlights.tsx";
+import ProductHighlights from "$store/components/product/ProductHighlights.tsx";
 
 interface Props {
   images: ImageObject[];
@@ -11,12 +13,13 @@ interface Props {
   height: number;
   aspect: string;
   product: Product;
+  highlights?: HighLight[];
 }
 
 const id = "product-zoom";
 
 function ProductDetailsImages(
-  { images, width, height, aspect, product }: Props,
+  { images, width, height, aspect, product, highlights }: Props,
 ) {
   const { offers } = product;
   const {
@@ -76,6 +79,13 @@ function ProductDetailsImages(
               />
             )
             : null}
+
+          {product && (
+            <ProductHighlights
+              product={product}
+              highlights={highlights}
+            />
+          )}
         </div>
 
         {/* Dots */}
