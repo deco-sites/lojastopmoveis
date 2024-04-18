@@ -143,7 +143,7 @@ function ProductHighlights(props: Props) {
                   ${GRID_ROW_SPAN[rowSpan ?? 0]}
                   ${GRID_COL_SPAN[colSpan ?? 0]}
                   ${GRID_ROW_HORIZONTAL[alignHorizontal ?? "start"]}
-                  ${icon ? "p-0 self-start" : "p-1 2xl:p-2 self-start"}
+                  ${icon ? "p-0 " : "p-1 2xl:p-2 "}
                   `}
                   style={{
                     background: backgorundColor,

@@ -297,6 +297,7 @@ function Details({
             height={HEIGHT}
             aspect={ASPECT_RATIO}
             product={product}
+            highlights={highlights}
           />
 
           {/* Product Info */}
