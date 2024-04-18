@@ -16,7 +16,7 @@ import AddToCartActions from "$store/islands/AddToCartActions.tsx";
 import ProductDetailsImages from "$store/islands/ProductDetailsImages.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
-
+import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import SimilarSelector from "deco-sites/lojastopmoveis/components/product/SimilarSelector.tsx";
 
@@ -26,6 +26,10 @@ export type ShareableNetwork = "Facebook" | "Twitter" | "Email" | "WhatsApp";
 
 export interface Props {
   page: LoaderReturnType<ProductDetailsPage | null>;
+  /**
+   * @description Flags, displayed when  products are found
+   */
+  highlights?: HighLight[];
   /**
    * @title Product view
    * @description Ask for the developer to remove this option since this is here to help development only and should not be used in production
@@ -127,7 +131,7 @@ function ProductInfo(
               </div>
             </div>
             <div class="flex flex-col">
-              <span class="text-[#4A4B51] text-sm">
+              <span class="text-secondary text-md font-bold">
                 ou {installment?.billingDuration}x de {formatPrice(
                   installment?.billingIncrement,
                   offers!.priceCurrency,
@@ -256,11 +260,13 @@ function Details({
   variant,
   shipmentPolitics,
   shareableNetworks,
+  highlights,
 }: {
   page: ProductDetailsPage;
   variant: Variant;
   shipmentPolitics?: Props["shipmentPolitics"];
   shareableNetworks?: Props["shareableNetworks"];
+  highlights?: HighLight[];
 }) {
   const { product, breadcrumbList } = page;
   const filteredBreadcrumbList = breadcrumbList.itemListElement.filter((item) =>
@@ -343,7 +349,7 @@ function Details({
 }
 
 function ProductDetails(
-  { page, variant: maybeVar = "auto", shipmentPolitics, shareableNetworks }:
+  { page, variant: maybeVar = "auto", shipmentPolitics, shareableNetworks, highlights }:
     Props,
 ) {
   /**
@@ -366,6 +372,7 @@ function ProductDetails(
             variant={variant}
             shipmentPolitics={shipmentPolitics}
             shareableNetworks={shareableNetworks}
+            highlights={highlights}
           />
         )
         : <NotFound />}
