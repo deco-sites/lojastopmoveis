@@ -137,7 +137,7 @@ function ProductHighlights(props: Props) {
             ) {
               return (
                 <div
-                  class={`text-xs uppercase font-bold border-none px-[10px] py-[7px] rounded-bl-none tracking-[2px] rounded-lg flex box-content bg-opacity-100 opacity-100 text-white bg-secondary
+                  class={`text-xs capitalize font-bold border-none px-[10px] py-[7px] rounded-bl-none rounded-lg flex box-content bg-opacity-100 opacity-100 text-white bg-secondary z-[2]
                   ${rowStart ? GRID_ROW_START[rowStart] : "row-start-auto"}
                   ${columnStart ? GRID_COL_START[columnStart] : "col-start-1"}
                   ${GRID_ROW_SPAN[rowSpan ?? 0]}
