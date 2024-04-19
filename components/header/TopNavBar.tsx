@@ -68,9 +68,9 @@ function TopNavBar({ alerts = [], interval = 5 }: Props) {
   return (
     <div class={displayTopBar.value ? "flex" : "hidden"}>
       <div id={id} class="overflow-hidden">
-        <Slider class="carousel carousel-center gap-6 h-full scrollbar-none lg:hidden">
+        <Slider class="carousel carousel-center gap-6 h-full scrollbar-none lg:hidden w-full">
           {alerts.map((alert, index) => (
-            <Slider.Item index={index} class="carousel-item">
+            <Slider.Item index={index} class="carousel-item w-full">
               <div class="flex justify-center items-center w-screen">
                 <TipItem {...alert} />
                 {alert.href
@@ -97,7 +97,7 @@ function TopNavBar({ alerts = [], interval = 5 }: Props) {
           ))}
         </Slider>
 
-        <SliderJS rootId={id} interval={interval && interval * 1e3} />
+        <SliderJS rootId={id} interval={interval && interval * 1e3}  infinite/>
       </div>
 
       <div class="h-[34px] max-lg:hidden w-full">
