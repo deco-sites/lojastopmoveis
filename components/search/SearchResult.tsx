@@ -10,6 +10,7 @@ import Sort from "$store/islands/Sort.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import SearchPagination from "$store/components/search/SearchPagination.tsx";
 import { Section } from "$live/blocks/section.ts";
+import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 
 export interface Props {
   page: LoaderReturnType<ProductListingPage | null>;
@@ -22,6 +23,11 @@ export interface Props {
    */
   columns: Columns;
   /**
+   * @description Flags, displayed when  products are found
+   */
+  highlights?: HighLight[];
+  /**
+   * 
    * @description Not found section, displayed when no products are found
    */
   notFoundSection: Section;
@@ -30,8 +36,10 @@ export interface Props {
 function Result({
   page,
   variant,
+  highlights
 }: Omit<Omit<Props, "page">, "notFoundSection"> & {
   page: ProductListingPage;
+  
 }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
 
@@ -40,8 +48,7 @@ function Result({
       Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
     </h6>
   );
-  console.log(["page", page.breadcrumb]);
-  console.log(["page", page.breadcrumb.numberOfItems]);
+  
   return (
     <>
       <div>
@@ -77,7 +84,7 @@ function Result({
               {productsFound}
             </div>
             <div class="flex-grow">
-              <ProductGallery products={products} />
+              <ProductGallery products={products} highlights={highlights }/>
               <SearchPagination pageInfo={pageInfo} />
             </div>
           </div>
