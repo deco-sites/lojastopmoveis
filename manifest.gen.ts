@@ -30,21 +30,22 @@ import * as $$$$$$22 from "./sections/Institutional/AsideMenu.tsx";
 import * as $$$$$$23 from "./sections/Institutional/CardsContent.tsx";
 import * as $$$$$$24 from "./sections/Institutional/ContactForm.tsx";
 import * as $$$$$$25 from "./sections/Institutional/InstitutionalPage.tsx";
-import * as $$$$$$26 from "./sections/Institutional/TextContent.tsx";
-import * as $$$$$$27 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$28 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$29 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$30 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$31 from "./sections/Miscellaneous/NotFound.tsx";
-import * as $$$$$$32 from "./sections/Miscellaneous/ProxyIframe.tsx";
-import * as $$$$$$33 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$34 from "./sections/Newsletter/NewsletterModal.tsx";
-import * as $$$$$$35 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$36 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$37 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$38 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$39 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$40 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$26 from "./sections/Institutional/NossasLojas.tsx";
+import * as $$$$$$27 from "./sections/Institutional/TextContent.tsx";
+import * as $$$$$$28 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$29 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$30 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$31 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$32 from "./sections/Miscellaneous/NotFound.tsx";
+import * as $$$$$$33 from "./sections/Miscellaneous/ProxyIframe.tsx";
+import * as $$$$$$34 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$35 from "./sections/Newsletter/NewsletterModal.tsx";
+import * as $$$$$$36 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$37 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$38 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$39 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$40 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$41 from "./sections/Social/WhatsApp.tsx";
 
 const manifest = {
   "sections": {
@@ -80,26 +81,28 @@ const manifest = {
       $$$$$$24,
     "deco-sites/lojastopmoveis/sections/Institutional/InstitutionalPage.tsx":
       $$$$$$25,
-    "deco-sites/lojastopmoveis/sections/Institutional/TextContent.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/NossasLojas.tsx":
       $$$$$$26,
-    "deco-sites/lojastopmoveis/sections/Links/LinkTree.tsx": $$$$$$27,
-    "deco-sites/lojastopmoveis/sections/Links/Shortcuts.tsx": $$$$$$28,
+    "deco-sites/lojastopmoveis/sections/Institutional/TextContent.tsx":
+      $$$$$$27,
+    "deco-sites/lojastopmoveis/sections/Links/LinkTree.tsx": $$$$$$28,
+    "deco-sites/lojastopmoveis/sections/Links/Shortcuts.tsx": $$$$$$29,
     "deco-sites/lojastopmoveis/sections/Miscellaneous/CampaignTimer.tsx":
-      $$$$$$29,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$30,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/NotFound.tsx": $$$$$$31,
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/CookieConsent.tsx":
+      $$$$$$31,
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/NotFound.tsx": $$$$$$32,
     "deco-sites/lojastopmoveis/sections/Miscellaneous/ProxyIframe.tsx":
-      $$$$$$32,
-    "deco-sites/lojastopmoveis/sections/Newsletter/Newsletter.tsx": $$$$$$33,
+      $$$$$$33,
+    "deco-sites/lojastopmoveis/sections/Newsletter/Newsletter.tsx": $$$$$$34,
     "deco-sites/lojastopmoveis/sections/Newsletter/NewsletterModal.tsx":
-      $$$$$$34,
-    "deco-sites/lojastopmoveis/sections/Product/ProductDetails.tsx": $$$$$$35,
-    "deco-sites/lojastopmoveis/sections/Product/ProductShelf.tsx": $$$$$$36,
-    "deco-sites/lojastopmoveis/sections/Product/SearchResult.tsx": $$$$$$37,
-    "deco-sites/lojastopmoveis/sections/Product/Wishlist.tsx": $$$$$$38,
-    "deco-sites/lojastopmoveis/sections/Social/InstagramPosts.tsx": $$$$$$39,
-    "deco-sites/lojastopmoveis/sections/Social/WhatsApp.tsx": $$$$$$40,
+      $$$$$$35,
+    "deco-sites/lojastopmoveis/sections/Product/ProductDetails.tsx": $$$$$$36,
+    "deco-sites/lojastopmoveis/sections/Product/ProductShelf.tsx": $$$$$$37,
+    "deco-sites/lojastopmoveis/sections/Product/SearchResult.tsx": $$$$$$38,
+    "deco-sites/lojastopmoveis/sections/Product/Wishlist.tsx": $$$$$$39,
+    "deco-sites/lojastopmoveis/sections/Social/InstagramPosts.tsx": $$$$$$40,
+    "deco-sites/lojastopmoveis/sections/Social/WhatsApp.tsx": $$$$$$41,
   },
   "apps": {
     "deco-sites/lojastopmoveis/apps/decohub.ts": $$$$$$$$$$$0,

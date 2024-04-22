@@ -23,6 +23,10 @@ export interface Props {
     | BlockInstance<
       "deco-sites/lojastopmoveis/sections/Institutional/ContactForm.tsx",
       Manifest
+    >
+    | BlockInstance<
+      "deco-sites/lojastopmoveis/sections/Institutional/NossasLojas.tsx",
+      Manifest
     >;
 }
 
