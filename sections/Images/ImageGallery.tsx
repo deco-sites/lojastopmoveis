@@ -47,7 +47,7 @@ export default function ImageGallery(props: Props) {
     >
       {images.map((item) => (
         <a
-          target={item.blank ? "_blank" : "_self"}
+          target={item.blank ? "_self" : "_blank"}
           href={item.href}
           class="relative overflow-hidden rounded-xl w-[45%] lg:w-full m-auto group flex flex-col-reverse items-center"
         >

@@ -123,7 +123,7 @@ function ProductInfo(
                 </span>
               )}
               <div class="flex items-center gap-[10px]">
-                <span class="font-medium text-[24px] text-secondary">
+                <span class="font-medium text-lg text-secondary">
                   {formatPrice(price, offers!.priceCurrency!)}
                 </span>
                 {/* <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
@@ -132,7 +132,7 @@ function ProductInfo(
               </div>
             </div>
             <div class="flex flex-col">
-              <span class="text-secondary text-md font-bold">
+              <span class="text-secondary text-2xl font-bold">
                 ou {installment?.billingDuration}x de {formatPrice(
                   installment?.billingIncrement,
                   offers!.priceCurrency,
@@ -140,7 +140,7 @@ function ProductInfo(
               </span>
             </div>
             <div class="flex items-center gap-[10px] py-[10px]">
-              <span class="font-bold text-lg text-secondary leading-none">
+              <span class="font-bold text-2xl text-secondary leading-none">
                 {formatPrice(price * 0.90, offers?.priceCurrency)}
               </span>
               <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
