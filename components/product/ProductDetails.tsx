@@ -74,6 +74,7 @@ function ProductInfo(
     product,
   } = page;
   const {
+    
     description,
     productID,
     offers,
@@ -82,7 +83,7 @@ function ProductInfo(
     isSimilarTo,
     url,
   } = product;
-  const { price, listPrice, seller, availability, installment } = useOffer(
+  const { price = 0, listPrice, seller, availability, installment } = useOffer(
     offers,
   );
 
@@ -125,9 +126,9 @@ function ProductInfo(
                 <span class="font-medium text-[24px] text-secondary">
                   {formatPrice(price, offers!.priceCurrency!)}
                 </span>
-                <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
+                {/* <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
                   10% de desconto no boleto
-                </span>
+                </span> */}
               </div>
             </div>
             <div class="flex flex-col">
@@ -136,6 +137,14 @@ function ProductInfo(
                   installment?.billingIncrement,
                   offers!.priceCurrency,
                 )}
+              </span>
+            </div>
+            <div class="flex items-center gap-[10px] py-[10px]">
+              <span class="font-bold text-lg text-secondary leading-none">
+                {formatPrice(price * 0.90, offers?.priceCurrency)}
+              </span>
+              <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
+                10% de desconto no Pix ou boleto
               </span>
             </div>
           </div>
