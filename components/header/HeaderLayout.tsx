@@ -69,7 +69,7 @@ function HeaderLayout(
                   )
                   : (
                     <>
-                      <a href="/my-account/login">Entrar</a>
+                      <a href="/my-account">Entrar</a>
                     </>
                   )}
               </div>
