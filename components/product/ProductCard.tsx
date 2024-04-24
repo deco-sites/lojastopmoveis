@@ -82,7 +82,7 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function ProductCard(
-  { product, preload, itemListName, layout, highlights , class: _class }: Props,
+  { product, preload, itemListName, layout, highlights, class: _class }: Props,
 ) {
   const {
     url,
@@ -94,7 +94,7 @@ function ProductCard(
   } = product;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
-  const { listPrice, price, installment, seller, availability } = useOffer(
+  const { listPrice, price = 0, installment, seller, availability } = useOffer(
     offers,
   );
   const possibilities = useVariantPossibilities(product);
@@ -223,14 +223,16 @@ function ProductCard(
         >
           <div class="absolute w-full right-0 top-0 xl:pl-32">
             <div class="grid gap-y-2 w-full">
-              {/* {listPrice2 !== price2 && (
+              {
+                /* {listPrice2 !== price2 && (
                 <DiscountBadge
                   price={price2}
                   listPrice={listPrice2}
                   label={l?.discount?.label}
                   variant={l?.discount?.variant}
                 />
-              )} */}
+              )} */
+              }
               {product && (
                 <ProductHighlights
                   product={product}
@@ -355,6 +357,14 @@ function ProductCard(
                         )}
                       </div>
                     )}
+                  <div class="flex items-center gap-[10px] py-[10px]">
+                    <span class="font-bold text-md text-secondary leading-none">
+                      {formatPrice(price * 0.90, offers?.priceCurrency)}
+                    </span>
+                    <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
+                      10% de desconto no Pix ou boleto
+                    </span>
+                  </div>
                 </div>
               )}
             </>
