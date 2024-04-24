@@ -14,10 +14,11 @@ import { useOffer } from "$store/sdk/useOffer.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { useId } from "preact/hooks";
+import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 
 export interface Props {
   products: LoaderReturnType<Product[] | null>;
-
+  highlights?: HighLight[];
   title?: string;
   seeMore?: {
     url: string;
@@ -74,6 +75,7 @@ function ProductShelf({
   cardLayout,
   seeMore,
   showPaginationArrows,
+  highlights,
 }: Props) {
   const id = useId();
 
@@ -116,6 +118,7 @@ function ProductShelf({
                 product={product}
                 itemListName={title}
                 layout={cardLayout}
+                highlights={highlights}
               />
             </Slider.Item>
           ))}
