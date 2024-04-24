@@ -57,7 +57,7 @@ function HeaderLayout(
               <div class="absolute hidden hover:flex group-hover:flex bg-secondary text-[#FFFFFF] top-[40px] shadow whitespace-nowrap p-[24px] flex-col z-10 gap-[6px] rounded-[10px]">
                 <a href="/my-account">Minha conta</a>
                 <a href="/my-account/orders">Meus pedidos</a>
-                <a href="/my-account/orders">Meus favoritos</a>
+                {/* <a href="/my-account/orders">Meus favoritos</a> */}
                 <div class="h-[1px] bg-secondary-content w-[160px] my-[14px]" />
                 {user.value
                   ? (
