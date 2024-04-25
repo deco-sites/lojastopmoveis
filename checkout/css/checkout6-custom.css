@@ -3055,7 +3055,7 @@
     text-align: center
   }
   
-  @media(max-width: 1024px) {
+  /* @media(max-width: 1024px) {
     .accordion-inner.shipping-container>div>div:last-child {
         position:fixed;
         width: 100vw;
@@ -3070,7 +3070,7 @@
         align-items: center;
         justify-content: center
     }
-  }
+  } */
   
   .shipping-container .vtex-pickup-points-modal-3-x-modalBackdrop {
     background: rgba(30,14,98,.7) !important;

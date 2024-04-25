@@ -14,7 +14,7 @@ const possibilities = useVariantPossibilities(product);
         {Object.keys(possibilities).map((name) => (
         <li class="flex flex-col gap-[10px]">
           <div class="flex gap-[5px]">
-            <span class="text-xs text-[#4A4B51] font-normal">Cor:</span>
+            <span class="text-xs text-[#4A4B51] font-normal">{name}: </span>
             {Object.entries(possibilities[name]).map((
               [value],
             ) => (

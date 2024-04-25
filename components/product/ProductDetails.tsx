@@ -155,7 +155,7 @@ function ProductInfo(
         ? (
           <div class="mt-4 sm:mt-5">
             <SimilarSelector product={product} />
-            <ProductSelector product={product} />
+            {/* <ProductSelector product={product} /> */}
           </div>
         )
         : null}
