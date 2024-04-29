@@ -4,6 +4,7 @@
 
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
+import * as $$$0 from "./loaders/RedirectsFromCsvWithEncoding.ts";
 import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryBreadcrumb.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryList.tsx";
@@ -48,6 +49,9 @@ import * as $$$$$$40 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$41 from "./sections/Social/WhatsApp.tsx";
 
 const manifest = {
+  "loaders": {
+    "deco-sites/lojastopmoveis/loaders/RedirectsFromCsvWithEncoding.ts": $$$0,
+  },
   "sections": {
     "deco-sites/lojastopmoveis/sections/Category/CategoryBanner.tsx": $$$$$$0,
     "deco-sites/lojastopmoveis/sections/Category/CategoryBreadcrumb.tsx":
