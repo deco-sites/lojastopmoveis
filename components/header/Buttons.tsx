@@ -89,7 +89,7 @@ function CartButton() {
 
   return (
     <Button
-      class="btn-square btn-ghost relative flex justify-center items-center"
+      class="btn-square btn-ghost relative flex justify-center items-center min-h-[48px] min-w-[48px]"
       aria-label="open cart"
       data-deco={displayCart.value && "open-cart"}
       loading={loading.value}
