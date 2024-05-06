@@ -42,7 +42,7 @@ function HeaderLayout(
         </div>
         <div class="max-lg:hidden flex justify-between">
         </div>
-        <div class="flex items-center w-auto lg:justify-between xl:gap-8 lg:gap-2">
+        <div class="flex items-center w-auto lg:justify-between xl:gap-8 lg:gap-2 min-h-[48px] min-w-[172px]">
           <div class="flex items-center xl:gap-4 lg:gap-2">
             <Buttons variant="search" />
             <SearchBar searchbar={{ ...searchbar, variant: "mobile" }} />
