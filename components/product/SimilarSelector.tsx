@@ -7,7 +7,7 @@ interface Props {
 
 function SimilarSelector({ product, product: { isSimilarTo } }: Props) {
 const possibilities = useVariantPossibilities(product);
-  console.log(["product", product])
+  
   const productImage = product.image || []
   return (
     <ul class="flex flex-col gap-5">
@@ -23,16 +23,16 @@ const possibilities = useVariantPossibilities(product);
           </div>
           <ul class="flex flex-row flex-wrap gap-[10px]">
             <li>
-                <div class="border-2 rounded-[5px] border-[#ED2A24]">
-                    <img class="w-[60px] h-[60px]" src={productImage[0].url}/>
+                <div class="border-2 rounded-[5px] border-[#ED2A24] w-[60px] h-[60px]">
+                    <img class="w-full h-full" src={productImage[0].url} height={60} width={60}/>
                 </div>
             </li>
             {isSimilarTo?.map((similarProduct) => {
                 const image = similarProduct.image || []
                 return (
-                <li class="border-2 rounded-[5px] border-[#4A4B51]">
+                <li class="border-2 rounded-[5px] border-[#4A4B51] w-[60px] h-[60px]">
                     <a href={similarProduct.url}>
-                        <img class="w-[60px] h-[60px]" src={image[0].url || ""}/>
+                        <img class="w-full h-full" height={60} width={60} src={image[0].url || ""}/>
                     </a>
                 </li>
                 )

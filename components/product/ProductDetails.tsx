@@ -14,6 +14,7 @@ import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import type { LoaderReturnType } from "$live/types.ts";
 import AddToCartActions from "$store/islands/AddToCartActions.tsx";
 import ProductDetailsImages from "$store/islands/ProductDetailsImages.tsx";
+import { FnContext, SectionProps } from "deco/mod.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
@@ -42,8 +43,8 @@ export interface Props {
   shareableNetworks?: ShareableNetwork[];
 }
 
-const WIDTH = 500;
-const HEIGHT = 500;
+const WIDTH = 250;
+const HEIGHT = 250;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 /**
@@ -270,12 +271,14 @@ function Details({
   shipmentPolitics,
   shareableNetworks,
   highlights,
+  device,
 }: {
   page: ProductDetailsPage;
   variant: Variant;
   shipmentPolitics?: Props["shipmentPolitics"];
   shareableNetworks?: Props["shareableNetworks"];
   highlights?: HighLight[];
+  device:string;
 }) {
   const { product, breadcrumbList } = page;
   const filteredBreadcrumbList = breadcrumbList.itemListElement.filter((item) =>
@@ -307,10 +310,11 @@ function Details({
             aspect={ASPECT_RATIO}
             product={product}
             highlights={highlights}
+            device={device}
           />
 
           {/* Product Info */}
-          <div class="w-full lg:pr-0 lg:pl-6 min-h-[946px]">
+          <div class="w-full lg:pr-0 lg:pl-6">
             <ProductInfo
               page={page}
               shipmentPolitics={shipmentPolitics}
@@ -359,8 +363,8 @@ function Details({
 }
 
 function ProductDetails(
-  { page, variant: maybeVar = "auto", shipmentPolitics, shareableNetworks, highlights }:
-    Props,
+  { page, variant: maybeVar = "auto", shipmentPolitics, shareableNetworks, highlights, device }:
+  SectionProps<ReturnType<typeof loader>>,
 ) {
   /**
    * Showcase the different product views we have on this template. In case there are less
@@ -383,11 +387,19 @@ function ProductDetails(
             shipmentPolitics={shipmentPolitics}
             shareableNetworks={shareableNetworks}
             highlights={highlights}
+            device={device}
           />
         )
         : <NotFound />}
     </div>
   );
 }
+
+export const loader = (props: Props, _req: Request, ctx: FnContext) => {
+  return {
+    ...props,
+    device: ctx.device,
+  };
+};
 
 export default ProductDetails;

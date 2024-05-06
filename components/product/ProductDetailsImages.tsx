@@ -14,12 +14,13 @@ interface Props {
   aspect: string;
   product: Product;
   highlights?: HighLight[];
+  device: string;
 }
 
 const id = "product-zoom";
 
 function ProductDetailsImages(
-  { images, width, height, aspect, product, highlights }: Props,
+  { images, width, height, aspect, product, highlights, device }: Props,
 ) {
   const { offers } = product;
   const {
@@ -28,6 +29,7 @@ function ProductDetailsImages(
   } = useOffer(offers);
   const zoomX = useSignal(0);
   const zoomY = useSignal(0);
+  
   return (
     <>
       <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
@@ -37,34 +39,51 @@ function ProductDetailsImages(
             {images.map((img, index) => (
               <Slider.Item
                 index={index}
-                class="carousel-item w-full"
+                class="carousel-item w-full aspect-square"
               >
-                <figure
-                  style={`background-image: url(${img
-                    .url!}); background-size: 250%;`}
-                  onMouseMove={(e: MouseEvent) => {
-                    const zoomer = e.currentTarget as HTMLElement;
-                    const offsetX = e.offsetX;
-                    const offsetY = e.offsetY;
-                    const x = offsetX / (zoomer.offsetWidth) * 100;
-                    const y = offsetY / (zoomer.offsetHeight) * 100;
-                    zoomer!.style.backgroundPosition = x + "% " + y + "%";
-                  }}
-                  class="overflow-hidden cursor-zoom-in rounded-[10px] hover:rounded-none"
-                >
-                  <Image
-                    class="w-full rounded-[10px] lg:hover:opacity-0 h-[100%]"
-                    sizes="(max-width: 640px) 100vw, 40vw"
-                    style={{ aspectRatio: aspect }}
-                    src={img.url!}
-                    alt={img.alternateName}
-                    width={width}
-                    height={height}
-                    // Preload LCP image for better web vitals
-                    preload={index === 0}
-                    loading={index === 0 ? "eager" : "lazy"}
-                  />
-                </figure>
+                {device === "mobile"
+                  ? (
+                    <Image
+                      class="w-full rounded-[10px] lg:hover:opacity-0 h-[100%]"
+                      sizes="(max-width: 640px) 100vw, 40vw"
+                      style={{ aspectRatio: aspect }}
+                      src={img.url!}
+                      alt={img.alternateName}
+                      width={width}
+                      height={height}
+                      // Preload LCP image for better web vitals
+                      preload={index === 0}
+                      loading={index === 0 ? "eager" : "lazy"}
+                    />
+                  )
+                  : (
+                    <figure
+                      style={`background-image: url(${img
+                        .url!}); background-size: 250%;`}
+                      onMouseMove={(e: MouseEvent) => {
+                        const zoomer = e.currentTarget as HTMLElement;
+                        const offsetX = e.offsetX;
+                        const offsetY = e.offsetY;
+                        const x = offsetX / (zoomer.offsetWidth) * 100;
+                        const y = offsetY / (zoomer.offsetHeight) * 100;
+                        zoomer!.style.backgroundPosition = x + "% " + y + "%";
+                      }}
+                      class="overflow-hidden cursor-zoom-in rounded-[10px] hover:rounded-none"
+                    >
+                      <Image
+                        class="w-full rounded-[10px] lg:hover:opacity-0 h-[100%]"
+                        sizes="(max-width: 640px) 100vw, 40vw"
+                        style={{ aspectRatio: aspect }}
+                        src={img.url!}
+                        alt={img.alternateName}
+                        width={width}
+                        height={height}
+                        // Preload LCP image for better web vitals
+                        preload={index === 0}
+                        loading={index === 0 ? "eager" : "lazy"}
+                      />
+                    </figure>
+                  )}
               </Slider.Item>
             ))}
           </Slider>
