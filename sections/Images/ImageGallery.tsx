@@ -74,8 +74,8 @@ export default function ImageGallery(props: Props) {
             src={item.image}
             alt={"imagem de " + item.alt}
             decoding="async"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
           />
         </a>
       ))}
