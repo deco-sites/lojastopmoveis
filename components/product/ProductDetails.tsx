@@ -310,7 +310,7 @@ function Details({
           />
 
           {/* Product Info */}
-          <div class="w-full lg:pr-0 lg:pl-6">
+          <div class="w-full lg:pr-0 lg:pl-6 min-h-[946px]">
             <ProductInfo
               page={page}
               shipmentPolitics={shipmentPolitics}

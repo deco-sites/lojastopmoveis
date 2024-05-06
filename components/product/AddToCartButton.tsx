@@ -48,10 +48,10 @@ function AddToCartButton(
     <Button data-deco="add-to-cart" {...props} class={classes}>
       <p class="flex gap-2 items-center justify-center">
         {!hideIcon && <Icon id="ShoppingCart" width={24} height={20} />}
-        <span class="2xl:hidden uppercase w-full font-condensed">
+        <span class="2xl:hidden uppercase w-full font-condensed min-h-5	">
           {mobileLabel ?? "Carrinho"}
         </span>
-        <span class="hidden 2xl:inline uppercase font-condensed">
+        <span class="hidden 2xl:inline uppercase font-condensed min-h-5	">
           {label ?? "Adicionar ao carrinho"}
         </span>
       </p>
