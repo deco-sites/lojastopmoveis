@@ -45,8 +45,9 @@ import * as $$$$$$36 from "./sections/Product/ProductDetails.tsx";
 import * as $$$$$$37 from "./sections/Product/ProductShelf.tsx";
 import * as $$$$$$38 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$39 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$40 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$41 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$40 from "./sections/Seo/SeoPDPCustom.tsx";
+import * as $$$$$$41 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$42 from "./sections/Social/WhatsApp.tsx";
 
 const manifest = {
   "loaders": {
@@ -105,8 +106,9 @@ const manifest = {
     "deco-sites/lojastopmoveis/sections/Product/ProductShelf.tsx": $$$$$$37,
     "deco-sites/lojastopmoveis/sections/Product/SearchResult.tsx": $$$$$$38,
     "deco-sites/lojastopmoveis/sections/Product/Wishlist.tsx": $$$$$$39,
-    "deco-sites/lojastopmoveis/sections/Social/InstagramPosts.tsx": $$$$$$40,
-    "deco-sites/lojastopmoveis/sections/Social/WhatsApp.tsx": $$$$$$41,
+    "deco-sites/lojastopmoveis/sections/Seo/SeoPDPCustom.tsx": $$$$$$40,
+    "deco-sites/lojastopmoveis/sections/Social/InstagramPosts.tsx": $$$$$$41,
+    "deco-sites/lojastopmoveis/sections/Social/WhatsApp.tsx": $$$$$$42,
   },
   "apps": {
     "deco-sites/lojastopmoveis/apps/decohub.ts": $$$$$$$$$$$0,
