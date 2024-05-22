@@ -344,7 +344,7 @@ function ProductCard(
                       </p>
                     )}
                     <p class="text-secondary font-medium">
-                      {formatPrice(price, offers!.priceCurrency!)}
+                      {formatPrice((price*100)/90, offers!.priceCurrency!)}
                     </p>
                   </div>
                   {l?.hide.installments
@@ -359,7 +359,7 @@ function ProductCard(
                     )}
                   <div class="flex items-center gap-[10px] py-[10px]">
                     <span class="font-bold text-md text-secondary leading-none">
-                      {formatPrice(price * 0.90, offers?.priceCurrency)}
+                      {formatPrice(price, offers?.priceCurrency)}
                     </span>
                     <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
                       10% de desconto no Pix ou boleto
