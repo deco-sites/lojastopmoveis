@@ -23,7 +23,7 @@ function CartItem({ index, currency }: Props) {
   const item = cart.value!.items[index];
   const locale = cart.value?.clientPreferencesData.locale;
   const currencyCode = cart.value?.storePreferencesData.currencyCode;
-  const { imageUrl, skuName, sellingPrice, listPrice, name, quantity } = item;
+  const { imageUrl, skuName, sellingPrice, listPrice, name, quantity, price } = item;
 
   const isGift = sellingPrice < 0.01;
 
@@ -76,7 +76,7 @@ function CartItem({ index, currency }: Props) {
                 ou em até {highestNumberInstallments}x de {""}
                 {highestNumberInstallments
                   ? formatPrice(
-                    Math.ceil(listPrice * interestRatePercent) /
+                    Math.ceil(sellingPrice * interestRatePercent) /
                       highestNumberInstallments / 100,
                   )
                   : ""}
