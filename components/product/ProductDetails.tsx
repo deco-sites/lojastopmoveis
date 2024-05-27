@@ -125,7 +125,7 @@ function ProductInfo(
               )}
               <div class="flex items-center gap-[10px]">
                 <span class="font-medium text-lg text-secondary">
-                  {formatPrice(price, offers!.priceCurrency!)}
+                  {formatPrice((price*100)/90, offers!.priceCurrency!)}
                 </span>
                 {/* <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
                   10% de desconto no boleto
@@ -142,7 +142,7 @@ function ProductInfo(
             </div>
             <div class="flex items-center gap-[10px] py-[10px]">
               <span class="font-bold text-2xl text-secondary leading-none">
-                {formatPrice(price * 0.90, offers?.priceCurrency)}
+                {formatPrice(price, offers?.priceCurrency)}
               </span>
               <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
                 10% de desconto no Pix ou boleto
@@ -237,7 +237,7 @@ function ProductInfo(
                   rel="noopener noreferrer"
                   class="flex items-center justify-center w-full h-full group-hover:text-white text-primary"
                 >
-                  <Icon id={network} width={20} height={20} />
+                  <Icon id={network} size={20} />
                 </a>
               </li>
             ))}
