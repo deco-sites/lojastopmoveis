@@ -41,7 +41,7 @@ export default function ImageGallery(props: Props) {
 
   return (
     <section
-      class={`w-full h-full lg:grid justify-center lg:gap-8 gap-5 my-12 max-md:my-8 flex flex-wrap ${
+      class={`w-full h-full lg:grid justify-center lg:gap-4 gap-5 my-12 max-md:my-8 flex flex-wrap ${
         MOBILE_COLUMNS[itemPerPageMobile ?? 1]
       }} ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
     >
