@@ -53,6 +53,9 @@ function GlobalTags() {
 
       {/* Web Manifest */}
       <link rel="manifest" href={asset("/site.webmanifest")} />
+
+      {/* Parceiro de cookie AdOpt */}
+      <meta name="adopt-website-id" content="1136e700-787d-42a7-95b5-365ecf5e82f0" />
     </Head>
   );
 }
