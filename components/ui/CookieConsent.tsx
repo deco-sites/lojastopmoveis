@@ -21,7 +21,7 @@ const callback = () => {
   }
 };
 
-globalThis.window.addEventListener('scroll', callback, { once: true });
+window.addEventListener('scroll', callback, { once: true });
 `;
 
 export interface Props {
@@ -126,10 +126,10 @@ function CookieConsent(props: Props) {
                 : ""
             }`}
           >
-            <button class="btn" data-button-cc-accept>
+            <button class="rounded-full border border-solid no-animation h-9 !border border-secondary text-secondary font-bold tracking-[1px] text-xs px-[26px] w-fit hover:bg-secondary hover:text-[#fff] font-condensed" data-button-cc-accept>
               {buttons.allowText}
             </button>
-            <button class="btn btn-outline" data-button-cc-close>
+            <button class="rounded-full border border-solid no-animation h-9 !border border-primary text-primary font-bold tracking-[1px] text-xs px-[26px] w-fit hover:bg-[#2D2D2D] hover:text-[#fff] font-condensed" data-button-cc-close>
               {buttons.cancelText}
             </button>
           </div>
