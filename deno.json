@@ -29,9 +29,9 @@
   "imports": {
     "deco-sites/lojastopmoveis/": "./",
     "$store/": "./",
-    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.1/",
-    "$live/": "https://denopkg.com/deco-cx/deco@1.63.16/",
-    "deco/": "https://denopkg.com/deco-cx/deco@1.63.16/",
+    "deco-sites/std/": "https://denopkg.com/deco-sites/std@1.26.6/",
+    "$live/": "https://denopkg.com/deco-cx/deco@8b979f3fc0ba803f7d368774d8f5da0578fd1539/",
+    "deco/": "https://denopkg.com/deco-cx/deco@8b979f3fc0ba803f7d368774d8f5da0578fd1539/",
     "$fresh/": "https://deno.land/x/fresh@1.6.5/",
     "preact": "https://esm.sh/preact@10.19.2",
     "preact/": "https://esm.sh/preact@10.19.2/",
@@ -41,7 +41,7 @@
     "std/": "https://deno.land/std@0.190.0/",
     "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
     "daisyui": "npm:daisyui@3.0.3",
-    "apps/": "https://denopkg.com/deco-cx/apps@0.38.2/"
+    "apps/": "https://denopkg.com/deco-cx/apps@0.47.5/"
   },
   "lint": {
     "rules": {
