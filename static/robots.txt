@@ -1,13 +1,15 @@
-# Disallow all crawlers access to certain pages. 
- User-agent: * 
+User-agent: *
+Disallow: /
 
- Disallow: /img/* 
- Disallow: /account/* 
- Disallow: /login/* 
- Disallow: /checkout/* 
- Disallow: /busca/* 
- Disallow: /quick-view/* 
- Disallow: /espiar/* 
- Noindex: /buscapagina/* 
+User-agent: Googlebot
+Allow: /
+Disallow: /img/* 
+Disallow: /account/* 
+Disallow: /login/* 
+Disallow: /checkout/* 
+Disallow: /busca/* 
+Disallow: /quick-view/* 
+Disallow: /espiar/* 
+Disallow: /buscapagina/* 
 
- Sitemap: https://www.lojastopmoveis.com.br/sitemap.xml
+Sitemap: https://www.lojastopmoveis.com.br/sitemap.xml
