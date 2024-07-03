@@ -150,7 +150,7 @@ function Buttons({ className }: ButtonsProps) {
 export default function ImageGallery(props: Props) {
   const {
     images,
-    itemPerPageMobile = 1,
+    itemPerPageMobile = 2,
     itemPerPageDesktop = 3,
     hoverEffect,
     device,
@@ -208,7 +208,9 @@ export default function ImageGallery(props: Props) {
         )
         : (
           <section id={id}
-            class={"grid grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px]"}
+            class={`grid grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px] ${
+              MOBILE_COLUMNS[itemPerPageMobile ?? 2]
+            }`}
           >
             <Slider class="carousel sm:carousel-end col-span-full row-span-full">
               {images.map((item, index) => (
