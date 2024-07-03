@@ -280,3 +280,4 @@ export default function ImageGallery(props: Props) {
 export const loader = (props: Props, _req: Request, ctx: AppContext) => {
   return { ...props, device: ctx.device };
 };
+
