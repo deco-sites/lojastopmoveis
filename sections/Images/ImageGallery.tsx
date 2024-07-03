@@ -212,7 +212,7 @@ export default function ImageGallery(props: Props) {
               MOBILE_COLUMNS[itemPerPageMobile ?? 2]
             }`}
           >
-            <Slider class="carousel sm:carousel-end col-span-full row-span-full">
+            <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/5]">
               {images.map((item, index) => (
                 <Slider.Item
                   index={index}
