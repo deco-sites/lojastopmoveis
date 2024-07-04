@@ -167,7 +167,7 @@ export default function ImageGallery(props: Props) {
         ? (
           <section
             class={`w-full h-full lg:grid justify-center lg:gap-4 gap-5 my-12 max-md:my-8 flex flex-wrap ${
-              MOBILE_COLUMNS[itemPerPageMobile ?? 1]
+              MOBILE_COLUMNS[itemPerPageMobile ?? 2]
             }} ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
           >
             {images.map((item) => (
@@ -208,15 +208,15 @@ export default function ImageGallery(props: Props) {
         )
         : (
           <section id={id}
-            class={`grid grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px] ${
-              MOBILE_COLUMNS[itemPerPageMobile ?? 2]
-            }`}
+            class={`grid grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px]`}
           >
             <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/5]">
               {images.map((item, index) => (
                 <Slider.Item
                   index={index}
-                  class={"carousel-item lg:flex lg:justify-center"}
+                  class={`carousel-item lg:flex lg:justify-center ${
+              MOBILE_COLUMNS[itemPerPageMobile ?? 2]
+            }} ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
                 >
                   <a
                     target={item.blank ? "_self" : "_blank"}
