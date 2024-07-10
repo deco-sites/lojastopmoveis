@@ -25,29 +25,30 @@ import * as $$$$$$16 from "./sections/Header/TopNavBar.tsx";
 import * as $$$$$$17 from "./sections/Images/BannerGrid.tsx";
 import * as $$$$$$18 from "./sections/Images/Carousel.tsx";
 import * as $$$$$$19 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$20 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$21 from "./sections/Institutional/AccordionsContent.tsx";
-import * as $$$$$$22 from "./sections/Institutional/AsideMenu.tsx";
-import * as $$$$$$23 from "./sections/Institutional/CardsContent.tsx";
-import * as $$$$$$24 from "./sections/Institutional/ContactForm.tsx";
-import * as $$$$$$25 from "./sections/Institutional/InstitutionalPage.tsx";
-import * as $$$$$$26 from "./sections/Institutional/NossasLojas.tsx";
-import * as $$$$$$27 from "./sections/Institutional/TextContent.tsx";
-import * as $$$$$$28 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$29 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$30 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$31 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$32 from "./sections/Miscellaneous/NotFound.tsx";
-import * as $$$$$$33 from "./sections/Miscellaneous/ProxyIframe.tsx";
-import * as $$$$$$34 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$35 from "./sections/Newsletter/NewsletterModal.tsx";
-import * as $$$$$$36 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$37 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$38 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$39 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$40 from "./sections/Seo/SeoPDPCustom.tsx";
-import * as $$$$$$41 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$42 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$20 from "./sections/Images/ImageGalleryBanners.tsx";
+import * as $$$$$$21 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$22 from "./sections/Institutional/AccordionsContent.tsx";
+import * as $$$$$$23 from "./sections/Institutional/AsideMenu.tsx";
+import * as $$$$$$24 from "./sections/Institutional/CardsContent.tsx";
+import * as $$$$$$25 from "./sections/Institutional/ContactForm.tsx";
+import * as $$$$$$26 from "./sections/Institutional/InstitutionalPage.tsx";
+import * as $$$$$$27 from "./sections/Institutional/NossasLojas.tsx";
+import * as $$$$$$28 from "./sections/Institutional/TextContent.tsx";
+import * as $$$$$$29 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$30 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$31 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$32 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$33 from "./sections/Miscellaneous/NotFound.tsx";
+import * as $$$$$$34 from "./sections/Miscellaneous/ProxyIframe.tsx";
+import * as $$$$$$35 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$36 from "./sections/Newsletter/NewsletterModal.tsx";
+import * as $$$$$$37 from "./sections/Product/ProductDetails.tsx";
+import * as $$$$$$38 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$39 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$40 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$41 from "./sections/Seo/SeoPDPCustom.tsx";
+import * as $$$$$$42 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$43 from "./sections/Social/WhatsApp.tsx";
 
 const manifest = {
   "loaders": {
@@ -76,39 +77,41 @@ const manifest = {
     "deco-sites/lojastopmoveis/sections/Images/BannerGrid.tsx": $$$$$$17,
     "deco-sites/lojastopmoveis/sections/Images/Carousel.tsx": $$$$$$18,
     "deco-sites/lojastopmoveis/sections/Images/ImageGallery.tsx": $$$$$$19,
-    "deco-sites/lojastopmoveis/sections/Images/ShoppableBanner.tsx": $$$$$$20,
+    "deco-sites/lojastopmoveis/sections/Images/ImageGalleryBanners.tsx":
+      $$$$$$20,
+    "deco-sites/lojastopmoveis/sections/Images/ShoppableBanner.tsx": $$$$$$21,
     "deco-sites/lojastopmoveis/sections/Institutional/AccordionsContent.tsx":
-      $$$$$$21,
-    "deco-sites/lojastopmoveis/sections/Institutional/AsideMenu.tsx": $$$$$$22,
+      $$$$$$22,
+    "deco-sites/lojastopmoveis/sections/Institutional/AsideMenu.tsx": $$$$$$23,
     "deco-sites/lojastopmoveis/sections/Institutional/CardsContent.tsx":
-      $$$$$$23,
-    "deco-sites/lojastopmoveis/sections/Institutional/ContactForm.tsx":
       $$$$$$24,
-    "deco-sites/lojastopmoveis/sections/Institutional/InstitutionalPage.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/ContactForm.tsx":
       $$$$$$25,
-    "deco-sites/lojastopmoveis/sections/Institutional/NossasLojas.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/InstitutionalPage.tsx":
       $$$$$$26,
-    "deco-sites/lojastopmoveis/sections/Institutional/TextContent.tsx":
+    "deco-sites/lojastopmoveis/sections/Institutional/NossasLojas.tsx":
       $$$$$$27,
-    "deco-sites/lojastopmoveis/sections/Links/LinkTree.tsx": $$$$$$28,
-    "deco-sites/lojastopmoveis/sections/Links/Shortcuts.tsx": $$$$$$29,
+    "deco-sites/lojastopmoveis/sections/Institutional/TextContent.tsx":
+      $$$$$$28,
+    "deco-sites/lojastopmoveis/sections/Links/LinkTree.tsx": $$$$$$29,
+    "deco-sites/lojastopmoveis/sections/Links/Shortcuts.tsx": $$$$$$30,
     "deco-sites/lojastopmoveis/sections/Miscellaneous/CampaignTimer.tsx":
-      $$$$$$30,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$31,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/NotFound.tsx": $$$$$$32,
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/CookieConsent.tsx":
+      $$$$$$32,
+    "deco-sites/lojastopmoveis/sections/Miscellaneous/NotFound.tsx": $$$$$$33,
     "deco-sites/lojastopmoveis/sections/Miscellaneous/ProxyIframe.tsx":
-      $$$$$$33,
-    "deco-sites/lojastopmoveis/sections/Newsletter/Newsletter.tsx": $$$$$$34,
+      $$$$$$34,
+    "deco-sites/lojastopmoveis/sections/Newsletter/Newsletter.tsx": $$$$$$35,
     "deco-sites/lojastopmoveis/sections/Newsletter/NewsletterModal.tsx":
-      $$$$$$35,
-    "deco-sites/lojastopmoveis/sections/Product/ProductDetails.tsx": $$$$$$36,
-    "deco-sites/lojastopmoveis/sections/Product/ProductShelf.tsx": $$$$$$37,
-    "deco-sites/lojastopmoveis/sections/Product/SearchResult.tsx": $$$$$$38,
-    "deco-sites/lojastopmoveis/sections/Product/Wishlist.tsx": $$$$$$39,
-    "deco-sites/lojastopmoveis/sections/Seo/SeoPDPCustom.tsx": $$$$$$40,
-    "deco-sites/lojastopmoveis/sections/Social/InstagramPosts.tsx": $$$$$$41,
-    "deco-sites/lojastopmoveis/sections/Social/WhatsApp.tsx": $$$$$$42,
+      $$$$$$36,
+    "deco-sites/lojastopmoveis/sections/Product/ProductDetails.tsx": $$$$$$37,
+    "deco-sites/lojastopmoveis/sections/Product/ProductShelf.tsx": $$$$$$38,
+    "deco-sites/lojastopmoveis/sections/Product/SearchResult.tsx": $$$$$$39,
+    "deco-sites/lojastopmoveis/sections/Product/Wishlist.tsx": $$$$$$40,
+    "deco-sites/lojastopmoveis/sections/Seo/SeoPDPCustom.tsx": $$$$$$41,
+    "deco-sites/lojastopmoveis/sections/Social/InstagramPosts.tsx": $$$$$$42,
+    "deco-sites/lojastopmoveis/sections/Social/WhatsApp.tsx": $$$$$$43,
   },
   "apps": {
     "deco-sites/lojastopmoveis/apps/decohub.ts": $$$$$$$$$$$0,
