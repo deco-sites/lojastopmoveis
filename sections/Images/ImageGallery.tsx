@@ -133,6 +133,7 @@ function Buttons({ className }: ButtonsProps) {
     </>
   );
 }
+
 export default function ImageGallery(props: Props) {
   const {
     images,
