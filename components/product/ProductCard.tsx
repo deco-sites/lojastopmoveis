@@ -186,7 +186,7 @@ function ProductCard(
 
   return (
     <div
-      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-5 h-[100%] ${
+      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${
         align === "center" ? "text-center" : "text-start"
       } ${
         l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
