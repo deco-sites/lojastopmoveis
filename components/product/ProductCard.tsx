@@ -186,7 +186,7 @@ function ProductCard(
 
   return (
     <div
-      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${
+      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${
         align === "center" ? "text-center" : "text-start"
       } ${
         l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
@@ -276,7 +276,7 @@ function ProductCard(
               height={HEIGHT}
               class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
               sizes="(max-width: 640px) 50vw, 20vw"
-              loading="lazy"
+              loading="eager"
               decoding="async"
             />
           )}
