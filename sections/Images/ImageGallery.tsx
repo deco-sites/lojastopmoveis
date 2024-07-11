@@ -202,7 +202,7 @@ export default function ImageGallery(props: Props) {
                   index={index}
                   class={`carousel-item lg:flex lg:justify-center ${
                     MOBILE_COLUMNS[itemPerPageMobile ?? 2]
-                  }} ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
+                  } ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
                 >
                   <a
                     target={item.blank ? "_self" : "_blank"}
