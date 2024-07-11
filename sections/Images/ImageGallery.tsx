@@ -175,7 +175,7 @@ export default function ImageGallery(props: Props) {
                     />
                   </Head>
                 )}
-                <Image
+                <img
                   preload={undefined}
                   loading={"lazy"}
                   class={`w-full h-full scale-100 ${
