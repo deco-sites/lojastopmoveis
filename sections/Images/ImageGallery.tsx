@@ -200,7 +200,7 @@ export default function ImageGallery(props: Props) {
               {images.map((item, index) => (
                 <Slider.Item
                   index={index}
-                  class={`carousel-item lg:flex lg:justify-center ${
+                  class={`carousel-item lg:flex lg:justify-center !w-1/2	 ${
                     MOBILE_COLUMNS[itemPerPageMobile ?? 2]
                   } ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
                 >
@@ -223,7 +223,7 @@ export default function ImageGallery(props: Props) {
                         />
                       </Head>
                     )}
-                    <Image
+                    <img
                       preload={undefined}
                       loading={"lazy"}
                       class={`w-full h-full scale-100 ${
