@@ -11,6 +11,7 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import SearchPagination from "$store/components/search/SearchPagination.tsx";
 import { Section } from "$live/blocks/section.ts";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
+import { logger } from "../../../deco/mod.ts";
 
 export interface Props {
   page: LoaderReturnType<ProductListingPage | null>;
@@ -122,6 +123,8 @@ function SearchResult(
     return <NotFoundSection {...notFoundProps} />;
   }
 
+  logger.info('Page Data: ', page);
+  console.log('Page Data: ', page);
   return <Result {...props} page={page} />;
 }
 
