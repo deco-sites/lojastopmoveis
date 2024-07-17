@@ -11,7 +11,6 @@ import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import SearchPagination from "$store/components/search/SearchPagination.tsx";
 import { Section } from "$live/blocks/section.ts";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
-import { logger } from "../../../deco/mod.ts";
 
 export interface Props {
   page: LoaderReturnType<ProductListingPage | null>;
@@ -28,7 +27,6 @@ export interface Props {
    */
   highlights?: HighLight[];
   /**
-   * 
    * @description Not found section, displayed when no products are found
    */
   notFoundSection: Section;
@@ -37,10 +35,9 @@ export interface Props {
 function Result({
   page,
   variant,
-  highlights
+  highlights,
 }: Omit<Omit<Props, "page">, "notFoundSection"> & {
   page: ProductListingPage;
-  
 }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
 
@@ -49,7 +46,7 @@ function Result({
       Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
     </h6>
   );
-  
+
   return (
     <>
       <div>
@@ -85,7 +82,7 @@ function Result({
               {productsFound}
             </div>
             <div class="flex-grow">
-              <ProductGallery products={products} highlights={highlights }/>
+              <ProductGallery products={products} highlights={highlights} />
               <SearchPagination pageInfo={pageInfo} />
             </div>
           </div>
@@ -123,8 +120,7 @@ function SearchResult(
     return <NotFoundSection {...notFoundProps} />;
   }
 
-  logger.info('Page Data: ', page);
-  console.log('Page Data: ', page);
+  console.log("Page Data: ", page);
   return <Result {...props} page={page} />;
 }
 
