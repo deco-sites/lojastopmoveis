@@ -27,7 +27,6 @@ export interface Props {
    */
   highlights?: HighLight[];
   /**
-   * 
    * @description Not found section, displayed when no products are found
    */
   notFoundSection: Section;
@@ -36,10 +35,9 @@ export interface Props {
 function Result({
   page,
   variant,
-  highlights
+  highlights,
 }: Omit<Omit<Props, "page">, "notFoundSection"> & {
   page: ProductListingPage;
-  
 }) {
   const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
 
@@ -48,7 +46,7 @@ function Result({
       Produtos encontrados: <strong>{pageInfo.records} resultados</strong>
     </h6>
   );
-  
+
   return (
     <>
       <div>
@@ -84,7 +82,7 @@ function Result({
               {productsFound}
             </div>
             <div class="flex-grow">
-              <ProductGallery products={products} highlights={highlights }/>
+              <ProductGallery products={products} highlights={highlights} />
               <SearchPagination pageInfo={pageInfo} />
             </div>
           </div>
@@ -122,6 +120,7 @@ function SearchResult(
     return <NotFoundSection {...notFoundProps} />;
   }
 
+  console.log("Page Data: ", page);
   return <Result {...props} page={page} />;
 }
 
