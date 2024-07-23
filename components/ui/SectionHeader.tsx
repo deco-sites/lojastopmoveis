@@ -18,12 +18,12 @@ function Header(props: Props) {
           >
             {props.title &&
               (
-                <h1
+                <h2
                   class={`text-xl lg:text-2xl leading-8 lg:leading-10 font-medium text-${props.color}
                 `}
                 >
                   {props.title}
-                </h1>
+                </h2>
               )}
             {props.description &&
               (

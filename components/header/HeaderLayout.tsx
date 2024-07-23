@@ -37,6 +37,7 @@ function HeaderLayout(
               class="max-w-[33vw] w-[54.1px] h-[40px] md:w-[94.6px] md:h-[70px]"
               width={94.6}
               height={70}
+              aria-label={"TopMoveis"}
             />
           </a>
         </div>
