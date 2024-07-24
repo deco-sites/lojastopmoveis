@@ -32,12 +32,15 @@ function HeaderLayout(
         <div class="flex items-center gap-5">
           <Buttons variant="menu" />
           <a href="/" class="" aria-label="Store logo">
-            <Icon
-              id="Logo"
-              class="max-w-[33vw] w-[54.1px] h-[40px] md:w-[94.6px] md:h-[70px]"
-              width={94.6}
-              height={70}
-            />
+            <h1>
+              <Icon
+                id="Logo"
+                class="max-w-[33vw] w-[54.1px] h-[40px] md:w-[94.6px] md:h-[70px]"
+                width={94.6}
+                height={70}
+                alt={"TopMoveis"}
+              />
+            </h1>
           </a>
         </div>
         <div class="max-lg:hidden flex justify-between">
