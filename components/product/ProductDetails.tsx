@@ -19,7 +19,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
-import SimilarSelector from "deco-sites/lojastopmoveis/components/product/SimilarSelector.tsx";
+import SimilarSelector from "site/components/product/SimilarSelector.tsx";
 
 export type Variant = "front-back" | "slider" | "auto";
 

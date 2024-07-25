@@ -9,23 +9,23 @@ export interface Props {
   asideMenu: Section;
   content:
     | BlockInstance<
-      "deco-sites/lojastopmoveis/sections/Institutional/TextContent.tsx",
+      "site/sections/Institutional/TextContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/lojastopmoveis/sections/Institutional/AccordionsContent.tsx",
+      "site/sections/Institutional/AccordionsContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/lojastopmoveis/sections/Institutional/CardsContent.tsx",
+      "site/sections/Institutional/CardsContent.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/lojastopmoveis/sections/Institutional/ContactForm.tsx",
+      "site/sections/Institutional/ContactForm.tsx",
       Manifest
     >
     | BlockInstance<
-      "deco-sites/lojastopmoveis/sections/Institutional/NossasLojas.tsx",
+      "site/sections/Institutional/NossasLojas.tsx",
       Manifest
     >;
 }
