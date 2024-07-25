@@ -56,8 +56,7 @@ const manifest = {
   },
   "sections": {
     "site/sections/Category/CategoryBanner.tsx": $$$$$$0,
-    "site/sections/Category/CategoryBreadcrumb.tsx":
-      $$$$$$1,
+    "site/sections/Category/CategoryBreadcrumb.tsx": $$$$$$1,
     "site/sections/Category/CategoryList.tsx": $$$$$$2,
     "site/sections/Category/CategoryText.tsx": $$$$$$3,
     "site/sections/Container.tsx": $$$$$$4,
@@ -68,8 +67,7 @@ const manifest = {
     "site/sections/Content/InfoCardSeo.tsx": $$$$$$9,
     "site/sections/Content/Logos.tsx": $$$$$$10,
     "site/sections/Content/Testimonials.tsx": $$$$$$11,
-    "site/sections/DesignSystem/DesignSystem.tsx":
-      $$$$$$12,
+    "site/sections/DesignSystem/DesignSystem.tsx": $$$$$$12,
     "site/sections/Footer/Footer.tsx": $$$$$$13,
     "site/sections/Header/HeaderLayout.tsx": $$$$$$14,
     "site/sections/Header/HeaderNavMenu.tsx": $$$$$$15,
@@ -77,34 +75,23 @@ const manifest = {
     "site/sections/Images/BannerGrid.tsx": $$$$$$17,
     "site/sections/Images/Carousel.tsx": $$$$$$18,
     "site/sections/Images/ImageGallery.tsx": $$$$$$19,
-    "site/sections/Images/ImageGalleryBanners.tsx":
-      $$$$$$20,
+    "site/sections/Images/ImageGalleryBanners.tsx": $$$$$$20,
     "site/sections/Images/ShoppableBanner.tsx": $$$$$$21,
-    "site/sections/Institutional/AccordionsContent.tsx":
-      $$$$$$22,
+    "site/sections/Institutional/AccordionsContent.tsx": $$$$$$22,
     "site/sections/Institutional/AsideMenu.tsx": $$$$$$23,
-    "site/sections/Institutional/CardsContent.tsx":
-      $$$$$$24,
-    "site/sections/Institutional/ContactForm.tsx":
-      $$$$$$25,
-    "site/sections/Institutional/InstitutionalPage.tsx":
-      $$$$$$26,
-    "site/sections/Institutional/NossasLojas.tsx":
-      $$$$$$27,
-    "site/sections/Institutional/TextContent.tsx":
-      $$$$$$28,
+    "site/sections/Institutional/CardsContent.tsx": $$$$$$24,
+    "site/sections/Institutional/ContactForm.tsx": $$$$$$25,
+    "site/sections/Institutional/InstitutionalPage.tsx": $$$$$$26,
+    "site/sections/Institutional/NossasLojas.tsx": $$$$$$27,
+    "site/sections/Institutional/TextContent.tsx": $$$$$$28,
     "site/sections/Links/LinkTree.tsx": $$$$$$29,
     "site/sections/Links/Shortcuts.tsx": $$$$$$30,
-    "site/sections/Miscellaneous/CampaignTimer.tsx":
-      $$$$$$31,
-    "site/sections/Miscellaneous/CookieConsent.tsx":
-      $$$$$$32,
+    "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$31,
+    "site/sections/Miscellaneous/CookieConsent.tsx": $$$$$$32,
     "site/sections/Miscellaneous/NotFound.tsx": $$$$$$33,
-    "site/sections/Miscellaneous/ProxyIframe.tsx":
-      $$$$$$34,
+    "site/sections/Miscellaneous/ProxyIframe.tsx": $$$$$$34,
     "site/sections/Newsletter/Newsletter.tsx": $$$$$$35,
-    "site/sections/Newsletter/NewsletterModal.tsx":
-      $$$$$$36,
+    "site/sections/Newsletter/NewsletterModal.tsx": $$$$$$36,
     "site/sections/Product/ProductDetails.tsx": $$$$$$37,
     "site/sections/Product/ProductShelf.tsx": $$$$$$38,
     "site/sections/Product/SearchResult.tsx": $$$$$$39,
