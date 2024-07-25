@@ -1,0 +1,1 @@
+{"sections":[{"label":"CategoryBreadcrumb","shadow":"none","section":{"page":{"sort":"price:desc","count":1,"fuzzy":"automatic","__resolveType":"vtex/loaders/intelligentSearch/productListingPage.ts","selectedFacets":[]},"__resolveType":"site/sections/Category/CategoryBreadcrumb.tsx"},"withContainer":true,"verticalSpacing":"both"}],"__resolveType":"site/sections/Container.tsx"}

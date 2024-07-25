@@ -9,7 +9,7 @@ import Slider from "../../components/ui/Slider.tsx";
 import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "preact/hooks";
 import Icon from "../../components/ui/Icon.tsx";
-import { AppContext } from "deco-sites/lojastopmoveis/apps/site.ts";
+import { AppContext } from "site/apps/site.ts";
 export type ResponsiveConditionals =
   | "Always"
   | "Desktop Only"

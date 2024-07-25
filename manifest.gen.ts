@@ -52,72 +52,72 @@ import * as $$$$$$43 from "./sections/Social/WhatsApp.tsx";
 
 const manifest = {
   "loaders": {
-    "deco-sites/lojastopmoveis/loaders/RedirectsFromCsvWithEncoding.ts": $$$0,
+    "site/loaders/RedirectsFromCsvWithEncoding.ts": $$$0,
   },
   "sections": {
-    "deco-sites/lojastopmoveis/sections/Category/CategoryBanner.tsx": $$$$$$0,
-    "deco-sites/lojastopmoveis/sections/Category/CategoryBreadcrumb.tsx":
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$0,
+    "site/sections/Category/CategoryBreadcrumb.tsx":
       $$$$$$1,
-    "deco-sites/lojastopmoveis/sections/Category/CategoryList.tsx": $$$$$$2,
-    "deco-sites/lojastopmoveis/sections/Category/CategoryText.tsx": $$$$$$3,
-    "deco-sites/lojastopmoveis/sections/Container.tsx": $$$$$$4,
-    "deco-sites/lojastopmoveis/sections/Content/Benefits.tsx": $$$$$$5,
-    "deco-sites/lojastopmoveis/sections/Content/CopyRight.tsx": $$$$$$6,
-    "deco-sites/lojastopmoveis/sections/Content/Faq.tsx": $$$$$$7,
-    "deco-sites/lojastopmoveis/sections/Content/InfoCard.tsx": $$$$$$8,
-    "deco-sites/lojastopmoveis/sections/Content/InfoCardSeo.tsx": $$$$$$9,
-    "deco-sites/lojastopmoveis/sections/Content/Logos.tsx": $$$$$$10,
-    "deco-sites/lojastopmoveis/sections/Content/Testimonials.tsx": $$$$$$11,
-    "deco-sites/lojastopmoveis/sections/DesignSystem/DesignSystem.tsx":
+    "site/sections/Category/CategoryList.tsx": $$$$$$2,
+    "site/sections/Category/CategoryText.tsx": $$$$$$3,
+    "site/sections/Container.tsx": $$$$$$4,
+    "site/sections/Content/Benefits.tsx": $$$$$$5,
+    "site/sections/Content/CopyRight.tsx": $$$$$$6,
+    "site/sections/Content/Faq.tsx": $$$$$$7,
+    "site/sections/Content/InfoCard.tsx": $$$$$$8,
+    "site/sections/Content/InfoCardSeo.tsx": $$$$$$9,
+    "site/sections/Content/Logos.tsx": $$$$$$10,
+    "site/sections/Content/Testimonials.tsx": $$$$$$11,
+    "site/sections/DesignSystem/DesignSystem.tsx":
       $$$$$$12,
-    "deco-sites/lojastopmoveis/sections/Footer/Footer.tsx": $$$$$$13,
-    "deco-sites/lojastopmoveis/sections/Header/HeaderLayout.tsx": $$$$$$14,
-    "deco-sites/lojastopmoveis/sections/Header/HeaderNavMenu.tsx": $$$$$$15,
-    "deco-sites/lojastopmoveis/sections/Header/TopNavBar.tsx": $$$$$$16,
-    "deco-sites/lojastopmoveis/sections/Images/BannerGrid.tsx": $$$$$$17,
-    "deco-sites/lojastopmoveis/sections/Images/Carousel.tsx": $$$$$$18,
-    "deco-sites/lojastopmoveis/sections/Images/ImageGallery.tsx": $$$$$$19,
-    "deco-sites/lojastopmoveis/sections/Images/ImageGalleryBanners.tsx":
+    "site/sections/Footer/Footer.tsx": $$$$$$13,
+    "site/sections/Header/HeaderLayout.tsx": $$$$$$14,
+    "site/sections/Header/HeaderNavMenu.tsx": $$$$$$15,
+    "site/sections/Header/TopNavBar.tsx": $$$$$$16,
+    "site/sections/Images/BannerGrid.tsx": $$$$$$17,
+    "site/sections/Images/Carousel.tsx": $$$$$$18,
+    "site/sections/Images/ImageGallery.tsx": $$$$$$19,
+    "site/sections/Images/ImageGalleryBanners.tsx":
       $$$$$$20,
-    "deco-sites/lojastopmoveis/sections/Images/ShoppableBanner.tsx": $$$$$$21,
-    "deco-sites/lojastopmoveis/sections/Institutional/AccordionsContent.tsx":
+    "site/sections/Images/ShoppableBanner.tsx": $$$$$$21,
+    "site/sections/Institutional/AccordionsContent.tsx":
       $$$$$$22,
-    "deco-sites/lojastopmoveis/sections/Institutional/AsideMenu.tsx": $$$$$$23,
-    "deco-sites/lojastopmoveis/sections/Institutional/CardsContent.tsx":
+    "site/sections/Institutional/AsideMenu.tsx": $$$$$$23,
+    "site/sections/Institutional/CardsContent.tsx":
       $$$$$$24,
-    "deco-sites/lojastopmoveis/sections/Institutional/ContactForm.tsx":
+    "site/sections/Institutional/ContactForm.tsx":
       $$$$$$25,
-    "deco-sites/lojastopmoveis/sections/Institutional/InstitutionalPage.tsx":
+    "site/sections/Institutional/InstitutionalPage.tsx":
       $$$$$$26,
-    "deco-sites/lojastopmoveis/sections/Institutional/NossasLojas.tsx":
+    "site/sections/Institutional/NossasLojas.tsx":
       $$$$$$27,
-    "deco-sites/lojastopmoveis/sections/Institutional/TextContent.tsx":
+    "site/sections/Institutional/TextContent.tsx":
       $$$$$$28,
-    "deco-sites/lojastopmoveis/sections/Links/LinkTree.tsx": $$$$$$29,
-    "deco-sites/lojastopmoveis/sections/Links/Shortcuts.tsx": $$$$$$30,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/CampaignTimer.tsx":
+    "site/sections/Links/LinkTree.tsx": $$$$$$29,
+    "site/sections/Links/Shortcuts.tsx": $$$$$$30,
+    "site/sections/Miscellaneous/CampaignTimer.tsx":
       $$$$$$31,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/CookieConsent.tsx":
+    "site/sections/Miscellaneous/CookieConsent.tsx":
       $$$$$$32,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/NotFound.tsx": $$$$$$33,
-    "deco-sites/lojastopmoveis/sections/Miscellaneous/ProxyIframe.tsx":
+    "site/sections/Miscellaneous/NotFound.tsx": $$$$$$33,
+    "site/sections/Miscellaneous/ProxyIframe.tsx":
       $$$$$$34,
-    "deco-sites/lojastopmoveis/sections/Newsletter/Newsletter.tsx": $$$$$$35,
-    "deco-sites/lojastopmoveis/sections/Newsletter/NewsletterModal.tsx":
+    "site/sections/Newsletter/Newsletter.tsx": $$$$$$35,
+    "site/sections/Newsletter/NewsletterModal.tsx":
       $$$$$$36,
-    "deco-sites/lojastopmoveis/sections/Product/ProductDetails.tsx": $$$$$$37,
-    "deco-sites/lojastopmoveis/sections/Product/ProductShelf.tsx": $$$$$$38,
-    "deco-sites/lojastopmoveis/sections/Product/SearchResult.tsx": $$$$$$39,
-    "deco-sites/lojastopmoveis/sections/Product/Wishlist.tsx": $$$$$$40,
-    "deco-sites/lojastopmoveis/sections/Seo/SeoPDPCustom.tsx": $$$$$$41,
-    "deco-sites/lojastopmoveis/sections/Social/InstagramPosts.tsx": $$$$$$42,
-    "deco-sites/lojastopmoveis/sections/Social/WhatsApp.tsx": $$$$$$43,
+    "site/sections/Product/ProductDetails.tsx": $$$$$$37,
+    "site/sections/Product/ProductShelf.tsx": $$$$$$38,
+    "site/sections/Product/SearchResult.tsx": $$$$$$39,
+    "site/sections/Product/Wishlist.tsx": $$$$$$40,
+    "site/sections/Seo/SeoPDPCustom.tsx": $$$$$$41,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$42,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$43,
   },
   "apps": {
-    "deco-sites/lojastopmoveis/apps/decohub.ts": $$$$$$$$$$$0,
-    "deco-sites/lojastopmoveis/apps/site.ts": $$$$$$$$$$$1,
+    "site/apps/decohub.ts": $$$$$$$$$$$0,
+    "site/apps/site.ts": $$$$$$$$$$$1,
   },
-  "name": "deco-sites/lojastopmoveis",
+  "name": "site",
   "baseUrl": import.meta.url,
 };
 
