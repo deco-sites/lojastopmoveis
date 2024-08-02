@@ -22,10 +22,11 @@
     "README.md",
     "**/_fresh/*"
   ],
-  "nodeModulesDir": true,
+  "nodeModulesDir": false,
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact"
+    "jsxImportSource": "preact",
+    "experimentalDecorators": true
   },
   "imports": {
     "$store/": "./",

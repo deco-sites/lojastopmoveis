@@ -1,1 +1,154 @@
-{"sections":[{"label":"Carousel","shadow":"none","section":{"images":[{"alt":"Achadinhos","action":{"href":"/operacaoliquida","variant":"primary"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/58f9ab2d-b595-4c35-bd35-496fc3eb5ad8","width":390,"height":490},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/c1b8d422-08a9-438a-925d-4ae283d6126a","width":1920,"height":600}},{"alt":"Achadinhos","action":{"href":"/moveis/quarto-adulto","variant":"primary"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/841be4f7-53db-4a45-b607-83f0ad74699f","width":390,"height":490},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e74025a0-afc7-4df8-9841-1c6248cce061","width":1920,"height":600}},{"alt":"Achadinhos","action":{"href":"/saldaodeofertastopmoveis","variant":"primary"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4de74be1-934a-468f-ba94-80d2f836f071","width":390,"height":490},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3da66ec4-7e05-4720-a68c-c16170b9aeb1","width":1920,"height":600}},{"alt":"Achadinhos","action":{"href":"/eletrodomesticos","variant":"primary"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/a218c3e9-787a-456b-8d2c-b4f049e21378","width":390,"height":490},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e8bb1e5e-1a12-4790-902b-b4baaa8fc262","width":1920,"height":600}},{"alt":"Achadinhos","action":{"href":"/moveis/cozinha","variant":"primary"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/56e60c64-50e5-41ce-bc3d-3299bfcdd423","width":390,"height":490},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/016815ac-3dea-47dc-99d5-e151bb5bc313","width":1920,"height":600}},{"alt":"Sala de Estar e Jantar","action":{"href":"/moveis/sala-de-estar","variant":"primary"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/9ccc8fb8-535a-477e-9257-8c6adb0e8170","width":390,"height":490},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/f6587cf8-5a9a-4983-ab26-3f596d1bd805","width":1920,"height":600}},{"alt":"Parceria Premium Madeform","action":{"href":"/busca?q=tuboarte","variant":"primary"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/d1910f5f-7d42-4f16-b530-fcf919b787d2","width":389,"height":490},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/b6991dfd-b7fc-4e65-981f-f90fd1e3d91a","width":1919,"height":600}},{"alt":"Parceria Premium Madeform","action":{"href":"/busca?q=madeform","variant":"primary"},"mobile":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/c5dfdb36-1a8b-4247-bbf1-3d1435bb161f","width":390,"height":490},"desktop":{"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4fd5e362-1052-461e-b5e2-a0f9e4b2ce2d","width":1920,"height":600}}],"preload":true,"interval":5,"__resolveType":"site/sections/Images/Carousel.tsx","showPaginationDots":"Always"},"verticalSpacing":"both"}],"__resolveType":"site/sections/Container.tsx"}
+{
+  "sections": [
+    {
+      "label": "Carousel",
+      "shadow": "none",
+      "section": {
+        "images": [
+          {
+            "alt": "Achadinhos",
+            "action": {
+              "href": "/operacaoliquida",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e6c6d960-eda2-47f7-8b31-744fe79016be",
+              "width": 390,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4a00de24-4e54-45be-b0f5-eeeaa287cad6",
+              "width": 1920,
+              "height": 600
+            }
+          },
+          {
+            "alt": "Achadinhos",
+            "action": {
+              "href": "/moveis/quarto-adulto",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/841be4f7-53db-4a45-b607-83f0ad74699f",
+              "width": 390,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e74025a0-afc7-4df8-9841-1c6248cce061",
+              "width": 1920,
+              "height": 600
+            }
+          },
+          {
+            "alt": "Achadinhos",
+            "action": {
+              "href": "/saldaodeofertastopmoveis",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4de74be1-934a-468f-ba94-80d2f836f071",
+              "width": 390,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3da66ec4-7e05-4720-a68c-c16170b9aeb1",
+              "width": 1920,
+              "height": 600
+            }
+          },
+          {
+            "alt": "Achadinhos",
+            "action": {
+              "href": "/eletrodomesticos",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/a218c3e9-787a-456b-8d2c-b4f049e21378",
+              "width": 390,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e8bb1e5e-1a12-4790-902b-b4baaa8fc262",
+              "width": 1920,
+              "height": 600
+            }
+          },
+          {
+            "alt": "Achadinhos",
+            "action": {
+              "href": "/moveis/cozinha",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/56e60c64-50e5-41ce-bc3d-3299bfcdd423",
+              "width": 390,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/016815ac-3dea-47dc-99d5-e151bb5bc313",
+              "width": 1920,
+              "height": 600
+            }
+          },
+          {
+            "alt": "Sala de Estar e Jantar",
+            "action": {
+              "href": "/moveis/sala-de-estar",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/9ccc8fb8-535a-477e-9257-8c6adb0e8170",
+              "width": 390,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/f6587cf8-5a9a-4983-ab26-3f596d1bd805",
+              "width": 1920,
+              "height": 600
+            }
+          },
+          {
+            "alt": "Parceria Premium Madeform",
+            "action": {
+              "href": "/busca?q=tuboarte",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/d1910f5f-7d42-4f16-b530-fcf919b787d2",
+              "width": 389,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/b6991dfd-b7fc-4e65-981f-f90fd1e3d91a",
+              "width": 1919,
+              "height": 600
+            }
+          },
+          {
+            "alt": "Parceria Premium Madeform",
+            "action": {
+              "href": "/busca?q=madeform",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/c5dfdb36-1a8b-4247-bbf1-3d1435bb161f",
+              "width": 390,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4fd5e362-1052-461e-b5e2-a0f9e4b2ce2d",
+              "width": 1920,
+              "height": 600
+            }
+          }
+        ],
+        "preload": true,
+        "interval": 5,
+        "__resolveType": "site/sections/Images/Carousel.tsx",
+        "showPaginationDots": "Always"
+      },
+      "verticalSpacing": "both"
+    }
+  ],
+  "__resolveType": "site/sections/Container.tsx"
+}
