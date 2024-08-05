@@ -18,7 +18,7 @@ const isToggle = (filter: Filter): filter is FilterToggle =>
 
 function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
   return (
-    <a href={`${url}&page=1`} class="flex items-center gap-2">
+    <a href={`${url}&page=1`} class="flex items-center gap-2" rel="nofollow">
       <div
         aria-checked={selected}
         class="checkbox aria-checked:bg-none rounded-none h-4 w-4 border-primary"
@@ -49,7 +49,7 @@ function FilterValues({ key, values }: FilterToggle) {
 
         if (key === "cor" || key === "tamanho") {
           return (
-            <a href={url}>
+            <a href={url} rel="nofollow">
               <Avatar content={value} variant={"default"} active={selected} />
             </a>
           );
@@ -115,7 +115,7 @@ function Filters({ filters }: Props) {
       <li class="flex justify-center	 ">
         <a
           class="btn btn-outline gap-2 mx-4 border-secondary text-secondary uppercase font-bold w-full font-condensed lg:hidden"
-          href="?"
+          href="?" rel="nofollow"
         >
           Limpar Filtros
         </a>
