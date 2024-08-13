@@ -1,6 +1,6 @@
 {
   "tasks": {
-    "start": "deno task bundle && deno run -A --unstable --env --config=deno.json $(deno eval 'console.log(import.meta.resolve(\"deco/hypervisor/main.ts\"))') --build-cmd 'deno task build' -- deno task dev",
+    "start": "deno task bundle && deno run -A --unstable-kv --env --config=deno.json $(deno eval 'console.log(import.meta.resolve(\"deco/hypervisor/main.ts\"))') --build-cmd 'deno task build' -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
     "release": "deno eval 'import \"deco/scripts/release.ts\"'",
