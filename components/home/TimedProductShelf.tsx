@@ -125,7 +125,7 @@ const TimedProductShelf = (props: SectionProps<typeof loader>)=> {
         if (!productShelf || isCurrentDateTime) return null;
 
     return (
-        <div style={{ backgroundColor: frameColor }} className="rounded-lg md:rounded-none">
+        <div style={{ backgroundColor: frameColor }} className="rounded-lg md:rounded-none mb-8">
             <div className="container w-full m-auto py-[30px] px-[24px]">
                 <div className="flex flex-col items-center justify-center mb-[15px] md:flex-row md:justify-between">
                     <span className="font-bold text-[26px] uppercase md:text-[36px]" style={{ color: colorTitleFrame }}>{titleFrame}</span>

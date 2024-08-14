@@ -80,7 +80,7 @@ export const relative = (url: string) => {
 const WIDTH = 279;
 const HEIGHT = 270;
 
-function LocalProductCard(
+function TimedProductCard(
     { product, preload, itemListName, layout, highlights, class: _class }: Props,
 ) {
     const {
@@ -327,7 +327,7 @@ function LocalProductCard(
                                                 {formatPrice(listPrice, offers!.priceCurrency!)}
                                             </p>
                                         )}
-                                        <p class="text-secondary font-medium">
+                                        <p class="text-black font-medium">
                                             {formatPrice((price * 100) / 90, offers!.priceCurrency!)}
                                         </p>
                                     </div>
@@ -389,4 +389,4 @@ function LocalProductCard(
     );
 }
 
-export default LocalProductCard;
+export default TimedProductCard;

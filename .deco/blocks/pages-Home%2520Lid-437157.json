@@ -27,6 +27,80 @@
             "__resolveType": "Categorias - ImageGallery"
           },
           {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Home/TimedProductShelf.tsx",
+              "titleFrame": "Ofertas da Semana!",
+              "countdownTimer": "2024-08-15",
+              "subTitleFrame": "Estas Ofertas Expiram em",
+              "frameColor": "#ed2d26",
+              "colorTitleFrame": "#ffffff",
+              "colorSubTitleFrame": "#ffffff",
+              "productShelf": {
+                "__resolveType": "vtex/loaders/legacy/productList.ts",
+                "props": {
+                  "sort": "OrderByPriceDESC",
+                  "collection": "136"
+                }
+              },
+              "countdownTimerDate": "2024-09-01",
+              "countdownTimerHours": "22:30:00",
+              "dotSliderColor": "#ffffff",
+              "countdownTextColor": "#ffffff",
+              "countdownFrameColor": "#ab00c2",
+              "productShelfConfig": {
+                "layout": {
+                  "headerfontSize": "Normal",
+                  "itemsPerPage": [
+                    {
+                      "itemsQuantity": 2,
+                      "screenWidth": 425
+                    },
+                    {
+                      "screenWidth": 700,
+                      "itemsQuantity": 4
+                    }
+                  ],
+                  "headerAlignment": "center",
+                  "numberOfSliders": {
+                    "mobile": 2,
+                    "desktop": 4
+                  },
+                  "showArrows": true
+                },
+                "cardLayout": {
+                  "basics": {
+                    "oldPriceSize": "Normal",
+                    "ctaMode": "Add to Cart",
+                    "ctaVariation": "secondary",
+                    "ctaText": "Carrinho",
+                    "mobileCtaText": "Carrinho",
+                    "contentAlignment": "Center"
+                  },
+                  "elementsPositions": {},
+                  "hide": {
+                    "skuSelector": true,
+                    "productDescription": true
+                  },
+                  "onMouseOver": {
+                    "showCta": true,
+                    "showCardShadow": true,
+                    "showSkuSelector": false,
+                    "showFavoriteIcon": false,
+                    "image": "Change image"
+                  },
+                  "discount": {
+                    "variant": "emphasis",
+                    "label": " "
+                  }
+                },
+                "showPaginationArrows": "Always"
+              },
+              "countdownNumberColor": "#ffffff"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
                 "label": "ProductShelf",
@@ -115,93 +189,7 @@
                 "withContainer": true,
                 "verticalSpacing": "none"
               }
-            ],
-            "__resolveType": "site/sections/Container.tsx"
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Home/TimedProductShelf.tsx",
-              "titleFrame": "Ofertas da Semana!",
-              "countdownTimer": "2024-08-15",
-              "subTitleFrame": "Estas Ofertas Expiram em",
-              "frameColor": "#ed2d26",
-              "colorTitleFrame": "#ffffff",
-              "colorSubTitleFrame": "#ffffff",
-              "productShelf": {
-                "__resolveType": "vtex/loaders/legacy/productList.ts",
-                "props": {
-                  "sort": "OrderByPriceDESC",
-                  "collection": "136"
-                }
-              },
-              "countdownTimerDate": "2024-09-30",
-              "countdownTimerHours": "10:15:20",
-              "dotSliderColor": "#ffffff",
-              "countdownTextColor": "#ffffff",
-              "countdownFrameColor": "#ab00c2",
-              "productShelfConfig": {
-                "layout": {
-                  "headerfontSize": "Normal",
-                  "itemsPerPage": [
-                    {
-                      "itemsQuantity": 2,
-                      "screenWidth": 425
-                    },
-                    {
-                      "screenWidth": 700,
-                      "itemsQuantity": 4
-                    },
-                    {
-                      "screenWidth": 1400,
-                      "itemsQuantity": 3
-                    },
-                    {
-                      "screenWidth": 1600,
-                      "itemsQuantity": 4
-                    },
-                    {
-                      "screenWidth": 1900,
-                      "itemsQuantity": 4
-                    }
-                  ],
-                  "headerAlignment": "center",
-                  "numberOfSliders": {
-                    "mobile": 2,
-                    "desktop": 4
-                  },
-                  "showArrows": false
-                },
-                "cardLayout": {
-                  "basics": {
-                    "oldPriceSize": "Normal",
-                    "ctaMode": "Add to Cart",
-                    "ctaVariation": "secondary",
-                    "ctaText": "Carrinho",
-                    "mobileCtaText": "Carrinho",
-                    "contentAlignment": "Center"
-                  },
-                  "elementsPositions": {},
-                  "hide": {
-                    "skuSelector": true,
-                    "productDescription": true
-                  },
-                  "onMouseOver": {
-                    "showCta": true,
-                    "showCardShadow": true,
-                    "showSkuSelector": false,
-                    "showFavoriteIcon": false,
-                    "image": "Change image"
-                  },
-                  "discount": {
-                    "variant": "emphasis",
-                    "label": " "
-                  }
-                },
-                "showPaginationArrows": "Always"
-              },
-              "countdownNumberColor": "#ffffff"
-            }
+            ]
           },
           {
             "__resolveType": "Os mais vendidos - ProductShelf"

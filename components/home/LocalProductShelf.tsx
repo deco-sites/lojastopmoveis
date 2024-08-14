@@ -9,7 +9,7 @@ import Slider from "$store/components/ui/Slider.tsx";
 import SliderJS from "$store/islands/SliderJS.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
-import LocalProductCard from "$store/components/home/LocalProductCard.tsx";
+import TimedProductCard from "$store/components/home/TimedProductCard.tsx";
 
 interface DotsProps {
     images?: Product[];
@@ -37,11 +37,12 @@ export interface Props {
 
 function Dots({ images, interval = 0, dotSliderColor }: DotsProps) {
     return (
-        <>
-            <ul
-                class={`carousel justify-center col-span-full gap-2 z-10 row-start-4`}
-            >
-                {images?.map((_, index) => (
+        <ul class="carousel justify-center col-span-full gap-4 z-10 row-start-4 col-span-[1/2]">
+            {images?.map((_, index) => (
+                <li
+                    class={`carousel-item   md:${((index === 0) || (index % 4 === 0)) ? "" : "hidden"
+                        } ${((index === 0) || (index % 2 === 0)) ? "" : "hidden"}`}
+                >
                     <Slider.Dot index={index}>
                         <div
                             class={`py-5 ${((index === 0) || (index % 4 === 0)) ? "" : "lg:hidden"
@@ -53,9 +54,9 @@ function Dots({ images, interval = 0, dotSliderColor }: DotsProps) {
                             />
                         </div>
                     </Slider.Dot>
-                ))}
-            </ul>
-        </>
+                </li>
+            ))}
+        </ul>
     );
 }
 
@@ -76,9 +77,9 @@ const LocalProductShelf = ({ products, cardLayout, layout, showPaginationArrows,
                     {products?.map((product, index) => (
                         <Slider.Item
                             index={index}
-                            class="carousel-item !w-[270px]"
+                            class="carousel-item !w-[300px] 2xl:!w-[320px]"
                         >
-                            <LocalProductCard
+                            <TimedProductCard
                                 product={product}
                                 itemListName={""}
                                 layout={cardLayout}
@@ -90,10 +91,7 @@ const LocalProductShelf = ({ products, cardLayout, layout, showPaginationArrows,
 
                 <>
                     <div
-                        class={`flex items-center justify-center z-10 col-start-1 row-start-2  ${CONDITIONAL_RESPONSIVE_PARAMS[
-                            showPaginationArrows ? showPaginationArrows : "Always"
-                            ]
-                            }`}
+                        class={`flex items-center justify-center z-10 col-start-1 row-start-2`}
                     >
                         <Slider.PrevButton
                             style={{
@@ -109,10 +107,7 @@ const LocalProductShelf = ({ products, cardLayout, layout, showPaginationArrows,
                         </Slider.PrevButton>
                     </div>
                     <div
-                        class={`flex items-center justify-center z-10 col-start-3 row-start-2 ${CONDITIONAL_RESPONSIVE_PARAMS[
-                            showPaginationArrows ? showPaginationArrows : "Always"
-                            ]
-                            }`}
+                        class={`flex items-center justify-center z-10 col-start-3 row-start-2`}
                     >
                         <Slider.NextButton
                             style={{
