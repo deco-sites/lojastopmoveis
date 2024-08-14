@@ -333,7 +333,7 @@ function TimedProductCard(
                                     </div>
                                     {l?.hide.installments
                                         ? ""
-                                        : (
+                                         : (
                                             <div class="text-sm font-normal text-[#707279] mt-[5px] flex items-center justify-center md:!block">
                                                 ou {installment?.billingDuration}x de {formatPrice(
                                                     installment?.billingIncrement,
