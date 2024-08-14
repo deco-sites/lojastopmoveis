@@ -327,14 +327,14 @@ function TimedProductCard(
                                                 {formatPrice(listPrice, offers!.priceCurrency!)}
                                             </p>
                                         )}
-                                        <p class="text-black font-medium">
+                                        <p class="md:text-black text-secondary text-sm font-medium md:text-xl">
                                             {formatPrice((price * 100) / 90, offers!.priceCurrency!)}
                                         </p>
                                     </div>
                                     {l?.hide.installments
                                         ? ""
                                         : (
-                                            <div class="text-sm font-normal text-[#707279] mt-[5px]">
+                                            <div class="text-sm font-normal text-[#707279] mt-[5px] flex items-center justify-center md:!block">
                                                 ou {installment?.billingDuration}x de {formatPrice(
                                                     installment?.billingIncrement,
                                                     offers!.priceCurrency!,
