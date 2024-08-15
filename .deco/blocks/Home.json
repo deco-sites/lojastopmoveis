@@ -417,7 +417,8 @@
                     },
                     {
                       "alt": "img 4",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/51382401-ee73-4382-b203-248d979e4a88"
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/51382401-ee73-4382-b203-248d979e4a88",
+                      "href": "https://www.lojastopmoveis.com.br/moveis/sala-de-estar"
                     }
                   ],
                   "__resolveType": "site/sections/Images/ImageGalleryBanners.tsx",
