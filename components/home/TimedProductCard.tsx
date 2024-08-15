@@ -319,8 +319,8 @@ function TimedProductCard(
                                     >
                                         {(listPrice && price) && listPrice > price && (
                                             <p
-                                                class={`line-through text-[#C5C6CB] text-sm ${l?.basics?.oldPriceSize === "Normal"
-                                                    ? "lg:text-xl"
+                                                class={`line-through text-[#C5C6CB] md:text-base text-[12px] ${l?.basics?.oldPriceSize === "Normal"
+                                                    ? "md:text-base"
                                                     : ""
                                                     }`}
                                             >
@@ -334,7 +334,7 @@ function TimedProductCard(
                                     {l?.hide.installments
                                         ? ""
                                          : (
-                                            <div class="text-sm font-normal text-[#707279] mt-[5px] flex items-center justify-center md:!block">
+                                            <div class="md:text-sm text-[12px] font-normal text-[#707279] mt-[5px] flex items-center justify-center md:!block">
                                                 ou {installment?.billingDuration}x de {formatPrice(
                                                     installment?.billingIncrement,
                                                     offers!.priceCurrency!,
