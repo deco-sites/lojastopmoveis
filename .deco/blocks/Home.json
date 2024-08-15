@@ -406,7 +406,9 @@
                     },
                     {
                       "alt": "Banner 2",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/919bdd35-82c9-413c-96e9-05474e4da78d"
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/919bdd35-82c9-413c-96e9-05474e4da78d",
+                      "href": "https://www.lojastopmoveis.com.br/fritadeira-air-fryer-ultra-4-2-litros-ufyp-ey1158b2-arno/p?skuId=554",
+                      "blank": false
                     },
                     {
                       "alt": "Banner 3",
