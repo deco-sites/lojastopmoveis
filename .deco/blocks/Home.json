@@ -422,7 +422,7 @@
                     }
                   ],
                   "__resolveType": "site/sections/Images/ImageGalleryBanners.tsx",
-                  "itemPerPageMobile": 1,
+                  "itemPerPageMobile": 2,
                   "itemPerPageDesktop": 4,
                   "showPaginationDots": "Always",
                   "showPaginationArrows": "Always"
