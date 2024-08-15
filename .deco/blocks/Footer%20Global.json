@@ -1,1 +1,202 @@
-{"sections":[{"label":"Newslettter","shadow":"none","section":{"form":{"name":{},"email":{},"button":{"variant":"secondary"}},"text":"<p><span style=\"color: rgb(0, 0, 0); font-size: 24pt;\" data-mce-style=\"color: rgb(0, 0, 0); font-size: 24pt;\">Newsletter</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">Cadastre-se e seja um dos primeiros a</span></span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">saber de todas as novidades e ofertas.</span></span></p>","__resolveType":"site/sections/Newsletter/Newsletter.tsx"},"withContainer":true,"backgroundColor":"#F9BE00","verticalSpacing":"none"},{"label":"Footer","shadow":"none","section":{"email":"central@lojastopmoveis.com.br","phone":"(85)  3194-6500","payments":[{"alt":"Mastercard","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4d6d7752-f54d-4134-9f3f-bd87debefad9","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/9954cf76-2e68-4e01-bccb-08a71a3b3dd1"},{"alt":"Visa","icon":"Elo","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/56774fb5-1b46-49e9-a98d-b0374629ff34"},{"alt":"Elo","icon":"Visa","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/dc227df4-428a-491a-a45b-4d6ea957e8db"},{"alt":"American Express","icon":"AmericanExpress","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/90ebb7c1-9761-4e02-b362-230b8b6cf68b"},{"alt":"Pix","icon":"Pix","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/4d3ea048-365f-4730-bb2f-aa2413e092a3"},{"alt":"Boleto","icon":"Boleto","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/b0f6cb07-3146-4a34-9866-4a2c84647088"},{"alt":"Parcelex","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e11ab0e6-7989-4c9e-8224-23761207b54e"}],"sections":[{"label":"Institucional","children":[{"href":"/quem-somos","label":"Quem Somos"},{"href":"/como-comprar","label":"Como Comprar"},{"href":"/termos-e-condicoes","label":"Termos e Condições"},{"href":"/central-de-atendimento","label":"Fale Conosco"},{"href":"/nossas-lojas","label":"Nossas Lojas"},{"href":"/campanhalivelocompreepontue","label":"Campanha Livelo"}]},{"label":"Ajuda e suporte","children":[{"href":"/politica-de-privacidade","label":"Política de Privacidade"},{"href":"/politica-de-seguranca","label":"Politica de Segurança"},{"href":"/trocas-devolucoes","label":"Troca ou Devolução"},{"href":"/politicadefretegratis","label":"Política de Frete Grátis"}]},{"label":"Minha Conta","children":[{"href":"/my-account","label":"Meus Dados"},{"href":"/my-account/orders","label":"Meus Pedidos"},{"href":"/my-account","label":"Login"}]}],"copyRight":"Agência N1 - Todos os Direitos Reservados","poweredby":[{"alt":"agencia n1 e deco","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/9db056dc-4990-4d02-b894-216a8c2829be","label":"Created By","images":[{"alt":"Agencia N1","link":"https://www.n1.ag/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/22cacffa-fae4-40c7-bb27-5ec19e8e04fb"},{"alt":"Deco","link":"https://deco.cx/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/b0a9b073-cadb-4846-ba49-ec47cbfd896d"}]},{"alt":"vtex","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4749b4f9-1943-4066-b918-2dae9e469611","label":"Powered by","images":[{"alt":"Vtex","link":"https://vtex.com/br-pt","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/7a3b9c32-2ae7-4bf6-9ea1-1878d0f4349b"}]}],"securities":[{"alt":"Let's Encrypt","href":"https://letsencrypt.org/","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/3be20735-a11c-4274-a43b-9fe3ac96121a"}],"openingHours":"<p>Atendimento de segunda à sexta das 8h às 18h.</p>","__resolveType":"site/sections/Footer/Footer.tsx","socialNetWorks":[{"href":"https://www.instagram.com/lojastopmoveis","icon":"Instagram","label":"Instagram","openNewView":true},{"href":"https://www.facebook.com/lojastopmoveis/","icon":"Facebook","label":"Facebook","openNewView":true}]},"spacing":0,"withContainer":true,"verticalSpacing":"none"},{"label":"Copyright","shadow":"none","section":{"copyRight":"<p>Preços e condições de pagamento exclusivos para compras via Internet.Vendas sujeitas à analise e confirmação de dados.Fica garantida a empresa a eventual retificação das ofertas e erros de digitação que possam ter sido veiculados, podendo ser estornado a compra.</p><p>DELTA COM DE MOVEIS LTDA / CNPJ: 04170821000127 Rua Senador Pompeu, 1002 - CEP: 60025000 - Fortaleza - CE<span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(112, 114, 121);\" data-mce-style=\"color: rgb(112, 114, 121);\">﻿</span></span></p>","__resolveType":"site/sections/Content/CopyRight.tsx"},"withContainer":true,"backgroundColor":"#F7F7F7","verticalSpacing":"none"}],"__resolveType":"site/sections/Container.tsx","backgroundColor":"pink"}
+{
+  "sections": [
+    {
+      "label": "Newslettter",
+      "shadow": "none",
+      "section": {
+        "form": {
+          "name": {},
+          "email": {},
+          "button": {
+            "variant": "secondary"
+          }
+        },
+        "text": "<p><span style=\"color: rgb(0, 0, 0); font-size: 24pt;\" data-mce-style=\"color: rgb(0, 0, 0); font-size: 24pt;\">Newsletter</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">Cadastre-se e seja um dos primeiros a</span></span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">saber de todas as novidades e ofertas.</span></span></p>",
+        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+      },
+      "withContainer": true,
+      "backgroundColor": "#F9BE00",
+      "verticalSpacing": "none"
+    },
+    {
+      "label": "Footer",
+      "shadow": "none",
+      "section": {
+        "email": "central@lojastopmoveis.com.br",
+        "phone": "(85)  3194-6500",
+        "payments": [
+          {
+            "alt": "Mastercard",
+            "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4d6d7752-f54d-4134-9f3f-bd87debefad9",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
+          },
+          {
+            "alt": "Visa",
+            "icon": "Elo",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/56774fb5-1b46-49e9-a98d-b0374629ff34"
+          },
+          {
+            "alt": "Elo",
+            "icon": "Visa",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/dc227df4-428a-491a-a45b-4d6ea957e8db"
+          },
+          {
+            "alt": "American Express",
+            "icon": "AmericanExpress",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/90ebb7c1-9761-4e02-b362-230b8b6cf68b"
+          },
+          {
+            "alt": "Pix",
+            "icon": "Pix",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/4d3ea048-365f-4730-bb2f-aa2413e092a3"
+          },
+          {
+            "alt": "Boleto",
+            "icon": "Boleto",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/b0f6cb07-3146-4a34-9866-4a2c84647088"
+          }
+        ],
+        "sections": [
+          {
+            "label": "Institucional",
+            "children": [
+              {
+                "href": "/quem-somos",
+                "label": "Quem Somos"
+              },
+              {
+                "href": "/como-comprar",
+                "label": "Como Comprar"
+              },
+              {
+                "href": "/termos-e-condicoes",
+                "label": "Termos e Condições"
+              },
+              {
+                "href": "/central-de-atendimento",
+                "label": "Fale Conosco"
+              },
+              {
+                "href": "/nossas-lojas",
+                "label": "Nossas Lojas"
+              },
+              {
+                "href": "/campanhalivelocompreepontue",
+                "label": "Campanha Livelo"
+              }
+            ]
+          },
+          {
+            "label": "Ajuda e suporte",
+            "children": [
+              {
+                "href": "/politica-de-privacidade",
+                "label": "Política de Privacidade"
+              },
+              {
+                "href": "/politica-de-seguranca",
+                "label": "Politica de Segurança"
+              },
+              {
+                "href": "/trocas-devolucoes",
+                "label": "Troca ou Devolução"
+              },
+              {
+                "href": "/politicadefretegratis",
+                "label": "Política de Frete Grátis"
+              }
+            ]
+          },
+          {
+            "label": "Minha Conta",
+            "children": [
+              {
+                "href": "/my-account",
+                "label": "Meus Dados"
+              },
+              {
+                "href": "/my-account/orders",
+                "label": "Meus Pedidos"
+              },
+              {
+                "href": "/my-account",
+                "label": "Login"
+              }
+            ]
+          }
+        ],
+        "copyRight": "Agência N1 - Todos os Direitos Reservados",
+        "poweredby": [
+          {
+            "alt": "agencia n1 e deco",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/9db056dc-4990-4d02-b894-216a8c2829be",
+            "label": "Created By",
+            "images": [
+              {
+                "alt": "Agencia N1",
+                "link": "https://www.n1.ag/",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/22cacffa-fae4-40c7-bb27-5ec19e8e04fb"
+              },
+              {
+                "alt": "Deco",
+                "link": "https://deco.cx/",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/b0a9b073-cadb-4846-ba49-ec47cbfd896d"
+              }
+            ]
+          },
+          {
+            "alt": "vtex",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4749b4f9-1943-4066-b918-2dae9e469611",
+            "label": "Powered by",
+            "images": [
+              {
+                "alt": "Vtex",
+                "link": "https://vtex.com/br-pt",
+                "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/7a3b9c32-2ae7-4bf6-9ea1-1878d0f4349b"
+              }
+            ]
+          }
+        ],
+        "securities": [
+          {
+            "alt": "Let's Encrypt",
+            "href": "https://letsencrypt.org/",
+            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/3be20735-a11c-4274-a43b-9fe3ac96121a"
+          }
+        ],
+        "openingHours": "<p>Atendimento de segunda à sexta das 8h às 18h.</p>",
+        "__resolveType": "site/sections/Footer/Footer.tsx",
+        "socialNetWorks": [
+          {
+            "href": "https://www.instagram.com/lojastopmoveis",
+            "icon": "Instagram",
+            "label": "Instagram",
+            "openNewView": true
+          },
+          {
+            "href": "https://www.facebook.com/lojastopmoveis/",
+            "icon": "Facebook",
+            "label": "Facebook",
+            "openNewView": true
+          }
+        ]
+      },
+      "spacing": 0,
+      "withContainer": true,
+      "verticalSpacing": "none"
+    },
+    {
+      "label": "Copyright",
+      "shadow": "none",
+      "section": {
+        "copyRight": "<p>Preços e condições de pagamento exclusivos para compras via Internet.Vendas sujeitas à analise e confirmação de dados.Fica garantida a empresa a eventual retificação das ofertas e erros de digitação que possam ter sido veiculados, podendo ser estornado a compra.</p><p>DELTA COM DE MOVEIS LTDA / CNPJ: 04170821000127 Rua Senador Pompeu, 1002 - CEP: 60025000 - Fortaleza - CE<span id=\"_mce_caret\" data-mce-bogus=\"1\" data-mce-type=\"format-caret\"><span style=\"color: rgb(112, 114, 121);\" data-mce-style=\"color: rgb(112, 114, 121);\">﻿</span></span></p>",
+        "__resolveType": "site/sections/Content/CopyRight.tsx"
+      },
+      "withContainer": true,
+      "backgroundColor": "#F7F7F7",
+      "verticalSpacing": "none"
+    }
+  ],
+  "__resolveType": "site/sections/Container.tsx",
+  "backgroundColor": "pink"
+}
