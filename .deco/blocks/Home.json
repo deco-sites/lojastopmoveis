@@ -291,7 +291,93 @@
                 "label": "ProductShelf",
                 "shadow": "none",
                 "section": {
+                  "layout": {
+                    "itemsPerPage": [
+                      {
+                        "screenWidth": 425,
+                        "itemsQuantity": 1
+                      },
+                      {
+                        "screenWidth": 700,
+                        "itemsQuantity": 4
+                      },
+                      {},
+                      {}
+                    ],
+                    "headerfontSize": "Normal",
+                    "headerAlignment": "center"
+                  },
+                  "seeMore": {
+                    "url": " ",
+                    "label": " "
+                  },
+                  "products": {
+                    "sort": "orders:desc",
+                    "count": 12,
+                    "props": {
+                      "sort": "",
+                      "count": 60,
+                      "similars": true,
+                      "collection": "149",
+                      "hideUnavailableItems": true
+                    },
+                    "collection": "135",
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+                  },
+                  "cardLayout": {
+                    "hide": {
+                      "cta": false,
+                      "allPrices": false,
+                      "productName": false,
+                      "skuSelector": true,
+                      "installments": false,
+                      "productDescription": true
+                    },
+                    "basics": {
+                      "ctaMode": "Add to Cart",
+                      "ctaText": "Adicionar ao carrinho",
+                      "ctaVariation": "secondary",
+                      "oldPriceSize": "Normal",
+                      "mobileCtaText": "Adicionar ao carrinho",
+                      "contentAlignment": "Left"
+                    },
+                    "discount": {
+                      "label": " ",
+                      "variant": "emphasis"
+                    },
+                    "onMouseOver": {
+                      "image": "Change image",
+                      "showCta": true,
+                      "showCardShadow": true
+                    },
+                    "elementsPositions": {}
+                  },
+                  "highlights": [
+                    {
+                      "label": "Frete Grátis*",
+                      "minPrice": 0,
+                      "collectionId": "144",
+                      "alignHorizontal": "end"
+                    }
+                  ],
+                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
+                  "showPaginationArrows": "Always",
+                  "title": "Top Seleção de Cozinhas e Armários com Entrega Grátis!"
+                },
+                "withContainer": true,
+                "verticalSpacing": "none"
+              }
+            ],
+            "__resolveType": "site/sections/Container.tsx"
+          },
+          {
+            "sections": [
+              {
+                "label": "ProductShelf",
+                "shadow": "none",
+                "section": {
                   "title": "Lançamentos na Linha Infantil! Tem na Top!",
+                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
                   "layout": {
                     "itemsPerPage": [
                       {
@@ -361,7 +447,6 @@
                       "alignHorizontal": "end"
                     }
                   ],
-                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
                   "showPaginationArrows": "Always"
                 },
                 "withContainer": true,
@@ -371,6 +456,7 @@
             "__resolveType": "site/sections/Container.tsx"
           },
           {
+            "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
                 "label": "InfoCard",
@@ -432,8 +518,7 @@
                 "itemPerPageMobile": 1,
                 "itemPerPageDesktop": 3
               }
-            ],
-            "__resolveType": "site/sections/Container.tsx"
+            ]
           },
           {
             "__resolveType": "Sobre a loja - InfoCard"
@@ -442,6 +527,7 @@
             "__resolveType": "Footer Global"
           },
           {
+            "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
             "form": {
               "name": {
                 "placeholder": "Digite seu nome"
@@ -455,7 +541,6 @@
               }
             },
             "text": "<p><span style=\"color: rgb(19, 52, 73);\" data-mce-style=\"color: rgb(19, 52, 73);\"><span class=\"text-[14px]\tlg:text-[16px]\"><span class=\"text-[14px]\tlg:text-[16px]\" style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\">Inscreva-se em nossa newsletter e</span><br></span><span class=\"text-[19px]\tlg:text-[24px]\" style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"><strong>receba as melhores ofertas,<br>cupons de descontos e muito mais!﻿</strong></span></span></p>",
-            "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
             "modalSignExpiredDate": 360,
             "modalCloseExpiredDate": 7
           },
