@@ -5,8 +5,10 @@
 import * as $_app from "./routes/_app.tsx";
 import * as $AddToCartActions from "./islands/AddToCartActions.tsx";
 import * as $AddToCartButton from "./islands/AddToCartButton.tsx";
+import * as $AddToCartLocal from "./islands/AddToCartLocal.tsx";
 import * as $BuyWarning from "./islands/BuyWarning.tsx";
 import * as $CloseButton from "./islands/CloseButton.tsx";
+import * as $CountdownTimer from "./islands/CountdownTimer.tsx";
 import * as $Debug from "./islands/Debug.tsx";
 import * as $HeaderButton from "./islands/HeaderButton.tsx";
 import * as $HeaderModals from "./islands/HeaderModals.tsx";
@@ -32,8 +34,10 @@ const manifest = {
   islands: {
     "./islands/AddToCartActions.tsx": $AddToCartActions,
     "./islands/AddToCartButton.tsx": $AddToCartButton,
+    "./islands/AddToCartLocal.tsx": $AddToCartLocal,
     "./islands/BuyWarning.tsx": $BuyWarning,
     "./islands/CloseButton.tsx": $CloseButton,
+    "./islands/CountdownTimer.tsx": $CountdownTimer,
     "./islands/Debug.tsx": $Debug,
     "./islands/HeaderButton.tsx": $HeaderButton,
     "./islands/HeaderModals.tsx": $HeaderModals,

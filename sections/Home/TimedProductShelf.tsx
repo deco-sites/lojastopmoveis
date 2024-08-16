@@ -1,0 +1,1 @@
+export { default, loader } from "$store/components/home/TimedProductShelf.tsx";
