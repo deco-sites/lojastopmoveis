@@ -94,7 +94,15 @@
                     "label": " "
                   }
                 },
-                "showPaginationArrows": "Always"
+                "showPaginationArrows": "Always",
+                "highlights": [
+                  {
+                    "minPrice": 0,
+                    "alignHorizontal": "end",
+                    "label": "Frete Grátis*",
+                    "collectionId": "144"
+                  }
+                ]
               },
               "countdownNumberColor": "#ffffff"
             }
