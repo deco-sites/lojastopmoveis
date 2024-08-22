@@ -21,6 +21,7 @@ import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import SimilarSelector from "site/components/product/SimilarSelector.tsx";
 
+
 export type Variant = "front-back" | "slider" | "auto";
 
 export type ShareableNetwork = "Facebook" | "Twitter" | "Email" | "WhatsApp";
@@ -88,6 +89,9 @@ function ProductInfo(
     offers,
   );
 
+  console.log(["product", product])
+  console.log(["offers", offers])
+
   return (
     <>
       {/* Code and name */}
@@ -125,7 +129,7 @@ function ProductInfo(
               )}
               <div class="flex items-center gap-[10px]">
                 <span class="font-medium text-lg text-secondary">
-                  {formatPrice((price*100)/90, offers!.priceCurrency!)}
+                  {formatPrice(product.offers?.offers[0].priceSpecification[1].price, offers!.priceCurrency!)}
                 </span>
                 {/* <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
                   10% de desconto no boleto
