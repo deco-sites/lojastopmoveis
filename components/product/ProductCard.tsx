@@ -344,7 +344,7 @@ function ProductCard(
                       </p>
                     )}
                     <p class="text-secondary font-medium">
-                      {formatPrice((price*100)/90, offers!.priceCurrency!)}
+                      {formatPrice(product.offers?.offers[0].priceSpecification[1].price, offers!.priceCurrency!)}
                     </p>
                   </div>
                   {l?.hide.installments
