@@ -76,7 +76,7 @@ export interface Props {
   email: string;
   /**
    * @title Opening hours
-   * @format html
+   * @format rich-text
    * @default Seg. à Sex. das 09:00h às 18:00h <br /> Sábado das 10:00h às 14:00h
    */
   openingHours: string;

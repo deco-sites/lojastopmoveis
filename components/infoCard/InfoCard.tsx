@@ -21,7 +21,7 @@ export interface Props {
   caption?: string;
   /**
    * @title Description
-   * @format html
+   * @format rich-text
    */
   html?: string;
   textAlign?: TextAlign;

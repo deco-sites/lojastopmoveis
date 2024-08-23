@@ -2,7 +2,7 @@ export interface Props {
   /**
    * @title Copy Right
    * @default Agência N1 - Todos os Direitos Reservados
-   * @format html
+   * @format rich-text
    */
   copyRight?: string;
 }
