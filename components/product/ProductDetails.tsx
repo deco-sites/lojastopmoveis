@@ -89,8 +89,8 @@ function ProductInfo(
     offers,
   );
 
-  console.log(["product", product])
-  console.log(["offers", offers])
+  const forPrice = product.offers?.offers[0].priceSpecification[1].price
+  const discount = listPrice && listPrice > price;
 
   return (
     <>
@@ -129,7 +129,7 @@ function ProductInfo(
               )}
               <div class="flex items-center gap-[10px]">
                 <span class="font-medium text-lg text-secondary">
-                  {formatPrice(product.offers?.offers[0].priceSpecification[1].price, offers!.priceCurrency!)}
+                  {formatPrice(forPrice, offers!.priceCurrency!)}
                 </span>
                 {/* <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
                   10% de desconto no boleto
@@ -148,9 +148,11 @@ function ProductInfo(
               <span class="font-bold text-2xl text-secondary leading-none">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
-              <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                10% de desconto no Pix ou boleto
-              </span>
+              {discount && forPrice && (
+                  <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
+                    {Math.round(((forPrice - price) / forPrice) * 100)}% de desconto no Pix ou boleto
+                  </span>  
+              )}
             </div>
           </div>
         )
