@@ -13,7 +13,7 @@ export interface Props {
   title: string;
   /**
    * @title Description
-   * @format html
+   * @format rich-text
    */
   html?: string;
   textAlign?: TextAlign;

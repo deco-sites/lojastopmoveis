@@ -26,7 +26,7 @@ window.addEventListener('scroll', callback, { once: true });
 
 export interface Props {
   title?: string;
-  /** @format html */
+  /** @format rich-text */
   text?: string;
   policy?: {
     text?: string;

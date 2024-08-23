@@ -48,7 +48,7 @@ export interface Props {
   form: INewsletterFormProps;
   /**
    * @title newsletter message text?
-   * @format html
+   * @format rich-text
    */
   text: string;
 
