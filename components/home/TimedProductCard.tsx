@@ -97,6 +97,7 @@ function TimedProductCard(
     const { listPrice, price = 0, installment, seller, availability } = useOffer(
         offers,
     );
+    
     const possibilities = useVariantPossibilities(product);
     const variants = Object.entries(Object.values(possibilities)[0] ?? {});
     const clickEvent = {
@@ -177,6 +178,11 @@ function TimedProductCard(
 
     const price2: number = price as number;
     const listPrice2: number = listPrice as number;
+    
+    const forPrice = product.offers?.offers[0].price
+
+    const discountPrice = product.offers?.offers[0].priceSpecification.at(-2)?.price 
+    const discount = listPrice && listPrice > price;
 
     return (
         <div
@@ -187,6 +193,7 @@ function TimedProductCard(
             id={`product-card-${productID}`}
             {...sendEventOnClick(clickEvent)}
         >
+            {/* <div>{JSON.stringify(product)}</div> */}
             <figure
                 class="relative rounded-lg"
                 style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
@@ -328,7 +335,7 @@ function TimedProductCard(
                                             </p>
                                         )}
                                         <p class="md:text-black text-secondary text-sm font-medium md:text-xl">
-                                            {formatPrice((price * 100) / 90, offers!.priceCurrency!)}
+                                            {formatPrice(price, offers!.priceCurrency!)}
                                         </p>
                                     </div>
                                     {l?.hide.installments
@@ -343,11 +350,13 @@ function TimedProductCard(
                                         )}
                                     <div class="flex items-center gap-[10px] py-[10px]">
                                         <span class="font-bold text-md text-secondary leading-none">
-                                            {formatPrice(price, offers?.priceCurrency)}
+                                            {formatPrice(discountPrice, offers?.priceCurrency)}
                                         </span>
-                                        <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                                            10% de desconto no Pix ou boleto
-                                        </span>
+                                        {discount && forPrice && discountPrice && (
+                                            <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
+                                                {Math.round(((forPrice - discountPrice) / forPrice) * 100)}% de desconto no Pix ou boleto
+                                            </span>  
+                                        )}
                                     </div>
                                 </div>
                             )}
