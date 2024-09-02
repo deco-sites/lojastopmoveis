@@ -751,7 +751,66 @@
             ]
           },
           {
-            "__resolveType": "Categorias - ImageGallery"
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "ImageGallery",
+                "shadow": "none",
+                "section": {
+                  "images": [
+                    {
+                      "alt": "Shorts",
+                      "href": "/topofertasdodia",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/fecb36e0-48b7-4697-a665-19eec659d6bf",
+                      "title": "Aproveitar Agora",
+                      "preload": true
+                    },
+                    {
+                      "alt": "Dormitório Adulto",
+                      "href": "/moveis/quarto-adulto",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/cd92f929-afdb-4321-9a9b-b63a3534f7fd",
+                      "title": "Dormitório Adulto",
+                      "preload": true
+                    },
+                    {
+                      "alt": "Eletrodomésticos",
+                      "href": "/eletrodomesticos",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/ccc42c4e-0a4a-4e58-a356-55af3b3261ad",
+                      "title": "Eletrodomésticos",
+                      "preload": true
+                    },
+                    {
+                      "alt": "Camas box e Colchôes",
+                      "href": "/colchoes",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4c8b3128-61d6-4419-859f-64f8ec11a28b",
+                      "title": "Camas box e Colchões",
+                      "preload": true
+                    },
+                    {
+                      "alt": "Móveis para cozinha",
+                      "href": "/moveis/cozinha",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e50e727b-e86e-4967-bb99-e0c12d501884",
+                      "title": "Móveis para cozinha",
+                      "preload": true
+                    },
+                    {
+                      "alt": "Sala de Estar",
+                      "href": "/moveis/sala-de-estar",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4ddbaea1-9e67-4d09-a6f5-898ace1205c0",
+                      "title": "Sala de Estar",
+                      "preload": true
+                    }
+                  ],
+                  "hoverEffect": true,
+                  "__resolveType": "site/sections/Images/ImageGallery.tsx",
+                  "maxItemsPerRow": "5",
+                  "itemPerPageMobile": 2,
+                  "itemPerPageDesktop": 6
+                },
+                "withContainer": true,
+                "verticalSpacing": "none"
+              }
+            ]
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
