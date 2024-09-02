@@ -607,16 +607,16 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
-                        "href": "/operacaoliquida",
+                        "href": "/suacasatop",
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e6c6d960-eda2-47f7-8b31-744fe79016be",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/238d1065-fb56-42f7-a5c3-3f3b00c90900/WhatsApp-Image-2024-09-02-at-08.38.32.jpeg",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4a00de24-4e54-45be-b0f5-eeeaa287cad6",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/7b475ca8-7d5d-42ca-ac3f-c121455e0acf/WhatsApp-Image-2024-09-02-at-08.33.56.jpeg",
                         "width": 1920,
                         "height": 600
                       }
