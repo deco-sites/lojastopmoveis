@@ -94,7 +94,7 @@ const Modal = ({
         >
           {showHeader && (
             <header
-              class={`mx-5 mt-4 mb-[10.5px] flex ${
+              class={`mx-5 mt-1 lg:mt-4 lg:mb-[10.5px] flex ${
                 invertCloseIcon ? "flex-row-reverse" : ""
               } items-center justify-between border-solid border-b-[1px] border-[#F7F7F7] lg:mx-10`}
             >
