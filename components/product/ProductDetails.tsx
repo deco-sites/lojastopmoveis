@@ -84,6 +84,7 @@ function ProductInfo(
     isVariantOf,
     isSimilarTo,
     url,
+
   } = product;
   const { price = 0, listPrice, seller, availability, installment } = useOffer(
     offers,
@@ -91,6 +92,10 @@ function ProductInfo(
 
   const forPrice = product.offers?.offers[0].priceSpecification[1].price
   const discount = listPrice && listPrice > price;
+  const vendorName = product.offers?.offers[0].sellerName
+  
+
+  console.log(vendorName)
 
   return (
     <>
@@ -110,10 +115,10 @@ function ProductInfo(
         )}
         <div class="flex gap-[2px]">
           <span class="text-[#4A4B51] text-sm">
-            Vendido e entregue por:
+            Vendido e entregue por: 
           </span>
           <span class="text-secondary text-sm">
-            LojasTopMoveis
+            {vendorName}
           </span>
         </div>
       </div>
