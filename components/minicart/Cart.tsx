@@ -130,7 +130,7 @@ function Cart(props: ICartProps) {
     <>
       <ul
         role="list"
-        class="px-5 max-h-[calc(100vh-390px)] lg:max-h-[calc(100vh-480px)] my-3 flex-grow overflow-y-auto flex flex-col gap-4 lg:mx-10 scrollbar-list"
+        class="px-5 max-h-[calc(100vh-390px)] lg:max-h-[calc(100vh-480px)] my-3 flex-grow overflow-y-auto flex flex-col gap-6 lg:mx-10 scrollbar-list"
       >
         {cart.value.items.map((_, index) => (
           <li key={index}>
