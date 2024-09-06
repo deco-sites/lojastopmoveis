@@ -3,7 +3,10 @@
   "path": "/suacasamaistop",
   "sections": [
     {
-      "__resolveType": "SEODefault"
+      "__resolveType": "deco-sites/std/sections/SEO.tsx",
+      "type": "website",
+      "titleTemplate": "%s | Lojas Top Móveis",
+      "descriptionTemplate": "%s | Lojas Top Móveis"
     },
     {
       "__resolveType": "Default - Design System"
@@ -368,7 +371,10 @@
                       "href": "/campanhalivelocompreepontue",
                       "label": "Campanha Livelo"
                     },
-                    {}
+                    {
+                      "label": "Regulamento Sua Casa mais Top",
+                      "href": "/suacasamaistop"
+                    }
                   ]
                 },
                 {
