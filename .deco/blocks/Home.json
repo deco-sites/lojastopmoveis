@@ -249,11 +249,11 @@
                 }
               },
               "frameColor": "#ed2d26",
-              "titleFrame": "Ofertas da Semana!",
+              "titleFrame": "Ofertas da Semana do Cliente!",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-09-10",
+              "countdownTimerDate": "2024-09-15",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ab00c2",
               "countdownTextColor": "#ffffff",
