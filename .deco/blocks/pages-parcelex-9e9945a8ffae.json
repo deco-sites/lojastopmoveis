@@ -3,7 +3,10 @@
   "path": "/pagaleve",
   "sections": [
     {
-      "__resolveType": "SEODefault"
+      "__resolveType": "deco-sites/std/sections/SEO.tsx",
+      "type": "website",
+      "titleTemplate": "%s | Lojas Top Móveis",
+      "descriptionTemplate": "%s | Lojas Top Móveis"
     },
     {
       "__resolveType": "Default - Design System"
