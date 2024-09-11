@@ -35,6 +35,10 @@
     {
       "href": "/nossas-lojas",
       "label": "Nossas Lojas"
+    },
+    {
+      "label": "Regulamento sua Casa mais Top",
+      "href": "/suacasamaistop"
     }
   ],
   "__resolveType": "site/sections/Institutional/AsideMenu.tsx"
