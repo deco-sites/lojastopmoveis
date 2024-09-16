@@ -766,7 +766,9 @@
                   "images": [
                     {
                       "alt": "Banner 1",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/22c392da-f11b-47a9-91f3-92ffec7cc921"
+                      "href": "https://www.lojastopmoveis.com.br/busca?q=madesa",
+                      "preload": true,
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/0103011c-edc0-49dd-9eef-2d73dc7bbd1c/banner_madesa_mobile-(2).jpg"
                     },
                     {
                       "alt": "Banner 2",
@@ -795,7 +797,23 @@
             ]
           },
           {
-            "__resolveType": "Sobre a loja - InfoCard"
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "InfoCard",
+                "shadow": "none",
+                "section": {
+                  "html": "<p><strong>Conheça Nossa História:</strong></p><p>O Grupo de Lojas Top Móveis iniciou as suas atividades em 1998 no movimentado centro de Fortaleza, Ceará. Com valores voltados a um atendimento de Excelência, comprometimento com os nossos clientes externos e internos, transparência, respeito e agilidade, contamos atualmente com 30 Filiais e 3 centros de distribuição espalhados pelo estado do Ceará e Piauí.</p><p><br data-mce-bogus=\"1\"></p><p><strong>Presença no Varejo on-line:</strong></p><p>Como precursora no canal de Vendas on-line na Região Nordeste, nossa presença também é marcante no ambiente virtual.</p><p>Através do site https://www.lojastopmoveis.com.br/ e das principais plataformas de Marketplace, dispomos de atendimento em toda a Região, via frota própria ou transporte parceiro de excelência com acompanhamento via S.A.C. e rastreio, tornando assim a sua compra mais confortável e segura!</p><p>Disponibilizamos um portfólio diversificado dos principais Fabricantes de Móveis e Eletrodomésticos do País, com envio imediato, prazo de entrega e preços competitivos, através de estoque para pronta entrega.</p><p>É um prazer te conhecer e fazer parte da sua casa!</p><p>Nas Lojas Físicas ou na Virtual, vem ter uma Experiência Top!</p>",
+                  "title": "Sobre a loja",
+                  "subTitle": "Sobre a loja",
+                  "textAlign": "Left",
+                  "__resolveType": "site/sections/Content/InfoCardSeo.tsx"
+                },
+                "spacing": 0,
+                "withContainer": true,
+                "verticalSpacing": "none"
+              }
+            ]
           },
           {
             "__resolveType": "site/sections/Container.tsx",
