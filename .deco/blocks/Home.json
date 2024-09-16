@@ -780,7 +780,9 @@
                     },
                     {
                       "alt": "img 4",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/51382401-ee73-4382-b203-248d979e4a88"
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8ef64845-bce5-49cc-ba2a-0ef167d1d47e/457466162_913950247442632_6481674930238517442_n.jpg",
+                      "href": "https://www.facebook.com/photo/?fbid=913950244109299&set=a.611015427736117",
+                      "preload": true
                     }
                   ],
                   "__resolveType": "site/sections/Images/ImageGalleryBanners.tsx",
