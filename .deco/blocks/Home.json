@@ -137,12 +137,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/6a01082a-9883-44f3-8d02-58677254c171",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5dc01ddf-248f-4d8a-9d51-3d67affc9746/banner_categoria_sala_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/ab536c50-7c26-4888-a5a8-9e508c1e3c25",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/f9a37259-2375-42b4-b40a-4c7b768fae1a/banner_categoria_sala_desktop.webp",
                         "width": 1920,
                         "height": 600
                       }
