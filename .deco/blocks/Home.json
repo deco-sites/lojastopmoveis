@@ -69,12 +69,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/b4435984-d177-4f7e-a38c-7210292cb910",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/2f44576d-e304-42d2-8394-d345e53a8c2a/banner_categoria_roupeiros_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/308af7fb-5cd6-4fb1-825e-a5d3614a8efd",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/421c8cee-b08b-474a-be01-192205c3fe2a/banner_categoria_roupeiros_desktop.webp",
                         "width": 1920,
                         "height": 600
                       }
