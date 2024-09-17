@@ -48,6 +48,23 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
+                        "href": "/parceriapremiummadesa",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/02adc65f-264d-4e52-93a0-8510b4668147/banner_madesa_mobile-(2).webp",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/50850790-d215-45ea-aec8-9258b309a65c/banner_madesa_desktop-(1).webp",
+                        "width": 1920,
+                        "height": 600
+                      }
+                    },
+                    {
+                      "alt": "Achadinhos",
+                      "action": {
                         "href": "/moveis/quarto-adulto",
                         "variant": "primary"
                       },
