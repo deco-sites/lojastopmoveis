@@ -120,12 +120,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/1297d154-4775-44f0-99cb-733c42addcaf",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/f7d4ee56-fa5f-475d-8893-f3d2ed5d8119/banner_categoria_cozinha_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/27411476-4666-4083-a717-93658ea365cc",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/b479570a-97d4-46a9-b8c1-0e168c5a4569/banner_categoria_cozinha_desktop.webp",
                         "width": 1920,
                         "height": 600
                       }
