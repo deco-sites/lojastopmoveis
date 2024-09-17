@@ -245,7 +245,7 @@
                 "props": {
                   "sort": "",
                   "collection": "148",
-                  "count": 50
+                  "count": 51
                 }
               },
               "frameColor": "#ed2d26",
@@ -253,7 +253,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-09-17",
+              "countdownTimerDate": "2024-09-18",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ab00c2",
               "countdownTextColor": "#ffffff",
