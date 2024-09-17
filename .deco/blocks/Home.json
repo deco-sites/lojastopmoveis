@@ -171,12 +171,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/c5dfdb36-1a8b-4247-bbf1-3d1435bb161f",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/06574856-be13-4ae2-867a-71e3eabda922/banner_madeform_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4fd5e362-1052-461e-b5e2-a0f9e4b2ce2d",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/661e32d5-1d5c-4560-8223-b1da82777f2c/banner_madeform_desktop.webp",
                         "width": 1920,
                         "height": 600
                       }
