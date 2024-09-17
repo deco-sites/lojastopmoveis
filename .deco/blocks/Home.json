@@ -429,7 +429,7 @@
                 "shadow": "none",
                 "section": {
                   "__resolveType": "site/sections/Product/ProductShelf.tsx",
-                  "title": " Mais Visitados em Guarda Roupas e Comôdas com Frete Grátis!*",
+                  "title": " Mais Visitados em Guarda Roupas e Comôdas com Envio Imediato!*",
                   "layout": {
                     "itemsPerPage": [
                       {
