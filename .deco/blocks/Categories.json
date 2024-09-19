@@ -68,7 +68,7 @@
           "shadow": "none",
           "section": {
             "page": {
-              "sort": "price:desc",
+              "sort": "",
               "count": 1,
               "fuzzy": "automatic",
               "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
