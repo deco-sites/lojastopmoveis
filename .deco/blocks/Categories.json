@@ -10,7 +10,7 @@
     },
     {
       "jsonLD": {
-        "sort": "price:desc",
+        "sort": "",
         "count": 12,
         "fuzzy": "automatic",
         "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
