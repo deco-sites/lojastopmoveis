@@ -21,7 +21,175 @@
             "__resolveType": "Header"
           },
           {
-            "__resolveType": "Banner Carrosel"
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Carousel",
+                "shadow": "none",
+                "section": {
+                  "images": [
+                    {
+                      "alt": "Achadinhos",
+                      "action": {
+                        "href": "/suacasatop",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/238d1065-fb56-42f7-a5c3-3f3b00c90900/WhatsApp-Image-2024-09-02-at-08.38.32.jpeg",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/a5c24044-5953-48a1-a502-0be56df27811/WhatsApp-Image-2024-09-03-at-09.22.17.jpeg",
+                        "width": 1920,
+                        "height": 599
+                      }
+                    },
+                    {
+                      "alt": "Achadinhos",
+                      "action": {
+                        "href": "/parceriapremiummadesa",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/02adc65f-264d-4e52-93a0-8510b4668147/banner_madesa_mobile-(2).webp",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/50850790-d215-45ea-aec8-9258b309a65c/banner_madesa_desktop-(1).webp",
+                        "width": 1920,
+                        "height": 600
+                      }
+                    },
+                    {
+                      "alt": "Achadinhos",
+                      "action": {
+                        "href": "/moveis/quarto-adulto",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/2f44576d-e304-42d2-8394-d345e53a8c2a/banner_categoria_roupeiros_mobile.webp",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/421c8cee-b08b-474a-be01-192205c3fe2a/banner_categoria_roupeiros_desktop.webp",
+                        "width": 1920,
+                        "height": 600
+                      }
+                    },
+                    {
+                      "alt": "Achadinhos",
+                      "action": {
+                        "href": "/saldaodeofertastopmoveis",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4de74be1-934a-468f-ba94-80d2f836f071",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3da66ec4-7e05-4720-a68c-c16170b9aeb1",
+                        "width": 1920,
+                        "height": 600
+                      }
+                    },
+                    {
+                      "alt": "Achadinhos",
+                      "action": {
+                        "href": "/eletrodomesticos",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3c7d5854-7119-4837-88fc-6678e22e181d",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/35471bff-3c82-4c69-a19e-4b14e124c59b",
+                        "width": 1920,
+                        "height": 600
+                      }
+                    },
+                    {
+                      "alt": "Achadinhos",
+                      "action": {
+                        "href": "/moveis/cozinha",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/f7d4ee56-fa5f-475d-8893-f3d2ed5d8119/banner_categoria_cozinha_mobile.webp",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/b479570a-97d4-46a9-b8c1-0e168c5a4569/banner_categoria_cozinha_desktop.webp",
+                        "width": 1920,
+                        "height": 600
+                      }
+                    },
+                    {
+                      "alt": "Sala de Estar e Jantar",
+                      "action": {
+                        "href": "/moveis/sala-de-estar",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5dc01ddf-248f-4d8a-9d51-3d67affc9746/banner_categoria_sala_mobile.webp",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5f33664f-ef73-48da-b1d9-7ade586dac63/BANNER-DE-SITE-_MIDIA-KIT_-1920X600PX.webp",
+                        "width": 1920,
+                        "height": 600
+                      }
+                    },
+                    {
+                      "alt": "Parceria Premium Madeform",
+                      "action": {
+                        "href": "/busca?q=tuboarte",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/c537237a-eaa6-4145-ad5b-d43163c8d083",
+                        "width": 389,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3db64aa1-6590-4572-92a2-be00e5212e1c",
+                        "width": 1919,
+                        "height": 600
+                      }
+                    },
+                    {
+                      "alt": "Parceria Premium Madeform",
+                      "action": {
+                        "href": "/busca?q=madeform",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/06574856-be13-4ae2-867a-71e3eabda922/banner_madeform_mobile.webp",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/661e32d5-1d5c-4560-8223-b1da82777f2c/banner_madeform_desktop.webp",
+                        "width": 1920,
+                        "height": 600
+                      }
+                    }
+                  ],
+                  "preload": true,
+                  "interval": 5,
+                  "__resolveType": "site/sections/Images/Carousel.tsx",
+                  "showPaginationDots": "Always"
+                },
+                "verticalSpacing": "both"
+              }
+            ]
           },
           {
             "__resolveType": "site/sections/Container.tsx",
