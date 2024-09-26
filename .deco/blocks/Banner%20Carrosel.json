@@ -18,7 +18,24 @@
               "height": 490
             },
             "desktop": {
-              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/7b475ca8-7d5d-42ca-ac3f-c121455e0acf/WhatsApp-Image-2024-09-02-at-08.33.56.jpeg",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/a5c24044-5953-48a1-a502-0be56df27811/WhatsApp-Image-2024-09-03-at-09.22.17.jpeg",
+              "width": 1920,
+              "height": 600
+            }
+          },
+          {
+            "alt": "Achadinhos",
+            "action": {
+              "href": "/parceriapremiummadesa",
+              "variant": "primary"
+            },
+            "mobile": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/02adc65f-264d-4e52-93a0-8510b4668147/banner_madesa_mobile-(2).webp",
+              "width": 390,
+              "height": 490
+            },
+            "desktop": {
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/50850790-d215-45ea-aec8-9258b309a65c/banner_madesa_desktop-(1).webp",
               "width": 1920,
               "height": 600
             }
@@ -30,12 +47,12 @@
               "variant": "primary"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/b4435984-d177-4f7e-a38c-7210292cb910",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/2f44576d-e304-42d2-8394-d345e53a8c2a/banner_categoria_roupeiros_mobile.webp",
               "width": 390,
               "height": 490
             },
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/308af7fb-5cd6-4fb1-825e-a5d3614a8efd",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/421c8cee-b08b-474a-be01-192205c3fe2a/banner_categoria_roupeiros_desktop.webp",
               "width": 1920,
               "height": 600
             }
@@ -81,12 +98,12 @@
               "variant": "primary"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/1297d154-4775-44f0-99cb-733c42addcaf",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/f7d4ee56-fa5f-475d-8893-f3d2ed5d8119/banner_categoria_cozinha_mobile.webp",
               "width": 390,
               "height": 490
             },
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/27411476-4666-4083-a717-93658ea365cc",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/b479570a-97d4-46a9-b8c1-0e168c5a4569/banner_categoria_cozinha_desktop.webp",
               "width": 1920,
               "height": 600
             }
@@ -98,12 +115,12 @@
               "variant": "primary"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/6a01082a-9883-44f3-8d02-58677254c171",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5dc01ddf-248f-4d8a-9d51-3d67affc9746/banner_categoria_sala_mobile.webp",
               "width": 390,
               "height": 490
             },
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/ab536c50-7c26-4888-a5a8-9e508c1e3c25",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/f9a37259-2375-42b4-b40a-4c7b768fae1a/banner_categoria_sala_desktop.webp",
               "width": 1920,
               "height": 600
             }
@@ -132,12 +149,12 @@
               "variant": "primary"
             },
             "mobile": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/c5dfdb36-1a8b-4247-bbf1-3d1435bb161f",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/06574856-be13-4ae2-867a-71e3eabda922/banner_madeform_mobile.webp",
               "width": 390,
               "height": 490
             },
             "desktop": {
-              "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4fd5e362-1052-461e-b5e2-a0f9e4b2ce2d",
+              "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/661e32d5-1d5c-4560-8223-b1da82777f2c/banner_madeform_desktop.webp",
               "width": 1920,
               "height": 600
             }
