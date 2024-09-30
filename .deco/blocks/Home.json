@@ -150,23 +150,6 @@
                     {
                       "alt": "Parceria Premium Madeform",
                       "action": {
-                        "href": "/busca?q=tuboarte",
-                        "variant": "primary"
-                      },
-                      "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/c537237a-eaa6-4145-ad5b-d43163c8d083",
-                        "width": 389,
-                        "height": 490
-                      },
-                      "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3db64aa1-6590-4572-92a2-be00e5212e1c",
-                        "width": 1919,
-                        "height": 600
-                      }
-                    },
-                    {
-                      "alt": "Parceria Premium Madeform",
-                      "action": {
                         "href": "/busca?q=madeform",
                         "variant": "primary"
                       },
