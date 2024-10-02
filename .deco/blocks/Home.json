@@ -1617,7 +1617,7 @@
                 "variant": "secondary"
               }
             },
-            "text": "<p><span style=\"color: rgb(19, 52, 73);\" data-mce-style=\"color: rgb(19, 52, 73);\"><span class=\"text-[14px]\tlg:text-[16px]\"><span class=\"text-[14px]\tlg:text-[16px]\" style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\">Inscreva-se em nossa newsletter e</span><br></span><span class=\"text-[19px]\tlg:text-[24px]\" style=\"color: rgb(224, 62, 45);\" data-mce-style=\"color: rgb(224, 62, 45);\"><strong>receba as melhores ofertas,<br>cupons de descontos e muito mais!﻿</strong></span></span></p>",
+            "text": "<p><span style=\"color: rgb(0, 0, 0)\">Inscreva-se em nossa newsletter e</span><br><strong><span style=\"color: rgb(224, 62, 45)\">receba em primeira mão as melhores ofertas!<br>Aplique o cupom \"clientetop\" e garanta +5% de desconto</span></strong></p><p><strong><span style=\"color: rgb(224, 62, 45)\">em qualquer forma de pagamento!﻿</span></strong></p>",
             "modalSignExpiredDate": 360,
             "modalCloseExpiredDate": 7
           },
