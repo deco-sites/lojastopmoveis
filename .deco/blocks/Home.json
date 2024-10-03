@@ -607,8 +607,8 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
-                        "href": "/tatop",
-                        "variant": "primary"
+                        "variant": "primary",
+                        "href": "/poistaiquetatop"
                       },
                       "mobile": {
                         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/238d1065-fb56-42f7-a5c3-3f3b00c90900/WhatsApp-Image-2024-09-02-at-08.38.32.jpeg",
