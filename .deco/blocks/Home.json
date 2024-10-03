@@ -1617,7 +1617,7 @@
                 "variant": "secondary"
               }
             },
-            "text": "<p><span style=\"color: rgb(0, 0, 0)\">Inscreva-se em nossa newsletter e</span><br><strong><span style=\"color: rgb(224, 62, 45)\">receba em primeira mão as melhores ofertas!<br>Aplique o cupom \"clientetop\" e garanta +5% de desconto</span></strong></p><p><strong><span style=\"color: rgb(224, 62, 45)\">em qualquer forma de pagamento!﻿</span></strong></p>",
+            "text": "<p><strong><span style=\"color: #050505\">Inscreva-se em nossa newsletter e</span></strong><br><strong><span style=\"color: #0a0a0a\"><mark data-color=\"#fbf9f9\" style=\"background-color: #fbf9f9; color: inherit\">receba em primeira mão as</mark></span><span style=\"color: rgb(224, 62, 45)\"><mark data-color=\"#fbf9f9\" style=\"background-color: #fbf9f9; color: inherit\"> </mark>melhores ofertas!<br></span><span style=\"color: #0d0c0c\">Aplique o cupom</span><span style=\"color: rgb(224, 62, 45)\"> \"clientetop\"                                                                                                    </span><span style=\"color: #080808\">e garanta</span><span style=\"color: rgb(224, 62, 45)\"> +5% de desconto</span></strong></p><p><strong><span style=\"color: rgb(224, 62, 45)\">em qualquer forma de pagamento!﻿</span></strong></p>",
             "modalSignExpiredDate": 360,
             "modalCloseExpiredDate": 7
           },
