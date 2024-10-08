@@ -842,6 +842,15 @@
                     "alignHorizontal": "end",
                     "label": "Frete Grátis*",
                     "collectionId": "144"
+                  },
+                  {
+                    "minPrice": 0,
+                    "alignHorizontal": "end",
+                    "label": "Direto de Fábrica",
+                    "collectionId": "155",
+                    "width": 137,
+                    "height": 25,
+                    "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png"
                   }
                 ],
                 "layout": {
