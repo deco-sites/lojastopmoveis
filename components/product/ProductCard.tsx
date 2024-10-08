@@ -224,18 +224,8 @@ function ProductCard(
           aria-label="view product"
           class="contents relative"
         >
-          <div class="absolute w-full right-0 top-0 xl:pl-32">
-            <div class="grid gap-y-2 w-full">
-              {
-                /* {listPrice2 !== price2 && (
-                <DiscountBadge
-                  price={price2}
-                  listPrice={listPrice2}
-                  label={l?.discount?.label}
-                  variant={l?.discount?.variant}
-                />
-              )} */
-              }
+          <div class="absolute w-full h-full right-0 top-0">
+            <div class="grid grid-rows-5 w-full h-full">
               {product && (
                 <ProductHighlights
                   product={product}
