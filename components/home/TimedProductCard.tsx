@@ -27,15 +27,15 @@ export interface Layout {
     discount: {
         label: string;
         variant:
-        | "primary"
-        | "secondary"
-        | "neutral"
-        | "accent"
-        | "emphasis"
-        | "success"
-        | "info"
-        | "error"
-        | "warning";
+            | "primary"
+            | "secondary"
+            | "neutral"
+            | "accent"
+            | "emphasis"
+            | "success"
+            | "info"
+            | "error"
+            | "warning";
     };
     elementsPositions?: {
         skuSelector?: "Top" | "Bottom";
@@ -81,7 +81,8 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function TimedProductCard(
-    { product, preload, itemListName, layout, highlights, class: _class }: Props,
+    { product, preload, itemListName, layout, highlights, class: _class }:
+        Props,
 ) {
     const {
         url,
@@ -94,10 +95,11 @@ function TimedProductCard(
 
     const productGroupID = isVariantOf?.productGroupID;
     const [front, back] = images ?? [];
-    const { listPrice, price = 0, installment, seller, availability } = useOffer(
-        offers,
-    );
-    
+    const { listPrice, price = 0, installment, seller, availability } =
+        useOffer(
+            offers,
+        );
+
     const possibilities = useVariantPossibilities(product);
     const variants = Object.entries(Object.values(possibilities)[0] ?? {});
     const clickEvent = {
@@ -131,7 +133,8 @@ function TimedProductCard(
     ));
 
     const addToCartButtonClassNames = (variant: string | undefined) =>
-        `lg:text-sm font-medium text-xs whitespace-nowrap w-full btn max-md:min-h-12 max-md:h-12 max-md:m-auto max-md:px-10 max-md:max-w-full md:w-auto btn-${BUTTON_VARIANTS[variant ?? "primary"]
+        `lg:text-sm font-medium text-xs whitespace-nowrap w-full btn max-md:min-h-12 max-md:h-12 max-md:m-auto max-md:px-10 max-md:max-w-full md:w-auto btn-${
+            BUTTON_VARIANTS[variant ?? "primary"]
         }`;
 
     const cta = layout?.basics?.ctaMode === "Go to Product Page"
@@ -139,8 +142,9 @@ function TimedProductCard(
             <a
                 href={url && relative(url)}
                 aria-label="view product"
-                class={`min-w-[162px] ${addToCartButtonClassNames(layout?.basics?.ctaVariation)
-                    }`}
+                class={`min-w-[162px] ${
+                    addToCartButtonClassNames(layout?.basics?.ctaVariation)
+                }`}
             >
                 <span class="max-lg:hidden flex font-medium">
                     {l?.basics?.ctaText || "Ver produto"}
@@ -151,44 +155,49 @@ function TimedProductCard(
             </a>
         )
         : l?.basics?.mobileCtaText
-            ? (
-                    <AddToCartLocal
-                        name={product.name as string}
-                        discount={price && listPrice ? listPrice - price : 0}
-                        productGroupId={product.isVariantOf?.productGroupID ?? ""}
-                        price={price as number}
-                        seller={seller as string}
-                        skuId={product.sku}
-                        label={l?.basics?.ctaText}
-                        ctaVariant={layout?.basics?.ctaVariation}
-                    />
-            )
-            : (
-                <AddToCartLocal
-                    name={product.name as string}
-                    discount={price && listPrice ? listPrice - price : 0}
-                    productGroupId={product.isVariantOf?.productGroupID ?? ""}
-                    price={price as number}
-                    seller={seller as string}
-                    skuId={product.sku}
-                    label={l?.basics?.ctaText}
-                    ctaVariant={layout?.basics?.ctaVariation}
-                />
-            );
+        ? (
+            <AddToCartLocal
+                name={product.name as string}
+                discount={price && listPrice ? listPrice - price : 0}
+                productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                price={price as number}
+                seller={seller as string}
+                skuId={product.sku}
+                label={l?.basics?.ctaText}
+                ctaVariant={layout?.basics?.ctaVariation}
+            />
+        )
+        : (
+            <AddToCartLocal
+                name={product.name as string}
+                discount={price && listPrice ? listPrice - price : 0}
+                productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                price={price as number}
+                seller={seller as string}
+                skuId={product.sku}
+                label={l?.basics?.ctaText}
+                ctaVariant={layout?.basics?.ctaVariation}
+            />
+        );
 
     const price2: number = price as number;
     const listPrice2: number = listPrice as number;
-    
-    const forPrice = product.offers?.offers[0].price
 
-    const discountPrice = product.offers?.offers[0].priceSpecification.at(-2)?.price 
+    const forPrice = product.offers?.offers[0].price;
+
+    const discountPrice = product.offers?.offers[0].priceSpecification.at(-2)
+        ?.price;
     const discount = listPrice && listPrice > price;
 
     return (
         <div
-            class={`bg-white card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${align === "center" ? "text-center" : "text-start"
-                } ${l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
-                } ${_class ? `${_class}` : ""}`}
+            class={`bg-white card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${
+                align === "center" ? "text-center" : "text-start"
+            } ${
+                l?.onMouseOver?.showCardShadow
+                    ? "lg:hover:shadow-lg shadow-black"
+                    : ""
+            } ${_class ? `${_class}` : ""}`}
             data-deco="view-product"
             id={`product-card-${productID}`}
             {...sendEventOnClick(clickEvent)}
@@ -201,35 +210,30 @@ function TimedProductCard(
                 {/* Wishlist button */}
                 <div
                     class={`absolute top-2 z-10
-            ${l?.elementsPositions?.favoriteIcon === "Top left"
+            ${
+                        l?.elementsPositions?.favoriteIcon === "Top left"
                             ? "left-2"
                             : "right-2"
-                        }
-            ${l?.onMouseOver?.showFavoriteIcon
+                    }
+            ${
+                        l?.onMouseOver?.showFavoriteIcon
                             ? "lg:hidden lg:group-hover:block"
                             : "lg:hidden"
-                        }
+                    }
           `}
                 >
-                    <WishlistIcon productGroupID={productGroupID} productID={productID} />
+                    <WishlistIcon
+                        productGroupID={productGroupID}
+                        productID={productID}
+                    />
                 </div>
                 <a
                     href={url && relative(url)}
                     aria-label="view product"
                     class="contents relative"
                 >
-                    <div class="absolute w-full right-0 top-0 xl:pl-32">
-                        <div class="grid gap-y-2 w-full">
-                            {
-                                /* {listPrice2 !== price2 && (
-                                <DiscountBadge
-                                  price={price2}
-                                  listPrice={listPrice2}
-                                  label={l?.discount?.label}
-                                  variant={l?.discount?.variant}
-                                />
-                              )} */
-                            }
+                    <div class="absolute w-full h-full right-0 top-0">
+                        <div class="grid grid-rows-5 w-full h-full">
                             {product && (
                                 <ProductHighlights
                                     product={product}
@@ -247,15 +251,17 @@ function TimedProductCard(
                         height={HEIGHT}
                         class={`
                 absolute rounded-lg w-full
-                ${(!l?.onMouseOver?.image ||
-                                l?.onMouseOver?.image == "Change image")
+                ${
+                            (!l?.onMouseOver?.image ||
+                                    l?.onMouseOver?.image == "Change image")
                                 ? "duration-100 transition-opacity opacity-100 lg:group-hover:opacity-0"
                                 : ""
-                            }
-                ${l?.onMouseOver?.image == "Zoom image"
+                        }
+                ${
+                            l?.onMouseOver?.image == "Zoom image"
                                 ? "duration-100 transition-scale scale-100 lg:group-hover:scale-105"
                                 : ""
-                            }
+                        }
               `}
                         sizes="(max-width: 640px) 50vw, 20vw"
                         preload={preload}
@@ -264,17 +270,17 @@ function TimedProductCard(
                     />
                     {(!l?.onMouseOver?.image ||
                         l?.onMouseOver?.image == "Change image") && (
-                            <Image
-                                src={back?.url ?? front.url!}
-                                alt={back?.alternateName ?? front.alternateName}
-                                width={WIDTH}
-                                height={HEIGHT}
-                                class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
-                                sizes="(max-width: 640px) 50vw, 20vw"
-                                loading="eager"
-                                decoding="async"
-                            />
-                        )}
+                        <Image
+                            src={back?.url ?? front.url!}
+                            alt={back?.alternateName ?? front.alternateName}
+                            width={WIDTH}
+                            height={HEIGHT}
+                            class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
+                            sizes="(max-width: 640px) 50vw, 20vw"
+                            loading="eager"
+                            decoding="async"
+                        />
+                    )}
                 </a>
             </figure>
             {/* Prices & Name */}
@@ -282,17 +288,24 @@ function TimedProductCard(
                 {/* SKU Selector */}
                 {(!l?.elementsPositions?.skuSelector ||
                     l?.elementsPositions?.skuSelector === "Top") && (
-                        <>
-                            {l?.hide.skuSelector ? "" : (
-                                <ul
-                                    class={`flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
-                                        } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
-                                >
-                                    {skuSelector}
-                                </ul>
-                            )}
-                        </>
-                    )}
+                    <>
+                        {l?.hide.skuSelector ? "" : (
+                            <ul
+                                class={`flex items-center gap-2 w-full ${
+                                    align === "center"
+                                        ? "justify-center"
+                                        : "justify-start"
+                                } ${
+                                    l?.onMouseOver?.showSkuSelector
+                                        ? "lg:hidden"
+                                        : ""
+                                }`}
+                            >
+                                {skuSelector}
+                            </ul>
+                        )}
+                    </>
+                )}
 
                 {l?.hide.productName && l?.hide.productDescription
                     ? ""
@@ -317,49 +330,82 @@ function TimedProductCard(
                 {availability === "https://schema.org/InStock"
                     ? (
                         <>
-                            {l?.hide.allPrices ? "" : (
-                                <div class="flex flex-col mt-2">
-                                    <div
-                                        class={`flex items-center gap-2.5 ${l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
-                                            } ${align === "center" ? "justify-center" : "justify-start"
-                                            }`}
-                                    >
-                                        {(listPrice && price) && listPrice > price && (
-                                            <p
-                                                class={`line-through text-[#C5C6CB] md:text-base text-[12px] ${l?.basics?.oldPriceSize === "Normal"
-                                                    ? "md:text-base"
+                            {l?.hide.allPrices
+                                ? ""
+                                : (
+                                    <div class="flex flex-col mt-2">
+                                        <div
+                                            class={`flex items-center gap-2.5 ${
+                                                l?.basics?.oldPriceSize ===
+                                                        "Normal"
+                                                    ? "lg:flex-row"
                                                     : ""
+                                            } ${
+                                                align === "center"
+                                                    ? "justify-center"
+                                                    : "justify-start"
+                                            }`}
+                                        >
+                                            {(listPrice && price) &&
+                                                listPrice > price && (
+                                                <p
+                                                    class={`line-through text-[#C5C6CB] md:text-base text-[12px] ${
+                                                        l?.basics
+                                                                ?.oldPriceSize ===
+                                                                "Normal"
+                                                            ? "md:text-base"
+                                                            : ""
                                                     }`}
-                                            >
-                                                {formatPrice(listPrice, offers!.priceCurrency!)}
-                                            </p>
-                                        )}
-                                        <p class="md:text-black text-secondary text-sm font-medium md:text-xl">
-                                            {formatPrice(price, offers!.priceCurrency!)}
-                                        </p>
-                                    </div>
-                                    {l?.hide.installments
-                                        ? ""
-                                         : (
-                                            <div class="md:text-sm text-[12px] font-normal text-[#707279] mt-[5px] flex items-center justify-center md:!block">
-                                                ou {installment?.billingDuration}x de {formatPrice(
-                                                    installment?.billingIncrement,
+                                                >
+                                                    {formatPrice(
+                                                        listPrice,
+                                                        offers!.priceCurrency!,
+                                                    )}
+                                                </p>
+                                            )}
+                                            <p class="md:text-black text-secondary text-sm font-medium md:text-xl">
+                                                {formatPrice(
+                                                    price,
                                                     offers!.priceCurrency!,
                                                 )}
-                                            </div>
-                                        )}
-                                    <div class="flex items-center gap-[10px] py-[10px]">
-                                        <span class="font-bold text-md text-secondary leading-none">
-                                            {formatPrice(discountPrice, offers?.priceCurrency)}
-                                        </span>
-                                        {discount && forPrice && discountPrice && (
-                                            <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                                                {Math.round(((forPrice - discountPrice) / forPrice) * 100)}% de desconto no Pix ou boleto
-                                            </span>  
-                                        )}
+                                            </p>
+                                        </div>
+                                        {l?.hide.installments
+                                            ? ""
+                                            : (
+                                                <div class="md:text-sm text-[12px] font-normal text-[#707279] mt-[5px] flex items-center justify-center md:!block">
+                                                    ou{" "}
+                                                    {installment
+                                                        ?.billingDuration}x de
+                                                    {" "}
+                                                    {formatPrice(
+                                                        installment
+                                                            ?.billingIncrement,
+                                                        offers!.priceCurrency!,
+                                                    )}
+                                                </div>
+                                            )}
+                                        <div class="flex items-center gap-[10px] py-[10px]">
+                                            <span class="font-bold text-md text-secondary leading-none">
+                                                {formatPrice(
+                                                    discountPrice,
+                                                    offers?.priceCurrency,
+                                                )}
+                                            </span>
+                                            {discount && forPrice &&
+                                                discountPrice && (
+                                                <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
+                                                    {Math.round(
+                                                        ((forPrice -
+                                                            discountPrice) /
+                                                            forPrice) * 100,
+                                                    )}% de desconto no Pix ou
+                                                    boleto
+                                                </span>
+                                            )}
+                                        </div>
                                     </div>
-                                </div>
-                            )}
+                                )}
                         </>
                     )
                     : null}
@@ -367,26 +413,35 @@ function TimedProductCard(
                 {/* SKU Selector */}
                 {(l?.elementsPositions?.skuSelector === "Bottom" &&
                     availability === "https://schema.org/InStock") && (
-                        <>
-                            {l?.hide.skuSelector ? "" : (
-                                <ul
-                                    class={`flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
-                                        } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
-                                >
-                                    {skuSelector}
-                                </ul>
-                            )}
-                        </>
-                    )}
+                    <>
+                        {l?.hide.skuSelector ? "" : (
+                            <ul
+                                class={`flex items-center gap-2 w-full ${
+                                    align === "center"
+                                        ? "justify-center"
+                                        : "justify-start"
+                                } ${
+                                    l?.onMouseOver?.showSkuSelector
+                                        ? "lg:hidden"
+                                        : ""
+                                }`}
+                            >
+                                {skuSelector}
+                            </ul>
+                        )}
+                    </>
+                )}
 
                 {availability === "https://schema.org/InStock"
                     ? (
                         <div
                             class={`w-full flex flex-col mt-[10px]
-            ${l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
+            ${
+                                l?.onMouseOver?.showSkuSelector ||
+                                    l?.onMouseOver?.showCta
                                     ? "transition-opacity lg:opacity-0 lg:group-hover:opacity-100"
                                     : "lg:hidden"
-                                }
+                            }
           `}
                         >
                             {l?.onMouseOver?.showCta && cta}

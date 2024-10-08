@@ -87,21 +87,9 @@ function ProductDetailsImages(
               </Slider.Item>
             ))}
           </Slider>
-          <div class="absolute w-full right-0 top-0 xl:pl-32">
+          <div class="absolute w-full h-full right-0 top-0">
             {/* Discount tag */}
-            <div class="grid gap-y-2 w-full">
-              {
-                /* {price && listPrice && price !== listPrice
-                ? (
-                  <DiscountBadge
-                    price={price}
-                    listPrice={listPrice}
-                    className="lg:left-auto lg:right-0 left-4"
-                  />
-                )
-                : null} */
-              }
-
+            <div class="grid grid-rows-5 w-full h-full">
               {product && (
                 <ProductHighlights
                   product={product}
