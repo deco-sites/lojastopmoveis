@@ -1,1 +1,46 @@
-{"sections":[{"label":"ProductDetails","shadow":"none","section":{"page":{"__resolveType":"PDP - Intelligent Search Loader"},"variant":"slider","highlights":[{"label":"Frete Grátis*","minPrice":0,"collectionId":"144","alignHorizontal":"end"}],"__resolveType":"site/sections/Product/ProductDetails.tsx","shipmentPolitics":{"link":"#","label":"Confira nossa política de frete e entregas"},"shareableNetworks":["Facebook","Twitter","WhatsApp"]},"spacing":10,"withContainer":true,"verticalSpacing":"bottom"}],"__resolveType":"site/sections/Container.tsx"}
+{
+  "sections": [
+    {
+      "label": "ProductDetails",
+      "shadow": "none",
+      "section": {
+        "page": {
+          "__resolveType": "PDP - Intelligent Search Loader"
+        },
+        "variant": "slider",
+        "highlights": [
+          {
+            "label": "Frete Grátis*",
+            "minPrice": 0,
+            "collectionId": "144",
+            "alignHorizontal": "end"
+          },
+          {
+            "minPrice": 0,
+            "alignHorizontal": "end",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+            "width": 137,
+            "height": 25,
+            "label": "Direto de Fábrica",
+            "collectionId": "155",
+            "backgorundColor": "transparent"
+          }
+        ],
+        "__resolveType": "site/sections/Product/ProductDetails.tsx",
+        "shipmentPolitics": {
+          "link": "#",
+          "label": "Confira nossa política de frete e entregas"
+        },
+        "shareableNetworks": [
+          "Facebook",
+          "Twitter",
+          "WhatsApp"
+        ]
+      },
+      "spacing": 10,
+      "withContainer": true,
+      "verticalSpacing": "bottom"
+    }
+  ],
+  "__resolveType": "site/sections/Container.tsx"
+}
