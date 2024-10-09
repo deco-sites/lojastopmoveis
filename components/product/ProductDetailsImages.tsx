@@ -1,6 +1,6 @@
 import { useSignal } from "@preact/signals";
 import Slider from "$store/components/ui/Slider.tsx";
-import DiscountBadge from "./DiscountBadge.tsx";
+import { useId } from "preact/hooks";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import Image from "apps/website/components/Image.tsx";
@@ -15,75 +15,60 @@ interface Props {
   product: Product;
   highlights?: HighLight[];
   device: string;
+  url: string;
 }
 
 const id = "product-zoom";
 
 function ProductDetailsImages(
-  { images, width, height, aspect, product, highlights, device }: Props,
+  { images, width, height, aspect, product, highlights, device, url }: Props,
 ) {
   const { offers } = product;
+  const video = product && product.video || [];
+  const midia = [...images, ...video];
   const {
     price,
     listPrice,
   } = useOffer(offers);
   const zoomX = useSignal(0);
   const zoomY = useSignal(0);
-  
+
   return (
     <>
       <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
         {/* Image Slider */}
         <div class="relative xl:pl-32">
           <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
-            {images.map((img, index) => (
+            {midia.map((img, index) => (
               <Slider.Item
                 index={index}
                 class="carousel-item w-full aspect-square"
               >
-                {device === "mobile"
-                  ? (
-                    <Image
-                      class="w-full rounded-[10px] lg:hover:opacity-0 h-[100%]"
-                      sizes="(max-width: 640px) 100vw, 40vw"
-                      style={{ aspectRatio: aspect }}
-                      src={img.url!}
-                      alt={img.alternateName}
-                      width={width}
-                      height={height}
-                      // Preload LCP image for better web vitals
-                      preload={index === 0}
-                      loading={index === 0 ? "eager" : "lazy"}
-                    />
-                  )
-                  : (
-                    <figure
-                      style={`background-image: url(${img
-                        .url!}); background-size: 250%;`}
-                      onMouseMove={(e: MouseEvent) => {
-                        const zoomer = e.currentTarget as HTMLElement;
-                        const offsetX = e.offsetX;
-                        const offsetY = e.offsetY;
-                        const x = offsetX / (zoomer.offsetWidth) * 100;
-                        const y = offsetY / (zoomer.offsetHeight) * 100;
-                        zoomer!.style.backgroundPosition = x + "% " + y + "%";
-                      }}
-                      class="overflow-hidden cursor-zoom-in rounded-[10px] hover:rounded-none"
-                    >
-                      <Image
-                        class="w-full rounded-[10px] lg:hover:opacity-0 h-[100%]"
-                        sizes="(max-width: 640px) 100vw, 40vw"
-                        style={{ aspectRatio: aspect }}
-                        src={img.url!}
-                        alt={img.alternateName}
+                <div class="relative block h-0 w-full pb-[100%] ">
+                  {img["@type"] === "ImageObject" &&
+                    renderImage({
+                      img,
+                      index,
+                      aspect,
+                      width,
+                      height,
+                      device,
+                    })}
+                  {img["@type"] === "VideoObject" &&
+                    (
+                      <iframe
+                        class="slide-dot-custom"
                         width={width}
                         height={height}
-                        // Preload LCP image for better web vitals
-                        preload={index === 0}
-                        loading={index === 0 ? "eager" : "lazy"}
-                      />
-                    </figure>
-                  )}
+                        title={img?.name}
+                        src={img.contentUrl!}
+                        frameborder={0}
+                        loading={"lazy"}
+                      >
+                      </iframe>
+                    )}
+
+                </div>
               </Slider.Item>
             ))}
           </Slider>
@@ -135,6 +120,54 @@ function ProductDetailsImages(
         </div>
       </div>
     </>
+  );
+}
+
+function renderImage({ img, index, aspect, width, height, device }: {
+  img: ImageObject;
+  index: number;
+  aspect: string;
+  width: number;
+  height: number;
+  device: string;
+}) {
+  const isMobile = device === "mobile";
+
+  const image = (
+    <Image
+      class={isMobile
+        ? "absolute top-0 left-0 w-full block object-cover font-['blur-up:_auto','object-fit:_cover'] h-auto align-middle"
+        : "transition duration-150 opacity-100  lg:hover:opacity-0 hover:duration-300 lg:w-full"}
+      sizes="(max-width: 480px) 576px, 576px"
+      style={{ aspectRatio: aspect }}
+      src={img?.url!}
+      alt={img.alternateName}
+      width={width}
+      height={height}
+      // Preload LCP image for better web vitals
+      preload={index === 0}
+      loading={index === 0 ? "eager" : "lazy"}
+    />
+  );
+
+  return isMobile ? image : (
+    <figure
+      style={`background-image: url(${img?.url!}); background-size: 250%;`}
+      onMouseMove={(e: MouseEvent) => {
+        const zoomer = e.currentTarget as HTMLElement;
+        const offsetX = e.offsetX;
+        const offsetY = e.offsetY;
+        const x = offsetX / (zoomer.offsetWidth) * 100;
+        const y = offsetY / (zoomer.offsetHeight) * 100;
+
+        zoomer!.style.backgroundPosition = x + "% " + y + "%";
+        
+      }}
+      
+      class="overflow-hidden cursor-zoom-in relative group/zoomer"
+    >
+      {image}
+    </figure>
   );
 }
 
