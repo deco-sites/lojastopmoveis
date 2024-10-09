@@ -156,7 +156,7 @@ function ProductHighlights(props: Props) {
                   style={`
                     background: ${backgorundColor};  
                     color: ${color};  
-                    height: ${backgorundColor};  
+                    height: ${height ? `${height}px` : "auto"};  
                     width: ${width ? `${width}px` : "auto"}; 
                     ${css} 
                   `}
