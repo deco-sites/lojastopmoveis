@@ -37,6 +37,7 @@ export interface HighLight {
   colSpan?: number;
   alignHorizontal?: AlignHorizontal;
   tailwind?: string;
+  css?: string;
 }
 
 type Props = {
@@ -133,7 +134,8 @@ function ProductHighlights(props: Props) {
               columnStart,
               rowSpan,
               alignHorizontal,
-              tailwind
+              tailwind,
+              css
             },
           ) => {
             if (
@@ -151,12 +153,13 @@ function ProductHighlights(props: Props) {
                   ${icon ? "p-0 " : "p-1 2xl:p-2 "}
                   ${tailwind}
                   `}
-                  style={{
-                    background: backgorundColor,
-                    color,
-                    height: height ? `${height}px` : "auto",
-                    width: width ? `${width}px` : "auto"
-                  }}
+                  style={`
+                    background: ${backgorundColor};  
+                    color: ${color};  
+                    height: ${backgorundColor};  
+                    width: ${width ? `${width}px` : "auto"}; 
+                    ${css} 
+                  `}
                 >
                   {icon
                     ? (
