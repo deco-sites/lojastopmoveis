@@ -57,7 +57,7 @@ function ProductDetailsImages(
                   {img["@type"] === "VideoObject" &&
                     (
                       <iframe
-                        class="slide-dot-custom"
+                        class="m-w-[600px] w-full"
                         width={width}
                         height={height}
                         title={img?.name}
@@ -67,7 +67,6 @@ function ProductDetailsImages(
                       >
                       </iframe>
                     )}
-
                 </div>
               </Slider.Item>
             ))}
@@ -102,17 +101,35 @@ function ProductDetailsImages(
           <ul
             class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
           >
-            {images.map((img, index) => (
+            {midia.map((img, index) => (
               <li class="min-w-[75px] lg:h-fit lg:min-w-[130px]">
                 <Slider.Dot index={index}>
-                  <Image
-                    style={{ aspectRatio: aspect }}
-                    class="border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"
-                    width={width / 5}
-                    height={height / 5}
-                    src={img.url!}
-                    alt={img.alternateName}
-                  />
+                  {img["@type"] === "ImageObject" &&
+                    (
+                      <Image
+                        style={{ aspectRatio: aspect }}
+                        class="border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"
+                        width={width / 5}
+                        height={height / 5}
+                        src={img?.url!}
+                        alt={img.alternateName}
+                      />
+                    )}
+
+                  {img["@type"] === "VideoObject" &&
+                    (
+                      <iframe
+                        class={"border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"}
+                        width={width / 5}
+                        height={height / 5}
+                        src={img.contentUrl}
+                        title={img?.name}
+                        frameborder={0}
+                        allow="picture-in-picture"
+                        loading={"lazy"}
+                      >
+                      </iframe>
+                    )}
                 </Slider.Dot>
               </li>
             ))}
@@ -161,9 +178,7 @@ function renderImage({ img, index, aspect, width, height, device }: {
         const y = offsetY / (zoomer.offsetHeight) * 100;
 
         zoomer!.style.backgroundPosition = x + "% " + y + "%";
-        
       }}
-      
       class="overflow-hidden cursor-zoom-in relative group/zoomer"
     >
       {image}

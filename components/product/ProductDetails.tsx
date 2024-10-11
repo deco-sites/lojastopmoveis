@@ -95,7 +95,7 @@ function ProductInfo(
   const vendorName = product.offers?.offers[0].sellerName
   
 
-  console.log(vendorName)
+  console.log(["product", product])
 
   return (
     <>
@@ -322,6 +322,7 @@ function Details({
             product={product}
             highlights={highlights}
             device={device}
+            url={product.url!}
           />
 
           {/* Product Info */}
