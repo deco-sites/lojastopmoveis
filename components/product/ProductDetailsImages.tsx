@@ -32,6 +32,9 @@ function ProductDetailsImages(
   } = useOffer(offers);
   const zoomX = useSignal(0);
   const zoomY = useSignal(0);
+  const imagecustom = product.image?.find((i) => i["@type"] === "ImageObject");
+  const iconPlayer =
+    "https://topmoveis.vtexcommercestable.com.br/arquivos/icon-play-video.png";
 
   return (
     <>
@@ -45,15 +48,6 @@ function ProductDetailsImages(
                 class="carousel-item w-full aspect-square"
               >
                 <div class="relative block h-0 w-full pb-[100%] ">
-                  {img["@type"] === "ImageObject" &&
-                    renderImage({
-                      img,
-                      index,
-                      aspect,
-                      width,
-                      height,
-                      device,
-                    })}
                   {img["@type"] === "VideoObject" &&
                     (
                       <iframe
@@ -67,6 +61,15 @@ function ProductDetailsImages(
                       >
                       </iframe>
                     )}
+                  {img["@type"] === "ImageObject" &&
+                    renderImage({
+                      img,
+                      index,
+                      aspect,
+                      width,
+                      height,
+                      device,
+                    })}
                 </div>
               </Slider.Item>
             ))}
@@ -99,11 +102,28 @@ function ProductDetailsImages(
         {/* Dots */}
         <div class="lg:max-w-[500px] lg:self-start xl:self-start xl:left-0 xl:absolute xl:max-h-full xl:overflow-y-scroll xl:scrollbar-none max-lg:hidden">
           <ul
-            class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col`}
+            class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col-reverse`}
           >
             {midia.map((img, index) => (
               <li class="min-w-[75px] lg:h-fit lg:min-w-[130px]">
                 <Slider.Dot index={index}>
+                  {img["@type"] === "VideoObject" &&
+                    (
+                      <div class={`relative`}>
+                        <Image
+                          style={{ aspectRatio: aspect }}
+                          class="border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"
+                          width={width / 5}
+                          height={height / 5}
+                          src={imagecustom?.url!}
+                          alt={img.alternateName}
+                        />
+                        <img
+                          class={`absolute w-[50px] top-2/4 -translate-y-1/2 -translate-x-1/2 left-2/4 border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]`}
+                          src={iconPlayer}
+                        />
+                      </div>
+                    )}
                   {img["@type"] === "ImageObject" &&
                     (
                       <Image
@@ -114,21 +134,6 @@ function ProductDetailsImages(
                         src={img?.url!}
                         alt={img.alternateName}
                       />
-                    )}
-
-                  {img["@type"] === "VideoObject" &&
-                    (
-                      <iframe
-                        class={"border-neutral hover:border-secondary-focus group-disabled:border-secondary-focus border-2 rounded-[10px]"}
-                        width={width / 5}
-                        height={height / 5}
-                        src={img.contentUrl}
-                        title={img?.name}
-                        frameborder={0}
-                        allow="picture-in-picture"
-                        loading={"lazy"}
-                      >
-                      </iframe>
                     )}
                 </Slider.Dot>
               </li>
