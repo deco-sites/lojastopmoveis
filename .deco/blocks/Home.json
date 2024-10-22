@@ -841,7 +841,20 @@
                     "minPrice": 0,
                     "alignHorizontal": "end",
                     "label": "Frete Grátis*",
-                    "collectionId": "144"
+                    "collectionId": "144",
+                    "height": 16
+                  },
+                  {
+                    "minPrice": 0,
+                    "alignHorizontal": "end",
+                    "label": "Direto de Fábrica",
+                    "collectionId": "155",
+                    "width": 137,
+                    "height": 25,
+                    "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+                    "backgorundColor": "transparent",
+                    "rowStart": 5,
+                    "css": "align-self: end; padding-bottom: 0;"
                   }
                 ],
                 "layout": {
@@ -966,7 +979,19 @@
                       "label": "Frete Grátis*",
                       "minPrice": 0,
                       "collectionId": "144",
-                      "alignHorizontal": "end"
+                      "alignHorizontal": "end",
+                      "height": 16
+                    },
+                    {
+                      "minPrice": 0,
+                      "alignHorizontal": "end",
+                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+                      "height": 25,
+                      "width": 137,
+                      "collectionId": "155",
+                      "backgorundColor": "transparent",
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "__resolveType": "site/sections/Product/ProductShelf.tsx",
@@ -1135,7 +1160,20 @@
                       "label": "Frete Grátis*",
                       "minPrice": 0,
                       "collectionId": "144",
-                      "alignHorizontal": "end"
+                      "alignHorizontal": "end",
+                      "height": 16
+                    },
+                    {
+                      "minPrice": 0,
+                      "alignHorizontal": "end",
+                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+                      "width": 137,
+                      "height": 25,
+                      "label": "Direto de Fábrica",
+                      "collectionId": "155",
+                      "backgorundColor": "transparent",
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "showPaginationArrows": "Always"
@@ -1379,7 +1417,19 @@
                       "label": "Frete Grátis*",
                       "minPrice": 0,
                       "collectionId": "144",
-                      "alignHorizontal": "end"
+                      "alignHorizontal": "end",
+                      "height": 16
+                    },
+                    {
+                      "minPrice": 0,
+                      "alignHorizontal": "end",
+                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+                      "width": 137,
+                      "height": 25,
+                      "backgorundColor": "transparent",
+                      "collectionId": "155",
+                      "label": "Direto de Fábrica",
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "showPaginationArrows": "Always"
@@ -1465,7 +1515,20 @@
                       "label": "Frete Grátis*",
                       "minPrice": 0,
                       "collectionId": "144",
-                      "alignHorizontal": "end"
+                      "alignHorizontal": "end",
+                      "height": 16
+                    },
+                    {
+                      "minPrice": 0,
+                      "alignHorizontal": "end",
+                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+                      "label": "Direto de Fábrica",
+                      "height": 25,
+                      "width": 137,
+                      "backgorundColor": "transparent",
+                      "collectionId": "155",
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "showPaginationArrows": "Always"
