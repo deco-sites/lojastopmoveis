@@ -608,15 +608,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/poistaiquetatop"
+                        "href": "/esquentablacktop"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/b3122816-9be0-4181-98ea-389f4bc2a4b7/BANNER-MOBILE---390x490px.webp",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/4fd00263-7bf0-4020-9952-79dc53fa4203/WhatsApp-Image-2024-10-22-at-10.05.08.jpeg",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/7d432093-ff30-45c6-8e61-59039f3967ce/BANNER-SITE-1920x600---CAMPANHA-OUTUBRO-ONLINE-TOP-MOVEIS.webp",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/bdbbb346-ff09-4d7d-8392-fae48261873b/WhatsApp-Image-2024-10-22-at-10.04.52.jpeg",
                         "width": 1920,
                         "height": 599
                       }
