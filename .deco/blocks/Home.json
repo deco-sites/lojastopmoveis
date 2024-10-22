@@ -853,7 +853,8 @@
                     "height": 25,
                     "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
                     "backgorundColor": "transparent",
-                    "rowStart": 5
+                    "rowStart": 5,
+                    "css": "align-self: end; padding-bottom: 0;"
                   }
                 ],
                 "layout": {
@@ -989,7 +990,8 @@
                       "width": 137,
                       "collectionId": "155",
                       "backgorundColor": "transparent",
-                      "rowStart": 5
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "__resolveType": "site/sections/Product/ProductShelf.tsx",
@@ -1170,7 +1172,8 @@
                       "label": "Direto de Fábrica",
                       "collectionId": "155",
                       "backgorundColor": "transparent",
-                      "rowStart": 5
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "showPaginationArrows": "Always"
@@ -1425,7 +1428,8 @@
                       "height": 25,
                       "backgorundColor": "transparent",
                       "collectionId": "155",
-                      "label": "Direto de Fábrica"
+                      "label": "Direto de Fábrica",
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "showPaginationArrows": "Always"
@@ -1523,7 +1527,8 @@
                       "width": 137,
                       "backgorundColor": "transparent",
                       "collectionId": "155",
-                      "rowStart": 5
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "showPaginationArrows": "Always"

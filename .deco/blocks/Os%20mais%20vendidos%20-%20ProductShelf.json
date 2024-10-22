@@ -90,7 +90,8 @@
             "width": 137,
             "height": 25,
             "backgorundColor": "transparent",
-            "rowStart": 5
+            "rowStart": 5,
+            "css": "align-self: end; padding-bottom: 0;"
           }
         ],
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
