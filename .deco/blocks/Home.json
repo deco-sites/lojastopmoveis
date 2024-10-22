@@ -825,11 +825,11 @@
                 }
               },
               "frameColor": "#ed2d26",
-              "titleFrame": " Aproveita que tá Cheio de Oferta Top!",
+              "titleFrame": " Taí, só tem de Oferta Top!",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-10-10",
+              "countdownTimerDate": "2024-10-22",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ab00c2",
               "countdownTextColor": "#ffffff",
@@ -1001,7 +1001,96 @@
             ]
           },
           {
-            "__resolveType": "Os mais vendidos - ProductShelf"
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "ProductShelf",
+                "shadow": "none",
+                "section": {
+                  "title": "Top Lançamentos com Envio Imediato! Aproveite! ",
+                  "layout": {
+                    "itemsPerPage": [
+                      {
+                        "screenWidth": 425,
+                        "itemsQuantity": 1
+                      },
+                      {
+                        "screenWidth": 700,
+                        "itemsQuantity": 4
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ],
+                    "headerfontSize": "Normal",
+                    "headerAlignment": "center"
+                  },
+                  "seeMore": {
+                    "url": " ",
+                    "label": " "
+                  },
+                  "products": {
+                    "sort": "orders:desc",
+                    "count": 12,
+                    "props": {
+                      "sort": "",
+                      "similars": false,
+                      "collection": "139",
+                      "hideUnavailableItems": true,
+                      "count": 60
+                    },
+                    "collection": "135",
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+                  },
+                  "cardLayout": {
+                    "hide": {
+                      "skuSelector": true,
+                      "productDescription": true
+                    },
+                    "basics": {
+                      "ctaMode": "Add to Cart",
+                      "ctaText": "Adicionar ao carrinho",
+                      "ctaVariation": "secondary",
+                      "oldPriceSize": "Normal",
+                      "mobileCtaText": "Adicionar ao carrinho",
+                      "contentAlignment": "Left"
+                    },
+                    "discount": {
+                      "label": " ",
+                      "variant": "emphasis"
+                    },
+                    "onMouseOver": {
+                      "image": "Change image",
+                      "showCta": true,
+                      "showCardShadow": true,
+                      "showFavoriteIcon": false
+                    },
+                    "elementsPositions": {}
+                  },
+                  "highlights": [
+                    {
+                      "label": "Frete Grátis*",
+                      "minPrice": 0,
+                      "collectionId": "144",
+                      "alignHorizontal": "end"
+                    }
+                  ],
+                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
+                  "showPaginationArrows": "Always"
+                },
+                "withContainer": true,
+                "verticalSpacing": "none"
+              }
+            ]
           },
           {
             "__resolveType": "site/sections/Container.tsx",
@@ -1095,6 +1184,81 @@
             "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
+                "label": "ProductShelf",
+                "shadow": "none",
+                "section": {
+                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
+                  "title": " Top Lançamentos de Cozinhas, Kits e Armários!",
+                  "layout": {
+                    "itemsPerPage": [
+                      {
+                        "screenWidth": 425,
+                        "itemsQuantity": 1
+                      },
+                      {
+                        "screenWidth": 700,
+                        "itemsQuantity": 4
+                      }
+                    ],
+                    "headerfontSize": "Normal",
+                    "headerAlignment": "center"
+                  },
+                  "seeMore": {
+                    "url": " ",
+                    "label": " "
+                  },
+                  "products": {
+                    "sort": "orders:desc",
+                    "count": 12,
+                    "props": {
+                      "sort": "",
+                      "count": 55,
+                      "collection": "149"
+                    },
+                    "collection": "135",
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+                  },
+                  "cardLayout": {
+                    "hide": {
+                      "skuSelector": true,
+                      "productDescription": true
+                    },
+                    "basics": {
+                      "ctaMode": "Add to Cart",
+                      "ctaText": "Adicionar ao carrinho",
+                      "ctaVariation": "secondary",
+                      "mobileCtaText": "Adicionar ao carrinho",
+                      "contentAlignment": "Left"
+                    },
+                    "discount": {
+                      "label": " ",
+                      "variant": "emphasis"
+                    },
+                    "onMouseOver": {
+                      "image": "Change image",
+                      "showCta": true,
+                      "showCardShadow": true
+                    },
+                    "elementsPositions": {}
+                  },
+                  "highlights": [
+                    {
+                      "label": "Frete Grátis*",
+                      "minPrice": 0,
+                      "collectionId": "144",
+                      "alignHorizontal": "end"
+                    }
+                  ],
+                  "showPaginationArrows": "Always"
+                },
+                "withContainer": true,
+                "verticalSpacing": "none"
+              }
+            ]
+          },
+          {
+            "sections": [
+              {
                 "label": "BannerGrid",
                 "shadow": "none",
                 "section": {
@@ -1173,7 +1337,8 @@
                 "withContainer": true,
                 "verticalSpacing": "none"
               }
-            ]
+            ],
+            "__resolveType": "site/sections/Container.tsx"
           },
           {
             "sections": [
@@ -1182,6 +1347,7 @@
                 "shadow": "none",
                 "section": {
                   "title": "Produtos Exclusivos no Site, com Preço de Fábrica! Aproveite!",
+                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
                   "layout": {
                     "itemsPerPage": [
                       {
@@ -1262,7 +1428,6 @@
                       "label": "Direto de Fábrica"
                     }
                   ],
-                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
                   "showPaginationArrows": "Always"
                 },
                 "withContainer": true,
@@ -1272,6 +1437,7 @@
             "__resolveType": "site/sections/Container.tsx"
           },
           {
+            "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
                 "label": "ProductShelf",
@@ -1365,8 +1531,7 @@
                 "withContainer": true,
                 "verticalSpacing": "none"
               }
-            ],
-            "__resolveType": "site/sections/Container.tsx"
+            ]
           },
           {
             "__resolveType": "site/sections/Container.tsx",
@@ -1402,20 +1567,22 @@
                       "alt": "Banner 1",
                       "href": "https://www.lojastopmoveis.com.br/parceriapremiummadesa",
                       "preload": true,
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/0103011c-edc0-49dd-9eef-2d73dc7bbd1c/banner_madesa_mobile-(2).jpg"
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/728ba67f-b0ef-4e57-ba9e-8c4fc2d712be/Screenshot_49.jpg"
                     },
                     {
                       "alt": "Banner 2",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/919bdd35-82c9-413c-96e9-05474e4da78d"
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3b147aec-25a5-426a-8b80-37e655b6b300/463189045_946993960804927_8769917494261846925_n.jpg",
+                      "href": "https://www.lojastopmoveis.com.br/topmoveis-paraempresas"
                     },
                     {
                       "alt": "Banner 3",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/49f924cb-00d7-4086-b997-6b2a59fb7d43"
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/49f924cb-00d7-4086-b997-6b2a59fb7d43",
+                      "href": "https://www.lojastopmoveis.com.br/busca?q=tubform"
                     },
                     {
                       "alt": "img 4",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8ef64845-bce5-49cc-ba2a-0ef167d1d47e/457466162_913950247442632_6481674930238517442_n.jpg",
-                      "href": "https://www.facebook.com/photo/?fbid=913950244109299&set=a.611015427736117",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8831d4d5-1b20-46f1-b2b4-200bf01ca662/463206036_947701347400855_5529900374779351523_n.jpg",
+                      "href": "https://www.facebook.com/photo/?fbid=947701340734189&set=pcb.947701487400841",
                       "preload": true
                     }
                   ],
@@ -1439,15 +1606,15 @@
                 "label": "InfoCard",
                 "shadow": "none",
                 "section": {
+                  "__resolveType": "site/sections/Content/InfoCardSeo.tsx",
                   "html": "<p><strong>Conheça Nossa História:</strong></p><p>O Grupo de Lojas Top Móveis iniciou as suas atividades em 1998 no movimentado centro de Fortaleza, Ceará. Com valores voltados a um atendimento de Excelência, comprometimento com os nossos clientes externos e internos, transparência, respeito e agilidade, contamos atualmente com 30 Filiais e 3 centros de distribuição espalhados pelo estado do Ceará e Piauí.</p><p><br data-mce-bogus=\"1\"></p><p><strong>Presença no Varejo on-line:</strong></p><p>Como precursora no canal de Vendas on-line na Região Nordeste, nossa presença também é marcante no ambiente virtual.</p><p>Através do site https://www.lojastopmoveis.com.br/ e das principais plataformas de Marketplace, dispomos de atendimento em toda a Região, via frota própria ou transporte parceiro de excelência com acompanhamento via S.A.C. e rastreio, tornando assim a sua compra mais confortável e segura!</p><p>Disponibilizamos um portfólio diversificado dos principais Fabricantes de Móveis e Eletrodomésticos do País, com envio imediato, prazo de entrega e preços competitivos, através de estoque para pronta entrega.</p><p>É um prazer te conhecer e fazer parte da sua casa!</p><p>Nas Lojas Físicas ou na Virtual, vem ter uma Experiência Top!</p>",
                   "title": "Sobre a loja",
                   "subTitle": "Sobre a loja",
-                  "textAlign": "Left",
-                  "__resolveType": "site/sections/Content/InfoCardSeo.tsx"
+                  "textAlign": "Left"
                 },
-                "spacing": 0,
                 "withContainer": true,
-                "verticalSpacing": "none"
+                "verticalSpacing": "none",
+                "spacing": 0
               }
             ]
           },
