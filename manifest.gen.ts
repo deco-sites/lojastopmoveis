@@ -4,7 +4,8 @@
 
 import * as $$$$$$$$$$$0 from "./apps/deco/crux.ts";
 import * as $$$$$$$$$$$1 from "./apps/decohub.ts";
-import * as $$$$$$$$$$$2 from "./apps/site.ts";
+import * as $$$$$$$$$$$2 from "./apps/local/app-tags.ts";
+import * as $$$$$$$$$$$3 from "./apps/site.ts";
 import * as $$$0 from "./loaders/RedirectsFromCsvWithEncoding.ts";
 import * as $$$$$$0 from "./sections/Category/CategoryBanner.tsx";
 import * as $$$$$$1 from "./sections/Category/CategoryBreadcrumb.tsx";
@@ -106,7 +107,8 @@ const manifest = {
   "apps": {
     "site/apps/deco/crux.ts": $$$$$$$$$$$0,
     "site/apps/decohub.ts": $$$$$$$$$$$1,
-    "site/apps/site.ts": $$$$$$$$$$$2,
+    "site/apps/local/app-tags.ts": $$$$$$$$$$$2,
+    "site/apps/site.ts": $$$$$$$$$$$3,
   },
   "name": "site",
   "baseUrl": import.meta.url,
