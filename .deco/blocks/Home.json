@@ -1444,7 +1444,8 @@
                       "backgorundColor": "transparent",
                       "collectionId": "155",
                       "label": "Direto de Fábrica",
-                      "css": "align-self: end; padding-bottom: 0;"
+                      "css": "align-self: end; padding-bottom: 0;",
+                      "rowStart": 5
                     }
                   ],
                   "showPaginationArrows": "Always"
