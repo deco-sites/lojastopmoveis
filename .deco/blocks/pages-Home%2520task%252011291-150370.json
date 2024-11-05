@@ -1,13 +1,16 @@
 {
-  "name": "Home",
-  "path": "/",
+  "__resolveType": "$live/pages/LivePage.tsx",
   "sections": {
+    "__resolveType": "website/flags/multivariate.ts",
     "variants": [
       {
         "rule": {
           "__resolveType": "website/matchers/always.ts"
         },
         "value": [
+          {
+            "__resolveType": "Default - Design System"
+          },
           {
             "__resolveType": "Default - Design System"
           },
@@ -24,6 +27,8 @@
                 "label": "Topbar",
                 "shadow": "none",
                 "section": {
+                  "interval": 5,
+                  "__resolveType": "site/sections/Header/TopNavBar.tsx",
                   "alerts": [
                     {
                       "alt": "Icone Primeira Troca Grátis",
@@ -43,13 +48,11 @@
                       "textAlert": "Parcele em até 12x sem Juros* nos cartões",
                       "textColor": "#ffffff"
                     }
-                  ],
-                  "interval": 5,
-                  "__resolveType": "site/sections/Header/TopNavBar.tsx"
+                  ]
                 },
+                "verticalSpacing": "none",
                 "withContainer": false,
-                "backgroundColor": "#ED2A24",
-                "verticalSpacing": "none"
+                "backgroundColor": "#ED2A24"
               },
               {
                 "label": "Header",
@@ -741,9 +744,9 @@
                       }
                     }
                   ],
+                  "__resolveType": "site/sections/Images/Carousel.tsx",
                   "preload": true,
                   "interval": 5,
-                  "__resolveType": "site/sections/Images/Carousel.tsx",
                   "showPaginationDots": "Always"
                 },
                 "verticalSpacing": "both"
@@ -829,7 +832,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-11-06",
+              "countdownTimerDate": "2024-11-04",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ab00c2",
               "countdownTextColor": "#ffffff",
@@ -939,112 +942,10 @@
                     "count": 12,
                     "props": {
                       "sort": "",
-                      "count": 55,
                       "similars": false,
                       "collection": "143",
-                      "hideUnavailableItems": true
-                    },
-                    "collection": "135",
-                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
-                  },
-                  "cardLayout": {
-                    "hide": {
-                      "skuSelector": true,
-                      "productDescription": true
-                    },
-                    "basics": {
-                      "ctaMode": "Add to Cart",
-                      "ctaText": "Adicionar ao carrinho",
-                      "ctaVariation": "secondary",
-                      "oldPriceSize": "Normal",
-                      "mobileCtaText": "Adicionar ao carrinho",
-                      "contentAlignment": "Left"
-                    },
-                    "discount": {
-                      "label": " ",
-                      "variant": "emphasis"
-                    },
-                    "onMouseOver": {
-                      "image": "Change image",
-                      "showCta": true,
-                      "showCardShadow": true,
-                      "showFavoriteIcon": false
-                    },
-                    "elementsPositions": {}
-                  },
-                  "highlights": [
-                    {
-                      "label": "Frete Grátis*",
-                      "collectionId": "144",
-                      "alignHorizontal": "end",
-                      "height": 16
-                    },
-                    {
-                      "alignHorizontal": "end",
-                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
-                      "height": 25,
-                      "width": 137,
-                      "collectionId": "155",
-                      "backgorundColor": "transparent",
-                      "rowStart": 5,
-                      "css": "align-self: end; padding-bottom: 0;"
-                    }
-                  ],
-                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
-                  "showPaginationArrows": "Always"
-                },
-                "withContainer": true,
-                "verticalSpacing": "none"
-              }
-            ]
-          },
-          {
-            "__resolveType": "site/sections/Container.tsx",
-            "sections": [
-              {
-                "label": "ProductShelf",
-                "shadow": "none",
-                "section": {
-                  "title": "Top Lançamentos com Envio Imediato! Aproveite! ",
-                  "layout": {
-                    "itemsPerPage": [
-                      {
-                        "screenWidth": 425,
-                        "itemsQuantity": 1
-                      },
-                      {
-                        "screenWidth": 700,
-                        "itemsQuantity": 4
-                      },
-                      {},
-                      {},
-                      {},
-                      {},
-                      {},
-                      {},
-                      {},
-                      {},
-                      {},
-                      {},
-                      {},
-                      {}
-                    ],
-                    "headerfontSize": "Normal",
-                    "headerAlignment": "center"
-                  },
-                  "seeMore": {
-                    "url": " ",
-                    "label": " "
-                  },
-                  "products": {
-                    "sort": "orders:desc",
-                    "count": 12,
-                    "props": {
-                      "sort": "",
-                      "similars": false,
-                      "collection": "139",
                       "hideUnavailableItems": true,
-                      "count": 60
+                      "count": 55
                     },
                     "collection": "135",
                     "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
@@ -1093,6 +994,108 @@
                     }
                   ],
                   "__resolveType": "site/sections/Product/ProductShelf.tsx",
+                  "showPaginationArrows": "Always"
+                },
+                "withContainer": true,
+                "verticalSpacing": "none"
+              }
+            ]
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "ProductShelf",
+                "shadow": "none",
+                "section": {
+                  "__resolveType": "site/sections/Product/ProductShelf.tsx",
+                  "title": "Top Lançamentos com Envio Imediato! Aproveite! ",
+                  "layout": {
+                    "itemsPerPage": [
+                      {
+                        "screenWidth": 425,
+                        "itemsQuantity": 1
+                      },
+                      {
+                        "screenWidth": 700,
+                        "itemsQuantity": 4
+                      },
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {},
+                      {}
+                    ],
+                    "headerfontSize": "Normal",
+                    "headerAlignment": "center"
+                  },
+                  "seeMore": {
+                    "url": " ",
+                    "label": " "
+                  },
+                  "products": {
+                    "sort": "orders:desc",
+                    "count": 12,
+                    "props": {
+                      "sort": "",
+                      "count": 60,
+                      "collection": "139",
+                      "similars": false,
+                      "hideUnavailableItems": true
+                    },
+                    "collection": "135",
+                    "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+                  },
+                  "cardLayout": {
+                    "hide": {
+                      "skuSelector": true,
+                      "productDescription": true
+                    },
+                    "basics": {
+                      "ctaMode": "Add to Cart",
+                      "ctaText": "Adicionar ao carrinho",
+                      "ctaVariation": "secondary",
+                      "mobileCtaText": "Adicionar ao carrinho",
+                      "contentAlignment": "Left",
+                      "oldPriceSize": "Normal"
+                    },
+                    "discount": {
+                      "label": " ",
+                      "variant": "emphasis"
+                    },
+                    "onMouseOver": {
+                      "image": "Change image",
+                      "showCta": true,
+                      "showCardShadow": true,
+                      "showFavoriteIcon": false
+                    },
+                    "elementsPositions": {}
+                  },
+                  "highlights": [
+                    {
+                      "label": "Frete Grátis*",
+                      "collectionId": "144",
+                      "alignHorizontal": "end",
+                      "height": 16
+                    },
+                    {
+                      "alignHorizontal": "end",
+                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+                      "width": 137,
+                      "height": 25,
+                      "collectionId": "155",
+                      "backgorundColor": "transparent",
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
+                    }
+                  ],
                   "showPaginationArrows": "Always"
                 },
                 "withContainer": true,
@@ -1188,7 +1191,6 @@
             ]
           },
           {
-            "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
                 "label": "ProductShelf",
@@ -1261,7 +1263,8 @@
                 "withContainer": true,
                 "verticalSpacing": "none"
               }
-            ]
+            ],
+            "__resolveType": "site/sections/Container.tsx"
           },
           {
             "sections": [
@@ -1348,6 +1351,7 @@
             "__resolveType": "site/sections/Container.tsx"
           },
           {
+            "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
                 "label": "ProductShelf",
@@ -1419,19 +1423,19 @@
                   "highlights": [
                     {
                       "label": "Frete Grátis*",
-                      "minPrice": 0,
                       "collectionId": "144",
                       "alignHorizontal": "end",
-                      "height": 16
+                      "height": 16,
+                      "minPrice": 0
                     },
                     {
                       "alignHorizontal": "end",
                       "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
-                      "width": 137,
+                      "label": "Direto de Fábrica",
                       "height": 25,
+                      "width": 137,
                       "backgorundColor": "transparent",
                       "collectionId": "155",
-                      "label": "Direto de Fábrica",
                       "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
@@ -1440,8 +1444,7 @@
                 "withContainer": true,
                 "verticalSpacing": "none"
               }
-            ],
-            "__resolveType": "site/sections/Container.tsx"
+            ]
           },
           {
             "__resolveType": "site/sections/Container.tsx",
@@ -1546,8 +1549,8 @@
                 "label": "InfoCard",
                 "shadow": "none",
                 "section": {
-                  "title": "Nossas redes sociais",
                   "__resolveType": "site/sections/Content/InfoCard.tsx",
+                  "title": "Nossas redes sociais",
                   "links": [
                     {
                       "href": "https://www.instagram.com/lojastopmoveis",
@@ -1857,8 +1860,8 @@
           }
         ]
       }
-    ],
-    "__resolveType": "website/flags/multivariate.ts"
+    ]
   },
-  "__resolveType": "$live/pages/LivePage.tsx"
+  "name": "Home task 11291",
+  "path": "/task-11291-test"
 }
