@@ -1254,6 +1254,18 @@
                       "minPrice": 0,
                       "collectionId": "144",
                       "alignHorizontal": "end"
+                    },
+                    {
+                      "minPrice": 0,
+                      "alignHorizontal": "end",
+                      "collectionId": "155",
+                      "label": "Direto de Fábrica",
+                      "width": 137,
+                      "height": 25,
+                      "backgorundColor": "transparent",
+                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "showPaginationArrows": "Always"
