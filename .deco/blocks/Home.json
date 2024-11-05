@@ -1253,7 +1253,8 @@
                       "label": "Frete Grátis*",
                       "minPrice": 0,
                       "collectionId": "144",
-                      "alignHorizontal": "end"
+                      "alignHorizontal": "end",
+                      "height": 16
                     },
                     {
                       "minPrice": 0,
