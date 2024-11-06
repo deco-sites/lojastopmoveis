@@ -33,7 +33,7 @@
       },
       "formatFlag": {
         "optionsFormat": {
-          "optionBorderRadius": "completo",
+          "optionBorderRadius": "nenhum",
           "textRightColor": "#FFF",
           "textRightBackgroundColor": "#FF66A8",
           "textLeftColor": "#000000",
@@ -57,7 +57,7 @@
       },
       "formatFlag": {
         "optionsFormat": {
-          "optionBorderRadius": "completo",
+          "optionBorderRadius": "nenhum",
           "textRightColor": "#fff",
           "textRightBackgroundColor": "#FF6047",
           "textLeftColor": "#000000",
