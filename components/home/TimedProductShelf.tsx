@@ -1,4 +1,3 @@
-import type { LoaderReturnType } from "$live/types.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { AppContext } from "apps/vtex/mod.ts";
 import CountdownTimer from "site/islands/CountdownTimer.tsx";
@@ -7,6 +6,7 @@ import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import type { Layout as CardLayout } from "$store/components/product/ProductCard.tsx";
 import LocalProductShelf from "site/components/home/LocalProductShelf.tsx";
 import { type SectionProps } from "@deco/deco";
+import { type LoaderReturnType } from "@deco/deco";
 interface Props {
     productShelf: LoaderReturnType<Product[] | null>;
     /**

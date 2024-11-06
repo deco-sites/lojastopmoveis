@@ -3,7 +3,6 @@ import {
   MOBILE_COLUMNS,
 } from "$store/components/ui/BannerGrid.tsx";
 import type { Image as LiveImage } from "deco-sites/std/components/types.ts";
-import Image from "apps/website/components/Image.tsx";
 import { Head } from "$fresh/runtime.ts";
 import Slider from "../../components/ui/Slider.tsx";
 import SliderJS from "../../islands/SliderJS.tsx";

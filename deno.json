@@ -26,8 +26,7 @@
   "nodeModulesDir": false,
   "compilerOptions": {
     "jsx": "react-jsx",
-    "jsxImportSource": "preact",
-    "experimentalDecorators": true
+    "jsxImportSource": "preact"
   },
   "imports": {
     "$store/": "./",

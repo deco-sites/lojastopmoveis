@@ -1,6 +1,7 @@
 import { Product } from "apps/commerce/types.ts";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import ProductCard from "./ProductCard.tsx";
+import { Tags } from "site/loaders/getTags.ts";
 
 export interface Columns {
   mobile?: number;
@@ -10,14 +11,17 @@ export interface Columns {
 export interface Props {
   products: Product[] | null;
   highlights?: HighLight[];
+  /** @hide true */
+  tags?: Tags;
 }
 
-function ProductGallery({ products, highlights }: Props) {
+function ProductGallery({ products, highlights, tags }: Props) {
   return (
     <div class="grid grid-cols-2 gap-2 items-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-[30px]">
       {products?.map((product, index) => (
         <ProductCard
           product={product}
+          tags={tags}
           preload={index === 0}
           highlights={highlights}
           layout={{

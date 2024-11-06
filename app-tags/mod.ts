@@ -1,3 +1,4 @@
+// deno-lint-ignore-file no-explicit-any
 import type { App, FnContext } from "@deco/deco";
 import { fetchSafe } from "apps/utils/fetch.ts";
 import { createHttpClient } from "apps/utils/http.ts";
@@ -33,20 +34,8 @@ export interface Props {
 
   appToken: Secret
 
-  /**
-   * @title Flag Desconto na terceira compra
-   */
-  flagDiscountThirdFor?: FlagDiscountThirdForProps[];
-
   /**@title Flags Personalizada */
   flagCustom?: Flags[];
-
-  /**@title Flags Especiais */
-  flagSpecial?: FlagSpecialProps[];
-  
-  /**@title Desconto */
-  /** @description  Flag de porcetagem de desconto % */
-  discount?: boolean;
 
 }
 
@@ -63,27 +52,24 @@ export interface State extends Omit<Props, "token"> {
  * @logo https://
  */
 export default function App(props: Props): App<Manifest, State> {
-  const { appKey, appToken, account: _account, flagCustom, flagDiscountThirdFor } = props;
+  const { appKey, appToken, account: _account } = props;
 
-  // const stringAppToken = typeof appToken === "string" ? appToken : appToken?.get() ?? "";
-
-  // const stringAppKey = typeof appKey === "string" ? appKey : appKey?.get() ?? "";
-
-  console.log("chave da api", typeof appKey)
-
-  const api = createHttpClient<VCS>({
-    base: `https://${_account}.vtexcommercestable.com.br`,
-    fetcher: fetchSafe,
-    headers: new Headers({
-      "Accept": "application/json",
-      "Content-Type": "application/json",
-      "X-VTEX-API-AppKey": appKey?.get() ?? '',
-      "X-VTEX-API-AppToken": appToken?.get() ?? '',
-    }),
-  });
-
-  const tags = { flagCustom, flagDiscountThirdFor };
-  const state = { ...props, api, tags };
+   // Check if appKey and appToken are strings or have a get method
+   const stringAppKey = typeof appKey === "string" ? appKey : (appKey as any)?.get?.() ?? "";
+   const stringAppToken = typeof appToken === "string" ? appToken : (appToken as any)?.get?.() ?? "";
+ 
+   const api = createHttpClient<VCS>({
+     base: `https://${_account}.vtexcommercestable.com.br`,
+     fetcher: fetchSafe,
+     headers: new Headers({
+       "Accept": "application/json",
+       "Content-Type": "application/json",
+       "X-VTEX-API-AppKey": stringAppKey,
+       "X-VTEX-API-AppToken": stringAppToken,
+     }),
+   });
+   
+  const state = { ...props, api };
 
   return {
     state,

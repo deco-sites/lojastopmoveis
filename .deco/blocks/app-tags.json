@@ -1,3 +1,127 @@
 {
-  "__resolveType": "site/apps/local/app-tags.ts"
+  "__resolveType": "site/apps/local/app-tags.ts",
+  "appKey": {},
+  "appToken": {},
+  "flagDiscountThirdFor": [],
+  "flagCustom": [
+    {
+      "options": {
+        "options": {
+          "categories": "51"
+        }
+      },
+      "formatFlag": {
+        "optionsFormat": {
+          "textRightColor": "#fff",
+          "textRightBackgroundColor": "#ED2D26",
+          "textLeftColor": "#000000",
+          "textLeftBackgroundColor": "#ED2D26",
+          "flagPosition": "inferior",
+          "type": "ProductDetails",
+          "textRight": "Super oferta",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/0cd50d68-6842-4b4b-9401-76118ce21eeb/Image.png",
+          "isFull": false
+        }
+      },
+      "name": "Super Oferta",
+      "dateFrom": "2024-11-05",
+      "dateTo": "2024-11-30",
+      "showFlag": true
+    },
+    {
+      "options": {
+        "options": {
+          "categories": "1"
+        }
+      },
+      "formatFlag": {
+        "optionsFormat": {
+          "textRightColor": "#FFF",
+          "textRightBackgroundColor": "#F57A27",
+          "textLeftColor": "#000000",
+          "textLeftBackgroundColor": "#F57A27",
+          "flagPosition": "inferior",
+          "type": "ProductDetails",
+          "textRight": "Super moveís ",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/0cd50d68-6842-4b4b-9401-76118ce21eeb/Image.png",
+          "isFull": true
+        }
+      },
+      "name": "Super moveís ",
+      "dateFrom": "2024-11-05",
+      "dateTo": "2024-11-30",
+      "showFlag": true
+    },
+    {
+      "options": {
+        "options": {
+          "categories": "8"
+        }
+      },
+      "formatFlag": {
+        "optionsFormat": {
+          "textRightColor": "#2e2e2e",
+          "textRightBackgroundColor": "#FF66A8",
+          "textLeftColor": "#0000",
+          "textLeftBackgroundColor": "#FF66A8",
+          "flagPosition": "inferior",
+          "type": "ProductDetails",
+          "textRight": "Ultimas unidades ",
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/cf334dc0-402b-4c12-89c7-692babc6addc/desconto.png",
+          "isFull": true
+        }
+      },
+      "name": "Colchoes",
+      "showFlag": true,
+      "dateFrom": "2024-11-05",
+      "dateTo": "2024-11-30"
+    },
+    {
+      "options": {
+        "options": {
+          "categories": "47"
+        }
+      },
+      "formatFlag": {
+        "optionsFormat": {
+          "textRightColor": "#FFFF",
+          "textRightBackgroundColor": "#FF6047",
+          "textLeftColor": "#000000",
+          "textLeftBackgroundColor": "#F57A27",
+          "flagPosition": "inferior",
+          "type": "ProductDetails",
+          "textRight": "Black",
+          "textLeft": "Friday",
+          "isFull": true
+        }
+      },
+      "name": "Black ",
+      "dateFrom": "2024-11-01",
+      "dateTo": "2024-11-30",
+      "showFlag": true
+    }
+  ],
+  "flagSpecial": [
+    {
+      "options": {
+        "options": {
+          "categories": "51"
+        }
+      },
+      "formatFlag": {
+        "optionsFormat": {
+          "textColor": "#fff",
+          "backgroundColor": "#ED2D26",
+          "iconPosition": "Esquerda",
+          "name": "Super Oferta"
+        }
+      },
+      "name": "Super Oferta",
+      "showFlag": true,
+      "dateFrom": "2024-11-05",
+      "dateTo": "2024-11-30"
+    }
+  ],
+  "account": "topmoveis",
+  "discount": true
 }

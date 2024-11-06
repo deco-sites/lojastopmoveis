@@ -14,7 +14,12 @@ export type flagPosition =
   | "inferior esquerda"
   | "inferior centro"
   | "inferior direita"
-  | "centro";
+  | "centro"
+  | "direita"
+  | "esquerda"
+  | "inferior"
+  | "topo"
+
 
 export interface Category {
   id: number;
@@ -118,6 +123,14 @@ export interface FlagSpecialProps {
 
 /**@title Edição de Flag */
 export interface FlagEdit {
+  /** @title Ícone */
+  /** @description ícone é opcional */
+  icon?: ImageWidget;
+  
+  /** @title Flag Preenchida */
+  /** @description Marque essa opção se a flag for preenchida ou deixa desmarcada caso for tamanho automático */
+  isFull?: boolean; 
+
   /** @title Texto Lado Direito */
   /** @description ex: de graça */
   textRight: string;

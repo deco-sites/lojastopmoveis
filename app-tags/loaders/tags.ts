@@ -3,22 +3,16 @@ import { AppContext } from "../mod.ts";
 /**
  * @title This name will appear on the admin
  */
-const loader = (
+const loader = async (
   _props: unknown,
   _req: Request,
   ctx: AppContext,
 ) => {
-  const flagDiscountThirdFor = ctx.flagDiscountThirdFor;
-  const flagCustom = ctx.flagCustom;
-  const flagSpecial = ctx.flagSpecial;
-  const discount = ctx.discount; 
-
+   
+  const flagCustom = await ctx.flagCustom;
 
   const result = {
-    flagDiscountThirdFor: flagDiscountThirdFor,
-    flagCustom: flagCustom,
-    flagSpecial: flagSpecial,
-    discount: discount
+   flagCustom: flagCustom
   };
 
   return result;

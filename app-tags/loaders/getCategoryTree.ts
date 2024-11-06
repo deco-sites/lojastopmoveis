@@ -11,6 +11,7 @@ const loader = async (
   ctx: AppContext,
 ): Promise<OrganizedCategory[] | null> => {
 
+
   Object.entries(allowCorsFor(req)).map(([name, value]) => {
     ctx.response.headers.set(name, value);
   });
@@ -24,6 +25,7 @@ const loader = async (
     }
     const categories: Category[] = await response.json();
     const organizedCategories = organizeCategories(categories);
+
 
     return organizedCategories;
   } catch (error) {

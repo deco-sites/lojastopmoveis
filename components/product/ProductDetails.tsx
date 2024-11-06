@@ -11,7 +11,6 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
-import type { LoaderReturnType } from "$live/types.ts";
 import AddToCartActions from "$store/islands/AddToCartActions.tsx";
 import ProductDetailsImages from "$store/islands/ProductDetailsImages.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
@@ -20,6 +19,7 @@ import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
 import SimilarSelector from "site/components/product/SimilarSelector.tsx";
 import { type FnContext, type SectionProps } from "@deco/deco";
+import { type LoaderReturnType } from "@deco/deco";
 export type Variant = "front-back" | "slider" | "auto";
 export type ShareableNetwork = "Facebook" | "Twitter" | "Email" | "WhatsApp";
 export interface Props {
@@ -66,7 +66,7 @@ function ProductInfo({ page, shipmentPolitics, shareableNetworks }: {
     const forPrice = product.offers?.offers[0].priceSpecification[1].price;
     const discount = listPrice && listPrice > price;
     const vendorName = product.offers?.offers[0].sellerName;
-    console.log(vendorName);
+  
     return (<>
       {/* Code and name */}
       <div class="mt-4 sm:mt-0">
