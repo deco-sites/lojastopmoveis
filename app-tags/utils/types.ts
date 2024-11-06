@@ -18,8 +18,24 @@ export type flagPosition =
   | "direita"
   | "esquerda"
   | "inferior"
-  | "topo"
+  | "topo"; 
 
+
+  type optionBorderRadius =
+  | "completo"        // Todas as bordas arredondadas
+  | "nenhum"          // Nenhuma borda arredondada
+  | "superior"        // Apenas borda superior arredondada
+  | "inferior"        // Apenas borda inferior arredondada
+  | "lateral esquerda" // Apenas borda lateral esquerda arredondada
+  | "lateral direita"  // Apenas borda lateral direita arredondada
+  | "superior esquerda" // Apenas o canto superior esquerdo arredondado
+  | "superior direita"  // Apenas o canto superior direito arredondado
+  | "inferior esquerda" // Apenas o canto inferior esquerdo arredondado
+  | "inferior direita"  // Apenas o canto inferior direito arredondado
+  | "superiores"       // Ambos os cantos superiores arredondados
+  | "inferiores"       // Ambos os cantos inferiores arredondados
+  | "ladosEsquerda"    // Ambos os cantos à esquerda arredondados
+  | "ladosDireita";    // Ambos os cantos à direita arredondados
 
 export interface Category {
   id: number;
@@ -131,6 +147,9 @@ export interface FlagEdit {
   /** @description Marque essa opção se a flag for preenchida ou deixa desmarcada caso for tamanho automático */
   isFull?: boolean; 
 
+  /** @title Curvatura da borda  */
+  optionBorderRadius?: optionBorderRadius;
+
   /** @title Texto Lado Direito */
   /** @description ex: de graça */
   textRight: string;
@@ -157,9 +176,6 @@ export interface FlagEdit {
 
   /** @title Posição da flag */
   flagPosition?: flagPosition;
-
-  /** @hide true */
-  type?: "ProductDetails" | "ProductShelf";
 }
 
 export interface FlagFormatCustom {

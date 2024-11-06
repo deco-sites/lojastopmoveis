@@ -109,9 +109,6 @@ function ProductCard(
 
   const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
 
-  const _flagSpecial = Array.isArray(tags?.flagSpecial)
-    ? tags.flagSpecial
-    : null;
 
   const clickEvent = {
     name: "select_item" as const,
@@ -294,6 +291,7 @@ function ProductCard(
                 key={idx}
                 // deno-lint-ignore no-explicit-any
                 formatFlag={flag.formatFlag?.optionsFormat as any}
+                type="ProductShelf"
               />
             )
           )}

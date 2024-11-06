@@ -14,6 +14,9 @@ import Image from "apps/website/components/Image.tsx";
 import ProductHighlights from "$store/components/product/ProductHighlights.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import AddToCartLocal from "site/islands/AddToCartLocal.tsx";
+import { Tags } from "site/loaders/getTags.ts";
+import { isFlag } from "site/components/product/Flags/utils/useFlag.ts";
+import FlagCustom from "site/components/product/Flags/FlagCustom.tsx";
 
 export interface Layout {
     basics?: {
@@ -27,15 +30,15 @@ export interface Layout {
     discount: {
         label: string;
         variant:
-            | "primary"
-            | "secondary"
-            | "neutral"
-            | "accent"
-            | "emphasis"
-            | "success"
-            | "info"
-            | "error"
-            | "warning";
+        | "primary"
+        | "secondary"
+        | "neutral"
+        | "accent"
+        | "emphasis"
+        | "success"
+        | "info"
+        | "error"
+        | "warning";
     };
     elementsPositions?: {
         skuSelector?: "Top" | "Bottom";
@@ -70,6 +73,9 @@ interface Props {
     itemListName?: string;
     layout?: Layout;
     class?: string;
+
+    /** @hide true */
+    tags?: Tags;
 }
 
 export const relative = (url: string) => {
@@ -81,7 +87,7 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function TimedProductCard(
-    { product, preload, itemListName, layout, highlights, class: _class }:
+    { product, preload, itemListName, layout, highlights, class: _class, tags }:
         Props,
 ) {
     const {
@@ -91,6 +97,7 @@ function TimedProductCard(
         image: images,
         offers,
         isVariantOf,
+        additionalProperty
     } = product;
 
     const productGroupID = isVariantOf?.productGroupID;
@@ -102,6 +109,8 @@ function TimedProductCard(
 
     const possibilities = useVariantPossibilities(product);
     const variants = Object.entries(Object.values(possibilities)[0] ?? {});
+
+    const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
     const clickEvent = {
         name: "select_item" as const,
         params: {
@@ -133,8 +142,7 @@ function TimedProductCard(
     ));
 
     const addToCartButtonClassNames = (variant: string | undefined) =>
-        `lg:text-sm font-medium text-xs whitespace-nowrap w-full btn max-md:min-h-12 max-md:h-12 max-md:m-auto max-md:px-10 max-md:max-w-full md:w-auto btn-${
-            BUTTON_VARIANTS[variant ?? "primary"]
+        `lg:text-sm font-medium text-xs whitespace-nowrap w-full btn max-md:min-h-12 max-md:h-12 max-md:m-auto max-md:px-10 max-md:max-w-full md:w-auto btn-${BUTTON_VARIANTS[variant ?? "primary"]
         }`;
 
     const cta = layout?.basics?.ctaMode === "Go to Product Page"
@@ -142,9 +150,8 @@ function TimedProductCard(
             <a
                 href={url && relative(url)}
                 aria-label="view product"
-                class={`min-w-[162px] ${
-                    addToCartButtonClassNames(layout?.basics?.ctaVariation)
-                }`}
+                class={`min-w-[162px] ${addToCartButtonClassNames(layout?.basics?.ctaVariation)
+                    }`}
             >
                 <span class="max-lg:hidden flex font-medium">
                     {l?.basics?.ctaText || "Ver produto"}
@@ -155,32 +162,32 @@ function TimedProductCard(
             </a>
         )
         : l?.basics?.mobileCtaText
-        ? (
-            <AddToCartLocal
-                name={product.name as string}
-                discount={price && listPrice ? listPrice - price : 0}
-                productGroupId={product.isVariantOf?.productGroupID ?? ""}
-                price={price as number}
-                seller={seller as string}
-                skuId={product.sku}
-                label={l?.basics?.ctaText}
-                ctaVariant={layout?.basics?.ctaVariation}
-            />
-        )
-        : (
-            <AddToCartLocal
-                name={product.name as string}
-                discount={price && listPrice ? listPrice - price : 0}
-                productGroupId={product.isVariantOf?.productGroupID ?? ""}
-                price={price as number}
-                seller={seller as string}
-                skuId={product.sku}
-                label={l?.basics?.ctaText}
-                ctaVariant={layout?.basics?.ctaVariation}
-            />
-        );
+            ? (
+                <AddToCartLocal
+                    name={product.name as string}
+                    discount={price && listPrice ? listPrice - price : 0}
+                    productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                    price={price as number}
+                    seller={seller as string}
+                    skuId={product.sku}
+                    label={l?.basics?.ctaText}
+                    ctaVariant={layout?.basics?.ctaVariation}
+                />
+            )
+            : (
+                <AddToCartLocal
+                    name={product.name as string}
+                    discount={price && listPrice ? listPrice - price : 0}
+                    productGroupId={product.isVariantOf?.productGroupID ?? ""}
+                    price={price as number}
+                    seller={seller as string}
+                    skuId={product.sku}
+                    label={l?.basics?.ctaText}
+                    ctaVariant={layout?.basics?.ctaVariation}
+                />
+            );
 
-    const price2: number = price as number;
+    const _price2: number = price as number;
     const listPrice2: number = listPrice as number;
 
     const forPrice = product.offers?.offers[0].price;
@@ -191,13 +198,11 @@ function TimedProductCard(
 
     return (
         <div
-            class={`bg-white card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${
-                align === "center" ? "text-center" : "text-start"
-            } ${
-                l?.onMouseOver?.showCardShadow
+            class={`bg-white card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${align === "center" ? "text-center" : "text-start"
+                } ${l?.onMouseOver?.showCardShadow
                     ? "lg:hover:shadow-lg shadow-black"
                     : ""
-            } ${_class ? `${_class}` : ""}`}
+                } ${_class ? `${_class}` : ""}`}
             data-deco="view-product"
             id={`product-card-${productID}`}
             {...sendEventOnClick(clickEvent)}
@@ -210,16 +215,14 @@ function TimedProductCard(
                 {/* Wishlist button */}
                 <div
                     class={`absolute top-2 z-10
-            ${
-                        l?.elementsPositions?.favoriteIcon === "Top left"
+            ${l?.elementsPositions?.favoriteIcon === "Top left"
                             ? "left-2"
                             : "right-2"
-                    }
-            ${
-                        l?.onMouseOver?.showFavoriteIcon
+                        }
+            ${l?.onMouseOver?.showFavoriteIcon
                             ? "lg:hidden lg:group-hover:block"
                             : "lg:hidden"
-                    }
+                        }
           `}
                 >
                     <WishlistIcon
@@ -251,17 +254,15 @@ function TimedProductCard(
                         height={HEIGHT}
                         class={`
                 absolute rounded-lg w-full
-                ${
-                            (!l?.onMouseOver?.image ||
-                                    l?.onMouseOver?.image == "Change image")
+                ${(!l?.onMouseOver?.image ||
+                                l?.onMouseOver?.image == "Change image")
                                 ? "duration-100 transition-opacity opacity-100 lg:group-hover:opacity-0"
                                 : ""
-                        }
-                ${
-                            l?.onMouseOver?.image == "Zoom image"
+                            }
+                ${l?.onMouseOver?.image == "Zoom image"
                                 ? "duration-100 transition-scale scale-100 lg:group-hover:scale-105"
                                 : ""
-                        }
+                            }
               `}
                         sizes="(max-width: 640px) 50vw, 20vw"
                         preload={preload}
@@ -270,16 +271,26 @@ function TimedProductCard(
                     />
                     {(!l?.onMouseOver?.image ||
                         l?.onMouseOver?.image == "Change image") && (
-                        <Image
-                            src={back?.url ?? front.url!}
-                            alt={back?.alternateName ?? front.alternateName}
-                            width={WIDTH}
-                            height={HEIGHT}
-                            class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
-                            sizes="(max-width: 640px) 50vw, 20vw"
-                            loading="eager"
-                            decoding="async"
-                        />
+                            <Image
+                                src={back?.url ?? front.url!}
+                                alt={back?.alternateName ?? front.alternateName}
+                                width={WIDTH}
+                                height={HEIGHT}
+                                class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
+                                sizes="(max-width: 640px) 50vw, 20vw"
+                                loading="eager"
+                                decoding="async"
+                            />
+                        )}
+
+                    {flagCustom && flagCustom.map((flag, idx) =>
+                        isFlag(flag, additionalProperty) && (
+                            <FlagCustom
+                                key={idx}
+                                // deno-lint-ignore no-explicit-any
+                                formatFlag={flag.formatFlag?.optionsFormat as any}
+                            />
+                        )
                     )}
                 </a>
             </figure>
@@ -288,24 +299,22 @@ function TimedProductCard(
                 {/* SKU Selector */}
                 {(!l?.elementsPositions?.skuSelector ||
                     l?.elementsPositions?.skuSelector === "Top") && (
-                    <>
-                        {l?.hide.skuSelector ? "" : (
-                            <ul
-                                class={`flex items-center gap-2 w-full ${
-                                    align === "center"
-                                        ? "justify-center"
-                                        : "justify-start"
-                                } ${
-                                    l?.onMouseOver?.showSkuSelector
-                                        ? "lg:hidden"
-                                        : ""
-                                }`}
-                            >
-                                {skuSelector}
-                            </ul>
-                        )}
-                    </>
-                )}
+                        <>
+                            {l?.hide.skuSelector ? "" : (
+                                <ul
+                                    class={`flex items-center gap-2 w-full ${align === "center"
+                                            ? "justify-center"
+                                            : "justify-start"
+                                        } ${l?.onMouseOver?.showSkuSelector
+                                            ? "lg:hidden"
+                                            : ""
+                                        }`}
+                                >
+                                    {skuSelector}
+                                </ul>
+                            )}
+                        </>
+                    )}
 
                 {l?.hide.productName && l?.hide.productDescription
                     ? ""
@@ -335,34 +344,31 @@ function TimedProductCard(
                                 : (
                                     <div class="flex flex-col mt-2">
                                         <div
-                                            class={`flex items-center gap-2.5 ${
-                                                l?.basics?.oldPriceSize ===
-                                                        "Normal"
+                                            class={`flex items-center gap-2.5 ${l?.basics?.oldPriceSize ===
+                                                    "Normal"
                                                     ? "lg:flex-row"
                                                     : ""
-                                            } ${
-                                                align === "center"
+                                                } ${align === "center"
                                                     ? "justify-center"
                                                     : "justify-start"
-                                            }`}
+                                                }`}
                                         >
                                             {(listPrice && price) &&
                                                 listPrice > price && (
-                                                <p
-                                                    class={`line-through text-[#C5C6CB] md:text-base text-[12px] ${
-                                                        l?.basics
+                                                    <p
+                                                        class={`line-through text-[#C5C6CB] md:text-base text-[12px] ${l?.basics
                                                                 ?.oldPriceSize ===
                                                                 "Normal"
-                                                            ? "md:text-base"
-                                                            : ""
-                                                    }`}
-                                                >
-                                                    {formatPrice(
-                                                        listPrice,
-                                                        offers!.priceCurrency!,
-                                                    )}
-                                                </p>
-                                            )}
+                                                                ? "md:text-base"
+                                                                : ""
+                                                            }`}
+                                                    >
+                                                        {formatPrice(
+                                                            listPrice,
+                                                            offers!.priceCurrency!,
+                                                        )}
+                                                    </p>
+                                                )}
                                             <p class="md:text-black text-secondary text-sm font-medium md:text-xl">
                                                 {formatPrice(
                                                     price,
@@ -394,15 +400,15 @@ function TimedProductCard(
                                             </span>
                                             {discount && forPrice &&
                                                 discountPrice && (
-                                                <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                                                    {Math.round(
-                                                        ((forPrice -
-                                                            discountPrice) /
-                                                            forPrice) * 100,
-                                                    )}% de desconto no Pix ou
-                                                    boleto
-                                                </span>
-                                            )}
+                                                    <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
+                                                        {Math.round(
+                                                            ((forPrice -
+                                                                discountPrice) /
+                                                                forPrice) * 100,
+                                                        )}% de desconto no Pix ou
+                                                        boleto
+                                                    </span>
+                                                )}
                                         </div>
                                     </div>
                                 )}
@@ -413,35 +419,32 @@ function TimedProductCard(
                 {/* SKU Selector */}
                 {(l?.elementsPositions?.skuSelector === "Bottom" &&
                     availability === "https://schema.org/InStock") && (
-                    <>
-                        {l?.hide.skuSelector ? "" : (
-                            <ul
-                                class={`flex items-center gap-2 w-full ${
-                                    align === "center"
-                                        ? "justify-center"
-                                        : "justify-start"
-                                } ${
-                                    l?.onMouseOver?.showSkuSelector
-                                        ? "lg:hidden"
-                                        : ""
-                                }`}
-                            >
-                                {skuSelector}
-                            </ul>
-                        )}
-                    </>
-                )}
+                        <>
+                            {l?.hide.skuSelector ? "" : (
+                                <ul
+                                    class={`flex items-center gap-2 w-full ${align === "center"
+                                            ? "justify-center"
+                                            : "justify-start"
+                                        } ${l?.onMouseOver?.showSkuSelector
+                                            ? "lg:hidden"
+                                            : ""
+                                        }`}
+                                >
+                                    {skuSelector}
+                                </ul>
+                            )}
+                        </>
+                    )}
 
                 {availability === "https://schema.org/InStock"
                     ? (
                         <div
                             class={`w-full flex flex-col mt-[10px]
-            ${
-                                l?.onMouseOver?.showSkuSelector ||
+            ${l?.onMouseOver?.showSkuSelector ||
                                     l?.onMouseOver?.showCta
                                     ? "transition-opacity lg:opacity-0 lg:group-hover:opacity-100"
                                     : "lg:hidden"
-                            }
+                                }
           `}
                         >
                             {l?.onMouseOver?.showCta && cta}

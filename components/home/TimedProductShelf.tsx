@@ -1,5 +1,4 @@
 import type { Product } from "apps/commerce/types.ts";
-import { AppContext } from "apps/vtex/mod.ts";
 import CountdownTimer from "site/islands/CountdownTimer.tsx";
 import { ResponsiveConditionals, } from "$store/components/ui/BannerCarousel.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
@@ -7,6 +6,8 @@ import type { Layout as CardLayout } from "$store/components/product/ProductCard
 import LocalProductShelf from "site/components/home/LocalProductShelf.tsx";
 import { type SectionProps } from "@deco/deco";
 import { type LoaderReturnType } from "@deco/deco";
+import { AppContext } from "site/apps/site.ts";
+import { Tags } from "site/loaders/getTags.ts";
 interface Props {
     productShelf: LoaderReturnType<Product[] | null>;
     /**
@@ -85,11 +86,17 @@ interface Props {
         showPaginationArrows?: ResponsiveConditionals;
         cardLayout?: CardLayout;
     };
+
+    /** @hide true */
+    tags?: Tags;
 }
-export function loader(props: Props, _req: Request, ctx: AppContext) {
+export async function loader(props: Props, _req: Request, ctx: AppContext) {
+
+    const tags = await ctx.invoke.site.loaders.getTags();
+
     if (!props.productShelf)
-        return { success: false, ...props };
-    return { success: true, ...props };
+        return { success: false, ...props, tags:tags };
+    return { success: true, ...props, tags:tags };
 }
 const TimedProductShelf = (props: SectionProps<typeof loader>) => {
     if (!props.success)
@@ -110,7 +117,7 @@ const TimedProductShelf = (props: SectionProps<typeof loader>) => {
                     <span className="font-normal text-base md:text-[22px]" style={{ color: colorSubTitleFrame }}>{subTitleFrame}</span>
                     <CountdownTimer textColor={countdownTextColor} frameColor={countdownFrameColor} timeDate={countdownTimerDate} timeHour={countdownTimerHours} numberColor={countdownNumberColor}/>
                 </div>
-                <LocalProductShelf products={productShelf} cardLayout={productShelfConfig.cardLayout} highlights={productShelfConfig.highlights} layout={productShelfConfig.layout} showPaginationArrows={productShelfConfig.showPaginationArrows} dotSliderColor={dotSliderColor}/>
+                <LocalProductShelf products={productShelf} cardLayout={productShelfConfig.cardLayout} highlights={productShelfConfig.highlights} layout={productShelfConfig.layout} showPaginationArrows={productShelfConfig.showPaginationArrows} dotSliderColor={dotSliderColor} tags={props.tags}/>
             </div>
         </div>);
 };
