@@ -150,7 +150,7 @@ function Form(props: Props) {
                   minWidth: "150px",
                 }}
                 type="submit"
-                class={`uppercase md:ml-5 font-medium btn disabled:loading max-lg:self-start font-condensed rounded-full join-item btn-${
+                class={`uppercase md:ml-5 font-medium !text-white btn disabled:loading max-lg:self-start font-condensed rounded-full join-item btn-${
                   BUTTON_VARIANTS[form?.button?.variant as string] ||
                   BUTTON_VARIANTS["primary"]
                 }`}

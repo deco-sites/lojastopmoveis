@@ -363,7 +363,7 @@ function TimedProductCard(
                                                     )}
                                                 </p>
                                             )}
-                                            <p class="md:text-black text-secondary text-sm font-medium md:text-xl">
+                                            <p class="md:text-black text-secondary text-sm font-medium md:text-xl !text-[#ed2d25]">
                                                 {formatPrice(
                                                     price,
                                                     offers!.priceCurrency!,
@@ -386,7 +386,7 @@ function TimedProductCard(
                                                 </div>
                                             )}
                                         <div class="flex items-center gap-[10px] py-[10px]">
-                                            <span class="font-bold text-md text-secondary leading-none">
+                                            <span class="font-bold text-md text-secondary leading-none !text-[#ed2d25]">
                                                 {formatPrice(
                                                     discountPrice,
                                                     offers?.priceCurrency,
