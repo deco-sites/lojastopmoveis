@@ -4258,6 +4258,9 @@ details.collapse summary::-webkit-details-marker {
 .left-2 {
   left: 0.5rem;
 }
+.left-2\/4 {
+  left: 50%;
+}
 .left-3 {
   left: 0.75rem;
 }
@@ -4305,6 +4308,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .top-2 {
   top: 0.5rem;
+}
+.top-2\/4 {
+  top: 50%;
 }
 .top-\[40px\] {
   top: 40px;
@@ -4715,6 +4721,9 @@ details.collapse summary::-webkit-details-marker {
 .aspect-square {
   aspect-ratio: 1 / 1;
 }
+.h-0 {
+  height: 0px;
+}
 .h-10 {
   height: 2.5rem;
 }
@@ -4962,6 +4971,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[50\%\] {
   width: 50%;
+}
+.w-\[50px\] {
+  width: 50px;
 }
 .w-\[522px\] {
   width: 522px;
@@ -6212,6 +6224,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-8 {
   padding-bottom: 2rem;
 }
+.pb-\[100\%\] {
+  padding-bottom: 100%;
+}
 .pb-\[10px\] {
   padding-bottom: 10px;
 }
@@ -6310,6 +6325,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .align-middle {
   vertical-align: middle;
+}
+.font-\[\'blur-up\:_auto\'\2c \'object-fit\:_cover\'\] {
+  font-family: 'blur-up: auto','object-fit: cover';
 }
 .font-condensed {
   font-family: Asap Condensed, Arial, sans-serif;
@@ -6782,6 +6800,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .duration-100 {
   transition-duration: 100ms;
+}
+.duration-150 {
+  transition-duration: 150ms;
 }
 .duration-200 {
   transition-duration: 200ms;
@@ -7703,10 +7724,6 @@ details.collapse summary::-webkit-details-marker {
   border-radius: 0.25rem;
 }
 
-.hover\:rounded-none:hover {
-  border-radius: 0px;
-}
-
 .hover\:border:hover {
   border-width: 1px;
 }
@@ -7810,6 +7827,10 @@ details.collapse summary::-webkit-details-marker {
 
 .hover\:underline:hover {
   text-decoration-line: underline;
+}
+
+.hover\:duration-300:hover {
+  transition-duration: 300ms;
 }
 
 .focus\:text-black:focus {
@@ -9267,8 +9288,8 @@ details.collapse summary::-webkit-details-marker {
     flex-direction: row-reverse;
   }
 
-  .xl\:flex-col {
-    flex-direction: column;
+  .xl\:flex-col-reverse {
+    flex-direction: column-reverse;
   }
 
   .xl\:gap-4 {

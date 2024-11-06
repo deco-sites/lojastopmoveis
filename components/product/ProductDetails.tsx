@@ -87,6 +87,7 @@ function ProductInfo({ page, shareableNetworks, tags }: {
 
   const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
 
+
   return (
     <>
       {/* Code and name */}
@@ -325,6 +326,7 @@ function Details(
             product={product}
             highlights={highlights}
             device={device}
+            url={product.url!}
           />
 
           {/* Product Info */}
