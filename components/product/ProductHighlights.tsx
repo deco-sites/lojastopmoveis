@@ -1,4 +1,3 @@
-import type { Product } from "apps/commerce/types.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
@@ -22,6 +21,8 @@ export type AlignHorizontal =
 
 export interface HighLight {
   icon?: ImageWidget;
+  width?: number;
+  height?: number;
   label?: string;
   collectionId?: string;
   /** @default 0 */
@@ -35,6 +36,8 @@ export interface HighLight {
   rowSpan?: number;
   colSpan?: number;
   alignHorizontal?: AlignHorizontal;
+  tailwind?: string;
+  css?: string;
 }
 
 type Props = {
@@ -124,11 +127,15 @@ function ProductHighlights(props: Props) {
               color,
               label,
               icon,
+              height,
+              width,
               colSpan,
               rowStart,
               columnStart,
               rowSpan,
               alignHorizontal,
+              tailwind,
+              css
             },
           ) => {
             if (
@@ -144,18 +151,22 @@ function ProductHighlights(props: Props) {
                   ${GRID_COL_SPAN[colSpan ?? 0]}
                   ${GRID_ROW_HORIZONTAL[alignHorizontal ?? "start"]}
                   ${icon ? "p-0 " : "p-1 2xl:p-2 "}
+                  ${tailwind}
                   `}
-                  style={{
-                    background: backgorundColor,
-                    color,
-                  }}
+                  style={`
+                    background: ${backgorundColor};  
+                    color: ${color};  
+                    height: ${height ? `${height}px` : "auto"};  
+                    width: ${width ? `${width}px` : "auto"}; 
+                    ${css} 
+                  `}
                 >
                   {icon
                     ? (
                       <Image
                         src={icon}
-                        width={58}
-                        height={58}
+                        width={width ?? 58}
+                        height={height ?? 58}
                       />
                     )
                     : label
