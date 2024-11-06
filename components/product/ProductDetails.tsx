@@ -93,9 +93,6 @@ function ProductInfo(
   const forPrice = product.offers?.offers[0].priceSpecification[1].price
   const discount = listPrice && listPrice > price;
   const vendorName = product.offers?.offers[0].sellerName
-  
-
-  console.log(vendorName)
 
   return (
     <>
@@ -322,6 +319,7 @@ function Details({
             product={product}
             highlights={highlights}
             device={device}
+            url={product.url!}
           />
 
           {/* Product Info */}
