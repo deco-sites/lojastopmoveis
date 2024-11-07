@@ -5,11 +5,13 @@
     "variants": [
       {
         "rule": {
-          "__resolveType": "website/matchers/always.ts"
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2024-11-30T15:00:00.000Z"
         },
         "value": [
           {
-            "__resolveType": "Default - Design System"
+            "__resolveType": "Default - Design System Black Friday"
           },
           {
             "__resolveType": "SEODefault"
@@ -48,7 +50,7 @@
                   "__resolveType": "site/sections/Header/TopNavBar.tsx"
                 },
                 "withContainer": false,
-                "backgroundColor": "#ED2A24",
+                "backgroundColor": "#000",
                 "verticalSpacing": "none"
               },
               {
@@ -761,42 +763,42 @@
                     {
                       "alt": "Shorts",
                       "href": "/topofertasdodia",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/fecb36e0-48b7-4697-a665-19eec659d6bf",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8450f71e-bb35-48ab-b6a6-73f99b6fad9d/Product.png",
                       "title": "Aproveitar Agora",
                       "preload": true
                     },
                     {
                       "alt": "Dormitório Adulto",
                       "href": "/moveis/quarto-adulto",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/cd92f929-afdb-4321-9a9b-b63a3534f7fd",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/41e8d959-6321-43ab-af1f-286f6189ac02/img.png",
                       "title": "Dormitório Adulto",
                       "preload": true
                     },
                     {
                       "alt": "Eletrodomésticos",
                       "href": "/eletrodomesticos",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/ccc42c4e-0a4a-4e58-a356-55af3b3261ad",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/ee88d5bf-b6e0-4e5d-8574-45c253c59925/img.png",
                       "title": "Eletrodomésticos",
                       "preload": true
                     },
                     {
                       "alt": "Camas box e Colchôes",
                       "href": "/colchoes",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4c8b3128-61d6-4419-859f-64f8ec11a28b",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/e52c8817-5de2-4c73-b682-2c9b32493510/img.png",
                       "title": "Camas box e Colchões",
                       "preload": true
                     },
                     {
                       "alt": "Móveis para cozinha",
                       "href": "/moveis/cozinha",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e50e727b-e86e-4967-bb99-e0c12d501884",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/fe0a1c23-b991-48ee-bd93-6f3d592a0a15/img-(1).png",
                       "title": "Móveis para cozinha",
                       "preload": true
                     },
                     {
                       "alt": "Sala de Estar",
                       "href": "/moveis/sala-de-estar",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4ddbaea1-9e67-4d09-a6f5-898ace1205c0",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/628501f0-76ff-4807-b5e1-7c4efdd1cae0/img.png",
                       "title": "Sala de Estar",
                       "preload": true
                     }
@@ -824,14 +826,14 @@
                   "count": 50
                 }
               },
-              "frameColor": "#ed2d26",
+              "frameColor": "#000000",
               "titleFrame": " Esquenta Black Friday na Top! Aproveite Agora!",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
               "countdownTimerDate": "2024-11-07",
               "countdownTimerHours": "24:00:00",
-              "countdownFrameColor": "#ab00c2",
+              "countdownFrameColor": "#ed2d26",
               "countdownTextColor": "#ffffff",
               "countdownNumberColor": "#ffffff",
               "dotSliderColor": "#ffffff",
@@ -1649,14 +1651,14 @@
                     "name": {},
                     "email": {},
                     "button": {
-                      "variant": "secondary"
+                      "variant": "accent"
                     }
                   },
-                  "text": "<p><span style=\"color: rgb(0, 0, 0); font-size: 24pt;\" data-mce-style=\"color: rgb(0, 0, 0); font-size: 24pt;\">Newsletter</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">Cadastre-se e seja um dos primeiros a</span></span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">saber de todas as novidades e ofertas.</span></span></p>",
+                  "text": "<p><span style=\"color: #ffffff; font-size: 24pt\">Newsletter</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">Cadastre-se e seja um dos primeiros a</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">saber de todas as novidades e ofertas.</span></p>",
                   "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
                 },
                 "withContainer": true,
-                "backgroundColor": "#F9BE00",
+                "backgroundColor": "#000",
                 "verticalSpacing": "none"
               },
               {
@@ -1873,13 +1875,11 @@
       },
       {
         "rule": {
-          "__resolveType": "$live/matchers/MatchDate.ts",
-          "start": "2024-11-07T06:00:00.000Z",
-          "end": "2024-11-30T15:00:00.000Z"
+          "__resolveType": "website/matchers/always.ts"
         },
         "value": [
           {
-            "__resolveType": "Default - Design System Black Friday"
+            "__resolveType": "Default - Design System"
           },
           {
             "__resolveType": "SEODefault"
@@ -1918,7 +1918,7 @@
                   "__resolveType": "site/sections/Header/TopNavBar.tsx"
                 },
                 "withContainer": false,
-                "backgroundColor": "#000",
+                "backgroundColor": "#ED2A24",
                 "verticalSpacing": "none"
               },
               {
@@ -2631,42 +2631,42 @@
                     {
                       "alt": "Shorts",
                       "href": "/topofertasdodia",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8450f71e-bb35-48ab-b6a6-73f99b6fad9d/Product.png",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/fecb36e0-48b7-4697-a665-19eec659d6bf",
                       "title": "Aproveitar Agora",
                       "preload": true
                     },
                     {
                       "alt": "Dormitório Adulto",
                       "href": "/moveis/quarto-adulto",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/41e8d959-6321-43ab-af1f-286f6189ac02/img.png",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/cd92f929-afdb-4321-9a9b-b63a3534f7fd",
                       "title": "Dormitório Adulto",
                       "preload": true
                     },
                     {
                       "alt": "Eletrodomésticos",
                       "href": "/eletrodomesticos",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/ee88d5bf-b6e0-4e5d-8574-45c253c59925/img.png",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/ccc42c4e-0a4a-4e58-a356-55af3b3261ad",
                       "title": "Eletrodomésticos",
                       "preload": true
                     },
                     {
                       "alt": "Camas box e Colchôes",
                       "href": "/colchoes",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/e52c8817-5de2-4c73-b682-2c9b32493510/img.png",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4c8b3128-61d6-4419-859f-64f8ec11a28b",
                       "title": "Camas box e Colchões",
                       "preload": true
                     },
                     {
                       "alt": "Móveis para cozinha",
                       "href": "/moveis/cozinha",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/fe0a1c23-b991-48ee-bd93-6f3d592a0a15/img-(1).png",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e50e727b-e86e-4967-bb99-e0c12d501884",
                       "title": "Móveis para cozinha",
                       "preload": true
                     },
                     {
                       "alt": "Sala de Estar",
                       "href": "/moveis/sala-de-estar",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/628501f0-76ff-4807-b5e1-7c4efdd1cae0/img.png",
+                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4ddbaea1-9e67-4d09-a6f5-898ace1205c0",
                       "title": "Sala de Estar",
                       "preload": true
                     }
@@ -2694,14 +2694,14 @@
                   "count": 50
                 }
               },
-              "frameColor": "#000000",
+              "frameColor": "#ed2d26",
               "titleFrame": " Esquenta Black Friday na Top! Aproveite Agora!",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
               "countdownTimerDate": "2024-11-07",
               "countdownTimerHours": "24:00:00",
-              "countdownFrameColor": "#ed2d26",
+              "countdownFrameColor": "#ab00c2",
               "countdownTextColor": "#ffffff",
               "countdownNumberColor": "#ffffff",
               "dotSliderColor": "#ffffff",
@@ -3520,14 +3520,14 @@
                     "name": {},
                     "email": {},
                     "button": {
-                      "variant": "accent"
+                      "variant": "secondary"
                     }
                   },
-                  "text": "<p><span style=\"color: #ffffff; font-size: 24pt\">Newsletter</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">Cadastre-se e seja um dos primeiros a</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">saber de todas as novidades e ofertas.</span></p>"
+                  "text": "<p><span style=\"color: rgb(0, 0, 0); font-size: 24pt;\" data-mce-style=\"color: rgb(0, 0, 0); font-size: 24pt;\">Newsletter</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">Cadastre-se e seja um dos primeiros a</span></span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">saber de todas as novidades e ofertas.</span></span></p>"
                 },
                 "withContainer": true,
                 "verticalSpacing": "none",
-                "backgroundColor": "#000"
+                "backgroundColor": "#F9BE00"
               },
               {
                 "label": "Footer",

@@ -7,10 +7,7 @@
       {
         "value": [
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Default - Design System Black Friday"
-            }
+            "__resolveType": "Default - Design System Black Friday"
           },
           {
             "__resolveType": "analytics"
