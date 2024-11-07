@@ -7,7 +7,7 @@
   "colors": {
     "info": "#1c3b8b",
     "error": "#d8442c",
-    "accent": "#ffffff",
+    "accent": "#ed2d26",
     "neutral": "#8f8f9f",
     "primary": "#2d2d2d",
     "success": "#367b6a",
@@ -16,7 +16,7 @@
     "optional": {
       "base-200": "#d2d1d7",
       "base-300": "#8e8e9f",
-      "accent-focus": "#8f8f9f",
+      "accent-focus": "#ed2d26",
       "base-content": "#707279",
       "info-content": "#2f1893",
       "error-content": "#ffffff",
