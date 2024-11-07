@@ -336,7 +336,7 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-secondary font-medium">
+                    <p class="text-secondary font-medium !text-[#ED2D26]">
                       {formatPrice(forPrice, offers!.priceCurrency!)}
                     </p>
                   </div>
@@ -351,7 +351,8 @@ function ProductCard(
                       </div>
                     )}
                   <div class="flex items-center gap-[10px] py-[10px]">
-                    <span class="font-bold text-md text-secondary leading-none">
+                    {/* Aqui */}
+                    <span class="font-bold text-md text-secondary leading-none !text-[#ed2d26]">
                       {formatPrice(price, offers?.priceCurrency)}
                     </span>
                     {discount && forPrice && (

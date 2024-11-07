@@ -145,12 +145,13 @@ function Form(props: Props) {
             <div class="flex gap-4 w-full lg:flex-row flex-col items-center lg:justify-between justify-center">
               {nameInput}
               {emailInput}
+              {/* Aqui */}
               <button
                 style={{
                   minWidth: "150px",
                 }}
                 type="submit"
-                class={`uppercase md:ml-5 font-medium btn disabled:loading max-lg:self-start font-condensed rounded-full join-item btn-${
+                class={`uppercase md:ml-5 font-medium !text-white btn disabled:loading max-lg:self-start font-condensed rounded-full join-item btn-${
                   BUTTON_VARIANTS[form?.button?.variant as string] ||
                   BUTTON_VARIANTS["primary"]
                 }`}
