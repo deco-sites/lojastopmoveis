@@ -130,6 +130,7 @@ function ProductInfo(
                 </span>
               )}
               <div class="flex items-center gap-[10px]">
+                {/* Aqui */}
                 <span class="font-medium text-lg text-secondary !text-[#ed2d2c]">
                   {formatPrice(forPrice, offers!.priceCurrency!)}
                 </span>
@@ -139,6 +140,7 @@ function ProductInfo(
               </div>
             </div>
             <div class="flex flex-col">
+              {/* Aqui */}
               <span class="text-secondary text-2xl font-bold !text-[#ed2d2c]">
                 ou {installment?.billingDuration}x de {formatPrice(
                   installment?.billingIncrement,
@@ -147,6 +149,7 @@ function ProductInfo(
               </span>
             </div>
             <div class="flex items-center gap-[10px] py-[10px]">
+              {/* Aqui */}
               <span class="font-bold text-2xl text-secondary leading-none !text-[#ed2d2c]">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>

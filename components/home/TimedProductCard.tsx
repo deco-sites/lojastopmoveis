@@ -363,6 +363,7 @@ function TimedProductCard(
                                                     )}
                                                 </p>
                                             )}
+                                            {/* Aqui */}
                                             <p class="md:text-black text-secondary text-sm font-medium md:text-xl !text-[#ed2d25]">
                                                 {formatPrice(
                                                     price,
@@ -386,6 +387,7 @@ function TimedProductCard(
                                                 </div>
                                             )}
                                         <div class="flex items-center gap-[10px] py-[10px]">
+                                            {/* Aqui */}
                                             <span class="font-bold text-md text-secondary leading-none !text-[#ed2d25]">
                                                 {formatPrice(
                                                     discountPrice,

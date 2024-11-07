@@ -351,6 +351,7 @@ function ProductCard(
                       </div>
                     )}
                   <div class="flex items-center gap-[10px] py-[10px]">
+                    {/* Aqui */}
                     <span class="font-bold text-md text-secondary leading-none !text-[#ed2d26]">
                       {formatPrice(price, offers?.priceCurrency)}
                     </span>

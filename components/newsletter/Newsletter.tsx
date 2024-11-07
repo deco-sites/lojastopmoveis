@@ -145,6 +145,7 @@ function Form(props: Props) {
             <div class="flex gap-4 w-full lg:flex-row flex-col items-center lg:justify-between justify-center">
               {nameInput}
               {emailInput}
+              {/* Aqui */}
               <button
                 style={{
                   minWidth: "150px",
