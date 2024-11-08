@@ -108,7 +108,7 @@ function ProductInfo({ page, shareableNetworks, tags }: {
           <span class="text-[#4A4B51] text-sm">
             Vendido e entregue por:
           </span>
-          <span class="text-secondary text-sm">
+          <span class="text-secondary text-sm !text-[#ed2d26]">
             {vendorName}
           </span>
         </div>
@@ -137,7 +137,8 @@ function ProductInfo({ page, shareableNetworks, tags }: {
                 </span>
               )}
               <div class="flex items-center gap-[10px]">
-                <span class="font-medium text-lg text-secondary">
+                {/* Aqui */}
+                <span class="font-medium text-lg text-secondary !text-[#ed2d2c]">
                   {formatPrice(forPrice, offers!.priceCurrency!)}
                 </span>
                 {
@@ -148,16 +149,17 @@ function ProductInfo({ page, shareableNetworks, tags }: {
               </div>
             </div>
             <div class="flex flex-col">
-              <span class="text-secondary text-2xl font-bold">
-                ou {installment?.billingDuration}x de{" "}
-                {formatPrice(
+              {/* Aqui */}
+              <span class="text-secondary text-2xl font-bold !text-[#ed2d2c]">
+                ou {installment?.billingDuration}x de {formatPrice(
                   installment?.billingIncrement,
                   offers!.priceCurrency,
                 )}
               </span>
             </div>
             <div class="flex items-center gap-[10px] py-[10px]">
-              <span class="font-bold text-2xl text-secondary leading-none">
+              {/* Aqui */}
+              <span class="font-bold text-2xl text-secondary leading-none !text-[#ed2d2c]">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
               {discount && forPrice && (

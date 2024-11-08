@@ -1,0 +1,45 @@
+{
+  "__resolveType": "site/sections/DesignSystem/DesignSystem.tsx",
+  "fonts": {
+    "fontFamily": "'Asap'",
+    "styleInnerHtml": "@import url('https://fonts.googleapis.com/css2?family=Asap+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Asap:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');"
+  },
+  "colors": {
+    "info": "#1c3b8b",
+    "error": "#d8442c",
+    "accent": "#ed2d26",
+    "neutral": "#8f8f9f",
+    "primary": "#2d2d2d",
+    "success": "#367b6a",
+    "warning": "#f2c656",
+    "base-100": "#ffffff",
+    "optional": {
+      "base-200": "#d2d1d7",
+      "base-300": "#8e8e9f",
+      "accent-focus": "#ed2d26",
+      "base-content": "#707279",
+      "info-content": "#2f1893",
+      "error-content": "#ffffff",
+      "primary-focus": "#2e2e2e",
+      "accent-content": "#5a5a5a",
+      "primary-content": "#2d2d2d",
+      "secondary-focus": "#000000",
+      "success-content": "#ffffff",
+      "warning-content": "#ffffff",
+      "secondary-content": "#ffffff"
+    },
+    "secondary": "#000000"
+  },
+  "miscellaneous": {
+    "--border-btn": "1px",
+    "--tab-border": "1px",
+    "--tab-radius": "0.5rem",
+    "--rounded-box": "10px",
+    "--rounded-btn": "99rem",
+    "--animation-btn": "0.25s",
+    "--btn-text-case": "none",
+    "--rounded-badge": "1.9rem",
+    "--animation-input": "0.2s",
+    "--btn-focus-scale": "0.95"
+  }
+}

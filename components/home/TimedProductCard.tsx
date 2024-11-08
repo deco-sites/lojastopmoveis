@@ -359,17 +359,18 @@ function TimedProductCard(
                                                         class={`line-through text-[#C5C6CB] md:text-base text-[12px] ${l?.basics
                                                                 ?.oldPriceSize ===
                                                                 "Normal"
-                                                                ? "md:text-base"
-                                                                : ""
-                                                            }`}
-                                                    >
-                                                        {formatPrice(
-                                                            listPrice,
-                                                            offers!.priceCurrency!,
-                                                        )}
-                                                    </p>
-                                                )}
-                                            <p class="md:text-black text-secondary text-sm font-medium md:text-xl">
+                                                            ? "md:text-base"
+                                                            : ""
+                                                    }`}
+                                                >
+                                                    {formatPrice(
+                                                        listPrice,
+                                                        offers!.priceCurrency!,
+                                                    )}
+                                                </p>
+                                            )}
+                                            {/* Aqui */}
+                                            <p class="md:text-black text-secondary text-sm font-medium md:text-xl !text-[#ed2d25]">
                                                 {formatPrice(
                                                     price,
                                                     offers!.priceCurrency!,
@@ -392,7 +393,8 @@ function TimedProductCard(
                                                 </div>
                                             )}
                                         <div class="flex items-center gap-[10px] py-[10px]">
-                                            <span class="font-bold text-md text-secondary leading-none">
+                                            {/* Aqui */}
+                                            <span class="font-bold text-md text-secondary leading-none !text-[#ed2d25]">
                                                 {formatPrice(
                                                     discountPrice,
                                                     offers?.priceCurrency,

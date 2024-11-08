@@ -1,1 +1,76 @@
-{"name":"Product page","path":"/:slug/p","sections":[{"__resolveType":"Default - Design System"},{"__resolveType":"analytics"},{"jsonLD":{"__resolveType":"PDP - Intelligent Search Loader"},"__resolveType":"site/sections/Seo/SeoPDPCustom.tsx","changePixPrice":false},{"__resolveType":"Header Global"},{"__resolveType":"Default - Product Details"},{"__resolveType":"Produtos relacionados - ProductShelf"},{"__resolveType":"Footer Global"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Product page",
+  "path": "/:slug/p",
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "site/sections/Seo/SeoPDPCustom.tsx",
+            "jsonLD": {
+              "__resolveType": "PDP - Intelligent Search Loader"
+            },
+            "changePixPrice": false
+          },
+          {
+            "__resolveType": "Header Black"
+          },
+          {
+            "__resolveType": "Default - Product Details"
+          },
+          {
+            "__resolveType": "Produtos relacionados - ProductShelf"
+          },
+          {
+            "__resolveType": "Footer Black"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2024-11-30T15:00:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "jsonLD": {
+              "__resolveType": "PDP - Intelligent Search Loader"
+            },
+            "__resolveType": "site/sections/Seo/SeoPDPCustom.tsx",
+            "changePixPrice": false
+          },
+          {
+            "__resolveType": "Header Global"
+          },
+          {
+            "__resolveType": "Default - Product Details"
+          },
+          {
+            "__resolveType": "Produtos relacionados - ProductShelf"
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

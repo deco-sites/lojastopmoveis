@@ -6498,6 +6498,22 @@ details.collapse summary::-webkit-details-marker {
 .tracking-\[2px\] {
   letter-spacing: 2px;
 }
+.\!text-\[\#ed2d25\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(237 45 37 / var(--tw-text-opacity)) !important;
+}
+.\!text-\[\#ed2d26\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(237 45 38 / var(--tw-text-opacity)) !important;
+}
+.\!text-\[\#ed2d2c\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(237 45 44 / var(--tw-text-opacity)) !important;
+}
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+}
 .text-\[\#057EB5\] {
   --tw-text-opacity: 1;
   color: rgb(5 126 181 / var(--tw-text-opacity));
