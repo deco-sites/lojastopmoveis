@@ -6,7 +6,6 @@ import { PreviewContainer } from "apps/utils/preview.tsx";
 import { Secret } from "apps/website/loaders/secret.ts";
 import manifest, { Manifest } from "./manifest.gen.ts";
 import { OpenAPI as VCS } from "./utils/openapi/vcs.openapi.gen.ts";
-import { FlagDiscountThirdForProps, FlagSpecialProps } from "./utils/types.ts";
 import { Flags } from "./utils/types.ts";
 
 export type AppContext = FnContext<State, Manifest>;

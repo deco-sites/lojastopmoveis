@@ -146,13 +146,13 @@ export default function FlagCustom(
         className={`flex ${icon && "gap-1"} ${
           isVertical ? "flex-col h-full origin-center " : "flex-row h-full"
         } text-[9px] ${
-          !textLeft
+          !textLeft && !isProducttDetails
             ? `${
               optionBorderRadius && classesBorderRadius[optionBorderRadius]
             } px-2`
             : ``
         } ${
-          type === "ProductDetails" ? "w-auto" : " w-full"
+          type === "ProductDetails" ? "w-auto rounded-bl-none rounded-lg " : " w-full"
         } items-center justify-center`}
         style={{
           background: textLeftBackgroundColor ?? "#0b354a",
@@ -167,13 +167,13 @@ export default function FlagCustom(
         {textLeft && (
           <p
             className={` uppercase ${
-              type === "ProductDetails" ? "text-xs" : "text-xs"
+              type === "ProductDetails" ? "text-xs p-4" : "text-xs"
             } text-center font-medium font-roboto flex items-center justify-center gap-1 overflow-hidden ${
               textLeft && "w-1/2 h-full"
             }`}
             style={{
-              writingMode: isVertical ? "vertical-rl" : "horizontal-tb",
-              textOrientation: isVertical ? "upright" : "mixed",
+              writingMode: isVertical && !isProducttDetails ? "vertical-rl" : "horizontal-tb",
+              textOrientation: isVertical && !isProducttDetails? "upright" : "mixed",
             }}
           >
             {textLeft && textLeft}
@@ -181,14 +181,14 @@ export default function FlagCustom(
         )}
 
         <span
-          className={`text-xs font-bold  flex items-center justify-center font-roboto ${
+          className={`text-xs font-bold  flex items-center justify-center font-roboto ${isProducttDetails && textLeft ? 'p-4' : 'px-2'} ${
             textLeft && "w-1/2 h-full"
           }`}
           style={{
             background: textRightBackgroundColor ?? "#0274bb",
             color: textRightColor ?? "#fff",
-            writingMode: isVertical ? "vertical-rl" : "horizontal-tb",
-            textOrientation: isVertical ? "upright" : "mixed",
+            writingMode: isVertical && !isProducttDetails ?"vertical-rl" : "horizontal-tb",
+            textOrientation: isVertical && !!isProducttDetails  ? "upright" : "mixed",
           }}
         >
           {textRight}
