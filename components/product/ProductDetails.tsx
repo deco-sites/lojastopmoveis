@@ -1,4 +1,3 @@
-import { useSignal } from "@preact/signals";
 import { useId } from "preact/hooks";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
@@ -11,21 +10,19 @@ import { formatPrice } from "$store/sdk/format.ts";
 import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
-import type { LoaderReturnType } from "$live/types.ts";
 import AddToCartActions from "$store/islands/AddToCartActions.tsx";
 import ProductDetailsImages from "$store/islands/ProductDetailsImages.tsx";
-import { FnContext, SectionProps } from "deco/mod.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
-import ProductSelector from "./ProductVariantSelector.tsx";
 import SimilarSelector from "site/components/product/SimilarSelector.tsx";
-
-
+import { type FnContext, type SectionProps } from "@deco/deco";
+import { type LoaderReturnType } from "@deco/deco";
+import { Tags } from "site/loaders/getTags.ts";
+import { isFlag } from "site/components/product/Flags/utils/useFlag.ts";
+import FlagCustom from "site/components/product/Flags/FlagCustom.tsx";
 export type Variant = "front-back" | "slider" | "auto";
-
 export type ShareableNetwork = "Facebook" | "Twitter" | "Email" | "WhatsApp";
-
 export interface Props {
   page: LoaderReturnType<ProductDetailsPage | null>;
   /**
@@ -42,12 +39,14 @@ export interface Props {
     link: string;
   };
   shareableNetworks?: ShareableNetwork[];
-}
 
+  /** @hide true */
+
+  tags: Tags;
+}
 const WIDTH = 250;
 const HEIGHT = 250;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
-
 /**
  * Rendered when a not found is returned by any of the loaders run on this page
  */
@@ -63,36 +62,31 @@ function NotFound() {
     </div>
   );
 }
-
-function ProductInfo(
-  { page, shipmentPolitics, shareableNetworks }: {
-    page: ProductDetailsPage;
-    shipmentPolitics?: Props["shipmentPolitics"];
-    shareableNetworks?: Props["shareableNetworks"];
-  },
-) {
+function ProductInfo({ page, shareableNetworks, tags }: {
+  page: ProductDetailsPage;
+  shipmentPolitics?: Props["shipmentPolitics"];
+  shareableNetworks?: Props["shareableNetworks"];
+  tags: Props["tags"];
+}) {
+  const { breadcrumbList, product } = page;
   const {
-    breadcrumbList,
-    product,
-  } = page;
-  const {
-    
     description,
     productID,
     offers,
     name,
     isVariantOf,
-    isSimilarTo,
     url,
-
+    additionalProperty,
   } = product;
   const { price = 0, listPrice, seller, availability, installment } = useOffer(
     offers,
   );
-
-  const forPrice = product.offers?.offers[0].priceSpecification[1].price
+  const forPrice = product.offers?.offers[0].priceSpecification[1].price;
   const discount = listPrice && listPrice > price;
-  const vendorName = product.offers?.offers[0].sellerName
+  const vendorName = product.offers?.offers[0].sellerName;
+
+  const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
+
 
   return (
     <>
@@ -112,11 +106,24 @@ function ProductInfo(
         )}
         <div class="flex gap-[2px]">
           <span class="text-[#4A4B51] text-sm">
-            Vendido e entregue por: 
+            Vendido e entregue por:
           </span>
           <span class="text-secondary text-sm !text-[#ed2d26]">
             {vendorName}
           </span>
+        </div>
+
+        <div class="pt-1 gap-1 flex flex-col">
+          {flagCustom && flagCustom.map((flag, idx) =>
+            isFlag(flag, additionalProperty) && (
+              <FlagCustom
+                key={idx}
+                // deno-lint-ignore no-explicit-any
+                formatFlag={flag.formatFlag?.optionsFormat as any}
+                type="ProductDetails"
+              />
+            )
+          )}
         </div>
       </div>
       {/* Prices */}
@@ -134,9 +141,11 @@ function ProductInfo(
                 <span class="font-medium text-lg text-secondary !text-[#ed2d2c]">
                   {formatPrice(forPrice, offers!.priceCurrency!)}
                 </span>
-                {/* <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
+                {
+                  /* <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] text-secondary border border-secondary uppercase rounded-md px-[10px] py-[2px] tracking-[2px] text-center">
                   10% de desconto no boleto
-                </span> */}
+                </span> */
+                }
               </div>
             </div>
             <div class="flex flex-col">
@@ -154,9 +163,10 @@ function ProductInfo(
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
               {discount && forPrice && (
-                  <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                    {Math.round(((forPrice - price) / forPrice) * 100)}% de desconto no Pix ou boleto
-                  </span>  
+                <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
+                  {Math.round(((forPrice - price) / forPrice) * 100)}% de
+                  desconto no Pix ou boleto
+                </span>
               )}
             </div>
           </div>
@@ -275,30 +285,31 @@ function ProductInfo(
     </>
   );
 }
-
-function Details({
-  page,
-  variant,
-  shipmentPolitics,
-  shareableNetworks,
-  highlights,
-  device,
-}: {
-  page: ProductDetailsPage;
-  variant: Variant;
-  shipmentPolitics?: Props["shipmentPolitics"];
-  shareableNetworks?: Props["shareableNetworks"];
-  highlights?: HighLight[];
-  device:string;
-}) {
+function Details(
+  {
+    page,
+    variant,
+    shipmentPolitics,
+    shareableNetworks,
+    highlights,
+    device,
+    tags,
+  }: {
+    page: ProductDetailsPage;
+    variant: Variant;
+    shipmentPolitics?: Props["shipmentPolitics"];
+    shareableNetworks?: Props["shareableNetworks"];
+    highlights?: HighLight[];
+    device: string;
+    tags: Tags;
+  },
+) {
   const { product, breadcrumbList } = page;
   const filteredBreadcrumbList = breadcrumbList.itemListElement.filter((item) =>
     item.name!.length > 1
   );
   const id = `product-image-gallery:${useId()}`;
-
   const images = product.image!;
-
   /**
    * Product slider variant
    */
@@ -306,13 +317,8 @@ function Details({
     return (
       <>
         {/* Breadcrumb */}
-        <Breadcrumb
-          itemListElement={filteredBreadcrumbList}
-        />
-        <div
-          id={id}
-          class="flex flex-col lg:flex-row gap-4 lg:justify-center"
-        >
+        <Breadcrumb itemListElement={filteredBreadcrumbList} />
+        <div id={id} class="flex flex-col lg:flex-row gap-4 lg:justify-center">
           {/* Product Images */}
           <ProductDetailsImages
             images={product.image!}
@@ -331,6 +337,7 @@ function Details({
               page={page}
               shipmentPolitics={shipmentPolitics}
               shareableNetworks={shareableNetworks}
+              tags={tags}
             />
           </div>
         </div>
@@ -338,7 +345,6 @@ function Details({
       </>
     );
   }
-
   /**
    * Product front-back variant.
    *
@@ -368,15 +374,21 @@ function Details({
 
       {/* Product Info */}
       <div class="px-4 lg:pr-0 lg:pl-6">
-        <ProductInfo page={page} />
+        <ProductInfo page={page} tags={tags} />
       </div>
     </div>
   );
 }
-
 function ProductDetails(
-  { page, variant: maybeVar = "auto", shipmentPolitics, shareableNetworks, highlights, device }:
-  SectionProps<ReturnType<typeof loader>>,
+  {
+    page,
+    variant: maybeVar = "auto",
+    shipmentPolitics,
+    shareableNetworks,
+    highlights,
+    device,
+    tags,
+  }: SectionProps<ReturnType<typeof loader>>,
 ) {
   /**
    * Showcase the different product views we have on this template. In case there are less
@@ -388,7 +400,6 @@ function ProductDetails(
       ? "front-back"
       : "slider"
     : maybeVar;
-
   return (
     <div class="py-0">
       {page
@@ -400,18 +411,20 @@ function ProductDetails(
             shareableNetworks={shareableNetworks}
             highlights={highlights}
             device={device}
+            tags={tags}
           />
         )
         : <NotFound />}
     </div>
   );
 }
+export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
+  const tags = await ctx.invoke.site.loaders.getTags();
 
-export const loader = (props: Props, _req: Request, ctx: FnContext) => {
   return {
     ...props,
     device: ctx.device,
+    tags: tags,
   };
 };
-
 export default ProductDetails;

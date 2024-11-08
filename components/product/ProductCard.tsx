@@ -12,9 +12,11 @@ import { useVariantPossibilities } from "$store/sdk/useVariantPossiblities.ts";
 import type { Product } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import Image from "apps/website/components/Image.tsx";
-import DiscountBadge from "./DiscountBadge.tsx";
 import ProductHighlights from "$store/components/product/ProductHighlights.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
+import { Tags } from "site/loaders/getTags.ts";
+import FlagCustom from "site/components/product/Flags/FlagCustom.tsx";
+import { isFlag } from "site/components/product/Flags/utils/useFlag.ts";
 
 export interface Layout {
   basics?: {
@@ -71,6 +73,9 @@ interface Props {
   itemListName?: string;
   layout?: Layout;
   class?: string;
+
+  /** @hide true */
+  tags?: Tags;
 }
 
 export const relative = (url: string) => {
@@ -82,7 +87,8 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function ProductCard(
-  { product, preload, itemListName, layout, highlights, class: _class }: Props,
+  { product, preload, itemListName, layout, highlights, class: _class, tags }:
+    Props,
 ) {
   const {
     url,
@@ -91,6 +97,7 @@ function ProductCard(
     image: images,
     offers,
     isVariantOf,
+    additionalProperty,
   } = product;
   const productGroupID = isVariantOf?.productGroupID;
   const [front, back] = images ?? [];
@@ -99,6 +106,10 @@ function ProductCard(
   );
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
+
+  const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
+
+
   const clickEvent = {
     name: "select_item" as const,
     params: {
@@ -134,7 +145,7 @@ function ProductCard(
       BUTTON_VARIANTS[variant ?? "primary"]
     }`;
 
-  const forPrice = product.offers?.offers[0].priceSpecification[1].price 
+  const forPrice = product.offers?.offers[0].priceSpecification[1].price;
   const discount = listPrice && listPrice > price;
 
   const cta = layout?.basics?.ctaMode === "Go to Product Page"
@@ -184,7 +195,7 @@ function ProductCard(
       />
     );
 
-  const price2: number = price as number;
+  const _price2: number = price as number;
   const listPrice2: number = listPrice as number;
 
   return (
@@ -273,6 +284,17 @@ function ProductCard(
               decoding="async"
             />
           )}
+
+          {flagCustom && flagCustom.map((flag, idx) =>
+            isFlag(flag, additionalProperty) && (
+              <FlagCustom
+                key={idx}
+                // deno-lint-ignore no-explicit-any
+                formatFlag={flag.formatFlag?.optionsFormat as any}
+                type="ProductShelf"
+              />
+            )
+          )}
         </a>
       </figure>
       {/* Prices & Name */}
@@ -336,7 +358,7 @@ function ProductCard(
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
                     )}
-                    <p class="text-secondary font-medium !text-[#ED2D26]">
+                    <p class="text-secondary font-medium">
                       {formatPrice(forPrice, offers!.priceCurrency!)}
                     </p>
                   </div>
@@ -351,14 +373,14 @@ function ProductCard(
                       </div>
                     )}
                   <div class="flex items-center gap-[10px] py-[10px]">
-                    {/* Aqui */}
-                    <span class="font-bold text-md text-secondary leading-none !text-[#ed2d26]">
+                    <span class="font-bold text-md text-secondary leading-none">
                       {formatPrice(price, offers?.priceCurrency)}
                     </span>
                     {discount && forPrice && (
                       <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                        {Math.round(((forPrice - price) / forPrice) * 100)}% de desconto no Pix ou boleto
-                      </span>  
+                        {Math.round(((forPrice - price) / forPrice) * 100)}% de
+                        desconto no Pix ou boleto
+                      </span>
                     )}
                   </div>
                 </div>

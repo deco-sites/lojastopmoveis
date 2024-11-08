@@ -10,6 +10,7 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import TimedProductCard from "$store/components/home/TimedProductCard.tsx";
+import { Tags } from "site/loaders/getTags.ts";
 
 interface DotsProps {
     images?: Product[];
@@ -33,6 +34,9 @@ export interface Props {
     showPaginationArrows?: ResponsiveConditionals;
     cardLayout?: CardLayout;
     dotSliderColor: string;
+
+    /** @hide true */
+    tags?: Tags;
 }
 
 function Dots({ images, interval = 0, dotSliderColor }: DotsProps) {
@@ -60,7 +64,7 @@ function Dots({ images, interval = 0, dotSliderColor }: DotsProps) {
     );
 }
 
-const LocalProductShelf = ({ products, cardLayout, layout, showPaginationArrows, highlights, dotSliderColor }: Props) => {
+const LocalProductShelf = ({ products, cardLayout, layout, highlights, dotSliderColor, tags }: Props) => {
     const id = useId();
 
     if (!products || products.length === 0) {
@@ -84,6 +88,7 @@ const LocalProductShelf = ({ products, cardLayout, layout, showPaginationArrows,
                                 itemListName={""}
                                 layout={cardLayout}
                                 highlights={highlights}
+                                tags={tags}
                             />
                         </Slider.Item>
                     ))}
