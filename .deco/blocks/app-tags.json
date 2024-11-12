@@ -1,7 +1,13 @@
 {
   "__resolveType": "site/apps/local/app-tags.ts",
-  "appKey": {},
-  "appToken": {},
+  "appKey": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "23360c6a4217e4e1ea33d3cd8109599f5d87f27b09e9e6f07ab39613e601a742"
+  },
+  "appToken": {
+    "__resolveType": "website/loaders/secret.ts",
+    "encrypted": "1237fbc8bfa6b965ac30e2a49991ff5ea4c1cbfc92605c3066f127181504e2e99df854f76f01a488c53e48c0c95716494344f5e782507208bbaa9aa122aa931b9183247542f1ec421bae3926f29ad236f408e8bbade8cf37e287cd3dfe1ed5efbf10a2cbfc892f4804e16f78ad116b0058110e9573a16432ab7ca946c5787767f67b422110af9b2db81b9ccf5f217814"
+  },
   "flagCustom": [
     {
       "options": {
@@ -28,7 +34,7 @@
     {
       "options": {
         "options": {
-          "categories": "51"
+          "categories": "1"
         }
       },
       "formatFlag": {
@@ -75,7 +81,7 @@
     {
       "options": {
         "options": {
-          "idCollection": "156"
+          "categories": "1"
         }
       },
       "formatFlag": {
@@ -98,8 +104,29 @@
     {
       "options": {
         "options": {
-          "categories": "8"
+          "categories": "1"
         }
+      },
+      "formatFlag": {
+        "optionsFormat": {
+          "optionBorderRadius": "nenhum",
+          "textRightColor": "#000000",
+          "textRightBackgroundColor": "#F57A27",
+          "textLeftColor": "#000000",
+          "textLeftBackgroundColor": "#F57A27",
+          "flagPosition": "inferior centro",
+          "isFull": true,
+          "textRight": "Esquenta Black"
+        }
+      },
+      "name": "Esquenta Black",
+      "dateFrom": "2024-11-06",
+      "dateTo": "2024-11-30",
+      "showFlag": true
+    },
+    {
+      "options": {
+        "options": {}
       },
       "formatFlag": {
         "optionsFormat": {
