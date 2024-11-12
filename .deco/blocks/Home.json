@@ -720,7 +720,7 @@
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5f33664f-ef73-48da-b1d9-7ade586dac63/BANNER-DE-SITE-_MIDIA-KIT_-1920X600PX.webp",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/f1303174-2a6f-4830-9eee-d7b4cfdb5a25/BANNER---BLACK-TOP.png",
                         "width": 1920,
                         "height": 600
                       }
@@ -859,7 +859,7 @@
                 ],
                 "layout": {
                   "headerAlignment": "center",
-                  "headerfontSize": "Normal",
+                  "headerfontSize": "Large",
                   "itemsPerPage": [
                     {
                       "screenWidth": 425,
@@ -887,12 +887,14 @@
                   },
                   "hide": {
                     "productDescription": true,
-                    "skuSelector": true
+                    "skuSelector": true,
+                    "allPrices": false
                   },
                   "onMouseOver": {
                     "image": "Change image",
                     "showCardShadow": true,
-                    "showCta": true
+                    "showCta": true,
+                    "showSkuSelector": false
                   }
                 }
               }
