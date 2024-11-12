@@ -859,7 +859,7 @@
                 ],
                 "layout": {
                   "headerAlignment": "center",
-                  "headerfontSize": "Large",
+                  "headerfontSize": "Normal",
                   "itemsPerPage": [
                     {
                       "screenWidth": 425,
