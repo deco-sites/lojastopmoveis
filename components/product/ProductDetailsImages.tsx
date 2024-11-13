@@ -51,7 +51,7 @@ function ProductDetailsImages(
                   {img["@type"] === "VideoObject" &&
                     (
                       <iframe
-                        class="m-w-[600px] w-full"
+                        class="m-w-[600px] w-full h-[385px] lg:h-[600px]"
                         width={width}
                         height={height}
                         title={img?.name}
