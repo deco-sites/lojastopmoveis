@@ -4784,6 +4784,9 @@ details.collapse summary::-webkit-details-marker {
 .h-\[37px\] {
   height: 37px;
 }
+.h-\[385px\] {
+  height: 385px;
+}
 .h-\[38px\] {
   height: 38px;
 }
@@ -8757,6 +8760,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:h-\[107px\] {
     height: 107px;
+  }
+
+  .lg\:h-\[600px\] {
+    height: 600px;
   }
 
   .lg\:h-auto {
