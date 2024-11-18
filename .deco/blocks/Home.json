@@ -715,7 +715,7 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/c36b51b3-8414-4bab-8e90-f2642222eba8/WhatsApp-Image-2024-09-27-at-17.53.52.jpeg",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8ddd9ef9-592e-4f25-9144-4144cd0cfcf6/BANNER-BLACK-TOP---1080x1350PX.png",
                         "width": 390,
                         "height": 490
                       },
@@ -831,7 +831,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-11-13",
+              "countdownTimerDate": "2024-11-19",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ed2d26",
               "countdownTextColor": "#ffffff",
@@ -2701,7 +2701,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-11-13",
+              "countdownTimerDate": "2024-11-19",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ab00c2",
               "countdownTextColor": "#ffffff",
