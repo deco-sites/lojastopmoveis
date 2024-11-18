@@ -1,6 +1,5 @@
 import { useSignal } from "@preact/signals";
 import Slider from "$store/components/ui/Slider.tsx";
-import { useId } from "preact/hooks";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import Image from "apps/website/components/Image.tsx";
