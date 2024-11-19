@@ -677,16 +677,16 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
-                        "href": "/eletrodomesticos",
+                        "href": "/colchao-queen-size-queens-158x198x34cm-molas-ensacadas-gazin/p?skuId=325",
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3c7d5854-7119-4837-88fc-6678e22e181d",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3cc405b3-6c41-4cb0-a87c-f79f1d2e8d23/BANNER-MOBILE_5.png",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/35471bff-3c82-4c69-a19e-4b14e124c59b",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/9a83579b-ccd9-4938-b0cc-ce0092e21567/BANNER-SITE_5.png",
                         "width": 1920,
                         "height": 600
                       }
