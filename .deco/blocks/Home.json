@@ -681,12 +681,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8d8dd938-6246-4f8e-8371-04f9e0d02b26/2024111.PNG",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3cc405b3-6c41-4cb0-a87c-f79f1d2e8d23/BANNER-MOBILE_5.png",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/2096ea50-2989-49df-aa43-d328e1c955eb/2024111.PNG",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/9a83579b-ccd9-4938-b0cc-ce0092e21567/BANNER-SITE_5.png",
                         "width": 1920,
                         "height": 600
                       }
