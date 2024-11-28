@@ -1866,7 +1866,7 @@
                 "variant": "secondary"
               }
             },
-            "text": "<p><strong><span style=\"color: #0d0d0d\">Black Friday</span><span style=\"color: rgb(224, 62, 45)\"> com </span><span style=\"color: #000000\">Cupom</span><span style=\"color: rgb(224, 62, 45)\"> é melhor Ainda!<br></span><span style=\"color: rgb(13, 12, 12)\">Aplique o cupom</span><span style=\"color: rgb(224, 62, 45)\"> \"clientetop\" </span><span style=\"color: rgb(8, 8, 8)\">e garanta</span><span style=\"color: rgb(224, 62, 45)\"> +5% de desconto</span></strong></p><p><strong><span style=\"color: rgb(224, 62, 45)\">em qualquer forma de pagamento!﻿</span></strong></p>",
+            "text": "<p><strong><span style=\"color: rgb(13, 13, 13)\">Black Friday</span><span style=\"color: rgb(224, 62, 45)\"> </span><span style=\"color: #080808\">com Cupom é melhor Ainda!</span><span style=\"color: rgb(224, 62, 45)\"><br></span><span style=\"color: rgb(13, 12, 12)\">Aplique o cupom</span><span style=\"color: rgb(224, 62, 45)\"> </span><span style=\"color: #fb0404\">\"clientetop\" e garanta +5% de desconto </span><span style=\"color: #050505\">em qualquer forma de pagamento!﻿</span></strong></p>",
             "modalSignExpiredDate": 360,
             "modalCloseExpiredDate": 7
           },
