@@ -137,13 +137,13 @@
           "textLeftBackgroundColor": " #720303",
           "flagPosition": "inferior",
           "isFull": true,
-          "textRight": "Friday",
-          "textLeft": "BLACK"
+          "textRight": "Cyber ",
+          "textLeft": "Monday"
         }
       },
-      "name": "Black friday",
+      "name": "Cyber Oferta",
       "dateFrom": "2024-11-08",
-      "dateTo": "2024-11-30",
+      "dateTo": "2024-12-07",
       "showFlag": false
     }
   ],
