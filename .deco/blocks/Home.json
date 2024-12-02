@@ -643,23 +643,6 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
-                        "href": "/fritadeira-air-fryer-4-5-litros-afr1205-220v-amvox/p?skuId=571",
-                        "variant": "primary"
-                      },
-                      "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/acdeab07-ceff-4475-8886-1b39895affa1/BANNER-MOBILE_1.png",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/eaca6f6d-6de1-4078-a52f-939930061178/BANNER-SITE_1.png",
-                        "width": 1920,
-                        "height": 600
-                      }
-                    },
-                    {
-                      "alt": "Achadinhos",
-                      "action": {
                         "href": "/saldaodeofertastopmoveis",
                         "variant": "primary"
                       },
