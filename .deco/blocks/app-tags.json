@@ -121,7 +121,7 @@
       },
       "name": "Esquenta Black",
       "dateFrom": "2024-11-06",
-      "dateTo": "2024-11-30",
+      "dateTo": "2024-12-31",
       "showFlag": true
     },
     {
@@ -146,7 +146,7 @@
       "name": "Cyber Oferta",
       "dateFrom": "2024-11-08",
       "dateTo": "2024-12-15",
-      "showFlag": true
+      "showFlag": false
     }
   ],
   "account": "topmoveis"
