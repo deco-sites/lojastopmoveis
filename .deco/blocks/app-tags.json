@@ -93,12 +93,13 @@
           "textLeftBackgroundColor": "#F57A27",
           "flagPosition": "inferior centro",
           "isFull": true,
-          "textRight": "OFERTA "
+          "textLeft": "Cyber",
+          "textRight": "MONDAY"
         }
       },
       "name": "SUPER OFERTA",
       "dateFrom": "2024-11-06",
-      "dateTo": "2024-11-30",
+      "dateTo": "2024-12-31",
       "showFlag": false
     },
     {
@@ -122,7 +123,7 @@
       "name": "Esquenta Black",
       "dateFrom": "2024-11-06",
       "dateTo": "2024-12-31",
-      "showFlag": true
+      "showFlag": false
     },
     {
       "options": {
@@ -139,14 +140,14 @@
           "textLeftBackgroundColor": "#d402cd",
           "flagPosition": "inferior",
           "isFull": true,
-          "textRight": "Oferta",
-          "textLeft": "Cyber"
+          "textRight": "OFERTA",
+          "textLeft": "CYBER"
         }
       },
       "name": "Cyber Oferta",
       "dateFrom": "2024-11-08",
       "dateTo": "2024-12-15",
-      "showFlag": false
+      "showFlag": true
     }
   ],
   "account": "topmoveis"
