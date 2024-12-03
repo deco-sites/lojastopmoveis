@@ -126,7 +126,9 @@
     },
     {
       "options": {
-        "options": {}
+        "options": {
+          "idCollection": "148"
+        }
       },
       "formatFlag": {
         "optionsFormat": {
@@ -137,8 +139,8 @@
           "textLeftBackgroundColor": "#d402cd",
           "flagPosition": "inferior",
           "isFull": true,
-          "textRight": "Cyber ",
-          "textLeft": "Monday"
+          "textRight": "Monday",
+          "textLeft": "Cyber"
         }
       },
       "name": "Cyber Oferta",
