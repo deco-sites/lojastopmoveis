@@ -133,13 +133,13 @@
       "formatFlag": {
         "optionsFormat": {
           "optionBorderRadius": "completo",
-          "textRightColor": "#080808",
+          "textRightColor": "#fafafa",
           "textRightBackgroundColor": "#d402cd",
-          "textLeftColor": "#FFF",
+          "textLeftColor": "#fafafa",
           "textLeftBackgroundColor": "#d402cd",
           "flagPosition": "inferior",
           "isFull": true,
-          "textRight": "Monday",
+          "textRight": "Oferta",
           "textLeft": "Cyber"
         }
       },
