@@ -131,10 +131,10 @@
       "formatFlag": {
         "optionsFormat": {
           "optionBorderRadius": "completo",
-          "textRightColor": "#FFF",
-          "textRightBackgroundColor": "#D50202",
+          "textRightColor": "#080808",
+          "textRightBackgroundColor": "#d402cd",
           "textLeftColor": "#FFF",
-          "textLeftBackgroundColor": " #720303",
+          "textLeftBackgroundColor": "#d402cd",
           "flagPosition": "inferior",
           "isFull": true,
           "textRight": "Cyber ",
@@ -143,8 +143,8 @@
       },
       "name": "Cyber Oferta",
       "dateFrom": "2024-11-08",
-      "dateTo": "2024-12-07",
-      "showFlag": false
+      "dateTo": "2024-12-15",
+      "showFlag": true
     }
   ],
   "account": "topmoveis"
