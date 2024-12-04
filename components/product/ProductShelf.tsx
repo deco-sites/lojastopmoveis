@@ -74,7 +74,7 @@ function ProductShelf({ products, title, layout, cardLayout, seeMore, showPagina
       <div id={id} class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]">
         <Slider class="carousel carousel-center lg:carousel-start space-x-4 p-4 md:gap-6 col-span-full max-w-full sm:space-x-0 row-span-full py-2 mb-12">
           {products?.map((product, index) => (<Slider.Item index={index} class="carousel-item !w-[250px]">
-              <ProductCard product={product} itemListName={title} layout={cardLayout} highlights={highlights} tags={tags}/>
+              <ProductCard product={product} itemListName={title} layout={cardLayout} highlights={highlights} tags={tags} index={index}/>
             </Slider.Item>))}
         </Slider>
 

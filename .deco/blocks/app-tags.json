@@ -93,12 +93,13 @@
           "textLeftBackgroundColor": "#F57A27",
           "flagPosition": "inferior centro",
           "isFull": true,
-          "textRight": "OFERTA "
+          "textLeft": "Cyber",
+          "textRight": "MONDAY"
         }
       },
       "name": "SUPER OFERTA",
       "dateFrom": "2024-11-06",
-      "dateTo": "2024-11-30",
+      "dateTo": "2024-12-31",
       "showFlag": false
     },
     {
@@ -121,30 +122,32 @@
       },
       "name": "Esquenta Black",
       "dateFrom": "2024-11-06",
-      "dateTo": "2024-11-30",
-      "showFlag": true
+      "dateTo": "2024-12-31",
+      "showFlag": false
     },
     {
       "options": {
-        "options": {}
+        "options": {
+          "idCollection": "148"
+        }
       },
       "formatFlag": {
         "optionsFormat": {
           "optionBorderRadius": "completo",
-          "textRightColor": "#FFF",
-          "textRightBackgroundColor": "#D50202",
-          "textLeftColor": "#FFF",
-          "textLeftBackgroundColor": " #720303",
+          "textRightColor": "#fafafa",
+          "textRightBackgroundColor": "#d402cd",
+          "textLeftColor": "#fafafa",
+          "textLeftBackgroundColor": "#d402cd",
           "flagPosition": "inferior",
           "isFull": true,
-          "textRight": "Friday",
-          "textLeft": "BLACK"
+          "textRight": "OFERTA",
+          "textLeft": "CYBER"
         }
       },
-      "name": "Black friday",
+      "name": "Cyber Oferta",
       "dateFrom": "2024-11-08",
-      "dateTo": "2024-11-30",
-      "showFlag": false
+      "dateTo": "2024-12-15",
+      "showFlag": true
     }
   ],
   "account": "topmoveis"

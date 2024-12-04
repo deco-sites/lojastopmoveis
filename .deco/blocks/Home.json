@@ -7,7 +7,7 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2024-12-01T03:00:00.000Z"
+          "end": "2024-12-07T03:00:00.000Z"
         },
         "value": [
           {
@@ -610,15 +610,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/blacktop"
+                        "href": "/cybermonday"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/1729ca38-9b81-4656-9f88-79e4d1f02ccf/WhatsApp-Image-2024-11-21-at-18.53.03-(2).jpeg",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/493a6637-8d4f-4d6f-bcb9-ea2809bf22a2/image-_1_-(1).webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/76b8a21d-3610-43e8-a991-d11ffe054439/WhatsApp-Image-2024-11-21-at-18.53.03-(3).jpeg",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/c1492cb8-f480-4c6c-96b1-5511cdf85bc7/banner_cybermonday_desktop.webp",
                         "width": 1920,
                         "height": 599
                       }
@@ -643,23 +643,6 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
-                        "href": "/fritadeira-air-fryer-4-5-litros-afr1205-220v-amvox/p?skuId=571",
-                        "variant": "primary"
-                      },
-                      "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/acdeab07-ceff-4475-8886-1b39895affa1/BANNER-MOBILE_1.png",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/eaca6f6d-6de1-4078-a52f-939930061178/BANNER-SITE_1.png",
-                        "width": 1920,
-                        "height": 600
-                      }
-                    },
-                    {
-                      "alt": "Achadinhos",
-                      "action": {
                         "href": "/saldaodeofertastopmoveis",
                         "variant": "primary"
                       },
@@ -677,16 +660,16 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
-                        "href": "/colchao-queen-size-queens-158x198x34cm-molas-ensacadas-gazin/p?skuId=325",
+                        "href": "https://www.bempensadoconsul.com.br",
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3cc405b3-6c41-4cb0-a87c-f79f1d2e8d23/BANNER-MOBILE_5.png",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/618a7d03-c013-494d-bf2b-499b24bab469/banner_consul-390x490.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/9a83579b-ccd9-4938-b0cc-ce0092e21567/BANNER-SITE_5.png",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/686872b6-d8c0-4b14-8503-ce40c54ab9eb/banner_consul-1920x600.webp",
                         "width": 1920,
                         "height": 600
                       }
@@ -694,16 +677,16 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
-                        "href": "/microondas-34-litros-900w-nn-st65lw-panasonic/p?skuId=1216",
+                        "href": "https://www.promocoesbrastemp.com.br",
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/9c0b82ba-a895-47f2-892d-47aa147dda3d/BANNER-MOBILE_6.png",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/945da631-9442-4be7-9c39-6cde538b630f/WHI_2024.11.01_IO_PROMO_AGOSTO_BANNER_390x490pxl.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/417bb922-398d-459b-b035-5bd7837bfd54/BANNER-SITE_6.png",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/9d4002e6-7b23-4081-9d5e-3d7e9307b9c2/WHI_2024.11.01_IO_PROMO_AGOSTO_BANNER_1920x600pxl-copiar.webp",
                         "width": 1920,
                         "height": 600
                       }
@@ -763,42 +746,42 @@
                     {
                       "alt": "Shorts",
                       "href": "/topofertasdodia",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8450f71e-bb35-48ab-b6a6-73f99b6fad9d/Product.png",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/62d02272-d647-4862-80b8-bfdd9b5f4b83/Product.webp",
                       "title": "Aproveitar Agora",
                       "preload": true
                     },
                     {
                       "alt": "Dormitório Adulto",
                       "href": "/moveis/quarto-adulto",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/41e8d959-6321-43ab-af1f-286f6189ac02/img.png",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/96de72af-586d-442e-8dee-182c6e9bac0c/img.webp",
                       "title": "Dormitório Adulto",
                       "preload": true
                     },
                     {
                       "alt": "Eletrodomésticos",
                       "href": "/eletrodomesticos",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/ee88d5bf-b6e0-4e5d-8574-45c253c59925/img.png",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/dcc0ad3d-2cbd-4fee-b5c2-b444fd89e271/img-_1_.webp",
                       "title": "Eletrodomésticos",
                       "preload": true
                     },
                     {
                       "alt": "Camas box e Colchôes",
                       "href": "/colchoes",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/e52c8817-5de2-4c73-b682-2c9b32493510/img.png",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/2f1eddb9-34b5-40bf-95e0-729cbf33bd29/img-_2_.webp",
                       "title": "Camas box e Colchões",
                       "preload": true
                     },
                     {
                       "alt": "Móveis para cozinha",
                       "href": "/moveis/cozinha",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/fe0a1c23-b991-48ee-bd93-6f3d592a0a15/img-(1).png",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/157256db-ba42-4d23-b676-eb73a8f909d5/img-_1_-(1).webp",
                       "title": "Móveis para cozinha",
                       "preload": true
                     },
                     {
                       "alt": "Sala de Estar",
                       "href": "/moveis/sala-de-estar",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/628501f0-76ff-4807-b5e1-7c4efdd1cae0/img.png",
+                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/085a7668-ead8-46dc-8b5b-05f7ba89662c/img-_3_.webp",
                       "title": "Sala de Estar",
                       "preload": true
                     }
@@ -827,11 +810,11 @@
                 }
               },
               "frameColor": "#000000",
-              "titleFrame": "A Black Top das Tops, começou! Aproveite Agora!",
+              "titleFrame": "O Cyber Monday tá On na Top! Aproveite Agora!",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-11-30",
+              "countdownTimerDate": "2024-12-03",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ed2d26",
               "countdownTextColor": "#ffffff",
@@ -1866,7 +1849,7 @@
                 "variant": "secondary"
               }
             },
-            "text": "<p><strong><span style=\"color: #0d0d0d\">Black Friday</span><span style=\"color: rgb(224, 62, 45)\"> com </span><span style=\"color: #000000\">Cupom</span><span style=\"color: rgb(224, 62, 45)\"> é melhor Ainda!<br></span><span style=\"color: rgb(13, 12, 12)\">Aplique o cupom</span><span style=\"color: rgb(224, 62, 45)\"> \"clientetop\" </span><span style=\"color: rgb(8, 8, 8)\">e garanta</span><span style=\"color: rgb(224, 62, 45)\"> +5% de desconto</span></strong></p><p><strong><span style=\"color: rgb(224, 62, 45)\">em qualquer forma de pagamento!﻿</span></strong></p>",
+            "text": "<p><strong><span style=\"color: rgb(13, 13, 13)\">Black Friday</span><span style=\"color: rgb(224, 62, 45)\"> </span><span style=\"color: #080808\">com Cupom é melhor Ainda!</span><span style=\"color: rgb(224, 62, 45)\"><br></span><span style=\"color: rgb(13, 12, 12)\">Aplique o cupom</span><span style=\"color: rgb(224, 62, 45)\"> </span><span style=\"color: #fb0404\">\"clientetop\" e garanta +5% de desconto </span><span style=\"color: #050505\">em qualquer forma de pagamento!﻿</span></strong></p>",
             "modalSignExpiredDate": 360,
             "modalCloseExpiredDate": 7
           },

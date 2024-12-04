@@ -1,5 +1,6 @@
 {
-  "__resolveType": "$live/pages/LivePage.tsx",
+  "name": "Black Friday Brastemp Top Copy",
+  "path": "/promocoesbrastemp.com.br",
   "sections": [
     {
       "__resolveType": "Default - Design System"
@@ -31,7 +32,7 @@
               "selectedFacets": [
                 {
                   "key": "productClusterIds",
-                  "value": "142"
+                  "value": "148"
                 }
               ],
               "hideUnavailableItems": false
@@ -73,6 +74,5 @@
       "__resolveType": "Footer Global"
     }
   ],
-  "name": "Cyber Monday",
-  "path": "/cybermonday"
+  "__resolveType": "$live/pages/LivePage.tsx"
 }
