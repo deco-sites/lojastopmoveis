@@ -149,7 +149,7 @@ function TimedProductCard(
             : "center";
     const skuSelector = variants.map(([value, { urls }]) => (
         <li>
-            <a href={urls[0]}>
+            <a href={urls[0]} alt="avatar">
                 <Avatar
                     variant={"default"}
                     content={value}

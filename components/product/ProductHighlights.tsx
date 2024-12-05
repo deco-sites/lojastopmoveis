@@ -167,6 +167,7 @@ function ProductHighlights(props: Props) {
                         src={icon}
                         width={width ?? 58}
                         height={height ?? 58}
+                        alt={`${label}-tag-image`}
                       />
                     )
                     : label
