@@ -278,8 +278,8 @@ function ProductCard(
             `}
             sizes="(max-width: 640px) 50vw, 20vw"
             loading={isEager ? "eager" : "lazy"}
-            fetchPriority= { isEager ? 'high' : '"auto"'}
-          
+            fetchPriority= { isEager ? 'hight' : '"auto"'}
+            decoding="async"
           />
 
           { device === 'desktop' && (
