@@ -32,10 +32,10 @@
           "count": 12,
           "props": {
             "sort": "",
-            "count": 50,
             "similars": true,
             "collection": "137",
-            "hideUnavailableItems": true
+            "hideUnavailableItems": true,
+            "count": 16
           },
           "collection": "135",
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"

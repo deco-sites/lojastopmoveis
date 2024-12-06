@@ -44,7 +44,7 @@
             "similars": false,
             "collection": "139",
             "hideUnavailableItems": true,
-            "count": 60
+            "count": 16
           },
           "collection": "135",
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"

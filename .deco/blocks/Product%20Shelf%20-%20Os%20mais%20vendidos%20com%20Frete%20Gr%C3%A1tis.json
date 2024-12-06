@@ -41,10 +41,10 @@
           "count": 12,
           "props": {
             "sort": "",
-            "count": 55,
             "similars": false,
             "collection": "143",
-            "hideUnavailableItems": true
+            "hideUnavailableItems": true,
+            "count": 16
           },
           "collection": "135",
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"

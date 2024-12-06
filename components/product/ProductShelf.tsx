@@ -17,7 +17,7 @@ import { Tags } from "site/loaders/getTags.ts";
 export interface Props {
   products: LoaderReturnType<Product[] | null>;
   highlights?: HighLight[];
-  title?: string;
+  title?: string;''
   seeMore?: {
     url: string;
     label: string;
@@ -47,9 +47,12 @@ function Dots({ images, interval = 0 }: DotsProps) {
   return (<>
     <ul class={`carousel justify-center col-span-full gap-2 z-10 row-start-4`}>
       {images?.map((_, index) => (
-        <li>
+        <li
+          class={`carousel-item   lg:${ (index % 4 === 0) ? "" : "hidden"
+            }`}
+        >
           <Slider.Dot index={index}>
-            <div class={`py-5 ${((index === 0) || (index % 4 === 0)) ? "" : "lg:hidden"}`}>
+            <div class={`py-5`}>
               <div class="w-4 h-4 group-disabled:opacity-100 opacity-20 rounded-full bg-primary" style={{ animationDuration: `${interval}s` }} />
             </div>
           </Slider.Dot>
@@ -59,7 +62,16 @@ function Dots({ images, interval = 0 }: DotsProps) {
   </>);
 }
 function ProductShelf({ products, title, layout, cardLayout, seeMore, showPaginationArrows, highlights, tags }: Props) {
+  function generateRandomId(prefix = "id", length = 8): string {
+    const randomValue = Math.random().toString(36).substr(2, length); // Gera um string base-36 aleatório
+    return `${prefix}-${randomValue}`;
+  }
+  
+  const customId = generateRandomId();
   const id = useId();
+  
+
+    
   if (!products || products.length === 0) {
     return null;
   }
@@ -75,7 +87,7 @@ function ProductShelf({ products, title, layout, cardLayout, seeMore, showPagina
       ) : null}
     </div>
 
-    <div id={id} class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]">
+    <div id={id+customId} class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]">
       <Slider class="carousel carousel-center lg:carousel-start space-x-4 p-4 md:gap-6 col-span-full max-w-full sm:space-x-0 row-span-full py-2 mb-12">
         {products?.map((product, index) => (<Slider.Item index={index} class="carousel-item !w-[250px]">
           <ProductCard product={product} itemListName={title} layout={cardLayout} highlights={highlights} tags={tags} index={index} />
@@ -110,7 +122,7 @@ function ProductShelf({ products, title, layout, cardLayout, seeMore, showPagina
           })),
         },
       }} />
-      <SliderJS rootId={id} infinite itemsPerPage={layout?.itemsPerPage?.reduce((initial, { screenWidth, itemsQuantity }) => ({
+      <SliderJS rootId={id+customId} infinite itemsPerPage={layout?.itemsPerPage?.reduce((initial, { screenWidth, itemsQuantity }) => ({
         ...initial,
         [screenWidth?.toString() ?? "0"]: itemsQuantity ?? 1,
       }), {})} />

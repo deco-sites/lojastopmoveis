@@ -30,8 +30,8 @@
           "count": 12,
           "props": {
             "sort": "",
-            "count": 55,
-            "collection": "149"
+            "collection": "149",
+            "count": 16
           },
           "collection": "135",
           "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"

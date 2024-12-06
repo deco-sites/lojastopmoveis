@@ -277,8 +277,8 @@ function ProductCard(
             }
             `}
             sizes="(max-width: 640px) 50vw, 20vw"
-            preload={isEager}
-            loading={isEager ? "eager" : "lazy"}
+            loading={"lazy"}
+            fetchPriority="auto"
             decoding="async"
           />
 

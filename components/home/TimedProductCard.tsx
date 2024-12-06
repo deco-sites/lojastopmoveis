@@ -294,6 +294,7 @@ function TimedProductCard(
                         preload={isEager}
                         loading={isEager ? "eager" : "lazy"}
                         decoding="async"
+                        fetchPriority= {isEager ? "high" : "auto"}
                     />
 
                     {device === "desktop" && (
