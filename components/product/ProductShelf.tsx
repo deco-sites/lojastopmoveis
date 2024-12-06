@@ -17,7 +17,7 @@ import { Tags } from "site/loaders/getTags.ts";
 export interface Props {
   products: LoaderReturnType<Product[] | null>;
   highlights?: HighLight[];
-  title?: string;''
+  title?: string;
   seeMore?: {
     url: string;
     label: string;
