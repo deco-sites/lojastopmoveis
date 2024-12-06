@@ -24,7 +24,7 @@ const possibilities = useVariantPossibilities(product);
           <ul class="flex flex-row flex-wrap gap-[10px]">
             <li>
                 <div class="border-2 rounded-[5px] border-[#ED2A24] w-[60px] h-[60px]">
-                    <img class="w-full h-full" src={productImage[0].url} height={60} width={60}/>
+                    <img class="w-full h-full" src={productImage[0].url} height={60} width={60} alt={productImage[0].alt ?? "Thumbnail"} />
                 </div>
             </li>
             {isSimilarTo?.map((similarProduct) => {

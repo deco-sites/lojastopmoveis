@@ -166,6 +166,7 @@ function renderImage({ img, index, aspect, width, height, device }: {
       width={width}
       height={height}
       // Preload LCP image for better web vitals
+      fetchPrioprity={ index === 0 ? "high" : "auto"}
       preload={index === 0}
       loading={index === 0 ? "eager" : "lazy"}
     />
