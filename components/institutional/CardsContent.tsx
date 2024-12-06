@@ -39,7 +39,7 @@ function CardsContent({ cards }: Props) {
             </div>
             <div class="flex flex-col gap-[6px] items-start font-bold text-base-content">
               {card.links.map((link) => (
-                <a href={link.url} class="flex items-center gap-[10px] text-sm">
+                <a href={link.url} alt={`link - ${link.label}`} class="flex items-center gap-[10px] text-sm">
                   <Icon
                     id={link.icon ?? "Phone"}
                     width={18}

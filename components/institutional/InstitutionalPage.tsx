@@ -55,7 +55,7 @@ function InstitutionalPage({ asideMenu: { Component: AsideComponent, props: asid
         <article class="md:pl-[30px] w-full">
           <h3 class="max-md:flex max-md:justify-between text-[#666] text-[19px] lg:text-[28px] font-normal lg:font-medium leading-[130%] lg:leading-[36.4px] mb-5 border-b border-neutral-100 pb-[10px]">
             {title}
-            <a href="/i" class="md:hidden w-[50%] text-xs font-bold flex items-center justify-end">
+            <a href="/i" alt="Voltar" class="md:hidden w-[50%] text-xs font-bold flex items-center justify-end">
               <Icon id="ChevronLeft" size={20}/> voltar
             </a>
           </h3>

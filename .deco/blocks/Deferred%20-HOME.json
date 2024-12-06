@@ -1,0 +1,45 @@
+{
+  "__resolveType": "website/sections/Rendering/Deferred.tsx",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Top-lançamentos"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Product Shelf - Mais Visitados em Guarda Roupas"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Product Shelf - Top Lançamentos de Cozinha"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Banner Grid - Home"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Product Shelf - Exclusivos no Site "
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Product Shelf - Lançamentos na Linha "
+      }
+    }
+  ],
+  "display": true,
+  "behavior": {
+    "type": "scroll"
+  }
+}

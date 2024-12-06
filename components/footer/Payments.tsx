@@ -26,7 +26,7 @@ export default function FooterSectionList({ list, label }: FooterSectionList) {
           item.href
             ? (
               <li class="rounded flex items-center justify-center">
-                <a href={item.href} target="_blank">
+                <a href={item.href} target="_blank" alt={item.alt}>
                   <img
                     loading="lazy"
                     src={item.image}

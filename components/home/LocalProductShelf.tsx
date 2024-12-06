@@ -89,6 +89,7 @@ const LocalProductShelf = ({ products, cardLayout, layout, highlights, dotSlider
                                 layout={cardLayout}
                                 highlights={highlights}
                                 tags={tags}
+                                index={index}
                             />
                         </Slider.Item>
                     ))}

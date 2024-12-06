@@ -209,7 +209,7 @@ function Dots({ images, className, interval = 0 }: DotsProps) {
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
+                  class="w-4 h-4 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
