@@ -166,9 +166,9 @@ export default function FlagCustom(
 
         {textLeft && (
           <p
-            className={` uppercase ${
+            className={` font-bold ${
               type === "ProductDetails" ? "text-xs p-4" : "text-xs"
-            } text-center font-medium font-roboto flex items-center justify-center gap-1 overflow-hidden ${
+            } text-center  font-roboto flex items-center justify-center gap-1 overflow-hidden ${
               textLeft && "w-1/2 h-full"
             }`}
             style={{
@@ -181,7 +181,7 @@ export default function FlagCustom(
         )}
 
         <span
-          className={`text-xs font-bold  flex items-center justify-center font-roboto ${isProducttDetails && textLeft ? 'p-4' : 'px-2'} ${
+          className={` text-xs font-bold  flex items-center justify-center font-roboto ${isProducttDetails && textLeft ? 'p-4' : 'px-2'} ${
             textLeft && "w-1/2 h-full"
           }`}
           style={{
