@@ -163,15 +163,17 @@ function Footer(
               class="max-lg:flex hidden flex-col items-center justify-center relative"
               id="accordion-container--footer"
             >
-              {sections.map((section) => (
+              {sections.map((section, index) => (
                 <div class="collapse collapse-plus w-full rounded-none">
                   <input
-                    aria-labelledby="my-accordion-mobile--footer"
+                      aria-labelledby={`accordion-title-${index}`} 
+                    id={`accordion-checkbox-${index}`}
+                    name={`accordion-mobile-${index}`}
                     type="checkbox"
                     name="my-accordion-mobile--footer"
                     class="absolute left-0 w-full top-0"
                   />
-                  <div class="collapse-title border-b border-primary py-2.5 text-primary font-medium pl-0 flex items-center justify-between pr-0">
+                  <div id={`accordion-title-${index}`} class="collapse-title border-b border-primary py-2.5 text-primary font-medium pl-0 flex items-center justify-between pr-0">
                     {section.label}
                   </div>
                   <div class="collapse-content pl-0">
