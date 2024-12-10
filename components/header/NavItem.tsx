@@ -84,7 +84,7 @@ function NavItemDropDown(
             );
           })}
           {image && (
-            <a href={image.href || ""}>
+            <a href={image.href || ""} alt={image.alt}>
               <img
                 loading="lazy"
                 src={image.src}

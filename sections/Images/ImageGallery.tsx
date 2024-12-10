@@ -9,6 +9,7 @@ import SliderJS from "../../islands/SliderJS.tsx";
 import { useId } from "preact/hooks";
 import Icon from "../../components/ui/Icon.tsx";
 import { AppContext } from "site/apps/site.ts";
+import Image from "apps/website/components/Image.tsx";
 export type ResponsiveConditionals =
   | "Always"
   | "Desktop Only"
@@ -90,7 +91,7 @@ function Dots({ images, className, interval = 0 }: DotsProps) {
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
+                  class="w-4 h-4 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
@@ -174,15 +175,16 @@ export default function ImageGallery(props: Props) {
                     />
                   </Head>
                 )}
-                <img
+                <Image
                   preload={undefined}
-                  loading={"lazy"}
+                  loading="eager"
                   class={`w-full h-full scale-100 ${
                     hoverEffect ? "group-hover:scale-110" : ""
                   } transition-all duration-700`}
                   src={item.image}
                   alt={"imagem de " + item.alt}
                   decoding="async"
+                  fetchPriority= {"high"}
                   width={300}
                   height={300}
                 />

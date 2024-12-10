@@ -8,7 +8,7 @@ interface props {
 
 function CloseButton({ onClickBtn, size, classes }: props) {
   return (
-    <button name="botão fechar" onClick={onClickBtn}>
+    <button aria-label="Fechar" onClick={onClickBtn}>
       <Icon
         id="XMark"
         class={classes}
