@@ -76,6 +76,12 @@ interface Props {
 
   /** @hide true */
   tags?: Tags;
+
+  /** @hide true */
+  index: number;
+
+  /** @hide true */
+  device?: string; 
 }
 
 export const relative = (url: string) => {
@@ -87,7 +93,7 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function ProductCard(
-  { product, preload, itemListName, layout, highlights, class: _class, tags }:
+  { product, itemListName, layout, highlights, class: _class, tags, index, device }:
     Props,
 ) {
   const {
@@ -109,6 +115,15 @@ function ProductCard(
 
   const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
 
+
+  const isDesktop = device === "desktop";
+  const isUndefined = device  === undefined; 
+
+
+
+
+   
+  const isEager = isDesktop ? index < 4 : index < 1;
 
   const clickEvent = {
     name: "select_item" as const,
@@ -267,22 +282,26 @@ function ProductCard(
             }
             `}
             sizes="(max-width: 640px) 50vw, 20vw"
-            preload={preload}
-            loading={preload ? "eager" : "lazy"}
+            loading={isEager ? "eager" : "lazy"}
+            fetchPriority= { isEager ? 'high' : 'auto'}
             decoding="async"
           />
-          {(!l?.onMouseOver?.image ||
-            l?.onMouseOver?.image == "Change image") && (
-            <Image
-              src={back?.url ?? front.url!}
-              alt={back?.alternateName ?? front.alternateName}
-              width={WIDTH}
-              height={HEIGHT}
-              class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
-              sizes="(max-width: 640px) 50vw, 20vw"
-              loading="eager"
-              decoding="async"
-            />
+
+          { (device === 'desktop' || isUndefined) && ( 
+            (!l?.onMouseOver?.image ||
+             l?.onMouseOver?.image == "Change image") && (
+              <Image
+                src={back?.url ?? front.url!}
+                alt={back?.alternateName ?? front.alternateName}
+                width={WIDTH}
+                height={HEIGHT}
+                class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
+                sizes="(max-width: 640px) 50vw, 20vw"
+                loading="lazy"
+                fetchPriority="auto"
+                decoding="async"
+              />
+            )
           )}
 
           {flagCustom && flagCustom.map((flag, idx) =>

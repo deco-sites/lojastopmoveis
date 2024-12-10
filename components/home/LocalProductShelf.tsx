@@ -96,7 +96,7 @@ const LocalProductShelf = ({ products, cardLayout, layout, highlights, dotSlider
 
                 <>
                     <div
-                        class={`flex items-center justify-center z-10 col-start-1 row-start-2`}
+                        class={`flex items-center justify-center z-20  col-start-1 row-start-2`}
                     >
                         <Slider.PrevButton
                             style={{
@@ -112,7 +112,7 @@ const LocalProductShelf = ({ products, cardLayout, layout, highlights, dotSlider
                         </Slider.PrevButton>
                     </div>
                     <div
-                        class={`flex items-center justify-center z-10 col-start-3 row-start-2`}
+                        class={`flex items-center justify-center z-20 col-start-3 row-start-2`}
                     >
                         <Slider.NextButton
                             style={{

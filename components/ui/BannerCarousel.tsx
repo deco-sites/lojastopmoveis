@@ -209,7 +209,7 @@ function Dots({ images, className, interval = 0 }: DotsProps) {
             <Slider.Dot index={index}>
               <div class="py-5">
                 <div
-                  class="w-3 h-3 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
+                  class="w-4 h-4 group-disabled:opacity-100 opacity-20 rounded-full bg-primary"
                   style={{ animationDuration: `${interval}s` }}
                 />
               </div>
@@ -229,7 +229,7 @@ function Buttons({ className }: ButtonsProps) {
   return (
     <>
       <div
-        class={`flex items-center justify-center z-10 col-start-1 row-start-2 ${className}`}
+        class={`flex items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
       >
         <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
@@ -240,7 +240,7 @@ function Buttons({ className }: ButtonsProps) {
         </Slider.PrevButton>
       </div>
       <div
-        class={`flex items-center justify-center z-10 col-start-3 row-start-2 ${className}`}
+        class={`flex items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
       >
         <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
