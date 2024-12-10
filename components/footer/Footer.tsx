@@ -144,8 +144,9 @@ function Footer(
                     </span>
 
                     <ul
-                      class={`flex ${isIcon(section.children[0]) ? "flex-row" : "flex-col"
-                        } gap-1 pt-5 flex-wrap`}
+                      class={`flex ${
+                        isIcon(section.children[0]) ? "flex-row" : "flex-col"
+                      } gap-1 pt-5 flex-wrap`}
                     >
                       {section.children.map((item) => (
                         <li class="leading-normal">
@@ -163,24 +164,22 @@ function Footer(
               id="accordion-container--footer"
             >
               {sections.map((section, index) => (
-                <div className="collapse collapse-plus w-full rounded-none">
+                <div class="collapse collapse-plus w-full rounded-none">
                   <input
-                    id={`accordion-toggle-${index}`}
-                    aria-labelledby={`accordion-label-${index}`}
+                      aria-labelledby={`accordion-title-${index}`} 
+                    id={`accordion-checkbox-${index}`}
+                    name={`accordion-mobile-${index}`}
                     type="checkbox"
-                    name={`accordion-mobile-footer-${index}`}
-                    className="absolute left-0 w-full top-0"
+                    name="my-accordion-mobile--footer"
+                    class="absolute left-0 w-full top-0"
                   />
-                  <div
-                    id={`accordion-label-${index}`}
-                    className="collapse-title border-b border-primary py-2.5 text-primary font-medium pl-0 flex items-center justify-between pr-0"
-                  >
+                  <div id={`accordion-title-${index}`} class="collapse-title border-b border-primary py-2.5 text-primary font-medium pl-0 flex items-center justify-between pr-0">
                     {section.label}
                   </div>
-                  <div className="collapse-content pl-0">
-                    <ul className="pt-5 pb-2">
+                  <div class="collapse-content pl-0">
+                    <ul class="pt-5 pb-2">
                       {section.children.map((item) => (
-                        <li className="leading-normal py-1">
+                        <li class="leading-normal py-1">
                           <SectionItem item={item} />
                         </li>
                       ))}
@@ -202,7 +201,7 @@ function Footer(
                       </span>
                       {item.images.map((image) => (
                         <>
-                          <a href={image.link} alt={image.alt}>
+                          <a href={image.link}>
                             <img
                               loading="lazy"
                               src={image.image}

@@ -1,7 +1,5 @@
-import { useSignal } from "@preact/signals";
 import Slider from "$store/components/ui/Slider.tsx";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
-import { useOffer } from "$store/sdk/useOffer.ts";
 import Image from "apps/website/components/Image.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import ProductHighlights from "$store/components/product/ProductHighlights.tsx";
@@ -17,20 +15,16 @@ interface Props {
   url: string;
 }
 
-const id = "product-zoom";
+
 
 function ProductDetailsImages(
-  { images, width, height, aspect, product, highlights, device, url }: Props,
+  { images, width, height, aspect, product, highlights, device,  }: Props,
 ) {
-  const { offers } = product;
+ 
   const video = product && product.video || [];
   const midia = [...images, ...video];
-  const {
-    price,
-    listPrice,
-  } = useOffer(offers);
-  const zoomX = useSignal(0);
-  const zoomY = useSignal(0);
+
+
   const imagecustom = product.image?.find((i) => i["@type"] === "ImageObject");
   const iconPlayer =
     "https://topmoveis.vtexcommercestable.com.br/arquivos/icon-play-video.png";
@@ -166,6 +160,7 @@ function renderImage({ img, index, aspect, width, height, device }: {
       width={width}
       height={height}
       // Preload LCP image for better web vitals
+      fetchPriority={ index === 0 ? "high" : "auto"}
       preload={index === 0}
       loading={index === 0 ? "eager" : "lazy"}
     />

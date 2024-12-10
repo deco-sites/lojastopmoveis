@@ -108,7 +108,7 @@ function ProductInfo({ page, shareableNetworks, tags }: {
           <span class="text-[#4A4B51] text-sm">
             Vendido e entregue por:
           </span>
-          <span class="text-secondary text-sm !text-[#ed2d26]">
+          <span class=" text-sm !text-[#ed2d26]">
             {vendorName}
           </span>
         </div>
@@ -138,7 +138,7 @@ function ProductInfo({ page, shareableNetworks, tags }: {
               )}
               <div class="flex items-center gap-[10px]">
                 {/* Aqui */}
-                <span class="font-medium text-lg text-secondary !text-[#ed2d2c]">
+                <span class="font-medium text-lg !text-[#ed2d2c]">
                   {formatPrice(forPrice, offers!.priceCurrency!)}
                 </span>
                 {
@@ -150,7 +150,7 @@ function ProductInfo({ page, shareableNetworks, tags }: {
             </div>
             <div class="flex flex-col">
               {/* Aqui */}
-              <span class="text-secondary text-2xl font-bold !text-[#ed2d2c]">
+              <span class="text-2xl font-bold !text-[#ed2d2c]">
                 ou {installment?.billingDuration}x de {formatPrice(
                   installment?.billingIncrement,
                   offers!.priceCurrency,
@@ -159,7 +159,7 @@ function ProductInfo({ page, shareableNetworks, tags }: {
             </div>
             <div class="flex items-center gap-[10px] py-[10px]">
               {/* Aqui */}
-              <span class="font-bold text-2xl text-secondary leading-none !text-[#ed2d2c]">
+              <span class="font-bold text-2xl  leading-none !text-[#ed2d2c]">
                 {formatPrice(price, offers?.priceCurrency)}
               </span>
               {discount && forPrice && (
@@ -257,8 +257,10 @@ function ProductInfo({ page, shareableNetworks, tags }: {
                   target="_blank"
                   rel="noopener noreferrer"
                   class="flex items-center justify-center w-full h-full group-hover:text-white text-primary"
+                  aria-label={`Compartilhar no ${network}`}
                 >
                   <Icon id={network} size={20} />
+                  <span class="sr-only">Compartilhar no {network}</span>
                 </a>
               </li>
             ))}
