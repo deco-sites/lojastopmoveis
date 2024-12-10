@@ -37,6 +37,9 @@ export interface Props {
   /** @hide true */
 
   tags?: Tags;
+
+  /** @hide true */
+  device?: string; 
 }
 interface DotsProps {
   images?: Product[];
@@ -61,7 +64,7 @@ function Dots({ images, interval = 0 }: DotsProps) {
     </ul>
   </>);
 }
-function ProductShelf({ products, title, layout, cardLayout, seeMore, showPaginationArrows, highlights, tags }: Props) {
+function ProductShelf({ products, title, layout, cardLayout, seeMore, showPaginationArrows, highlights, tags, device }: Props) {
   function generateRandomId(prefix = "id", length = 8): string {
     const randomValue = Math.random().toString(36).substr(2, length); // Gera um string base-36 aleatório
     return `${prefix}-${randomValue}`;
@@ -90,19 +93,19 @@ function ProductShelf({ products, title, layout, cardLayout, seeMore, showPagina
     <div id={id+customId} class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]">
       <Slider class="carousel carousel-center lg:carousel-start space-x-4 p-4 md:gap-6 col-span-full max-w-full sm:space-x-0 row-span-full py-2 mb-12">
         {products?.map((product, index) => (<Slider.Item index={index} class="carousel-item !w-[250px]">
-          <ProductCard product={product} itemListName={title} layout={cardLayout} highlights={highlights} tags={tags} />
+          <ProductCard product={product} itemListName={title} layout={cardLayout} highlights={highlights} tags={tags} device={device} index={index} />
         </Slider.Item>))}
       </Slider>
 
       <>
-        <div class={`flex items-center justify-center z-10 col-start-1 row-start-2  ${CONDITIONAL_RESPONSIVE_PARAMS[showPaginationArrows ? showPaginationArrows : "Always"]}`}>
+        <div class={`flex items-center justify-center z-20  col-start-1 row-start-2  ${CONDITIONAL_RESPONSIVE_PARAMS[showPaginationArrows ? showPaginationArrows : "Always"]}`}>
           <Slider.PrevButton style={{
             minHeight: "28px",
           }} class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
             <Icon class="text-primary" size={32} id="LeftArrowBanner" />
           </Slider.PrevButton>
         </div>
-        <div class={`flex items-center justify-center z-10 col-start-3 row-start-2 ${CONDITIONAL_RESPONSIVE_PARAMS[showPaginationArrows ? showPaginationArrows : "Always"]}`}>
+        <div class={`flex items-center justify-center z-20 col-start-3 row-start-2 ${CONDITIONAL_RESPONSIVE_PARAMS[showPaginationArrows ? showPaginationArrows : "Always"]}`}>
           <Slider.NextButton style={{
             minHeight: "28px",
           }} class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
@@ -134,9 +137,11 @@ export default ProductShelf;
 
 export const loader = async (props: Props, _req: Request, ctx: AppContext) => {
   const tags = await ctx.invoke.site.loaders.getTags();
+  const device = ctx.device
 
   return {
     ...props,
     tags: tags,
+    device: device   
   };
 };

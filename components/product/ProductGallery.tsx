@@ -13,9 +13,12 @@ export interface Props {
   highlights?: HighLight[];
   /** @hide true */
   tags?: Tags;
+
+  /** @hide true */
+  device?: string;
 }
 
-function ProductGallery({ products, highlights, tags }: Props) {
+function ProductGallery({ products, highlights, tags, device }: Props) {
   return (
     <div class="grid grid-cols-2 gap-2 items-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-[30px]">
       {products?.map((product, index) => (
@@ -24,6 +27,7 @@ function ProductGallery({ products, highlights, tags }: Props) {
           tags={tags}
           preload={index === 0}
           index={index}
+          device={device}
           highlights={highlights}
           layout={{
             discount: { label: "OFF", variant: "secondary" },

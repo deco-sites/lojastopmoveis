@@ -17,7 +17,7 @@ import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import { Tags } from "site/loaders/getTags.ts";
 import FlagCustom from "site/components/product/Flags/FlagCustom.tsx";
 import { isFlag } from "site/components/product/Flags/utils/useFlag.ts";
-import { useDevice } from "@deco/deco/hooks";
+
 
 export interface Layout {
   basics?: {
@@ -79,7 +79,10 @@ interface Props {
   tags?: Tags;
 
   /** @hide true */
-  index?: number;
+  index: number;
+
+  /** @hide true */
+  device?: string; 
 }
 
 export const relative = (url: string) => {
@@ -91,7 +94,7 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function ProductCard(
-  { product, preload, itemListName, layout, highlights, class: _class, tags, index }:
+  { product, itemListName, layout, highlights, class: _class, tags, index, device }:
     Props,
 ) {
   const {
@@ -113,8 +116,11 @@ function ProductCard(
 
   const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
 
-  const device = useDevice();
+
   const isDesktop = device === "desktop";
+  const isUndefined = device  === undefined; 
+
+
 
 
    
@@ -278,11 +284,11 @@ function ProductCard(
             `}
             sizes="(max-width: 640px) 50vw, 20vw"
             loading={isEager ? "eager" : "lazy"}
-            fetchPriority= { isEager ? 'hight' : '"auto"'}
+            fetchPriority= { isEager ? 'high' : 'auto'}
             decoding="async"
           />
 
-          { device === 'desktop' && (
+          { (device === 'desktop' || isUndefined) && ( 
             (!l?.onMouseOver?.image ||
              l?.onMouseOver?.image == "Change image") && (
               <Image

@@ -253,6 +253,7 @@ function Searchbar({
                             product={product}
                             layout={cardLayout}
                             class={"lg:!p-0 lg:!pb-5"}
+                            index={index}
                           />
                         </Slider.Item>
                       ))}
