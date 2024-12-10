@@ -140,11 +140,11 @@
           "textLeftBackgroundColor": "#d402cd",
           "flagPosition": "inferior",
           "isFull": true,
-          "textRight": "OFERTA",
-          "textLeft": "CYBER"
+          "textLeft": "TOP",
+          "textRight": "OFERTA"
         }
       },
-      "name": "Cyber Oferta",
+      "name": "Oferta Top",
       "dateFrom": "2024-11-08",
       "dateTo": "2024-12-15",
       "showFlag": true
