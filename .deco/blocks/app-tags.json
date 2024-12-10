@@ -135,9 +135,9 @@
         "optionsFormat": {
           "optionBorderRadius": "completo",
           "textRightColor": "#fafafa",
-          "textRightBackgroundColor": "#d402cd",
+          "textRightBackgroundColor": "#fa0505",
           "textLeftColor": "#fafafa",
-          "textLeftBackgroundColor": "#d402cd",
+          "textLeftBackgroundColor": "#fa0505",
           "flagPosition": "inferior",
           "isFull": true,
           "textLeft": "TOP",
