@@ -257,10 +257,8 @@ function ProductInfo({ page, shareableNetworks, tags }: {
                   target="_blank"
                   rel="noopener noreferrer"
                   class="flex items-center justify-center w-full h-full group-hover:text-white text-primary"
-                  aria-label={`Compartilhar no ${network}`}
                 >
                   <Icon id={network} size={20} />
-                  <span class="sr-only">Compartilhar no {network}</span>
                 </a>
               </li>
             ))}

@@ -60,10 +60,7 @@
             "__resolveType": "Default - Product Details"
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Produtos relacionados - ProductShelf"
-            }
+            "__resolveType": "Produtos relacionados - ProductShelf"
           },
           {
             "__resolveType": "Footer Global"

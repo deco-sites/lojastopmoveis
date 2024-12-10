@@ -47,6 +47,23 @@ type Props = {
   listPrice?: number;
 };
 
+const GRID_ROWS: Record<number, string> = {
+  1: "grid-rows-1",
+  2: "grid-rows-2",
+  3: "grid-rows-3",
+  4: "grid-rows-4",
+  5: "grid-rows-5",
+  6: "grid-rows-6",
+};
+
+const GRID_COLUMNS: Record<number, string> = {
+  1: "grid-cols-1",
+  2: "grid-cols-2",
+  3: "grid-cols-3",
+  4: "grid-cols-4",
+  5: "grid-cols-5",
+  6: "grid-cols-6",
+};
 
 export const GRID_COL_START: Record<number, string> = {
   1: "col-start-1",
@@ -150,7 +167,6 @@ function ProductHighlights(props: Props) {
                         src={icon}
                         width={width ?? 58}
                         height={height ?? 58}
-                        alt={label ?? "tag promotion"}
                       />
                     )
                     : label
