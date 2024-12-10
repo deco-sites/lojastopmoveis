@@ -23,7 +23,6 @@ function ProductGallery({ products, highlights, tags }: Props) {
           product={product}
           tags={tags}
           preload={index === 0}
-          index={index}
           highlights={highlights}
           layout={{
             discount: { label: "OFF", variant: "secondary" },

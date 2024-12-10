@@ -6,11 +6,6 @@ const SORT_QUERY_PARAM = "sort";
 
 const useSort = () =>
   useMemo(() => {
-    
-    if (typeof window === "undefined") {
-      return ""; // Retorne um valor padrão durante o SSR
-    }
-
     const urlSearchParams = new URLSearchParams(
       globalThis.window.location?.search,
     );
@@ -20,7 +15,7 @@ const useSort = () =>
 // TODO: Replace with "search utils"
 const applySort = (searchParam: string) => {
   const urlSearchParams = new URLSearchParams(
-    globalThis.window.location?.search,
+    globalThis.window.location.search,
   );
 
   urlSearchParams.set(SORT_QUERY_PARAM, searchParam);

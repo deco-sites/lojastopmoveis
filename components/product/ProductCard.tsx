@@ -17,7 +17,6 @@ import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import { Tags } from "site/loaders/getTags.ts";
 import FlagCustom from "site/components/product/Flags/FlagCustom.tsx";
 import { isFlag } from "site/components/product/Flags/utils/useFlag.ts";
-import { useDevice } from "@deco/deco/hooks";
 
 export interface Layout {
   basics?: {
@@ -77,9 +76,6 @@ interface Props {
 
   /** @hide true */
   tags?: Tags;
-
-  /** @hide true */
-  index?: number;
 }
 
 export const relative = (url: string) => {
@@ -91,7 +87,7 @@ const WIDTH = 279;
 const HEIGHT = 270;
 
 function ProductCard(
-  { product, preload, itemListName, layout, highlights, class: _class, tags, index }:
+  { product, preload, itemListName, layout, highlights, class: _class, tags }:
     Props,
 ) {
   const {
@@ -113,12 +109,6 @@ function ProductCard(
 
   const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
 
-  const device = useDevice();
-  const isDesktop = device === "desktop";
-
-
-   
-  const isEager = isDesktop ? index < 4 : index < 1;
 
   const clickEvent = {
     name: "select_item" as const,
@@ -277,26 +267,22 @@ function ProductCard(
             }
             `}
             sizes="(max-width: 640px) 50vw, 20vw"
-            loading={isEager ? "eager" : "lazy"}
-            fetchPriority= { isEager ? 'hight' : '"auto"'}
+            preload={preload}
+            loading={preload ? "eager" : "lazy"}
             decoding="async"
           />
-
-          { device === 'desktop' && (
-            (!l?.onMouseOver?.image ||
-             l?.onMouseOver?.image == "Change image") && (
-              <Image
-                src={back?.url ?? front.url!}
-                alt={back?.alternateName ?? front.alternateName}
-                width={WIDTH}
-                height={HEIGHT}
-                class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
-                sizes="(max-width: 640px) 50vw, 20vw"
-                loading="lazy"
-                fetchPriority="auto"
-                decoding="async"
-              />
-            )
+          {(!l?.onMouseOver?.image ||
+            l?.onMouseOver?.image == "Change image") && (
+            <Image
+              src={back?.url ?? front.url!}
+              alt={back?.alternateName ?? front.alternateName}
+              width={WIDTH}
+              height={HEIGHT}
+              class="absolute transition-opacity rounded-lg w-full opacity-0 lg:group-hover:opacity-100"
+              sizes="(max-width: 640px) 50vw, 20vw"
+              loading="eager"
+              decoding="async"
+            />
           )}
 
           {flagCustom && flagCustom.map((flag, idx) =>
@@ -438,4 +424,5 @@ function ProductCard(
     </div>
   );
 }
+
 export default ProductCard;
