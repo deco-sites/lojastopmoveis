@@ -658,18 +658,18 @@
                       }
                     },
                     {
-                      "alt": "Sala de Estar e Jantar",
+                      "alt": "Dormitório Adulto",
                       "action": {
-                        "href": "https://www.lojastopmoveis.com.br/busca?q=aiwa",
+                        "href": "https://www.lojastopmoveis.com.br/moveis/quarto-adulto",
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8ddd9ef9-592e-4f25-9144-4144cd0cfcf6/BANNER-BLACK-TOP---1080x1350PX.png",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/de63b2a6-7234-4c1c-9b42-a9d0476e4ff3/banner_categoria_roupeiros_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/f1303174-2a6f-4830-9eee-d7b4cfdb5a25/BANNER---BLACK-TOP.png",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/cd7ef160-99f8-4693-b34a-97746e5e5508/banner_categoria_roupeiros_desktop.webp",
                         "width": 1920,
                         "height": 600
                       }
