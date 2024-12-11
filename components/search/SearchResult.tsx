@@ -35,8 +35,11 @@ export interface Props {
     /** @hide true */
 
     tags?: Tags; 
+
+    /** @hide true */
+    device?: string;
 }
-function Result({ page, variant, highlights, tags }: Omit<Omit<Props, "page">, "notFoundSection"> & {
+function Result({ page, variant, highlights, tags, device }: Omit<Omit<Props, "page">, "notFoundSection"> & {
     page: ProductListingPage;
 }) {
     const { products, filters, breadcrumb, pageInfo, sortOptions } = page;
@@ -68,7 +71,7 @@ function Result({ page, variant, highlights, tags }: Omit<Omit<Props, "page">, "
               {productsFound}
             </div>
             <div class="flex-grow">
-              <ProductGallery products={products} highlights={highlights} tags={tags}/>
+              <ProductGallery products={products} highlights={highlights} tags={tags} device={device}/>
               <SearchPagination pageInfo={pageInfo}/>
             </div>
           </div>
@@ -99,9 +102,11 @@ export default SearchResult;
 
 export const loader = async (props: Props, _req: Request, ctx: AppContext) => {
   const tags = await ctx.invoke.site.loaders.getTags();
+  const device = ctx.device;
   return {
     ...props,
     tags: tags,
+    device: device,
   };
 };
 

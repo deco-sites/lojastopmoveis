@@ -1,0 +1,102 @@
+{
+  "__resolveType": "site/sections/Container.tsx",
+  "sections": [
+    {
+      "label": "ProductShelf",
+      "shadow": "none",
+      "section": {
+        "title": "Top Lançamentos com Envio Imediato! Aproveite! ",
+        "layout": {
+          "itemsPerPage": [
+            {
+              "screenWidth": 425,
+              "itemsQuantity": 1
+            },
+            {
+              "screenWidth": 700,
+              "itemsQuantity": 4
+            },
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {},
+            {}
+          ],
+          "headerfontSize": "Normal",
+          "headerAlignment": "center"
+        },
+        "seeMore": {
+          "url": " ",
+          "label": " "
+        },
+        "products": {
+          "sort": "orders:desc",
+          "count": 12,
+          "props": {
+            "sort": "",
+            "similars": false,
+            "collection": "139",
+            "hideUnavailableItems": true,
+            "count": 16
+          },
+          "collection": "135",
+          "__resolveType": "vtex/loaders/intelligentSearch/productList.ts"
+        },
+        "cardLayout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "basics": {
+            "ctaMode": "Add to Cart",
+            "ctaText": "Adicionar ao carrinho",
+            "ctaVariation": "secondary",
+            "oldPriceSize": "Normal",
+            "mobileCtaText": "Adicionar ao carrinho",
+            "contentAlignment": "Left"
+          },
+          "discount": {
+            "label": " ",
+            "variant": "emphasis"
+          },
+          "onMouseOver": {
+            "image": "Change image",
+            "showCta": true,
+            "showCardShadow": true,
+            "showFavoriteIcon": false
+          },
+          "elementsPositions": {}
+        },
+        "highlights": [
+          {
+            "label": "Frete Grátis*",
+            "collectionId": "144",
+            "alignHorizontal": "end",
+            "height": 16
+          },
+          {
+            "alignHorizontal": "end",
+            "collectionId": "155",
+            "width": 137,
+            "height": 25,
+            "css": "align-self: end; padding-bottom: 0;",
+            "rowStart": 5,
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+            "backgorundColor": "transparent"
+          }
+        ],
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "showPaginationArrows": "Always"
+      },
+      "withContainer": true,
+      "verticalSpacing": "none"
+    }
+  ]
+}
