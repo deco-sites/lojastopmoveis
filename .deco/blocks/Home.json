@@ -707,6 +707,23 @@
                         "href": "https://www.lojastopmoveis.com.br/busca?q=aiwa"
                       },
                       "alt": "Top Ofertas Aiwa"
+                    },
+                    {
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/148c97ba-ef3e-456d-bc66-0f7181de9f00/BANNER-SITE---PHILIPS.png",
+                        "width": 1920,
+                        "height": 599
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/296640f4-79d7-4b88-a8b3-8b8efecdf1c9/BANNER-MOBILE---PHILIPS.png",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "action": {
+                        "variant": "primary",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=philips"
+                      },
+                      "alt": "Hora da Virada Top e Philips"
                     }
                   ],
                   "preload": true,
