@@ -727,23 +727,6 @@
                     },
                     {
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3beb1ec7-f85d-475f-afe8-f2c04b0cb891/BANNER-SITE---AOC.png",
-                        "width": 1920,
-                        "height": 599
-                      },
-                      "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/35867a94-c3a9-41bc-8362-7f81243886c6/BANNER-MOBILE---AOC.png",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "action": {
-                        "variant": "primary",
-                        "href": "https://www.lojastopmoveis.com.br/eletronicos?filter.category-1=eletronicos&filter.brand=aoc&page=1"
-                      },
-                      "alt": "Hora da Virada Top e AOC"
-                    },
-                    {
-                      "desktop": {
                         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3b404969-6a95-48bf-acd6-c3e4b8858fb0/banner_top_lancamentos_desktop.webp",
                         "width": 1920,
                         "height": 599
@@ -758,6 +741,23 @@
                         "href": "/novidadesnatop"
                       },
                       "alt": "Últimos Lançamentos "
+                    },
+                    {
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3beb1ec7-f85d-475f-afe8-f2c04b0cb891/BANNER-SITE---AOC.png",
+                        "width": 1920,
+                        "height": 599
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/35867a94-c3a9-41bc-8362-7f81243886c6/BANNER-MOBILE---AOC.png",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "action": {
+                        "variant": "primary",
+                        "href": "https://www.lojastopmoveis.com.br/eletronicos?filter.category-1=eletronicos&filter.brand=aoc&page=1"
+                      },
+                      "alt": "Hora da Virada Top e AOC"
                     }
                   ],
                   "preload": true,
