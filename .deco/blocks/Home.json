@@ -7,7 +7,7 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2024-12-31T03:00:00.000Z"
+          "end": "2025-01-07T15:00:00.000Z"
         },
         "value": [
           {
@@ -831,7 +831,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-12-17",
+              "countdownTimerDate": "2024-12-18",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ed2d26",
               "countdownTextColor": "#ffffff",
