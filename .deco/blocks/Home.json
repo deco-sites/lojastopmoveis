@@ -1063,9 +1063,15 @@
                     ],
                     "itemPerPageDesktop": 6,
                     "itemPerPageMobile": 2,
-                    "showPaginationArrows": "Always",
+                    "showPaginationArrows": "Desktop Only",
                     "showPaginationDots": "Never",
-                    "hoverEffect": true
+                    "hoverEffect": true,
+                    "title": "Compre por marca",
+                    "layout": {
+                      "color": "primary",
+                      "headerAlignment": "center",
+                      "headerfontSize": "Normal"
+                    }
                   },
                   "shadow": "none",
                   "verticalSpacing": "top",
