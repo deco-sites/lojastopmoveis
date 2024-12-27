@@ -10,6 +10,8 @@ import { useId } from "preact/hooks";
 import Icon from "../../components/ui/Icon.tsx";
 import { AppContext } from "site/apps/site.ts";
 import Image from "apps/website/components/Image.tsx";
+import Header from "$store/components/ui/SectionHeader.tsx";
+
 export type ResponsiveConditionals =
   | "Always"
   | "Desktop Only"
@@ -38,6 +40,7 @@ export interface ImageGalleryItem {
   preload?: boolean;
 }
 export interface Props {
+  title?: string;
   /** @description Banners */
   images: ImageGalleryItem[];
   /** @description Items per page Desktop */
@@ -57,6 +60,16 @@ export interface Props {
    * @default Always
    */
   showPaginationDots?: ResponsiveConditionals;
+
+  layout?: {
+    headerAlignment?: "center" | "left";
+    headerfontSize?: "Normal" | "Large";
+    color?: "primary" | "secondary";
+    itemsPerPage?: {
+      screenWidth?: number;
+      itemsQuantity?: number;
+    }[];
+  };
 }
 interface DotsProps {
   images?: ImageGalleryItem[];
@@ -136,7 +149,9 @@ function Buttons({ className }: ButtonsProps) {
 
 export default function BrandGallery(props: Props) {
   const {
+    title,
     images,
+    layout,
     itemPerPageMobile = 2,
     itemPerPageDesktop = 3,
     hoverEffect, showPaginationArrows,
@@ -152,6 +167,9 @@ export default function BrandGallery(props: Props) {
       id={id}
       class={`grid grid-cols-[48px_1fr_48px] pb-8`}
     >
+      <div class="flex items-center justify-between relative pb-3">
+        <Header title={title || ""} description="" fontSize={layout?.headerfontSize || "Large"} alignment={layout?.headerAlignment || "center"} color={layout?.color || "primary"} />
+      </div>
       <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/5] justify-evenly">
         {images.map((item, index) => (
           <Slider.Item
