@@ -1020,6 +1020,62 @@
             ]
           },
           {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Container.tsx",
+              "sections": [
+                {
+                  "section": {
+                    "__resolveType": "site/sections/Images/BrandGallery.tsx",
+                    "images": [
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/091b34c1-7d6e-41ac-a715-fd8c24d122db/Property-1",
+                        "alt": "madesa"
+                      },
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/12463e3f-cc84-4deb-bf62-6e93217db0c8/marca-2.png",
+                        "alt": "esmaltec"
+                      },
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/c9c1ce19-298e-49af-998c-98f85435f767/marca-3.png",
+                        "alt": "kappersberg"
+                      },
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/4205b9f4-4506-4e18-abc1-3d4f39ccffa4/marca-4.png",
+                        "alt": "midea"
+                      },
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/bbcd9ced-570f-448d-bd36-ba560818f841/marca-5.png",
+                        "alt": "ortobom"
+                      },
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/6491668b-0028-4547-80e0-718f090e2791/marca-6.png",
+                        "alt": "mondial"
+                      },
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/c7f6236f-5989-42ca-adab-7e5c7ecd9cf9/marca-7.png",
+                        "alt": "notavel"
+                      },
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/cf7f89e6-febc-4a08-ab70-f0aa479a6727/marca-8.png",
+                        "alt": "arno"
+                      }
+                    ],
+                    "itemPerPageDesktop": 6,
+                    "itemPerPageMobile": 2,
+                    "showPaginationArrows": "Always",
+                    "showPaginationDots": "Never",
+                    "hoverEffect": true
+                  },
+                  "shadow": "none",
+                  "verticalSpacing": "top",
+                  "label": "BrandGallery",
+                  "withContainer": true
+                }
+              ]
+            }
+          },
+          {
             "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
@@ -1191,12 +1247,12 @@
                     },
                     {
                       "alignHorizontal": "end",
-                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
+                      "collectionId": "155",
+                      "label": "Direto de Fábrica",
                       "width": 137,
                       "height": 25,
-                      "label": "Direto de Fábrica",
-                      "collectionId": "155",
                       "backgorundColor": "transparent",
+                      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
                       "rowStart": 5,
                       "css": "align-self: end; padding-bottom: 0;"
                     }
@@ -1209,7 +1265,6 @@
             ]
           },
           {
-            "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
                 "label": "ProductShelf",
@@ -1295,7 +1350,8 @@
                 "withContainer": true,
                 "verticalSpacing": "none"
               }
-            ]
+            ],
+            "__resolveType": "site/sections/Container.tsx"
           },
           {
             "sections": [
@@ -1382,6 +1438,7 @@
             "__resolveType": "site/sections/Container.tsx"
           },
           {
+            "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
                 "label": "ProductShelf",
@@ -1453,21 +1510,21 @@
                   "highlights": [
                     {
                       "label": "Frete Grátis*",
-                      "minPrice": 0,
                       "collectionId": "144",
                       "alignHorizontal": "end",
-                      "height": 16
+                      "height": 16,
+                      "minPrice": 0
                     },
                     {
                       "alignHorizontal": "end",
                       "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
-                      "width": 137,
+                      "label": "Direto de Fábrica",
                       "height": 25,
+                      "width": 137,
                       "backgorundColor": "transparent",
                       "collectionId": "155",
-                      "label": "Direto de Fábrica",
-                      "css": "align-self: end; padding-bottom: 0;",
-                      "rowStart": 5
+                      "rowStart": 5,
+                      "css": "align-self: end; padding-bottom: 0;"
                     }
                   ],
                   "showPaginationArrows": "Always"
@@ -1475,8 +1532,7 @@
                 "withContainer": true,
                 "verticalSpacing": "none"
               }
-            ],
-            "__resolveType": "site/sections/Container.tsx"
+            ]
           },
           {
             "__resolveType": "site/sections/Container.tsx",
