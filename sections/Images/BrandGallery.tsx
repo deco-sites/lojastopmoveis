@@ -162,7 +162,7 @@ export default function BrandGallery(props: Props) {
             <a
               target={item.blank ? "_self" : "_blank"}
               href={item.href}
-              class="relative overflow-hidden rounded-xl w-[80%] max-w-[70px] lg:max-w-[120px] lg:w-full m-auto group flex flex-col-reverse items-center"
+              class="relative overflow-hidden cursor-pointer rounded-xl w-[80%] max-w-[70px] lg:max-w-[120px] lg:w-full m-auto group flex flex-col-reverse items-center"
             >
               {item.title && (
                 <span class=" text-primary bottom-0 mb-[30px] px-10 py-[17px] left-1/2 z-30 max-sm:text-[12px] text-[19px] lg:text-[19px] font-bold whitespace-nowrap">
