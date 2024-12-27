@@ -109,7 +109,7 @@ function Buttons({ className }: ButtonsProps) {
   return (
     <>
       <div
-        class={`flex items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
+        class={`lg:flex hidden items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
       >
         <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
@@ -120,7 +120,7 @@ function Buttons({ className }: ButtonsProps) {
         </Slider.PrevButton>
       </div>
       <div
-        class={`flex items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
+        class={`lg:flex hidden items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
       >
         <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
@@ -150,19 +150,19 @@ export default function BrandGallery(props: Props) {
   return (
     <section
       id={id}
-      class={`grid grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] grid-rows-[1fr_48px_1fr_64px]`}
+      class={`grid grid-cols-[48px_1fr_48px] pb-8`}
     >
-      <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/5]">
+      <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/5] justify-evenly">
         {images.map((item, index) => (
           <Slider.Item
             index={index}
-            class={`carousel-item lg:flex lg:justify-center !w-1/2	 ${MOBILE_COLUMNS[itemPerPageMobile ?? 2]
+            class={`carousel-item lg:flex lg:justify-center	lg:max-w-[120px] ${MOBILE_COLUMNS[itemPerPageMobile ?? 2]
               } ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
           >
             <a
               target={item.blank ? "_self" : "_blank"}
               href={item.href}
-              class="relative overflow-hidden rounded-xl w-[80%] lg:w-full m-auto group flex flex-col-reverse items-center"
+              class="relative overflow-hidden rounded-xl w-[80%] max-w-[70px] lg:max-w-[120px] lg:w-full m-auto group flex flex-col-reverse items-center"
             >
               {item.title && (
                 <span class=" text-primary bottom-0 mb-[30px] px-10 py-[17px] left-1/2 z-30 max-sm:text-[12px] text-[19px] lg:text-[19px] font-bold whitespace-nowrap">

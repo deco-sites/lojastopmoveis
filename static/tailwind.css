@@ -5135,6 +5135,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[522px\] {
   max-width: 522px;
 }
+.max-w-\[70px\] {
+  max-width: 70px;
+}
 .max-w-\[80\%\] {
   max-width: 80%;
 }
@@ -8868,6 +8871,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:min-w-\[24vw\] {
     min-width: 24vw;
+  }
+
+  .lg\:max-w-\[120px\] {
+    max-width: 120px;
   }
 
   .lg\:max-w-\[20\%\] {
