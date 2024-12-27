@@ -164,70 +164,71 @@ export default function BrandGallery(props: Props) {
 
   return (
     <section
-      id={id}
-      class={`grid grid-cols-[48px_1fr_48px] pb-8`}
+      class={`w-full pb-8 flex flex-col lg:gap-7 lg:pb-10`}
     >
       <div class="flex items-center justify-between relative pb-3">
         <Header title={title || ""} description="" fontSize={layout?.headerfontSize || "Large"} alignment={layout?.headerAlignment || "center"} color={layout?.color || "primary"} />
       </div>
-      <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/5] justify-evenly">
-        {images.map((item, index) => (
-          <Slider.Item
-            index={index}
-            class={`carousel-item lg:flex lg:justify-center	lg:max-w-[120px] ${MOBILE_COLUMNS[itemPerPageMobile ?? 2]
-              } ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
-          >
-            <a
-              target={item.blank ? "_self" : "_blank"}
-              href={item.href}
-              class="relative overflow-hidden cursor-pointer rounded-xl w-[80%] max-w-[70px] lg:max-w-[120px] lg:w-full m-auto group flex flex-col-reverse items-center"
+      <div id={id} class="grid grid-cols-[48px_1fr_48px] pb-8">
+        <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/5] justify-evenly">
+          {images.map((item, index) => (
+            <Slider.Item
+              index={index}
+              class={`carousel-item lg:flex lg:justify-center	lg:max-w-[120px] ${MOBILE_COLUMNS[itemPerPageMobile ?? 2]
+                } ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
             >
-              {item.title && (
-                <span class=" text-primary bottom-0 mb-[30px] px-10 py-[17px] left-1/2 z-30 max-sm:text-[12px] text-[19px] lg:text-[19px] font-bold whitespace-nowrap">
-                  {item.title}
-                </span>
-              )}
-              {item.preload && (
-                <Head>
-                  <link
-                    as="image"
-                    rel="preload"
-                    href={item.image}
-                  />
-                </Head>
-              )}
-              <img
-                preload={undefined}
-                loading={"lazy"}
-                class={`w-full h-full scale-100 ${hoverEffect ? "group-hover:scale-110" : ""
-                  } transition-all duration-700`}
-                src={item.image}
-                alt={"imagem de " + item.alt}
-                decoding="async"
-                width={300}
-                height={300}
-              />
-            </a>
-          </Slider.Item>
-        ))}
-      </Slider>
-      <Buttons
-        className={CONDITIONAL_RESPONSIVE_PARAMS[
-          showPaginationArrows ? showPaginationArrows : "Always"
-        ]}
-      />
-      <Dots
-        images={images}
-        interval={interval}
-        className={CONDITIONAL_RESPONSIVE_PARAMS[
-          showPaginationDots ? showPaginationDots : "Always"
-        ]}
-      />
-      <SliderJS
-        rootId={id}
-        interval={interval && interval * 1e3}
-        infinite
-      />
+              <a
+                target={item.blank ? "_self" : "_blank"}
+                href={item.href}
+                class="relative overflow-hidden cursor-pointer rounded-xl w-[80%] max-w-[70px] lg:max-w-[120px] lg:w-full m-auto group flex flex-col-reverse items-center"
+              >
+                {item.title && (
+                  <span class=" text-primary bottom-0 mb-[30px] px-10 py-[17px] left-1/2 z-30 max-sm:text-[12px] text-[19px] lg:text-[19px] font-bold whitespace-nowrap">
+                    {item.title}
+                  </span>
+                )}
+                {item.preload && (
+                  <Head>
+                    <link
+                      as="image"
+                      rel="preload"
+                      href={item.image}
+                    />
+                  </Head>
+                )}
+                <img
+                  preload={undefined}
+                  loading={"lazy"}
+                  class={`w-full h-full scale-100 ${hoverEffect ? "group-hover:scale-110" : ""
+                    } transition-all duration-700`}
+                  src={item.image}
+                  alt={"imagem de " + item.alt}
+                  decoding="async"
+                  width={300}
+                  height={300}
+                />
+              </a>
+            </Slider.Item>
+          ))}
+        </Slider>
+        <Buttons
+          className={CONDITIONAL_RESPONSIVE_PARAMS[
+            showPaginationArrows ? showPaginationArrows : "Always"
+          ]}
+        />
+        <Dots
+          images={images}
+          interval={interval}
+          className={CONDITIONAL_RESPONSIVE_PARAMS[
+            showPaginationDots ? showPaginationDots : "Always"
+          ]}
+        />
+        <SliderJS
+          rootId={id}
+          interval={interval && interval * 1e3}
+          infinite
+        />
+      </div>
     </section>
   );
 }
