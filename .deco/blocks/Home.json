@@ -1485,7 +1485,7 @@
                 "label": "ProductShelf",
                 "shadow": "none",
                 "section": {
-                  "title": "Lançamentos na Linha Infantil! Tem na Top!",
+                  "title": "Lançamentos na Linha Infantil e Teen! Tem na Top!",
                   "__resolveType": "site/sections/Product/ProductShelf.tsx",
                   "layout": {
                     "itemsPerPage": [
