@@ -169,8 +169,8 @@ export default function BrandGallery(props: Props) {
       <div class="flex items-center justify-between relative pb-3">
         <Header title={title || ""} description="" fontSize={layout?.headerfontSize || "Large"} alignment={layout?.headerAlignment || "center"} color={layout?.color || "primary"} />
       </div>
-      <div id={id} class="grid grid-cols-[48px_1fr_48px] pb-8">
-        <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/5] justify-evenly">
+      <div id={id} class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] pb-8">
+        <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/4] justify-evenly">
           {images.map((item, index) => (
             <Slider.Item
               index={index}
