@@ -7,7 +7,7 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-01-07T15:00:00.000Z"
+          "end": "2025-01-31T15:00:00.000Z"
         },
         "value": [
           {
@@ -610,15 +610,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/horadaviradatop"
+                        "href": "/maiorsaldaotop"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/ad2c1acb-4fa2-4459-8dd2-10378c187801/CAMPANHA---FIM-DE-ANO---BANNER-MOBILE-(1080x1350)-copiar-(1).webp",
+                        "image": "https://data.decoassets.com/lojastopmoveis/88713add-8fa4-4beb-af61-a41b7d443616/BANNER-MOBILE-1080x1350px.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8969af65-6eac-4f36-b82d-adb29b0dfdeb/CAMPANHA---FIM-DE-ANO-(BANNER-SITE)-copiar-(1).webp",
+                        "image": "https://data.decoassets.com/lojastopmoveis/49e1f905-4ac9-4bc3-a12b-9392b7e53f64/BANNER-SITE-01-1920x700px.webp",
                         "width": 1920,
                         "height": 599
                       }
@@ -675,38 +675,21 @@
                       }
                     },
                     {
-                      "alt": "Top Ofertas Aiwa",
+                      "alt": "Seleção de Cozinhas e Kits",
                       "action": {
-                        "href": "https://www.lojastopmoveis.com.br/busca?q=aiwa",
+                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha",
                         "variant": "primary"
-                      },
-                      "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/75599c03-07bb-4fe6-a219-4b4b07ac7937/CAMPANHA---FIM-DE-ANO-(BANNER-MOBILE)---AIWA.png",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "desktop": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/c6be97eb-635e-48a6-bce7-eca709f052eb/CAMPANHA---FIM-DE-ANO-(BANNER-SITE)---AIWA-(1).png",
-                        "width": 1920,
-                        "height": 599
-                      }
-                    },
-                    {
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
-                        "width": 1920,
-                        "height": 600
                       },
                       "mobile": {
                         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/6f95daab-994b-4198-b125-1145d9749e80/banner_categoria_cozinha_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
-                      "action": {
-                        "variant": "primary",
-                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha"
-                      },
-                      "alt": "Seleção de Cozinhas e Kits"
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
+                        "width": 1920,
+                        "height": 600
+                      }
                     },
                     {
                       "desktop": {
@@ -844,11 +827,11 @@
                 }
               },
               "frameColor": "#000000",
-              "titleFrame": "A Hora da Virada Chegou! Ofertas Imperdíveis! ",
+              "titleFrame": "O Maior Saldão da História da Top Começou!  ",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2024-12-31",
+              "countdownTimerDate": "2025-01-10",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ed2d26",
               "countdownTextColor": "#ffffff",
@@ -1547,7 +1530,7 @@
                 "label": "ProductShelf",
                 "shadow": "none",
                 "section": {
-                  "title": "Lançamentos na Linha Infantil! Tem na Top!",
+                  "title": "Lançamentos na Linha Infantil e Teen! Tem na Top!",
                   "__resolveType": "site/sections/Product/ProductShelf.tsx",
                   "layout": {
                     "itemsPerPage": [
@@ -1668,9 +1651,9 @@
                   "images": [
                     {
                       "alt": "Banner 1",
-                      "href": "https://www.lojastopmoveis.com.br/parceriapremiummadesa",
+                      "href": "https://www.facebook.com/photo/?fbid=1002843431886646&set=pb.100064829944945.-2207520000",
                       "preload": true,
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/728ba67f-b0ef-4e57-ba9e-8c4fc2d712be/Screenshot_49.jpg"
+                      "image": "https://data.decoassets.com/lojastopmoveis/90328a9f-2964-4711-aea8-aa9a5ef96fd3/BANNER-MOBILE-MUCAO-02-1080x1350px.webp"
                     },
                     {
                       "alt": "Banner 2",
@@ -3555,7 +3538,7 @@
                         "alt": "Banner 1",
                         "href": "https://www.lojastopmoveis.com.br/parceriapremiummadesa",
                         "preload": true,
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/728ba67f-b0ef-4e57-ba9e-8c4fc2d712be/Screenshot_49.jpg"
+                        "image": "https://data.decoassets.com/lojastopmoveis/90328a9f-2964-4711-aea8-aa9a5ef96fd3/BANNER-MOBILE-MUCAO-02-1080x1350px.webp"
                       },
                       {
                         "alt": "Banner 2",
