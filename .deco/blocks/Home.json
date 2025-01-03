@@ -1119,7 +1119,7 @@
                     "itemPerPageDesktop": 6,
                     "itemPerPageMobile": 2,
                     "showPaginationArrows": "Desktop Only",
-                    "showPaginationDots": "Never",
+                    "showPaginationDots": "Desktop Only",
                     "hoverEffect": true,
                     "title": "Compre por marca",
                     "layout": {
