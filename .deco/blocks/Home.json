@@ -7,7 +7,7 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-01-07T15:00:00.000Z"
+          "end": "2025-01-31T15:00:00.000Z"
         },
         "value": [
           {
@@ -613,12 +613,12 @@
                         "href": "/horadaviradatop"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/ad2c1acb-4fa2-4459-8dd2-10378c187801/CAMPANHA---FIM-DE-ANO---BANNER-MOBILE-(1080x1350)-copiar-(1).webp",
+                        "image": "https://data.decoassets.com/lojastopmoveis/88713add-8fa4-4beb-af61-a41b7d443616/BANNER-MOBILE-1080x1350px.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/8969af65-6eac-4f36-b82d-adb29b0dfdeb/CAMPANHA---FIM-DE-ANO-(BANNER-SITE)-copiar-(1).webp",
+                        "image": "https://data.decoassets.com/lojastopmoveis/49e1f905-4ac9-4bc3-a12b-9392b7e53f64/BANNER-SITE-01-1920x700px.webp",
                         "width": 1920,
                         "height": 599
                       }
