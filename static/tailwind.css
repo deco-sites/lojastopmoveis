@@ -8857,6 +8857,10 @@ details.collapse summary::-webkit-details-marker {
     width: 668px;
   }
 
+  .lg\:w-\[80\%\] {
+    width: 80%;
+  }
+
   .lg\:w-auto {
     width: auto;
   }
