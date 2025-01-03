@@ -175,7 +175,7 @@ export default function BrandGallery(props: Props) {
             <Slider.Item
               index={index}
               class={`carousel-item lg:flex lg:justify-center	lg:max-w-[120px] ${MOBILE_COLUMNS[itemPerPageMobile ?? 2]
-                } ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 3]}`}
+                } ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 6]}`}
             >
               <a
                 target={item.blank ? "_self" : "_blank"}
@@ -232,3 +232,7 @@ export default function BrandGallery(props: Props) {
     </section>
   );
 }
+
+export const loader = (props: Props, _req: Request, ctx: AppContext) => {
+  return { ...props, device: ctx.device };
+};
