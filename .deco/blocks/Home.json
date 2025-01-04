@@ -675,38 +675,38 @@
                       }
                     },
                     {
-                      "alt": "Seleção de Cozinhas e Kits",
+                      "alt": "Hora da Virada Top e Philips",
                       "action": {
-                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=philips",
                         "variant": "primary"
-                      },
-                      "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/6f95daab-994b-4198-b125-1145d9749e80/banner_categoria_cozinha_mobile.webp",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
-                        "width": 1920,
-                        "height": 600
-                      }
-                    },
-                    {
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/148c97ba-ef3e-456d-bc66-0f7181de9f00/BANNER-SITE---PHILIPS.png",
-                        "width": 1920,
-                        "height": 599
                       },
                       "mobile": {
                         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/296640f4-79d7-4b88-a8b3-8b8efecdf1c9/BANNER-MOBILE---PHILIPS.png",
                         "width": 390,
                         "height": 490
                       },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/148c97ba-ef3e-456d-bc66-0f7181de9f00/BANNER-SITE---PHILIPS.png",
+                        "width": 1920,
+                        "height": 599
+                      }
+                    },
+                    {
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
+                        "width": 1920,
+                        "height": 600
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/6f95daab-994b-4198-b125-1145d9749e80/banner_categoria_cozinha_mobile.webp",
+                        "width": 390,
+                        "height": 490
+                      },
                       "action": {
                         "variant": "primary",
-                        "href": "https://www.lojastopmoveis.com.br/busca?q=philips"
+                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha"
                       },
-                      "alt": "Hora da Virada Top e Philips"
+                      "alt": "Seleção de Cozinhas e Kits"
                     },
                     {
                       "desktop": {
