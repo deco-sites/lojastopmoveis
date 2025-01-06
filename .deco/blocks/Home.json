@@ -647,12 +647,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4de74be1-934a-468f-ba94-80d2f836f071",
+                        "image": "https://data.decoassets.com/lojastopmoveis/4556edf0-17ae-4131-8a79-cc9483b8f903/BANNER-MOBILE-MUCAO-02-1080x1350px.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3da66ec4-7e05-4720-a68c-c16170b9aeb1",
+                        "image": "https://data.decoassets.com/lojastopmoveis/8e3cc061-75ab-452e-be88-8c42e736ee8c/BANNER-SITE-01-1920x700px-(1).webp",
                         "width": 1920,
                         "height": 600
                       }
