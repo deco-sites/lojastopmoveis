@@ -122,7 +122,7 @@ function Buttons({ className }: ButtonsProps) {
   return (
     <>
       <div
-        class={`relative left-[-60px] justify-start lg:flex hidden items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
+        class={`lg:flex hidden items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
       >
         <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
@@ -133,7 +133,7 @@ function Buttons({ className }: ButtonsProps) {
         </Slider.PrevButton>
       </div>
       <div
-        class={`relative right-[-60px] justify-end lg:flex hidden items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
+        class={`lg:flex hidden items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
       >
         <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon

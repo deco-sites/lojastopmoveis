@@ -4281,9 +4281,6 @@ details.collapse summary::-webkit-details-marker {
 .left-8 {
   left: 2rem;
 }
-.left-\[-60px\] {
-  left: -60px;
-}
 .left-\[50\%\] {
   left: 50%;
 }
@@ -4310,9 +4307,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .right-8 {
   right: 2rem;
-}
-.right-\[-60px\] {
-  right: -60px;
 }
 .right-\[22px\] {
   right: 22px;
