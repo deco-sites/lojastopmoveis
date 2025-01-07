@@ -97,7 +97,7 @@ function Dots({ images, className, interval = 0 }: DotsProps) {
         }}
       />
       <ul
-        class={`carousel justify-center col-span-full gap-2 z-10 row-start-4 ${className}`}
+        class={`carousel justify-center hidden lg:inline-flex col-span-full gap-2 z-10 row-start-4 max-lg:mt-[0.625rem]`}
       >
         {images?.map((_, index) => (
           <li class="carousel-item">
@@ -122,7 +122,7 @@ function Buttons({ className }: ButtonsProps) {
   return (
     <>
       <div
-        class={`lg:flex hidden items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
+        class={`relative left-[-60px] justify-start lg:flex hidden items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
       >
         <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
@@ -133,7 +133,7 @@ function Buttons({ className }: ButtonsProps) {
         </Slider.PrevButton>
       </div>
       <div
-        class={`lg:flex hidden items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
+        class={`relative right-[-60px] justify-end lg:flex hidden items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
       >
         <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
           <Icon
@@ -169,13 +169,12 @@ export default function BrandGallery(props: Props) {
       <div class="flex items-center justify-between relative pb-3">
         <Header title={title || ""} description="" fontSize={layout?.headerfontSize || "Large"} alignment={layout?.headerAlignment || "center"} color={layout?.color || "primary"} />
       </div>
-      <div id={id} class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[70px_1fr_70px] pb-8">
-        <Slider class="carousel sm:gap-0 sm:carousel-center col-span-full row-[1/4] justify-evenly">
+      <div id={id} class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]">
+        <Slider class="container carousel carousel-start gap-5 lg:gap-6 col-span-full row-span-full py-2 mb-0 lg:mb-8 lg:mb-0'}">
           {images.map((item, index) => (
             <Slider.Item
               index={index}
-              class={`carousel-item lg:flex lg:justify-center	lg:max-w-[120px] ${MOBILE_COLUMNS[itemPerPageMobile ?? 2]
-                } ${DESKTOP_COLUMNS[itemPerPageDesktop ?? 6]}`}
+              class={`carousel-item max-w-[60px] lg:w-[225px] lg:max-w-[225px]`}
             >
               <a
                 target={item.blank ? "_self" : "_blank"}
