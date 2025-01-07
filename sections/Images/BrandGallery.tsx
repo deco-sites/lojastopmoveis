@@ -174,7 +174,7 @@ export default function BrandGallery(props: Props) {
           {images.map((item, index) => (
             <Slider.Item
               index={index}
-              class={`carousel-item max-w-[60px] lg:w-[225px] lg:max-w-[225px]`}
+              class={`carousel-item max-w-[60px] lg:w-[230px] lg:max-w-[230px]`}
             >
               <a
                 target={item.blank ? "_self" : "_blank"}
