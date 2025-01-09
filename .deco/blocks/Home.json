@@ -1139,7 +1139,8 @@
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/80287314-4615-4bb6-85fe-744201ff531b/Property-1",
-                        "alt": "britania"
+                        "alt": "britania",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=britania"
                       }
                     ],
                     "itemPerPageDesktop": 6,
