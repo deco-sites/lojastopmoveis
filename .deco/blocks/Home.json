@@ -1034,7 +1034,8 @@
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/bbcd9ced-570f-448d-bd36-ba560818f841/marca-5.png",
-                        "alt": "ortobom"
+                        "alt": "ortobom",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=ortobom"
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/6491668b-0028-4547-80e0-718f090e2791/marca-6.png",
