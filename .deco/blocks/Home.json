@@ -1044,7 +1044,8 @@
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/c7f6236f-5989-42ca-adab-7e5c7ecd9cf9/marca-7.png",
-                        "alt": "notavel"
+                        "alt": "notavel",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=notavel"
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/cf7f89e6-febc-4a08-ab70-f0aa479a6727/marca-8.png",
