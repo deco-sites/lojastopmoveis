@@ -1039,7 +1039,8 @@
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/6491668b-0028-4547-80e0-718f090e2791/marca-6.png",
-                        "alt": "mondial"
+                        "alt": "mondial",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=mondial"
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/c7f6236f-5989-42ca-adab-7e5c7ecd9cf9/marca-7.png",
