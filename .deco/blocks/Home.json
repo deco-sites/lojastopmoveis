@@ -1013,7 +1013,8 @@
                     "images": [
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/091b34c1-7d6e-41ac-a715-fd8c24d122db/Property-1",
-                        "alt": "madesa"
+                        "alt": "madesa",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=madesa"
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/12463e3f-cc84-4deb-bf62-6e93217db0c8/marca-2.png",

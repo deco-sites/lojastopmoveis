@@ -1,1 +1,68 @@
-{"name":"Search page","path":"/busca","sections":[{"__resolveType":"Default - Design System"},{"__resolveType":"SEODefault"},{"__resolveType":"analytics"},{"__resolveType":"Header Global"},{"__resolveType":"categoryBreadcrumb"},{"__resolveType":"SearchResults Global"},{"__resolveType":"Footer Global"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Search page",
+  "path": "/busca",
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "Header Black"
+          },
+          {
+            "__resolveType": "categoryBreadcrumb"
+          },
+          {
+            "__resolveType": "SearchResults Global"
+          },
+          {
+            "__resolveType": "Footer Black"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-01-31T15:00:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "Header Global"
+          },
+          {
+            "__resolveType": "categoryBreadcrumb"
+          },
+          {
+            "__resolveType": "SearchResults Global"
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
+  "__resolveType": "$live/pages/LivePage.tsx"
+}
