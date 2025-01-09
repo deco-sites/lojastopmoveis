@@ -1018,7 +1018,9 @@
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/12463e3f-cc84-4deb-bf62-6e93217db0c8/marca-2.png",
-                        "alt": "esmaltec"
+                        "alt": "esmaltec",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=esmaltec",
+                        "blank": false
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/c9c1ce19-298e-49af-998c-98f85435f767/marca-3.png",
