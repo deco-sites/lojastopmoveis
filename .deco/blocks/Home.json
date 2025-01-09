@@ -1029,7 +1029,8 @@
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/4205b9f4-4506-4e18-abc1-3d4f39ccffa4/marca-4.png",
-                        "alt": "midea"
+                        "alt": "midea",
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=midea"
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/bbcd9ced-570f-448d-bd36-ba560818f841/marca-5.png",
