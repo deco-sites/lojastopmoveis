@@ -831,7 +831,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-01-15",
+              "countdownTimerDate": "2025-01-17",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ed2d26",
               "countdownTextColor": "#ffffff",
@@ -3724,6 +3724,10 @@
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/6491668b-0028-4547-80e0-718f090e2791/marca-6.png",
                         "alt": "Mondial"
+                      },
+                      {
+                        "image": "https://data.decoassets.com/lojastopmoveis/c7f6236f-5989-42ca-adab-7e5c7ecd9cf9/marca-7.png",
+                        "alt": "Notavel"
                       },
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/c7f6236f-5989-42ca-adab-7e5c7ecd9cf9/marca-7.png",
