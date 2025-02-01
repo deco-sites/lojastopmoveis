@@ -610,15 +610,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/maiorsaldaotop"
+                        "href": "/bloquinhotop"
                       },
                       "mobile": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/88713add-8fa4-4beb-af61-a41b7d443616/BANNER-MOBILE-1080x1350px.webp",
+                        "image": "https://data.decoassets.com/lojastopmoveis/29dbe723-0da3-4dbc-ba67-6d12b016dc37/BANNER-MOBILE---1080x1350px.png",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/49e1f905-4ac9-4bc3-a12b-9392b7e53f64/BANNER-SITE-01-1920x700px.webp",
+                        "image": "https://data.decoassets.com/lojastopmoveis/f51a3a51-788e-41f5-a2ec-7400d02a09d3/BANNER-SITE---1920x700.png",
                         "width": 1920,
                         "height": 599
                       }
