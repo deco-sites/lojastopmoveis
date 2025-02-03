@@ -1,78 +1,168 @@
 {
   "name": "Bloquinho Top",
   "path": "/bloquinhotop",
-  "sections": [
-    {
-      "__resolveType": "Default - Design System"
-    },
-    {
-      "__resolveType": "SEODefault"
-    },
-    {
-      "__resolveType": "analytics"
-    },
-    {
-      "__resolveType": "Header Global"
-    },
-    {
-      "__resolveType": "categoryBreadcrumb"
-    },
-    {
-      "sections": [
-        {
-          "label": "Search Results",
-          "shadow": "none",
-          "section": {
-            "page": {
-              "sort": "",
-              "count": 60,
-              "fuzzy": "disabled",
-              "similars": false,
-              "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-              "selectedFacets": [
-                {
-                  "key": "productClusterIds",
-                  "value": "142"
-                }
-              ],
-              "hideUnavailableItems": false
-            },
-            "columns": {
-              "mobile": 2,
-              "desktop": 4
-            },
-            "variant": "aside",
-            "highlights": [
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "Header Black"
+          },
+          {
+            "__resolveType": "categoryBreadcrumb"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
               {
-                "label": "Frete Grátis",
-                "minPrice": 0,
-                "collectionId": "144",
-                "alignHorizontal": "end"
+                "label": "Search Results",
+                "shadow": "none",
+                "section": {
+                  "page": {
+                    "sort": "",
+                    "count": 60,
+                    "fuzzy": "disabled",
+                    "similars": false,
+                    "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                    "selectedFacets": [
+                      {
+                        "key": "productClusterIds",
+                        "value": "142"
+                      }
+                    ],
+                    "hideUnavailableItems": false
+                  },
+                  "columns": {
+                    "mobile": 2,
+                    "desktop": 4
+                  },
+                  "variant": "aside",
+                  "highlights": [
+                    {
+                      "label": "Frete Grátis",
+                      "minPrice": 0,
+                      "collectionId": "144",
+                      "alignHorizontal": "end"
+                    }
+                  ],
+                  "__resolveType": "site/sections/Product/SearchResult.tsx",
+                  "notFoundSection": {
+                    "hints": {
+                      "hints": [
+                        "Verifique os termos digitados.",
+                        "Tente utilizar uma única palavra.",
+                        "Utilize termos genéricos na busca.",
+                        "Procure utilizar sinônimos ao termo desejado."
+                      ],
+                      "title": "Confira algumas dicas para realizar sua busca:"
+                    },
+                    "__resolveType": "site/sections/Miscellaneous/NotFound.tsx"
+                  }
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Black"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-12-31T07:00:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "Header Global"
+          },
+          {
+            "__resolveType": "categoryBreadcrumb"
+          },
+          {
+            "sections": [
+              {
+                "label": "Search Results",
+                "shadow": "none",
+                "section": {
+                  "page": {
+                    "sort": "",
+                    "count": 60,
+                    "fuzzy": "disabled",
+                    "similars": false,
+                    "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                    "selectedFacets": [
+                      {
+                        "key": "productClusterIds",
+                        "value": "142"
+                      }
+                    ],
+                    "hideUnavailableItems": false
+                  },
+                  "columns": {
+                    "mobile": 2,
+                    "desktop": 4
+                  },
+                  "variant": "aside",
+                  "highlights": [
+                    {
+                      "label": "Frete Grátis",
+                      "minPrice": 0,
+                      "collectionId": "144",
+                      "alignHorizontal": "end"
+                    }
+                  ],
+                  "__resolveType": "site/sections/Product/SearchResult.tsx",
+                  "notFoundSection": {
+                    "hints": {
+                      "hints": [
+                        "Verifique os termos digitados.",
+                        "Tente utilizar uma única palavra.",
+                        "Utilize termos genéricos na busca.",
+                        "Procure utilizar sinônimos ao termo desejado."
+                      ],
+                      "title": "Confira algumas dicas para realizar sua busca:"
+                    },
+                    "__resolveType": "site/sections/Miscellaneous/NotFound.tsx"
+                  }
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
               }
             ],
-            "__resolveType": "site/sections/Product/SearchResult.tsx",
-            "notFoundSection": {
-              "hints": {
-                "hints": [
-                  "Verifique os termos digitados.",
-                  "Tente utilizar uma única palavra.",
-                  "Utilize termos genéricos na busca.",
-                  "Procure utilizar sinônimos ao termo desejado."
-                ],
-                "title": "Confira algumas dicas para realizar sua busca:"
-              },
-              "__resolveType": "site/sections/Miscellaneous/NotFound.tsx"
-            }
+            "__resolveType": "site/sections/Container.tsx"
           },
-          "withContainer": true,
-          "verticalSpacing": "both"
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
-    },
-    {
-      "__resolveType": "Footer Global"
-    }
-  ],
+      }
+    ]
+  },
   "__resolveType": "$live/pages/LivePage.tsx"
 }
