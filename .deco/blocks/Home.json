@@ -641,23 +641,6 @@
                       }
                     },
                     {
-                      "alt": "Achadinhos",
-                      "action": {
-                        "href": "/saldaodeofertastopmoveis",
-                        "variant": "primary"
-                      },
-                      "mobile": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/4556edf0-17ae-4131-8a79-cc9483b8f903/BANNER-MOBILE-MUCAO-02-1080x1350px.webp",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "desktop": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/8e3cc061-75ab-452e-be88-8c42e736ee8c/BANNER-SITE-01-1920x700px-(1).webp",
-                        "width": 1920,
-                        "height": 600
-                      }
-                    },
-                    {
                       "alt": "Dormitório Adulto",
                       "action": {
                         "href": "https://www.lojastopmoveis.com.br/moveis/quarto-adulto",
@@ -692,21 +675,21 @@
                       }
                     },
                     {
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
-                        "width": 1920,
-                        "height": 600
+                      "alt": "Seleção de Cozinhas e Kits",
+                      "action": {
+                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha",
+                        "variant": "primary"
                       },
                       "mobile": {
                         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/6f95daab-994b-4198-b125-1145d9749e80/banner_categoria_cozinha_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
-                      "action": {
-                        "variant": "primary",
-                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha"
-                      },
-                      "alt": "Seleção de Cozinhas e Kits"
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
+                        "width": 1920,
+                        "height": 600
+                      }
                     },
                     {
                       "desktop": {
