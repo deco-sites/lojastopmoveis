@@ -877,7 +877,8 @@
                     "image": "Change image",
                     "showCardShadow": true,
                     "showCta": true,
-                    "showSkuSelector": false
+                    "showSkuSelector": false,
+                    "showFavoriteIcon": true
                   }
                 }
               }
@@ -955,7 +956,7 @@
                       "image": "Change image",
                       "showCta": true,
                       "showCardShadow": true,
-                      "showFavoriteIcon": false
+                      "showFavoriteIcon": true
                     },
                     "elementsPositions": {}
                   },
@@ -1218,7 +1219,7 @@
                       "image": "Change image",
                       "showCta": true,
                       "showCardShadow": true,
-                      "showFavoriteIcon": false
+                      "showFavoriteIcon": true
                     },
                     "elementsPositions": {}
                   },
@@ -1305,7 +1306,8 @@
                     "onMouseOver": {
                       "image": "Change image",
                       "showCta": true,
-                      "showCardShadow": true
+                      "showCardShadow": true,
+                      "showFavoriteIcon": true
                     },
                     "elementsPositions": {}
                   },
@@ -1391,7 +1393,8 @@
                     "onMouseOver": {
                       "image": "Change image",
                       "showCta": true,
-                      "showCardShadow": true
+                      "showCardShadow": true,
+                      "showFavoriteIcon": true
                     },
                     "elementsPositions": {}
                   },
@@ -1574,7 +1577,8 @@
                     "onMouseOver": {
                       "image": "Change image",
                       "showCta": true,
-                      "showCardShadow": true
+                      "showCardShadow": true,
+                      "showFavoriteIcon": true
                     },
                     "elementsPositions": {}
                   },
