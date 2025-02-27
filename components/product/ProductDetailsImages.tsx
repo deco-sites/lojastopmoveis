@@ -92,7 +92,8 @@ function ProductDetailsImages(
               <WishlistIcon 
                 productGroupID={productGroupID} 
                 productID={productID} 
-                style="col-start-1 col-start-1 justify-self-end"
+                tailwind="col-start-1 col-start-1 justify-self-end !h-[36px] !w-[36px] items-end"
+                tailwindIcon="scale-150"
               />
 
 

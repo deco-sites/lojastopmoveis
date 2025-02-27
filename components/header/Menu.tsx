@@ -127,7 +127,10 @@ function Menu({ items }: Props) {
         class="flex btn btn-outline  gap-2 mx-4 mt-[10px] border-secondary text-secondary uppercase font-bold	"
         href="/my-account/favorites"
       >
-        <Icon id="HeartFull" width={24} height={21} />
+        <Icon id="HeartFull" width={24} height={21} style={{
+          scale: ".8",
+          marginRight: "-6px"
+        }} />
         <span class="tracking-[1px] text-xs">Meus favoritos</span>
       </a>
       <a

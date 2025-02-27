@@ -7,7 +7,8 @@ import { useUser } from "apps/vtex/hooks/useUser.ts";
 interface Props {
   productID: string;
   productGroupID?: string;
-  style?: string;
+  tailwind?: string;
+  tailwindIcon?: string;
   variant?: "icon" | "full";
 }
 
@@ -15,7 +16,8 @@ function WishlistButton({
   variant = "icon",
   productGroupID,
   productID,
-  style,
+  tailwind = "",
+  tailwindIcon = "",
 }: Props) {
   const { user } = useUser();
   if (!productGroupID) return <></>;
@@ -31,7 +33,7 @@ function WishlistButton({
     <Button
       class={`flex items-center justify-center p-0 w-auto h-auto ${variant === "icon"
         ? "btn-circle btn-ghost gap-2"
-        : "btn-primary btn-outline gap-2"} ${style}`}
+        : "btn-primary btn-outline gap-2 "} ${tailwind}`}
       loading={fetching.value}
       aria-label="Add to wishlist"
       onClick={async (e) => {
@@ -64,6 +66,7 @@ function WishlistButton({
         id={inWishlist ? "HeartFull" : "HeartOutline"}
         size={24}
         strokeWidth={2}
+        class={`${tailwindIcon} `}
       />
       {variant === "icon" ? null : inWishlist ? "Remover" : "Favoritar"}
     </Button>
