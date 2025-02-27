@@ -49,6 +49,9 @@ function HeaderLayout(
           <div class="flex items-center xl:gap-4 lg:gap-2">
             <Buttons variant="search" />
             <SearchBar searchbar={{ ...searchbar, variant: "mobile" }} />
+            <div class="max-lg:hidden">
+              <Buttons variant="wishlist" />
+            </div>
             <div class="max-lg:hidden rounded-full border-2 border-solid no-animation relative btn-square btn-ghost flex items-center justify-center group">
               <Icon
                 class="text-base-content"

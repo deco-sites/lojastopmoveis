@@ -48,7 +48,7 @@ function WishListButton() {
       class="btn-square btn-ghost flex items-center justify-center"
       aria-label="wish icon button"
       onClick={() => {
-        globalThis.window.location.href = "/wishlist";
+        globalThis.window.location.href = "/my-account/favorites";
       }}
     >
       <Icon
