@@ -260,7 +260,7 @@ function TimedProductCard(
                             {l?.onMouseOver?.showFavoriteIcon && (<WishlistIcon
                                 productGroupID={productGroupID}
                                 productID={productID}
-                                style="col-start-1 col-start-1 justify-self-end z-10"
+                                tailwind="col-start-1 col-start-1 justify-self-end z-10"
                             />)}
                             {product && (
                                 <ProductHighlights
