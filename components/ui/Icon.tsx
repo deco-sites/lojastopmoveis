@@ -36,6 +36,8 @@ export type AvailableIcons =
   | "ShoppingCart"
   | "Bars3"
   | "Heart"
+  | "HeartOutline"
+  | "HeartFull"
   | "MagnifyingGlass"
   | "XMark"
   | "XMarkSearch"

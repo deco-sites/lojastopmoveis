@@ -1671,7 +1671,8 @@
                     "onMouseOver": {
                       "image": "Change image",
                       "showCta": true,
-                      "showCardShadow": true
+                      "showCardShadow": true,
+                      "showFavoriteIcon": true
                     },
                     "elementsPositions": {}
                   },
@@ -2906,7 +2907,8 @@
                   "onMouseOver": {
                     "image": "Change image",
                     "showCardShadow": true,
-                    "showCta": true
+                    "showCta": true,
+                    "showFavoriteIcon": false
                   }
                 }
               }
@@ -3553,7 +3555,8 @@
                       "onMouseOver": {
                         "image": "Change image",
                         "showCta": true,
-                        "showCardShadow": true
+                        "showCardShadow": true,
+                        "showFavoriteIcon": false
                       },
                       "elementsPositions": {}
                     },

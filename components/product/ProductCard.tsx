@@ -30,15 +30,15 @@ export interface Layout {
   discount: {
     label: string;
     variant:
-      | "primary"
-      | "secondary"
-      | "neutral"
-      | "accent"
-      | "emphasis"
-      | "success"
-      | "info"
-      | "error"
-      | "warning";
+    | "primary"
+    | "secondary"
+    | "neutral"
+    | "accent"
+    | "emphasis"
+    | "success"
+    | "info"
+    | "error"
+    | "warning";
   };
   elementsPositions?: {
     skuSelector?: "Top" | "Bottom";
@@ -81,7 +81,7 @@ interface Props {
   index: number;
 
   /** @hide true */
-  device?: string; 
+  device?: string;
 }
 
 export const relative = (url: string) => {
@@ -117,12 +117,12 @@ function ProductCard(
 
 
   const isDesktop = device === "desktop";
-  const isUndefined = device  === undefined; 
+  const isUndefined = device === undefined;
 
 
 
 
-   
+
   const isEager = isDesktop ? index < 4 : index < 1;
 
   const clickEvent = {
@@ -156,8 +156,7 @@ function ProductCard(
   ));
 
   const addToCartButtonClassNames = (variant: string | undefined) =>
-    `lg:text-sm font-medium text-xs whitespace-nowrap btn max-md:min-h-12 max-md:h-12 max-md:w-auto max-md:m-auto max-md:px-10 max-md:max-w-full btn-${
-      BUTTON_VARIANTS[variant ?? "primary"]
+    `lg:text-sm font-medium text-xs whitespace-nowrap btn max-md:min-h-12 max-md:h-12 max-md:w-auto max-md:m-auto max-md:px-10 max-md:max-w-full btn-${BUTTON_VARIANTS[variant ?? "primary"]
     }`;
 
   const forPrice = product.offers?.offers[0].priceSpecification[1].price;
@@ -168,9 +167,8 @@ function ProductCard(
       <a
         href={url && relative(url)}
         aria-label="view product"
-        class={`min-w-[162px] ${
-          addToCartButtonClassNames(layout?.basics?.ctaVariation)
-        }`}
+        class={`min-w-[162px] ${addToCartButtonClassNames(layout?.basics?.ctaVariation)
+          }`}
       >
         <span class="max-lg:hidden flex font-medium">
           {l?.basics?.ctaText || "Ver produto"}
@@ -181,8 +179,22 @@ function ProductCard(
       </a>
     )
     : l?.basics?.mobileCtaText
-    ? (
-      <>
+      ? (
+        <>
+          <AddToCartButton
+            quantity={1}
+            name={product.name as string}
+            discount={price && listPrice ? listPrice - price : 0}
+            productGroupId={product.isVariantOf?.productGroupID ?? ""}
+            price={price as number}
+            sellerId={seller as string}
+            skuId={product.sku}
+            label={l?.basics?.ctaText}
+            classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
+          />
+        </>
+      )
+      : (
         <AddToCartButton
           quantity={1}
           name={product.name as string}
@@ -192,34 +204,18 @@ function ProductCard(
           sellerId={seller as string}
           skuId={product.sku}
           label={l?.basics?.ctaText}
-          classes={addToCartButtonClassNames(layout?.basics?.ctaVariation)}
+          classes={`${addToCartButtonClassNames(layout?.basics?.ctaVariation)}`}
         />
-      </>
-    )
-    : (
-      <AddToCartButton
-        quantity={1}
-        name={product.name as string}
-        discount={price && listPrice ? listPrice - price : 0}
-        productGroupId={product.isVariantOf?.productGroupID ?? ""}
-        price={price as number}
-        sellerId={seller as string}
-        skuId={product.sku}
-        label={l?.basics?.ctaText}
-        classes={`${addToCartButtonClassNames(layout?.basics?.ctaVariation)}`}
-      />
-    );
+      );
 
   const _price2: number = price as number;
   const listPrice2: number = listPrice as number;
 
   return (
     <div
-      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${
-        align === "center" ? "text-center" : "text-start"
-      } ${
-        l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
-      } ${_class ? `${_class}` : ""}`}
+      class={`card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${align === "center" ? "text-center" : "text-start"
+        } ${l?.onMouseOver?.showCardShadow ? "lg:hover:shadow-lg shadow-black" : ""
+        } ${_class ? `${_class}` : ""}`}
       data-deco="view-product"
       id={`product-card-${productID}`}
       {...sendEventOnClick(clickEvent)}
@@ -229,22 +225,20 @@ function ProductCard(
         style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
       >
         {/* Wishlist button */}
-        <div
+        {/* <div
           class={`absolute top-2 z-10
-          ${
-            l?.elementsPositions?.favoriteIcon === "Top left"
+          ${l?.elementsPositions?.favoriteIcon === "Top left"
               ? "left-2"
               : "right-2"
-          }
-          ${
-            l?.onMouseOver?.showFavoriteIcon
-              ? "lg:hidden lg:group-hover:block"
+            }
+          ${l?.onMouseOver?.showFavoriteIcon
+              ? "block"
               : "lg:hidden"
-          }
+            }
         `}
         >
           <WishlistIcon productGroupID={productGroupID} productID={productID} />
-        </div>
+        </div> */}
         <a
           href={url && relative(url)}
           aria-label="view product"
@@ -252,6 +246,11 @@ function ProductCard(
         >
           <div class="absolute w-full h-full right-0 top-0">
             <div class="grid grid-rows-5 w-full h-full">
+              {l?.onMouseOver?.showFavoriteIcon && (<WishlistIcon
+                productGroupID={productGroupID}
+                productID={productID}
+                style="col-start-1 col-start-1 justify-self-end z-10"
+              />)}
               {product && (
                 <ProductHighlights
                   product={product}
@@ -269,27 +268,25 @@ function ProductCard(
             height={HEIGHT}
             class={`
               absolute rounded-lg w-full
-              ${
-              (!l?.onMouseOver?.image ||
-                  l?.onMouseOver?.image == "Change image")
+              ${(!l?.onMouseOver?.image ||
+                l?.onMouseOver?.image == "Change image")
                 ? "duration-100 transition-opacity opacity-100 lg:group-hover:opacity-0"
                 : ""
-            }
-              ${
-              l?.onMouseOver?.image == "Zoom image"
+              }
+              ${l?.onMouseOver?.image == "Zoom image"
                 ? "duration-100 transition-scale scale-100 lg:group-hover:scale-105"
                 : ""
-            }
+              }
             `}
             sizes="(max-width: 640px) 50vw, 20vw"
             loading={isEager ? "eager" : "lazy"}
-            fetchPriority= { isEager ? 'high' : 'auto'}
+            fetchPriority={isEager ? 'high' : 'auto'}
             decoding="async"
           />
 
-          { (device === 'desktop' || isUndefined) && ( 
+          {(device === 'desktop' || isUndefined) && (
             (!l?.onMouseOver?.image ||
-             l?.onMouseOver?.image == "Change image") && (
+              l?.onMouseOver?.image == "Change image") && (
               <Image
                 src={back?.url ?? front.url!}
                 alt={back?.alternateName ?? front.alternateName}
@@ -321,18 +318,17 @@ function ProductCard(
         {/* SKU Selector */}
         {(!l?.elementsPositions?.skuSelector ||
           l?.elementsPositions?.skuSelector === "Top") && (
-          <>
-            {l?.hide.skuSelector ? "" : (
-              <ul
-                class={`flex items-center gap-2 w-full ${
-                  align === "center" ? "justify-center" : "justify-start"
-                } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
-              >
-                {skuSelector}
-              </ul>
-            )}
-          </>
-        )}
+            <>
+              {l?.hide.skuSelector ? "" : (
+                <ul
+                  class={`flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
+                    } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
+                >
+                  {skuSelector}
+                </ul>
+              )}
+            </>
+          )}
 
         {l?.hide.productName && l?.hide.productDescription
           ? ""
@@ -360,19 +356,16 @@ function ProductCard(
               {l?.hide.allPrices ? "" : (
                 <div class="flex flex-col mt-2">
                   <div
-                    class={`flex items-center gap-2.5 ${
-                      l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
-                    } ${
-                      align === "center" ? "justify-center" : "justify-start"
-                    }`}
+                    class={`flex items-center gap-2.5 ${l?.basics?.oldPriceSize === "Normal" ? "lg:flex-row" : ""
+                      } ${align === "center" ? "justify-center" : "justify-start"
+                      }`}
                   >
                     {(listPrice && price) && listPrice > price && (
                       <p
-                        class={`line-through text-[#C5C6CB] text-sm ${
-                          l?.basics?.oldPriceSize === "Normal"
-                            ? "lg:text-xl"
-                            : ""
-                        }`}
+                        class={`line-through text-[#C5C6CB] text-sm ${l?.basics?.oldPriceSize === "Normal"
+                          ? "lg:text-xl"
+                          : ""
+                          }`}
                       >
                         {formatPrice(listPrice, offers!.priceCurrency!)}
                       </p>
@@ -411,28 +404,26 @@ function ProductCard(
         {/* SKU Selector */}
         {(l?.elementsPositions?.skuSelector === "Bottom" &&
           availability === "https://schema.org/InStock") && (
-          <>
-            {l?.hide.skuSelector ? "" : (
-              <ul
-                class={`flex items-center gap-2 w-full ${
-                  align === "center" ? "justify-center" : "justify-start"
-                } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
-              >
-                {skuSelector}
-              </ul>
-            )}
-          </>
-        )}
+            <>
+              {l?.hide.skuSelector ? "" : (
+                <ul
+                  class={`flex items-center gap-2 w-full ${align === "center" ? "justify-center" : "justify-start"
+                    } ${l?.onMouseOver?.showSkuSelector ? "lg:hidden" : ""}`}
+                >
+                  {skuSelector}
+                </ul>
+              )}
+            </>
+          )}
 
         {availability === "https://schema.org/InStock"
           ? (
             <div
               class={`w-full flex flex-col mt-[10px]
-          ${
-                l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
+          ${l?.onMouseOver?.showSkuSelector || l?.onMouseOver?.showCta
                   ? "transition-opacity lg:opacity-0 lg:group-hover:opacity-100"
                   : "lg:hidden"
-              }
+                }
         `}
             >
               {l?.onMouseOver?.showCta && cta}
