@@ -610,15 +610,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/bloquinhotop"
+                        "href": "/mesdoconsumidortop"
                       },
                       "mobile": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/29dbe723-0da3-4dbc-ba67-6d12b016dc37/BANNER-MOBILE---1080x1350px.png",
+                        "image": "https://data.decoassets.com/lojastopmoveis/a16a949d-ff00-4631-ae32-957206ee214c/BANNER-MOBILE---1080x1350px---MES-DO-CONSUMIDOR.png",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/f51a3a51-788e-41f5-a2ec-7400d02a09d3/BANNER-SITE---1920x700.png",
+                        "image": "https://data.decoassets.com/lojastopmoveis/a0ae8a7a-0afa-41c2-bb33-3d769bde9756/BANNER-SITE---1920x700px---MES-DO-CONSUMIDOR.png",
                         "width": 1920,
                         "height": 599
                       }
