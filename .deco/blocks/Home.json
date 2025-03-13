@@ -229,12 +229,12 @@
                 "__resolveType": "deco-sites/std/loaders/vtex/legacy/productList.ts",
                 "props": {
                   "sort": "",
-                  "collection": "148",
+                  "collection": "211",
                   "count": 50
                 }
               },
               "frameColor": "#000000",
-              "titleFrame": "Folia e descontos? Só no Bloquinho Top! Corre pra garantir o seu!",
+              "titleFrame": "Semana do consumidor!",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
