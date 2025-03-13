@@ -128,25 +128,25 @@
     {
       "options": {
         "options": {
-          "idCollection": "148"
+          "idCollection": "211"
         }
       },
       "formatFlag": {
         "optionsFormat": {
           "optionBorderRadius": "completo",
           "textRightColor": "#fafafa",
-          "textRightBackgroundColor": "#fa0505",
+          "textRightBackgroundColor": "#000000",
           "textLeftColor": "#fafafa",
           "textLeftBackgroundColor": "#fa0505",
           "flagPosition": "inferior",
           "isFull": true,
-          "textLeft": "TOP",
-          "textRight": "OFERTA"
+          "textRight": "EXCLUSIVA",
+          "textLeft": "OFERTA"
         }
       },
       "name": "Oferta Top",
       "dateFrom": "2024-11-08",
-      "dateTo": "2024-12-25",
+      "dateTo": "2099-08-31",
       "showFlag": true
     }
   ],
