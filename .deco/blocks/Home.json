@@ -234,11 +234,11 @@
                 }
               },
               "frameColor": "#000000",
-              "titleFrame": "Semana do consumidor!",
+              "titleFrame": "Ofertas Exclusivas",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-03-08",
+              "countdownTimerDate": "2025-03-15",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ed2d26",
               "countdownTextColor": "#ffffff",
