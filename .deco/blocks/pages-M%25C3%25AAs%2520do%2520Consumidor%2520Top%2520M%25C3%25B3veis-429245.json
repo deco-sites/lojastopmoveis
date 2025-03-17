@@ -1,6 +1,6 @@
 {
-  "name": "Bloquinho Top",
-  "path": "/bloquinhotop",
+  "name": "Mês do Consumidor Top Móveis",
+  "path": "/mesdoconsumidortopmoveis",
   "sections": {
     "__resolveType": "$live/flags/multivariate.ts",
     "variants": [
