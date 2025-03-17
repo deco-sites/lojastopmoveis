@@ -96,7 +96,6 @@ function ProductDetailsImages(
                 tailwindIcon="scale-150"
               />
 
-
               {product && (
                 <ProductHighlights
                   product={product}
