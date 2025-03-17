@@ -1,1 +1,79 @@
-{"sections":[{"label":"ProductShelf","shadow":"none","section":{"title":"Produtos similares","layout":{"itemsPerPage":[{"screenWidth":425,"itemsQuantity":1},{"screenWidth":786,"itemsQuantity":2},{"screenWidth":1170,"itemsQuantity":4}],"headerAlignment":"left"},"seeMore":{"url":" ","label":" "},"products":{"slug":{"param":"slug","__resolveType":"deco-sites/std/functions/requestToParam.ts"},"count":10,"crossSelling":"whosawalsosaw","__resolveType":"deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts","hideUnavailableItems":true},"cardLayout":{"hide":{"skuSelector":true,"productDescription":true},"basics":{"ctaMode":"Add to Cart","ctaText":"Adicionar ao carrinho","ctaVariation":"secondary","mobileCtaText":"Adicionar ao carrinho","contentAlignment":"Left"},"discount":{"label":"off","variant":"secondary"},"onMouseOver":{"image":"Zoom image","showCta":true,"showCardShadow":true},"elementsPositions":{}},"highlights":[{"label":"Frete Grátis*","minPrice":0,"collectionId":"144","alignHorizontal":"end"}],"__resolveType":"site/sections/Product/ProductShelf.tsx","showPaginationArrows":"Always"},"withContainer":true,"verticalSpacing":"none"}],"__resolveType":"site/sections/Container.tsx"}
+{
+  "sections": [
+    {
+      "label": "ProductShelf",
+      "shadow": "none",
+      "section": {
+        "title": "Produtos similares",
+        "layout": {
+          "itemsPerPage": [
+            {
+              "screenWidth": 425,
+              "itemsQuantity": 1
+            },
+            {
+              "screenWidth": 786,
+              "itemsQuantity": 2
+            },
+            {
+              "screenWidth": 1170,
+              "itemsQuantity": 4
+            }
+          ],
+          "headerAlignment": "left"
+        },
+        "seeMore": {
+          "url": " ",
+          "label": " "
+        },
+        "products": {
+          "slug": {
+            "param": "slug",
+            "__resolveType": "deco-sites/std/functions/requestToParam.ts"
+          },
+          "count": 10,
+          "crossSelling": "whosawalsosaw",
+          "__resolveType": "deco-sites/std/loaders/vtex/legacy/relatedProductsLoader.ts",
+          "hideUnavailableItems": true
+        },
+        "cardLayout": {
+          "hide": {
+            "skuSelector": true,
+            "productDescription": true
+          },
+          "basics": {
+            "ctaMode": "Add to Cart",
+            "ctaText": "Adicionar ao carrinho",
+            "ctaVariation": "secondary",
+            "mobileCtaText": "Adicionar ao carrinho",
+            "contentAlignment": "Left"
+          },
+          "discount": {
+            "label": "off",
+            "variant": "secondary"
+          },
+          "onMouseOver": {
+            "image": "Zoom image",
+            "showCta": true,
+            "showCardShadow": true,
+            "showFavoriteIcon": true
+          },
+          "elementsPositions": {}
+        },
+        "highlights": [
+          {
+            "label": "Frete Grátis*",
+            "minPrice": 0,
+            "collectionId": "144",
+            "alignHorizontal": "end"
+          }
+        ],
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "showPaginationArrows": "Always"
+      },
+      "withContainer": true,
+      "verticalSpacing": "none"
+    }
+  ],
+  "__resolveType": "site/sections/Container.tsx"
+}

@@ -3,6 +3,7 @@ import type { ImageObject, Product } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import ProductHighlights from "$store/components/product/ProductHighlights.tsx";
+import WishlistIcon from "$store/islands/WishlistButton.tsx";
 
 interface Props {
   images: ImageObject[];
@@ -18,12 +19,18 @@ interface Props {
 
 
 function ProductDetailsImages(
-  { images, width, height, aspect, product, highlights, device,  }: Props,
+  { images, width, height, aspect, product, highlights, device, }: Props,
 ) {
- 
+
   const video = product && product.video || [];
   const midia = [...images, ...video];
 
+  const {
+    productID,
+    isVariantOf,
+  } = product;
+
+  const productGroupID = isVariantOf?.productGroupID;
 
   const imagecustom = product.image?.find((i) => i["@type"] === "ImageObject");
   const iconPlayer =
@@ -81,6 +88,13 @@ function ProductDetailsImages(
                 )
                 : null} */
               }
+
+              <WishlistIcon 
+                productGroupID={productGroupID} 
+                productID={productID} 
+                tailwind="col-start-1 col-start-1 justify-self-end !h-[36px] !w-[36px] items-end"
+                tailwindIcon="scale-150"
+              />
 
               {product && (
                 <ProductHighlights
@@ -160,7 +174,7 @@ function renderImage({ img, index, aspect, width, height, device }: {
       width={width}
       height={height}
       // Preload LCP image for better web vitals
-      fetchPriority={ index === 0 ? "high" : "auto"}
+      fetchPriority={index === 0 ? "high" : "auto"}
       preload={index === 0}
       loading={index === 0 ? "eager" : "lazy"}
     />
