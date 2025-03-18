@@ -36,6 +36,7 @@ function ProductGallery({ products, highlights, tags, device }: Props) {
             onMouseOver: {
               image: "Zoom image",
               showCardShadow: true,
+              showFavoriteIcon: true,
               showCta: true,
             },
           }}
