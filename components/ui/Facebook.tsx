@@ -20,7 +20,7 @@ function Facebook({ facebookLink }: Props) {
         class="text-white p-2 rounded-full shadow-lg"
         aria-label="Facebook link"
       >
-        <Icon id="newFacebook" size={32} stroke="0.01" />
+        <Icon id="newFacebook" size={40} stroke="0.01" />
       </button>
     </a>
   );
