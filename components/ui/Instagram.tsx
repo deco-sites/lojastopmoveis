@@ -20,7 +20,7 @@ function Instagram({ instagramLink }: Props) {
         class="text-white p-2 rounded-full shadow-lg"
         aria-label="Instagram link"
       >
-        <Icon id="Instagram" size={32} stroke="0.01" />
+        <Icon id="newInstagram" size={32} stroke="0.01" />
       </button>
     </a>
   );
