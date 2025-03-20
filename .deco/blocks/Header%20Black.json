@@ -7,19 +7,19 @@
         "alerts": [
           {
             "alt": "Icone Primeira Troca Grátis",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/366b10ce-3e3e-4174-816f-e4fa38e6cfd1",
+            "image": "https://assets.decocache.com/lojastopmoveis/a95f926a-ce07-4b5e-a47c-ae03bd437abc/1742503606334-366b10ce-3e3e-4174-816f-e4fa38e6cfd1",
             "textAlert": "12% Off no Pix, Boleto e Crédito à Vista",
             "textColor": "#ffffff"
           },
           {
             "alt": "Icone Envio para todo brasil",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2703/1b88c5a9-d517-4da0-b457-e182fcb661ba",
+            "image": "https://assets.decocache.com/lojastopmoveis/ca55c579-69df-4e8d-85d6-40f52656898f/1742503608577-1b88c5a9-d517-4da0-b457-e182fcb661ba",
             "textAlert": "Frete Grátis* com Envio Imediato",
             "textColor": "#ffffff"
           },
           {
             "alt": "Icone Parcele em até 6x sem juros",
-            "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2703/c2a88805-bc4f-4de6-91b7-535d139edea7",
+            "image": "https://assets.decocache.com/lojastopmoveis/118df2a9-c656-414c-942d-b651f7a65350/1742503609801-c2a88805-bc4f-4de6-91b7-535d139edea7",
             "textAlert": "Parcele em até 12x sem Juros* nos cartões",
             "textColor": "#ffffff"
           }
@@ -161,7 +161,7 @@
           {
             "href": "/eletronicos",
             "image": {
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/2a356a0d-1d04-4c29-9a28-f062e2c2187d"
+              "src": "https://assets.decocache.com/lojastopmoveis/d0a3207f-6216-4e26-99f7-f920a1eed4d1/1742503610814-2a356a0d-1d04-4c29-9a28-f062e2c2187d"
             },
             "label": "Eletrônicos",
             "variant": "WithBrands",
@@ -189,7 +189,7 @@
           {
             "href": "/moveis/quarto-adulto/roupeiros",
             "image": {
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/8b0e7401-f7a7-4fb9-b83d-34a0b523dc5f"
+              "src": "https://assets.decocache.com/lojastopmoveis/9ba43005-e4da-4f9a-abe3-9343ee5d160b/1742503612234-8b0e7401-f7a7-4fb9-b83d-34a0b523dc5f"
             },
             "label": "Guarda Roupas",
             "variant": "WithBrands",
@@ -217,7 +217,7 @@
           {
             "href": "/colchoes",
             "image": {
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/b090c6f5-bb1b-4ff6-9b75-bdec34b6278f"
+              "src": "https://assets.decocache.com/lojastopmoveis/629c5f96-120e-4c6a-bb55-8d495be601b4/1742503613833-b090c6f5-bb1b-4ff6-9b75-bdec34b6278f"
             },
             "label": "Colchões e Camas Box",
             "variant": "WithBrands",
@@ -270,7 +270,7 @@
           {
             "href": "/moveis/cozinha",
             "image": {
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/f4c859c1-c6f5-40fe-a7b2-9ebada87bec6"
+              "src": "https://assets.decocache.com/lojastopmoveis/94e0f7a5-d37f-4339-942d-a17343554da9/1742503615037-f4c859c1-c6f5-40fe-a7b2-9ebada87bec6"
             },
             "label": "Móveis para Cozinha",
             "variant": "WithBrands",
@@ -346,7 +346,7 @@
           {
             "href": "/moveis/sala-de-estar",
             "image": {
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/bc579115-929e-40c6-b97c-1e695b19e921"
+              "src": "https://assets.decocache.com/lojastopmoveis/1f357b96-1cfc-42de-8e88-2ede5bae760a/1742503616254-bc579115-929e-40c6-b97c-1e695b19e921"
             },
             "label": "Sala de Estar",
             "variant": "WithBrands",
@@ -404,7 +404,7 @@
           {
             "href": "/eletrodomesticos",
             "image": {
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/be2686a0-c257-4d0f-9e61-7e7f1d45fac6"
+              "src": "https://assets.decocache.com/lojastopmoveis/3046392c-9b49-4174-b34a-7a0a21f76382/1742503617452-be2686a0-c257-4d0f-9e61-7e7f1d45fac6"
             },
             "label": "Eletrodomésticos",
             "variant": "WithBrands",
@@ -511,7 +511,7 @@
           {
             "href": "/portateis",
             "image": {
-              "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/d6aa7f32-a096-45b9-b581-5b2c5243036c"
+              "src": "https://assets.decocache.com/lojastopmoveis/6bb7c9c3-b558-4021-bede-8d2e5da75bad/1742503618545-d6aa7f32-a096-45b9-b581-5b2c5243036c"
             },
             "label": "Eletroportáteis",
             "variant": "WithBrands",

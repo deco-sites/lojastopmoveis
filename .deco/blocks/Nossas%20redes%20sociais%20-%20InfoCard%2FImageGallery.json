@@ -1,1 +1,64 @@
-{"sections":[{"label":"InfoCard","shadow":"none","section":{"links":[{"href":"https://www.instagram.com/lojastopmoveis","icon":"Instagram","label":"Instagram"},{"href":"https://www.facebook.com/lojastopmoveis","icon":"Facebook","label":"Facebook"}],"title":"Nossas redes sociais","__resolveType":"site/sections/Content/InfoCard.tsx"},"withContainer":true,"verticalSpacing":"none"},{"label":"ImageGallery","shadow":"none","section":{"images":[{"alt":"Banner 1","href":"https://web.facebook.com/photo/?fbid=827986862705638&set=a.611015427736117","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/2d8f3ba2-6e98-47f3-b73b-99480342c6d2","preload":false},{"alt":"Banner 2","href":"https://web.facebook.com/photo/?fbid=824179716419686&set=a.611015427736117","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/919bdd35-82c9-413c-96e9-05474e4da78d"},{"alt":"Banner 3","href":"https://deco-sites-lojastopmoveis.deno.dev/busca?q=tubforme","blank":false,"image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/49f924cb-00d7-4086-b997-6b2a59fb7d43"},{"alt":"img 4","href":"https://web.facebook.com/photo?fbid=821778603326464&set=pcb.821778756659782","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/12ef29f7-1ec8-4e68-9ac6-31cb9066b54c"}],"__resolveType":"site/sections/Images/ImageGallery.tsx","itemPerPageMobile":1,"itemPerPageDesktop":4},"withContainer":true,"verticalSpacing":"none","itemPerPageMobile":1,"itemPerPageDesktop":3}],"__resolveType":"site/sections/Container.tsx"}
+{
+  "sections": [
+    {
+      "label": "InfoCard",
+      "shadow": "none",
+      "section": {
+        "links": [
+          {
+            "href": "https://www.instagram.com/lojastopmoveis",
+            "icon": "Instagram",
+            "label": "Instagram"
+          },
+          {
+            "href": "https://www.facebook.com/lojastopmoveis",
+            "icon": "Facebook",
+            "label": "Facebook"
+          }
+        ],
+        "title": "Nossas redes sociais",
+        "__resolveType": "site/sections/Content/InfoCard.tsx"
+      },
+      "withContainer": true,
+      "verticalSpacing": "none"
+    },
+    {
+      "label": "ImageGallery",
+      "shadow": "none",
+      "section": {
+        "images": [
+          {
+            "alt": "Banner 1",
+            "href": "https://web.facebook.com/photo/?fbid=827986862705638&set=a.611015427736117",
+            "image": "https://assets.decocache.com/lojastopmoveis/faa389f8-d42e-4b8b-ac86-26d1eda60727/1742503677797-2d8f3ba2-6e98-47f3-b73b-99480342c6d2",
+            "preload": false
+          },
+          {
+            "alt": "Banner 2",
+            "href": "https://web.facebook.com/photo/?fbid=824179716419686&set=a.611015427736117",
+            "image": "https://assets.decocache.com/lojastopmoveis/2b1f3e10-9992-4c75-b3b4-296dfaa50afb/1742503679322-919bdd35-82c9-413c-96e9-05474e4da78d"
+          },
+          {
+            "alt": "Banner 3",
+            "href": "https://deco-sites-lojastopmoveis.deno.dev/busca?q=tubforme",
+            "blank": false,
+            "image": "https://assets.decocache.com/lojastopmoveis/2bf2a92d-fac6-440f-a6b3-a60fec827049/1742503664403-49f924cb-00d7-4086-b997-6b2a59fb7d43"
+          },
+          {
+            "alt": "img 4",
+            "href": "https://web.facebook.com/photo?fbid=821778603326464&set=pcb.821778756659782",
+            "image": "https://assets.decocache.com/lojastopmoveis/bcbb3af7-9aa2-4d75-881f-5f788681e193/1742503680837-12ef29f7-1ec8-4e68-9ac6-31cb9066b54c"
+          }
+        ],
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "itemPerPageMobile": 1,
+        "itemPerPageDesktop": 4
+      },
+      "withContainer": true,
+      "verticalSpacing": "none",
+      "itemPerPageMobile": 1,
+      "itemPerPageDesktop": 3
+    }
+  ],
+  "__resolveType": "site/sections/Container.tsx"
+}
