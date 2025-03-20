@@ -12,12 +12,12 @@ function Facebook({ facebookLink }: Props) {
   return (
     <a
       href={`${facebookLink}`}
-      class="fixed w-[55px] h-[55px] bottom-[70px] right-[22px] rounded-full z-40 flex items-center justify-center"
+      class="fixed w-[40px] h-[40px] bottom-[70px] right-[22px] rounded-full z-40 flex items-center justify-center"
       aria-label="Facebook link"
       target="blank"
     >
       <button
-        class="text-white p-2 rounded-full shadow-lg"
+        class="text-white p-2 rounded-full w-[40px] h-[40px]"
         aria-label="Facebook link"
       >
         <Icon id="newFacebook" size={40} stroke="0.01" />

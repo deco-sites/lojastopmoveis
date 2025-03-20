@@ -4254,6 +4254,12 @@ details.collapse summary::-webkit-details-marker {
 .bottom-10 {
   bottom: 2.5rem;
 }
+.bottom-\[120px\] {
+  bottom: 120px;
+}
+.bottom-\[170px\] {
+  bottom: 170px;
+}
 .bottom-\[50px\] {
   bottom: 50px;
 }
@@ -4816,9 +4822,6 @@ details.collapse summary::-webkit-details-marker {
 .h-\[46px\] {
   height: 46px;
 }
-.h-\[55px\] {
-  height: 55px;
-}
 .h-\[60px\] {
   height: 60px;
 }
@@ -4986,6 +4989,9 @@ details.collapse summary::-webkit-details-marker {
 .w-\[400px\] {
   width: 400px;
 }
+.w-\[40px\] {
+  width: 40px;
+}
 .w-\[45\%\] {
   width: 45%;
 }
@@ -5003,9 +5009,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[54\.1px\] {
   width: 54.1px;
-}
-.w-\[55px\] {
-  width: 55px;
 }
 .w-\[560px\] {
   width: 560px;
@@ -5850,10 +5853,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: rgb(22 22 22 / var(--tw-bg-opacity));
 }
-.bg-\[\#45D268\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(69 210 104 / var(--tw-bg-opacity));
-}
 .bg-\[\#808080\] {
   --tw-bg-opacity: 1;
   background-color: rgb(128 128 128 / var(--tw-bg-opacity));
@@ -5901,10 +5900,6 @@ details.collapse summary::-webkit-details-marker {
 .bg-\[\#f6f6f6\] {
   --tw-bg-opacity: 1;
   background-color: rgb(246 246 246 / var(--tw-bg-opacity));
-}
-.bg-\[limegreen\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(50 205 50 / var(--tw-bg-opacity));
 }
 .bg-\[var\(--bg-color\)\] {
   background-color: var(--bg-color);
