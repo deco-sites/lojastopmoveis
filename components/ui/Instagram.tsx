@@ -4,7 +4,7 @@ export interface Props {
   instagramLink?: string;
 }
 
-function WhatsApp({ instagramLink }: Props) {
+function Instagram({ instagramLink }: Props) {
   if (!instagramLink) {
     return null;
   }
@@ -20,10 +20,10 @@ function WhatsApp({ instagramLink }: Props) {
         class="bg-[#45D268] text-white p-2 rounded-full shadow-lg"
         aria-label="Chat on WhatsApp"
       >
-        <Icon id="WhatsApp" size={32} stroke="0.01" />
+        <Icon id="Instagram" size={32} stroke="0.01" />
       </button>
     </a>
   );
 }
 
-export default WhatsApp;
+export default Instagram;
