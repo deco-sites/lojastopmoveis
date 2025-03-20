@@ -3407,6 +3407,20 @@
               "__resolveType": "site/sections/Social/WhatsApp.tsx",
               "phone": 5585988025359
             }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Social/Facebook.tsx",
+              "facebookLink": "https://www.facebook.com/lojastopmoveis/"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Social/Instagram.tsx",
+              "instagramLink": "https://www.instagram.com/lojastopmoveis"
+            }
           }
         ]
       }
