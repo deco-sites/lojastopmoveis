@@ -12,13 +12,13 @@ function Instagram({ instagramLink }: Props) {
   return (
     <a
       href={`${instagramLink}`}
-      class="fixed w-[55px] h-[55px] bottom-[70px] right-[22px] rounded-full z-40 bg-[limegreen] flex items-center justify-center"
-      aria-label="Chat on WhatsApp"
+      class="fixed w-[55px] h-[55px] bottom-[70px] right-[22px] rounded-full z-40 flex items-center justify-center"
+      aria-label="Instagram link"
       target="blank"
     >
       <button
-        class="bg-[#45D268] text-white p-2 rounded-full shadow-lg"
-        aria-label="Chat on WhatsApp"
+        class="text-white p-2 rounded-full shadow-lg"
+        aria-label="Instagram link"
       >
         <Icon id="Instagram" size={32} stroke="0.01" />
       </button>
