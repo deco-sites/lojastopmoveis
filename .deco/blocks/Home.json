@@ -1309,6 +1309,10 @@
                         {
                           "label": "Trabalhe Conosco",
                           "href": "https://trabalheconosco.lojastopmoveis.com.br/"
+                        },
+                        {
+                          "label": "Igualdade Salarial",
+                          "href": "/relatorio-igualdade-salarial"
                         }
                       ]
                     },
