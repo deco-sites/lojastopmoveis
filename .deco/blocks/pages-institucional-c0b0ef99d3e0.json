@@ -1,1 +1,60 @@
-{"name":"Institucional","path":"/i","sections":[{"__resolveType":"SEODefault"},{"__resolveType":"Default - Design System"},{"__resolveType":"Header Global"},{"sections":[{"label":"banner menu","shadow":"none","section":{"banners":[{"text":{"mobileTextPosition":"left","desktopTextPosition":"left"},"image":{"mobile":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/1911ef0b-a3bb-41c8-bf47-e88e3b01bcce","desktop":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/1feb0e7d-6832-4008-bf3f-bf3604f23b99"},"matcher":"/i"}],"__resolveType":"site/sections/Category/CategoryBanner.tsx"},"withContainer":false,"verticalSpacing":"top"}],"__resolveType":"site/sections/Container.tsx"},{"sections":[{"label":"menu","shadow":"none","section":{"__resolveType":"Aside Menu Global"},"withContainer":true,"verticalSpacing":"top"}],"__resolveType":"site/sections/Container.tsx"},{"__resolveType":"Footer Global"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Institucional",
+  "path": "/i",
+  "sections": [
+    {
+      "__resolveType": "SEODefault"
+    },
+    {
+      "__resolveType": "Default - Design System"
+    },
+    {
+      "__resolveType": "Header Global"
+    },
+    {
+      "sections": [
+        {
+          "label": "banner menu",
+          "shadow": "none",
+          "section": {
+            "banners": [
+              {
+                "text": {
+                  "mobileTextPosition": "left",
+                  "desktopTextPosition": "left"
+                },
+                "image": {
+                  "mobile": "https://assets.decocache.com/lojastopmoveis/5e153fbe-4f08-4a72-8670-0429e43e9739/1742503657207-1911ef0b-a3bb-41c8-bf47-e88e3b01bcce",
+                  "desktop": "https://assets.decocache.com/lojastopmoveis/3b1ffe64-bd16-4ebb-ac07-9b429f689c80/1742503659420-1feb0e7d-6832-4008-bf3f-bf3604f23b99"
+                },
+                "matcher": "/i"
+              }
+            ],
+            "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+          },
+          "withContainer": false,
+          "verticalSpacing": "top"
+        }
+      ],
+      "__resolveType": "site/sections/Container.tsx"
+    },
+    {
+      "sections": [
+        {
+          "label": "menu",
+          "shadow": "none",
+          "section": {
+            "__resolveType": "Aside Menu Global"
+          },
+          "withContainer": true,
+          "verticalSpacing": "top"
+        }
+      ],
+      "__resolveType": "site/sections/Container.tsx"
+    },
+    {
+      "__resolveType": "Footer Global"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

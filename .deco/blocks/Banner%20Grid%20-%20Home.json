@@ -20,9 +20,9 @@
             },
             "rowSpan": 2,
             "rowStart": 1,
-            "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e01818d3-cbbf-47b1-ae43-99680a00d654",
+            "srcMobile": "https://assets.decocache.com/lojastopmoveis/9f25096a-2228-4796-bc2d-357d00e476d3/1742503668671-e01818d3-cbbf-47b1-ae43-99680a00d654",
             "textColor": "secondary",
-            "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4f5259b8-3300-444d-958e-54e962c60f3d",
+            "srcDesktop": "https://assets.decocache.com/lojastopmoveis/1cec0a29-72b6-4d2b-9eb5-49e3b627cb2f/1742503670190-4f5259b8-3300-444d-958e-54e962c60f3d",
             "buttonColor": "primary",
             "columnStart": 1,
             "backgroundColor": "secondary",
@@ -38,9 +38,9 @@
               "buttonColor": "warning",
               "verticalAlignment": "Bottom"
             },
-            "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/edcdd059-6d14-4f4b-8f99-24fba2a4c527",
+            "srcMobile": "https://assets.decocache.com/lojastopmoveis/21ea9038-ee60-4dfa-b964-d978da7f09f3/1742503671304-edcdd059-6d14-4f4b-8f99-24fba2a4c527",
             "textColor": "secondary",
-            "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e8a48bb7-4ee4-4364-876d-d113595d94eb",
+            "srcDesktop": "https://assets.decocache.com/lojastopmoveis/67a3c99e-9789-4417-b806-caa7e8975621/1742503672861-e8a48bb7-4ee4-4364-876d-d113595d94eb",
             "backgroundColor": "primary"
           },
           {
@@ -53,9 +53,9 @@
               "buttonColor": "secondary",
               "verticalAlignment": "Bottom"
             },
-            "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/854a0199-fd34-4bce-aa43-77455682d6ab",
+            "srcMobile": "https://assets.decocache.com/lojastopmoveis/3820b34b-1194-4f2b-9b72-86925211a7f5/1742503705644-854a0199-fd34-4bce-aa43-77455682d6ab",
             "textColor": "secondary",
-            "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/7191a3dc-c1f0-40ca-9fe4-e312c59e490f"
+            "srcDesktop": "https://assets.decocache.com/lojastopmoveis/63a5de9b-cc9e-4234-ba47-5d00857691c8/1742503707164-7191a3dc-c1f0-40ca-9fe4-e312c59e490f"
           }
         ],
         "columnGap": {

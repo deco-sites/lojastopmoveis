@@ -31,19 +31,19 @@
                   "alerts": [
                     {
                       "alt": "Icone Primeira Troca Grátis",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/366b10ce-3e3e-4174-816f-e4fa38e6cfd1",
+                      "image": "https://assets.decocache.com/lojastopmoveis/a95f926a-ce07-4b5e-a47c-ae03bd437abc/1742503606334-366b10ce-3e3e-4174-816f-e4fa38e6cfd1",
                       "textAlert": "Até 12% Off no Pix, Boleto e Crédito à Vista",
                       "textColor": "#ffffff"
                     },
                     {
                       "alt": "Icone Envio para todo brasil",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2703/1b88c5a9-d517-4da0-b457-e182fcb661ba",
+                      "image": "https://assets.decocache.com/lojastopmoveis/ca55c579-69df-4e8d-85d6-40f52656898f/1742503608577-1b88c5a9-d517-4da0-b457-e182fcb661ba",
                       "textAlert": "Frete Grátis* com Envio Imediato",
                       "textColor": "#ffffff"
                     },
                     {
                       "alt": "Icone Parcele em até 6x sem juros",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2703/c2a88805-bc4f-4de6-91b7-535d139edea7",
+                      "image": "https://assets.decocache.com/lojastopmoveis/118df2a9-c656-414c-942d-b651f7a65350/1742503609801-c2a88805-bc4f-4de6-91b7-535d139edea7",
                       "textAlert": "Parcele em até 12x sem Juros* nos cartões",
                       "textColor": "#ffffff"
                     }
@@ -183,7 +183,7 @@
                     {
                       "href": "/eletronicos",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/2a356a0d-1d04-4c29-9a28-f062e2c2187d"
+                        "src": "https://assets.decocache.com/lojastopmoveis/d0a3207f-6216-4e26-99f7-f920a1eed4d1/1742503610814-2a356a0d-1d04-4c29-9a28-f062e2c2187d"
                       },
                       "label": "Eletrônicos",
                       "variant": "WithBrands",
@@ -211,7 +211,7 @@
                     {
                       "href": "/moveis/quarto-adulto/roupeiros",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/8b0e7401-f7a7-4fb9-b83d-34a0b523dc5f"
+                        "src": "https://assets.decocache.com/lojastopmoveis/9ba43005-e4da-4f9a-abe3-9343ee5d160b/1742503612234-8b0e7401-f7a7-4fb9-b83d-34a0b523dc5f"
                       },
                       "label": "Guarda Roupas",
                       "variant": "WithBrands",
@@ -239,7 +239,7 @@
                     {
                       "href": "/colchoes",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/b090c6f5-bb1b-4ff6-9b75-bdec34b6278f"
+                        "src": "https://assets.decocache.com/lojastopmoveis/629c5f96-120e-4c6a-bb55-8d495be601b4/1742503613833-b090c6f5-bb1b-4ff6-9b75-bdec34b6278f"
                       },
                       "label": "Colchões e Camas Box",
                       "variant": "WithBrands",
@@ -292,7 +292,7 @@
                     {
                       "href": "/moveis/cozinha",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/f4c859c1-c6f5-40fe-a7b2-9ebada87bec6"
+                        "src": "https://assets.decocache.com/lojastopmoveis/94e0f7a5-d37f-4339-942d-a17343554da9/1742503615037-f4c859c1-c6f5-40fe-a7b2-9ebada87bec6"
                       },
                       "label": "Móveis para Cozinha",
                       "variant": "WithBrands",
@@ -368,7 +368,7 @@
                     {
                       "href": "/moveis/sala-de-estar",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/bc579115-929e-40c6-b97c-1e695b19e921"
+                        "src": "https://assets.decocache.com/lojastopmoveis/1f357b96-1cfc-42de-8e88-2ede5bae760a/1742503616254-bc579115-929e-40c6-b97c-1e695b19e921"
                       },
                       "label": "Sala de Estar",
                       "variant": "WithBrands",
@@ -426,7 +426,7 @@
                     {
                       "href": "/eletrodomesticos",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/be2686a0-c257-4d0f-9e61-7e7f1d45fac6"
+                        "src": "https://assets.decocache.com/lojastopmoveis/3046392c-9b49-4174-b34a-7a0a21f76382/1742503617452-be2686a0-c257-4d0f-9e61-7e7f1d45fac6"
                       },
                       "label": "Eletrodomésticos",
                       "variant": "WithBrands",
@@ -533,7 +533,7 @@
                     {
                       "href": "/portateis",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/d6aa7f32-a096-45b9-b581-5b2c5243036c"
+                        "src": "https://assets.decocache.com/lojastopmoveis/6bb7c9c3-b558-4021-bede-8d2e5da75bad/1742503618545-d6aa7f32-a096-45b9-b581-5b2c5243036c"
                       },
                       "label": "Eletroportáteis",
                       "variant": "WithBrands",
@@ -666,12 +666,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4de74be1-934a-468f-ba94-80d2f836f071",
+                        "image": "https://assets.decocache.com/lojastopmoveis/82cc940e-5a81-48c9-9f0b-cb59cd346779/1742503661285-4de74be1-934a-468f-ba94-80d2f836f071",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3da66ec4-7e05-4720-a68c-c16170b9aeb1",
+                        "image": "https://assets.decocache.com/lojastopmoveis/e7137680-08a3-465c-b7c2-f941de8a4cca/1742503662754-3da66ec4-7e05-4720-a68c-c16170b9aeb1",
                         "width": 1920,
                         "height": 600
                       }
@@ -683,12 +683,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3c7d5854-7119-4837-88fc-6678e22e181d",
+                        "image": "https://assets.decocache.com/lojastopmoveis/8f445e2a-a650-488e-a471-21151f214895/1742503666027-3c7d5854-7119-4837-88fc-6678e22e181d",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/35471bff-3c82-4c69-a19e-4b14e124c59b",
+                        "image": "https://assets.decocache.com/lojastopmoveis/092d608d-5315-47d4-82ba-158638895e88/1742503667294-35471bff-3c82-4c69-a19e-4b14e124c59b",
                         "width": 1920,
                         "height": 600
                       }
@@ -1287,9 +1287,9 @@
                       },
                       "rowSpan": 2,
                       "rowStart": 1,
-                      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e01818d3-cbbf-47b1-ae43-99680a00d654",
+                      "srcMobile": "https://assets.decocache.com/lojastopmoveis/9f25096a-2228-4796-bc2d-357d00e476d3/1742503668671-e01818d3-cbbf-47b1-ae43-99680a00d654",
                       "textColor": "secondary",
-                      "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4f5259b8-3300-444d-958e-54e962c60f3d",
+                      "srcDesktop": "https://assets.decocache.com/lojastopmoveis/1cec0a29-72b6-4d2b-9eb5-49e3b627cb2f/1742503670190-4f5259b8-3300-444d-958e-54e962c60f3d",
                       "buttonColor": "primary",
                       "columnStart": 1,
                       "backgroundColor": "secondary",
@@ -1305,9 +1305,9 @@
                         "buttonColor": "warning",
                         "verticalAlignment": "Bottom"
                       },
-                      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/edcdd059-6d14-4f4b-8f99-24fba2a4c527",
+                      "srcMobile": "https://assets.decocache.com/lojastopmoveis/21ea9038-ee60-4dfa-b964-d978da7f09f3/1742503671304-edcdd059-6d14-4f4b-8f99-24fba2a4c527",
                       "textColor": "secondary",
-                      "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e8a48bb7-4ee4-4364-876d-d113595d94eb",
+                      "srcDesktop": "https://assets.decocache.com/lojastopmoveis/67a3c99e-9789-4417-b806-caa7e8975621/1742503672861-e8a48bb7-4ee4-4364-876d-d113595d94eb",
                       "backgroundColor": "primary"
                     },
                     {
@@ -1320,9 +1320,9 @@
                         "buttonColor": "secondary",
                         "verticalAlignment": "Bottom"
                       },
-                      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/854a0199-fd34-4bce-aa43-77455682d6ab",
+                      "srcMobile": "https://assets.decocache.com/lojastopmoveis/3820b34b-1194-4f2b-9b72-86925211a7f5/1742503705644-854a0199-fd34-4bce-aa43-77455682d6ab",
                       "textColor": "secondary",
-                      "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/7191a3dc-c1f0-40ca-9fe4-e312c59e490f"
+                      "srcDesktop": "https://assets.decocache.com/lojastopmoveis/63a5de9b-cc9e-4234-ba47-5d00857691c8/1742503707164-7191a3dc-c1f0-40ca-9fe4-e312c59e490f"
                     }
                   ],
                   "columnGap": {
@@ -1584,7 +1584,7 @@
                     },
                     {
                       "alt": "Banner 3",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/49f924cb-00d7-4086-b997-6b2a59fb7d43",
+                      "image": "https://assets.decocache.com/lojastopmoveis/2bf2a92d-fac6-440f-a6b3-a60fec827049/1742503664403-49f924cb-00d7-4086-b997-6b2a59fb7d43",
                       "href": "https://www.lojastopmoveis.com.br/busca?q=tubform"
                     },
                     {
@@ -1656,33 +1656,33 @@
                   "payments": [
                     {
                       "alt": "Mastercard",
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4d6d7752-f54d-4134-9f3f-bd87debefad9",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
+                      "icon": "https://assets.decocache.com/lojastopmoveis/216888c0-4e68-4757-8b2e-22eea5603af0/1742503642274-4d6d7752-f54d-4134-9f3f-bd87debefad9",
+                      "image": "https://assets.decocache.com/lojastopmoveis/944bcaf6-dd65-481c-a5c9-d6fcaa4e6e86/1742503643389-9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
                     },
                     {
                       "alt": "Visa",
                       "icon": "Elo",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/56774fb5-1b46-49e9-a98d-b0374629ff34"
+                      "image": "https://assets.decocache.com/lojastopmoveis/ed99ae46-6b58-494d-a494-53dd5ba22c02/1742503644799-56774fb5-1b46-49e9-a98d-b0374629ff34"
                     },
                     {
                       "alt": "Elo",
                       "icon": "Visa",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/dc227df4-428a-491a-a45b-4d6ea957e8db"
+                      "image": "https://assets.decocache.com/lojastopmoveis/0344b09c-fba2-4738-97f7-c8242865aa0d/1742503645836-dc227df4-428a-491a-a45b-4d6ea957e8db"
                     },
                     {
                       "alt": "American Express",
                       "icon": "AmericanExpress",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/90ebb7c1-9761-4e02-b362-230b8b6cf68b"
+                      "image": "https://assets.decocache.com/lojastopmoveis/734afe84-6efb-4542-bc40-97aac701a662/1742503646944-90ebb7c1-9761-4e02-b362-230b8b6cf68b"
                     },
                     {
                       "alt": "Pix",
                       "icon": "Pix",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/4d3ea048-365f-4730-bb2f-aa2413e092a3"
+                      "image": "https://assets.decocache.com/lojastopmoveis/a9d15e55-7f7b-41a5-82f8-98db0d1ca261/1742503648053-4d3ea048-365f-4730-bb2f-aa2413e092a3"
                     },
                     {
                       "alt": "Boleto",
                       "icon": "Boleto",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/b0f6cb07-3146-4a34-9866-4a2c84647088"
+                      "image": "https://assets.decocache.com/lojastopmoveis/ff9b9712-9671-4560-bfce-a92528a63526/1742503649021-b0f6cb07-3146-4a34-9866-4a2c84647088"
                     }
                   ],
                   "sections": [
@@ -1766,30 +1766,30 @@
                   "poweredby": [
                     {
                       "alt": "agencia n1 e deco",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/9db056dc-4990-4d02-b894-216a8c2829be",
+                      "image": "https://assets.decocache.com/lojastopmoveis/a9b0a924-c401-4850-b78b-9921bda41bd3/1742503650179-9db056dc-4990-4d02-b894-216a8c2829be",
                       "label": "Created By",
                       "images": [
                         {
                           "alt": "Agencia N1",
                           "link": "https://www.n1.ag/",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/22cacffa-fae4-40c7-bb27-5ec19e8e04fb"
+                          "image": "https://assets.decocache.com/lojastopmoveis/5f1808a7-571f-47b9-9f8d-6ae4f9c5bd5f/1742503651304-22cacffa-fae4-40c7-bb27-5ec19e8e04fb"
                         },
                         {
                           "alt": "Deco",
                           "link": "https://deco.cx/",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/b0a9b073-cadb-4846-ba49-ec47cbfd896d"
+                          "image": "https://assets.decocache.com/lojastopmoveis/f3405c7a-7965-4685-9eca-bd21b4dd190c/1742503652409-b0a9b073-cadb-4846-ba49-ec47cbfd896d"
                         }
                       ]
                     },
                     {
                       "alt": "vtex",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4749b4f9-1943-4066-b918-2dae9e469611",
+                      "image": "https://assets.decocache.com/lojastopmoveis/494e5192-46be-4528-863f-c01ee0da881c/1742503653507-4749b4f9-1943-4066-b918-2dae9e469611",
                       "label": "Powered by",
                       "images": [
                         {
                           "alt": "Vtex",
                           "link": "https://vtex.com/br-pt",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/7a3b9c32-2ae7-4bf6-9ea1-1878d0f4349b"
+                          "image": "https://assets.decocache.com/lojastopmoveis/c0829ffc-6fb9-4e21-b52e-f1f192b2789e/1742503654581-7a3b9c32-2ae7-4bf6-9ea1-1878d0f4349b"
                         }
                       ]
                     }
@@ -1798,7 +1798,7 @@
                     {
                       "alt": "Let's Encrypt",
                       "href": "https://letsencrypt.org/",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/3be20735-a11c-4274-a43b-9fe3ac96121a"
+                      "image": "https://assets.decocache.com/lojastopmoveis/4be128b5-7586-426c-b3f8-fdcf3402e22d/1742503655704-3be20735-a11c-4274-a43b-9fe3ac96121a"
                     }
                   ],
                   "openingHours": "<p>Atendimento de segunda à sexta das 8h às 18h.</p>",
@@ -1886,19 +1886,19 @@
                   "alerts": [
                     {
                       "alt": "Icone Primeira Troca Grátis",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/366b10ce-3e3e-4174-816f-e4fa38e6cfd1",
+                      "image": "https://assets.decocache.com/lojastopmoveis/a95f926a-ce07-4b5e-a47c-ae03bd437abc/1742503606334-366b10ce-3e3e-4174-816f-e4fa38e6cfd1",
                       "textAlert": "Até 12% Off no Pix, Boleto e Crédito à Vista",
                       "textColor": "#ffffff"
                     },
                     {
                       "alt": "Icone Envio para todo brasil",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2703/1b88c5a9-d517-4da0-b457-e182fcb661ba",
+                      "image": "https://assets.decocache.com/lojastopmoveis/ca55c579-69df-4e8d-85d6-40f52656898f/1742503608577-1b88c5a9-d517-4da0-b457-e182fcb661ba",
                       "textAlert": "Frete Grátis* com Envio Imediato",
                       "textColor": "#ffffff"
                     },
                     {
                       "alt": "Icone Parcele em até 6x sem juros",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2703/c2a88805-bc4f-4de6-91b7-535d139edea7",
+                      "image": "https://assets.decocache.com/lojastopmoveis/118df2a9-c656-414c-942d-b651f7a65350/1742503609801-c2a88805-bc4f-4de6-91b7-535d139edea7",
                       "textAlert": "Parcele em até 12x sem Juros* nos cartões",
                       "textColor": "#ffffff"
                     }
@@ -2038,7 +2038,7 @@
                     {
                       "href": "/eletronicos",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/2a356a0d-1d04-4c29-9a28-f062e2c2187d"
+                        "src": "https://assets.decocache.com/lojastopmoveis/d0a3207f-6216-4e26-99f7-f920a1eed4d1/1742503610814-2a356a0d-1d04-4c29-9a28-f062e2c2187d"
                       },
                       "label": "Eletrônicos",
                       "variant": "WithBrands",
@@ -2066,7 +2066,7 @@
                     {
                       "href": "/moveis/quarto-adulto/roupeiros",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/8b0e7401-f7a7-4fb9-b83d-34a0b523dc5f"
+                        "src": "https://assets.decocache.com/lojastopmoveis/9ba43005-e4da-4f9a-abe3-9343ee5d160b/1742503612234-8b0e7401-f7a7-4fb9-b83d-34a0b523dc5f"
                       },
                       "label": "Guarda Roupas",
                       "variant": "WithBrands",
@@ -2094,7 +2094,7 @@
                     {
                       "href": "/colchoes",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/b090c6f5-bb1b-4ff6-9b75-bdec34b6278f"
+                        "src": "https://assets.decocache.com/lojastopmoveis/629c5f96-120e-4c6a-bb55-8d495be601b4/1742503613833-b090c6f5-bb1b-4ff6-9b75-bdec34b6278f"
                       },
                       "label": "Colchões e Camas Box",
                       "variant": "WithBrands",
@@ -2147,7 +2147,7 @@
                     {
                       "href": "/moveis/cozinha",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/f4c859c1-c6f5-40fe-a7b2-9ebada87bec6"
+                        "src": "https://assets.decocache.com/lojastopmoveis/94e0f7a5-d37f-4339-942d-a17343554da9/1742503615037-f4c859c1-c6f5-40fe-a7b2-9ebada87bec6"
                       },
                       "label": "Móveis para Cozinha",
                       "variant": "WithBrands",
@@ -2223,7 +2223,7 @@
                     {
                       "href": "/moveis/sala-de-estar",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/bc579115-929e-40c6-b97c-1e695b19e921"
+                        "src": "https://assets.decocache.com/lojastopmoveis/1f357b96-1cfc-42de-8e88-2ede5bae760a/1742503616254-bc579115-929e-40c6-b97c-1e695b19e921"
                       },
                       "label": "Sala de Estar",
                       "variant": "WithBrands",
@@ -2281,7 +2281,7 @@
                     {
                       "href": "/eletrodomesticos",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/be2686a0-c257-4d0f-9e61-7e7f1d45fac6"
+                        "src": "https://assets.decocache.com/lojastopmoveis/3046392c-9b49-4174-b34a-7a0a21f76382/1742503617452-be2686a0-c257-4d0f-9e61-7e7f1d45fac6"
                       },
                       "label": "Eletrodomésticos",
                       "variant": "WithBrands",
@@ -2388,7 +2388,7 @@
                     {
                       "href": "/portateis",
                       "image": {
-                        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/d6aa7f32-a096-45b9-b581-5b2c5243036c"
+                        "src": "https://assets.decocache.com/lojastopmoveis/6bb7c9c3-b558-4021-bede-8d2e5da75bad/1742503618545-d6aa7f32-a096-45b9-b581-5b2c5243036c"
                       },
                       "label": "Eletroportáteis",
                       "variant": "WithBrands",
@@ -2521,12 +2521,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4de74be1-934a-468f-ba94-80d2f836f071",
+                        "image": "https://assets.decocache.com/lojastopmoveis/82cc940e-5a81-48c9-9f0b-cb59cd346779/1742503661285-4de74be1-934a-468f-ba94-80d2f836f071",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3da66ec4-7e05-4720-a68c-c16170b9aeb1",
+                        "image": "https://assets.decocache.com/lojastopmoveis/e7137680-08a3-465c-b7c2-f941de8a4cca/1742503662754-3da66ec4-7e05-4720-a68c-c16170b9aeb1",
                         "width": 1920,
                         "height": 600
                       }
@@ -2538,12 +2538,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/3c7d5854-7119-4837-88fc-6678e22e181d",
+                        "image": "https://assets.decocache.com/lojastopmoveis/8f445e2a-a650-488e-a471-21151f214895/1742503666027-3c7d5854-7119-4837-88fc-6678e22e181d",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/35471bff-3c82-4c69-a19e-4b14e124c59b",
+                        "image": "https://assets.decocache.com/lojastopmoveis/092d608d-5315-47d4-82ba-158638895e88/1742503667294-35471bff-3c82-4c69-a19e-4b14e124c59b",
                         "width": 1920,
                         "height": 600
                       }
@@ -2618,42 +2618,42 @@
                     {
                       "alt": "Shorts",
                       "href": "/topofertasdodia",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/fecb36e0-48b7-4697-a665-19eec659d6bf",
+                      "image": "https://assets.decocache.com/lojastopmoveis/a6d28f01-5c51-41f6-85d7-62ddcd182cbb/1742503631363-fecb36e0-48b7-4697-a665-19eec659d6bf",
                       "title": "Aproveitar Agora",
                       "preload": true
                     },
                     {
                       "alt": "Dormitório Adulto",
                       "href": "/moveis/quarto-adulto",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/cd92f929-afdb-4321-9a9b-b63a3534f7fd",
+                      "image": "https://assets.decocache.com/lojastopmoveis/64fd4e7f-7f86-4c46-9e1f-e204089ecbb9/1742503633002-cd92f929-afdb-4321-9a9b-b63a3534f7fd",
                       "title": "Dormitório Adulto",
                       "preload": true
                     },
                     {
                       "alt": "Eletrodomésticos",
                       "href": "/eletrodomesticos",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/ccc42c4e-0a4a-4e58-a356-55af3b3261ad",
+                      "image": "https://assets.decocache.com/lojastopmoveis/72df2781-0b6e-4c75-9558-808de317df7c/1742503634347-ccc42c4e-0a4a-4e58-a356-55af3b3261ad",
                       "title": "Eletrodomésticos",
                       "preload": true
                     },
                     {
                       "alt": "Camas box e Colchôes",
                       "href": "/colchoes",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4c8b3128-61d6-4419-859f-64f8ec11a28b",
+                      "image": "https://assets.decocache.com/lojastopmoveis/ac09ec53-34b2-402f-89f1-dcce474d8239/1742503635838-4c8b3128-61d6-4419-859f-64f8ec11a28b",
                       "title": "Camas box e Colchões",
                       "preload": true
                     },
                     {
                       "alt": "Móveis para cozinha",
                       "href": "/moveis/cozinha",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e50e727b-e86e-4967-bb99-e0c12d501884",
+                      "image": "https://assets.decocache.com/lojastopmoveis/1714e1fc-8bc9-4b22-9782-41ca1986fe60/1742503637253-e50e727b-e86e-4967-bb99-e0c12d501884",
                       "title": "Móveis para cozinha",
                       "preload": true
                     },
                     {
                       "alt": "Sala de Estar",
                       "href": "/moveis/sala-de-estar",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4ddbaea1-9e67-4d09-a6f5-898ace1205c0",
+                      "image": "https://assets.decocache.com/lojastopmoveis/a7f898a3-b75a-4bec-8ca1-34b10d20540e/1742503638814-4ddbaea1-9e67-4d09-a6f5-898ace1205c0",
                       "title": "Sala de Estar",
                       "preload": true
                     }
@@ -3142,9 +3142,9 @@
                       },
                       "rowSpan": 2,
                       "rowStart": 1,
-                      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e01818d3-cbbf-47b1-ae43-99680a00d654",
+                      "srcMobile": "https://assets.decocache.com/lojastopmoveis/9f25096a-2228-4796-bc2d-357d00e476d3/1742503668671-e01818d3-cbbf-47b1-ae43-99680a00d654",
                       "textColor": "secondary",
-                      "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4f5259b8-3300-444d-958e-54e962c60f3d",
+                      "srcDesktop": "https://assets.decocache.com/lojastopmoveis/1cec0a29-72b6-4d2b-9eb5-49e3b627cb2f/1742503670190-4f5259b8-3300-444d-958e-54e962c60f3d",
                       "buttonColor": "primary",
                       "columnStart": 1,
                       "backgroundColor": "secondary",
@@ -3160,9 +3160,9 @@
                         "buttonColor": "warning",
                         "verticalAlignment": "Bottom"
                       },
-                      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/edcdd059-6d14-4f4b-8f99-24fba2a4c527",
+                      "srcMobile": "https://assets.decocache.com/lojastopmoveis/21ea9038-ee60-4dfa-b964-d978da7f09f3/1742503671304-edcdd059-6d14-4f4b-8f99-24fba2a4c527",
                       "textColor": "secondary",
-                      "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e8a48bb7-4ee4-4364-876d-d113595d94eb",
+                      "srcDesktop": "https://assets.decocache.com/lojastopmoveis/67a3c99e-9789-4417-b806-caa7e8975621/1742503672861-e8a48bb7-4ee4-4364-876d-d113595d94eb",
                       "backgroundColor": "primary"
                     },
                     {
@@ -3175,9 +3175,9 @@
                         "buttonColor": "secondary",
                         "verticalAlignment": "Bottom"
                       },
-                      "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/854a0199-fd34-4bce-aa43-77455682d6ab",
+                      "srcMobile": "https://assets.decocache.com/lojastopmoveis/3820b34b-1194-4f2b-9b72-86925211a7f5/1742503705644-854a0199-fd34-4bce-aa43-77455682d6ab",
                       "textColor": "secondary",
-                      "srcDesktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/7191a3dc-c1f0-40ca-9fe4-e312c59e490f"
+                      "srcDesktop": "https://assets.decocache.com/lojastopmoveis/63a5de9b-cc9e-4234-ba47-5d00857691c8/1742503707164-7191a3dc-c1f0-40ca-9fe4-e312c59e490f"
                     }
                   ],
                   "columnGap": {
@@ -3439,7 +3439,7 @@
                     },
                     {
                       "alt": "Banner 3",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/49f924cb-00d7-4086-b997-6b2a59fb7d43",
+                      "image": "https://assets.decocache.com/lojastopmoveis/2bf2a92d-fac6-440f-a6b3-a60fec827049/1742503664403-49f924cb-00d7-4086-b997-6b2a59fb7d43",
                       "href": "https://www.lojastopmoveis.com.br/busca?q=tubform"
                     },
                     {
@@ -3511,33 +3511,33 @@
                   "payments": [
                     {
                       "alt": "Mastercard",
-                      "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4d6d7752-f54d-4134-9f3f-bd87debefad9",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
+                      "icon": "https://assets.decocache.com/lojastopmoveis/216888c0-4e68-4757-8b2e-22eea5603af0/1742503642274-4d6d7752-f54d-4134-9f3f-bd87debefad9",
+                      "image": "https://assets.decocache.com/lojastopmoveis/944bcaf6-dd65-481c-a5c9-d6fcaa4e6e86/1742503643389-9954cf76-2e68-4e01-bccb-08a71a3b3dd1"
                     },
                     {
                       "alt": "Visa",
                       "icon": "Elo",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/56774fb5-1b46-49e9-a98d-b0374629ff34"
+                      "image": "https://assets.decocache.com/lojastopmoveis/ed99ae46-6b58-494d-a494-53dd5ba22c02/1742503644799-56774fb5-1b46-49e9-a98d-b0374629ff34"
                     },
                     {
                       "alt": "Elo",
                       "icon": "Visa",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/dc227df4-428a-491a-a45b-4d6ea957e8db"
+                      "image": "https://assets.decocache.com/lojastopmoveis/0344b09c-fba2-4738-97f7-c8242865aa0d/1742503645836-dc227df4-428a-491a-a45b-4d6ea957e8db"
                     },
                     {
                       "alt": "American Express",
                       "icon": "AmericanExpress",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/90ebb7c1-9761-4e02-b362-230b8b6cf68b"
+                      "image": "https://assets.decocache.com/lojastopmoveis/734afe84-6efb-4542-bc40-97aac701a662/1742503646944-90ebb7c1-9761-4e02-b362-230b8b6cf68b"
                     },
                     {
                       "alt": "Pix",
                       "icon": "Pix",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/4d3ea048-365f-4730-bb2f-aa2413e092a3"
+                      "image": "https://assets.decocache.com/lojastopmoveis/a9d15e55-7f7b-41a5-82f8-98db0d1ca261/1742503648053-4d3ea048-365f-4730-bb2f-aa2413e092a3"
                     },
                     {
                       "alt": "Boleto",
                       "icon": "Boleto",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1692/b0f6cb07-3146-4a34-9866-4a2c84647088"
+                      "image": "https://assets.decocache.com/lojastopmoveis/ff9b9712-9671-4560-bfce-a92528a63526/1742503649021-b0f6cb07-3146-4a34-9866-4a2c84647088"
                     }
                   ],
                   "sections": [
@@ -3621,30 +3621,30 @@
                   "poweredby": [
                     {
                       "alt": "agencia n1 e deco",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1805/9db056dc-4990-4d02-b894-216a8c2829be",
+                      "image": "https://assets.decocache.com/lojastopmoveis/a9b0a924-c401-4850-b78b-9921bda41bd3/1742503650179-9db056dc-4990-4d02-b894-216a8c2829be",
                       "label": "Created By",
                       "images": [
                         {
                           "alt": "Agencia N1",
                           "link": "https://www.n1.ag/",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/22cacffa-fae4-40c7-bb27-5ec19e8e04fb"
+                          "image": "https://assets.decocache.com/lojastopmoveis/5f1808a7-571f-47b9-9f8d-6ae4f9c5bd5f/1742503651304-22cacffa-fae4-40c7-bb27-5ec19e8e04fb"
                         },
                         {
                           "alt": "Deco",
                           "link": "https://deco.cx/",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/b0a9b073-cadb-4846-ba49-ec47cbfd896d"
+                          "image": "https://assets.decocache.com/lojastopmoveis/f3405c7a-7965-4685-9eca-bd21b4dd190c/1742503652409-b0a9b073-cadb-4846-ba49-ec47cbfd896d"
                         }
                       ]
                     },
                     {
                       "alt": "vtex",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/4749b4f9-1943-4066-b918-2dae9e469611",
+                      "image": "https://assets.decocache.com/lojastopmoveis/494e5192-46be-4528-863f-c01ee0da881c/1742503653507-4749b4f9-1943-4066-b918-2dae9e469611",
                       "label": "Powered by",
                       "images": [
                         {
                           "alt": "Vtex",
                           "link": "https://vtex.com/br-pt",
-                          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2415/7a3b9c32-2ae7-4bf6-9ea1-1878d0f4349b"
+                          "image": "https://assets.decocache.com/lojastopmoveis/c0829ffc-6fb9-4e21-b52e-f1f192b2789e/1742503654581-7a3b9c32-2ae7-4bf6-9ea1-1878d0f4349b"
                         }
                       ]
                     }
@@ -3653,7 +3653,7 @@
                     {
                       "alt": "Let's Encrypt",
                       "href": "https://letsencrypt.org/",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1310/3be20735-a11c-4274-a43b-9fe3ac96121a"
+                      "image": "https://assets.decocache.com/lojastopmoveis/4be128b5-7586-426c-b3f8-fdcf3402e22d/1742503655704-3be20735-a11c-4274-a43b-9fe3ac96121a"
                     }
                   ],
                   "openingHours": "<p>Atendimento de segunda à sexta das 8h às 18h.</p>",

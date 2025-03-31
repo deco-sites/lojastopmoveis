@@ -1,1 +1,62 @@
-{"sections":[{"label":"ImageGallery","shadow":"none","section":{"images":[{"alt":"Shorts","href":"/topofertasdodia","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/fecb36e0-48b7-4697-a665-19eec659d6bf","title":"Aproveitar Agora","preload":true},{"alt":"Dormitório Adulto","href":"/moveis/quarto-adulto","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/cd92f929-afdb-4321-9a9b-b63a3534f7fd","title":"Dormitório Adulto","preload":true},{"alt":"Eletrodomésticos","href":"/eletrodomesticos","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/ccc42c4e-0a4a-4e58-a356-55af3b3261ad","title":"Eletrodomésticos","preload":true},{"alt":"Camas box e Colchôes","href":"/colchoes","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4c8b3128-61d6-4419-859f-64f8ec11a28b","title":"Camas box e Colchões","preload":true},{"alt":"Móveis para cozinha","href":"/moveis/cozinha","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/e50e727b-e86e-4967-bb99-e0c12d501884","title":"Móveis para cozinha","preload":true},{"alt":"Sala de Estar","href":"/moveis/sala-de-estar","image":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/3332/4ddbaea1-9e67-4d09-a6f5-898ace1205c0","title":"Sala de Estar","preload":true}],"hoverEffect":true,"__resolveType":"site/sections/Images/ImageGallery.tsx","maxItemsPerRow":"5","itemPerPageMobile":2,"itemPerPageDesktop":6},"withContainer":true,"verticalSpacing":"none"}],"__resolveType":"site/sections/Container.tsx"}
+{
+  "sections": [
+    {
+      "label": "ImageGallery",
+      "shadow": "none",
+      "section": {
+        "images": [
+          {
+            "alt": "Shorts",
+            "href": "/topofertasdodia",
+            "image": "https://assets.decocache.com/lojastopmoveis/a6d28f01-5c51-41f6-85d7-62ddcd182cbb/1742503631363-fecb36e0-48b7-4697-a665-19eec659d6bf",
+            "title": "Aproveitar Agora",
+            "preload": true
+          },
+          {
+            "alt": "Dormitório Adulto",
+            "href": "/moveis/quarto-adulto",
+            "image": "https://assets.decocache.com/lojastopmoveis/64fd4e7f-7f86-4c46-9e1f-e204089ecbb9/1742503633002-cd92f929-afdb-4321-9a9b-b63a3534f7fd",
+            "title": "Dormitório Adulto",
+            "preload": true
+          },
+          {
+            "alt": "Eletrodomésticos",
+            "href": "/eletrodomesticos",
+            "image": "https://assets.decocache.com/lojastopmoveis/72df2781-0b6e-4c75-9558-808de317df7c/1742503634347-ccc42c4e-0a4a-4e58-a356-55af3b3261ad",
+            "title": "Eletrodomésticos",
+            "preload": true
+          },
+          {
+            "alt": "Camas box e Colchôes",
+            "href": "/colchoes",
+            "image": "https://assets.decocache.com/lojastopmoveis/ac09ec53-34b2-402f-89f1-dcce474d8239/1742503635838-4c8b3128-61d6-4419-859f-64f8ec11a28b",
+            "title": "Camas box e Colchões",
+            "preload": true
+          },
+          {
+            "alt": "Móveis para cozinha",
+            "href": "/moveis/cozinha",
+            "image": "https://assets.decocache.com/lojastopmoveis/1714e1fc-8bc9-4b22-9782-41ca1986fe60/1742503637253-e50e727b-e86e-4967-bb99-e0c12d501884",
+            "title": "Móveis para cozinha",
+            "preload": true
+          },
+          {
+            "alt": "Sala de Estar",
+            "href": "/moveis/sala-de-estar",
+            "image": "https://assets.decocache.com/lojastopmoveis/a7f898a3-b75a-4bec-8ca1-34b10d20540e/1742503638814-4ddbaea1-9e67-4d09-a6f5-898ace1205c0",
+            "title": "Sala de Estar",
+            "preload": true
+          }
+        ],
+        "hoverEffect": true,
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "maxItemsPerRow": "5",
+        "itemPerPageMobile": 2,
+        "itemPerPageDesktop": 6
+      },
+      "withContainer": true,
+      "verticalSpacing": "none"
+    }
+  ],
+  "__resolveType": "site/sections/Container.tsx"
+}
