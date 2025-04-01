@@ -134,20 +134,20 @@
                     },
                     {
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3beb1ec7-f85d-475f-afe8-f2c04b0cb891/BANNER-SITE---AOC.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/8ae22017-73f7-434b-ad84-f525b9713d8d/1742503710378-3db64aa1-6590-4572-92a2-be00e5212e1c",
                         "width": 1920,
                         "height": 599
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/35867a94-c3a9-41bc-8362-7f81243886c6/BANNER-MOBILE---AOC.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/82238ca5-f0c6-44d0-857b-5f1ad765fcc0/1742503708714-c537237a-eaa6-4145-ad5b-d43163c8d083",
                         "width": 390,
                         "height": 490
                       },
                       "action": {
                         "variant": "primary",
-                        "href": "https://www.lojastopmoveis.com.br/eletronicos?filter.category-1=eletronicos&filter.brand=aoc&page=1"
+                        "href": "/busca?q=tuboarte"
                       },
-                      "alt": "Hora da Virada Top e AOC"
+                      "alt": "Tuboarte tem na Top"
                     }
                   ],
                   "preload": true,
