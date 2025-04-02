@@ -34,15 +34,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/mesdoconsumidortop"
+                        "href": "/feiraodedepositotopmoveis"
                       },
                       "mobile": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/a16a949d-ff00-4631-ae32-957206ee214c/BANNER-MOBILE---1080x1350px---MES-DO-CONSUMIDOR.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/46801cf6-ee08-45af-bcd6-5e0b043a9f90/BANNER-APP-1080x1350px---FEIRAO-DE-DEPOSITO-2025.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://data.decoassets.com/lojastopmoveis/a0ae8a7a-0afa-41c2-bb33-3d769bde9756/BANNER-SITE---1920x700px---MES-DO-CONSUMIDOR.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/300549d3-b6b5-4f77-a630-eea9143124e1/BANNER-SITE-1920x700px---FEIRAO-DE-DEPOSITO-2025.webp",
                         "width": 1920,
                         "height": 599
                       }
