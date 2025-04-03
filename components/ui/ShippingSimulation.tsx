@@ -61,7 +61,7 @@ function ShippingContent({ simulation }: {
           </span>
         </li>
       ))}
-      <p class="text-justify text-sm text-base-300 font-medium text-[12px]">
+      <p class="text-justify text-base-300 font-medium text-[12px]">
         Os prazos de entrega começam a contar a partir da confirmação de pagamento e podem variar para mais de uma unidade de um mesmo produto.
       </p>
     </ul>
