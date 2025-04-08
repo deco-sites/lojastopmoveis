@@ -4,6 +4,7 @@ export interface Props {
   instagramLink?: string;
 }
 
+
 function Instagram({ instagramLink }: Props) {
   if (!instagramLink) {
     return null;
