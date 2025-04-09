@@ -12,7 +12,7 @@ function WhatsApp({ phone }: Props) {
   return (
     <a
       href={`https://api.whatsapp.com/send/?phone=${phone}&text&type=phone_number&app_absent=0`}
-      class="fixed w-[40px] h-[40px] bottom-[170px] right-[22px] rounded-full z-40  flex items-center justify-center"
+      class="fixed w-[40px] h-[40px] bottom-[175px] right-[30px] rounded-full z-40  flex items-center justify-center"
       aria-label="Chat on WhatsApp"
       target="blank"
     >
