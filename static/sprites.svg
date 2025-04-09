@@ -247,6 +247,7 @@
                 fill="white" />
         <path d="M26.3027 15.1631C27.1589 15.1631 27.8568 14.4666 27.8568 13.609C27.8568 12.7513 27.1603 12.0548 26.3027 12.0548C25.445 12.0548 24.7485 12.7513 24.7485 13.609C24.7485 14.4666 25.445 15.1631 26.3027 15.1631Z"
                 fill="white" />
+    </symbol>
         <defs>
                 <linearGradient id="paint0_linear_17744_1756" x1="5.84381" y1="34.1562" x2="34.1562" y2="5.84522" gradientUnits="userSpaceOnUse">
                         <stop stop-color="#FAAD4F"/>
@@ -255,7 +256,6 @@
                         <stop offset="1" stop-color="#515BD4"/>
                 </linearGradient>
         </defs>
-    </symbol>
     <symbol id="YouTubeOutline" viewBox="0 0 24 24" fill="none"
         xmlns="http://www.w3.org/2000/svg">
         <path
