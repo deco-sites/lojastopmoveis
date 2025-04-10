@@ -4257,14 +4257,14 @@ details.collapse summary::-webkit-details-marker {
 .bottom-\[120px\] {
   bottom: 120px;
 }
-.bottom-\[170px\] {
-  bottom: 170px;
+.bottom-\[175px\] {
+  bottom: 175px;
 }
 .bottom-\[50px\] {
   bottom: 50px;
 }
-.bottom-\[70px\] {
-  bottom: 70px;
+.bottom-\[82px\] {
+  bottom: 82px;
 }
 .left-0 {
   left: 0px;
@@ -4316,6 +4316,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .right-\[22px\] {
   right: 22px;
+}
+.right-\[30px\] {
+  right: 30px;
 }
 .top-0 {
   top: 0px;
@@ -5986,6 +5989,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .bg-opacity-70 {
   --tw-bg-opacity: 0.7;
+}
+.bg-\[url\(\/arquivos\/instagram\.png\)\] {
+  background-image: url(/arquivos/instagram.png);
+}
+.bg-contain {
+  background-size: contain;
 }
 .bg-cover {
   background-size: cover;
