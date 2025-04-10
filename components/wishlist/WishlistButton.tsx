@@ -42,7 +42,7 @@ function WishlistButton({
 
         if (!isUserLoggedIn) {
           globalThis.window.alert(
-            "Please log in before adding to your wishlist",
+            "Por favor, faça login antes de adicionar à sua lista de desejos.",
           );
 
           return;
