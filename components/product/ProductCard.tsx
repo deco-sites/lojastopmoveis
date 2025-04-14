@@ -249,7 +249,7 @@ function ProductCard(
               {l?.onMouseOver?.showFavoriteIcon && (<WishlistIcon
                 productGroupID={productGroupID}
                 productID={productID}
-                tailwind="col-start-1 col-start-1 justify-self-end z-10"
+                tailwind="absolute left-0 col-start-1 col-start-1 justify-self-end z-10"
               />)}
               {product && (
                 <ProductHighlights
