@@ -76,7 +76,7 @@ function ProductDetailsImages(
           </Slider>
           <div class="absolute w-full right-0 top-0 xl:pl-32">
             {/* Discount tag */}
-            <div class="grid gap-y-2 w-full">
+            <div class="flex justify-between w-full">
               {
                 /* {price && listPrice && price !== listPrice
                 ? (
@@ -96,12 +96,14 @@ function ProductDetailsImages(
                 tailwindIcon="scale-150"
               />
 
-              {product && (
-                <ProductHighlights
-                  product={product}
-                  highlights={highlights}
-                />
-              )}
+              <div class="grid gap-y-2 w-full">
+                {product && (
+                  <ProductHighlights
+                    product={product}
+                    highlights={highlights}
+                  />
+                )}
+              </div>
             </div>
           </div>
         </div>
