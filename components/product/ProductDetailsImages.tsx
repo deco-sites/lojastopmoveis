@@ -155,7 +155,7 @@ function ProductDetailsImages(
         </div>
           <a
               href={`https://api.whatsapp.com/send/?phone=558598802535&text&type=phone_number&app_absent=0`}
-              class="lg:max-w-[600px]  justify-center w-full mt-[25px] lg:ml-[25%] h-[40px] bg-[#049548] rounded-full border border-black border-solid lg:flex hidden "
+              class="lg:max-w-[600px]  justify-center w-full mt-[25px] lg:ml-[25%] h-[40px] bg-[#049548] rounded-full border border-solid lg:flex hidden "
               aria-label="Chat on WhatsApp"
               target="blank"
             >
