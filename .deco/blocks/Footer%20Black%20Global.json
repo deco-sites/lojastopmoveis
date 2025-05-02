@@ -1,4 +1,5 @@
 {
+  "__resolveType": "site/sections/Container.tsx",
   "sections": [
     {
       "label": "Newslettter",
@@ -8,7 +9,7 @@
           "name": {},
           "email": {},
           "button": {
-            "variant": "secondary"
+            "variant": "accent"
           }
         },
         "text": "<p><span style=\"color: rgb(255, 255, 255); font-size: 24pt\">Newsletter</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 12pt\">Cadastre-se e seja um dos primeiros a</span></p><p><span style=\"color: rgb(255, 255, 255); font-size: 12pt\">saber de todas as novidades e ofertas.</span></p>",
@@ -83,6 +84,18 @@
               {
                 "href": "/campanhalivelocompreepontue",
                 "label": "Campanha Livelo"
+              },
+              {
+                "label": "Pagaleve",
+                "href": "/pagaleve"
+              },
+              {
+                "label": "Trabalhe Conosco",
+                "href": "https://trabalheconosco.lojastopmoveis.com.br/"
+              },
+              {
+                "label": "Igualdade Salarial",
+                "href": "/relatorio-igualdade-salarial"
               }
             ]
           },
@@ -104,6 +117,10 @@
               {
                 "href": "/politicadefretegratis",
                 "label": "Política de Frete Grátis"
+              },
+              {
+                "label": "Promoção sua Casa Mais Top ",
+                "href": "/suacasamaistop"
               }
             ]
           },
@@ -197,6 +214,5 @@
       "verticalSpacing": "none"
     }
   ],
-  "__resolveType": "site/sections/Container.tsx",
   "backgroundColor": "pink"
 }
