@@ -20,6 +20,7 @@ const formatShippingEstimate = (estimate: string) => {
 function ShippingContent({ simulation }: {
   simulation: Signal<SimulationOrderForm | null>;
 }) {
+  
   const { cart } = useCart();
 
   const methods = simulation.value?.logisticsInfo?.reduce(
