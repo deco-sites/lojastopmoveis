@@ -8777,8 +8777,8 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 60px;
   }
 
-  .lg\:ml-\[25\%\] {
-    margin-left: 25%;
+  .lg\:ml-\[15\%\] {
+    margin-left: 15%;
   }
 
   .lg\:mt-10 {
@@ -8961,6 +8961,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:max-w-\[600px\] {
     max-width: 600px;
+  }
+
+  .lg\:max-w-\[727px\] {
+    max-width: 727px;
   }
 
   .lg\:max-w-lg {
