@@ -43,6 +43,12 @@
       "section": {
         "__resolveType": "Footer Global"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer Black Global"
+      }
     }
   ],
   "__resolveType": "$live/pages/LivePage.tsx"
