@@ -4,6 +4,7 @@ import Button from "$store/components/ui/Button.tsx";
 import { formatPrice } from "$store/sdk/format.ts";
 import { useCart } from "apps/vtex/hooks/useCart.ts";
 import type { SimulationOrderForm, SKU, Sla } from "apps/vtex/utils/types.ts";
+import Icon from "$store/components/ui/Icon.tsx";
 
 export interface Props {
   items: Array<SKU>;
@@ -96,53 +97,59 @@ function ShippingSimulation({ items }: Props) {
   }, []);
 
   return (
-    <div class="flex flex-col mt-[30px] gap-5 p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
-      <p class="text-justify text-primary font-medium">
-        Calcular o frete
-      </p>
-      <div class="flex flex-col gap-[10px]">
-        <form
-          class="flex gap-2 max-lg:flex-col"
-          onSubmit={(e) => {
-            e.preventDefault();
-            handleSimulation();
-          }}
-        >
-          <input
-            as="input"
-            type="text"
-            inputMode="numeric"
-            pattern="[0-9]*"
-            class="input input-bordered input-sm text-xs border focus:outline-none w-full max-w-[300px] !py-4 hover:border-base-300 focus:text-black focus:hover:border-base-200"
-            placeholder="00000-000"
-            value={postalCode.value}
-            maxLength={8}
-            onChange={(e: { currentTarget: { value: string } }) => {
-              postalCode.value = e.currentTarget.value;
+    <>
+      <div class="bg-[#F2F2F2] mt-[30px] flex items-center justify-center rounded-2xl"> 
+          <Icon id="Wrench" class="pt-[5px]" size={40} />
+          <p class="text-black text-[14px] lg:text-[16px]"> compra do móvel <strong>não inclui montagem</strong></p>
+        </div>
+      <div class="flex flex-col mt-[30px] gap-5 p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
+        <p class="text-justify text-primary font-medium">
+          Calcular o frete
+        </p>
+        <div class="flex flex-col gap-[10px]">
+          <form
+            class="flex gap-2 max-lg:flex-col"
+            onSubmit={(e) => {
+              e.preventDefault();
+              handleSimulation();
             }}
-          />
-          <div class="flex gap-[10px] items-center lg:justify-center w-full">
-            <Button
-              type="submit"
-              loading={loading.value}
-              class="btn-outline bg-primary text-white transition-all !border h-[2.25rem] px-[26px] text-xs tracking-[1px] hover:bg-[#464342] uppercase font-bold font-condensed"
-            >
-              Calcular
-            </Button>
-            <a
-              href="https://buscacepinter.correios.com.br/app/endereco/index.php"
-              class="uppercase text-primary text-xs hover:underline max-lg:underline transition-all duration-500 whitespace-nowrap"
-              target="_blank"
-            >
-              Não sei meu CEP
-            </a>
-          </div>
-        </form>
+          >
+            <input
+              as="input"
+              type="text"
+              inputMode="numeric"
+              pattern="[0-9]*"
+              class="input input-bordered input-sm text-xs border focus:outline-none w-full max-w-[300px] !py-4 hover:border-base-300 focus:text-black focus:hover:border-base-200"
+              placeholder="00000-000"
+              value={postalCode.value}
+              maxLength={8}
+              onChange={(e: { currentTarget: { value: string } }) => {
+                postalCode.value = e.currentTarget.value;
+              }}
+            />
+            <div class="flex gap-[10px] items-center lg:justify-center w-full">
+              <Button
+                type="submit"
+                loading={loading.value}
+                class="btn-outline bg-primary text-white transition-all !border h-[2.25rem] px-[26px] text-xs tracking-[1px] hover:bg-[#464342] uppercase font-bold font-condensed"
+              >
+                Calcular
+              </Button>
+              <a
+                href="https://buscacepinter.correios.com.br/app/endereco/index.php"
+                class="uppercase text-primary text-xs hover:underline max-lg:underline transition-all duration-500 whitespace-nowrap"
+                target="_blank"
+              >
+                Não sei meu CEP
+              </a>
+            </div>
+          </form>
+        </div>
+        {simulateResult.value
+          ? <ShippingContent simulation={simulateResult} />
+          : null}
       </div>
-      {simulateResult.value
-        ? <ShippingContent simulation={simulateResult} />
-        : null}
-    </div>
+    </>
   );
 }
 
