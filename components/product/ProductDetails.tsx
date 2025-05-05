@@ -210,6 +210,8 @@ function ProductInfo({ page, shareableNetworks, tags }: {
               quantity: 1,
               seller: seller ?? "1",
             }]}
+            category={product.category}
+            
           />
         )
         : null}

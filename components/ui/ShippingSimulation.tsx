@@ -8,6 +8,7 @@ import Icon from "$store/components/ui/Icon.tsx";
 
 export interface Props {
   items: Array<SKU>;
+  category?: string;
 }
 
 const formatShippingEstimate = (estimate: string) => {
@@ -73,11 +74,15 @@ function ShippingContent({ simulation }: {
   );
 }
 
-function ShippingSimulation({ items }: Props) {
+function ShippingSimulation({ items, category }: Props) {
   const postalCode = useSignal("");
   const loading = useSignal(false);
   const simulateResult = useSignal<SimulationOrderForm | null>(null);
   const { simulate, cart } = useCart();
+
+  console.log(["items", items])
+
+  const containsMoveis = category?.includes("MÓVEIS")
 
   const handleSimulation = useCallback(async () => {
     if (postalCode.value.length !== 8) {
@@ -98,10 +103,16 @@ function ShippingSimulation({ items }: Props) {
 
   return (
     <>
-      <div class="bg-[#F2F2F2] mt-[30px] flex items-center justify-center rounded-2xl border border-black shadow-lg"> 
-          <Icon id="Wrench" class="pt-[5px]" size={40} />
-          <p class="text-black text-[14px] lg:text-[16px]"> compra do móvel <strong>não inclui montagem</strong></p>
-        </div>
+      { containsMoveis 
+        ? (
+          <div class="bg-[#F2F2F2] mt-[30px] flex items-center justify-center rounded-2xl border border-black shadow-lg"> 
+              <Icon id="Wrench" class="pt-[5px]" size={40} />
+              <p class="text-black text-[14px] lg:text-[16px]"> compra do móvel <strong>não inclui montagem</strong></p>
+          </div>
+        ):(
+          <></>
+        )
+      }
       <div class="flex flex-col mt-[30px] gap-5 p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
         <p class="text-justify text-primary font-medium">
           Calcular o frete

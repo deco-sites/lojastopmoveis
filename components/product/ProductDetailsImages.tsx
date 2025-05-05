@@ -30,6 +30,8 @@ function ProductDetailsImages(
     isVariantOf,
   } = product;
 
+  console.log(product)
+
   const productGroupID = isVariantOf?.productGroupID;
 
   const imagecustom = product.image?.find((i) => i["@type"] === "ImageObject");
