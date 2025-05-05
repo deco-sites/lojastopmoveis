@@ -1,1 +1,264 @@
-{"name":"Nossas lojas","path":"/nossas-lojas","sections":[{"__resolveType":"SEODefault"},{"__resolveType":"Default - Design System"},{"__resolveType":"Header Global"},{"sections":[{"label":"Institutional Page","section":{"title":"Nossas lojas","content":{"lojas":[{"cep":"62580-000","cidade":"Acaraú","estado":"Ceará","endereco":"Rua Coronel Sales - Centro, Nº 274","telefone":"(85) 3 1946-500"},{"cep":"62840-000","cidade":"Beberibe","estado":"Ceará","endereco":"Rua João Baltazar - Centro, Nº 192","telefone":"(85) 3 1946-500"},{"cep":"63100-080","cidade":"Crato","estado":"Ceará","endereco":"Rua Senador Pompeu - Centro, Nº 194","telefone":"(85) 3 1946-500"},{"cep":"60310-052","cidade":"Fortaleza","estado":"Ceará","endereco":"Av. Francisco Sá - Carlito Pamplona, Nº 3680","telefone":"(85) 3 1946-500"},{"cep":"60020-030","cidade":"Fortaleza","estado":"Ceará","endereco":"Rua General Sampaio - Centro, Nº 1111","telefone":"(85) 3 1946-500"},{"cep":"60520-101","cidade":"Fortaleza","estado":"Ceará","endereco":"Av. Lineu Machado - Jóquei, Nº 419","telefone":"(85) 3 1946-500"},{"cep":"60025-060","cidade":"Fortaleza","estado":"Ceará","endereco":"Rua Barão do Rio Branco - Centro, Nº 1209","telefone":"(85) 3 1946-500"},{"cep":"60025-000","cidade":"Fortaleza","estado":"Ceará","endereco":"Rua Senador Pompeu - Centro, Nº 1002","telefone":"(85) 3 1646-500"},{"cep":"60740-020","cidade":"Fortaleza","estado":"Ceará","endereco":"Rua Germano Franck - Parangaba, Nº 300","telefone":"(85) 3 1946-500"},{"cep":"60325-002","cidade":"Fortaleza","estado":"Ceará","endereco":"Av. Bezerra de Menezes - São Gerardo, Nº 2450","telefone":"(85) 3 1946-500"},{"cep":"60025-000","cidade":"Fortaleza","estado":"Ceará","endereco":"Rua Senador Pompeu - Centro, Nº 869","telefone":"(85) 3 1946-500"},{"cep":"60842-010","cidade":"Fortaleza","estado":"Ceará","endereco":"Rua Joaquim Bezerra - Messejana, Nº 213","telefone":"(85) 3 1946-500"},{"cep":"60020-030","cidade":"Fortaleza","estado":"Ceará","endereco":"Rua General Sampaio - Centro, Nº 779","telefone":"(85) 3 1946-500"},{"cep":"62380-000","cidade":"Guaraciaba do Norte","estado":"Ceará","endereco":"Rua Monsenhor Eurico - Centro, Nº 222","telefone":"(85) 3 1946-500"},{"cep":"62600-000","cidade":"Itapajé","estado":"Ceará","endereco":"Rua Manoel Luiz da Rocha - Centro, Nº 135","telefone":"(85) 3 1946-500"},{"cep":"62500-043","cidade":"Itapipoca","estado":"Ceará","endereco":"Av. Anastácio Braga - Centro, Nº 1000","telefone":"(85) 3 1946-500"},{"cep":"62590-000","cidade":"Itarema","estado":"Ceará","endereco":"Av. João Batista Rios - Centro, Nº 2028","telefone":"(85) 3 1946-500"},{"cep":"63010-010","cidade":"Juazeiro do Norte","estado":"Ceará","endereco":"Rua São Pedro - Centro, Nº 449","telefone":"(85) 3 1946-500"},{"cep":"62930-000","cidade":"Limoeiro do Norte","estado":"Ceará","endereco":"Rua Conego Bessa - Centro, Nº 2459","telefone":"(85) 3 1946-500"},{"cep":"61900-225","cidade":"Maracanaú - Loja 1","estado":"Ceará","endereco":"Av. Carlos Jeireissati - , Nº 100","telefone":"(85) 3 1946-500"},{"cep":"61900-260","cidade":"Maracanaú - Loja 2","estado":"Ceará","endereco":"Rua 13 - , Nº 645","telefone":"(85) 3 1946-500"},{"cep":"61940-170","cidade":"Maranguape","estado":"Ceará","endereco":"Rua Capitão Manoel Bandeira - Centro, Nº 135","telefone":"(85) 3 1946-500"},{"cep":"62870-000","cidade":"Pacajus","estado":"Ceará","endereco":"Rua Conego Eduardo Araripe - Centro, Nº 1438","telefone":"(85) 3 1946-500"},{"cep":"62640-000","cidade":"Pentecoste","estado":"Ceará","endereco":"Rua Luis Soares do Carmo - Centro, Nº 147","telefone":"(85) 3 1946-500"},{"cep":"62900-000","cidade":"Russas","estado":"Ceará","endereco":"R. Padre Raul Vieira - Centro, Nº 463","telefone":"(85) 3 1946-500"},{"cep":"62011-040","cidade":"Sobral - Loja 1","estado":"Ceará","endereco":"Rua Coronel José Saboia - Centro, Nº 411","telefone":"(85) 3 1946-500"},{"cep":"62011-040","cidade":"Sobral - Loja 2","estado":"Ceará","endereco":"Rua Coronel José Saboia - Centro, Nº 657","telefone":"(85) 3 1946-500"},{"cep":"62320-053","cidade":"Tianguá","estado":"Ceará","endereco":"Rua Deputador Manoel Francisco - Centro, Nº 407","telefone":"(85) 3 1946-500"},{"cep":"62690-000","cidade":"Trairi","estado":"Ceará","endereco":"Rua Dr. José da Silveira - Centro, Nº 273","telefone":"(85) 3 1946-500"},{"cep":"64200-230","cidade":"Parnaíba","estado":"Piauí","endereco":"Praça Lima Rabelo - Centro, Nº 1050","telefone":"(85) 3 1946-500"},{"cep":"64600-098","cidade":"Picos","estado":"Piauí","endereco":"Rua Coronel Francisco Santos - Centro, Nº 280","telefone":"(85) 3 1946-500"}],"__resolveType":"site/sections/Institutional/NossasLojas.tsx"},"asideMenu":{"__resolveType":"Aside Menu Global"},"__resolveType":"site/sections/Institutional/InstitutionalPage.tsx"},"withContainer":true,"verticalSpacing":"both"}],"__resolveType":"site/sections/Container.tsx"},{"__resolveType":"Footer Global"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Nossas lojas",
+  "path": "/nossas-lojas",
+  "sections": [
+    {
+      "__resolveType": "SEODefault"
+    },
+    {
+      "__resolveType": "Default - Design System Black Friday"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Topbar,header,navmenu"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "label": "Institutional Page",
+          "section": {
+            "title": "Nossas lojas",
+            "content": {
+              "lojas": [
+                {
+                  "cep": "62580-000",
+                  "cidade": "Acaraú",
+                  "estado": "Ceará",
+                  "endereco": "Rua Coronel Sales - Centro, Nº 274",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62840-000",
+                  "cidade": "Beberibe",
+                  "estado": "Ceará",
+                  "endereco": "Rua João Baltazar - Centro, Nº 192",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "63100-080",
+                  "cidade": "Crato",
+                  "estado": "Ceará",
+                  "endereco": "Rua Senador Pompeu - Centro, Nº 194",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60310-052",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Av. Francisco Sá - Carlito Pamplona, Nº 3680",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60020-030",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Rua General Sampaio - Centro, Nº 1111",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60520-101",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Av. Lineu Machado - Jóquei, Nº 419",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60025-060",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Rua Barão do Rio Branco - Centro, Nº 1209",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60025-000",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Rua Senador Pompeu - Centro, Nº 1002",
+                  "telefone": "(85) 3 1646-500"
+                },
+                {
+                  "cep": "60740-020",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Rua Germano Franck - Parangaba, Nº 300",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60325-002",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Av. Bezerra de Menezes - São Gerardo, Nº 2450",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60025-000",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Rua Senador Pompeu - Centro, Nº 869",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60842-010",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Rua Joaquim Bezerra - Messejana, Nº 213",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60020-030",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Rua General Sampaio - Centro, Nº 779",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62380-000",
+                  "cidade": "Guaraciaba do Norte",
+                  "estado": "Ceará",
+                  "endereco": "Rua Monsenhor Eurico - Centro, Nº 222",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62600-000",
+                  "cidade": "Itapajé",
+                  "estado": "Ceará",
+                  "endereco": "Rua Manoel Luiz da Rocha - Centro, Nº 135",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62500-043",
+                  "cidade": "Itapipoca",
+                  "estado": "Ceará",
+                  "endereco": "Av. Anastácio Braga - Centro, Nº 1000",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62590-000",
+                  "cidade": "Itarema",
+                  "estado": "Ceará",
+                  "endereco": "Av. João Batista Rios - Centro, Nº 2028",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "63010-010",
+                  "cidade": "Juazeiro do Norte",
+                  "estado": "Ceará",
+                  "endereco": "Rua São Pedro - Centro, Nº 449",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62930-000",
+                  "cidade": "Limoeiro do Norte",
+                  "estado": "Ceará",
+                  "endereco": "Rua Conego Bessa - Centro, Nº 2459",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "61900-225",
+                  "cidade": "Maracanaú - Loja 1",
+                  "estado": "Ceará",
+                  "endereco": "Av. Carlos Jeireissati - , Nº 100",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "61900-260",
+                  "cidade": "Maracanaú - Loja 2",
+                  "estado": "Ceará",
+                  "endereco": "Rua 13 - , Nº 645",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "61940-170",
+                  "cidade": "Maranguape",
+                  "estado": "Ceará",
+                  "endereco": "Rua Capitão Manoel Bandeira - Centro, Nº 135",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62870-000",
+                  "cidade": "Pacajus",
+                  "estado": "Ceará",
+                  "endereco": "Rua Conego Eduardo Araripe - Centro, Nº 1438",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62640-000",
+                  "cidade": "Pentecoste",
+                  "estado": "Ceará",
+                  "endereco": "Rua Luis Soares do Carmo - Centro, Nº 147",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62900-000",
+                  "cidade": "Russas",
+                  "estado": "Ceará",
+                  "endereco": "R. Padre Raul Vieira - Centro, Nº 463",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62011-040",
+                  "cidade": "Sobral - Loja 1",
+                  "estado": "Ceará",
+                  "endereco": "Rua Coronel José Saboia - Centro, Nº 411",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62011-040",
+                  "cidade": "Sobral - Loja 2",
+                  "estado": "Ceará",
+                  "endereco": "Rua Coronel José Saboia - Centro, Nº 657",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62320-053",
+                  "cidade": "Tianguá",
+                  "estado": "Ceará",
+                  "endereco": "Rua Deputador Manoel Francisco - Centro, Nº 407",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "62690-000",
+                  "cidade": "Trairi",
+                  "estado": "Ceará",
+                  "endereco": "Rua Dr. José da Silveira - Centro, Nº 273",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "64200-230",
+                  "cidade": "Parnaíba",
+                  "estado": "Piauí",
+                  "endereco": "Praça Lima Rabelo - Centro, Nº 1050",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "64600-098",
+                  "cidade": "Picos",
+                  "estado": "Piauí",
+                  "endereco": "Rua Coronel Francisco Santos - Centro, Nº 280",
+                  "telefone": "(85) 3 1946-500"
+                }
+              ],
+              "__resolveType": "site/sections/Institutional/NossasLojas.tsx"
+            },
+            "asideMenu": {
+              "__resolveType": "Aside Menu Global"
+            },
+            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+          },
+          "withContainer": true,
+          "verticalSpacing": "both"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Footer Black Global"
+      }
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}
