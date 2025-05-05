@@ -5778,6 +5778,10 @@ details.collapse summary::-webkit-details-marker {
 .border-base-content\/5 {
   border-color: hsl(var(--bc) / 0.05);
 }
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
 .border-error-content {
   --tw-border-opacity: 1;
   border-color: hsl(var(--erc) / var(--tw-border-opacity));
