@@ -80,8 +80,6 @@ function ShippingSimulation({ items, category }: Props) {
   const simulateResult = useSignal<SimulationOrderForm | null>(null);
   const { simulate, cart } = useCart();
 
-  console.log(["items", items])
-
   const containsMoveis = category?.includes("MÓVEIS")
 
   const handleSimulation = useCallback(async () => {
