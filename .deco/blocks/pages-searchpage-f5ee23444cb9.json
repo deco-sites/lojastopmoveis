@@ -25,7 +25,10 @@
             "__resolveType": "SearchResults Global"
           },
           {
-            "__resolveType": "Footer Black"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Footer Black Global"
+            }
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
