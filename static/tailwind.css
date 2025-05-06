@@ -8977,8 +8977,8 @@ details.collapse summary::-webkit-details-marker {
     max-width: 600px;
   }
 
-  .lg\:max-w-\[727px\] {
-    max-width: 727px;
+  .lg\:max-w-\[85\%\] {
+    max-width: 85%;
   }
 
   .lg\:max-w-lg {
