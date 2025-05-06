@@ -1,4 +1,6 @@
 import AddToCartButton from "$store/components/product/AddToCartButton.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
+
 
 type Props = {
   productID: string;
@@ -14,6 +16,20 @@ export default function AddToCartActions(
 ) {
   return (
     <div class="flex max-lg:flex-col-reverse w-full max-lg:gap-[10px] gap-[30px]">
+      <a
+        href={`https://api.whatsapp.com/send/?phone=5585988025359&text&type=phone_number&app_absent=0`}
+        class="lg:max-w-[600px]  justify-center w-full h-[46px] bg-[#049548] rounded-full border border-black border-solid lg:hidden flex "
+        aria-label="Chat on WhatsApp"
+        target="blank"
+        >
+          <Icon id="WhatsappLogo" class="pt-[10px] pl-[10px]" size={40} stroke="0.01" />
+          <button
+            class=" text-white p-2 text-sm lg:text-base" 
+            aria-label="Chat on WhatsApp"
+            >
+            Quero comprar pelo WhatsApp
+          </button>
+      </a>
       <AddToCartButton
         skuId={productID}
         sellerId={seller}
