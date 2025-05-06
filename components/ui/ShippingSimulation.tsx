@@ -111,7 +111,6 @@ function ShippingSimulation({ items, category }: Props) {
           <></>
         )
       }
-      
       <div class="flex flex-col mt-[30px] gap-5 p-[20px] sm:p-[30px] rounded-2xl border border-base-200 text-base-300">
         <p class="text-justify text-primary font-medium">
           Calcular o frete
