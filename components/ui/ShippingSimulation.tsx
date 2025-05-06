@@ -105,7 +105,7 @@ function ShippingSimulation({ items, category }: Props) {
         ? (
           <div class="bg-[#F2F2F2] mt-[30px] flex items-center justify-center rounded-2xl border border-black shadow-lg"> 
               <Icon id="Wrench" class="pt-[5px]" size={40} />
-              <p class="text-black text-[14px] lg:text-[16px]"> compra do móvel <strong>não inclui montagem</strong></p>
+              <p class="text-black text-[14px] lg:text-[16px]"> Compra do móvel <strong>não inclui montagem</strong></p>
           </div>
         ):(
           <></>
