@@ -115,13 +115,8 @@ function ProductCard(
 
   const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
 
-
   const isDesktop = device === "desktop";
   const isUndefined = device === undefined;
-
-
-
-
 
   const isEager = isDesktop ? index < 4 : index < 1;
 
@@ -159,7 +154,7 @@ function ProductCard(
     `lg:text-sm font-medium text-xs whitespace-nowrap btn max-md:min-h-12 max-md:h-12 max-md:w-auto max-md:m-auto max-md:px-10 max-md:max-w-full btn-${BUTTON_VARIANTS[variant ?? "primary"]
     }`;
 
-  const forPrice = product.offers?.offers[0].priceSpecification[1].price;
+  const forPrice = product.offers?.offers[0].priceSpecification[0].price;
   const discount = listPrice && listPrice > price;
 
   const cta = layout?.basics?.ctaMode === "Go to Product Page"
@@ -211,6 +206,8 @@ function ProductCard(
   const _price2: number = price as number;
   const listPrice2: number = listPrice as number;
 
+  console.log("Data: ", { offers })
+
   return (
     <div
       class={`card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${align === "center" ? "text-center" : "text-start"
@@ -220,6 +217,7 @@ function ProductCard(
       id={`product-card-${productID}`}
       {...sendEventOnClick(clickEvent)}
     >
+      <div id="debug" className="hidden" dangerouslySetInnerHTML={{ __html: JSON.stringify({ forPrice, price, offers })  }} />
       <figure
         class="relative rounded-lg"
         style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
