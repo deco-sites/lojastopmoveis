@@ -110,18 +110,18 @@ function ProductCard(
   const { listPrice, price = 0, installment, seller, availability } = useOffer(
     offers,
   );
+  const pixPriceSpecification=  offers?.offers[0]?.priceSpecification.find(
+      ({ description }) => description?.toLowerCase() === "pix à vista",
+  );
+  const pixPrice = pixPriceSpecification?.price;
+  const defaultPrice = price !== pixPrice ? pixPrice : price;
   const possibilities = useVariantPossibilities(product);
   const variants = Object.entries(Object.values(possibilities)[0] ?? {});
 
   const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
 
-
   const isDesktop = device === "desktop";
   const isUndefined = device === undefined;
-
-
-
-
 
   const isEager = isDesktop ? index < 4 : index < 1;
 
@@ -132,7 +132,7 @@ function ProductCard(
       items: [
         mapProductToAnalyticsItem({
           product,
-          price,
+          price: defaultPrice,
           listPrice,
         }),
       ],
@@ -158,9 +158,8 @@ function ProductCard(
   const addToCartButtonClassNames = (variant: string | undefined) =>
     `lg:text-sm font-medium text-xs whitespace-nowrap btn max-md:min-h-12 max-md:h-12 max-md:w-auto max-md:m-auto max-md:px-10 max-md:max-w-full btn-${BUTTON_VARIANTS[variant ?? "primary"]
     }`;
-
   const forPrice = product.offers?.offers[0].priceSpecification[1].price;
-  const discount = listPrice && listPrice > price;
+  const discount = defaultPrice && listPrice && listPrice > defaultPrice;
 
   const cta = layout?.basics?.ctaMode === "Go to Product Page"
     ? (
@@ -184,9 +183,9 @@ function ProductCard(
           <AddToCartButton
             quantity={1}
             name={product.name as string}
-            discount={price && listPrice ? listPrice - price : 0}
+            discount={defaultPrice && listPrice ? listPrice - defaultPrice : 0}
             productGroupId={product.isVariantOf?.productGroupID ?? ""}
-            price={price as number}
+            price={defaultPrice as number}
             sellerId={seller as string}
             skuId={product.sku}
             label={l?.basics?.ctaText}
@@ -198,9 +197,9 @@ function ProductCard(
         <AddToCartButton
           quantity={1}
           name={product.name as string}
-          discount={price && listPrice ? listPrice - price : 0}
+          discount={defaultPrice && listPrice ? listPrice - defaultPrice : 0}
           productGroupId={product.isVariantOf?.productGroupID ?? ""}
-          price={price as number}
+          price={defaultPrice as number}
           sellerId={seller as string}
           skuId={product.sku}
           label={l?.basics?.ctaText}
@@ -208,7 +207,7 @@ function ProductCard(
         />
       );
 
-  const _price2: number = price as number;
+  const _price2: number = defaultPrice as number;
   const listPrice2: number = listPrice as number;
 
   return (
@@ -220,6 +219,7 @@ function ProductCard(
       id={`product-card-${productID}`}
       {...sendEventOnClick(clickEvent)}
     >
+      <div id="debug" className="hidden" dangerouslySetInnerHTML={{ __html: JSON.stringify({ forPrice, price, offers })  }} />
       <figure
         class="relative rounded-lg"
         style={{ aspectRatio: `${WIDTH} / ${HEIGHT}` }}
@@ -360,7 +360,7 @@ function ProductCard(
                       } ${align === "center" ? "justify-center" : "justify-start"
                       }`}
                   >
-                    {(listPrice && price) && listPrice > price && (
+                    {(listPrice && defaultPrice) && listPrice > defaultPrice&& (
                       <p
                         class={`line-through text-[#C5C6CB] text-sm ${l?.basics?.oldPriceSize === "Normal"
                           ? "lg:text-xl"
@@ -386,11 +386,11 @@ function ProductCard(
                     )}
                   <div class="flex items-center gap-[10px] py-[10px]">
                     <span class="font-bold text-md text-secondary leading-none">
-                      {formatPrice(price, offers?.priceCurrency)}
+                      {formatPrice(defaultPrice, offers?.priceCurrency)}
                     </span>
                     {discount && forPrice && (
                       <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                        {Math.round(((forPrice - price) / forPrice) * 100)}% de
+                        {Math.round(((forPrice - defaultPrice) / forPrice) * 100)}% de
                         desconto no Pix ou boleto
                       </span>
                     )}
