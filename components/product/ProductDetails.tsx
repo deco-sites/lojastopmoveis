@@ -173,14 +173,10 @@ function ProductInfo({ page, shareableNetworks, tags }: {
         )
         : null}
       {/* Sku Selector */}
-      {availability === "https://schema.org/InStock"
-        ? (
-          <div class="mt-4 sm:mt-5">
-            <SimilarSelector product={product} />
-            {/* <ProductSelector product={product} /> */}
-          </div>
-        )
-        : null}
+      <div class="mt-4 sm:mt-5">
+        <SimilarSelector product={product} />
+        {/* <ProductSelector product={product} /> */}
+      </div>
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 lg:mt-10 flex gap-[30px]">
         {availability === "https://schema.org/InStock"
