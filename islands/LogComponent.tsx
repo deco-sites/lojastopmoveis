@@ -1,5 +1,5 @@
 function LogComponent<T>({ data }: { data: T }) {
-    console.log("Data: ", data);
+    console.log("Data -> ", data);
 
     return null;
 }
