@@ -21,6 +21,7 @@ import { type LoaderReturnType } from "@deco/deco";
 import { Tags } from "site/loaders/getTags.ts";
 import { isFlag } from "site/components/product/Flags/utils/useFlag.ts";
 import FlagCustom from "site/components/product/Flags/FlagCustom.tsx";
+import LogComponent from "site/islands/LogComponent.tsx";
 export type Variant = "front-back" | "slider" | "auto";
 export type ShareableNetwork = "Facebook" | "Twitter" | "Email" | "WhatsApp";
 export interface Props {
