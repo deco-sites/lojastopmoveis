@@ -34,15 +34,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/vemqueetop"
+                        "href": "/arrastape"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/9f1719cf-1d8b-4ca1-b233-a581edd9df97/BANNER-MOBILE---VEM-QUE-E-TOP.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/60f4abf7-3851-4107-94ca-efe92465e5a1/CAMP.-ARRASTA-PE---BANNER-APP-1080X1350.png",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/14c2943f-51d3-4bf5-9b58-a13961aeaeda/BANNER-SITE---VEM-QUE-E-TOP.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/84784a78-aba0-4aff-a7cb-792559ce696e/CAMP.-ARRASTA-PE---BANNER-SITE-1920X700.png",
                         "width": 1920,
                         "height": 599
                       }
