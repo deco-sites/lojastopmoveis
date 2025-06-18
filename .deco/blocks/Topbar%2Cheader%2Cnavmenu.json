@@ -39,10 +39,10 @@
       "section": {
         "minicart": {
           "mobile": {
-            "buttonMode": "secondary"
+            "buttonMode": "accent"
           },
           "desktop": {
-            "buttonMode": "secondary"
+            "buttonMode": "accent"
           },
           "buttonMode": "secondary",
           "goToCartLabel": "Fechar pedido",

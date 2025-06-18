@@ -13,7 +13,7 @@
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
-              "__resolveType": "Default - Design System"
+              "__resolveType": "Default - Design System Black Friday"
             }
           },
           {
@@ -213,14 +213,14 @@
                       "preload": true
                     }
                   ],
-                  "hoverEffect": true,
                   "__resolveType": "site/sections/Images/ImageGallery.tsx",
+                  "hoverEffect": true,
                   "maxItemsPerRow": "5",
                   "itemPerPageMobile": 2,
                   "itemPerPageDesktop": 6
                 },
-                "withContainer": true,
-                "verticalSpacing": "none"
+                "verticalSpacing": "none",
+                "withContainer": true
               }
             ]
           },
@@ -748,13 +748,13 @@
                     {
                       "alignHorizontal": "end",
                       "collectionId": "155",
-                      "label": "Direto de Fábrica",
                       "width": 137,
                       "height": 25,
                       "backgorundColor": "transparent",
                       "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
                       "rowStart": 5,
-                      "css": "align-self: end; padding-bottom: 0;"
+                      "css": "align-self: end; padding-bottom: 0;",
+                      "label": "Direto de Fábrica"
                     }
                   ],
                   "showPaginationArrows": "Always"
@@ -828,13 +828,12 @@
                   "highlights": [
                     {
                       "label": "Frete Grátis*",
-                      "minPrice": 0,
                       "collectionId": "144",
                       "alignHorizontal": "end",
-                      "height": 16
+                      "height": 16,
+                      "minPrice": 0
                     },
                     {
-                      "minPrice": 0,
                       "alignHorizontal": "end",
                       "collectionId": "155",
                       "label": "Direto de Fábrica",
@@ -843,7 +842,8 @@
                       "backgorundColor": "transparent",
                       "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/5a302258-49f4-4e8f-9e0f-b9edd8f56e82/Badge.png",
                       "rowStart": 5,
-                      "css": "align-self: end; padding-bottom: 0;"
+                      "css": "align-self: end; padding-bottom: 0;",
+                      "minPrice": 0
                     }
                   ],
                   "showPaginationArrows": "Always"
@@ -945,8 +945,8 @@
                 "label": "ProductShelf",
                 "shadow": "none",
                 "section": {
-                  "title": "Produtos Exclusivos no Site, com Preço de Fábrica! Aproveite!",
                   "__resolveType": "site/sections/Product/ProductShelf.tsx",
+                  "title": "Produtos Exclusivos no Site, com Preço de Fábrica! Aproveite!",
                   "layout": {
                     "itemsPerPage": [
                       {
@@ -1207,8 +1207,8 @@
                 "shadow": "none",
                 "section": {
                   "__resolveType": "site/sections/Content/InfoCardSeo.tsx",
-                  "html": "<p><strong>Conheça Nossa História:</strong></p><p>O Grupo de Lojas Top Móveis iniciou as suas atividades em 1998 no movimentado centro de Fortaleza, Ceará. Com valores voltados a um atendimento de Excelência, comprometimento com os nossos clientes externos e internos, transparência, respeito e agilidade, contamos atualmente com 30 Filiais e 3 centros de distribuição espalhados pelo estado do Ceará e Piauí.</p><p><br data-mce-bogus=\"1\"></p><p><strong>Presença no Varejo on-line:</strong></p><p>Como precursora no canal de Vendas on-line na Região Nordeste, nossa presença também é marcante no ambiente virtual.</p><p>Através do site https://www.lojastopmoveis.com.br/ e das principais plataformas de Marketplace, dispomos de atendimento em toda a Região, via frota própria ou transporte parceiro de excelência com acompanhamento via S.A.C. e rastreio, tornando assim a sua compra mais confortável e segura!</p><p>Disponibilizamos um portfólio diversificado dos principais Fabricantes de Móveis e Eletrodomésticos do País, com envio imediato, prazo de entrega e preços competitivos, através de estoque para pronta entrega.</p><p>É um prazer te conhecer e fazer parte da sua casa!</p><p>Nas Lojas Físicas ou na Virtual, vem ter uma Experiência Top!</p>",
                   "title": "Sobre a loja",
+                  "html": "<p><strong>Conheça Nossa História:</strong></p><p>O Grupo de Lojas Top Móveis iniciou as suas atividades em 1998 no movimentado centro de Fortaleza, Ceará. Com valores voltados a um atendimento de Excelência, comprometimento com os nossos clientes externos e internos, transparência, respeito e agilidade, contamos atualmente com 30 Filiais e 3 centros de distribuição espalhados pelo estado do Ceará e Piauí.</p><p><br data-mce-bogus=\"1\"></p><p><strong>Presença no Varejo on-line:</strong></p><p>Como precursora no canal de Vendas on-line na Região Nordeste, nossa presença também é marcante no ambiente virtual.</p><p>Através do site https://www.lojastopmoveis.com.br/ e das principais plataformas de Marketplace, dispomos de atendimento em toda a Região, via frota própria ou transporte parceiro de excelência com acompanhamento via S.A.C. e rastreio, tornando assim a sua compra mais confortável e segura!</p><p>Disponibilizamos um portfólio diversificado dos principais Fabricantes de Móveis e Eletrodomésticos do País, com envio imediato, prazo de entrega e preços competitivos, através de estoque para pronta entrega.</p><p>É um prazer te conhecer e fazer parte da sua casa!</p><p>Nas Lojas Físicas ou na Virtual, vem ter uma Experiência Top!</p>",
                   "subTitle": "Sobre a loja",
                   "textAlign": "Left"
                 },
@@ -1225,6 +1225,7 @@
                 "label": "Newslettter",
                 "shadow": "none",
                 "section": {
+                  "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
                   "form": {
                     "name": {},
                     "email": {},
@@ -1232,12 +1233,11 @@
                       "variant": "accent"
                     }
                   },
-                  "text": "<p><span style=\"color: #ffffff; font-size: 24pt\">Newsletter</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">Cadastre-se e seja um dos primeiros a</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">saber de todas as novidades e ofertas.</span></p>",
-                  "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
+                  "text": "<p><span style=\"color: #ffffff; font-size: 24pt\">Newsletter</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">Cadastre-se e seja um dos primeiros a</span></p><p><span style=\"color: #ffffff; font-size: 12pt\">saber de todas as novidades e ofertas.</span></p>"
                 },
                 "withContainer": true,
-                "backgroundColor": "#000",
-                "verticalSpacing": "none"
+                "verticalSpacing": "none",
+                "backgroundColor": "#000"
               },
               {
                 "label": "Footer",
