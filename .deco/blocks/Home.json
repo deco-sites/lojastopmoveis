@@ -7,14 +7,11 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2026-01-31T09:00:00.000Z"
+          "end": "2025-04-30T09:00:00.000Z"
         },
         "value": [
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Default - Design System Black Friday"
-            }
+            "__resolveType": "Default - Design System Black Friday"
           },
           {
             "__resolveType": "SEODefault"
@@ -1481,7 +1478,7 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-04-30T09:00:00.000Z"
+          "end": "2025-12-31T09:00:00.000Z"
         },
         "value": [
           {
@@ -1775,8 +1772,8 @@
                     "image": "Change image",
                     "showCardShadow": true,
                     "showCta": true,
-                    "showSkuSelector": false,
-                    "showFavoriteIcon": true
+                    "showFavoriteIcon": true,
+                    "showSkuSelector": false
                   }
                 }
               }
@@ -1892,6 +1889,13 @@
                 {
                   "section": {
                     "__resolveType": "site/sections/Images/BrandGallery.tsx",
+                    "showPaginationArrows": "Desktop Only",
+                    "title": "Compre por marca",
+                    "layout": {
+                      "headerAlignment": "center",
+                      "headerfontSize": "Normal",
+                      "color": "primary"
+                    },
                     "images": [
                       {
                         "image": "https://data.decoassets.com/lojastopmoveis/091b34c1-7d6e-41ac-a715-fd8c24d122db/Property-1",
@@ -2027,15 +2031,8 @@
                     ],
                     "itemPerPageDesktop": 6,
                     "itemPerPageMobile": 2,
-                    "showPaginationArrows": "Desktop Only",
                     "showPaginationDots": "Desktop Only",
-                    "hoverEffect": true,
-                    "title": "Compre por marca",
-                    "layout": {
-                      "color": "primary",
-                      "headerAlignment": "center",
-                      "headerfontSize": "Normal"
-                    }
+                    "hoverEffect": true
                   },
                   "shadow": "none",
                   "verticalSpacing": "top",
