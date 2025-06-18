@@ -29,9 +29,9 @@
         "__resolveType": "site/sections/Header/TopNavBar.tsx"
       },
       "withContainer": false,
-      "backgroundColor": "#000",
       "verticalSpacing": "none",
-      "spacing": 0
+      "spacing": 0,
+      "backgroundColor": "#ED2A24"
     },
     {
       "label": "Header",

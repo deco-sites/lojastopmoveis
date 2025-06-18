@@ -7,11 +7,14 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-04-30T09:00:00.000Z"
+          "end": "2026-01-31T09:00:00.000Z"
         },
         "value": [
           {
-            "__resolveType": "Default - Design System Black Friday"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Default - Design System"
+            }
           },
           {
             "__resolveType": "SEODefault"
@@ -1478,14 +1481,11 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2026-01-31T09:00:00.000Z"
+          "end": "2025-04-30T09:00:00.000Z"
         },
         "value": [
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Default - Design System"
-            }
+            "__resolveType": "Default - Design System Black Friday"
           },
           {
             "__resolveType": "SEODefault"
