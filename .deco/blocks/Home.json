@@ -1641,42 +1641,42 @@
                     {
                       "alt": "Shorts",
                       "href": "/topofertasdodia",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/62d02272-d647-4862-80b8-bfdd9b5f4b83/Product.webp",
+                      "image": "https://assets.decocache.com/lojastopmoveis/a6d28f01-5c51-41f6-85d7-62ddcd182cbb/1742503631363-fecb36e0-48b7-4697-a665-19eec659d6bf",
                       "title": "Aproveitar Agora",
                       "preload": true
                     },
                     {
                       "alt": "Dormitório Adulto",
                       "href": "/moveis/quarto-adulto",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/96de72af-586d-442e-8dee-182c6e9bac0c/img.webp",
+                      "image": "https://assets.decocache.com/lojastopmoveis/64fd4e7f-7f86-4c46-9e1f-e204089ecbb9/1742503633002-cd92f929-afdb-4321-9a9b-b63a3534f7fd",
                       "title": "Dormitório Adulto",
                       "preload": true
                     },
                     {
                       "alt": "Eletrodomésticos",
                       "href": "/eletrodomesticos",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/dcc0ad3d-2cbd-4fee-b5c2-b444fd89e271/img-_1_.webp",
+                      "image": "https://assets.decocache.com/lojastopmoveis/72df2781-0b6e-4c75-9558-808de317df7c/1742503634347-ccc42c4e-0a4a-4e58-a356-55af3b3261ad",
                       "title": "Eletrodomésticos",
                       "preload": true
                     },
                     {
                       "alt": "Camas box e Colchôes",
                       "href": "/colchoes",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/2f1eddb9-34b5-40bf-95e0-729cbf33bd29/img-_2_.webp",
+                      "image": "https://assets.decocache.com/lojastopmoveis/ac09ec53-34b2-402f-89f1-dcce474d8239/1742503635838-4c8b3128-61d6-4419-859f-64f8ec11a28b",
                       "title": "Camas box e Colchões",
                       "preload": true
                     },
                     {
                       "alt": "Móveis para cozinha",
                       "href": "/moveis/cozinha",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/157256db-ba42-4d23-b676-eb73a8f909d5/img-_1_-(1).webp",
+                      "image": "https://assets.decocache.com/lojastopmoveis/1714e1fc-8bc9-4b22-9782-41ca1986fe60/1742503637253-e50e727b-e86e-4967-bb99-e0c12d501884",
                       "title": "Móveis para cozinha",
                       "preload": true
                     },
                     {
                       "alt": "Sala de Estar",
                       "href": "/moveis/sala-de-estar",
-                      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/085a7668-ead8-46dc-8b5b-05f7ba89662c/img-_3_.webp",
+                      "image": "https://assets.decocache.com/lojastopmoveis/a7f898a3-b75a-4bec-8ca1-34b10d20540e/1742503638814-4ddbaea1-9e67-4d09-a6f5-898ace1205c0",
                       "title": "Sala de Estar",
                       "preload": true
                     }
@@ -1705,14 +1705,14 @@
                   "similars": true
                 }
               },
-              "frameColor": "#080808",
+              "frameColor": "#ed2d26",
               "titleFrame": "Ofertas Exclusivas",
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
               "countdownTimerDate": "2025-06-19",
               "countdownTimerHours": "24:00:00",
-              "countdownFrameColor": "#ed2d26",
+              "countdownFrameColor": "#000000",
               "countdownTextColor": "#ffffff",
               "countdownNumberColor": "#ffffff",
               "dotSliderColor": "#ffffff",
