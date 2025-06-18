@@ -29,7 +29,7 @@
         "__resolveType": "site/sections/Header/TopNavBar.tsx"
       },
       "withContainer": false,
-      "backgroundColor": "#000",
+      "backgroundColor": "#ED2A24",
       "verticalSpacing": "none",
       "spacing": 0
     },

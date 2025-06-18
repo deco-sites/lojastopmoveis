@@ -75,6 +75,7 @@ function ShippingContent({ simulation }: {
 }
 
 function ShippingSimulation({ items, category }: Props) {
+  
   const postalCode = useSignal("");
   const loading = useSignal(false);
   const simulateResult = useSignal<SimulationOrderForm | null>(null);

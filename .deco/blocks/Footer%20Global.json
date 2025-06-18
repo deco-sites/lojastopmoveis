@@ -11,12 +11,13 @@
             "variant": "secondary"
           }
         },
-        "text": "<p><span style=\"color: rgb(0, 0, 0); font-size: 24pt;\" data-mce-style=\"color: rgb(0, 0, 0); font-size: 24pt;\">Newsletter</span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">Cadastre-se e seja um dos primeiros a</span></span></p><p style=\"line-height: 1;\" data-mce-style=\"line-height: 1;\"><span style=\"color: rgb(0, 0, 0);\" data-mce-style=\"color: rgb(0, 0, 0);\"><span style=\"font-size: 12pt;\" data-mce-style=\"font-size: 12pt;\">saber de todas as novidades e ofertas.</span></span></p>",
+        "text": "<p><span style=\"color: #000000; font-size: 24pt\">Newsletter</span></p><p><span style=\"color: #000000; font-size: 12pt\">Cadastre-se e seja um dos primeiros a</span></p><p><span style=\"color: #000000; font-size: 12pt\">saber de todas as novidades e ofertas.</span></p>",
         "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
       },
       "withContainer": true,
       "backgroundColor": "#F9BE00",
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "spacing": 0
     },
     {
       "label": "Footer",
@@ -83,6 +84,18 @@
               {
                 "href": "/campanhalivelocompreepontue",
                 "label": "Campanha Livelo"
+              },
+              {
+                "label": "Pagaleve",
+                "href": "/pagaleve"
+              },
+              {
+                "label": "Trabalhe Conosco",
+                "href": "https://trabalheconosco.lojastopmoveis.com.br/"
+              },
+              {
+                "label": "Igualdade Salarial",
+                "href": "/relatorio-igualdade-salarial"
               }
             ]
           },
@@ -104,6 +117,10 @@
               {
                 "href": "/politicadefretegratis",
                 "label": "Política de Frete Grátis"
+              },
+              {
+                "label": "Promoção sua Casa Mais Top ",
+                "href": "/suacasamaistop"
               }
             ]
           },
@@ -194,7 +211,8 @@
       },
       "withContainer": true,
       "backgroundColor": "#F7F7F7",
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "spacing": 0
     }
   ],
   "__resolveType": "site/sections/Container.tsx",

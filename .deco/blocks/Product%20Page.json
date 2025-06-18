@@ -53,6 +53,61 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-04-15T15:00:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "site/sections/Seo/SeoPDPCustom.tsx",
+            "jsonLD": {
+              "__resolveType": "PDP - Intelligent Search Loader"
+            },
+            "changePixPrice": false
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Topbar,header,navmenu"
+            }
+          },
+          {
+            "__resolveType": "Default - Product Details"
+          },
+          {
+            "__resolveType": "Produtos relacionados - ProductShelf"
+          },
+          {
+            "__resolveType": "Footer Black"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Whatsapp"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Instagram"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Facebook"
+            }
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
           "end": "2025-12-31T15:00:00.000Z"
         }
       },

@@ -1,1 +1,43 @@
-{"name":"Quem Somos","path":"/quem-somos","sections":[{"__resolveType":"SEODefault"},{"__resolveType":"Default - Design System"},{"__resolveType":"Header Global"},{"sections":[{"label":"Institutional Page","section":{"title":"Quem Somos","content":{"content":"<p>O Grupo de Lojas Top Móveis iniciou as suas atividades em 1998 no movimentado centro de Fortaleza, Ceará. Com valores voltados a um atendimento de Excelência, comprometimento com os nossos clientes externos e internos, transparência, respeito e agilidade, contamos atualmente com 30 Filiais e 3 centros de distribuição espalhados pelo estado do Ceará e Piauí.</p><p class=\"mt-[30px] mb-[30px]\"><span style=\"color: rgb(112, 114, 121);\" data-mce-style=\"color: rgb(112, 114, 121);\"><strong>Presença no Varejo on-line:</strong></span></p><p>Como precursora no canal de Vendas on-line na Região Nordeste, nossa presença também é marcante no ambiente virtual.</p><p>Através do site https://www.lojastopmoveis.com.br/ e das principais plataformas de Marketplace, dispomos de atendimento em toda a Região, via frota própria ou transporte parceiro de excelência com acompanhamento via S.A.C. e rastreio, tornando assim a sua compra mais confortável e segura!</p><p>Disponibilizamos um portfólio diversificado dos principais Fabricantes de Móveis e Eletrodomésticos do País, com envio imediato, prazo de entrega e preços competitivos, através de estoque para pronta entrega.</p><p>É um prazer te conhecer e fazer parte da sua casa!</p><p>Nas Lojas Físicas ou na Virtual, vem ter uma Experiência Top!</p>","__resolveType":"site/sections/Institutional/TextContent.tsx"},"asideMenu":{"__resolveType":"Aside Menu Global"},"__resolveType":"site/sections/Institutional/InstitutionalPage.tsx"},"withContainer":true,"verticalSpacing":"both"}],"__resolveType":"site/sections/Container.tsx"},{"__resolveType":"Footer Global"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Quem Somos",
+  "path": "/quem-somos",
+  "sections": [
+    {
+      "__resolveType": "SEODefault"
+    },
+    {
+      "__resolveType": "Default - Design System"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Topbar,header,navmenu"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "label": "Institutional Page",
+          "section": {
+            "title": "Quem Somos",
+            "content": {
+              "content": "<p>O Grupo de Lojas Top Móveis iniciou as suas atividades em 1998 no movimentado centro de Fortaleza, Ceará. Com valores voltados a um atendimento de Excelência, comprometimento com os nossos clientes externos e internos, transparência, respeito e agilidade, contamos atualmente com 30 Filiais e 3 centros de distribuição espalhados pelo estado do Ceará e Piauí.</p><p class=\"mt-[30px] mb-[30px]\"><span style=\"color: rgb(112, 114, 121);\" data-mce-style=\"color: rgb(112, 114, 121);\"><strong>Presença no Varejo on-line:</strong></span></p><p>Como precursora no canal de Vendas on-line na Região Nordeste, nossa presença também é marcante no ambiente virtual.</p><p>Através do site https://www.lojastopmoveis.com.br/ e das principais plataformas de Marketplace, dispomos de atendimento em toda a Região, via frota própria ou transporte parceiro de excelência com acompanhamento via S.A.C. e rastreio, tornando assim a sua compra mais confortável e segura!</p><p>Disponibilizamos um portfólio diversificado dos principais Fabricantes de Móveis e Eletrodomésticos do País, com envio imediato, prazo de entrega e preços competitivos, através de estoque para pronta entrega.</p><p>É um prazer te conhecer e fazer parte da sua casa!</p><p>Nas Lojas Físicas ou na Virtual, vem ter uma Experiência Top!</p>",
+              "__resolveType": "site/sections/Institutional/TextContent.tsx"
+            },
+            "asideMenu": {
+              "__resolveType": "Aside Menu Global"
+            },
+            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+          },
+          "withContainer": true,
+          "verticalSpacing": "both"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer Global"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

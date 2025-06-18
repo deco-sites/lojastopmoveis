@@ -134,12 +134,16 @@
             "__resolveType": "analytics"
           },
           {
-            "__resolveType": "Header Global"
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Topbar,header,navmenu"
+            }
           },
           {
             "__resolveType": "categoryBreadcrumb"
           },
           {
+            "__resolveType": "site/sections/Container.tsx",
             "sections": [
               {
                 "label": "Search Results",
@@ -189,8 +193,7 @@
                 "withContainer": true,
                 "verticalSpacing": "both"
               }
-            ],
-            "__resolveType": "site/sections/Container.tsx"
+            ]
           },
           {
             "__resolveType": "Footer Global"

@@ -1,1 +1,64 @@
-{"name":"Fale Conosco","path":"/central-de-atendimento","sections":[{"__resolveType":"SEODefault"},{"__resolveType":"Default - Design System"},{"__resolveType":"Header Global"},{"sections":[{"label":"Institutional Page","section":{"title":"FALE CONOSCO","content":{"alt":"Contact Image","serviceInfo":{"email":"central@lojastopmoveis.com.br","phone":"(85) 3194-6500","title":"Atendimento","schedule":["Seg. à Sex. das 08:00h às 18:00h","Horário de Brasília"]},"__resolveType":"site/sections/Institutional/ContactForm.tsx","socialNetworks":[{"href":"https://www.facebook.com/costaatacadaooficial/?locale=pt_BR","icon":"Facebook","label":"Facebook"},{"href":"https://www.instagram.com/instacostaatacado/","icon":"Instagram","label":"Instagram"}]},"asideMenu":{"__resolveType":"Aside Menu Global"},"__resolveType":"site/sections/Institutional/InstitutionalPage.tsx"},"withContainer":true,"verticalSpacing":"both"}],"__resolveType":"site/sections/Container.tsx"},{"__resolveType":"Footer Global"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Fale Conosco",
+  "path": "/central-de-atendimento",
+  "sections": [
+    {
+      "__resolveType": "SEODefault"
+    },
+    {
+      "__resolveType": "Default - Design System"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Topbar,header,navmenu"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "label": "Institutional Page",
+          "section": {
+            "title": "FALE CONOSCO",
+            "content": {
+              "alt": "Contact Image",
+              "serviceInfo": {
+                "email": "central@lojastopmoveis.com.br",
+                "phone": "(85) 3194-6500",
+                "title": "Atendimento",
+                "schedule": [
+                  "Seg. à Sex. das 08:00h às 18:00h",
+                  "Horário de Brasília"
+                ]
+              },
+              "__resolveType": "site/sections/Institutional/ContactForm.tsx",
+              "socialNetworks": [
+                {
+                  "href": "https://www.facebook.com/costaatacadaooficial/?locale=pt_BR",
+                  "icon": "Facebook",
+                  "label": "Facebook"
+                },
+                {
+                  "href": "https://www.instagram.com/instacostaatacado/",
+                  "icon": "Instagram",
+                  "label": "Instagram"
+                }
+              ]
+            },
+            "asideMenu": {
+              "__resolveType": "Aside Menu Global"
+            },
+            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+          },
+          "withContainer": true,
+          "verticalSpacing": "both"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer Global"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}

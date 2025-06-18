@@ -12,9 +12,13 @@
       "__resolveType": "Default - Design System"
     },
     {
-      "__resolveType": "Header Global"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Topbar,header,navmenu"
+      }
     },
     {
+      "__resolveType": "site/sections/Container.tsx",
       "sections": [
         {
           "label": "Institutional Page",
@@ -74,8 +78,7 @@
           "withContainer": true,
           "verticalSpacing": "both"
         }
-      ],
-      "__resolveType": "site/sections/Container.tsx"
+      ]
     },
     {
       "__resolveType": "Footer"
