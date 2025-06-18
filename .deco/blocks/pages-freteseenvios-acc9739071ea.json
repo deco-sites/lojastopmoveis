@@ -1,1 +1,43 @@
-{"name":"Fretes e Envios","path":"/fretes-e-envios","sections":[{"__resolveType":"SEODefault"},{"__resolveType":"Default - Design System"},{"__resolveType":"Header Global"},{"sections":[{"label":"Institutional Page","section":{"title":"Fretes e Envios","content":{"content":"<p><strong>Hoje a Costa Atacado trabalha com as Seguintes formas de Envio:</strong><br>-Econômico (Mandaê)<br>-Rápido (Mandaê)<br>-Transportadora TNT<br>-Transportadora Rodonaves<br>E também trabalhamos com a retirada em nossa loja de Espírito Santo do Pinhal - SP</p><p><br data-mce-bogus=\"1\"></p><p><strong>Como funciona os pedidos enviados por Mandaê?</strong><br>A Mandaê é um distribuidor logistico, onde eles vão receber as nossas encomendas, encontrar a melhor transportadora para envio e despachar o produto. Todo o processo pode ser acompanhado através do site www.rastreae.com.br, inserindo o código de rastreio que é enviado assim que o pedido é faturado.</p><p><br data-mce-bogus=\"1\"></p><p>Todos os prazos e valores do envio são informados ao inserir seu CEP em seu carrinho de compras, ou diretamente na página do produto desejado.<br>A postagem do produto será realizada entre 1 e 2 dias úteis após a confirmação do pagamento, caso ocorra algum problema com seu pedido nosso time de atendimento entrará em contato através dos dados de contato em seu cadastro. (Por isso é sempre importante revisar os seus dados ao finalizar a compra)</p><p><strong><br data-mce-bogus=\"1\"></strong></p><p><strong>Regras para frete grátis:</strong><br>- Pedidos para a cidade de Espírito Santo do Pinhal - SP<br>- Pedidos para o Estado de São Paulo com valor minimo de R$250,00 que estejam dentro das dimensões para envio através da opção \"Econômico\" (Mandaê)</p>","__resolveType":"site/sections/Institutional/TextContent.tsx"},"asideMenu":{"__resolveType":"Aside Menu Global"},"__resolveType":"site/sections/Institutional/InstitutionalPage.tsx"},"withContainer":true,"verticalSpacing":"both"}],"__resolveType":"site/sections/Container.tsx"},{"__resolveType":"Footer Global"}],"__resolveType":"$live/pages/LivePage.tsx"}
+{
+  "name": "Fretes e Envios",
+  "path": "/fretes-e-envios",
+  "sections": [
+    {
+      "__resolveType": "SEODefault"
+    },
+    {
+      "__resolveType": "Default - Design System"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Topbar,header,navmenu"
+      }
+    },
+    {
+      "__resolveType": "site/sections/Container.tsx",
+      "sections": [
+        {
+          "label": "Institutional Page",
+          "section": {
+            "title": "Fretes e Envios",
+            "content": {
+              "content": "<p><strong>Hoje a Costa Atacado trabalha com as Seguintes formas de Envio:</strong><br>-Econômico (Mandaê)<br>-Rápido (Mandaê)<br>-Transportadora TNT<br>-Transportadora Rodonaves<br>E também trabalhamos com a retirada em nossa loja de Espírito Santo do Pinhal - SP</p><p><br data-mce-bogus=\"1\"></p><p><strong>Como funciona os pedidos enviados por Mandaê?</strong><br>A Mandaê é um distribuidor logistico, onde eles vão receber as nossas encomendas, encontrar a melhor transportadora para envio e despachar o produto. Todo o processo pode ser acompanhado através do site www.rastreae.com.br, inserindo o código de rastreio que é enviado assim que o pedido é faturado.</p><p><br data-mce-bogus=\"1\"></p><p>Todos os prazos e valores do envio são informados ao inserir seu CEP em seu carrinho de compras, ou diretamente na página do produto desejado.<br>A postagem do produto será realizada entre 1 e 2 dias úteis após a confirmação do pagamento, caso ocorra algum problema com seu pedido nosso time de atendimento entrará em contato através dos dados de contato em seu cadastro. (Por isso é sempre importante revisar os seus dados ao finalizar a compra)</p><p><strong><br data-mce-bogus=\"1\"></strong></p><p><strong>Regras para frete grátis:</strong><br>- Pedidos para a cidade de Espírito Santo do Pinhal - SP<br>- Pedidos para o Estado de São Paulo com valor minimo de R$250,00 que estejam dentro das dimensões para envio através da opção \"Econômico\" (Mandaê)</p>",
+              "__resolveType": "site/sections/Institutional/TextContent.tsx"
+            },
+            "asideMenu": {
+              "__resolveType": "Aside Menu Global"
+            },
+            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+          },
+          "withContainer": true,
+          "verticalSpacing": "both"
+        }
+      ]
+    },
+    {
+      "__resolveType": "Footer Global"
+    }
+  ],
+  "__resolveType": "$live/pages/LivePage.tsx"
+}
