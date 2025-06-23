@@ -4312,7 +4312,7 @@
                     "links": [
                       {
                         "href": "https://www.instagram.com/lojastopmoveis",
-                        "icon": "Instagram",
+                        "icon": "InstagramOutline",
                         "label": "Instagram"
                       },
                       {
@@ -4629,7 +4629,7 @@
                   "socialNetWorks": [
                     {
                       "href": "https://www.instagram.com/lojastopmoveis",
-                      "icon": "Instagram",
+                      "icon": "InstagramOutline",
                       "label": "Instagram",
                       "openNewView": true
                     },
