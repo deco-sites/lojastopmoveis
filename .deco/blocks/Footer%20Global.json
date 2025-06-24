@@ -55,6 +55,11 @@
             "alt": "Boleto",
             "icon": "Boleto",
             "image": "https://assets.decocache.com/lojastopmoveis/ff9b9712-9671-4560-bfce-a92528a63526/1742503649021-b0f6cb07-3146-4a34-9866-4a2c84647088"
+          },
+          {
+            "alt": "Google Pay",
+            "icon": "Boleto",
+            "image": "https://assets.decocache.com/lojastopmoveis/b8efa8a1-bf8c-4c9c-9e24-e3627a569a84/G-Pay.webp"
           }
         ],
         "sections": [
