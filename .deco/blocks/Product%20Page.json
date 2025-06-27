@@ -72,10 +72,7 @@
             "changePixPrice": false
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Topbar,header,navmenu"
-            }
+            "__resolveType": "Topbar,header,navmenu"
           },
           {
             "__resolveType": "Default - Product Details"
