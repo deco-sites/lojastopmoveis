@@ -1710,7 +1710,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-06-19",
+              "countdownTimerDate": "2025-06-27",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#000000",
               "countdownTextColor": "#ffffff",
@@ -2614,7 +2614,7 @@
                   "links": [
                     {
                       "href": "https://www.instagram.com/lojastopmoveis",
-                      "icon": "Instagram",
+                      "icon": "InstagramOutline",
                       "label": "Instagram"
                     },
                     {
@@ -4312,7 +4312,7 @@
                     "links": [
                       {
                         "href": "https://www.instagram.com/lojastopmoveis",
-                        "icon": "Instagram",
+                        "icon": "InstagramOutline",
                         "label": "Instagram"
                       },
                       {
@@ -4629,7 +4629,7 @@
                   "socialNetWorks": [
                     {
                       "href": "https://www.instagram.com/lojastopmoveis",
-                      "icon": "Instagram",
+                      "icon": "InstagramOutline",
                       "label": "Instagram",
                       "openNewView": true
                     },

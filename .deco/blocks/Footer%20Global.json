@@ -55,6 +55,11 @@
             "alt": "Boleto",
             "icon": "Boleto",
             "image": "https://assets.decocache.com/lojastopmoveis/ff9b9712-9671-4560-bfce-a92528a63526/1742503649021-b0f6cb07-3146-4a34-9866-4a2c84647088"
+          },
+          {
+            "alt": "Google Pay",
+            "icon": "Boleto",
+            "image": "https://assets.decocache.com/lojastopmoveis/b8efa8a1-bf8c-4c9c-9e24-e3627a569a84/G-Pay.webp"
           }
         ],
         "sections": [
@@ -179,6 +184,11 @@
             "alt": "Let's Encrypt",
             "href": "https://letsencrypt.org/",
             "image": "https://assets.decocache.com/lojastopmoveis/4be128b5-7586-426c-b3f8-fdcf3402e22d/1742503655704-3be20735-a11c-4274-a43b-9fe3ac96121a"
+          },
+          {
+            "alt": "Clear Sale",
+            "href": "https://br.clear.sale/",
+            "image": "https://assets.decocache.com/lojastopmoveis/434bc9f1-5e43-418a-afb1-bb6deefb4b2b/Clear-Sale-(114-x-30px).webp"
           }
         ],
         "openingHours": "<p>Atendimento de segunda à sexta das 8h às 18h.</p>",
@@ -186,7 +196,7 @@
         "socialNetWorks": [
           {
             "href": "https://www.instagram.com/lojastopmoveis",
-            "icon": "Instagram",
+            "icon": "InstagramOutline",
             "label": "Instagram",
             "openNewView": true
           },
