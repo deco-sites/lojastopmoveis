@@ -457,6 +457,7 @@ function TimedProductCard(
                         </>
                     )
                     : null}
+                    
 
                 {/* SKU Selector */}
                 {(l?.elementsPositions?.skuSelector === "Bottom" &&
