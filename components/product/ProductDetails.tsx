@@ -21,7 +21,7 @@ import { type LoaderReturnType } from "@deco/deco";
 import { Tags } from "site/loaders/getTags.ts";
 import { isFlag } from "site/components/product/Flags/utils/useFlag.ts";
 import FlagCustom from "site/components/product/Flags/FlagCustom.tsx";
-import LogComponent from "site/islands/LogComponent.tsx";
+import { Device } from "apps/website/matchers/device.ts";
 export type Variant = "front-back" | "slider" | "auto";
 export type ShareableNetwork = "Facebook" | "Twitter" | "Email" | "WhatsApp";
 export interface Props {
@@ -43,7 +43,7 @@ export interface Props {
 
   /** @hide true */
 
-  tags: Tags;
+  tags: Tags | null;
 }
 const WIDTH = 250;
 const HEIGHT = 250;
@@ -302,7 +302,7 @@ function Details(
     shareableNetworks?: Props["shareableNetworks"];
     highlights?: HighLight[];
     device: string;
-    tags: Tags;
+    tags: Tags | null;
   },
 ) {
   const { product, breadcrumbList } = page;
@@ -389,7 +389,7 @@ function ProductDetails(
     highlights,
     device,
     tags,
-  }: SectionProps<ReturnType<typeof loader>>,
+  }: Props & {device: Device} & SectionProps<ReturnType<typeof loader>>,
 ) {
   /**
    * Showcase the different product views we have on this template. In case there are less

@@ -76,7 +76,7 @@ interface Props {
     class?: string;
 
     /** @hide true */
-    tags?: Tags;
+    tags: Tags | null;
 
     /** @hide true */
     index: number;
@@ -457,7 +457,7 @@ function TimedProductCard(
                         </>
                     )
                     : null}
-                    
+
 
                 {/* SKU Selector */}
                 {(l?.elementsPositions?.skuSelector === "Bottom" &&

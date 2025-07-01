@@ -36,7 +36,7 @@ export interface Props {
     dotSliderColor: string;
 
     /** @hide true */
-    tags?: Tags;
+    tags: Tags | null;
 }
 
 function Dots({ images, interval = 0, dotSliderColor }: DotsProps) {
@@ -84,6 +84,7 @@ const LocalProductShelf = ({ products, cardLayout, layout, highlights, dotSlider
                             class="carousel-item !w-[300px] 2xl:!w-[320px]"
                         >
                             <TimedProductCard
+                                index={index}
                                 product={product}
                                 itemListName={""}
                                 layout={cardLayout}
