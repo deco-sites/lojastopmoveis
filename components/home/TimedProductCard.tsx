@@ -76,7 +76,7 @@ interface Props {
     class?: string;
 
     /** @hide true */
-    tags?: Tags;
+    tags: Tags | null;
 
     /** @hide true */
     index: number;
@@ -123,6 +123,7 @@ function TimedProductCard(
     const variants = Object.entries(Object.values(possibilities)[0] ?? {});
 
     const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
+
 
     const device = useDevice();
     const isDesktop = device === "desktop";
@@ -208,12 +209,25 @@ function TimedProductCard(
     const _price2: number = price as number;
     const listPrice2: number = listPrice as number;
 
-    const forPrice = product.offers?.offers[0].price;
+    // const forPrice = product.offers?.offers[0].price;
+
+    
 
     const discountPrice = product.offers?.offers[0].priceSpecification.at(-2)
         ?.price;
-    const discount = listPrice && listPrice > price;
+    // const discount = listPrice && listPrice > price;
 
+    const pixPriceSpecification=  offers?.offers[0]?.priceSpecification.find(
+      ({ description }) => description?.toLowerCase() === "pix à vista",
+    );
+    const pixPrice = pixPriceSpecification?.price;
+    const defaultPrice = price !== pixPrice ? pixPrice : price;
+
+    const forPrice = product.offers?.offers[0].priceSpecification[1].price;
+    const discount = defaultPrice && listPrice && listPrice > defaultPrice;
+
+    console.log(discount);
+    
     return (
         <div
             class={`bg-white card card-compact opacity-100 bg-opacity-100 group w-full p-2.5 pb-6 sm:p-5 h-[100%] border border-[#D7D7DA] lg:border-0 lg:border-transparent${align === "center" ? "text-center" : "text-start"
@@ -425,19 +439,12 @@ function TimedProductCard(
                                         <div class="flex items-center gap-[10px] py-[10px]">
                                             {/* Aqui */}
                                             <span class="font-bold text-md text-secondary leading-none !text-[#ed2d25]">
-                                                {formatPrice(
-                                                    discountPrice,
-                                                    offers?.priceCurrency,
-                                                )}
+                                                {formatPrice(defaultPrice, offers?.priceCurrency)}
                                             </span>
                                             {discount && forPrice &&
                                                 discountPrice && (
                                                     <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                                                        {Math.round(
-                                                            ((forPrice -
-                                                                discountPrice) /
-                                                                forPrice) * 100,
-                                                        )}% de desconto no Pix ou
+                                                        {Math.round(((forPrice - defaultPrice) / forPrice) * 100)}% de desconto no Pix ou
                                                         boleto
                                                     </span>
                                                 )}
@@ -447,6 +454,7 @@ function TimedProductCard(
                         </>
                     )
                     : null}
+
 
                 {/* SKU Selector */}
                 {(l?.elementsPositions?.skuSelector === "Bottom" &&

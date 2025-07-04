@@ -81,7 +81,7 @@ function ProductShelf({ products, title, layout, cardLayout, seeMore, showPagina
   return (<div class="w-full pb-8 flex flex-col lg:gap-7 lg:pb-10">
     <div class="flex items-center justify-between relative pb-3">
       <Header title={title || ""} description="" fontSize={layout?.headerfontSize || "Large"} alignment={layout?.headerAlignment || "center"} color={layout?.color || "primary"} />
-      {seeMore && seeMore.url !== "_" || seeMore.label ? (
+      {seeMore && seeMore.url !== "_" || seeMore?.label ? (
         <span className="text-emphasis font-normal text-sm lowercase">
           <a href={seeMore.url} className="underline focus:outline-none focus:ring-2 focus:ring-blue-500" aria-label={`Saiba mais sobre ${seeMore.label}`}>
             {seeMore.label}
