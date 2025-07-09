@@ -38,6 +38,13 @@
                   "telefone": "(85) 3 1946-500"
                 },
                 {
+                  "cep": "61600004",
+                  "cidade": "Caucaia",
+                  "estado": "Ceará",
+                  "endereco": "Rua Coronel Correia, Centro - Nº 2090",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
                   "cep": "63100-080",
                   "cidade": "Crato",
                   "estado": "Ceará",
@@ -112,6 +119,13 @@
                   "cidade": "Fortaleza",
                   "estado": "Ceará",
                   "endereco": "Rua General Sampaio - Centro, Nº 779",
+                  "telefone": "(85) 3 1946-500"
+                },
+                {
+                  "cep": "60020-030",
+                  "cidade": "Fortaleza",
+                  "estado": "Ceará",
+                  "endereco": "Rua General Sampaio - Centro, Nº 1240",
                   "telefone": "(85) 3 1946-500"
                 },
                 {
