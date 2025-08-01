@@ -1503,15 +1503,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/liquidatop"
+                        "href": "/alegriatop"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/5f5fe1fd-4310-4679-a5f2-2179d57e1fe4/BANNER-APP---1080x1350px---LIQUIDA-TOP.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/5cb5c05a-e22c-4476-b263-ef78085dacc4/BANNER-APP---1080x1350px-(1).png",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/a190f2e3-56cb-442e-b3a8-b4be8d859705/BANNER-SITE---1920x700px---LIQUIDA-TOP.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/9a8f1440-e054-4ad5-a03c-2c9bce0357b2/BANNER-SITE---1920x700px-(1).png",
                         "width": 1920,
                         "height": 599
                       }
