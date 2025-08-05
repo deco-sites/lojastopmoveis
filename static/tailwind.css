@@ -4257,6 +4257,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-10 {
   bottom: 2.5rem;
 }
+.bottom-4 {
+  bottom: 1rem;
+}
 .bottom-\[120px\] {
   bottom: 120px;
 }
@@ -5607,6 +5610,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .rounded-\[40px\] {
   border-radius: 40px;
+}
+.rounded-\[4px\] {
+  border-radius: 4px;
 }
 .rounded-\[5px\] {
   border-radius: 5px;
@@ -7870,6 +7876,10 @@ details.collapse summary::-webkit-details-marker {
 .hover\:bg-white:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-opacity-90:hover {
+  --tw-bg-opacity: 0.9;
 }
 
 .hover\:font-bold:hover {

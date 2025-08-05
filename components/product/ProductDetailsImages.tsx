@@ -1,11 +1,13 @@
 import Slider from "$store/components/ui/Slider.tsx";
+import SliderJS from "$store/islands/SliderJS.tsx";
 import type { ImageObject, Product } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
 import ProductHighlights from "$store/components/product/ProductHighlights.tsx";
 import WishlistIcon from "$store/islands/WishlistButton.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
-
+import { useSignal } from "@preact/signals";
+import { useEffect } from "preact/hooks";
 
 interface Props {
   images: ImageObject[];
@@ -18,34 +20,85 @@ interface Props {
   url: string;
 }
 
-
-
 function ProductDetailsImages(
-  { images, width, height, aspect, product, highlights, device, }: Props,
+  { images, width, height, aspect, product, highlights, device }: Props,
 ) {
-
   const video = product && product.video || [];
-  const midia = [...images, ...video];
+  const media = [...images, ...video];
+  const currentSlide = useSignal(0);
+  const sliderId = `product-slider-${product.productID}`;
 
   const {
     productID,
     isVariantOf,
   } = product;
-  
+
   const productGroupID = isVariantOf?.productGroupID;
 
   const imagecustom = product.image?.find((i) => i["@type"] === "ImageObject");
   const iconPlayer =
     "https://topmoveis.vtexcommercestable.com.br/arquivos/icon-play-video.png";
 
+  const hasVideo = video.length > 0;
+  const currentIsVideo = media[currentSlide.value]?.["@type"] === "VideoObject";
+  const firstVideoIndex = media.findIndex((item) =>
+    item["@type"] === "VideoObject"
+  );
+
+  const goToVideo = () => {
+    if (firstVideoIndex !== -1) {
+      const slider = document.getElementById(sliderId)?.querySelector(
+        "[data-slider]",
+      ) as HTMLUListElement;
+      const targetItem = slider?.querySelector(
+        `[data-slider-item="${firstVideoIndex}"]`,
+      ) as HTMLLIElement;
+
+      if (slider && targetItem) {
+        slider.scrollTo({
+          left: targetItem.offsetLeft,
+          behavior: "smooth",
+        });
+        currentSlide.value = firstVideoIndex;
+      }
+    }
+  };
+
+  useEffect(() => {
+    const slider = document.getElementById(sliderId)?.querySelector(
+      "[data-slider]",
+    );
+    if (!slider) return;
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const index = parseInt(
+              entry.target.getAttribute("data-slider-item") || "0",
+            );
+            currentSlide.value = index;
+          }
+        });
+      },
+      { threshold: 0.6, root: slider },
+    );
+
+    const items = slider.querySelectorAll("[data-slider-item]");
+    items.forEach((item) => observer.observe(item));
+
+    return () => observer.disconnect();
+  }, [sliderId]);
+
   return (
     <>
-      <div>
+      <div id={sliderId}>
+        <SliderJS rootId={sliderId} scroll="smooth" />
         <div class="flex flex-col xl:flex-row-reverse relative lg:items-start gap-4">
-        {/* Image Slider */}
+          {/* Image Slider */}
           <div class="relative xl:pl-32">
             <Slider class="carousel carousel-center gap-6 box-border lg:box-content lg:w-[600px] 2xl:w-[727px] w-full px-4 lg:px-0">
-              {midia.map((img, index) => (
+              {media.map((img, index) => (
                 <Slider.Item
                   index={index}
                   class="carousel-item w-full aspect-square"
@@ -60,7 +113,7 @@ function ProductDetailsImages(
                           title={img?.name}
                           src={img.contentUrl!}
                           frameborder={0}
-                          loading={"lazy"}
+                          loading="lazy"
                         >
                         </iframe>
                       )}
@@ -69,14 +122,27 @@ function ProductDetailsImages(
                         img,
                         index,
                         aspect,
-                      width,
-                      height,
-                      device,
-                    })}
-                </div>
-              </Slider.Item>
+                        width,
+                        height,
+                        device,
+                      })}
+                  </div>
+                </Slider.Item>
               ))}
             </Slider>
+
+            {/* Video Button */}
+            {hasVideo && !currentIsVideo && (
+              <button
+                type="button"
+                onClick={goToVideo}
+                class="absolute bottom-4 right-4 bg-secondary hover:bg-opacity-90 text-white p-1 rounded-[4px] flex items-center gap-1 transition-all duration-300 z-10"
+                aria-label="Ver vídeo do produto"
+              >
+                <Icon id="Play" class="w-5 h-5" />
+                <span class="text-sm font-medium">Vídeo</span>
+              </button>
+            )}
             <div class="absolute w-full right-0 top-0 xl:pl-32">
               {/* Discount tag */}
               <div class="flex justify-between w-full">
@@ -92,9 +158,9 @@ function ProductDetailsImages(
                   : null} */
                 }
 
-                <WishlistIcon 
-                  productGroupID={productGroupID} 
-                  productID={productID} 
+                <WishlistIcon
+                  productGroupID={productGroupID}
+                  productID={productID}
                   tailwind="col-start-1 col-start-1 justify-self-end !h-[36px] !w-[36px] items-end"
                   tailwindIcon="scale-150"
                 />
@@ -116,7 +182,7 @@ function ProductDetailsImages(
             <ul
               class={`flex gap-4 overflow-auto lg:max-h-min lg:flex-1 lg:justify-start xl:flex-col-reverse`}
             >
-              {midia.map((img, index) => (
+              {media.map((img, index) => (
                 <li class="min-w-[75px] lg:h-fit lg:min-w-[130px]">
                   <Slider.Dot index={index}>
                     {img["@type"] === "VideoObject" &&
@@ -153,22 +219,27 @@ function ProductDetailsImages(
             </ul>
           </div>
         </div>
-          <a
-              href={`https://api.whatsapp.com/send/?phone=5585988025359&text&type=phone_number&app_absent=0`}
-              class="lg:max-w-[85%]  justify-center w-full mt-[25px] lg:ml-[15%] h-[40px] bg-[#049548] rounded-full border border-solid lg:flex hidden "
-              aria-label="Chat on WhatsApp"
-              target="blank"
-            >
-              <Icon id="WhatsappLogo" class="pt-[7px] pl-[10px] lg:pl-0" size={40} stroke="0.01" />
-              <button
-                class=" text-white p-2 text-sm lg:text-base font-bold" 
-                aria-label="Chat on WhatsApp"
-              >
-                Gostei do produto, quero comprar pelo WhatsApp
-              </button>
-          </a>
+        <a
+          href={`https://api.whatsapp.com/send/?phone=5585988025359&text&type=phone_number&app_absent=0`}
+          class="lg:max-w-[85%]  justify-center w-full mt-[25px] lg:ml-[15%] h-[40px] bg-[#049548] rounded-full border border-solid lg:flex hidden "
+          aria-label="Chat on WhatsApp"
+          target="blank"
+        >
+          <Icon
+            id="WhatsappLogo"
+            class="pt-[7px] pl-[10px] lg:pl-0"
+            size={40}
+            stroke="0.01"
+          />
+          <button
+            type="button"
+            class=" text-white p-2 text-sm lg:text-base font-bold"
+            aria-label="Chat on WhatsApp"
+          >
+            Gostei do produto, quero comprar pelo WhatsApp
+          </button>
+        </a>
       </div>
-     
     </>
   );
 }
