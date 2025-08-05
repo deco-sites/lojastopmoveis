@@ -24,7 +24,7 @@ function ProductDetailsImages(
   { images, width, height, aspect, product, highlights, device }: Props,
 ) {
   const video = product && product.video || [];
-  const media = [...images, ...video];
+  const media = [...images, ...video].filter((item) => item["@type"] === "VideoObject" ? item.contentUrl : item.url);
   const currentSlide = useSignal(0);
   const sliderId = `product-slider-${product.productID}`;
 
@@ -39,7 +39,7 @@ function ProductDetailsImages(
   const iconPlayer =
     "https://topmoveis.vtexcommercestable.com.br/arquivos/icon-play-video.png";
 
-  const hasVideo = video.length > 0;
+  const hasVideo = media.some((item) => item["@type"] === "VideoObject");
   const currentIsVideo = media[currentSlide.value]?.["@type"] === "VideoObject";
   const firstVideoIndex = media.findIndex((item) =>
     item["@type"] === "VideoObject"
@@ -60,6 +60,16 @@ function ProductDetailsImages(
           behavior: "smooth",
         });
         currentSlide.value = firstVideoIndex;
+        setTimeout(() => {
+          const iframe = targetItem.querySelector("iframe") as HTMLIFrameElement | null;
+          if (iframe) {
+            const src = iframe.getAttribute("src") ?? "";
+            if (!src.includes("autoplay=1")) {
+              const separator = src.includes("?") ? "&" : "?";
+              iframe.setAttribute("src", `${src}${separator}autoplay=1`);
+            }
+          }
+        }, 600);
       }
     }
   };
@@ -114,6 +124,8 @@ function ProductDetailsImages(
                           src={img.contentUrl!}
                           frameborder={0}
                           loading="lazy"
+                          allow="autoplay; encrypted-media"
+                          allowFullScreen
                         >
                         </iframe>
                       )}
