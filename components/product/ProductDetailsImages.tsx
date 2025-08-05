@@ -39,11 +39,11 @@ function ProductDetailsImages(
   const iconPlayer =
     "https://topmoveis.vtexcommercestable.com.br/arquivos/icon-play-video.png";
 
-  const hasVideo = media.some((item) => item["@type"] === "VideoObject");
   const currentIsVideo = media[currentSlide.value]?.["@type"] === "VideoObject";
   const firstVideoIndex = media.findIndex((item) =>
     item["@type"] === "VideoObject"
   );
+  const hasVideo = firstVideoIndex !== -1;
 
   const goToVideo = () => {
     if (firstVideoIndex !== -1) {
@@ -148,7 +148,7 @@ function ProductDetailsImages(
               <button
                 type="button"
                 onClick={goToVideo}
-                class="absolute bottom-4 right-4 bg-secondary hover:bg-opacity-90 text-white p-1 rounded-[4px] flex items-center gap-1 transition-all duration-300 z-10"
+                class="absolute md:bottom-5 -bottom-2 md:right-4 right-0 bg-secondary hover:bg-opacity-90 text-white p-1 rounded-[4px] flex items-center gap-1 transition-all duration-300 z-10"
                 aria-label="Ver vídeo do produto"
               >
                 <Icon id="Play" class="w-5 h-5" />
