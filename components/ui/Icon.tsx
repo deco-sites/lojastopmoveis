@@ -80,7 +80,9 @@ export type AvailableIcons =
   | "FaleConosco"
   | "NossasLojas"
   | "AllCategories" 
-  | "Wrench";
+  | "Wrench"
+  | "StarGray"
+  | "StarYellow";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

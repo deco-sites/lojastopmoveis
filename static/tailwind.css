@@ -6429,8 +6429,14 @@ details.collapse summary::-webkit-details-marker {
 .text-\[15px\] {
   font-size: 15px;
 }
+.text-\[16px\] {
+  font-size: 16px;
+}
 .text-\[19px\] {
   font-size: 19px;
+}
+.text-\[20px\] {
+  font-size: 20px;
 }
 .text-\[24px\] {
   font-size: 24px;
@@ -6548,6 +6554,9 @@ details.collapse summary::-webkit-details-marker {
 .leading-\[22px\] {
   line-height: 22px;
 }
+.leading-\[32px\] {
+  line-height: 32px;
+}
 .leading-none {
   line-height: 1;
 }
@@ -6590,6 +6599,10 @@ details.collapse summary::-webkit-details-marker {
 .text-\[\#1e1e1e99\] {
   color: #1e1e1e99;
 }
+.text-\[\#2E2E2E\] {
+  --tw-text-opacity: 1;
+  color: rgb(46 46 46 / var(--tw-text-opacity));
+}
 .text-\[\#4A4B51\] {
   --tw-text-opacity: 1;
   color: rgb(74 75 81 / var(--tw-text-opacity));
@@ -6609,6 +6622,10 @@ details.collapse summary::-webkit-details-marker {
 .text-\[\#C5C6CB\] {
   --tw-text-opacity: 1;
   color: rgb(197 198 203 / var(--tw-text-opacity));
+}
+.text-\[\#ED2A24\] {
+  --tw-text-opacity: 1;
+  color: rgb(237 42 36 / var(--tw-text-opacity));
 }
 .text-\[\#FFFFFF\] {
   --tw-text-opacity: 1;
@@ -8408,6 +8425,10 @@ details.collapse summary::-webkit-details-marker {
     gap: 0px;
   }
 
+  .sm\:gap-2 {
+    gap: 0.5rem;
+  }
+
   .sm\:space-x-0 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(0px * var(--tw-space-x-reverse));
@@ -8489,6 +8510,10 @@ details.collapse summary::-webkit-details-marker {
   .sm\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .sm\:text-\[16px\] {
+    font-size: 16px;
   }
 
   .sm\:text-\[20px\] {

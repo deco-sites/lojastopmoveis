@@ -1,0 +1,157 @@
+{
+  "name": "Task 11349 PDP",
+  "path": "/task-11349/:slug/p",
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "site/sections/Seo/SeoPDPCustom.tsx",
+            "jsonLD": {
+              "__resolveType": "PDP - Intelligent Search Loader"
+            },
+            "changePixPrice": false
+          },
+          {
+            "__resolveType": "Header Black"
+          },
+          {
+            "__resolveType": "Default - Product Details"
+          },
+          {
+            "__resolveType": "Produtos relacionados - ProductShelf"
+          },
+          {
+            "__resolveType": "Footer Black"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Whatsapp"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Instagram"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Facebook"
+            }
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-04-15T15:00:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "site/sections/Seo/SeoPDPCustom.tsx",
+            "jsonLD": {
+              "__resolveType": "PDP - Intelligent Search Loader"
+            },
+            "changePixPrice": false
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu"
+          },
+          {
+            "__resolveType": "Default - Product Details"
+          },
+          {
+            "__resolveType": "Produtos relacionados - ProductShelf"
+          },
+          {
+            "__resolveType": "site/sections/Product/ReviewsAndRatings.tsx",
+            "product": {
+              "video": null,
+              "image": null,
+              "isAccessoryOrSparePartFor": null,
+              "offers": {
+                "hasMerchantReturnPolicy": {
+                  "video": null,
+                  "image": null,
+                  "returnShippingFeesAmount": {
+                    "video": null,
+                    "image": null
+                  }
+                }
+              },
+              "isVariantOf": {
+                "video": null,
+                "image": null
+              },
+              "isSimilarTo": null,
+              "isRelatedTo": null,
+              "brand": {
+                "video": null,
+                "image": null
+              },
+              "__resolveType": "ReviewsRating"
+            },
+            "page": {
+              "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts",
+              "advancedConfigs": {
+                "includeOriginalAttributes": []
+              },
+              "slug": {
+                "__resolveType": "deco-sites/std/functions/requestToParam.ts",
+                "param": "slug"
+              }
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Footer Global"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Whatsapp"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Instagram"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Facebook"
+            }
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchAlways.ts"
+        }
+      }
+    ]
+  },
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
