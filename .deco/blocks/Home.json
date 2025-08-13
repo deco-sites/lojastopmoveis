@@ -1523,12 +1523,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/02adc65f-264d-4e52-93a0-8510b4668147/banner_madesa_mobile-(2).webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/c345dbd4-178a-43cc-864a-e37ef44635bc/banner_madesa_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/50850790-d215-45ea-aec8-9258b309a65c/banner_madesa_desktop-(1).webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/605c27e4-288a-40b5-893e-49b4657e7d67/banner_madesa_desktop.webp",
                         "width": 1920,
                         "height": 600
                       }
