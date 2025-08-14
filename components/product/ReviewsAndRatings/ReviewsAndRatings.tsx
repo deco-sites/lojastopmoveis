@@ -73,7 +73,7 @@ export const loader = async (
         `${URL_DEFAULT}/reviews-and-ratings/api/reviews?product_id=${productID}`
         ),
         fetchJSON<RatingType>(
-        `${URL_DEFAULT}/reviews-and-ratings/api/rating?product_id=${productID}`
+        `${URL_DEFAULT}/reviews-and-ratings/api/rating/${productID}`
         ),
     ]);
 
@@ -85,15 +85,35 @@ export const loader = async (
     }
 };
 
-function GenerateStar({ ratingValue }:{ ratingValue: number }) {
+function GenerateStar({ ratingValue }: { ratingValue: number }) {
     const totalStars = 5;
-    const filledStars = Math.max(0, Math.min(totalStars, Math.floor(ratingValue)));
+    const filledStars = Math.floor(ratingValue);
+    const hasHalfStar = ratingValue % 1 >= 0.5;
+    const emptyStars = totalStars - filledStars - (hasHalfStar ? 1 : 0);
 
     return (
         <div class="flex gap-1 sm:gap-2">
-            {Array.from({ length: totalStars }, (_, index) => (
+            {Array.from({ length: filledStars }, (_, index) => (
                 <Icon
-                    id={index < filledStars ? "StarYellow" : "StarGray"}
+                    id="StarYellow"
+                    width={20}
+                    height={20}
+                    class="text-secondary"
+                />
+            ))}
+
+            {hasHalfStar && (
+                <Icon
+                    id="MidStarYellow"
+                    width={20}
+                    height={20}
+                    class="text-secondary"
+                />
+            )}
+
+            {Array.from({ length: emptyStars }, (_, index) => (
+                <Icon
+                    id="StarGray"
                     width={20}
                     height={20}
                     class="text-secondary"
@@ -108,8 +128,8 @@ function ReviewsAndRatings(
 ) {
 
     return (
-        <div class="container w-full m-auto px-5">
-            <div class="pb-5">
+        <div class="container w-full m-auto px-5" id="reviews-and-ratings">
+            <div class="pb-5 lg:pb-10">
                 <span class="font-condensed not-italic font-medium text-[20px] leading-[32px] text-[#2E2E2E] lg:text-2xl lg:leading-8">O que estão dizendo</span>
                 <div class="flex flex-row gap-4 items-center justify-start mb-5 mt-2">
                     <div class="">

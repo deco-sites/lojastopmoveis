@@ -38,13 +38,33 @@ function timeAgo(searchDate: string): string {
 
 function GenerateStar({ ratingValue }: { ratingValue: number }) {
     const totalStars = 5;
-    const filledStars = Math.max(0, Math.min(totalStars, Math.round(ratingValue)));
+    const filledStars = Math.floor(ratingValue);
+    const hasHalfStar = ratingValue % 1 >= 0.5;
+    const emptyStars = totalStars - filledStars - (hasHalfStar ? 1 : 0);
 
     return (
         <div class="flex gap-1 sm:gap-2">
-            {Array.from({ length: totalStars }, (_, index) => (
+            {Array.from({ length: filledStars }, (_, index) => (
                 <Icon
-                    id={index < filledStars ? "StarYellow" : "StarGray"}
+                    id="StarYellow"
+                    width={20}
+                    height={20}
+                    class="text-secondary"
+                />
+            ))}
+
+            {hasHalfStar && (
+                <Icon
+                    id="MidStarYellow"
+                    width={20}
+                    height={20}
+                    class="text-secondary"
+                />
+            )}
+
+            {Array.from({ length: emptyStars }, (_, index) => (
+                <Icon
+                    id="StarGray"
                     width={20}
                     height={20}
                     class="text-secondary"

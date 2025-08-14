@@ -15,30 +15,47 @@ function StarSelector({
     onChange: (rating: number) => void;
 }) {
     const [hovered, setHovered] = useState<number>(0);
-    const totalStars = 5
+    const totalStars = 5;
     const effectiveValue = hovered > 0 ? hovered : value;
+
+    const handleMouseMove = (e: MouseEvent, starIndex: number) => {
+        const { left, width } = (e.target as HTMLElement).getBoundingClientRect();
+        const isHalf = e.clientX - left < width / 2;
+        setHovered(starIndex - (isHalf ? 0.5 : 0));
+    };
+
+    const handleClick = (e: MouseEvent, starIndex: number) => {
+        const { left, width } = (e.target as HTMLElement).getBoundingClientRect();
+        const isHalf = e.clientX - left < width / 2;
+        onChange(starIndex - (isHalf ? 0.5 : 0));
+        setHovered(0);
+    };
 
     return (
         <div class="flex flex-col gap-2">
             <div class="flex gap-1 sm:gap-2 items-center" aria-label="Seletor de avaliação">
                 {Array.from({ length: totalStars }, (_, idx) => {
-                    const starIndex = idx + 1;
-                    const filled = starIndex <= effectiveValue;
+                    const starNumber = idx + 1;
+                    let iconId = "StarGray";
+
+                    if (effectiveValue >= starNumber) {
+                        iconId = "StarYellow";
+                    } else if (effectiveValue >= starNumber - 0.5) {
+                        iconId = "MidStarYellow";
+                    }
+
                     return (
                         <button
-                            key={starIndex}
+                            key={starNumber}
                             type="button"
                             class="p-0 m-0 bg-transparent border-0 cursor-pointer"
-                            onClick={() => {
-                                onChange(starIndex);
-                                setHovered(0);
-                            }}
-                            onMouseEnter={() => setHovered(starIndex)}
+                            onClick={(e) => handleClick(e, starNumber)}
+                            onMouseMove={(e) => handleMouseMove(e, starNumber)}
                             onMouseLeave={() => setHovered(0)}
-                            aria-label={`${starIndex} ${starIndex === 1 ? "estrela" : "estrelas"}`}
+                            aria-label={`${starNumber} ${starNumber === 1 ? "estrela" : "estrelas"}`}
                         >
                             <Icon
-                                id={filled ? "StarYellow" : "StarGray"}
+                                id={iconId}
                                 width={20}
                                 height={20}
                                 class="text-secondary"
@@ -46,7 +63,9 @@ function StarSelector({
                         </button>
                     );
                 })}
-                <span class="ml-2 text-[13px] text-[#4A4B51]">{value > 0 ? `${value}/5` : ""}</span>
+                <span class="ml-2 text-[13px] text-[#4A4B51]">
+                    {value > 0 ? `${value}/5` : ""}
+                </span>
             </div>
         </div>
     );
@@ -112,6 +131,8 @@ function Register({ authCookie, productId, appKeyCurrent, appTokenCurrent }: Reg
                 },
             });
 
+            console.log(response);
+
             if (!response.ok) {
                 let message = "Falha ao enviar sua avaliação.";
 
@@ -142,11 +163,11 @@ function Register({ authCookie, productId, appKeyCurrent, appTokenCurrent }: Reg
 
     console.log("user.value?.givenName: ", user.value?.givenName);
 
-    if (!user.value?.givenName) return (
-        <div>
-            <a href="/my-account" class="font-condensed not-italic font-semibold text-[14px] leading-[16px] text-center tracking-[1px] underline uppercase text-[#ED2A24]">faça login para avaliar</a>
-        </div>
-    );
+    // if (!user.value?.givenName) return (
+    //     <div>
+    //         <a href="/my-account" class="font-condensed not-italic font-semibold text-[14px] leading-[16px] text-center tracking-[1px] underline uppercase text-[#ED2A24]">faça login para avaliar</a>
+    //     </div>
+    // );
 
     return (
         <div class="w-full">
