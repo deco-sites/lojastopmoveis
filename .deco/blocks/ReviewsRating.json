@@ -1,0 +1,20 @@
+{
+  "__resolveType": "commerce/loaders/product/extensions/detailsPage.ts",
+  "extensions": [
+    {
+      "__resolveType": "vtex/loaders/product/extensions/detailsPage.ts",
+      "reviews": true
+    }
+  ],
+  "data": {
+    "__resolveType": "vtex/loaders/intelligentSearch/productDetailsPage.ts",
+    "advancedConfigs": {
+      "includeOriginalAttributes": []
+    },
+    "slug": {
+      "__resolveType": "deco-sites/std/functions/requestToParam.ts",
+      "param": "slug"
+    },
+    "similars": true
+  }
+}

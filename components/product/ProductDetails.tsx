@@ -48,6 +48,46 @@ export interface Props {
 const WIDTH = 250;
 const HEIGHT = 250;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
+const URL_DEFAULT = "https://topmoveis.myvtex.com";
+
+type RangeType = {
+    total: number;
+    from: number;
+    to: number;
+};
+
+type ReviewsType = {
+  id: string;
+  productId: string;
+  rating: number;
+  title: string;
+  text: string;
+  reviewerName: string;
+  shopperId: string;
+  reviewDateTime: string;
+  searchDate: string;
+  verifiedPurchaser: boolean;
+  sku: string | null;
+  approved: boolean;
+  location: string | null;
+  locale: string | null;
+  pastReviews: string | null;
+};
+
+type RatingType = {
+  average: number;
+  totalCount: number;
+  starsFive: number;
+  starsFour: number;
+  starsThree: number;
+  starsTwo: number;
+  starsOne: number;
+};
+
+export type ResponseReview = {
+  data: ReviewsType[];
+  range: RangeType;
+}
 /**
  * Rendered when a not found is returned by any of the loaders run on this page
  */
@@ -63,11 +103,13 @@ function NotFound() {
     </div>
   );
 }
-function ProductInfo({ page, shareableNetworks, tags }: {
+function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating }: {
   page: ProductDetailsPage;
   shipmentPolitics?: Props["shipmentPolitics"];
   shareableNetworks?: Props["shareableNetworks"];
   tags: Props["tags"];
+  reviews: ResponseReview;
+  aggregateRating: RatingType;
 }) {
   const { breadcrumbList, product } = page;
   const {
@@ -85,7 +127,6 @@ function ProductInfo({ page, shareableNetworks, tags }: {
   const forPrice = product.offers?.offers[0].priceSpecification[1].price;
   const discount = listPrice && listPrice > price;
   const vendorName = product.offers?.offers[0].sellerName;
-
   const flagCustom = Array.isArray(tags?.flagCustom) ? tags.flagCustom : null;
 
 
@@ -114,12 +155,19 @@ function ProductInfo({ page, shareableNetworks, tags }: {
           </span>
         </div>
 
+        <div class="mt-2 mb-4 flex items-center justify-start gap-2">
+          <GenerateStar ratingValue={aggregateRating.average} />
+          <div class="border-b border-[#1C1C1D]">
+            <a href="#reviews-and-ratings" class="font-condensed not-italic font-normal text-[14px] leading-[18px] no-underline text-[#1C1C1D]">{reviews.range.total === 0 ? `(${reviews.range.total})  Seja o primeiro a avaliar` : `(${reviews.range.total})  Ver  avaliações`}</a>
+          </div>
+        </div>
+
         <div class="pt-1 gap-1 flex flex-col">
           {flagCustom && flagCustom.map((flag, idx) =>
             isFlag(flag, additionalProperty) && (
               <FlagCustom
                 key={idx}
-                // deno-lint-ignore no-explicit-any
+                deno-lint-ignore no-explicit-any
                 formatFlag={flag.formatFlag?.optionsFormat as any}
                 type="ProductDetails"
               />
@@ -295,6 +343,8 @@ function Details(
     highlights,
     device,
     tags,
+    reviews, 
+    aggregateRating,
   }: {
     page: ProductDetailsPage;
     variant: Variant;
@@ -303,6 +353,8 @@ function Details(
     highlights?: HighLight[];
     device: string;
     tags: Tags | null;
+    reviews: ResponseReview;
+    aggregateRating: RatingType;
   },
 ) {
   const { product, breadcrumbList } = page;
@@ -339,6 +391,8 @@ function Details(
               shipmentPolitics={shipmentPolitics}
               shareableNetworks={shareableNetworks}
               tags={tags}
+              reviews={reviews}
+              aggregateRating={aggregateRating}
             />
           </div>
         </div>
@@ -365,7 +419,7 @@ function Details(
               alt={img.alternateName}
               width={WIDTH}
               height={HEIGHT}
-              // Preload LCP image for better web vitals
+              Preload LCP image for better web vitals
               preload={index === 0}
               loading={index === 0 ? "eager" : "lazy"}
             />
@@ -375,7 +429,7 @@ function Details(
 
       {/* Product Info */}
       <div class="px-4 lg:pr-0 lg:pl-6">
-        <ProductInfo page={page} tags={tags} />
+        <ProductInfo page={page} tags={tags} reviews={reviews} aggregateRating={aggregateRating} />
       </div>
     </div>
   );
@@ -389,6 +443,8 @@ function ProductDetails(
     highlights,
     device,
     tags,
+    reviews, 
+    aggregateRating,
   }: Props & {device: Device} & SectionProps<ReturnType<typeof loader>>,
 ) {
   /**
@@ -413,19 +469,79 @@ function ProductDetails(
             highlights={highlights}
             device={device}
             tags={tags}
+            reviews={reviews}
+            aggregateRating={aggregateRating}
           />
         )
         : <NotFound />}
     </div>
   );
 }
+
+function GenerateStar({ ratingValue }: { ratingValue: number }) {
+    const totalStars = 5;
+    const filledStars = Math.floor(ratingValue);
+    const hasHalfStar = ratingValue % 1 >= 0.5;
+    const emptyStars = totalStars - filledStars - (hasHalfStar ? 1 : 0);
+
+    return (
+        <div class="flex gap-1 sm:gap-2">
+            {Array.from({ length: filledStars }, (_, index) => (
+                <Icon
+                    id="StarYellow"
+                    width={20}
+                    height={20}
+                    class="text-secondary"
+                />
+            ))}
+
+            {hasHalfStar && (
+                <Icon
+                    id="MidStarYellow"
+                    width={20}
+                    height={20}
+                    class="text-secondary"
+                />
+            )}
+
+            {Array.from({ length: emptyStars }, (_, index) => (
+                <Icon
+                    id="StarGray"
+                    width={20}
+                    height={20}
+                    class="text-secondary"
+                />
+            ))}
+        </div>
+    );
+}
+
 export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
   const tags = await ctx.invoke.site.loaders.getTags();
+  const { productID } = props.page.product;
+  const fetchJSON = async <T>(url: string): Promise<T> => {
+      const res = await fetch(url);
+      
+      if (!res.ok) throw new Error(`Erro ao buscar ${url}: ${res.status}`);
+
+      return res.json() as Promise<T>;
+  };
+  
+  const [reviews, aggregateRating] = await Promise.all([
+      fetchJSON<ResponseReview>(
+      `${URL_DEFAULT}/reviews-and-ratings/api/reviews?product_id=${productID}`
+      ),
+      fetchJSON<RatingType>(
+      `${URL_DEFAULT}/reviews-and-ratings/api/rating/${productID}`
+      ),
+  ]);
 
   return {
     ...props,
     device: ctx.device,
     tags: tags,
+    reviews, 
+    aggregateRating
   };
 };
 export default ProductDetails;
