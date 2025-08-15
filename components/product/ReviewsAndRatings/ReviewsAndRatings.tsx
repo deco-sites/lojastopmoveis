@@ -70,7 +70,7 @@ export const loader = async (
 
     const [review, aggregateRating] = await Promise.all([
         fetchJSON<ResponseReview>(
-        `${URL_DEFAULT}/reviews-and-ratings/api/reviews?product_id=${productID}`
+        `${URL_DEFAULT}/reviews-and-ratings/api/reviews?product_id=${productID}&to=10`
         ),
         fetchJSON<RatingType>(
         `${URL_DEFAULT}/reviews-and-ratings/api/rating/${productID}`

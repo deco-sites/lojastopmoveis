@@ -18,16 +18,12 @@ function StarSelector({
     const totalStars = 5;
     const effectiveValue = hovered > 0 ? hovered : value;
 
-    const handleMouseMove = (e: MouseEvent, starIndex: number) => {
-        const { left, width } = (e.target as HTMLElement).getBoundingClientRect();
-        const isHalf = e.clientX - left < width / 2;
-        setHovered(starIndex - (isHalf ? 0.5 : 0));
+    const handleMouseMove = (_: MouseEvent, starIndex: number) => {
+        setHovered(starIndex);
     };
 
-    const handleClick = (e: MouseEvent, starIndex: number) => {
-        const { left, width } = (e.target as HTMLElement).getBoundingClientRect();
-        const isHalf = e.clientX - left < width / 2;
-        onChange(starIndex - (isHalf ? 0.5 : 0));
+    const handleClick = (_: MouseEvent, starIndex: number) => {
+        onChange(starIndex);
         setHovered(0);
     };
 
@@ -40,8 +36,6 @@ function StarSelector({
 
                     if (effectiveValue >= starNumber) {
                         iconId = "StarYellow";
-                    } else if (effectiveValue >= starNumber - 0.5) {
-                        iconId = "MidStarYellow";
                     }
 
                     return (
