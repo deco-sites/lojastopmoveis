@@ -156,7 +156,7 @@ function Register({ authCookie, productId, appKeyCurrent, appTokenCurrent }: Reg
     };
 
     if (!user.value?.givenName) return (
-        <div>
+        <div class="w-auto">
             <a href="/my-account" class="font-condensed not-italic font-semibold text-[14px] leading-[16px] text-center tracking-[1px] underline uppercase text-[#ED2A24]">faça login para avaliar</a>
         </div>
     );
