@@ -35,6 +35,12 @@ export interface INewsletterFormProps {
      * @default cadastrar
      */
     label?: string;
+    /**
+     * @title Required?
+     * @description Make button required for form submission
+     * @default true
+     */
+    required?: boolean;
   };
 }
 
@@ -156,6 +162,7 @@ function Form(props: Props) {
                   BUTTON_VARIANTS["primary"]
                 }`}
                 disabled={loading}
+                required={form?.button?.required !== false}
               >
                 {form?.button?.label || "Cadastrar"}
               </button>
