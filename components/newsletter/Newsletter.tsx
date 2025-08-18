@@ -26,6 +26,11 @@ export interface INewsletterFormProps {
   name: INewsletterInputProps;
   button: {
     /**
+     * @title Show button?
+     * @default true
+     */
+    show?: boolean;
+    /**
      * @title button variant
      * @default primary
      */
@@ -35,12 +40,6 @@ export interface INewsletterFormProps {
      * @default cadastrar
      */
     label?: string;
-    /**
-     * @title Required?
-     * @description Make button required for form submission
-     * @default true
-     */
-    required?: boolean;
   };
 }
 
@@ -152,20 +151,21 @@ function Form(props: Props) {
               {nameInput}
               {emailInput}
               {/* Aqui */}
-              <button
-                style={{
-                  minWidth: "150px",
-                }}
-                type="submit"
-                class={`uppercase md:ml-5 font-medium !text-white btn disabled:loading max-lg:self-start font-condensed rounded-full join-item btn-${
-                  BUTTON_VARIANTS[form?.button?.variant as string] ||
-                  BUTTON_VARIANTS["primary"]
-                }`}
-                disabled={loading}
-                required={form?.button?.required !== false}
-              >
-                {form?.button?.label || "Cadastrar"}
-              </button>
+              {!form?.button?.show ? (
+                <button
+                  style={{
+                    minWidth: "150px",
+                  }}
+                  type="submit"
+                  class={`uppercase md:ml-5 font-medium !text-white btn disabled:loading max-lg:self-start font-condensed rounded-full join-item btn-${
+                    BUTTON_VARIANTS[form?.button?.variant as string] ||
+                    BUTTON_VARIANTS["primary"]
+                  }`}
+                  disabled={loading}
+                >
+                  {form?.button?.label || "Cadastrar"}
+                </button>
+              ) : null}
             </div>
           </form>
         )}
