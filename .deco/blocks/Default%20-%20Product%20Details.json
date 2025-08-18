@@ -5,7 +5,7 @@
       "shadow": "none",
       "section": {
         "page": {
-          "__resolveType": "PDP - Intelligent Search Loader"
+          "__resolveType": "task11349dp"
         },
         "variant": "slider",
         "highlights": [
@@ -35,7 +35,8 @@
           "Facebook",
           "Twitter",
           "WhatsApp"
-        ]
+        ],
+        "tags": null
       },
       "spacing": 10,
       "withContainer": true,

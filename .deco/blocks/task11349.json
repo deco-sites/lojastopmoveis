@@ -1,0 +1,10 @@
+{
+  "__resolveType": "vtex/loaders/product/extensions/detailsPage.ts",
+  "reviews": true,
+  "similars": true,
+  "simulate": true,
+  "kitItems": true,
+  "variants": true,
+  "inventory": true,
+  "brands": true
+}
