@@ -81,6 +81,12 @@
             "__resolveType": "Produtos relacionados - ProductShelf"
           },
           {
+            "__resolveType": "site/sections/Product/ReviewsAndRatings.tsx",
+            "product": {
+              "__resolveType": "ReviewsRating"
+            }
+          },
+          {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
             "section": {
               "__resolveType": "Footer Global"
