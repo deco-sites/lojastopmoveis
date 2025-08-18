@@ -155,8 +155,6 @@ function Register({ authCookie, productId, appKeyCurrent, appTokenCurrent }: Reg
         }
     };
 
-    console.log("user.value?.givenName: ", user.value?.givenName);
-
     if (!user.value?.givenName) return (
         <div>
             <a href="/my-account" class="font-condensed not-italic font-semibold text-[14px] leading-[16px] text-center tracking-[1px] underline uppercase text-[#ED2A24]">faça login para avaliar</a>
