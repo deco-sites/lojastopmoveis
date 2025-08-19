@@ -152,11 +152,11 @@ function Register({ authCookie, productId }: RegisterProps) {
     };
 
     if (!authCookie) return (
-        <div class="w-auto">
+        <div>
             <button 
                 onClick={async () => {
-                    const currentPathname = window.location.pathname;
-                    const loginUrl = `/my-account?returnUrl=${encodeURIComponent(currentPathname)}`;                    
+                    const currentURL = window.location.href;
+                    const loginUrl = `/my-account?returnUrl=${currentURL}`;                    
 
                     window.location.href = loginUrl;
                 }} 
