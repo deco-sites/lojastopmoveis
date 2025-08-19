@@ -205,7 +205,7 @@ function Register({ authCookie, productId }: RegisterProps) {
 
                     <div class="flex flex-col gap-1">
                         <label class="not-italic font-medium text-[16px] leading-[30px] text-[#1C1C1D]" for="name">Seu nome<span class="text-red-600"> *</span></label>
-                        <input id="name" name="name" required defaultValue={user?.name ?? ""} aria-invalid={Boolean(errors.name)} class={`border rounded px-3 py-2 not-italic font-normal text-[14px] leading-[19px] text-[#4A4B51] ${errors.name ? "border-red-500" : "border-[#E5E7EB]"}`} />
+                        <input id="name" name="name" required aria-invalid={Boolean(errors.name)} class={`border rounded px-3 py-2 not-italic font-normal text-[14px] leading-[19px] text-[#4A4B51] ${errors.name ? "border-red-500" : "border-[#E5E7EB]"}`} />
                         {errors.name && <p class="text-red-600 text-sm">{errors.name}</p>}
                     </div>
 
