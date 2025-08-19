@@ -225,8 +225,6 @@ function TimedProductCard(
 
     const forPrice = product.offers?.offers[0].priceSpecification[1].price;
     const discount = defaultPrice && listPrice && listPrice > defaultPrice;
-
-    console.log(discount);
     
     return (
         <div

@@ -21,6 +21,11 @@ export interface INewsletterFormProps {
     email: INewsletterInputProps;
     name: INewsletterInputProps;
     button: {
+          /**
+         * @title Show button?
+         * @default true
+         */
+        show?: boolean;
         /**
          * @title button variant
          * @default primary
@@ -131,12 +136,14 @@ function NewsletterModal({ isOpen, form, text, modalSignExpiredDate, modalCloseE
                   <div class="text-center">
                     {nameInput}
                     {emailInput}
-                    <button style={{
-                    minWidth: "150px",
-                }} type="submit" class={`capitalize md:ml-5 mt-2.5 font-semibold btn rounded-full join-item btn-${BUTTON_VARIANTS[form?.button?.variant as string] ||
-                    BUTTON_VARIANTS["secondary"]}`} disabled={loading}>
-                      {form?.button?.label || "Cadastrar"}
-                    </button>
+                    {!form?.button?.show ? (
+                      <button style={{
+                      minWidth: "150px",
+                  }} type="submit" class={`capitalize md:ml-5 mt-2.5 font-semibold btn rounded-full join-item btn-${BUTTON_VARIANTS[form?.button?.variant as string] ||
+                      BUTTON_VARIANTS["secondary"]}`} disabled={loading}>
+                        {form?.button?.label || "Cadastrar"}
+                      </button>
+                    ) : null}
                   </div>
                 </form>
               </>)}

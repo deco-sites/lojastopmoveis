@@ -9,9 +9,6 @@ export const handler: Handlers = {
         const cookies = getCookies(req.headers);
         const authCookie = cookies["VtexIdclientAutCookie"] || cookies["VtexIdclientAutCookie_topmoveis"];
 
-        console.log("authCookie: ", authCookie)
-        console.log("data: ", data)
-
         const response = await fetch(`${URL_SEND_REVIEW}/reviews-and-ratings/api/review`, {
             method: "POST",
             headers: {
