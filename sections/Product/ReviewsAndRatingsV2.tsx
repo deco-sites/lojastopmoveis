@@ -1,0 +1,1 @@
+export { default, loader } from "$store/components/product/ReviewsAndRatings/ReviewsAndRatingsV2.tsx";
