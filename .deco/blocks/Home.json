@@ -2692,19 +2692,22 @@
             "__resolveType": "site/sections/Newsletter/NewsletterModal.tsx",
             "form": {
               "name": {
-                "placeholder": "Digite seu nome"
+                "placeholder": "Digite seu nome",
+                "show": true
               },
               "email": {
-                "placeholder": "Digite seu e-mail"
+                "placeholder": "Digite seu e-mail",
+                "show": true
               },
               "button": {
                 "label": "CADASTRAR",
-                "variant": "secondary"
+                "variant": "secondary",
+                "show": true
               }
             },
-            "text": "<p><strong><span style=\"color: rgb(252, 3, 3)\">Assine nossa newsletter</span><span style=\"color: rgb(13, 13, 13)\"> e seja o primero a saber das melhores Ofertas, produtos com Frete Grátis* é muito mais! Há e para melhorar </span><span style=\"color: rgb(8, 8, 8)\">ainda mais, cadastrou o e-mail, ganha Cupom!!</span></strong></p><p style=\"text-align: center\"><strong><span style=\"color: rgb(13, 12, 12)\">Aplique o cupom</span><span style=\"color: rgb(224, 62, 45)\"> </span><span style=\"color: rgb(251, 4, 4)\">\"clientetop\" e garanta +5% de desconto </span><span style=\"color: rgb(5, 5, 5)\">em qualquer forma de pagamento!﻿</span></strong></p>",
-            "modalSignExpiredDate": 360,
-            "modalCloseExpiredDate": 7
+            "text": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://sites-lojastopmoveis--vdqi85.decocdn.com/cozinha-completa-viena-com-11-portas-e-3-gavetas-atualle---off-white-fosco-e-canelato-rustico/p?skuId=1578\"><span style=\"color: rgb(3, 3, 3)\">Oferta Exclusiva! Aplique o cupom </span><strong><em><span style=\"color: rgb(255, 10, 10)\">clientetop</span></em></strong><span style=\"color: rgb(255, 10, 10)\"> </span><span style=\"color: rgb(19, 1, 1)\">e garanta + 5% off! Aproveite!</span></a></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.lojastopmoveis.com.br/cozinha-completa-viena-com-11-portas-e-3-gavetas-atualle---off-white-fosco-e-canelato-rustico/p?skuId=1578\"><img src=\"https://assets.decocache.com/lojastopmoveis/ba0d24aa-d830-4e90-99c9-3f359513e07c/Oferta-1.webp\"></a></p>",
+            "modalSignExpiredDate": 1,
+            "modalCloseExpiredDate": 1
           },
           {
             "__resolveType": "CookieConsent"
