@@ -1,4 +1,3 @@
-import { useUser } from "apps/vtex/hooks/useUser.ts";
 import Icon from "$store/components/ui/Icon.tsx";
 import { useState } from "preact/hooks";
 
@@ -65,7 +64,7 @@ function StarSelector({
     );
 }
 
-function Register({ authCookie, productId, appKeyCurrent, appTokenCurrent }: RegisterProps) {
+function Register({ authCookie, productId }: RegisterProps) {
     const [rating, setRating] = useState<number>(0);
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
@@ -77,7 +76,6 @@ function Register({ authCookie, productId, appKeyCurrent, appTokenCurrent }: Reg
         rating?: string;
         general?: string;
     }>({});
-    const { user } = useUser();
 
     const handleSubmit = async (e: Event) => {
         e.preventDefault();
@@ -125,8 +123,6 @@ function Register({ authCookie, productId, appKeyCurrent, appTokenCurrent }: Reg
                 },
             });
 
-            console.log(response);
-
             if (!response.ok) {
                 let message = "Falha ao enviar sua avaliação.";
 
@@ -155,9 +151,18 @@ function Register({ authCookie, productId, appKeyCurrent, appTokenCurrent }: Reg
         }
     };
 
-    if (!user.value?.givenName) return (
+    if (!authCookie) return (
         <div class="w-auto">
-            <a href="/my-account" class="font-condensed not-italic font-semibold text-[14px] leading-[16px] text-center tracking-[1px] underline uppercase text-[#ED2A24]">faça login para avaliar</a>
+            <button 
+                onClick={async () => {
+                    const currentPathname = window.location.pathname;
+                    const loginUrl = `/my-account?returnUrl=${encodeURIComponent(currentPathname)}`;                    
+
+                    window.location.href = loginUrl;
+                }} 
+                class="font-condensed not-italic font-semibold text-[14px] leading-[16px] text-center tracking-[1px] underline uppercase text-[#ED2A24]">
+                    faça login para avaliar
+                </button>
         </div>
     );
 
