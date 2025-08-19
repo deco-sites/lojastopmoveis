@@ -1534,6 +1534,40 @@
                       }
                     },
                     {
+                      "alt": "Últimos Lançamentos ",
+                      "action": {
+                        "href": "/novidadesnatop",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/441eda28-d233-4ec4-b8e7-e20b81687517/banner_top_lancamentos_mobile.webp",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3b404969-6a95-48bf-acd6-c3e4b8858fb0/banner_top_lancamentos_desktop.webp",
+                        "width": 1920,
+                        "height": 599
+                      }
+                    },
+                    {
+                      "alt": "Tuboarte tem na Top",
+                      "action": {
+                        "href": "/busca?q=tuboarte",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://assets.decocache.com/lojastopmoveis/82238ca5-f0c6-44d0-857b-5f1ad765fcc0/1742503708714-c537237a-eaa6-4145-ad5b-d43163c8d083",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://assets.decocache.com/lojastopmoveis/8ae22017-73f7-434b-ad84-f525b9713d8d/1742503710378-3db64aa1-6590-4572-92a2-be00e5212e1c",
+                        "width": 1920,
+                        "height": 599
+                      }
+                    },
+                    {
                       "alt": "Dormitório Adulto",
                       "action": {
                         "href": "https://www.lojastopmoveis.com.br/moveis/quarto-adulto",
@@ -1551,72 +1585,38 @@
                       }
                     },
                     {
-                      "alt": "Hora da Virada Top e Philips",
-                      "action": {
-                        "href": "https://www.lojastopmoveis.com.br/busca?q=philips",
-                        "variant": "primary"
-                      },
-                      "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/296640f4-79d7-4b88-a8b3-8b8efecdf1c9/BANNER-MOBILE---PHILIPS.png",
-                        "width": 390,
-                        "height": 490
-                      },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/148c97ba-ef3e-456d-bc66-0f7181de9f00/BANNER-SITE---PHILIPS.png",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
                         "width": 1920,
-                        "height": 599
-                      }
-                    },
-                    {
-                      "alt": "Seleção de Cozinhas e Kits",
-                      "action": {
-                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha",
-                        "variant": "primary"
+                        "height": 600
                       },
                       "mobile": {
                         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/6f95daab-994b-4198-b125-1145d9749e80/banner_categoria_cozinha_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
-                        "width": 1920,
-                        "height": 600
-                      }
+                      "action": {
+                        "variant": "primary",
+                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha"
+                      },
+                      "alt": "Seleção de Cozinhas e Kits"
                     },
                     {
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3b404969-6a95-48bf-acd6-c3e4b8858fb0/banner_top_lancamentos_desktop.webp",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/148c97ba-ef3e-456d-bc66-0f7181de9f00/BANNER-SITE---PHILIPS.png",
                         "width": 1920,
                         "height": 599
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/441eda28-d233-4ec4-b8e7-e20b81687517/banner_top_lancamentos_mobile.webp",
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/296640f4-79d7-4b88-a8b3-8b8efecdf1c9/BANNER-MOBILE---PHILIPS.png",
                         "width": 390,
                         "height": 490
                       },
                       "action": {
                         "variant": "primary",
-                        "href": "/novidadesnatop"
+                        "href": "https://www.lojastopmoveis.com.br/busca?q=philips"
                       },
-                      "alt": "Últimos Lançamentos "
-                    },
-                    {
-                      "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/8ae22017-73f7-434b-ad84-f525b9713d8d/1742503710378-3db64aa1-6590-4572-92a2-be00e5212e1c",
-                        "width": 1920,
-                        "height": 599
-                      },
-                      "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/82238ca5-f0c6-44d0-857b-5f1ad765fcc0/1742503708714-c537237a-eaa6-4145-ad5b-d43163c8d083",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "action": {
-                        "variant": "primary",
-                        "href": "/busca?q=tuboarte"
-                      },
-                      "alt": "Tuboarte tem na Top"
+                      "alt": "Hora da Virada Top e Philips"
                     }
                   ],
                   "preload": true,
@@ -1708,7 +1708,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-08-18",
+              "countdownTimerDate": "2025-08-22",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#000000",
               "countdownTextColor": "#ffffff",

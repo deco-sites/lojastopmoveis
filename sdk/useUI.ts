@@ -11,6 +11,7 @@ const displaySearchbar = signal(false);
 const displayBuyWarning = signal(false);
 const displayTopBar = signal(true);
 const headerHeight = signal("170px");
+const vtexIdScriptsLoaded = signal(false);
 
 const state = {
   displayCart,
@@ -19,6 +20,7 @@ const state = {
   displayBuyWarning,
   displayTopBar,
   headerHeight,
+  vtexIdScriptsLoaded,
 };
 
 export const useUI = () => state;
