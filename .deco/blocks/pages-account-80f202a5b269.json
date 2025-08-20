@@ -15,7 +15,7 @@
       "__resolveType": "Header Global"
     },
     {
-      "src": "/account",
+      "src": "/login",
       "__resolveType": "site/sections/ProxyIframeCustom.tsx"
     },
     {
