@@ -5,19 +5,22 @@ interface Props {
 }
 
 const runOnMount = () => {
-    globalThis.window.onload = () => {
-        const iFrame = document.getElementById(
-            "proxy-loader",
-        ) as HTMLIFrameElement;
-        if (!iFrame) {
-            return console.error("Couldn't find iframe");
-        }
-        iFrame.height = `${iFrame.contentWindow?.document.body.scrollHeight}`;
-    };
+  globalThis.window.onload = () => {
+    const iFrame = document.getElementById(
+      "proxy-loader",
+    ) as HTMLIFrameElement;
+    if (!iFrame) {
+      return console.error("Couldn't find iframe");
+    }
+    iFrame.height = `${iFrame.contentWindow?.document.body.scrollHeight}`;
+  };
 };
 
 export default function ProxyIframeCustom({ src }: Props) {
-  return ( 
-    <ProxyCustom src={src} runOnMount={runOnMount} />
+  return (
+    <>
+      <script dangerouslySetInnerHTML={{ __html: `(${runOnMount})();` }}></script>
+      <ProxyCustom src={src} />
+    </>
   );
 }
