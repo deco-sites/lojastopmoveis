@@ -66,6 +66,7 @@ function StarSelector({
 
 function Register({ authCookie, productId }: RegisterProps) {
     const [rating, setRating] = useState<number>(0);
+    const [vtexIdScriptsLoaded, setVtexIdScriptsLoaded] = useState(false);
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
     const [successMessage, setSuccessMessage] = useState<string>("");
@@ -153,16 +154,32 @@ function Register({ authCookie, productId }: RegisterProps) {
 
     if (!authCookie) return (
         <div>
-            <button 
+            <button
                 onClick={async () => {
-                    const currentURL = window.location.href;
-                    const loginUrl = `/my-account?returnUrl=${currentURL}`;                    
+                    const execute = () => {
+                        setVtexIdScriptsLoaded(true)
+                        // deno-lint-ignore ban-ts-comment
+                        // @ts-expect-error
+                        window.vtexid.start({
+                            userEmail: "",
+                            locale: "pt-BR",
+                            forceReload: true,
+                        });
+                    };
 
-                    window.location.href = loginUrl;
-                }} 
+                    if (!vtexIdScriptsLoaded) {
+                        const { loadVtexIdScripts } = await import(
+                            "$store/sdk/loadVtexIdScripts.ts"
+                        );
+
+                        loadVtexIdScripts(execute);
+                    } else {
+                        execute();
+                    }
+                }}
                 class="font-condensed not-italic font-semibold text-[14px] leading-[16px] text-center tracking-[1px] underline uppercase text-[#ED2A24]">
-                    faça login para avaliar
-                </button>
+                faça login para avaliar
+            </button>
         </div>
     );
 
