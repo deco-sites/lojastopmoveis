@@ -1534,6 +1534,23 @@
                       }
                     },
                     {
+                      "alt": "Exclusivos do Site",
+                      "action": {
+                        "href": "/exclusivosdosite",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://assets.decocache.com/lojastopmoveis/e724c60a-9726-4422-a471-13a3103f5fed/banner_exclusivo_mobile_v3-(1).webp",
+                        "width": 390,
+                        "height": 490
+                      },
+                      "desktop": {
+                        "image": "https://assets.decocache.com/lojastopmoveis/b1778048-595a-4bf4-9a19-5d868a2326f9/banner_exclusivo_desktop_v3-(1).webp",
+                        "width": 1920,
+                        "height": 599
+                      }
+                    },
+                    {
                       "alt": "Últimos Lançamentos ",
                       "action": {
                         "href": "/novidadesnatop",
@@ -1568,21 +1585,21 @@
                       }
                     },
                     {
-                      "alt": "Dormitório Adulto",
-                      "action": {
-                        "href": "https://www.lojastopmoveis.com.br/moveis/quarto-adulto",
-                        "variant": "primary"
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/cd7ef160-99f8-4693-b34a-97746e5e5508/banner_categoria_roupeiros_desktop.webp",
+                        "width": 1920,
+                        "height": 600
                       },
                       "mobile": {
                         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/de63b2a6-7234-4c1c-9b42-a9d0476e4ff3/banner_categoria_roupeiros_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/cd7ef160-99f8-4693-b34a-97746e5e5508/banner_categoria_roupeiros_desktop.webp",
-                        "width": 1920,
-                        "height": 600
-                      }
+                      "action": {
+                        "variant": "primary",
+                        "href": "https://www.lojastopmoveis.com.br/moveis/quarto-adulto"
+                      },
+                      "alt": "Dormitório Adulto"
                     },
                     {
                       "desktop": {
@@ -1600,23 +1617,6 @@
                         "href": "https://www.lojastopmoveis.com.br/moveis/cozinha"
                       },
                       "alt": "Seleção de Cozinhas e Kits"
-                    },
-                    {
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/148c97ba-ef3e-456d-bc66-0f7181de9f00/BANNER-SITE---PHILIPS.png",
-                        "width": 1920,
-                        "height": 599
-                      },
-                      "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/296640f4-79d7-4b88-a8b3-8b8efecdf1c9/BANNER-MOBILE---PHILIPS.png",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "action": {
-                        "variant": "primary",
-                        "href": "https://www.lojastopmoveis.com.br/busca?q=philips"
-                      },
-                      "alt": "Hora da Virada Top e Philips"
                     }
                   ],
                   "preload": true,
