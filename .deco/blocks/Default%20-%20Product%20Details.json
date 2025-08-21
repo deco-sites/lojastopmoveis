@@ -5,7 +5,15 @@
       "shadow": "none",
       "section": {
         "page": {
-          "__resolveType": "task11349dp"
+          "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts",
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          },
+          "slug": {
+            "__resolveType": "deco-sites/std/functions/requestToParam.ts",
+            "param": "slug"
+          },
+          "similars": true
         },
         "variant": "slider",
         "highlights": [
