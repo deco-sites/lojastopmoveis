@@ -449,7 +449,8 @@ export const loadVtexIdScripts = (callback: () => void) => {
           .vtexIdUI-auth-code .info-code {
             font-weight: bold !important;
             font-family: "Asap Condensed", Arial, sans-serif !important;
-            font-size: 16px !important; }
+            font-size: 16px !important; 
+          }
           
           .vtexIdUI-auth-code .info-code span {
             font-family: "Asap Condensed", Arial, sans-serif !important;
