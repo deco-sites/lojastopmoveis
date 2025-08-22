@@ -1568,38 +1568,21 @@
                       }
                     },
                     {
-                      "alt": "Tuboarte tem na Top",
+                      "alt": "Dormitório Adulto",
                       "action": {
-                        "href": "/busca?q=tuboarte",
+                        "href": "https://www.lojastopmoveis.com.br/moveis/quarto-adulto",
                         "variant": "primary"
-                      },
-                      "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/82238ca5-f0c6-44d0-857b-5f1ad765fcc0/1742503708714-c537237a-eaa6-4145-ad5b-d43163c8d083",
-                        "width": 390,
-                        "height": 490
-                      },
-                      "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/8ae22017-73f7-434b-ad84-f525b9713d8d/1742503710378-3db64aa1-6590-4572-92a2-be00e5212e1c",
-                        "width": 1920,
-                        "height": 599
-                      }
-                    },
-                    {
-                      "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/cd7ef160-99f8-4693-b34a-97746e5e5508/banner_categoria_roupeiros_desktop.webp",
-                        "width": 1920,
-                        "height": 600
                       },
                       "mobile": {
                         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/de63b2a6-7234-4c1c-9b42-a9d0476e4ff3/banner_categoria_roupeiros_mobile.webp",
                         "width": 390,
                         "height": 490
                       },
-                      "action": {
-                        "variant": "primary",
-                        "href": "https://www.lojastopmoveis.com.br/moveis/quarto-adulto"
-                      },
-                      "alt": "Dormitório Adulto"
+                      "desktop": {
+                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/cd7ef160-99f8-4693-b34a-97746e5e5508/banner_categoria_roupeiros_desktop.webp",
+                        "width": 1920,
+                        "height": 600
+                      }
                     },
                     {
                       "desktop": {
