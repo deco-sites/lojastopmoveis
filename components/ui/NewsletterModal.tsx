@@ -156,4 +156,5 @@ function NewsletterModal({ isOpen, form, text, modalSignExpiredDate, modalCloseE
       </dialog>
     </>);
 }
+
 export default NewsletterModal;
