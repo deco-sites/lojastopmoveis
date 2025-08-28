@@ -390,7 +390,7 @@ function ProductCard(
                     </span>
                     {discount && forPrice && (
                       <span class="font-bold max-lg:text-[10px] max-lg:px-[5px] text-[12px] border border-[#4A4B51] rounded-md text-[#4A4B51] py-[2px] tracking-[2px] px-[10px] ">
-                        {Math.round(((forPrice - defaultPrice) / forPrice) * 100)}% no Pix
+                        {Math.round(((forPrice - defaultPrice) / forPrice) * 100)}% off no Pix
                       </span>
                     )}
                   </div>
