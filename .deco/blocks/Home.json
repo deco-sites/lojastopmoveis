@@ -1506,9 +1506,9 @@
                         "href": "/alegriatop"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/5cb5c05a-e22c-4476-b263-ef78085dacc4/BANNER-APP---1080x1350px-(1).png",
-                        "width": 390,
-                        "height": 490
+                        "image": "https://assets.decocache.com/lojastopmoveis/8d4b737f-4d31-4e93-b300-1b45b1982d0c/BANNER-MOBILE---VEM-QUE-E-TOP-reduzido.png",
+                        "width": 650,
+                        "height": 335
                       },
                       "desktop": {
                         "image": "https://assets.decocache.com/lojastopmoveis/9a8f1440-e054-4ad5-a03c-2c9bce0357b2/BANNER-SITE---1920x700px-(1).png",
@@ -1523,7 +1523,7 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/c345dbd4-178a-43cc-864a-e37ef44635bc/banner_madesa_mobile.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/8881408f-992c-41cd-9ff8-963884935143/banner_madesa_redimensionamento.png",
                         "width": 390,
                         "height": 490
                       },

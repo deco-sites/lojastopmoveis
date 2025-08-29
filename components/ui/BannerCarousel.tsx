@@ -136,7 +136,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           height={desktop.height}
         />
         <img
-          class="object-cover w-full h-full"
+          class="object-fill w-full h-full p-[8px] lg:p-0"
           loading={lcp ? "eager" : "lazy"}
           src={desktop.image}
           alt={alt}
@@ -263,7 +263,7 @@ function BannerCarousel(
   return (
     <div
       id={id}
-      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] min-h-[472px]"
+      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] lg:min-h-[472px] max-h-[213px] lg:max-h-full"
     >
       <Slider class="carousel carousel-center w-full col-span-full row-span-full scrollbar-none gap-6">
         {images?.map((image, index) => (
