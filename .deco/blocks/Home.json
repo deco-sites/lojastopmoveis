@@ -1503,15 +1503,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/alegriatop"
+                        "href": "/aniversariotop"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/5cb5c05a-e22c-4476-b263-ef78085dacc4/BANNER-APP---1080x1350px-(1).png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/7d33f39e-5d28-4107-ade4-90b663862f69/BANNER-APP---1080x1350px-(2).png",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/9a8f1440-e054-4ad5-a03c-2c9bce0357b2/BANNER-SITE---1920x700px-(1).png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/08815531-d5bc-4100-86f0-26ff2bde6b15/BANNER-SITE---1920x700px-(3).png",
                         "width": 1920,
                         "height": 599
                       }
@@ -1691,7 +1691,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-08-29",
+              "countdownTimerDate": "2025-09-05",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#000000",
               "countdownTextColor": "#ffffff",
@@ -2688,7 +2688,7 @@
                 "show": true
               }
             },
-            "text": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://sites-lojastopmoveis--vdqi85.decocdn.com/cozinha-completa-viena-com-11-portas-e-3-gavetas-atualle---off-white-fosco-e-canelato-rustico/p?skuId=1578\"><span style=\"color: rgb(3, 3, 3)\">Somente no Site! Produtos selecionados </span></a><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.lojastopmoveis.com.br/fretegratismadesa\"><span style=\"color: rgb(214, 5, 5)\">Madesa </span></a><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://sites-lojastopmoveis--vdqi85.decocdn.com/cozinha-completa-viena-com-11-portas-e-3-gavetas-atualle---off-white-fosco-e-canelato-rustico/p?skuId=1578\"><span style=\"color: rgb(3, 3, 3)\">com Frete Grátis em Fortaleza e direto da fábrica!</span></a></p><p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.lojastopmoveis.com.br/armario-de-cozinha-completa-260cm-branco-reims-madesa-09-1731/p?skuId=1730\"><img src=\"https://assets.decocache.com/lojastopmoveis/27c27baa-5903-4c10-8fb6-e016b544c7b0/Oferta-2.webp\"></a></p><p></p>",
+            "text": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.lojastopmoveis.com.br/fogao-4-bocas-com-mesa-inox-e-acendimento-manual-ideal-pop-4120-esmaltec---branco/p?skuId=5089\"><img src=\"https://assets.decocache.com/lojastopmoveis/b55a0ca3-cd49-4866-a1de-7894198d5c6c/Oferta-2.webp\"></a></p><p></p>",
             "modalSignExpiredDate": 1,
             "modalCloseExpiredDate": 1
           },

@@ -1,6 +1,6 @@
 {
-  "name": "Alegria Top ",
-  "path": "/alegriatop",
+  "name": "Aniversario Top",
+  "path": "/aniversariotop",
   "sections": {
     "__resolveType": "$live/flags/multivariate.ts",
     "variants": [
