@@ -77,11 +77,11 @@ const LocalProductShelf = ({ products, cardLayout, layout, highlights, dotSlider
                 id={id}
                 class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]"
             >
-                <Slider class="carousel carousel-start gap-6 col-span-full row-span-full py-2 mb-12">
+                <Slider class="carousel carousel-start gap-6 col-span-full row-span-full py-2 mb-[35px] lg:mb-12">
                     {products?.map((product, index) => (
                         <Slider.Item
                             index={index}
-                            class="carousel-item !w-[300px] 2xl:!w-[320px]"
+                            class="carousel-item !w-[245px] 2xl:!w-[320px]"
                         >
                             <TimedProductCard
                                 index={index}

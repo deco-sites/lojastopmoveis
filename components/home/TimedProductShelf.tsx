@@ -112,9 +112,9 @@ const TimedProductShelf = (props: SectionProps<typeof loader>) => {
         return null;
     return (<div style={{ backgroundColor: frameColor }} className="rounded-lg md:rounded-none mb-8">
             <div className="container w-full m-auto px-[24px]">
-                <div className="flex flex-col items-center justify-center mb-[15px] md:flex-row md:justify-between">
-                    <span className="font-bold text-[26px] uppercase md:text-[36px]" style={{ color: colorTitleFrame }}>{titleFrame}</span>
-                    <span className="font-normal text-base md:text-[22px]" style={{ color: colorSubTitleFrame }}>{subTitleFrame}</span>
+                <div className="flex flex-col items-center justify-center mb-[5px] lg:mb-[15px] pt-[10px] lg:pt-0 md:flex-row md:justify-between">
+                    <span className="font-bold text-[20px] lg:text-[26px] uppercase md:text-[36px]" style={{ color: colorTitleFrame }}>{titleFrame}</span>
+                    <span className="font-normal text-sm md:text-[22px]" style={{ color: colorSubTitleFrame }}>{subTitleFrame}</span>
                     <CountdownTimer textColor={countdownTextColor} frameColor={countdownFrameColor} timeDate={countdownTimerDate} timeHour={countdownTimerHours} numberColor={countdownNumberColor}/>
                 </div>
                 <LocalProductShelf products={productShelf} cardLayout={productShelfConfig.cardLayout} highlights={productShelfConfig.highlights} layout={productShelfConfig.layout} showPaginationArrows={productShelfConfig.showPaginationArrows} dotSliderColor={dotSliderColor} tags={props.tags}/>
