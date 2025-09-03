@@ -101,15 +101,15 @@ function ProductShelf({ products, title, layout, cardLayout, seeMore, showPagina
         <div class={`flex items-center justify-center z-20  col-start-1 row-start-2  ${CONDITIONAL_RESPONSIVE_PARAMS[showPaginationArrows ? showPaginationArrows : "Always"]}`}>
           <Slider.PrevButton style={{
             minHeight: "28px",
-          }} class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
-            <Icon class="text-primary" size={32} id="LeftArrowBanner" />
+          }} class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100 max-md:min-h-0 max-md:h-[24px] max-md:w-[24px]">
+            <Icon class="text-primary max-md:w-[18px]" size={32} id="LeftArrowBanner" />
           </Slider.PrevButton>
         </div>
         <div class={`flex items-center justify-center z-20 col-start-3 row-start-2 ${CONDITIONAL_RESPONSIVE_PARAMS[showPaginationArrows ? showPaginationArrows : "Always"]}`}>
           <Slider.NextButton style={{
             minHeight: "28px",
-          }} class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
-            <Icon class="text-primary" size={32} id="RightArrowBanner" />
+          }} class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100 max-md:min-h-0 max-md:h-[24px] max-md:w-[24px]">
+            <Icon class="text-primary max-md:w-[18px]" size={32} id="RightArrowBanner" />
           </Slider.NextButton>
         </div>
         <Dots images={products} className={CONDITIONAL_RESPONSIVE_PARAMS["Always"]} />

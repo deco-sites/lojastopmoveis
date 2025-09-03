@@ -28,7 +28,7 @@ function Container({ sections }: Props) {
           ${SPACING[spacing]}
           ${SHADOW_SIZE[shadow]}`} style={backgroundColor && { background: `${backgroundColor}` }}>
           {withContainer
-                ? (<div class="container w-full m-auto px-5">
+                ? (<div class="container w-full m-auto max-md:px-0 px-5">
                 <Component {...props}/>
               </div>)
                 : <Component {...props}/>}

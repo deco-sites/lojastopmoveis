@@ -72,7 +72,7 @@ const LocalProductShelf = ({ products, cardLayout, layout, highlights, dotSlider
     }
 
     return (
-        <div class="w-full pb-2 flex flex-col">
+        <div class="w-full pb-2 flex flex-col max-md:px-[24px]">
             <div
                 id={id}
                 class="grid grid-cols-[48px_1fr_48px] px-0 grid-rows-[1fr_48px_1fr_48px]"
@@ -97,32 +97,32 @@ const LocalProductShelf = ({ products, cardLayout, layout, highlights, dotSlider
 
                 <>
                     <div
-                        class={`flex items-center justify-center z-20  col-start-1 row-start-2`}
+                        class={`flex items-center justify-center z-20  col-start-1 row-start-2 max-md:w-0`}
                     >
                         <Slider.PrevButton
                             style={{
-                                minHeight: "28px",
+                                minHeight: "24px",
                             }}
-                            class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100"
+                            class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100 flex content-center max-md:min-h-0 max-md:h-[24px] max-md:w-[24px]"
                         >
                             <Icon
-                                class="text-primary"
+                                class="text-primary max-md:w-[18px]"
                                 size={32}
                                 id="LeftArrowBanner"
                             />
                         </Slider.PrevButton>
                     </div>
                     <div
-                        class={`flex items-center justify-center z-20 col-start-3 row-start-2`}
+                        class={`flex items-center justify-center z-20 col-start-3 row-start-2 max-md:pl-[40px]`}
                     >
                         <Slider.NextButton
                             style={{
-                                minHeight: "28px",
+                                minHeight: "24px",
                             }}
-                            class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100"
+                            class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100 flex content-center max-md:min-h-0 max-md:h-[24px] max-md:w-[24px]"
                         >
                             <Icon
-                                class="text-primary"
+                                class="text-primary max-md:w-[18px]"
                                 size={32}
                                 id="RightArrowBanner"
                             />
