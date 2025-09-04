@@ -1,6 +1,6 @@
 {
-  "name": "Product page",
-  "path": "/:slug/p",
+  "name": "Task 11349 PDP",
+  "path": "/task-11349/:slug/p",
   "sections": {
     "__resolveType": "$live/flags/multivariate.ts",
     "variants": [
@@ -83,7 +83,50 @@
           {
             "__resolveType": "site/sections/Product/ReviewsAndRatings.tsx",
             "product": {
+              "video": null,
+              "image": null,
+              "isAccessoryOrSparePartFor": null,
+              "offers": {
+                "hasMerchantReturnPolicy": {
+                  "video": null,
+                  "image": null,
+                  "returnShippingFeesAmount": {
+                    "video": null,
+                    "image": null
+                  }
+                }
+              },
+              "isVariantOf": {
+                "video": null,
+                "image": null
+              },
+              "isSimilarTo": null,
+              "isRelatedTo": null,
+              "brand": {
+                "video": null,
+                "image": null
+              },
               "__resolveType": "ReviewsRating"
+            },
+            "page": {
+              "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts",
+              "advancedConfigs": {
+                "includeOriginalAttributes": []
+              },
+              "slug": {
+                "__resolveType": "deco-sites/std/functions/requestToParam.ts",
+                "param": "slug"
+              }
+            },
+            "appKey": {
+              "__resolveType": "website/loaders/secret.ts",
+              "name": "appKey",
+              "encrypted": "2fe7947402dcb93e103ab4c3f485b6b7526bb50d8b6bd436092e487b5a656ba9"
+            },
+            "appToken": {
+              "__resolveType": "website/loaders/secret.ts",
+              "name": "appToken",
+              "encrypted": "b308476ec2ef3ee67a2a67d8464e17f5267f411961ace79e7e8f72bf9ddfb619b1d93c79844f5a658ee06931f78bb316cd40ae864646b1a94113931e9b40d731b7d9658ce4cddca738291af7ea72f77a08a2cd9de95df9a628fb916ddb6f2ee3ca91b5e83458c3f928d1163d697b0a0f2a87918afe373451b5c5170f813a81624b04fef84efb650bc807f11796e988a0"
             }
           },
           {
@@ -117,5 +160,8 @@
       }
     ]
   },
-  "__resolveType": "$live/pages/LivePage.tsx"
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
 }

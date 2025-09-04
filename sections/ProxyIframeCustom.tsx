@@ -1,0 +1,1 @@
+export { default } from "$store/components/proxy/ProxyIframeCustom.tsx";

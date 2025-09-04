@@ -49,7 +49,7 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-12-31T07:00:00.000Z"
+          "end": "2025-08-27T07:00:00.000Z"
         }
       },
       {

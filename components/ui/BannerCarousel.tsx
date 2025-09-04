@@ -136,7 +136,7 @@ function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
           height={desktop.height}
         />
         <img
-          class="object-cover w-full h-full"
+          class="object-fill w-full h-full p-[8px] lg:p-0"
           loading={lcp ? "eager" : "lazy"}
           src={desktop.image}
           alt={alt}
@@ -229,22 +229,22 @@ function Buttons({ className }: ButtonsProps) {
   return (
     <>
       <div
-        class={`flex items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
+        class={`max-md:h-[100px] flex items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
       >
-        <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
+        <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100 flex content-center max-md:min-h-0 max-md:h-[24px] max-md:w-[24px]">
           <Icon
-            class="text-primary"
+            class="text-primary max-md:w-[18px]"
             size={32}
             id="LeftArrowBanner"
           />
         </Slider.PrevButton>
       </div>
       <div
-        class={`flex items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
+        class={`max-md:h-[100px] flex items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
       >
-        <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
+        <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100 flex content-center max-md:min-h-0 max-md:h-[24px] max-md:w-[24px]">
           <Icon
-            class="text-primary"
+            class="text-primary max-md:w-[18px]"
             size={32}
             id="RightArrowBanner"
           />
@@ -263,7 +263,7 @@ function BannerCarousel(
   return (
     <div
       id={id}
-      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] min-h-[472px]"
+      class="grid grid-cols-[48px_1fr_48px] sm:grid-cols-[120px_1fr_120px] grid-rows-[1fr_48px_1fr_64px] lg:min-h-[472px] max-h-[213px] lg:max-h-full"
     >
       <Slider class="carousel carousel-center w-full col-span-full row-span-full scrollbar-none gap-6">
         {images?.map((image, index) => (

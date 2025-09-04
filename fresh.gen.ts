@@ -3,6 +3,7 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $api_review from "./routes/api/review.ts";
 import * as $AddToCartActions from "./islands/AddToCartActions.tsx";
 import * as $AddToCartButton from "./islands/AddToCartButton.tsx";
 import * as $AddToCartLocal from "./islands/AddToCartLocal.tsx";
@@ -20,6 +21,9 @@ import * as $NewsletterModal from "./islands/NewsletterModal.tsx";
 import * as $OutOfStock from "./islands/OutOfStock.tsx";
 import * as $ProductDetailsImages from "./islands/ProductDetailsImages.tsx";
 import * as $ProductImageZoom from "./islands/ProductImageZoom.tsx";
+import * as $ProxyCustom from "./islands/ProxyCustom.tsx";
+import * as $Reviews from "./islands/Reviews.tsx";
+import * as $ReviewsAndRatingRegister from "./islands/ReviewsAndRatingRegister.tsx";
 import * as $SearchControls from "./islands/SearchControls.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
@@ -31,6 +35,7 @@ import type { Manifest } from "$fresh/server.ts";
 const manifest = {
   routes: {
     "./routes/_app.tsx": $_app,
+    "./routes/api/review.ts": $api_review,
   },
   islands: {
     "./islands/AddToCartActions.tsx": $AddToCartActions,
@@ -50,6 +55,9 @@ const manifest = {
     "./islands/OutOfStock.tsx": $OutOfStock,
     "./islands/ProductDetailsImages.tsx": $ProductDetailsImages,
     "./islands/ProductImageZoom.tsx": $ProductImageZoom,
+    "./islands/ProxyCustom.tsx": $ProxyCustom,
+    "./islands/Reviews.tsx": $Reviews,
+    "./islands/ReviewsAndRatingRegister.tsx": $ReviewsAndRatingRegister,
     "./islands/SearchControls.tsx": $SearchControls,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/SliderJS.tsx": $SliderJS,

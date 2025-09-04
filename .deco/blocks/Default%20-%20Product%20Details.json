@@ -5,7 +5,15 @@
       "shadow": "none",
       "section": {
         "page": {
-          "__resolveType": "PDP - Intelligent Search Loader"
+          "__resolveType": "deco-sites/std/loaders/vtex/intelligentSearch/productDetailsPage.ts",
+          "advancedConfigs": {
+            "includeOriginalAttributes": []
+          },
+          "slug": {
+            "__resolveType": "deco-sites/std/functions/requestToParam.ts",
+            "param": "slug"
+          },
+          "similars": true
         },
         "variant": "slider",
         "highlights": [
@@ -35,7 +43,8 @@
           "Facebook",
           "Twitter",
           "WhatsApp"
-        ]
+        ],
+        "tags": null
       },
       "spacing": 10,
       "withContainer": true,
