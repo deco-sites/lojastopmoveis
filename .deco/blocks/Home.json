@@ -1734,7 +1734,7 @@
                 "showPaginationArrows": "Always",
                 "cardLayout": {
                   "basics": {
-                    "contentAlignment": "Center",
+                    "contentAlignment": "Left",
                     "oldPriceSize": "Normal",
                     "ctaText": "Carrinho",
                     "mobileCtaText": "Carrinho",
