@@ -4691,14 +4691,17 @@ details.collapse summary::-webkit-details-marker {
 .mb-8 {
   margin-bottom: 2rem;
 }
-.mb-\[15px\] {
-  margin-bottom: 15px;
-}
 .mb-\[20px\] {
   margin-bottom: 20px;
 }
 .mb-\[30px\] {
   margin-bottom: 30px;
+}
+.mb-\[35px\] {
+  margin-bottom: 35px;
+}
+.mb-\[5px\] {
+  margin-bottom: 5px;
 }
 .ml-1 {
   margin-left: 0.25rem;
@@ -4938,6 +4941,9 @@ details.collapse summary::-webkit-details-marker {
 .max-h-\[156px\] {
   max-height: 156px;
 }
+.max-h-\[213px\] {
+  max-height: 213px;
+}
 .max-h-\[215px\] {
   max-height: 215px;
 }
@@ -4990,9 +4996,6 @@ details.collapse summary::-webkit-details-marker {
 .min-h-\[42px\] {
   min-height: 42px;
 }
-.min-h-\[472px\] {
-  min-height: 472px;
-}
 .min-h-\[48px\] {
   min-height: 48px;
 }
@@ -5002,11 +5005,11 @@ details.collapse summary::-webkit-details-marker {
 .\!w-1\/2 {
   width: 50% !important;
 }
+.\!w-\[245px\] {
+  width: 245px !important;
+}
 .\!w-\[250px\] {
   width: 250px !important;
-}
-.\!w-\[300px\] {
-  width: 300px !important;
 }
 .\!w-\[36px\] {
   width: 36px !important;
@@ -5478,6 +5481,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .place-items-center {
   place-items: center;
+}
+.content-center {
+  align-content: center;
 }
 .items-start {
   align-items: flex-start;
@@ -6189,6 +6195,9 @@ details.collapse summary::-webkit-details-marker {
 .p-\[24px\] {
   padding: 24px;
 }
+.p-\[8px\] {
+  padding: 8px;
+}
 .\!px-5 {
   padding-left: 1.25rem !important;
   padding-right: 1.25rem !important;
@@ -6344,10 +6353,6 @@ details.collapse summary::-webkit-details-marker {
 .py-\[17px\] {
   padding-top: 17px;
   padding-bottom: 17px;
-}
-.py-\[18px\] {
-  padding-top: 18px;
-  padding-bottom: 18px;
 }
 .py-\[2px\] {
   padding-top: 2px;
@@ -6548,12 +6553,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-\[24px\] {
   font-size: 24px;
-}
-.text-\[26px\] {
-  font-size: 26px;
-}
-.text-\[28px\] {
-  font-size: 28px;
 }
 .text-\[40px\] {
   font-size: 40px;
@@ -8378,8 +8377,32 @@ details.collapse summary::-webkit-details-marker {
     height: 3rem;
   }
 
+  .max-md\:h-\[100px\] {
+    height: 100px;
+  }
+
+  .max-md\:h-\[24px\] {
+    height: 24px;
+  }
+
+  .max-md\:min-h-0 {
+    min-height: 0px;
+  }
+
   .max-md\:min-h-12 {
     min-height: 3rem;
+  }
+
+  .max-md\:w-0 {
+    width: 0px;
+  }
+
+  .max-md\:w-\[18px\] {
+    width: 18px;
+  }
+
+  .max-md\:w-\[24px\] {
+    width: 24px;
   }
 
   .max-md\:w-auto {
@@ -8402,9 +8425,23 @@ details.collapse summary::-webkit-details-marker {
     justify-content: space-between;
   }
 
+  .max-md\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
   .max-md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .max-md\:px-\[24px\] {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .max-md\:pl-\[40px\] {
+    padding-left: 40px;
   }
 
   .max-md\:text-sm {
@@ -8945,6 +8982,10 @@ details.collapse summary::-webkit-details-marker {
     margin-bottom: 0px;
   }
 
+  .lg\:mb-12 {
+    margin-bottom: 3rem;
+  }
+
   .lg\:mb-20 {
     margin-bottom: 5rem;
   }
@@ -8959,6 +9000,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mb-\[10\.5px\] {
     margin-bottom: 10.5px;
+  }
+
+  .lg\:mb-\[15px\] {
+    margin-bottom: 15px;
   }
 
   .lg\:mb-\[60px\] {
@@ -8979,6 +9024,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mt-4 {
     margin-top: 1rem;
+  }
+
+  .lg\:mt-5 {
+    margin-top: 1.25rem;
   }
 
   .lg\:mt-\[120px\] {
@@ -9054,9 +9103,17 @@ details.collapse summary::-webkit-details-marker {
     max-height: calc(100vh - 480px);
   }
 
+  .lg\:max-h-full {
+    max-height: 100%;
+  }
+
   .lg\:max-h-min {
     max-height: -moz-min-content;
     max-height: min-content;
+  }
+
+  .lg\:min-h-\[472px\] {
+    min-height: 472px;
   }
 
   .lg\:w-40 {
@@ -9405,6 +9462,11 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 1rem;
   }
 
+  .lg\:py-\[18px\] {
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
   .lg\:\!pb-5 {
     padding-bottom: 1.25rem !important;
   }
@@ -9439,6 +9501,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:pr-8 {
     padding-right: 2rem;
+  }
+
+  .lg\:pt-0 {
+    padding-top: 0px;
   }
 
   .lg\:text-left {
@@ -9478,6 +9544,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:text-\[24px\] {
     font-size: 24px;
+  }
+
+  .lg\:text-\[26px\] {
+    font-size: 26px;
   }
 
   .lg\:text-\[28px\] {

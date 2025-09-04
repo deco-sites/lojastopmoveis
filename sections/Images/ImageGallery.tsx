@@ -109,22 +109,22 @@ function Buttons({ className }: ButtonsProps) {
   return (
     <>
       <div
-        class={`flex items-center justify-center z-20  col-start-1 row-start-2 ${className}`}
+        class={`flex items-center justify-center z-20  col-start-1 row-start-2 ${className} max-md:w-0`}
       >
-        <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
+        <Slider.PrevButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100 flex content-center max-md:min-h-0 max-md:h-[24px] max-md:w-[24px]">
           <Icon
-            class="text-primary"
+            class="text-primary max-md:w-[18px]"
             size={32}
             id="LeftArrowBanner"
           />
         </Slider.PrevButton>
       </div>
       <div
-        class={`flex items-center justify-center z-20 col-start-3 row-start-2 ${className}`}
+        class={`flex items-center justify-center z-20 col-start-3 row-start-2 ${className} max-md:pl-[40px]`}
       >
-        <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100">
+        <Slider.NextButton class="btn btn-circle border-none shadow-md bg-white lg:opacity-60 lg:hover:bg-white lg:hover:opacity-100 flex content-center max-md:min-h-0 max-md:h-[24px] max-md:w-[24px]">
           <Icon
-            class="text-primary"
+            class="text-primary max-md:w-[18px]"
             size={32}
             id="RightArrowBanner"
           />

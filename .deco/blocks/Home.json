@@ -1506,7 +1506,7 @@
                         "href": "/aniversariotop"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/7d33f39e-5d28-4107-ade4-90b663862f69/BANNER-APP---1080x1350px-(2).png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/a487481e-205a-4052-845c-d2852ebda05f/1-banner---BANNER-APP---650x335px.png",
                         "width": 390,
                         "height": 490
                       },
@@ -1523,7 +1523,7 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/c345dbd4-178a-43cc-864a-e37ef44635bc/banner_madesa_mobile.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/8881408f-992c-41cd-9ff8-963884935143/banner_madesa_redimensionamento.png",
                         "width": 390,
                         "height": 490
                       },
@@ -1536,16 +1536,16 @@
                     {
                       "alt": "Exclusivos do Site",
                       "action": {
-                        "href": "/exclusivosdosite",
+                        "href": "/portateis?page=1",
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/e724c60a-9726-4422-a471-13a3103f5fed/banner_exclusivo_mobile_v3-(1).webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/b58e7135-44d9-4f92-8b5a-b663c7aecbda/3-banner---BANNER-MOBILE---650x335px---FINAL.jpg",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/b1778048-595a-4bf4-9a19-5d868a2326f9/banner_exclusivo_desktop_v3-(1).webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/617ff6cf-36fd-44a4-8ee4-d8f062d0dec8/3-banner---BANNER-05-(2)-DESKTOP.png",
                         "width": 1920,
                         "height": 599
                       }
@@ -1553,16 +1553,16 @@
                     {
                       "alt": "Últimos Lançamentos ",
                       "action": {
-                        "href": "/novidadesnatop",
+                        "href": "/precinhostop",
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/441eda28-d233-4ec4-b8e7-e20b81687517/banner_top_lancamentos_mobile.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/375b54eb-5bc1-49d9-a083-73932a563aa5/4-banner---BANNER-MOBILE---650x335px---FINAL.jpg",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/3b404969-6a95-48bf-acd6-c3e4b8858fb0/banner_top_lancamentos_desktop.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/571d5bf5-9506-46e7-a237-02f1952d0a63/4-banner---BANNER-03-(1)-DESKTOP.png",
                         "width": 1920,
                         "height": 599
                       }
@@ -1570,34 +1570,34 @@
                     {
                       "alt": "Dormitório Adulto",
                       "action": {
-                        "href": "https://www.lojastopmoveis.com.br/moveis/quarto-adulto",
+                        "href": "/paracadacantodoseular",
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/de63b2a6-7234-4c1c-9b42-a9d0476e4ff3/banner_categoria_roupeiros_mobile.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/02d40118-de21-439e-a79e-266952e58be1/5-banner---BANNER-MOBILE---650x335px---FINAL.jpg",
                         "width": 390,
                         "height": 490
                       },
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/cd7ef160-99f8-4693-b34a-97746e5e5508/banner_categoria_roupeiros_desktop.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/4d7641de-f67d-46e6-bb26-d404e74ac5f6/5-banner---BANNER-02-(1)-DESKTOP.png",
                         "width": 1920,
                         "height": 600
                       }
                     },
                     {
                       "desktop": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/45990d39-0443-4389-a503-7ae0e2a94a18/banner_categoria_cozinha_desktop.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/648a3a60-ae00-473a-b9f9-8cf7b3396de4/6-banner---BANNER-06-DESKTOP.png",
                         "width": 1920,
                         "height": 600
                       },
                       "mobile": {
-                        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/lojastopmoveis/6f95daab-994b-4198-b125-1145d9749e80/banner_categoria_cozinha_mobile.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/e215daee-8f4a-4dfe-a772-d34e4870eaea/6-banner---BANNER-MOBILE---650x335px---FINAL.png",
                         "width": 390,
                         "height": 490
                       },
                       "action": {
                         "variant": "primary",
-                        "href": "https://www.lojastopmoveis.com.br/moveis/cozinha"
+                        "href": "https://www.lojastopmoveis.com.br/eletronicos"
                       },
                       "alt": "Seleção de Cozinhas e Kits"
                     }

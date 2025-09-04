@@ -22,14 +22,14 @@ const CardNumber = ({ decimal, unit, flag, frameColor, textColor, numberColor }:
     return(
         <div className="flex flex-col items-center justify-center gap-[9px]">
             <div className="flex flex-row items-center justify-center gap-[2px]">
-                <div className="rounded-md px-[10px] py-[18px] md:px-[15px]" style={{ backgroundColor: frameColor }}>
-                    <span style={{ color: numberColor }} className="font-bold text-[28px] uppercase not-italic">{decimal}</span>
+                <div className="rounded-md px-[10px] lg:py-[18px] md:px-[15px]" style={{ backgroundColor: frameColor }}>
+                    <span style={{ color: numberColor }} className="font-bold text-[20px] lg:text-[28px] uppercase not-italic">{decimal}</span>
                 </div>
-                <div className="rounded-md px-[10px] py-[18px] md:px-[15px]" style={{ backgroundColor: frameColor }}>
-                    <span style={{ color: numberColor }} className="font-bold text-[28px] uppercase not-italic">{unit}</span>
+                <div className="rounded-md px-[10px] lg:py-[18px] md:px-[15px]" style={{ backgroundColor: frameColor }}>
+                    <span style={{ color: numberColor }} className="font-bold text-[20px] lg:text-[28px] uppercase not-italic">{unit}</span>
                 </div>
             </div>
-            <span className="font-normal text-sm text-center" style={{ color: textColor }}>{flag}</span>
+            <span className="font-normal text-[12px] lg:text-sm text-center" style={{ color: textColor }}>{flag}</span>
         </div>
     );
 }
@@ -71,7 +71,7 @@ const CountdownTimer = ({ timeDate, timeHour, frameColor, textColor, numberColor
     const { days, hours, minutes, seconds } = timeRemaining.value;
 
     return (
-        <div className="flex flex-row justify-center gap-[14px] mt-5 ">
+        <div className="flex flex-row justify-center gap-[14px] mt-[10px] lg:mt-5 ">
             <CardNumber numberColor={numberColor} textColor={textColor} frameColor={frameColor} decimal={days[0]} unit={days[1]} flag="Dias" />
             <CardNumber numberColor={numberColor} textColor={textColor} frameColor={frameColor} decimal={hours[0]} unit={hours[1]} flag="Horas" />
             <CardNumber numberColor={numberColor} textColor={textColor} frameColor={frameColor} decimal={minutes[0]} unit={minutes[1]} flag="Minutos" />

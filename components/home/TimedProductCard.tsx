@@ -385,7 +385,7 @@ function TimedProductCard(
                             {l?.hide.allPrices
                                 ? ""
                                 : (
-                                    <div class="flex flex-col mt-2">
+                                    <div class="flex flex-col mt-2 items-start">
                                         <div
                                             class={`flex items-center gap-2.5 ${l?.basics?.oldPriceSize ===
                                                     "Normal"
