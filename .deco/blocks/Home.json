@@ -1519,6 +1519,23 @@
                     {
                       "alt": "Achadinhos",
                       "action": {
+                        "href": "/exclusivosdosite",
+                        "variant": "primary"
+                      },
+                      "mobile": {
+                        "image": "https://assets.decocache.com/lojastopmoveis/ac06cadb-bcb1-45c0-8c7e-2afc2bb027f7/01-BANNER-MOBILE---650x335px---FINAL.jpg",
+                        "width": 350,
+                        "height": 185
+                      },
+                      "desktop": {
+                        "image": "https://assets.decocache.com/lojastopmoveis/6908a890-855a-4503-ac8f-65337fa68b69/01-BANNER-SITE---1920x700px-(1)-DESKTOP.png",
+                        "width": 1920,
+                        "height": 599
+                      }
+                    },
+                    {
+                      "alt": "Achadinhos",
+                      "action": {
                         "href": "/fretegratismadesa",
                         "variant": "primary"
                       },
@@ -1568,21 +1585,21 @@
                       }
                     },
                     {
-                      "alt": "Dormitório Adulto",
-                      "action": {
-                        "href": "/paracadacantodoseular",
-                        "variant": "primary"
+                      "desktop": {
+                        "image": "https://assets.decocache.com/lojastopmoveis/4d7641de-f67d-46e6-bb26-d404e74ac5f6/5-banner---BANNER-02-(1)-DESKTOP.png",
+                        "width": 1920,
+                        "height": 600
                       },
                       "mobile": {
                         "image": "https://assets.decocache.com/lojastopmoveis/02d40118-de21-439e-a79e-266952e58be1/5-banner---BANNER-MOBILE---650x335px---FINAL.jpg",
                         "width": 350,
                         "height": 185
                       },
-                      "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/4d7641de-f67d-46e6-bb26-d404e74ac5f6/5-banner---BANNER-02-(1)-DESKTOP.png",
-                        "width": 1920,
-                        "height": 600
-                      }
+                      "action": {
+                        "variant": "primary",
+                        "href": "/paracadacantodoseular"
+                      },
+                      "alt": "Dormitório Adulto"
                     },
                     {
                       "desktop": {
