@@ -28,7 +28,7 @@
           "section": {
             "page": {
               "sort": "",
-              "count": 20,
+              "count": 50,
               "fuzzy": "disabled",
               "similars": false,
               "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
