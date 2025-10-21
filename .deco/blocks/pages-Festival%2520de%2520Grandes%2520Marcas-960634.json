@@ -1,6 +1,6 @@
 {
-  "name": "Festival de Grandes Marcas",
-  "path": "/festivaldegrandesmarcas",
+  "name": "Esquenta Black 2025",
+  "path": "/esquentablack",
   "sections": {
     "__resolveType": "$live/flags/multivariate.ts",
     "variants": [
