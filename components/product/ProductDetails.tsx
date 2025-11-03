@@ -1,5 +1,6 @@
 import { useId } from "preact/hooks";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
+import SeparateKit from "$store/components/product/SeparateKit/SeparateKit.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Image from "apps/website/components/Image.tsx";
@@ -12,6 +13,7 @@ import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalytic
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
 import AddToCartActions from "$store/islands/AddToCartActions.tsx";
 import ProductDetailsImages from "$store/islands/ProductDetailsImages.tsx";
+import LogComponent from "$store/islands/LogComponent.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import { getShareLink } from "$store/sdk/shareLinks.tsx";
 import { HighLight } from "$store/components/product/ProductHighlights.tsx";
@@ -120,6 +122,7 @@ function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating }
     isVariantOf,
     url,
     additionalProperty,
+    isAccessoryOrSparePartFor
   } = product;
   const { price = 0, listPrice, seller, availability, installment } = useOffer(
     offers,
@@ -259,6 +262,8 @@ function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating }
           />
         )
         : null}
+        <SeparateKit classMainBody="hidden lg:flex lg:mt-[32px]" isAccessoryOrSparePartFor={isAccessoryOrSparePartFor}  />
+
       {/* Info card */}
       <details className="collapse collapse-plus mt-[30px]">
         <summary className="after:!top-[.7rem] collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-medium text-primary">
@@ -313,6 +318,8 @@ function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating }
           </ul>
         </div>
       )}
+
+      <SeparateKit classMainBody="flex lg:hidden" isAccessoryOrSparePartFor={isAccessoryOrSparePartFor} />
 
       {/* Analytics Event */}
       <SendEventOnLoad
@@ -434,7 +441,14 @@ function Details(
   );
 }
 function ProductDetails(
-  {
+  dataProps: Props & {device: Device} & SectionProps<ReturnType<typeof loader>>,
+) {
+  /**
+   * Showcase the different product views we have on this template. In case there are less
+   * than two images, render a front-back, otherwhise render a slider
+   * Remove one of them and go with the best suited for your use case.
+   */
+  const {
     page,
     variant: maybeVar = "auto",
     shipmentPolitics,
@@ -443,14 +457,8 @@ function ProductDetails(
     device,
     tags,
     reviews, 
-    aggregateRating,
-  }: Props & {device: Device} & SectionProps<ReturnType<typeof loader>>,
-) {
-  /**
-   * Showcase the different product views we have on this template. In case there are less
-   * than two images, render a front-back, otherwhise render a slider
-   * Remove one of them and go with the best suited for your use case.
-   */
+    aggregateRating
+  } = dataProps;
   const variant = maybeVar === "auto"
     ? page?.product.image?.length && page?.product.image?.length < 2
       ? "front-back"
@@ -460,6 +468,7 @@ function ProductDetails(
     <div class="py-0">
       {page
         ? (
+          <>
           <Details
             page={page}
             variant={variant}
@@ -471,6 +480,8 @@ function ProductDetails(
             reviews={reviews}
             aggregateRating={aggregateRating}
           />
+          <LogComponent data={dataProps}></LogComponent>
+          </>
         )
         : <NotFound />}
     </div>
@@ -517,7 +528,7 @@ function GenerateStar({ ratingValue }: { ratingValue: number }) {
 
 export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
   const tags = await ctx.invoke.site.loaders.getTags();
-  const { productID } = props.page.product;
+  const { productID, url } = props.page.product;
   const fetchJSON = async <T>(url: string): Promise<T> => {
       const res = await fetch(url);
       
@@ -525,14 +536,14 @@ export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
 
       return res.json() as Promise<T>;
   };
-  
+
   const [reviews, aggregateRating] = await Promise.all([
       fetchJSON<ResponseReview>(
       `${URL_DEFAULT}/reviews-and-ratings/api/reviews?product_id=${productID}`
       ),
       fetchJSON<RatingType>(
       `${URL_DEFAULT}/reviews-and-ratings/api/rating/${productID}`
-      ),
+      )
   ]);
 
   return {
