@@ -28,7 +28,7 @@
               "param": "slug"
             },
             "similars": true,
-            "indexingSkus": true
+            "indexingSkus": false
           }
         },
         "variant": "slider",
@@ -60,7 +60,18 @@
           "Twitter",
           "WhatsApp"
         ],
-        "tags": null
+        "tags": null,
+        "account": "topmoveis",
+        "appKey": {
+          "__resolveType": "website/loaders/secret.ts",
+          "encrypted": "2fe7947402dcb93e103ab4c3f485b6b772599daa65bb143223a35c3fc105f493",
+          "name": "X-VTEX-API-AppKey"
+        },
+        "appToken": {
+          "__resolveType": "website/loaders/secret.ts",
+          "encrypted": "39a4dfc5ae156c682ee5bbc8bd8f3b385497101bec00e95d3c2996be01682179f883e81a9467099bdd7ced8baf4bf192e1d5103405e4fb4626852dd2b2355983d78a36951093d63a9fb1a62b88360f4502cd134582218b193c4d38b1c93bf42ea30cf5bb54d55e23f29da1cf5d321fcea9359ba9f707c041a33c1e8bcb68d894487cdd4fa0cf88fdeaeec772f4895cf9",
+          "name": "X-VTEX-API-AppToken"
+        }
       },
       "spacing": 10,
       "withContainer": true,
