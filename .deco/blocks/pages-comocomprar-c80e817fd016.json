@@ -1,43 +1,95 @@
 {
   "name": "Como Comprar",
   "path": "/como-comprar",
-  "sections": [
-    {
-      "__resolveType": "SEODefault"
-    },
-    {
-      "__resolveType": "Default - Design System"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Topbar,header,navmenu"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Container.tsx",
-      "sections": [
-        {
-          "label": "Institutional Page",
-          "section": {
-            "title": "Como Comprar",
-            "content": {
-              "content": "<p>Para comprar no site, basta ter em mãos os dados pessoais do titular da compra e seguir os seguintes passos.&nbsp;</p><p><strong><br>1 - Encontre o produto de sua preferência</strong> Você pode navegar pela barra de busca, categorias ou banners até encontrar o que deseja. Ao entrar no produto e escolher cores e voltagens se assim o tiver é só clicar no botão comprar para ir direto para o checkout ou inserir em seu carrinho caso queira realizar mais compras. <br><br><strong>2 - Confira seu Carrinho</strong> Essa é a etapa importante para se conferir se realmente os produtos condizem com os que estavam sendo procurados, calcular frete e adicionar mais unidades dos produtos. <br><br><strong>3 - identifique-se</strong> Caso você não tenha cadastro em nossa loja, basta clicar em cadastre-se e preencher algumas perguntas rapidamente como CPF, Nome e E-mail. Caso já tenha cadastro em nossa loja basta logar e seguir para a próxima tela. <br><br><strong>4 - Escolha a forma de pagamento</strong> Você poderá pagar no Cartão de Crédito e escolher o número de vezes disponíveis para parcelamento em seu cartão. A compra também poderá ser concluída no boleto bancário. <br><br><strong>5 - Pronto!!!</strong> Agora só acompanhar o seu pedido e esperar que seja aprovado, todos os passos da sua compra serão encaminhados via e-mail e você saberá a data exata de entrega. <br><br>Para Comprar por telefone entre em contato conosco pela central de atendimento. Tenha em mãos, CPF, RG, endereço cadastral e endereço de entrega. <br><br>Caso a compra seja feita pelo cartão tenha o mesmo em mãos. <br><br>Fale com nossos atendentes e diga pra eles qual é o produto que deseja.Lembre-se de confirmar com o atendente a cor e voltagem caso tenha. <br><br>A compra por telefone é segura e você pode acompanhar seu pedido pelo site. <br><br>Caso tenha cupom desconto ou vale-presente não se esqueça de fornecer o numero ao atendente para obter desconto na compra.</p>",
-              "__resolveType": "site/sections/Institutional/TextContent.tsx"
-            },
-            "asideMenu": {
-              "__resolveType": "Aside Menu Global"
-            },
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
           },
-          "withContainer": true,
-          "verticalSpacing": "both"
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Como Comprar",
+                  "content": {
+                    "content": "<p>Para comprar no site, basta ter em mãos os dados pessoais do titular da compra e seguir os seguintes passos.&nbsp;</p><p><strong><br>1 - Encontre o produto de sua preferência</strong> Você pode navegar pela barra de busca, categorias ou banners até encontrar o que deseja. Ao entrar no produto e escolher cores e voltagens se assim o tiver é só clicar no botão comprar para ir direto para o checkout ou inserir em seu carrinho caso queira realizar mais compras. <br><br><strong>2 - Confira seu Carrinho</strong> Essa é a etapa importante para se conferir se realmente os produtos condizem com os que estavam sendo procurados, calcular frete e adicionar mais unidades dos produtos. <br><br><strong>3 - identifique-se</strong> Caso você não tenha cadastro em nossa loja, basta clicar em cadastre-se e preencher algumas perguntas rapidamente como CPF, Nome e E-mail. Caso já tenha cadastro em nossa loja basta logar e seguir para a próxima tela. <br><br><strong>4 - Escolha a forma de pagamento</strong> Você poderá pagar no Cartão de Crédito e escolher o número de vezes disponíveis para parcelamento em seu cartão. A compra também poderá ser concluída no boleto bancário. <br><br><strong>5 - Pronto!!!</strong> Agora só acompanhar o seu pedido e esperar que seja aprovado, todos os passos da sua compra serão encaminhados via e-mail e você saberá a data exata de entrega. <br><br>Para Comprar por telefone entre em contato conosco pela central de atendimento. Tenha em mãos, CPF, RG, endereço cadastral e endereço de entrega. <br><br>Caso a compra seja feita pelo cartão tenha o mesmo em mãos. <br><br>Fale com nossos atendentes e diga pra eles qual é o produto que deseja.Lembre-se de confirmar com o atendente a cor e voltagem caso tenha. <br><br>A compra por telefone é segura e você pode acompanhar seu pedido pelo site. <br><br>Caso tenha cupom desconto ou vale-presente não se esqueça de fornecer o numero ao atendente para obter desconto na compra.</p>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "Aside Menu Global"
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-05-28T09:00:00.000Z"
         }
-      ]
-    },
-    {
-      "__resolveType": "Footer Global"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Topbar,header,navmenu"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Como Comprar",
+                  "content": {
+                    "content": "<p>Para comprar no site, basta ter em mãos os dados pessoais do titular da compra e seguir os seguintes passos.&nbsp;</p><p><strong><br>1 - Encontre o produto de sua preferência</strong> Você pode navegar pela barra de busca, categorias ou banners até encontrar o que deseja. Ao entrar no produto e escolher cores e voltagens se assim o tiver é só clicar no botão comprar para ir direto para o checkout ou inserir em seu carrinho caso queira realizar mais compras. <br><br><strong>2 - Confira seu Carrinho</strong> Essa é a etapa importante para se conferir se realmente os produtos condizem com os que estavam sendo procurados, calcular frete e adicionar mais unidades dos produtos. <br><br><strong>3 - identifique-se</strong> Caso você não tenha cadastro em nossa loja, basta clicar em cadastre-se e preencher algumas perguntas rapidamente como CPF, Nome e E-mail. Caso já tenha cadastro em nossa loja basta logar e seguir para a próxima tela. <br><br><strong>4 - Escolha a forma de pagamento</strong> Você poderá pagar no Cartão de Crédito e escolher o número de vezes disponíveis para parcelamento em seu cartão. A compra também poderá ser concluída no boleto bancário. <br><br><strong>5 - Pronto!!!</strong> Agora só acompanhar o seu pedido e esperar que seja aprovado, todos os passos da sua compra serão encaminhados via e-mail e você saberá a data exata de entrega. <br><br>Para Comprar por telefone entre em contato conosco pela central de atendimento. Tenha em mãos, CPF, RG, endereço cadastral e endereço de entrega. <br><br>Caso a compra seja feita pelo cartão tenha o mesmo em mãos. <br><br>Fale com nossos atendentes e diga pra eles qual é o produto que deseja.Lembre-se de confirmar com o atendente a cor e voltagem caso tenha. <br><br>A compra por telefone é segura e você pode acompanhar seu pedido pelo site. <br><br>Caso tenha cupom desconto ou vale-presente não se esqueça de fornecer o numero ao atendente para obter desconto na compra.</p>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "Aside Menu Global"
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "__resolveType": "$live/pages/LivePage.tsx"
 }
