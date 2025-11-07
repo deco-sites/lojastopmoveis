@@ -1,7 +1,6 @@
 import type { Product } from "apps/commerce/types.ts";
 import { formatPrice } from "$store/sdk/format.ts";
 import AddToCartButton from "$store/islands/AddToCartButton.tsx";
-
 interface SeparateKitProps {
     classMainBody?: string;
     kitProducts: Product[];
@@ -52,7 +51,15 @@ function SeparateKitItemKit({ item }: { item: Product }) {
     const { items } = item;
     const { name, images, sellers, itemId: productId } = items[0];
     const { Price, ListPrice, Installments } = sellers[0].commertialOffer;
-    const { Value, NumberOfInstallments } = pick_max_installments_option(Installments);
+    let Value, NumberOfInstallments;
+
+    if(Installments && Array.isArray(Installments) && Installments.length > 0) {
+        Value = pick_max_installments_option(Installments).Value;
+        NumberOfInstallments = pick_max_installments_option(Installments).NumberOfInstallments;
+    } else {
+        Value = Price;
+        NumberOfInstallments = 1;
+    }
 
     return (
         <li className="flex flex-row items-start justify-start gap-4 w-full h-auto p-[24px_16px] isolate bg-white border border-[#C5C6CB] rounded-[8px]">
