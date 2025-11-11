@@ -1,43 +1,95 @@
 {
   "name": "top moveis para empresa",
   "path": "/topmoveis-paraempresas",
-  "sections": [
-    {
-      "__resolveType": "SEODefault"
-    },
-    {
-      "__resolveType": "Default - Design System"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Topbar,header,navmenu"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Container.tsx",
-      "sections": [
-        {
-          "label": "Institutional Page",
-          "section": {
-            "title": "Top Móveis para Empresas",
-            "content": {
-              "content": "<p dir=\"ltr\">Top Móveis para Empresas é o canal da Top Móveis com atendimento especializado e condições especiais de preços, produtos e formas de pagamentos para pessoas jurídicas. Através de parcerias com os maiores Fabricantes de Móveis e Eletrodomésticos, garantimos o melhor custo-benefício, agilidade e pronta entrega.</p><p dir=\"ltr\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\"><strong>Diferenciais para seu Negócio:</strong></p><p dir=\"ltr\"><strong><br data-mce-bogus=\"1\"></strong></p><p dir=\"ltr\" role=\"presentation\">1. Portfólio diversificado em Móveis e Eletrodomésticos para todos os ambientes e necessidades.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">2. Atendimento Dedicado e Especializado.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">3. Estoque para pronta entrega com Envio Imediato.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">4. Entrega Gratuita para Fortaleza, Região Metropolitana e Cidades selecionadas (Consulte disponibilidade).</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">5. Ampla diversidade de Formas de Pagamento:</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.1 Boleto Bancário Parcelado (Crédito sujeito à análise).</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.2 Cartão de crédito parcelado.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.3 Pix ou TED.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.4 Débito ou Espécie.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\"><strong>Canais de Atendimento:</strong><strong></strong></p><ul><li dir=\"ltr\">Telefone Fixo: (85) 3194-6500, ramais 1631 e 1632</li><li dir=\"ltr\">WhatsApp: (85) 98879-7108</li><li dir=\"ltr\">E-mail: central02@lojastopmoveis.com.br</li></ul><p dir=\"ltr\"><strong><br data-mce-bogus=\"1\"></strong></p><p dir=\"ltr\"><strong>Horário de Atendimento:</strong><strong></strong></p><ul><li dir=\"ltr\">Segunda a Sexta: 8:00 as 18:00 Horas</li><li dir=\"ltr\">Sábado: 8:00 as 12:00 Horas</li></ul><p><br data-mce-bogus=\"1\"></p>",
-              "__resolveType": "site/sections/Institutional/TextContent.tsx"
-            },
-            "asideMenu": {
-              "__resolveType": "Aside Menu Global"
-            },
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
           },
-          "withContainer": true,
-          "verticalSpacing": "both"
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Top Móveis para Empresas",
+                  "content": {
+                    "content": "<p dir=\"ltr\">Top Móveis para Empresas é o canal da Top Móveis com atendimento especializado e condições especiais de preços, produtos e formas de pagamentos para pessoas jurídicas. Através de parcerias com os maiores Fabricantes de Móveis e Eletrodomésticos, garantimos o melhor custo-benefício, agilidade e pronta entrega.</p><p dir=\"ltr\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\"><strong>Diferenciais para seu Negócio:</strong></p><p dir=\"ltr\"><strong><br data-mce-bogus=\"1\"></strong></p><p dir=\"ltr\" role=\"presentation\">1. Portfólio diversificado em Móveis e Eletrodomésticos para todos os ambientes e necessidades.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">2. Atendimento Dedicado e Especializado.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">3. Estoque para pronta entrega com Envio Imediato.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">4. Entrega Gratuita para Fortaleza, Região Metropolitana e Cidades selecionadas (Consulte disponibilidade).</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">5. Ampla diversidade de Formas de Pagamento:</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.1 Boleto Bancário Parcelado (Crédito sujeito à análise).</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.2 Cartão de crédito parcelado.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.3 Pix ou TED.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.4 Débito ou Espécie.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\"><strong>Canais de Atendimento:</strong><strong></strong></p><ul><li dir=\"ltr\">Telefone Fixo: (85) 3194-6500, ramais 1631 e 1632</li><li dir=\"ltr\">WhatsApp: (85) 98879-7108</li><li dir=\"ltr\">E-mail: central02@lojastopmoveis.com.br</li></ul><p dir=\"ltr\"><strong><br data-mce-bogus=\"1\"></strong></p><p dir=\"ltr\"><strong>Horário de Atendimento:</strong><strong></strong></p><ul><li dir=\"ltr\">Segunda a Sexta: 8:00 as 18:00 Horas</li><li dir=\"ltr\">Sábado: 8:00 as 12:00 Horas</li></ul><p><br data-mce-bogus=\"1\"></p>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "Aside Menu Global"
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-05-28T09:00:00.000Z"
         }
-      ]
-    },
-    {
-      "__resolveType": "Footer Global"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Topbar,header,navmenu"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Top Móveis para Empresas",
+                  "content": {
+                    "content": "<p dir=\"ltr\">Top Móveis para Empresas é o canal da Top Móveis com atendimento especializado e condições especiais de preços, produtos e formas de pagamentos para pessoas jurídicas. Através de parcerias com os maiores Fabricantes de Móveis e Eletrodomésticos, garantimos o melhor custo-benefício, agilidade e pronta entrega.</p><p dir=\"ltr\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\"><strong>Diferenciais para seu Negócio:</strong></p><p dir=\"ltr\"><strong><br data-mce-bogus=\"1\"></strong></p><p dir=\"ltr\" role=\"presentation\">1. Portfólio diversificado em Móveis e Eletrodomésticos para todos os ambientes e necessidades.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">2. Atendimento Dedicado e Especializado.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">3. Estoque para pronta entrega com Envio Imediato.</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">4. Entrega Gratuita para Fortaleza, Região Metropolitana e Cidades selecionadas (Consulte disponibilidade).</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" role=\"presentation\">5. Ampla diversidade de Formas de Pagamento:</p><p dir=\"ltr\" role=\"presentation\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.1 Boleto Bancário Parcelado (Crédito sujeito à análise).</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.2 Cartão de crédito parcelado.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.3 Pix ou TED.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\">5.4 Débito ou Espécie.</p><p dir=\"ltr\" style=\"padding-left: 40px;\" data-mce-style=\"padding-left: 40px;\"><br data-mce-bogus=\"1\"></p><p dir=\"ltr\"><strong>Canais de Atendimento:</strong><strong></strong></p><ul><li dir=\"ltr\">Telefone Fixo: (85) 3194-6500, ramais 1631 e 1632</li><li dir=\"ltr\">WhatsApp: (85) 98879-7108</li><li dir=\"ltr\">E-mail: central02@lojastopmoveis.com.br</li></ul><p dir=\"ltr\"><strong><br data-mce-bogus=\"1\"></strong></p><p dir=\"ltr\"><strong>Horário de Atendimento:</strong><strong></strong></p><ul><li dir=\"ltr\">Segunda a Sexta: 8:00 as 18:00 Horas</li><li dir=\"ltr\">Sábado: 8:00 as 12:00 Horas</li></ul><p><br data-mce-bogus=\"1\"></p>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "Aside Menu Global"
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "__resolveType": "$live/pages/LivePage.tsx"
 }

@@ -2,9 +2,8 @@
   "__resolveType": "site/sections/Container.tsx",
   "sections": [
     {
-      "label": "Topbar",
-      "shadow": "none",
       "section": {
+        "__resolveType": "site/sections/Header/TopNavBar.tsx",
         "alerts": [
           {
             "alt": "Icone Primeira Troca Grátis",
@@ -25,18 +24,18 @@
             "textColor": "#ffffff"
           }
         ],
-        "interval": 5,
-        "__resolveType": "site/sections/Header/TopNavBar.tsx"
+        "interval": 5
       },
-      "withContainer": false,
-      "backgroundColor": "#ED2A24",
+      "shadow": "none",
       "verticalSpacing": "none",
-      "spacing": 0
+      "spacing": 0,
+      "label": "Topbar",
+      "withContainer": false,
+      "backgroundColor": "#000000"
     },
     {
-      "label": "Header",
-      "shadow": "none",
       "section": {
+        "__resolveType": "site/sections/Header/HeaderLayout.tsx",
         "minicart": {
           "mobile": {
             "buttonMode": "secondary"
@@ -73,17 +72,17 @@
           },
           "placeholder": "Digite sua busca aqui..."
         },
-        "placeholder": "O que esta procurando?",
-        "__resolveType": "site/sections/Header/HeaderLayout.tsx"
+        "placeholder": "O que esta procurando?"
       },
+      "shadow": "none",
+      "verticalSpacing": "both",
       "spacing": 0,
-      "withContainer": true,
-      "verticalSpacing": "both"
+      "label": "Header",
+      "withContainer": true
     },
     {
-      "label": "Nav Menu List",
-      "shadow": "md",
       "section": {
+        "__resolveType": "site/sections/Header/HeaderNavMenu.tsx",
         "navItems": [
           {
             "href": "/#",
@@ -568,13 +567,14 @@
             "variant": "CommonChild",
             "children": []
           }
-        ],
-        "__resolveType": "site/sections/Header/HeaderNavMenu.tsx"
+        ]
       },
+      "shadow": "md",
+      "verticalSpacing": "none",
       "spacing": 0,
+      "label": "Nav Menu List",
       "withContainer": true,
-      "backgroundColor": "#000000",
-      "verticalSpacing": "none"
+      "backgroundColor": "#000000"
     }
   ]
 }
