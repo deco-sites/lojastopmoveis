@@ -1329,12 +1329,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/8881408f-992c-41cd-9ff8-963884935143/banner_madesa_redimensionamento.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/a1d3c029-00ad-4fb7-a955-353f8242751e/banner_madesa_black_friday_mobile-(1).webp",
                         "width": 350,
                         "height": 185
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/605c27e4-288a-40b5-893e-49b4657e7d67/banner_madesa_desktop.webp",
+                        "image": "https://assets.decocache.com/lojastopmoveis/b84ecd8e-c484-48c8-9929-c6c9050ec979/banner_madesa_black_friday_desktop-(1).webp",
                         "width": 1920,
                         "height": 600
                       }
@@ -1497,7 +1497,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-11-07",
+              "countdownTimerDate": "2025-11-16",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ffffff",
               "countdownTextColor": "#ffffff",
