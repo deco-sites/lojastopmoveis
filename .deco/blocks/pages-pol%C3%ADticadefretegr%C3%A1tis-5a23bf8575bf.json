@@ -1,85 +1,176 @@
 {
   "name": "Política de Frete Grátis",
   "path": "/politicadefretegratis",
-  "sections": [
-    {
-      "__resolveType": "SEODefault"
-    },
-    {
-      "__resolveType": "Default - Design System"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Topbar,header,navmenu"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Container.tsx",
-      "sections": [
-        {
-          "label": "Institutional Page",
-          "section": {
-            "title": "Política de Frete Grátis",
-            "content": {
-              "content": "<p>Política de frete grátis<br>A Campanha Promocional ''FRETE GRÁTIS'', está limitada EXCLUSIVAMENTE a entregas em cidades selecionadas e produtos sinalizados com o selo Promocional \"Frete Grátis\".</p><p>Localidades elegíveis a campanha de \"Frete Grátis\" de produtos VENDIDOS E ENTREGUES POR TOP MÓVEIS E ELETROS:&nbsp;<br>Fortaleza, Região Metropolitana de Fortaleza, Juazeiro do Norte, Crato, Barbalha, Pentecoste, Acaraú, Itapajé, Itarema, Sobral, Parnaíba e Picos - PI.&nbsp;</p><p>Localidades elegíveis a campanha de \"Frete Grátis\" de produtos VENDIDOS E ENTREGUES POR MADESA:&nbsp;Fortaleza, Caucaia, Aquiraz, Eusébio, Pacatuba, Itaitinga, Maracanaú, Maranguape, Pacajus e Horizonte.</p><p>A entrega, quando VENDIDO E ENTREGUE POR TOP MÓVEIS E ELETROS, é realizada por frota interna própria ou frota terceirizada, sendo em ambos os casos o acompanhamento da Expedição a entrega de responsabilidade das www.lojastopmoveis.com.br/.</p><p>Novas Cidades e ou localidades podem ser incluídas ou excluídas da campanha de \"Frete Grátis\" em decisão unilateral das www.lojastopmoveis.com.br.&nbsp;</p><p>A disponibilidade, bem como a \"Gratuidade\" do serviço de entrega e o prazo para a realização deste serviço serão Informados no Campo \"Calcular Frete\" com o preenchimento do C.E.P. do local de Entrega.</p><p>O Prazo informado será contado sempre em dias úteis, excluindo Sábados, Domingos e Feriados.</p><p>Promoção exclusiva para compras feitas pelo site www.lojastopmoveis.com.br .</p>",
-              "__resolveType": "site/sections/Institutional/TextContent.tsx"
-            },
-            "asideMenu": {
-              "__resolveType": "site/sections/Institutional/AsideMenu.tsx",
-              "menuItems": [
-                {
-                  "href": "/quem-somos",
-                  "label": "Quem Somos"
-                },
-                {
-                  "href": "/como-comprar",
-                  "label": "Como Comprar"
-                },
-                {
-                  "href": "/termos-e-condicoes",
-                  "label": "Termos e Condições"
-                },
-                {
-                  "href": "/central-de-atendimento",
-                  "label": "Fale Conosco"
-                },
-                {
-                  "href": "/politica-de-privacidade",
-                  "label": "Política de Privacidade"
-                },
-                {
-                  "href": "/politica-de-seguranca",
-                  "label": "Politica de Segurança"
-                },
-                {
-                  "href": "/trocas-devolucoes",
-                  "label": "Troca e Devolução"
-                },
-                {
-                  "href": "/topmoveis-paraempresas",
-                  "label": "Top Móveis para Empresas"
-                },
-                {
-                  "href": "/nossas-lojas",
-                  "label": "Nossas Lojas"
-                },
-                {
-                  "label": "Regulamento sua Casa mais Top",
-                  "href": "/suacasamaistop"
-                }
-              ]
-            },
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
           },
-          "withContainer": true,
-          "verticalSpacing": "both"
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Política de Frete Grátis",
+                  "content": {
+                    "content": "<p>Política de frete grátis<br>A Campanha Promocional ''FRETE GRÁTIS'', está limitada EXCLUSIVAMENTE a entregas em cidades selecionadas e produtos sinalizados com o selo Promocional \"Frete Grátis\".</p><p>Localidades elegíveis a campanha de \"Frete Grátis\" de produtos VENDIDOS E ENTREGUES POR TOP MÓVEIS E ELETROS:&nbsp;<br>Fortaleza, Região Metropolitana de Fortaleza, Juazeiro do Norte, Crato, Barbalha, Pentecoste, Acaraú, Itapajé, Itarema, Sobral, Parnaíba e Picos - PI.&nbsp;</p><p>Localidades elegíveis a campanha de \"Frete Grátis\" de produtos VENDIDOS E ENTREGUES POR MADESA:&nbsp;Fortaleza, Caucaia, Aquiraz, Eusébio, Pacatuba, Itaitinga, Maracanaú, Maranguape, Pacajus e Horizonte.</p><p>A entrega, quando VENDIDO E ENTREGUE POR TOP MÓVEIS E ELETROS, é realizada por frota interna própria ou frota terceirizada, sendo em ambos os casos o acompanhamento da Expedição a entrega de responsabilidade das www.lojastopmoveis.com.br/.</p><p>Novas Cidades e ou localidades podem ser incluídas ou excluídas da campanha de \"Frete Grátis\" em decisão unilateral das www.lojastopmoveis.com.br.&nbsp;</p><p>A disponibilidade, bem como a \"Gratuidade\" do serviço de entrega e o prazo para a realização deste serviço serão Informados no Campo \"Calcular Frete\" com o preenchimento do C.E.P. do local de Entrega.</p><p>O Prazo informado será contado sempre em dias úteis, excluindo Sábados, Domingos e Feriados.</p><p>Promoção exclusiva para compras feitas pelo site www.lojastopmoveis.com.br .</p>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "site/sections/Institutional/AsideMenu.tsx",
+                    "menuItems": [
+                      {
+                        "href": "/quem-somos",
+                        "label": "Quem Somos"
+                      },
+                      {
+                        "href": "/como-comprar",
+                        "label": "Como Comprar"
+                      },
+                      {
+                        "href": "/termos-e-condicoes",
+                        "label": "Termos e Condições"
+                      },
+                      {
+                        "href": "/central-de-atendimento",
+                        "label": "Fale Conosco"
+                      },
+                      {
+                        "href": "/politica-de-privacidade",
+                        "label": "Política de Privacidade"
+                      },
+                      {
+                        "href": "/politica-de-seguranca",
+                        "label": "Politica de Segurança"
+                      },
+                      {
+                        "href": "/trocas-devolucoes",
+                        "label": "Troca e Devolução"
+                      },
+                      {
+                        "href": "/topmoveis-paraempresas",
+                        "label": "Top Móveis para Empresas"
+                      },
+                      {
+                        "href": "/nossas-lojas",
+                        "label": "Nossas Lojas"
+                      },
+                      {
+                        "label": "Regulamento sua Casa mais Top",
+                        "href": "/suacasamaistop"
+                      }
+                    ]
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-04T15:00:00.000Z",
+          "end": "2024-11-22T15:00:00.000Z"
         }
-      ]
-    },
-    {
-      "__resolveType": "Footer Global"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Política de Frete Grátis",
+                  "content": {
+                    "content": "<p>Política de frete grátis<br>A Campanha Promocional ''FRETE GRÁTIS'', está limitada EXCLUSIVAMENTE a entregas em cidades selecionadas e produtos sinalizados com o selo Promocional \"Frete Grátis\".</p><p>Localidades elegíveis a campanha de \"Frete Grátis\" de produtos VENDIDOS E ENTREGUES POR TOP MÓVEIS E ELETROS:&nbsp;<br>Fortaleza, Região Metropolitana de Fortaleza, Juazeiro do Norte, Crato, Barbalha, Pentecoste, Acaraú, Itapajé, Itarema, Sobral, Parnaíba e Picos - PI.&nbsp;</p><p>Localidades elegíveis a campanha de \"Frete Grátis\" de produtos VENDIDOS E ENTREGUES POR MADESA:&nbsp;Fortaleza, Caucaia, Aquiraz, Eusébio, Pacatuba, Itaitinga, Maracanaú, Maranguape, Pacajus e Horizonte.</p><p>A entrega, quando VENDIDO E ENTREGUE POR TOP MÓVEIS E ELETROS, é realizada por frota interna própria ou frota terceirizada, sendo em ambos os casos o acompanhamento da Expedição a entrega de responsabilidade das www.lojastopmoveis.com.br/.</p><p>Novas Cidades e ou localidades podem ser incluídas ou excluídas da campanha de \"Frete Grátis\" em decisão unilateral das www.lojastopmoveis.com.br.&nbsp;</p><p>A disponibilidade, bem como a \"Gratuidade\" do serviço de entrega e o prazo para a realização deste serviço serão Informados no Campo \"Calcular Frete\" com o preenchimento do C.E.P. do local de Entrega.</p><p>O Prazo informado será contado sempre em dias úteis, excluindo Sábados, Domingos e Feriados.</p><p>Promoção exclusiva para compras feitas pelo site www.lojastopmoveis.com.br .</p>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "site/sections/Institutional/AsideMenu.tsx",
+                    "menuItems": [
+                      {
+                        "href": "/quem-somos",
+                        "label": "Quem Somos"
+                      },
+                      {
+                        "href": "/como-comprar",
+                        "label": "Como Comprar"
+                      },
+                      {
+                        "href": "/termos-e-condicoes",
+                        "label": "Termos e Condições"
+                      },
+                      {
+                        "href": "/central-de-atendimento",
+                        "label": "Fale Conosco"
+                      },
+                      {
+                        "href": "/politica-de-privacidade",
+                        "label": "Política de Privacidade"
+                      },
+                      {
+                        "href": "/politica-de-seguranca",
+                        "label": "Politica de Segurança"
+                      },
+                      {
+                        "href": "/trocas-devolucoes",
+                        "label": "Troca e Devolução"
+                      },
+                      {
+                        "href": "/topmoveis-paraempresas",
+                        "label": "Top Móveis para Empresas"
+                      },
+                      {
+                        "href": "/nossas-lojas",
+                        "label": "Nossas Lojas"
+                      },
+                      {
+                        "label": "Regulamento sua Casa mais Top",
+                        "href": "/suacasamaistop"
+                      }
+                    ]
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "__resolveType": "$live/pages/LivePage.tsx"
 }

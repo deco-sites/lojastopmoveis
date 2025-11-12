@@ -1,44 +1,93 @@
 {
   "name": "Relatório Igualdade Salarial",
   "path": "/relatorio-igualdade-salarial",
-  "sections": [
-    {
-      "__resolveType": "SEODefault"
-    },
-    {
-      "__resolveType": "Default - Design System"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Topbar,header,navmenu"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Container.tsx",
-      "sections": [
-        {
-          "label": "Institutional Page",
-          "section": {
-            "title": "Relatório de Transparência e Igualdade Salarial de Mulheres e Homens",
-            "content": {
-              "content": "<p><strong><span style=\"font-size: 18pt\">Relatório de Transparência e Igualdade Salarial</span></strong></p><p>Acreditamos que a transparência e a equidade são fundamentais para a construção de um ambiente de trabalho mais justo e inclusivo. Nosso compromisso com a igualdade salarial entre mulheres e homens reflete nossos valores e esforços contínuos para eliminar disparidades e promover oportunidades equitativas para todos.</p><p>Neste relatório, apresentamos dados detalhados sobre nossa política de remuneração, indicadores de equidade salarial e ações implementadas para garantir um ambiente profissional mais justo. A transparência é um passo essencial para a mudança, e seguimos comprometidos em evoluir continuamente nessa jornada.<br><br><strong>1º Semestre 2025</strong>: <u>Clique aqui para baixar o relatório: </u><a target=\"_blank\" rel=\"noopener\" href=\"https://drive.google.com/file/d/1JbmVNl9B1C2BaOmdIgnG7Rw_NT5BOa7V/view?usp=sharing\"><u>Baixar Relatório de Transparência e Igualdade Salarial de Mulheres&nbsp;e&nbsp;Homens</u></a></p><p></p><p><strong>2º Semestre 2025</strong>: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/1UiBPeR5Ty-vy-Q_8rTF0bHBm0Ng9Bixn/view?usp=sharing\"><u>Clique aqui para baixar o relatório: </u></a><a target=\"_blank\" rel=\"noopener\" href=\"https://drive.google.com/file/d/1UiBPeR5Ty-vy-Q_8rTF0bHBm0Ng9Bixn/view?usp=sharing\"><u>Baixar Relatório de Transparência e Igualdade Salarial de Mulheres&nbsp;e&nbsp;Homens</u></a></p><p></p><p></p>",
-              "__resolveType": "site/sections/Institutional/TextContent.tsx"
-            },
-            "asideMenu": {
-              "__resolveType": "Aside Menu Global"
-            },
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
           },
-          "withContainer": true,
-          "verticalSpacing": "both"
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Relatório de Transparência e Igualdade Salarial de Mulheres e Homens",
+                  "content": {
+                    "content": "<p><strong><span style=\"font-size: 18pt\">Relatório de Transparência e Igualdade Salarial</span></strong></p><p>Acreditamos que a transparência e a equidade são fundamentais para a construção de um ambiente de trabalho mais justo e inclusivo. Nosso compromisso com a igualdade salarial entre mulheres e homens reflete nossos valores e esforços contínuos para eliminar disparidades e promover oportunidades equitativas para todos.</p><p>Neste relatório, apresentamos dados detalhados sobre nossa política de remuneração, indicadores de equidade salarial e ações implementadas para garantir um ambiente profissional mais justo. A transparência é um passo essencial para a mudança, e seguimos comprometidos em evoluir continuamente nessa jornada.<br><br><strong>1º Semestre 2025</strong>: <u>Clique aqui para baixar o relatório: </u><a target=\"_blank\" rel=\"noopener\" href=\"https://drive.google.com/file/d/1JbmVNl9B1C2BaOmdIgnG7Rw_NT5BOa7V/view?usp=sharing\"><u>Baixar Relatório de Transparência e Igualdade Salarial de Mulheres&nbsp;e&nbsp;Homens</u></a></p><p></p><p><strong>2º Semestre 2025</strong>: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/1UiBPeR5Ty-vy-Q_8rTF0bHBm0Ng9Bixn/view?usp=sharing\"><u>Clique aqui para baixar o relatório: </u></a><a target=\"_blank\" rel=\"noopener\" href=\"https://drive.google.com/file/d/1UiBPeR5Ty-vy-Q_8rTF0bHBm0Ng9Bixn/view?usp=sharing\"><u>Baixar Relatório de Transparência e Igualdade Salarial de Mulheres&nbsp;e&nbsp;Homens</u></a></p><p></p><p></p>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "Aside Menu Global"
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-04T15:00:00.000Z",
+          "end": "2024-11-22T15:00:00.000Z"
         }
-      ]
-    },
-    {
-      "__resolveType": "Footer Global"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Relatório de Transparência e Igualdade Salarial de Mulheres e Homens",
+                  "content": {
+                    "content": "<p><strong><span style=\"font-size: 18pt\">Relatório de Transparência e Igualdade Salarial</span></strong></p><p>Acreditamos que a transparência e a equidade são fundamentais para a construção de um ambiente de trabalho mais justo e inclusivo. Nosso compromisso com a igualdade salarial entre mulheres e homens reflete nossos valores e esforços contínuos para eliminar disparidades e promover oportunidades equitativas para todos.</p><p>Neste relatório, apresentamos dados detalhados sobre nossa política de remuneração, indicadores de equidade salarial e ações implementadas para garantir um ambiente profissional mais justo. A transparência é um passo essencial para a mudança, e seguimos comprometidos em evoluir continuamente nessa jornada.<br><br><strong>1º Semestre 2025</strong>: <u>Clique aqui para baixar o relatório: </u><a target=\"_blank\" rel=\"noopener\" href=\"https://drive.google.com/file/d/1JbmVNl9B1C2BaOmdIgnG7Rw_NT5BOa7V/view?usp=sharing\"><u>Baixar Relatório de Transparência e Igualdade Salarial de Mulheres&nbsp;e&nbsp;Homens</u></a></p><p></p><p><strong>2º Semestre 2025</strong>: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://drive.google.com/file/d/1UiBPeR5Ty-vy-Q_8rTF0bHBm0Ng9Bixn/view?usp=sharing\"><u>Clique aqui para baixar o relatório: </u></a><a target=\"_blank\" rel=\"noopener\" href=\"https://drive.google.com/file/d/1UiBPeR5Ty-vy-Q_8rTF0bHBm0Ng9Bixn/view?usp=sharing\"><u>Baixar Relatório de Transparência e Igualdade Salarial de Mulheres&nbsp;e&nbsp;Homens</u></a></p><p></p><p></p>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "Aside Menu Global"
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "seo": {
     "__resolveType": "website/sections/Seo/SeoV2.tsx"
   },
