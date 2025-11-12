@@ -7,6 +7,64 @@
       {
         "value": [
           {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "site/sections/Seo/SeoPDPCustom.tsx",
+            "jsonLD": {
+              "__resolveType": "PDP - Intelligent Search Loader"
+            },
+            "changePixPrice": false
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "Default - Product Details"
+          },
+          {
+            "__resolveType": "Produtos relacionados - ProductShelf"
+          },
+          {
+            "__resolveType": "site/sections/Product/ReviewsAndRatings.tsx",
+            "product": {
+              "__resolveType": "ReviewsRating"
+            }
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Whatsapp"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Instagram"
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Facebook"
+            }
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-12-01T02:59:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
             "__resolveType": "Default - Design System"
           },
           {
@@ -61,64 +119,6 @@
         ],
         "rule": {
           "__resolveType": "$live/matchers/MatchAlways.ts"
-        }
-      },
-      {
-        "value": [
-          {
-            "__resolveType": "Default - Design System Black Friday"
-          },
-          {
-            "__resolveType": "analytics"
-          },
-          {
-            "__resolveType": "site/sections/Seo/SeoPDPCustom.tsx",
-            "jsonLD": {
-              "__resolveType": "PDP - Intelligent Search Loader"
-            },
-            "changePixPrice": false
-          },
-          {
-            "__resolveType": "Topbar,header,navmenu - Black Friday"
-          },
-          {
-            "__resolveType": "Default - Product Details"
-          },
-          {
-            "__resolveType": "Produtos relacionados - ProductShelf"
-          },
-          {
-            "__resolveType": "site/sections/Product/ReviewsAndRatings.tsx",
-            "product": {
-              "__resolveType": "ReviewsRating"
-            }
-          },
-          {
-            "__resolveType": "Footer Black Friday"
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Whatsapp"
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Instagram"
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Facebook"
-            }
-          }
-        ],
-        "rule": {
-          "__resolveType": "$live/matchers/MatchDate.ts",
-          "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-04-15T15:00:00.000Z"
         }
       }
     ]
