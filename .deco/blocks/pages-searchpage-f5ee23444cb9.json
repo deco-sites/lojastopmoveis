@@ -7,6 +7,36 @@
       {
         "value": [
           {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "categoryBreadcrumb"
+          },
+          {
+            "__resolveType": "SearchResults Global"
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-12-01T02:59:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
             "__resolveType": "Default - Design System"
           },
           {
@@ -33,36 +63,6 @@
         ],
         "rule": {
           "__resolveType": "website/matchers/always.ts"
-        }
-      },
-      {
-        "value": [
-          {
-            "__resolveType": "Default - Design System Black Friday"
-          },
-          {
-            "__resolveType": "SEODefault"
-          },
-          {
-            "__resolveType": "analytics"
-          },
-          {
-            "__resolveType": "Topbar,header,navmenu - Black Friday"
-          },
-          {
-            "__resolveType": "categoryBreadcrumb"
-          },
-          {
-            "__resolveType": "SearchResults Global"
-          },
-          {
-            "__resolveType": "Footer Black Friday"
-          }
-        ],
-        "rule": {
-          "__resolveType": "$live/matchers/MatchDate.ts",
-          "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-08-27T07:00:00.000Z"
         }
       }
     ]
