@@ -1,5 +1,7 @@
 import { useId } from "preact/hooks";
+import type { Product } from "apps/commerce/types.ts";
 import ShippingSimulation from "$store/islands/ShippingSimulation.tsx";
+import SeparateKit from "$store/components/product/SeparateKit/SeparateKit.tsx";
 import Breadcrumb from "$store/components/ui/Breadcrumb.tsx";
 import Button from "$store/components/ui/Button.tsx";
 import Image from "apps/website/components/Image.tsx";
@@ -7,6 +9,7 @@ import SliderJS from "$store/islands/SliderJS.tsx";
 import OutOfStock from "$store/islands/OutOfStock.tsx";
 import { useOffer } from "$store/sdk/useOffer.ts";
 import { formatPrice } from "$store/sdk/format.ts";
+import { Secret } from "apps/website/loaders/secret.ts";
 import { SendEventOnLoad } from "$store/sdk/analytics.tsx";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import type { ProductDetailsPage } from "apps/commerce/types.ts";
@@ -29,6 +32,21 @@ export interface Props {
   /**
    * @description Flags, displayed when  products are found
    */
+  /**
+   * @title X-VTEX-API-AppKey
+   * @description Unique identifier of the application key.
+   * @format string
+   */
+  appKey: Secret;
+
+  /**
+  * @title X-VTEX-API-AppToken
+  * @description Secret token of the application key.
+  * @format string
+  */
+
+  appToken: Secret
+
   highlights?: HighLight[];
   /**
    * @title Product view
@@ -103,13 +121,14 @@ function NotFound() {
     </div>
   );
 }
-function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating }: {
+function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating, kitProducts }: {
   page: ProductDetailsPage;
   shipmentPolitics?: Props["shipmentPolitics"];
   shareableNetworks?: Props["shareableNetworks"];
   tags: Props["tags"];
   reviews: ResponseReview;
   aggregateRating: RatingType;
+  kitProducts: Product[];
 }) {
   const { breadcrumbList, product } = page;
   const {
@@ -119,7 +138,7 @@ function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating }
     name,
     isVariantOf,
     url,
-    additionalProperty,
+    additionalProperty
   } = product;
   const { price = 0, listPrice, seller, availability, installment } = useOffer(
     offers,
@@ -259,6 +278,8 @@ function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating }
           />
         )
         : null}
+        <SeparateKit classMainBody="hidden lg:flex lg:mt-[32px]" kitProducts={kitProducts} />
+
       {/* Info card */}
       <details className="collapse collapse-plus mt-[30px]">
         <summary className="after:!top-[.7rem] collapse-title border border-base-200 rounded-full py-3 px-[30px] !min-h-0 font-medium text-primary">
@@ -314,6 +335,8 @@ function ProductInfo({ page, shareableNetworks, tags, reviews, aggregateRating }
         </div>
       )}
 
+      <SeparateKit classMainBody="flex lg:hidden" kitProducts={kitProducts} />
+
       {/* Analytics Event */}
       <SendEventOnLoad
         event={{
@@ -344,6 +367,7 @@ function Details(
     tags,
     reviews, 
     aggregateRating,
+    kitProducts,
   }: {
     page: ProductDetailsPage;
     variant: Variant;
@@ -354,6 +378,7 @@ function Details(
     tags: Tags | null;
     reviews: ResponseReview;
     aggregateRating: RatingType;
+    kitProducts: Product[];
   },
 ) {
   const { product, breadcrumbList } = page;
@@ -392,6 +417,7 @@ function Details(
               tags={tags}
               reviews={reviews}
               aggregateRating={aggregateRating}
+              kitProducts={kitProducts}
             />
           </div>
         </div>
@@ -434,7 +460,14 @@ function Details(
   );
 }
 function ProductDetails(
-  {
+  dataProps: Props & {device: Device} & SectionProps<ReturnType<typeof loader>>,
+) {
+  /**
+   * Showcase the different product views we have on this template. In case there are less
+   * than two images, render a front-back, otherwhise render a slider
+   * Remove one of them and go with the best suited for your use case.
+   */
+  const {
     page,
     variant: maybeVar = "auto",
     shipmentPolitics,
@@ -444,13 +477,8 @@ function ProductDetails(
     tags,
     reviews, 
     aggregateRating,
-  }: Props & {device: Device} & SectionProps<ReturnType<typeof loader>>,
-) {
-  /**
-   * Showcase the different product views we have on this template. In case there are less
-   * than two images, render a front-back, otherwhise render a slider
-   * Remove one of them and go with the best suited for your use case.
-   */
+    kitProducts
+  } = dataProps;
   const variant = maybeVar === "auto"
     ? page?.product.image?.length && page?.product.image?.length < 2
       ? "front-back"
@@ -470,6 +498,7 @@ function ProductDetails(
             tags={tags}
             reviews={reviews}
             aggregateRating={aggregateRating}
+            kitProducts={kitProducts}
           />
         )
         : <NotFound />}
@@ -515,9 +544,72 @@ function GenerateStar({ ratingValue }: { ratingValue: number }) {
     );
 }
 
+async function getKitDetails(productID) {
+  const headers = {
+    "Accept": "application/json",
+    "Content-Type": "application/json",
+    "X-VTEX-API-AppKey": "vtexappkey-topmoveis-DNILGE",
+    "X-VTEX-API-AppToken": "NSNLYOJUJYODICNZSUKBOKUIGWPBXVSJKMTIZBQNWHHKDMSZAJTUSYTAEYUTNQBTRSYNOJHFCKKEWBWGLXBDVKGZVPJWZZJPQYWQKGZDFFJOCQOVZCGDTOCJCVGLLQTK",
+  };
+
+  try {
+    const response = await fetch(`${URL_DEFAULT}/api/catalog/pvt/stockkeepingunitkit?parentSkuId=${productID}`, {
+      method: "GET",
+      headers: headers,
+    });
+
+    if (!response.ok) throw new Error(`Erro ao buscar kit do produto ${productID}`);
+
+    const kitItems = await response.json();
+
+    const productIds = await Promise.all(
+      kitItems.map(async (element) => {
+        const res = await fetch(`${URL_DEFAULT}/api/catalog_system/pvt/sku/stockkeepingunitbyid/${element.StockKeepingUnitId}`, {
+          method: "GET",
+          headers: headers,
+        });
+
+        if (!res.ok) throw new Error(`Erro ao buscar SKU ${element.StockKeepingUnitId}`);
+
+        const data = await res.json();
+
+        return data.ProductId;
+      })
+    );
+
+    const kitProducts = await Promise.all(
+      productIds.map(async (productId) => {
+        const res = await fetch(`${URL_DEFAULT}/api/catalog_system/pub/products/search?fq=productId:${productId}`, {
+          method: "GET",
+          headers: headers,
+        });
+
+        if (!res.ok) throw new Error(`Erro ao buscar produto ${productId}`);
+
+        const data = await res.json();
+
+        return data[0];
+      })
+    );
+
+    return kitProducts;
+  } catch (error) {
+    console.error("Erro ao buscar detalhes do kit:", error);
+    return [];
+  }
+}
+
 export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
   const tags = await ctx.invoke.site.loaders.getTags();
-  const { productID } = props.page.product;
+  const { productID, url } = props.page.product;
+  const { appKey, appToken } = props;
+
+  const stringAppKey = appKey.get();
+  const stringAppToken = appToken.get();
+
+  console.log("stringAppKey", stringAppKey);
+  console.log("stringAppToken", stringAppToken);
+
   const fetchJSON = async <T>(url: string): Promise<T> => {
       const res = await fetch(url);
       
@@ -525,22 +617,25 @@ export const loader = async (props: Props, _req: Request, ctx: FnContext) => {
 
       return res.json() as Promise<T>;
   };
-  
+
   const [reviews, aggregateRating] = await Promise.all([
       fetchJSON<ResponseReview>(
       `${URL_DEFAULT}/reviews-and-ratings/api/reviews?product_id=${productID}`
       ),
       fetchJSON<RatingType>(
       `${URL_DEFAULT}/reviews-and-ratings/api/rating/${productID}`
-      ),
+      )
   ]);
+
+  const kitProducts = await getKitDetails(productID);
 
   return {
     ...props,
     device: ctx.device,
     tags: tags,
     reviews, 
-    aggregateRating
+    aggregateRating,
+    kitProducts
   };
 };
 export default ProductDetails;
