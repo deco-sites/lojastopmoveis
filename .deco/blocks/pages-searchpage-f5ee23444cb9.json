@@ -16,7 +16,7 @@
             "__resolveType": "analytics"
           },
           {
-            "__resolveType": "Header Black"
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
           },
           {
             "__resolveType": "categoryBreadcrumb"
@@ -25,31 +25,13 @@
             "__resolveType": "SearchResults Global"
           },
           {
-            "__resolveType": "Footer Black"
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Whatsapp"
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Instagram"
-            }
-          },
-          {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "Facebook"
-            }
+            "__resolveType": "Footer Black Friday"
           }
         ],
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-08-27T07:00:00.000Z"
+          "end": "2025-12-01T02:59:00.000Z"
         }
       },
       {

@@ -1,43 +1,95 @@
 {
   "name": "Politica de Segurança",
   "path": "/politica-de-seguranca",
-  "sections": [
-    {
-      "__resolveType": "SEODefault"
-    },
-    {
-      "__resolveType": "Default - Design System"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Topbar,header,navmenu"
-      }
-    },
-    {
-      "__resolveType": "site/sections/Container.tsx",
-      "sections": [
-        {
-          "label": "Institutional Page",
-          "section": {
-            "title": "Politica de Segurança",
-            "content": {
-              "content": "<div><p><strong>Confidencialidade e Segurança</strong></p><p><strong><br data-mce-bogus=\"1\"></strong></p><p>Temos o compromisso com o nosso cliente de zelar pela excelência dos serviços prestados e, principalmente, com a segurança de seus dados cadastrais. Por isso, atuamos com tecnologias avançadas e contamos com a competência de diversos profissionais, que prezam pela segurança de todo o nosso sistema, proporcionando a você uma excelente experiência de compra.</p><p><br data-mce-bogus=\"1\"></p><p>Trabalhamos com rigorosas políticas de privacidade em todos os nossos processos, garantindo que seus dados cadastrais jamais sejam vendidos, trocados ou divulgados a terceiros, exceto quando isso for condição para algum processo relacionado à entrega, cobrança ou participação em promoções - desde que isto seja solicitado e autorizado pelo cliente. Nestes casos, seus dados pessoais são fundamentais para que seu pedido chegue com assertividade e segurança no endereço de entrega.</p><p><br data-mce-bogus=\"1\"></p><p>Para que seus dados permaneçam intactos, aconselhamos que você não compartilhe suas senhas com terceiros, mesmo que sejam amigos ou parentes.</p><p>A&nbsp;<strong>Top Móveis</strong>&nbsp;nunca envia e-mails pedindo seus dados pessoais (informações de pagamento/cadastro), nem solicitando download ou execução de arquivos, como por exemplo: extensão exe, com, src, bat, dentre outras.</p><p><br data-mce-bogus=\"1\"></p><p>Nosso servidor trabalha com o padrão&nbsp;<strong>SSL</strong>, ou seja, toda informação entre nosso servidor e o cliente é transmitida criptografada. Você pode identificar quando este serviço está ativo, basta visualizar em seu navegador um \"<strong><em>Cadeado fechado</em></strong>\" e o acréscimo de um \"s\" no link do endereço ficando assim:&nbsp;<strong>https://</strong>&nbsp;em vez de&nbsp;<strong>http://.</strong>&nbsp;O&nbsp;<strong>SSL</strong>&nbsp;é ativado na tela de login. Enquanto você estiver logado no site você também estará em ambiente seguro.</p><p><br data-mce-bogus=\"1\"></p><p>Em caso de dúvidas, por favor, entre em contato com nossa Central de Atendimento.</p><p><br data-mce-bogus=\"1\"></p><p><strong>COMPARTILHAMENTO DE INFORMAÇÕES</strong></p><p><strong><br data-mce-bogus=\"1\"></strong></p><p>A&nbsp;<strong>Top Móveis</strong>&nbsp;não irá vender, alugar ou transferir para terceiros seus dados, exceto se necessário para a viabilização de processos de entrega, cobrança, ou participação em promoções, conforme solicitado pelo cliente. Essas informações poderão ser agrupadas e utilizadas como estatísticas genéricas, visando obter um melhor entendimento do perfil dos usuários para aperfeiçoamento dos produtos e serviços oferecidos em nosso site.</p><p><br data-mce-bogus=\"1\"></p><p>Todas as informações são codificadas pelo&nbsp;<strong>software SSL</strong>&nbsp;e arquivadas em um ambiente interno próprio de acesso exclusivo da&nbsp;<strong>Top Móveis</strong>. Isso significa que nenhuma informação trafega pela rede sem ser criptografada (codificada) utilizando os melhores algoritmos disponíveis no mercado. A proteção é absoluta.</p><p><br data-mce-bogus=\"1\"></p><p><em>Desenvolvemos nossa política, com base no Código de Defesa do Consumidor. A mesma é válida somente nas compras pela internet.</em></p></div>",
-              "__resolveType": "site/sections/Institutional/TextContent.tsx"
-            },
-            "asideMenu": {
-              "__resolveType": "Aside Menu Global"
-            },
-            "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
           },
-          "withContainer": true,
-          "verticalSpacing": "both"
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Politica de Segurança",
+                  "content": {
+                    "content": "<div><p><strong>Confidencialidade e Segurança</strong></p><p><strong><br data-mce-bogus=\"1\"></strong></p><p>Temos o compromisso com o nosso cliente de zelar pela excelência dos serviços prestados e, principalmente, com a segurança de seus dados cadastrais. Por isso, atuamos com tecnologias avançadas e contamos com a competência de diversos profissionais, que prezam pela segurança de todo o nosso sistema, proporcionando a você uma excelente experiência de compra.</p><p><br data-mce-bogus=\"1\"></p><p>Trabalhamos com rigorosas políticas de privacidade em todos os nossos processos, garantindo que seus dados cadastrais jamais sejam vendidos, trocados ou divulgados a terceiros, exceto quando isso for condição para algum processo relacionado à entrega, cobrança ou participação em promoções - desde que isto seja solicitado e autorizado pelo cliente. Nestes casos, seus dados pessoais são fundamentais para que seu pedido chegue com assertividade e segurança no endereço de entrega.</p><p><br data-mce-bogus=\"1\"></p><p>Para que seus dados permaneçam intactos, aconselhamos que você não compartilhe suas senhas com terceiros, mesmo que sejam amigos ou parentes.</p><p>A&nbsp;<strong>Top Móveis</strong>&nbsp;nunca envia e-mails pedindo seus dados pessoais (informações de pagamento/cadastro), nem solicitando download ou execução de arquivos, como por exemplo: extensão exe, com, src, bat, dentre outras.</p><p><br data-mce-bogus=\"1\"></p><p>Nosso servidor trabalha com o padrão&nbsp;<strong>SSL</strong>, ou seja, toda informação entre nosso servidor e o cliente é transmitida criptografada. Você pode identificar quando este serviço está ativo, basta visualizar em seu navegador um \"<strong><em>Cadeado fechado</em></strong>\" e o acréscimo de um \"s\" no link do endereço ficando assim:&nbsp;<strong>https://</strong>&nbsp;em vez de&nbsp;<strong>http://.</strong>&nbsp;O&nbsp;<strong>SSL</strong>&nbsp;é ativado na tela de login. Enquanto você estiver logado no site você também estará em ambiente seguro.</p><p><br data-mce-bogus=\"1\"></p><p>Em caso de dúvidas, por favor, entre em contato com nossa Central de Atendimento.</p><p><br data-mce-bogus=\"1\"></p><p><strong>COMPARTILHAMENTO DE INFORMAÇÕES</strong></p><p><strong><br data-mce-bogus=\"1\"></strong></p><p>A&nbsp;<strong>Top Móveis</strong>&nbsp;não irá vender, alugar ou transferir para terceiros seus dados, exceto se necessário para a viabilização de processos de entrega, cobrança, ou participação em promoções, conforme solicitado pelo cliente. Essas informações poderão ser agrupadas e utilizadas como estatísticas genéricas, visando obter um melhor entendimento do perfil dos usuários para aperfeiçoamento dos produtos e serviços oferecidos em nosso site.</p><p><br data-mce-bogus=\"1\"></p><p>Todas as informações são codificadas pelo&nbsp;<strong>software SSL</strong>&nbsp;e arquivadas em um ambiente interno próprio de acesso exclusivo da&nbsp;<strong>Top Móveis</strong>. Isso significa que nenhuma informação trafega pela rede sem ser criptografada (codificada) utilizando os melhores algoritmos disponíveis no mercado. A proteção é absoluta.</p><p><br data-mce-bogus=\"1\"></p><p><em>Desenvolvemos nossa política, com base no Código de Defesa do Consumidor. A mesma é válida somente nas compras pela internet.</em></p></div>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "Aside Menu Global"
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-07T06:00:00.000Z",
+          "end": "2025-12-01T02:59:00.000Z"
         }
-      ]
-    },
-    {
-      "__resolveType": "Footer Global"
-    }
-  ],
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Topbar,header,navmenu"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Institutional Page",
+                "section": {
+                  "title": "Politica de Segurança",
+                  "content": {
+                    "content": "<div><p><strong>Confidencialidade e Segurança</strong></p><p><strong><br data-mce-bogus=\"1\"></strong></p><p>Temos o compromisso com o nosso cliente de zelar pela excelência dos serviços prestados e, principalmente, com a segurança de seus dados cadastrais. Por isso, atuamos com tecnologias avançadas e contamos com a competência de diversos profissionais, que prezam pela segurança de todo o nosso sistema, proporcionando a você uma excelente experiência de compra.</p><p><br data-mce-bogus=\"1\"></p><p>Trabalhamos com rigorosas políticas de privacidade em todos os nossos processos, garantindo que seus dados cadastrais jamais sejam vendidos, trocados ou divulgados a terceiros, exceto quando isso for condição para algum processo relacionado à entrega, cobrança ou participação em promoções - desde que isto seja solicitado e autorizado pelo cliente. Nestes casos, seus dados pessoais são fundamentais para que seu pedido chegue com assertividade e segurança no endereço de entrega.</p><p><br data-mce-bogus=\"1\"></p><p>Para que seus dados permaneçam intactos, aconselhamos que você não compartilhe suas senhas com terceiros, mesmo que sejam amigos ou parentes.</p><p>A&nbsp;<strong>Top Móveis</strong>&nbsp;nunca envia e-mails pedindo seus dados pessoais (informações de pagamento/cadastro), nem solicitando download ou execução de arquivos, como por exemplo: extensão exe, com, src, bat, dentre outras.</p><p><br data-mce-bogus=\"1\"></p><p>Nosso servidor trabalha com o padrão&nbsp;<strong>SSL</strong>, ou seja, toda informação entre nosso servidor e o cliente é transmitida criptografada. Você pode identificar quando este serviço está ativo, basta visualizar em seu navegador um \"<strong><em>Cadeado fechado</em></strong>\" e o acréscimo de um \"s\" no link do endereço ficando assim:&nbsp;<strong>https://</strong>&nbsp;em vez de&nbsp;<strong>http://.</strong>&nbsp;O&nbsp;<strong>SSL</strong>&nbsp;é ativado na tela de login. Enquanto você estiver logado no site você também estará em ambiente seguro.</p><p><br data-mce-bogus=\"1\"></p><p>Em caso de dúvidas, por favor, entre em contato com nossa Central de Atendimento.</p><p><br data-mce-bogus=\"1\"></p><p><strong>COMPARTILHAMENTO DE INFORMAÇÕES</strong></p><p><strong><br data-mce-bogus=\"1\"></strong></p><p>A&nbsp;<strong>Top Móveis</strong>&nbsp;não irá vender, alugar ou transferir para terceiros seus dados, exceto se necessário para a viabilização de processos de entrega, cobrança, ou participação em promoções, conforme solicitado pelo cliente. Essas informações poderão ser agrupadas e utilizadas como estatísticas genéricas, visando obter um melhor entendimento do perfil dos usuários para aperfeiçoamento dos produtos e serviços oferecidos em nosso site.</p><p><br data-mce-bogus=\"1\"></p><p>Todas as informações são codificadas pelo&nbsp;<strong>software SSL</strong>&nbsp;e arquivadas em um ambiente interno próprio de acesso exclusivo da&nbsp;<strong>Top Móveis</strong>. Isso significa que nenhuma informação trafega pela rede sem ser criptografada (codificada) utilizando os melhores algoritmos disponíveis no mercado. A proteção é absoluta.</p><p><br data-mce-bogus=\"1\"></p><p><em>Desenvolvemos nossa política, com base no Código de Defesa do Consumidor. A mesma é válida somente nas compras pela internet.</em></p></div>",
+                    "__resolveType": "site/sections/Institutional/TextContent.tsx"
+                  },
+                  "asideMenu": {
+                    "__resolveType": "Aside Menu Global"
+                  },
+                  "__resolveType": "site/sections/Institutional/InstitutionalPage.tsx"
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "__resolveType": "$live/pages/LivePage.tsx"
 }

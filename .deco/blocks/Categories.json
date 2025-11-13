@@ -23,7 +23,7 @@
             }
           },
           {
-            "__resolveType": "Header Black"
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
           },
           {
             "__resolveType": "site/sections/Category/CategoryBanner.tsx",
@@ -92,7 +92,7 @@
             "__resolveType": "site/sections/Category/CategoryText.tsx"
           },
           {
-            "__resolveType": "Footer Black"
+            "__resolveType": "Footer Black Friday"
           },
           {
             "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -116,7 +116,7 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2024-11-07T06:00:00.000Z",
-          "end": "2025-04-16T15:00:00.000Z"
+          "end": "2025-12-01T02:59:00.000Z"
         }
       },
       {
