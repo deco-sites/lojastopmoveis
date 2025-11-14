@@ -1,81 +1,171 @@
 {
   "__resolveType": "$live/pages/LivePage.tsx",
-  "sections": [
-    {
-      "__resolveType": "Default - Design System"
-    },
-    {
-      "__resolveType": "SEODefault"
-    },
-    {
-      "__resolveType": "analytics"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Topbar,header,navmenu"
-      }
-    },
-    {
-      "__resolveType": "categoryBreadcrumb"
-    },
-    {
-      "__resolveType": "site/sections/Container.tsx",
-      "sections": [
-        {
-          "label": "Search Results",
-          "shadow": "none",
-          "section": {
-            "page": {
-              "sort": "",
-              "count": 50,
-              "fuzzy": "disabled",
-              "similars": false,
-              "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
-              "selectedFacets": [
-                {
-                  "key": "productClusterIds",
-                  "value": "213"
-                }
-              ],
-              "hideUnavailableItems": false
-            },
-            "columns": {
-              "mobile": 2,
-              "desktop": 4
-            },
-            "variant": "aside",
-            "highlights": [
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "categoryBreadcrumb"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
               {
-                "label": "Frete Grátis",
-                "minPrice": 0,
-                "collectionId": "144",
-                "alignHorizontal": "end"
+                "label": "Search Results",
+                "shadow": "none",
+                "section": {
+                  "page": {
+                    "sort": "",
+                    "count": 50,
+                    "fuzzy": "disabled",
+                    "similars": false,
+                    "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                    "selectedFacets": [
+                      {
+                        "key": "productClusterIds",
+                        "value": "213"
+                      }
+                    ],
+                    "hideUnavailableItems": false
+                  },
+                  "columns": {
+                    "mobile": 2,
+                    "desktop": 4
+                  },
+                  "variant": "aside",
+                  "highlights": [
+                    {
+                      "label": "Frete Grátis",
+                      "minPrice": 0,
+                      "collectionId": "144",
+                      "alignHorizontal": "end"
+                    }
+                  ],
+                  "__resolveType": "site/sections/Product/SearchResult.tsx",
+                  "notFoundSection": {
+                    "hints": {
+                      "hints": [
+                        "Verifique os termos digitados.",
+                        "Tente utilizar uma única palavra.",
+                        "Utilize termos genéricos na busca.",
+                        "Procure utilizar sinônimos ao termo desejado."
+                      ],
+                      "title": "Confira algumas dicas para realizar sua busca:"
+                    },
+                    "__resolveType": "site/sections/Miscellaneous/NotFound.tsx"
+                  }
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
               }
-            ],
-            "__resolveType": "site/sections/Product/SearchResult.tsx",
-            "notFoundSection": {
-              "hints": {
-                "hints": [
-                  "Verifique os termos digitados.",
-                  "Tente utilizar uma única palavra.",
-                  "Utilize termos genéricos na busca.",
-                  "Procure utilizar sinônimos ao termo desejado."
-                ],
-                "title": "Confira algumas dicas para realizar sua busca:"
-              },
-              "__resolveType": "site/sections/Miscellaneous/NotFound.tsx"
+            ]
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-04T15:00:00.000Z",
+          "end": "2024-11-22T15:00:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Topbar,header,navmenu"
             }
           },
-          "withContainer": true,
-          "verticalSpacing": "both"
+          {
+            "__resolveType": "categoryBreadcrumb"
+          },
+          {
+            "__resolveType": "site/sections/Container.tsx",
+            "sections": [
+              {
+                "label": "Search Results",
+                "shadow": "none",
+                "section": {
+                  "page": {
+                    "sort": "",
+                    "count": 50,
+                    "fuzzy": "disabled",
+                    "similars": false,
+                    "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
+                    "selectedFacets": [
+                      {
+                        "key": "productClusterIds",
+                        "value": "213"
+                      }
+                    ],
+                    "hideUnavailableItems": false
+                  },
+                  "columns": {
+                    "mobile": 2,
+                    "desktop": 4
+                  },
+                  "variant": "aside",
+                  "highlights": [
+                    {
+                      "label": "Frete Grátis",
+                      "minPrice": 0,
+                      "collectionId": "144",
+                      "alignHorizontal": "end"
+                    }
+                  ],
+                  "__resolveType": "site/sections/Product/SearchResult.tsx",
+                  "notFoundSection": {
+                    "hints": {
+                      "hints": [
+                        "Verifique os termos digitados.",
+                        "Tente utilizar uma única palavra.",
+                        "Utilize termos genéricos na busca.",
+                        "Procure utilizar sinônimos ao termo desejado."
+                      ],
+                      "title": "Confira algumas dicas para realizar sua busca:"
+                    },
+                    "__resolveType": "site/sections/Miscellaneous/NotFound.tsx"
+                  }
+                },
+                "withContainer": true,
+                "verticalSpacing": "both"
+              }
+            ]
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
         }
-      ]
-    },
-    {
-      "__resolveType": "Footer Global"
-    }
-  ],
+      }
+    ]
+  },
   "name": "Exclusivos do Site",
   "path": "/exclusivosdosite"
 }

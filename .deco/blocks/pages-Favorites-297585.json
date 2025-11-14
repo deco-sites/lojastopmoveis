@@ -1,26 +1,64 @@
 {
   "name": "Favorites",
   "path": "/my-account/favorites",
-  "sections": [
-    {
-      "__resolveType": "Default - Design System"
-    },
-    {
-      "__resolveType": "SEODefault"
-    },
-    {
-      "__resolveType": "analytics"
-    },
-    {
-      "__resolveType": "Header Global"
-    },
-    {
-      "src": "/account#/favorites",
-      "__resolveType": "site/sections/Miscellaneous/ProxyIframe.tsx"
-    },
-    {
-      "__resolveType": "Footer Global"
-    }
-  ],
+  "sections": {
+    "__resolveType": "$live/flags/multivariate.ts",
+    "variants": [
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System Black Friday"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
+          },
+          {
+            "__resolveType": "site/sections/Miscellaneous/ProxyIframe.tsx",
+            "src": "/account#/favorites"
+          },
+          {
+            "__resolveType": "Footer Black Friday"
+          }
+        ],
+        "rule": {
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2024-11-04T15:00:00.000Z",
+          "end": "2024-11-22T15:00:00.000Z"
+        }
+      },
+      {
+        "value": [
+          {
+            "__resolveType": "Default - Design System"
+          },
+          {
+            "__resolveType": "SEODefault"
+          },
+          {
+            "__resolveType": "analytics"
+          },
+          {
+            "__resolveType": "Header Global"
+          },
+          {
+            "src": "/account#/favorites",
+            "__resolveType": "site/sections/Miscellaneous/ProxyIframe.tsx"
+          },
+          {
+            "__resolveType": "Footer Global"
+          }
+        ],
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        }
+      }
+    ]
+  },
   "__resolveType": "$live/pages/LivePage.tsx"
 }
