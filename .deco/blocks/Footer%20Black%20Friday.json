@@ -108,6 +108,14 @@
             "label": "Ajuda e suporte",
             "children": [
               {
+                "href": "https://cdn-acomprod.azureedge.net/sitefinity-resources/documents/librariesprovider3/area-do-cliente/condicoes-gerais/cg-seguro-de-garantia-estendida-original-ge-complementar.pdf?sfvrsn=845b7705 5",
+                "label": "Condições Gerais Garantia Estendida"
+              },
+              {
+                "href": "/politicadefretegratis",
+                "label": "Política de Frete Grátis"
+              },
+              {
                 "href": "/politica-de-privacidade",
                 "label": "Política de Privacidade"
               },
@@ -116,16 +124,12 @@
                 "label": "Politica de Segurança"
               },
               {
-                "href": "/trocas-devolucoes",
-                "label": "Troca ou Devolução"
-              },
-              {
-                "href": "/politicadefretegratis",
-                "label": "Política de Frete Grátis"
-              },
-              {
                 "label": "Promoção sua Casa Mais Top ",
                 "href": "/suacasamaistop"
+              },
+              {
+                "label": "Troca ou Devolução",
+                "href": "/trocas-devolucoes"
               }
             ]
           },
