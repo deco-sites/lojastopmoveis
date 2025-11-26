@@ -148,6 +148,30 @@
       "dateFrom": "2024-11-08",
       "dateTo": "2099-08-31",
       "showFlag": true
+    },
+    {
+      "options": {
+        "options": {
+          "idCollection": "216"
+        }
+      },
+      "formatFlag": {
+        "optionsFormat": {
+          "optionBorderRadius": "completo",
+          "textRightColor": "#000000",
+          "textRightBackgroundColor": "#FAFAFA",
+          "textLeftColor": "#fafafa",
+          "textLeftBackgroundColor": "#000000",
+          "flagPosition": "inferior",
+          "isFull": true,
+          "textRight": "FRIDAY",
+          "textLeft": "BLACK"
+        }
+      },
+      "name": "Oferta Top",
+      "dateFrom": "2024-11-08",
+      "dateTo": "2025-11-30",
+      "showFlag": true
     }
   ],
   "account": "topmoveis"
