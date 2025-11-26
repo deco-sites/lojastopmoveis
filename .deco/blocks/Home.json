@@ -229,17 +229,15 @@
                 "__resolveType": "deco-sites/std/loaders/vtex/legacy/productList.ts",
                 "props": {
                   "sort": "",
-                  "collection": "211",
+                  "collection": "216",
                   "count": 50,
                   "similars": true
                 }
               },
               "frameColor": "#000000",
-              "titleFrame": "Ofertas Exclusivas",
               "colorTitleFrame": "#ffffff",
-              "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-11-26",
+              "countdownTimerDate": "2025-11-30",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#ffffff",
               "countdownTextColor": "#ffffff",
@@ -306,7 +304,9 @@
                     "showFavoriteIcon": true
                   }
                 }
-              }
+              },
+              "titleFrame": "Aproveite! Ofertas por tempo limitado!",
+              "subTitleFrame": " "
             }
           },
           {
