@@ -16,7 +16,7 @@
             "__resolveType": "analytics"
           },
           {
-            "__resolveType": "Header Black"
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
           },
           {
             "__resolveType": "site/sections/Container.tsx",
@@ -52,7 +52,6 @@
                     "sort": "",
                     "count": 60,
                     "fuzzy": "disabled",
-                    "similars": false,
                     "__resolveType": "vtex/loaders/intelligentSearch/productListingPage.ts",
                     "selectedFacets": [
                       {
@@ -60,8 +59,10 @@
                         "value": "142"
                       }
                     ],
+                    "similars": false,
                     "hideUnavailableItems": false
                   },
+                  "__resolveType": "site/sections/Product/SearchResult.tsx",
                   "columns": {
                     "mobile": 2,
                     "desktop": 4
@@ -75,7 +76,6 @@
                       "alignHorizontal": "end"
                     }
                   ],
-                  "__resolveType": "site/sections/Product/SearchResult.tsx",
                   "notFoundSection": {
                     "hints": {
                       "hints": [
