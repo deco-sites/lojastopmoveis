@@ -5,17 +5,19 @@
     "variants": [
       {
         "rule": {
-          "__resolveType": "website/matchers/always.ts"
+          "__resolveType": "$live/matchers/MatchDate.ts",
+          "start": "2025-11-01T06:00:00.000Z",
+          "end": "2025-12-01T02:59:00.000Z"
         },
         "value": [
           {
             "__resolveType": "SEODefault"
           },
           {
-            "__resolveType": "Default - Design System"
+            "__resolveType": "Default - Design System Black Friday"
           },
           {
-            "__resolveType": "Header Global"
+            "__resolveType": "Topbar,header,navmenu - Black Friday"
           },
           {
             "sections": [
@@ -39,25 +41,23 @@
             "__resolveType": "site/sections/Container.tsx"
           },
           {
-            "__resolveType": "Footer Global"
+            "__resolveType": "Footer Black Friday"
           }
         ]
       },
       {
         "rule": {
-          "__resolveType": "$live/matchers/MatchDate.ts",
-          "start": "2024-11-04T15:00:00.000Z",
-          "end": "2024-11-22T15:00:00.000Z"
+          "__resolveType": "website/matchers/always.ts"
         },
         "value": [
           {
             "__resolveType": "SEODefault"
           },
           {
-            "__resolveType": "Default - Design System Black Friday"
+            "__resolveType": "Default - Design System"
           },
           {
-            "__resolveType": "Topbar,header,navmenu - Black Friday"
+            "__resolveType": "Header Global"
           },
           {
             "__resolveType": "site/sections/Container.tsx",
@@ -81,7 +81,7 @@
             ]
           },
           {
-            "__resolveType": "Footer Black Friday"
+            "__resolveType": "Footer Global"
           }
         ]
       }

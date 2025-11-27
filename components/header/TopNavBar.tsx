@@ -75,7 +75,7 @@ function TopNavBar({ alerts = [], interval = 5 }: Props) {
                 <TipItem {...alert} />
                 {alert.href
                   ? (
-                    <a href={alert.href} class="text-underline" alt={alert.alt}>
+                    <a class="text-underline" alt={alert.alt} href={alert.href}>
                       <span
                         class="text-[10px] h-[25px] flex items-center ml-3 lg:text-xs"
                         style={{ color: alert.textColor }}
