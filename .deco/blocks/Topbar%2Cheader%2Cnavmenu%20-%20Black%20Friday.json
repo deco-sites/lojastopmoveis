@@ -7,19 +7,19 @@
         "alerts": [
           {
             "alt": "Icone Primeira Troca Grátis",
-            "image": "https://assets.decocache.com/lojastopmoveis/a95f926a-ce07-4b5e-a47c-ae03bd437abc/1742503606334-366b10ce-3e3e-4174-816f-e4fa38e6cfd1",
+            "image": "https://assets.decocache.com/lojastopmoveis/e972f74a-e0b9-4073-a2cb-0f55b9fe7d5a/money-new-icon.png",
             "textAlert": "Até 12% Off no Pix, Boleto e Crédito à Vista",
             "textColor": "#ffffff"
           },
           {
             "alt": "Icone Envio para todo brasil",
-            "image": "https://assets.decocache.com/lojastopmoveis/ca55c579-69df-4e8d-85d6-40f52656898f/1742503608577-1b88c5a9-d517-4da0-b457-e182fcb661ba",
+            "image": "https://assets.decocache.com/lojastopmoveis/9dffa95e-2831-4c55-93c5-d5ffd6d67ec0/trunk-icon.png",
             "textAlert": "Frete Grátis* com Envio Imediato",
             "textColor": "#ffffff"
           },
           {
             "alt": "Icone Parcele em até 6x sem juros",
-            "image": "https://assets.decocache.com/lojastopmoveis/118df2a9-c656-414c-942d-b651f7a65350/1742503609801-c2a88805-bc4f-4de6-91b7-535d139edea7",
+            "image": "https://assets.decocache.com/lojastopmoveis/9c8e9107-303b-40ae-b478-f688a83d243a/card-icon.png",
             "textAlert": "Parcele em até 12x sem Juros* nos cartões",
             "textColor": "#ffffff"
           }
