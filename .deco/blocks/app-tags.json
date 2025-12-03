@@ -133,15 +133,8 @@
       },
       "formatFlag": {
         "optionsFormat": {
-          "optionBorderRadius": "completo",
-          "textRightColor": "#fafafa",
-          "textRightBackgroundColor": "#000000",
-          "textLeftColor": "#fafafa",
-          "textLeftBackgroundColor": "#fa0505",
           "flagPosition": "inferior",
-          "isFull": true,
-          "textRight": "EXCLUSIVA",
-          "textLeft": "OFERTA"
+          "image": "https://assets.decocache.com/lojastopmoveis/084cd53c-197f-42de-8ab0-268ec7799b71/gif_oferta_exclusiva_384x128.gif"
         }
       },
       "name": "Oferta Top",
