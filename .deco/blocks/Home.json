@@ -229,7 +229,7 @@
                 "__resolveType": "deco-sites/std/loaders/vtex/legacy/productList.ts",
                 "props": {
                   "sort": "",
-                  "collection": "216",
+                  "collection": "211",
                   "count": 50,
                   "similars": true
                 }
