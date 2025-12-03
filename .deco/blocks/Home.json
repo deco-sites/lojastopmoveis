@@ -7,7 +7,7 @@
         "rule": {
           "__resolveType": "$live/matchers/MatchDate.ts",
           "start": "2025-11-01T06:00:00.000Z",
-          "end": "2025-12-01T02:59:00.000Z"
+          "end": "2026-01-01T02:59:00.000Z"
         },
         "value": [
           {
@@ -36,15 +36,15 @@
                       "alt": "Achadinhos",
                       "action": {
                         "variant": "primary",
-                        "href": "/ofertasblackfriday"
+                        "href": "/prorrogablacktopmoveis"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/88537f83-6d69-46e3-a369-2b8b87fc598a/BANNER-MOBILE---650x335px---BLACK-TOP-2025.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/9c077d39-8008-4703-9f27-f6e5fded0350/BANNER-MOBILE---PRORROGA-BLACK.png",
                         "width": 350,
                         "height": 185
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/0132e4cc-13ff-4122-86ec-f5eb72d96c19/BANNER-SITE---1920x700px---BLACK-TOP-2025.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/9f1fbfe1-a216-433e-906f-1de880df6cce/BANNER-SITE---PRORROGA-BLACK.png",
                         "width": 1920,
                         "height": 599
                       }
