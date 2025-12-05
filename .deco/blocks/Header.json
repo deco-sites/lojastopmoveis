@@ -30,7 +30,8 @@
       },
       "withContainer": false,
       "backgroundColor": "#ED2A24",
-      "verticalSpacing": "none"
+      "verticalSpacing": "none",
+      "spacing": 0
     },
     {
       "label": "Header",

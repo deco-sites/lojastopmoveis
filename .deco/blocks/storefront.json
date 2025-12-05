@@ -12,6 +12,10 @@
   "global": [
     {
       "__resolveType": "analytics/sections/Analytics/DecoAnalytics.tsx"
+    },
+    {
+      "__resolveType": "site/sections/Header/ThemeColorHelmet.tsx",
+      "color": "#be1a1a"
     }
   ],
   "routes": [
@@ -49,8 +53,14 @@
     "replaces": [],
     "includeScriptsToHead": {
       "includes": []
+    },
+    "includeScriptsToBody": {
+      "includes": []
     }
   },
   "__resolveType": "site/apps/site.ts",
-  "firstByteThresholdMS": false
+  "firstByteThresholdMS": false,
+  "flavor": {
+    "framework": "fresh"
+  }
 }
