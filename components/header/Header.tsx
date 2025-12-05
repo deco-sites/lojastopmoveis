@@ -4,6 +4,7 @@ import type { Product, Suggestion } from "apps/commerce/types.ts";
 import type { Image } from "deco-sites/std/components/types.ts";
 import { headerHeight } from "./constants.ts";
 import { type LoaderReturnType } from "@deco/deco";
+
 export interface NavItem {
     label: string;
     href: string;
@@ -41,7 +42,9 @@ export interface Props {
 function Header({ searchbar: _searchbar, products, navItems = [], suggestions, }: Props) {
     const searchbar = { ..._searchbar, products, suggestions };
     return (<>
+
       <header style={{ height: headerHeight }}>
+
         <div class="bg-base-100 fixed w-full z-50">
         </div>
 

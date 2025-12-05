@@ -367,7 +367,7 @@ function Section({
 
   return (
     <Head>
-      <meta name="theme-color" content={theme["primary"]} />
+      {/* <meta name="theme-color" content={theme["primary"]} /> */}
       <meta name="msapplication-TileColor" content={theme["primary"]} />
       <style
         id={`__DESIGN_SYSTEM_FONT-${id}`}
