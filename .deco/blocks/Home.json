@@ -1295,12 +1295,12 @@
                         "href": "/esquentablack"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/88537f83-6d69-46e3-a369-2b8b87fc598a/BANNER-MOBILE---650x335px---BLACK-TOP-2025.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/902b9692-0620-4fb4-a10c-796feac7c16b/BANNER-MOBILE---MAIOR-SALDAO---2026.png",
                         "width": 350,
                         "height": 185
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/0132e4cc-13ff-4122-86ec-f5eb72d96c19/BANNER-SITE---1920x700px---BLACK-TOP-2025.png",
+                        "image": "https://assets.decocache.com/lojastopmoveis/771be339-2be1-4a23-a08e-3ccfce1f97dd/BANNER-SITE---MAIOR-SALDAO---2026.png",
                         "width": 1920,
                         "height": 599
                       }
@@ -1497,7 +1497,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-12-02",
+              "countdownTimerDate": "2025-12-09",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#000000",
               "countdownTextColor": "#ffffff",
