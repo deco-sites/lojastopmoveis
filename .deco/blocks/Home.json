@@ -1312,12 +1312,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/a6512f78-c681-4cd6-b753-83f0c2504c75/01-BANNER-MOBILE---650x335px---black.jpg",
+                        "image": "https://assets.decocache.com/lojastopmoveis/09fe85bf-ba19-460b-bf9e-3e7bed49b15d/01-BANNER-MOBILE---650x335px---FINAL.jpg",
                         "width": 350,
                         "height": 185
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/cce7619b-a6fe-44fb-b6bb-14cf69c4797c/01-BANNER-SITE---1920x700px---BLACK.jpg",
+                        "image": "https://assets.decocache.com/lojastopmoveis/9a2f52e6-2b0f-4c59-8e50-14117ed158b3/01-BANNER-SITE---1920x700px-(1)-DESKTOP.png",
                         "width": 1920,
                         "height": 599
                       }
@@ -1346,12 +1346,12 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/97d3c300-ea67-474e-b7ea-07d3dfadc8a8/BANNER-05-(1).jpg",
+                        "image": "https://assets.decocache.com/lojastopmoveis/4fd6b280-0841-407c-b9a5-e8c9c2d1e485/3-banner---BANNER-MOBILE---650x335px---FINAL.jpg",
                         "width": 350,
                         "height": 185
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/54e87c96-30f3-4298-a7b0-e8c972d89f07/BANNER-05.jpg",
+                        "image": "https://assets.decocache.com/lojastopmoveis/ba0ad09c-ffc1-4ed2-b085-5ee745853816/3-banner---BANNER-05-(2)-DESKTOP.png",
                         "width": 1920,
                         "height": 599
                       }
@@ -1363,24 +1363,24 @@
                         "variant": "primary"
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/cec93f46-a03f-4c49-a9bf-9d98d6b733eb/BANNER-03-(1).jpg",
+                        "image": "https://assets.decocache.com/lojastopmoveis/902c15f5-bc21-4146-a9c7-aed79ad31b01/4-banner---BANNER-03-(1)-DESKTOP.png",
                         "width": 350,
                         "height": 185
                       },
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/8e644e5b-20a1-4ca4-880e-347f44d4ee45/BANNER-03.jpg",
+                        "image": "https://assets.decocache.com/lojastopmoveis/902c15f5-bc21-4146-a9c7-aed79ad31b01/4-banner---BANNER-03-(1)-DESKTOP.png",
                         "width": 1920,
                         "height": 599
                       }
                     },
                     {
                       "desktop": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/afa3281a-d7ee-434c-95e5-092b310fed41/BANNER-02.jpg",
+                        "image": "https://assets.decocache.com/lojastopmoveis/a567ec9a-ec2d-4d2a-bc30-1e5ad49109a7/5-banner---BANNER-02-(1)-DESKTOP.png",
                         "width": 1920,
                         "height": 600
                       },
                       "mobile": {
-                        "image": "https://assets.decocache.com/lojastopmoveis/dc08d71e-340a-40bc-9520-026aca9dae0f/BANNER-02-(1).jpg",
+                        "image": "https://assets.decocache.com/lojastopmoveis/697c7d69-57a0-46be-80e6-f81d9107e45a/5-banner---BANNER-MOBILE---650x335px---FINAL.jpg",
                         "width": 350,
                         "height": 185
                       },
@@ -1497,7 +1497,7 @@
               "colorTitleFrame": "#ffffff",
               "subTitleFrame": "Estas Ofertas Expiram em",
               "colorSubTitleFrame": "#ffffff",
-              "countdownTimerDate": "2025-12-09",
+              "countdownTimerDate": "2026-01-06",
               "countdownTimerHours": "24:00:00",
               "countdownFrameColor": "#000000",
               "countdownTextColor": "#ffffff",
